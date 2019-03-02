@@ -1,0 +1,21 @@
+00 - Sea
+01 - Sea Alt
+  Only used by some sea chests to have extra chest open flags.
+  No stages actually have this set as their stage ID.
+02 - Forsaken Fortress
+03 - Dragon Roost Cavern
+04 - Forbidden Woods
+05 - Tower of the Gods
+06 - Earth Temple
+07 - Wind Temple
+08 - Ganon's Tower
+09 - Hyrule
+0A - Ship Interiors
+0B - Houses & Misc Places
+0C - Cave Interiors
+0D - More Cave Interiors & Ship Interiors
+0E - ???
+  This might be something similar to stage ID 01, where no stages have it set as their stage ID, but it gets used anyway.
+  Specifically it seems like some of the event switches here get set by something.
+  Other parts of this stage info besides event switches seem unused.
+0F - Test Maps

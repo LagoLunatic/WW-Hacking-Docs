@@ -1,0 +1,877 @@
+
+800589AA,2 - Player's HP when starting a new game, in quarters of hearts.
+  (This is hardcoded as part of function init__21dSv_player_status_a_cFv)
+
+8034FCC0-8034FD0F Item data. m_data__12daItemBase_c
+  00,4 - Field item gravity. (Float)
+  08,4 - ? (Float)
+  10,4 - speed? (Float)
+  16,2 - 
+  18,2 - 
+  1A,2 - 
+  1C,2 - Number of frames to take to do a complete Y rotation.
+  42,2 - 
+8034FD10 - Shop item display data. mData__12daShopItem_c
+  Entry length 0x20.
+  Index in this list is the item ID. Item IDs 00 through FE have entries.
+  00,4: X scale.
+  04,4: Y scale.
+  08,4: Z scale.
+  0C,4: X offset.
+  10,4: Y offset.
+  14,4: Z offset.
+  18,2: X rotation.
+  1A,2: Y rotation.
+  1C,2: Z rotation.
+  1E,2: Padding.
+
+8035ABE4-8035B54F - List of figurines.
+  Entry length 0x12.
+  0x86 entries in total.
+  10,1: Which figurine room ID is this figurine in???
+
+8035C764 - List of Link's animations?
+  Entry length 8.
+  Argument r4 to setSingleMoveAnime is an example of an index in this list.
+  00,2: ? "under" or "upper" anim?
+  02,2: ? "under" or "upper" anim?
+  04,1: hand model? maybe left or right
+  05,1: hand model? maybe left or right
+  06,2: texture anim?
+
+8035F9B8-8035F9F7 - List of Ballad of Gales warp destinations.
+  Entry length 7. There are 9 entries in total.
+  00,1: X pos of the sector on the sea chart (-3 to 3).
+  01,1: Y pos of the sector on the sea chart (-3 to 3).
+  02,1: Warp index of this warp.
+  03,1: Warp index of the warp to the left of this one.
+  04,1: Warp index of the warp to the right of this one.
+  05,1: Warp index of the warp above this one.
+  06,1: Warp index of the warp below this one.
+
+8035BD34 - List of item IDs given from certain story-important cutscenes.
+  master sword, pearls, etc.
+  (this is equivalent to offset 358D34 in main.dol)
+  this list is read from by 800e7420, execute__10daDemo00
+
+803398D8-8033A647 - Mapping of actor IDs to rel filenames.
+  Entry length 8.
+  Total entries: 0x1AE (though the very last one is just an end marker with actor ID = -1).
+  00,2: Actor ID. This is the ID mentioned in list 80372818.
+  02,2: Padding (always 0x0000).
+  04,4: Pointer to the rel filename.
+80372818-80374EC3 - Actor info. This is a mapping of ACTR names to the data corresponding to that name.
+  Entry length 0xC.
+  Total entries: 0x339.
+  00,8: ACTR name.
+  08,2: Actor ID. This is the key in list 803398D8.
+  0A,1: Actor subtype index.
+    When multiple different ACTR names correspond to a single REL file, this index is what distinguishes them.
+    Many REL files just ignore this value and instead use their parameters to know which way to behave.
+    But some, like d_a_tag_md_cb.rel actually rely on this to determine what they should do.
+  0B,1: Actor unknown value 0xB
+    This is used by treasure chests and salvage points, passed as argument r7 to drawPointSingle__6dMap_cFUcfffScsUcUcUc
+    In the main executable, this value for some unknown entity type is passed as argument r8 to setCollectPoint__6dMap_cFUcUcfffScsUcUcUcUc
+
+g_fopAcTg_Queue:
+80372028,4 - Pointer to last entity/node in RAM?
+8037202C,4 - Pointer to first entity/node in RAM?
+80372030,4 - Number of entities/nodes currently in RAM?
+
+80375080 - List of stage layer tables.
+  This has which DZx chunk names are for each layer. e.g. ACT0 is the ACTR chunk for layer 0.
+
+80375E1C-80375FBB (372E1C in main.dol) - Shop item data.
+  Entry length 0x10.
+  00,4: Item ID.
+  04,4: Negative prerequisite item ID you need to NOT own before you can buy this item.
+  08,4: Prerequisite item ID you need before you can buy this item.
+    -1 for no prerequisite? Or -1 might be an invalid prerequisite?
+  0C,1: Bitfield affecting what can prevent you from buying the item.
+    0 - This item has a prerequisite item. This bit must be set for the prerequisite item ID above to do anything.
+    1 - This item has a negative prerequisite item. This bit must be set for the negative prerequisite item ID above to do anything.
+    2 - This item has a maximum number of it you can carry. (Bombs, bait, etc.)
+    3 - This item requires you to own a bottle. Doesn't need to be empty.
+    4 - This item requires an empty bottle.
+    5 - This item costs rupees to buy.
+  0D,3: Padding.
+80375FBC-80376263 - Shop item set data.
+  Entry length 0x14.
+  00,4: Pointer to the shop item data for this item. (In list 80375E1C.)
+  04,4: Message ID shown when you select this item in the shop.
+  08,4: Message ID that asks you if you're sure you want to buy this item.
+  0C,4: ??
+  10,4: Number of the item given...?
+
+803764DC-803764FF - List of pointers to the shop item positions for each shop.
+  Each pointer points to a list of 9 floats, which are the X,Y,Z positions of each of the 3 items in the shop.
+  However Item_set_pos_data_rshop_0 has 36 floats (probably Zunari's shop).
+  80376398 - Beedle's shop on Outset.
+  80376404 - Beedle's shop on Rock Spire.
+
+803842B0 (3812B0 in main.dol) - List of item resources.
+  Entry length 0x24. Index is an item ID.
+  00,4: Pointer to a string, the name of the .arc containing this item's model.
+  04,4: Pointer to a string. Filename of the item icon to show in the inventory for this item.
+    Item icon textures are stored in: /files/res/Msg/itemicon.arc
+  08,2: File ID within the .arc of this item's 3D model.
+  0A,2: texture index?? 5D for rupees, 5B for heart piece, 5C for heart container
+  0C,2: (equivalent of 08,2 for field items)
+  0E,2: 8 for rupees
+  10,2: (equivalent of 0C,2 for field items)
+  12,2: (equivalent of 0E,2 for field items)
+  14,1: Keyframe index in the TEV register animation to use.
+    This is used for rupees to give them a different color.
+    All rupees have the same model and texture, and have the same TEV register animation that simply cycles through all the different colors.
+    By pausing the TEV register animation on different keyframes, different rupees have different colors.
+  16,2: Message ID of the item's name.
+    Not sure what this is used for, and not all items have this set.
+  20,2: ?
+803866B0 (3836B0 in main.dol) - List of field item resources. Items that appear freely placed in the world as ACTRs.
+  Entry length 0x1C.
+  Format:
+  00,4: Pointer to a string, the name of the .arc containing this item's field model.
+  04,2: File ID within the .arc of this item's 3D model.
+  06,2: texture index?? 5D for rupees, 5B for heart piece, 5C for heart container
+  08,2: 
+  0A,2: 0x51 for rupees
+  0C,2: 
+  0E,2: 
+  10,1: Keyframe index in the TEV register animation to use.
+    This seems unused - the equivalent value in the item resources is instead used even for field items.
+  18,2: 
+  list is read by 800f55f4
+  func CreateItemHeap in d_a_itembase.c is what actually creates the item
+803882B0 (3852B0 in main.dol) - item_info?
+  Entry length 4. Index is an item ID.
+  00,1: ? this is an integer but gets converted to a float before being used by setShadow.
+  01,1: Y offset.
+  02,1: Radius. This affects how close to the player the item needs to be for it to be picked up. 
+  03,1: Whether this item has a time limit before fading out or not. 00 to fade out, 01 to never fade out.
+803886B0 - Item special effect info.
+  Entry length 4. Index is an item ID. (Not all items have entries here. It only goes from item 00 to item 80.)
+  00,2: Which special effect?
+  02,2: 0x8466 here means no special effect.
+803888C8 (3858C8 in main.dol) - List of item get function pointers.
+
+8038DDAC,4 - Bitfield of damage types the player's sword should do? maybe?
+80371DD4,4 - Bitfield of damage types for...? skull hammer maybe?
+
+80392260-803922A7 - List of image to show on the sea chart to represent that you've gotten the treasure from this sector's salvage point.
+  Each entry is a pointer to the filename of the image to show.
+  The index in this list is the type of chart from the chart data. e.g. Index 0 is an image of a Triforce.
+
+80393688-803936A7 - List of BLO1 UI layout files for each song's interactive tutorial that appears in the message box. (mLayout)
+  (8 entries, each is a pointer to a string which is the filename of the BLO1 file in files/res/Msg/msgres.arc.)
+803FB4C0-803FB4C7 - List of the number of notes that are in each song for the purposes of the interactive tutorial that appears in the message box. (mBeatNum)
+
+8039B5F4 - List of Wind Waker songs.
+  7 bytes long.
+  00,1: Number of notes in the song. (3, 4, or 6.)
+  01,6: Array of song notes.
+    0 - Center
+    1 - Up
+    2 - Right
+    3 - Down
+    4 - Left
+
+8039C280-8039C2E3 - List of "scene waves". (BGM related) (m_dy_wave_set_1st__11JAIZelBasic)
+  Entry length 2. 0x32 entries in total.
+  "scene wave index" is an index in this list.
+  00,1: One scene wave to load (or 0 for blank). (This is argument r3 to loadSceneWave.)
+  01,1: Another scene wave to load (or 0 for blank). (This is argument r3 to loadSceneWave.)
+8039C2E4-8039C30B - List of "2nd dynamic scene waves". (BGM related) (m_dy_wave_set_2nd__11JAIZelBasic)
+  Entry length 2. 0x14 entries in total.
+  "2nd dynamic scene wave index" is an index in this list.
+  00,1: One scene wave to load (or 0 for blank). (This is argument r3 to loadSceneWave.)
+  01,1: Another scene wave to load (or 0 for blank). (This is argument r3 to loadSceneWave.)
+
+8039C30C-8039C4EF (39930C in main.dol) - List of stage BGM info. (BGM related) (m_scene_info__11JAIZelBasic)
+  Each entry is 4 bytes long. 0x79 entries in total.
+  The spot ID of a particular stage is its index in this list (see list 8039C5B8 for more info on spot IDs).
+  00,2: BGM ID to play.
+  02,1: "Scene wave index" to load.
+  03,1: "2nd dynamic scene wave index" to load.
+8039C4F0-8039C5B7 (3994F0 in main.dol) - List of island BGM info. (BGM related) (m_isle_info__11JAIZelBasic)
+  Each entry is 4 bytes long. 0x32 (decimal 50) entries in total.
+  The island's room number is its index in this list.
+  00,2: BGM ID to play.
+  02,1: "Scene wave index" to load.
+  03,1: "2nd dynamic scene wave index" to load.
+8039C5B8-8039C797 (3995B8 in main.dol) - List of BGM spot names. (BGM related) (spot_dir_name__11JAIZelBasic)
+  Each entry is 4 bytes long. 0x78 entries in total.
+  Each entry is a pointer to a string that is a stage name.
+  The "spot ID" for a particular stage is the index of that stage's name in this list +1.
+
+803A2F10,4 - Might be what the next scene music to play should be?
+  If this is 0, music does not get played on Windfall.
+  But if it's 8000003B music does get played on Windfall.
+
+803A2F1A,1 - The next "scene wave index" to load.
+803A2F1D,1 - The next "2nd dynamic scene wave index" to load.
+803A2F20,1 - The next island room number the player is about to go to, for deciding what the next BGM should be.
+
+803A4C25,1 - Ship sail state. 1 if sailing, 0 if not.
+
+803A4DF0 - Has info on the current controller input state. (g_mDoCPd_cpadInfo)
+803A4DF0,4 - Control stick horizontal axis. Float from -1 to 1.
+803A4DF4,4 - Control stick vertical axis. Float from -1 to 1.
+803A4E00,4 - C-stick horizontal axis. Float from -1 to 1.
+803A4E04,4 - C-stick vertical axis. Float from -1 to 1.
+803A4E20,1 - Bitfield of whether certain buttons are currently being pressed down.
+  01 - A button is down
+  02 - L button is down
+  04 - R button is down
+  08 - Z button is down
+  10 - D-pad up arrow button is down
+  20 - D-pad down arrow button is down
+  40 - D-pad right arrow button is down
+  80 - D-pad left arrow button is down
+803A4E21,1 - Bitfield of whether certain buttons are currently being pressed down.
+  01 - ??? button is down
+  02 - ??? button is down
+  04 - ??? button is down
+  08 - ??? button is down
+  10 - Start button is down
+  20 - Y button is down
+  40 - X button is down
+  80 - B button is down
+803A4E22,1 - Bitfield of whether certain buttons were just pressed this frame.
+  01 - A button was just pressed this frame
+  02 - L button was just pressed this frame
+  04 - R button was just pressed this frame
+  08 - Z button was just pressed this frame
+  10 - D-pad up arrow button was just pressed this frame
+  20 - D-pad down arrow button was just pressed this frame
+  40 - D-pad right arrow button was just pressed this frame
+  80 - D-pad left arrow button was just pressed this frame
+803A4E23,1 - Bitfield of whether certain buttons were just pressed this frame.
+  01 - ??? button was just pressed this frame
+  02 - ??? button was just pressed this frame
+  04 - ??? button was just pressed this frame
+  08 - ??? button was just pressed this frame
+  10 - Start button was just pressed this frame
+  20 - Y button was just pressed this frame
+  40 - X button was just pressed this frame
+  80 - B button was just pressed this frame
+
+803B9218 - List of which files (maybe Rels specifically?) are currently loaded.
+  Entry length 4. 0x1F6 entries in total.
+  The index in this list is the actor ID.
+  Each entry is a pointer to something? (e.g. 80ad4e30) Or 0 if it's invalid?
+
+803BDC88 - List of "zones"? (mStatus__20dStage_roomControl_c)
+  Entry length 0x114.
+  The index in this list is the room ID?
+  107,1: Zone number? Read by getZoneNo func.
+    valid zone numbers are 00-1F
+
+
+=========== 803C4C08: g_dComIfG_gameInfo
+
+
+803C4C08-803C4C1F - Current player status.
+803C4C08,2 - Max HP (in quarters of hearts, counting heart pieces).
+803C4C0A,2 - Current HP (in quarters of hearts).
+803C4C0C,2 - Current num rupees.
+803C4C11,1 - Index of the inventory slot corresponding to the item equipped on the X button, or FF for none.
+803C4C12,1 - Index of the inventory slot corresponding to the item equipped on the Y button, or FF for none.
+803C4C13,1 - Index of the inventory slot corresponding to the item equipped on the Z button, or FF for none.
+  These determine what items on the inventory screen are highlighted in yellow.
+  0x00-0x14 are normal items (index in list 803C4C44).
+  0x18-0x1F are spoils (index in list 803C4C7E).
+  0x24-0x2B are bait (index in list 803C4C86).
+  0x30-0x37 are delivery bag items (index in list 803C4C8E).
+803C4C16,1 - Currently equipped sword ID.
+  38 - Hero's Sword
+  39 - Master Sword (Powerless)
+  3A - Master Sword (Half Power)
+  3E - Master Sword (Full Power)
+803C4C17,1 - Currently equipped shield ID.
+  3B - Hero's Shield
+  3C - Mirror Shield
+803C4C18,1 - Current Power Bracelets ID. Should be 28 to own them.
+803C4C1A,1 - Current wallet.
+  0 - 200 Rupee Wallet
+  1 - 1000 Rupee Wallet
+  2 - 5000 Rupee Wallet
+803C4C1B,1 - Max magic meter/MP.
+803C4C1C,1 - Current magic meter/MP.
+
+803C4C44-803C4C58 - Inventory.
+  Controls which items are in which slots on the inventory screen. Each slot is one byte.
+  If the byte is FF it means no item is in the slot.
+  Otherwise the byte is the item ID of the item in that slot.
+  The order of slots is from left to right, then top to bottom.
+Each inventory slot:
+803C4C44,1 - Telescope (20)
+803C4C45,1 - Sail (78)
+803C4C46,1 - Wind Waker (22)
+803C4C47,1 - Grappling Hook (25)
+803C4C48,1 - Spoils Bag (24)
+803C4C49,1 - Boomerang (2D)
+803C4C4A,1 - Deku Leaf (34)
+803C4C4B,1 - Tingle Tuner (21)
+803C4C4C,1 - Picto Box (23, 26)
+803C4C4D,1 - Iron Boots (29)
+803C4C4E,1 - Magic Armor (2A)
+803C4C4F,1 - Bait Bag (2C)
+803C4C50,1 - Bow (27, 35, 36)
+803C4C51,1 - Bombs (31)
+803C4C52,1 - Bottle 1
+803C4C53,1 - Bottle 2
+803C4C54,1 - Bottle 3
+803C4C55,1 - Bottle 4
+803C4C56,1 - Delivery Bag (30)
+803C4C57,1 - Hookshot (2F)
+803C4C58,1 - Skull Hammer (33)
+
+803C4C59 - Start of list of bitfields of items you own?
+803C4C60,1 - ? related to bottles?
+803C4C61,1 - Bitfield of what picto boxes you own.
+  0 - Picto Box
+  1 - Deluxe Picto Box
+803C4C65,1 - Bitfield of which types of arrows you own.
+  0 - Regular arrows (Hero's Bow)
+  1 - Fire and Ice Arrows
+  2 - Light Arrow
+803C4C66,1 - Bitfield of whether you own bombs or not.
+  0 - Bombs
+803C4C6B,1 - Bitfield of which delivery bags you own.
+  0 - Delivery Bag
+
+803C4C6E,2 - Timer for how long you have left before your Forest Water reverts to regular water?
+
+803C4C70,1 - ?
+803C4C71,1 - Number of arrows you have.
+803C4C72,1 - Number of bombs you have.
+803C4C76,1 - ?
+803C4C77,1 - Maximum number of arrows you can carry.
+803C4C78,1 - Maximum number of bombs you can carry.
+
+803C4C7E-803C4C85 - What items are in your spoils bag.
+803C4C86-803C4C8D - What items are in your bait bag.
+803C4C8E-803C4C95 - What items are in your delivery bag.
+  Each bag has 8 slots, each is a byte. The byte is what item it is, or FF for no item in that slot.
+
+803C4C98,4 - Bitfield of what delivery bag items you have ever owned at any point ("reserve items").
+803C4C9C,1 - Bitfield of what spoils bag items you have ever owned at an point.
+803C4C9D,1 - Bitfield of what bait bag items you have ever owned at an point.
+  Even if you use an item and have none of it left in your inventory, these bitfield still retains information on what items you had.
+
+803C4CA4-803C4CAB - Number of each item in your spoils bag you have.
+803C4CAC-803C4CB3 - Number of each item in your bait bag you have.
+803C4CB4-803C4CBB - Number of each item in your delivery bag you have.
+  Each entry is a byte, which is the number of that spoil/bait/letter you own.
+
+803C4CBC-803C4CC8 - Bitfield of which items you own.
+803C4CBC,1 - Bitfield of which swords you own.
+  0 - Hero's Sword
+  1 - Master Sword (Powerless)
+  2 - Master Sword (Half power)
+  3 - Master Sword (Full power)
+803C4CBD,1 - Bitfield of which shields you own.
+  0 - Hero's Shield
+  1 - Mirror Shield
+803C4CBE,1 - Whether you own the Power Bracelets or not. 0 or 1.
+803C4CBF,1 - Whether you have the Pirate's Charm or not. Bitfield.
+  0 - Pirate's Charm
+  1 - Have read the Pirate's Charm description in the pause menu.
+803C4CC0,1 - Whether you have the Hero's Charm or not. Bitfield.
+  0 - Hero's Charm
+803C4CC5,1 - Bitfield of which songs you've learned.
+  0 - Wind's Requiem
+  1 - Ballad of Gales
+  2 - Command Melody
+  3 - Earth God's Lyric
+  4 - Wind God's Aria
+  5 - Song of Passing
+803C4CC6,1 - Bitfield of which Triforce shards you own.
+803C4CC7,1 - Bitfield of which pearls you own ("symbols").
+  0 - Nayru's Pearl
+  1 - Din's Pearl
+  2 - Farore's Pearl
+
+803C4CDC-803C4CEB - Bitfield of charts you own.
+803C4CEC-803C4CFB - Bitfield of charts you've opened up.
+803C4CFC-803C4D0B - Bitfield of charts you've completed (got the treasure they point you to).
+  The treasure chart indexes that are used are every number from 00-32, except 22 and 23 (0x31/0d49 charts in total).
+  Indexes 0-7 are the Triforce charts.
+  You can get all 49 treasure charts by setting 803C4CDC to FFFFFFFF and 803C4CE0 to 0007FFF3.
+
+803C4D0C-803C4D3C - List of which sectors you've visited/got mapped out.
+  Each sector is a byte.
+  The byte is a bitfield.
+    0 - Whether you've gotten this sector mapped out by a fishman.
+    1 - Whether you've visited this sector or not.
+
+803C4D4D - Bitfield of what Triforce charts you've gotten deciphered.
+
+803C4DA9,1 - Which placement of salvage points to use for this save file.
+  This can be from 0 to 3. On a new game it's a random number from 0-2, on new game+ it's always 3.
+  Each salvage point has four possible locations. Only the location with the duplicate ID corresponding to this value will show up on a given playthrough.
+
+803C522C - Bitfield of event bits you've seen.
+  Byte      Bit 
+  803C522C  01  saw tetra fall into the forest of fairies
+  803C522D  01  seen intro to fairy woods with tetra hanging? rescued tetra?
+  803C522E  80  entered forest of fairies? saw tetra in forest of fairies?
+  803C522F  10  saw rito postman with telescope with aryll
+  803C5230  08  ???
+  803C5234  02  tetra dialogue on outset?
+  803C523A  20  exited forest of fairies with tetra?
+  803C524C - if this is 20, something with the shop? could be bombs related
+  803C524C - if this is 10, something with the shop? could be bombs related
+  803C524C - if this is 08, something with the shop? could be bombs related
+  803C5256 - if this is 80, link has the hero's clothes (called by 800E7374 in execute func)
+  803C5261 - if this is 10, you've seen the intro (camera zooming around outset)
+  803C5262 - if bit 08 is set, collectmap62?
+  803C5262 - if bit 10 is set, collectmap63?
+  803C5262 - if bit 20 is set, collectmap64?
+  803C532A - low 3 bits contain the state of the squid battleship minigame? as in, should it give you the piece of heart, treasure chart 7, or purple rupee.
+bits set during vanilla game in order:
+  803C522F  10  PIRATE_SHIP_ARRIVING_ON_OUTSET
+  803C522C  01  HAS_SEEN_HELMAROC_ARRIVING_AT_OUTSET
+  803C522D  08  TALKED_TO_ORCA_AFTER_HELMAROC_ARRIVED
+  803C525B  10  DID_SWORD_FIGHTING_TUTORIAL
+  803C522E  80  SAW_TETRA_IN_FOREST_OF_FAIRIES
+  803C522C  04  FOREST_OF_FAIRIES_BOKOBLINS_SPAWNED
+  803C522F  01  KILLED_ONE_FOREST_OF_FAIRIES_BOKOBLIN
+  803C5230  80  KILLED_BOTH_FOREST_OF_FAIRIES_BOKOBLINS
+  803C522D  01  RESCUED_TETRA
+  803C523A  20  PIRATES_ON_OUTSET
+  803C5234  02  LONG_TETRA_TEXT_ON_OUTSET
+  803C525E  02  SAW_SHIELD_IS_MISSING
+  (todo: missing event where grandma gives you shield since I already had the shield and it skipped)
+  803C5250  01  WATCHED_DEPARTURE_CUTSCENE_AND_SPAWN_ON_PIRATE_SHIP
+  803C5233  20  SAW_PIRATE_SHIP_MINIGAME_INTRO
+  803C5233  10  COMPLETED_PIRATE_SHIP_MINIGAME
+    set when you have access to the chest, but haven't opened it yet
+  803C5234  08  COMPLETED_PIRATE_SHIP_MINIGAME_AND_SPAWN_ON_PIRATE_SHIP
+    set when you've opened the chest
+  803C5234  04  TETRA_TOLD_YOU_TO_CLIMB_UP_THE_LADDER
+  803C5234  01  GOT_CATAPULTED_TO_FF1_AND_SPAWN_THERE
+  803C5231  20  GOSSIP_STONE_AT_FF1
+    this makes the pirate ship at outset island waiting for you to get on disappear
+  803C5230  01  PICKED_UP_FIRST_BARREL_IN_FF1
+    // Don't show Jail Text anymore
+  803C5230  02  GRABBED_FIRST_ROPE_IN_FF1
+  803C5230  04  GOT_THROWN_INTO_JAIL_IN_FF1
+  803C522F  40  got caught by searchlight in FF1?
+  803C5251  80  WATCHED_FIND_SISTER_IN_FF1_CUTSCENE
+  803C525A  01  WATCHED_MEETING_KORL_CUTSCENE
+  803C523B  80  KORL_UNLOCKED_AND_SPAWN_ON_WINDFALL
+    note: this also makes tetra hanging by a branch disappear from outset's forest
+  
+  ... (forest haven stuff)
+  803C5236  20  WATCHED_FOREST_HAVEN_INTRO_CUTSCENE
+  803C5257  80  TALKED_TO_KORL_AFTER_FH_CUTSCENE
+  803C5244  01  WATCHED_DEKU_TREE_CUTSCENE
+    this is for killing all chuchus on deku tree's face
+  
+  (medli related stuff?)
+  803C525A  40
+  803C5267  80
+  803C5258  08
+  803C5244  20
+  803C5260  04  Medli has been kidnapped by a Floormaster
+  803C525F  04  Saw event where Medli calls to you from within jail
+  
+  (makar stuff)
+  switch 21 - set when he plants the seed that causes the floormaster to capture him
+  803C5260  08  Makar has been kidnapped by a Floormaster
+  803C5260  40  Saw event where Makar calls to you from within jail
+  
+  (greatfish/jabun stuff)
+  803C5265  20  seen cutscene where jabun gives you nayru's pearl?
+  803C524A  80  QUILL_TELLS_US_JABUN_IS_HIDING_AT_OUTSET
+  803C5236  01  TALKED_TO_KORL_AT_GREATFISH
+  803C5256  01  ENTERED_KORL_AFTER_GREATFISH
+  803C524B  04  WATCHED_WINDFALL_PIRATE_CUTSCENE
+  
+  (pearl/tower of the gods stuff)
+  803C5240  10  placed nayru's pearl
+  803C5240  40  placed farore's pearl
+  803C5240  80  placed din's pearl
+  803C524A  40  TOWER_OF_THE_GODS_RAISED
+  803C525A  80  PEARL_TOWER_CUTSCENE
+  803C5264  40  TALKED_TO_KORL_POST_TOWER_CUTSCENE
+  switches checked during the tower raising scene:
+  55
+  39
+  37 (checked every frame)
+  
+  (forsaken fortress stuff)
+  803C525C  40  talked to KoRL when entering FF2
+  803C526B  20  reflected phantom ganon's energy ball? maybe with empty bottle?
+  803C5244  20  TALKED_TO_KORL_AFTER_HYRULE_2_AND_FF3_ACTIVE
+  
+  (helmaroc boss on forsaken fortress stuff)
+  803C5259  01  ANIMATION_SET_2
+    this is for seeing the cutscene where tetra and her gang free mila maggie and aryll from the prison
+    but if I just set this and enter the room, while it does skip that event, the game just crashes while the screen is black.
+    wait no it doesn't crash completely, it popups an error and then continues correctly??
+  
+  (stuff maybe related to queen fairy)
+  803C5244  20  TALKED_TO_KORL_AFTER_HYRULE_2_AND_FF3_ACTIVE
+    this is necessary before queen fairy will meet you.
+    there might be other conditions though, as this crashes the game?
+  803C5253  40  SOME_WEIRD_FIRE_AND_ICE_ARROWS_CUTSCENE_FLAG
+    this seems to mark whether you've arrived inside mother island, regardless of whether you met the conditions to see queen fairy or not.
+  803C523C  01  WATCHED_FIRE_AND_ICE_ARROWS_CUTSCENE
+    this is for whether you actually met the queen and got the arrows.
+  
+  (triforce stuff)
+  803C5269  04  talked to KoRL after getting all 8 triforce shards
+  803C525F  80  WATCHED_TEXT_AFTER_FIRE_AND_ICE_ARROWS_CUTSCENE
+  803C5259  08  HYRULE_3_WARP_CUTSCENE
+  803C5259  02  TETRA_TO_ZELDA_CUTSCENE
+  
+  (various)
+  803C526A  40  got sucked up by cyclos
+  803C5253  04  defeated cyclos
+  803C525E  01  talked to KoRL after learning the master sword lost its power, he tells you to go to wind and earth temple
+  803C5264  08  related to Lenzo
+  803C525A  20  got the heart piece from watering withered trees with forest water
+  803C52CA  FF  event register for which withered trees have been watered?
+  803C52C6  FF  another event register for which withered trees have been watered?
+  803C52C7  07  another event register for how many withered trees have been watered?
+  803C5237  20  got the hurricane spin from the event with orca
+  803C524C  20  bought the empty bottle from beedle
+  803C524C  10  bought the heart piece from beedle
+  803C524C  08  bought the Treasure Chart 4 from beedle
+  803C525F  08  related to makar being captured by floormasters? checked and set in d_a_tag_md_cb.rel
+  803C5242  01  something related to lenzo (specified at 54C4 in d_a_npc_photo.rel)
+  803C5264  08  something related to lenzo (checked at 3D08 in d_a_npc_photo.rel)
+  803C52B2  FF  event register for how many shop membership points you have
+  803C523E  08  TALKED_TO_LENZO_ON_WINDFALL_WITHOUT_CAMERA
+  803C524A  01  TALKED_TO_MRS_MARIE_ON_WINDFALL
+  803C523F  80  AGREED_TO_HELP_MRS_MARIE
+  803C52EE  03  progress you've made in the letter-sorting minigame sidequest
+  803C523A  08  some flag set by poor mila, and checked by both zunari and her father
+  803C5239  04  gave 15 green chu jelly to doc bandam and he now stocks green potions
+  803C5239  02  gave 15 blue chu jelly to doc bandam and he now stocks blue potions
+  
+  (ganon's tower stuff)
+  switch 00 - phantom ganon killed by light arrows
+  switch 18 - used phantom ganon's sword to destroy the blockade
+  803C5266  08  used phantom ganon's sword to destroy the blockade
+  
+  (warp pots)
+  803C52CE  07  DRC warp pots
+  803C52CD  07  FW warp pots
+  803C52CC  07  DRC-FW-TotG inter-dungeon warp pots (added by the rando)
+  803C52CB  07  WT warp pots
+  803C52CF  07  ET warp pots
+  803C52D0  07  FF-ET-WT inter-dungeon warp pots (added by the rando)
+
+803C4DA8,1 - Boolean for whether the player should have the Hero's New Clothes?
+  If this is nonzero, the player will appear in their casual clothes even if they own the Hero's Clothes.
+
+803C4DB4,4 - Player's partner's X pos.
+803C4DB8,4 - Player's partner's Y pos.
+803C4DBC,4 - Player's partner's Z pos.
+803C4DC0,2 - Player's partner's rotation.
+803C4DC2,1 - Player's partner's room index.
+803C4DC3,1 - Player's partner's ID number.
+  this is argument r4 to set__19dSv_player_priest_cFUcR4cXyzsSc
+  1 - Makar
+  2 - Medli
+  3 - Servant of the Tower
+  (There may be more IDs for different Servants of the Tower?)
+
+803C4F88-803C51C7 - List of all stage info in the save file.
+  Entry length 0x24.
+  There are 0x10 stage infos in total.
+  The index in this list is the stage ID.
+Stage info format:
+  00,04: Bitfield of the stage's treasure chest open flags.
+  04,10: Bitfield of the stage's event switches.
+    There are 0x80 bits in total.
+    These bits are grouped into words.
+  14,04: Bitfield of the stage's item pickup flags.
+  18,04: Bitfield of this dungeon's visited rooms. (These might also function as item pickup flags too?)
+  1C - ?
+  20,01: Number of small keys you currently have for this dungeon stage.
+  21,01: Bitfield of dungeon-specific flags for this dungeon stage.
+    0 - Got dungeon map.
+    1 - Got compass.
+    2 - Got big key.
+    3 - Boss is dead.
+    4 - Heart container is taken.
+    5 - Watched boss intro.
+
+803C51C8-803C522B - List of bitfields of sunken treasure chest salvaged flags.
+  Each sector on the sea has a single short for its bitfield. This means each sector can have a maximum of 16 sunken treasures.
+  There are 0x32 bitfields in total (one for each sector, plus one at the beginning for the unused sector 0).
+
+803C5380-803C53A3 - The currently loaded stage info in the save file.
+803C5380,04 - Bitfield of the current stage's treasure chest open flags.
+803C5384,10 - Bitfield of the current stage's event switches.
+803C5394,04 - Bitfield of the current stage's item pickup flags.
+803C5398,04 - Bitfield of the current dungeon's visited rooms. (These might also function as item pickup flags too?)
+803C539C - ?
+803C53A0,1 - Number of small keys you currently have in the current dungeon.
+803C53A1,1 - Bitfield of dungeon-specific flags for the current dungeon.
+  0 - Got dungeon map.
+  1 - Got compass.
+  2 - Got big key.
+  3 - Boss is dead.
+  4 - Heart container is taken.
+  5 - Watched boss intro.
+
+803C53A4,1 - Currently loaded stage info ID (current stage ID).
+803C53A5,1 - ???
+803C53A8,8 - Bitfield of "dan bits"
+
+List of switches:
+(in Omori):
+  0A - killed chuchus on deku tree's face and saw cutscene where he talks to you
+  1E - saw the intro to the forest haven interior
+
+803C53B0,1 - ??? Something related to zones? Maybe the number of zones that are currently initialized?
+803C53B1,1 - Padding?
+803C53B2 - List of zones.
+  These are grouped into halfwords.
+  Each zone is 0x4C bytes long.
+  The index of the zone in this list is returned by the getZoneNo func.
+  Format of each zone:
+    00,6: Bitfield of zone bit switches for this zone.
+      Grouped into 3 halfwords.
+      All 3 of these halfwords are zeroed out when you change stages.
+      The 3rd halfword is zeroed out when you change rooms as well (the one at 04,2).
+    06,2: Bitfield of item pickup flags for this zone.
+      This bitfield is zeroed out when you change stages.
+    08,2: Padding?
+    0A,40: List of pointers to "zone actors".
+      Not sure what these are, but they are also zeroed out when you change stages.
+    4A,1: ?
+    4B,1: Padding?
+
+803C53B6 - Bit 0001 is for if you're currently in the Phantom Ganon fight?
+
+Player's partner's room restart position? ("restart option")
+803C5D30,1 - ?
+803C5D36,2 - Room restart rotation?
+803C5D38,4 - Room restart X pos.
+803C5D3C,4 - Room restart Y pos.
+803C5D40,4 - Room restart Z pos.
+  how are these different from the above ones at 803C4DB4?
+
+803C5D60 - Another bitfield of event bits.
+  803C5D63  10  Got the Hero's Clothes from Grandma.
+  803C5D63  08  Saw the first event with the deku tree where chuchus appear on his face.
+  803C5D63  04  Knocked the chuchus off deku tree's face.
+  803C5D63  02  Related to Lenzo?
+  803C5D63  01  Related to Lenzo?
+  803C5D64  02  Temporarily has the Hurricane Spin during the training event with Orca.
+
+803C9D3C,8 - The current stage name.
+803C9D44,2 - The most recent spawn ID the player spawned from.
+803C9D46,1 - The most recent room ID the player spawned in.
+803C9D47,1 - The most recent override layer number for the player to spawn in, or FF for none.
+
+803C9D48,8 - The next stage name the player is about to go to.
+803C9D50,2 - The next spawn ID to spawn the player at.
+803C9D52,1 - The next room ID to spawn the player in.
+803C9D53,1 - The next override layer number to spawn the player in, or FF for none.
+803C9D58,4 - ?
+
+803C5D5C,4 - Affects how the player is going to spawn in a moment?
+  0 - Normal spawn
+  1 - Spawn on KoRL
+  (there are other valid values here, seems like this is argument r4 to changeSceneExitId)
+  Note that spawn on KoRL can freeze the game if KoRL does not exist in the destination stage.
+  However, spawn on KoRL is ignored if spawn type is anything other than 5.
+
+803CA7F8,1 - Song index of the song to display in the message box for the interactive tutorial.
+
+803CA8D0,4 - Bitfield of ??? related to the player
+  00010000 - Player is riding the ship. (Checked at 80120484)
+  00100000 - Player is swimming
+
+803C4C38,8 - Stage name of the player's "return place" (where you will be placed when you reload your save).
+  The 8th byte must be 00.
+803C4C40,1 - Room index of the player's "return place" (where you will be placed when you reload your save).
+803C4C41,1 - Spawn ID of the player's "return place" (where you will be placed when you reload your save).
+
+8034F69D,1 - Empty string "".
+
+8034F7D8,4 (34C7D8,4 in main.dol) - Stage name the player starts a new game in ("sea").
+80058BA7,1 (055AE7,1 in main.dol) - Room index the player starts a new game in (0d44, Outset Island).
+80058BAF,1 (055AEF,1 in main.dol) - Spawn ID the player starts the game at (0d206, on Aryll's Lookout).
+
+803C9DA0,4 - Has a pointer to the current stage info from the DZx file (the STAG chunk's only entry).
+
+803C9DF0,2 - Has the event index of the next event about to be started.
+
+803C9EA0,1 - related to events
+803C9EA1,1 - related to events
+803C9EA2,1 - related to events
+  0 - not in an event
+  1 - in an event, black bars above and below screen, Link cannot move
+  2 - in an event, maybe for opening chests?
+
+803C9EB4,1 - Item ID to give in an upcoming cutscene.
+  The function dProcGetItem__init will usually have the item ID to give specified by a parameter. But if that parameter is 0x100, it will instead read the item ID from this address.
+
+803C9EC0,1 - Current number of letters in the mailbox waiting for Link to read them?
+  This value could be used for other things unrelated to letters as well.
+  Can also be something related to your delivery bag? (1-3)
+
+803C9EC8,2 - Bitfield relating to events?
+  0008 - Should check if there are any events ready to be run.
+
+803C9F10-803CA40F - Huge bitfield of event flags. These are for the "flag" fields set by everything in event_list.dat.
+  There are 0x2800 spots for flags in total. They take up 0x500 bytes.
+  These bits are grouped into words.
+
+803CA410,4 - Always has a pointer to the player entity in RAM??
+
+803CA74C,4 - Always has a pointer to the player entity in RAM.
+  Maybe this points to entities being controlled by the command melody as well?
+803CA754,4 - Always has a pointer to the player entity in RAM.
+803CA75C,4 - Always has a pointer to the ship entity in RAM (KoRL).
+
+803CA7FF,1 - Affects which place name is shown?
+  e.g. if a MESSAGE actor is given a TELOP_ON action with tlpNo=0xD, it will show "Dragon Roost Cavern" on the screen as the place name.
+  set by line 80072240
+803CA800,1 - Somehow related to place names shown on the screen like above.
+  set to 2 by line 80072248
+
+80390960-803909AB - List of pointers to the filepaths of the .bti image files for each place name.
+
+803CA764,4 - Number of quarter hearts to add to the player's HP this frame.
+  This is a float.
+  Can be negative to damage the player.
+
+803CA77C,2 - Number of small keys to gradually add to the player's current number of small keys in this dungeon.
+803CA780,2 - Amount of MP to gradually add to the player's current magic meter.
+803CA784,2 - Amount of MP to gradually add to the player's maximum magic meter.
+
+803CA7C4,2 - Number of rupees the currently selected shop item costs.
+
+803CA7CE - current displayed num rupees
+
+803CA7E3,1 - Somehow related to instruction notes displayed on screen when learning a new song? Maybe?
+
+803CA7EF,1 - Whether the song metronome should be displayed on screen this frame. 00 or 01.
+
+803C9810,2 - related to heart meter?
+803CA7CC,2 - related to heart meter?
+
+803CA7D6,1 - What is currently shown on the B button icon.
+  07 - "Return"
+  35 - Player's current sword (based on the bitfield at 803C4CBC)
+  36 - "Defend"
+  37 - Magic staff (from Wizzrobe?)
+  38 - Machete (from ?)
+  39 - Spiked mace (from Stalfos)
+  3A - Magic staff (from Wizzrobe?)
+  3B - Magic staff (from Wizzrobe?)
+  3C - Magic staff (from Wizzrobe?)
+  (I guess these weapon icons are not used ingame?)
+803CA7DB,1 - Item equipped on the X button.
+803CA7DC,1 - Item equipped on the Y button.
+803CA7DD,1 - Item equipped on the Z button.
+
+Backup inventory data used by recollection bosses in order to restore the player's proper inventory when the boss is dead:
+803CA858-803CA86F - Backup player status.
+  Copied to/from 803C4C08.
+803CA870-803CA891 - Backup inventory.
+  Copied to/from 803C4C44.
+  The copy happens at 80055408.
+803CA885-803CA887 - Backup current number of ?/arrows/bombs.
+  Copied to/from 803C4C70.
+803CA888-803CA88A - Backup max number of ?/arrows/bombs.
+  Copied to/from 803C4C76.
+803CA88B-803CA8A2 - Backup contents of player's bags.
+  Copied to/from 803C4C7E.
+803CA8A3-803CA8BA - Backup number of each item in the player's bags.
+  Copied to/from 803C4CA4.
+803CA8BB-803CA8C7 - Backup bitfield of what items the player owns.
+  Copied to/from 803C4CBC.
+
+803CA8D4,4 - Bitfield of player statuses?
+  00000400 - In ship while it is sailing?
+
+803CA8E4,2 - Number of times you've hit Orca displayed on the screen.
+  Does not affect how many times Orca knows you've actually hit him. That's inside Orca's entity.
+
+803CA90C,1 - Previous room num?
+803CA90D,1 - Next room num?
+
+803CA91C,4 - Pointer to the item table for certain pots to choose what to drop from when destroyed.
+  This pointer seems to lead inside of an entity or REL.
+
+803E2270 - Filename of the currently loaded .jpc particle archive file for the current stage.
+
+Player's true position (this gets copied to the player entity's position every frame, and copied back too):
+803E440C,4 - Player's X pos.
+803E4410,4 - Player's Y pos.
+803E4414,4 - Player's Z pos.
+
+803E6342,1 and 803E6343,1 - X and Y pos of player's current sector on the sea chart.
+803E6344,1 and 803E6345,1 - X and Y pos of the sector cursor on the main sea chart.
+803E6346,1 and 803E6347,1 - X and Y pos of the sector cursor on the Ballad of Gales warp destination selection sea chart.
+803E634A,1 and 803E634B,1 - X and Y pos of the tiny sector cursor on the tiny sea chart in the upper left corner of the charts view.
+
+803E5430,4 - Wind force X, to the east. (Float.)
+803E5434,4 - Wind force Y, downwards. Should be 0. (Float.)
+803E5438,4 - Wind force Z, to the south. (Float.)
+803E543C,4
+803E544C,4 - ? Related to wind. (Float.)
+  wind force? 1.0 is normal?
+803E5458,2 - An angle related to wind? But always 0? After being converted to a float this is always 1, and then the wind angle is multiplied by this.
+803E545A,2 - Wind angle. Every 0x4000 is equivalent to 90 degrees. Angle 0x0000 points straight east.
+  Can just store to this to update wind direction on the fly.
+803E545C,2 - ? another angle, alternative to 803E5458,2
+803E545E,2 - ? another wind dir, alternative to 803E545A,2
+803E5460,1 - ?
+803E5461,1 - ?
+  If 803E5461 is not 0, the wind is updated using vars 803E545C,2 and 803E545E,2.
+  If 803E5461 is 0 and 803E5460 is not 0, the wind is updated using vars 803E5458,2 and 803E545A,2.
+  Otherwise the wind is not updated.
+
+803E573E - Related to the current time or weather somehow? 0 or 1.
+
+803E5748,1 - Related to wind somehow? 0 or 1.
+
+803E60EC-803E6133 - List of visual X/Y positions for Ballad of Gales warps on the sea chart UI. Floats.
+  First the 9 X positions are listed. Then the 9 Y positions are listed.
+  These can't be edited easily. This list in RAM isn't copied directly from main.dol. Instead, the unique float values are around 803FAE58, and there is a function (__ct__9dMf_HIO_cFv) which copies the unique float values to their appropriate positions in the actual list.
+
+803F660C,4 - Bitfield of what buttons need to be pressed in order to reset the game (X+B+Start).
+
+803F6A78,1 - Current room index. (mStayNo__20dStage_roomControl_c)
+
+803F6B5D,1 - Total number of Windfall item pedestals in the current stage.
+803F6B5E,1 - Current number of Windfall item pedestals in the current stage that you've placed an item in.
+
+803F6A24,4 - Next unused entity ID?
+  Call MakeOfId to get a new entity ID and increment this counter.
+  This ID is stored at entity+3C.
+
+803F6B7C,1 - Currently selected arrows index (0-3).
+
+803F6F12,2 - Player's current Y rotation.
+  Just seems to be copied from the player entity's Y rotation every frame.
+  And maybe copied back too?
+803F6F1A,2 - Player's current Y rotation.
+
+803ED818,2 - Bitfield of currently pressed buttons. (For Pad.c)
+803ED848,4 - Bitfield of currently pressed buttons. (For JUTGamePad.cpp)
+803F0F30,4 - Bitfield of currently pressed buttons. (For SIBios.c)
+
+803F6A68,4 - Has a pointer to something related to the map select screen maybe?
+
+803F7199,1 - Currently selected arrows index (0-3).
+
+803F7338,4 - Part of the current random seed.
+803F733C,4 - Part of the current random seed.
+803F7340,4 - Part of the current random seed.
+  These are initialized by cM_initRnd__Fiii.
+  When one of the random functions are called (e.g. cM_rndF__Ff) these are read and used, then changed values are stored back.
+
+803F7984,4 - 
+803F798C,4 - 

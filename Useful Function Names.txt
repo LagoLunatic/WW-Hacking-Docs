@@ -1,0 +1,678 @@
+
+__OSUnhandledException
+  called whenever there's an error, use this to debug crashes
+
+order__16dEevent_manager_c
+  called when an event is starting.
+  breakpoint on 800744D0 and look in r3 for the event
+
+mainProc__16dEvent_manager_cFv
+  update code for events
+  breakpoint on 8007421C and look in r3 for a pointer to the event
+
+order__16dEvent_manager_cFs
+  starts an event
+  breakpoint on 800744D0 and look in r3 for a pointer to the event
+
+endProc__16dEvent_manager_c
+  ends an event
+  breakpoint on 80074134 and look in r3 for a pointer to the event
+
+fopAcM_orderOtherEventId__FP10fopAc_ac_csUcUsUsUs
+  this is what really starts an event.
+  if you go up a call from here, you'll get whatever actor really started the event.
+  r3 - pointer to the entity that called this function
+  r4 - the event index to start.
+  r5 - ? (uchar)
+  r6 - ? (ushort)
+  r7 - ? (ushort)
+  r8 - ? (ushort)
+
+fopAcM_orderOtherEvent2__FP10fopAc_ac_cPcUsUs
+  another option for what really starts an event.
+  argument r4 is a pointer to a string which is the event name.
+
+getEventIdx__16dEvent_manager_cFPCcUc
+  gets the index of an event based on its name
+  r3 - pointer to 803C9ED4?
+  r4 - pointer to the event name string
+  r5 - 0xFF
+
+finish_check__12dEvDtEvent_cFv
+  checks if an event should end based on its flags.
+  80071AF4 is where it reads the ending flags.
+
+setStartDemo__18dEvent_exception_cFi
+  handles starting the event specified by a player spawn's event index.
+  r3 - ? pointer to 803c9ef8
+  r4 - event index (in the EVNT list for this stage, not the event_list.dat)
+
+
+advanceCut__12dEvDtStaff_cFi
+  updates the current action for an actor
+
+
+fopAcM_getProcNameString
+  this gets the ACTR name from an entity. e.g. "item" or "itemFLY" for a field item.
+
+CheckItemCreateHeap
+  reads from the item resources list (803842B0) and calls CreateItemHeap.
+CheckFieldItemCreateHeap
+  reads from the field item resources list (803866B0) and calls CreateItemHeap.
+
+execItemGet
+  argument r3 is the item ID. this simply calls the item get function for whatever that item is.
+
+itemGetExecute
+  this is a function called when a field item is picked up.
+  at 800f655C it calls execItemGet
+  at 800f6460 it reads the item ID.
+  at 800f6480 it does a switch statement on the item ID.
+  the list of destinations for the switch are at 8038ca6c.
+  800f6c8c is the default, used for many items not intended to be pickups. it just calls onItem, I think? so it doesn't work for a lot of stuff.
+  I would need to modify the switch statement entries in this list to get other items to work as pickups.
+  here are some options for what to change the entries to:
+    800F667C - used by heart containers. makes link do the "you got an item!" thing. however it also plays the heart get sound effect.
+    800F6724 - makes the pickup float above your head for a second, with the sfx used for joy pendants and such. no item get text.
+    800F6484 - used by all items with an ID 0x84 or greater. seems to function the same as 800F6724, no item get text.
+    800F675C - one used by the small key. has the message and animation, and no heart sfx! perfect.
+
+dComIfGs_isStageBossEnemy__Fi
+  Checks if the boss for a given dungeon stage is dead.
+  Argument r3 is the stage ID/2 of the stage to check.
+
+check_itemno
+  This takes a consumable item ID as an argument, and returns what consumable ID should actually be created.
+  For example, if the item given is a spoil, but the player doesn't have the Spoils Bag, then it will return 1 (Green Rupee) instead, replacing all spoils with green rupees.
+  It does this for: arrows, bombs, bait, and spoils.
+
+fopAcM_createItem
+  argument r7 - affects the item's gravity. 3 means it's affected by gravity. 1 means it's not.
+  argument r9 - the SFX to play?
+
+GroundCheck
+  checks if an object hit the ground and sets y vel to 0 if so
+
+itemActionForRupee
+  used for field items. calls CrrPos to update its position, which in turn calls GroundCheck.
+
+setDemoData
+  this player function reads the event actions for link, and determines what action to take based on the numbers that are the first 3 chars of the action name.
+
+getWarpAreaGridX
+  for Ballad of Gales warping, this gets the X pos of the next warp dest sector by an index.
+
+entry__18dSalvage_control_cFP10fopAc_ac_cP14JPABaseEmitter
+  initializes a salvage point
+
+cc_at_check
+  This function handles damaging an enemy.
+  Line 800AF07C is where it subtracts the damage from the current HP.
+
+at_power_check
+  Gets the damage an attack should do.
+  r3 - Pointer on the stack. The amount of damage to do will be returned by storing it as a byte to [r3+8].
+
+GetTgHitObj
+  This function gets the entity that is in the process of damaging the current entity??
+
+setDamagePoint
+  Sets the amount of damage to do to the player.
+  f1 - Number of quarters of hearts to add to the player's health. Float. Should be negative to deal damage.
+
+changeDamageProc
+  This function decides how much damage the player will actually take once they've gotten hit.
+  At 801108B4, it reads the amount of damage from an entity+3FFE?
+  But if it's not an enemy damaging the player and instead is spikes or something, then it calculates damage in some other, hardcoded way.
+
+CalcTgPlusDmg
+  800AD850 - Stores the amount of damage for the enemy to do into an entity.
+  800AD840 - It reads the amount of damage to do from r28+0x14.
+  r28 was given as argument r4 to this function.
+
+
+
+fopAcM_fastCreateItem__FP4cXyziiP5csXyzP4cXyzfffiPFPv_i
+  Creates an item that already has its model loaded.
+  If you try to create an item that doesn't have its model loaded the game will crash.
+  r3 - position (pointer to a vector3 of floats (cXyz))
+  r4 - item ID
+  r5 - room index to create the item in
+  r6 - rotation (pointer to a vector3 of shorts (csXyz))
+  r7 - scale from entity RAM format (pointer to a vector3 (cXyz))
+  f1 - ??? float
+    stored to entity+254
+    speed?
+  f2 - ??? float
+    stored to entity+224
+    y velocity? upward momentum?
+  f3 - ??? float
+    stored to entity+258
+    gravity
+  r8 - item pickup flag to set, or -1 for none
+  r9 - ???
+    can be just 0, or this can be a pointer to a function, unsure on the exact purpose
+    e.g. 80027254 for stealItem.
+    e.g. 800F3608 for itemParamSet
+  
+fopAcM_createItem__FP4cXyziiiiP5csXyziP4cXyz
+  Creates an item, and loads its model in if necessary.
+  r3 - position (pointer to a vector3 of floats (cXyz))
+  r4 - item ID
+  r5 - item pickup flag to set, or -1 for none
+  r6 - room index to create the item in
+  r7 - unknown_2 int (e.g. 0 or 3)
+    If this is 0 or 2 the item will fade out if the player doesn't get it fast enough. If this is 1 or 3, it does not fade out.
+    If this is 1, the item is not affected by gravity. Otherwise it is.
+    This gets puts in the item's params with mask: 03000000.
+    (This is 0 for fastCreateItem, and 3 for createItemForBoss.)
+  r8 - rotation (pointer to a vector3 of shorts (csXyz))
+  r9 - Item action. (e.g. 4, 5, 0xC)
+    this gets puts in the item's params with mask: FC000000
+    (this is 0xA for fastCreateItem, and either 0xC or 5 for createItemForBoss)
+    800F869C has a switch statement on this.
+      8038cdac is the list of switch statement cases.
+    0 means no action
+  r10 - scale (pointer to a vector3 (cXyz))
+
+fopAcM_fastCreateItem2__FP4cXyziiiiP5csXyziP4cXyz
+  ???
+
+fopAcM_createItemForBoss__FP4cXyziiP5csXyzP4cXyzi
+  r3 - position (pointer to a vector3 of floats (cXyz))
+  r4 - ???
+  r5 - room index to create the item in
+  r6 - rotation (pointer to a vector3 of shorts (csXyz))
+  r7 - scale from entity RAM format (pointer to a vector3 (cXyz))
+  r8 - ?
+    if this is 1, use item action 0xC. (used in most cases)
+    otherwise, use item action 5. (used for the "disappear" cloud of smoke)
+
+fopAcM_createItemForTrBoxDemo__FP4cXyziiiP5csXyzP4cXyz
+  r3 - position (pointer to a vector3 of floats (cXyz))
+  r4 - item ID
+  r5 - -1?
+  r6 - -1?
+  r7 - 0?
+  r8 - 0?
+
+fopAcM_createItemForPresentDemo__FP4cXyziUciiP5csXyzP4cXyz
+  r3 - 
+  r4 - 
+  r5 - 
+  r6 - 
+  r7 - 
+  r8 - 
+  r9 - 
+
+fopAcM_createDemoItem__FP4cXyziiP5csXyziP4cXyzUc
+  used by both createItemForPresentDemo and createItemForTrBoxDemo
+  r3 - position (pointer to a vector3 of floats (cXyz))
+  r4 - item ID
+  r5 - 
+  r6 - 
+  r7 - 
+  r8 - 
+  r9 - 
+
+fopAcM_createItemForKP2__FP4cXyziiP5csXyzP4cXyzfffUs
+  r3 - position (pointer to a vector3 of floats (cXyz))
+  r4 - item ID
+  r5 - room index to create the item in
+  r6 - rotation (pointer to a vector3 of shorts (csXyz))
+  r7 - scale from entity RAM format (pointer to a vector3 (cXyz))
+  f1 - ??? float
+    stored to entity+254
+    speed?
+  f2 - ??? float
+    stored to entity+224
+    y velocity? upward momentum?
+  f3 - ??? float
+    stored to entity+258
+    gravity
+  r8 - unsigned short, bitfield.
+    lower byte is the item pickup flag to set.
+    upper byte is the prerequisite switch index.
+    these are stored as the item's params.
+    not sure if they're actually used though?
+
+fopAcM_createItemFromTable__FP4cXyziiiiP5csXyziP4cXyz
+  r3 - 
+  r4 - 
+  r5 - item pickup flag to set, or -1 for none (or 0x7F for none)
+  r6 - 
+  r7 - 
+  r8 - 
+  r9 - 
+  r10 - 
+
+
+
+dKyw_wind_set__Fv
+  updates the wind direction
+
+cLib_addCalc__FPfffff
+  smoothly changes a float value to a desired new value.
+  r3 - pointer to the float value to change
+  f1 - desired value
+  f2 - percentage of the difference between curr value and desired value to change by per call
+  f3 - maximum amount to change by per call (absolute)
+  f4 - minimum amount to change by per call (absolute)
+
+dKyw_tact_wind_set__Fss
+  function to change the wind direction to any angle.
+  r3 - ? angle stored to 803E5458. usually 0?
+  r4 - wind direction. stored to 803E545A.
+
+setPointRestart
+  sets the "restart" position (e.g. if a floormaster grabs you)
+  r3 - 
+  r4 - 
+  r5 - 
+  can either set link or medli/makar's restart position depending on arguments.
+
+setRestartOption
+  sets Medli or Makar's "restart" position if they're grabbed by a floormaster
+
+checkItemGet__FUci
+  calls the "check has item" func for the given item ID.
+  r3 - item ID to check
+  r4 - default value to use (0 or 1) when the item-specific function returns -1
+
+803f7338  4 r0 	SComponent.a c_math.cpp
+803f733c  4 r1 	SComponent.a c_math.cpp
+803f7340  4 r2 	SComponent.a c_math.cpp
+  these are RNG counters
+
+getActionBtnZ
+checkItemAction
+
+stringSet__21fopMsgM_msgDataProc_cFv
+  handles displaying a message string. this includes parsing commands, and calling various functions for each command.
+  e.g. tag_input_kenshi__21fopMsgM_msgDataProc_cFv is for the number of knight's crests you have.
+
+stringLength__21fopMsgM_msgDataProc_cFv
+  handles calculating the length of a message string. (not sure if it's the character length of pixel length.)
+  calls sub-functions such as tag_len_stock_kenshi__21fopMsgM_msgDataProc_cFPiPfPiPiPi
+
+getRubyString__21fopMsgM_msgDataProc_cFPcPcPcPcPcPcPfPfPi
+  this function handles actually parsing text commands.
+  r3 - 
+  r4 - 
+  r5 - 
+  r6 - 
+  r7 - 
+  r8 - this is the command string.
+    for example, "crest(s)" for the number of knight's crests you have. (this string is at 8033C665.)
+    this is the only argument that seems to change between text commands (at least some of them).
+  r9 - an empty string? 8033C409
+  f0 - 
+  f1 - 
+  r10 - 
+
+dMsg_continueProc__FP13sub_msg_class
+  handles advancing a message to the next text box?
+  specifically line 80213608 stores some values to the entity that is triggering this message to tell it to advance the message?
+  it seems continueProc is called every frame the player has the option to press A to continue the message
+  80212E08 - where it checks if A is pressed. change this to read from offset 0x30 instead of 0x32 and it checks if A is down.
+dMsg_stopProc__FP13sub_msg_class
+  handles ending a message?
+dMsg_finishProc__FP13sub_msg_class
+  handles ending an event?
+
+changeDemoProc__9daPy_lk_cFv
+  handles calling functions depending on the player's current action index (e.g. 034tact calls procTactWait_init__9daPy_lk_cFi in some cases)
+
+procTactWait_init__9daPy_lk_cFi
+  function for the player to be holding the wind waker out and waiting for player input
+  song replay does NOT fall under this because its not waiting for player input
+
+_create__9daArrow_cFv
+  function that creates an arrow
+  800D79E8 - reads the currently selected arrow type (0-3), only used to find the correct heap_size for this arrow type
+  800D72EC - calls setTypeByPlayer which stores the selected arrow type to arrow entity+0x601
+  800D79E8 - reads the arrow type from arrow entity+0x601
+
+atHit_CB__FP10fopAc_ac_cP12dCcD_GObjInfP10fopAc_ac_cP12dCcD_GObjInf
+_atHit__9daArrow_cFP12dCcD_GObjInfP10fopAc_ac_cP12dCcD_GObjInf
+  called when an arrow hits an enemy
+  however, doesn't seem to actually affect anything...
+
+SetAtTgGObjInf__4dCcSFbbP8cCcD_ObjP8cCcD_ObjP12cCcD_GObjInfP12cCcD_GObjInfP9cCcD_SttsP9cCcD_SttsP10cCcD_GSttsP10cCcD_GSttsP4cXyz
+  function that handles attack collisions.
+  calls the specific proc for each entity.
+  800AE448 seems to be an important line - this is what's responsible for telling the stalfos that a light arrow hit him?
+    the value stored seems to be the entity index of the entity that damaged it.
+
+GetAc__22dCcD_GAtTgCoCommonBaseFv
+  this function reads the entity index of the entity that damaged another entity (the same one stored to by 800AE448)
+  this seems to be a func that returns the entity pointer of the entity that did damage.
+
+ChkTgHit__12dCcD_GObjInfFv
+  checks if anything hit the enemy this frame
+GetTgHitObj__12dCcD_GObjInfFv
+  returns the entity that hit the enemy this frame
+
+fopMsg_Create__FPv
+  creates a message
+  breakpoint on 8002A804 and look in r0 for the message ID
+
+getRes__14dRes_control_cFPCclP11dRes_info_ci
+  loads a resource from a RARC
+  r3 - pointer to the filename of the arc (without the .arc)
+  r4 - file ID of the file to load.
+  r5 - entity loading the file? or a pointer to the string "System"??
+  r6 - ??? 0x40
+
+set__19dStage_startStage_cFPCcScsSc
+  changes the game to a different stage
+
+set__19dSv_player_priest_cFUcR4cXyzsSc
+  sets the position of the player's partner (e.g. Makar) in the save file.
+
+screenSetTr__13dMenu_Fmap2_cFv
+  something related to drawing triforce shards on the in-credible chart
+
+checkMarkCheck1__12dMenu_Fmap_cFv
+  handles making the blue quest markers appear on the sea chart (early game)
+  r30 = 8157d35c
+  [r30+0x46F4]+0xAA - DRC
+  [r30+0x4764]+0xAA - FW
+  [r30+0x472C]+0xAA - greatfish isle
+  [r30+0x479C]+0xAA - northern triangle isle
+  [r30+0x480C]+0xAA - eastern triangle isle
+  [r30+0x47D4]+0xAA - southern triangle isle
+
+checkMarkCheck2__12dMenu_Fmap_cFv
+  handles making the blue quest markers appear on the sea chart (mid game)
+  r31 = 8157d35c
+  [r31+0x4844]+0xAA - WT
+  [r31+0x487C]+0xAA - ET
+
+checkMarkCheck3__12dMenu_Fmap_cFv
+  handles making leaf icons representing korok withered trees appear on the sea chart?
+
+execute__9daPy_lk_cFv
+  link's update code
+  8012204C - where it calls the proc for whatever state is currently in. breakpoint here to find the function for link's current state.
+
+procFanGlide_init
+procFanGlide
+  update functions for when link is flying with deku leaf
+  8014CA98 - where it sets link's animation for initializing deku gliding by calling setSingleMoveAnime
+
+setSingleMoveAnime
+
+drawMirrorLightModel__9daPy_lk_cFv
+  draws the ray of light off the mirror shield/harp
+
+init__18dDlst_mirrorPacketFP7ResTIMG
+  initializes the static image reflection when the mirror shield/harp reflect light onto a wall.
+  r4 - 0 for link, or a pointer to the raw data of the md_spot.bti file for medli
+
+dComIfGp_setNextStage__FPCcsScScfUliSc
+  changes the current stage
+  r3 - stage name pointer
+  r4 - spawn ID
+  r5 - room index
+  r6 - override layer number, or FF for none
+  f1 - 
+  r7 - 
+  r8 - 
+  r9 - 
+
+init__20dSeaFightGame_info_cFii
+put_ship__20dSeaFightGame_info_cFUcUc
+checkPutShip__20dSeaFightGame_info_cFiiii
+attack__20dSeaFightGame_info_cFUcUc
+  sinking squids/sploosh kaboom stuff
+  see sploosh kaboom.txt for details
+
+processHeartGaugeSound__11JAIZelBasicFv
+  handles playing the low hearts sound
+  seems to play a different sound depending on current number of quarter hearts (in r4)
+  0 - no sound
+  1-2 - sound D2
+  3-4 - sound D1
+  5-6 - sound D0
+  7+ - no sound
+
+execWaitMainFromBoss__8daItem_cFv
+  seems related to the movement of the heart container gohdan shoots out of his nose?
+
+
+
+fopAcM_fastCreate__FsUlP4cXyziP5csXyzP4cXyzScPFPv_iPv
+  creates an entity.
+  r3 - Actor ID.
+  (more args)
+
+fopAcM_create__FsUlP4cXyziP5csXyzP4cXyzScPFPv_i
+  creates an entity.
+  r3 - Actor ID.
+  f4 - params.
+  (more args)
+
+
+checkRopeSwingWall__9daPy_lk_cFP4cXyzP4cXyzPsPf
+daPy_lk_c::checkRopeSwingWall((cXyz *,cXyz *,short *,float *))
+  checks if the player swung into a wall and should bounce off.
+  r3 - pointer to the player
+  r4 - pointer to the player's current position (player_entity+0x1F8)
+  r5 - pointer to a position. might be the player's position after being rotated and offset compared to the swinging rope?
+  r6 - pointer to ??? rotation or rotational velocity? (short)
+    this seems to be calculated like so:
+    short(???*float(-players_previous_frame_rotation_velocity))
+    it seems to be the velocity of the player swinging on the rope, back and forth, not rotating.
+  r7 - pointer to ??? (float)
+
+
+reinit__10dSv_info_cFv
+  initializes new game+
+  things it does:
+  * reads 0x11 event registers (the ones listed at 80375DC8) and stores them somewhere in free space (e.g. 815b0db4)
+  * reads the byte at 803C4DA8 (e.g. 0x01) into r28 (overrides hero's clothes to get the hero's new clothes?)
+  * copies the player's name from the old to the stack
+  * reads the byte at 803C4DAE (e.g. 0x00) into r27
+  * reads the byte at 803C4DAC (e.g. 0x01) into r26
+  * reads the byte at 803C4DAD (e.g. 0x00) into r25
+  * reads the byte at 803C4DAF (e.g. 0x01) into r24
+  * reads the byte at 803C4C70 (e.g. 0x00) into r23
+  * gets event register 89FF, puts the value into r22
+  * initializes the save with the regular new game function
+  * sets the same 0x11 event registers back to what their value was before
+  * sets 5 event bits to on (the ones listed at 80375DEC)
+  * sets event register C407 to 07 (lenzo related!)
+  * sets treasure box opened flag 0 in stage ID B (pictobox chest!)
+  * sets switch 0x47 for stage ID 0 (unsure what this is...)
+  * sets switch 0x5E for stage ID 0 (unsure what this is...)
+  * copies the player's old name from the stack to the new save file
+  * stores r28 back to 803C4DA8
+  * stores r27 back to 803C4DAE
+  * stores r26 back to 803C4DAC
+  * stores r25 back to 803C4DAD
+  * stores r24 back to 803C4DAF
+  * sets 803C4DA9, the index of the random salvage points to use, to 3
+  * puts deluxe picto box in the player's inventory
+  * sets byte 803CA7E5 to 8
+  * sets byte 803CA7E6 to 0x26 (same as picto box ID)
+  * sets the bits for owning both picto boxes
+  * stores r23 back to 803C4C70
+  * sets event register 89FF back to the old value (in r22)
+  
+  event reg 89FF is related to pictures you take somehow.
+  it appears to be a bitfield.
+  when you erase a picture, a bit gets ORed.
+  when you take a picture, the whole thing gets set to 0...?
+  I guess it's doing something to preserve whatever pictographs you had in new game
+
+onBeast__25dSv_player_get_bag_item_cFUc
+  sets a bit for whether you've ever owned a particular spoil
+
+setItemModel__9daPy_lk_cFv
+  seems to control which of the player's item accessory models are currently visible.
+  8010627C - reads the currently equipped shield ID to know which shield model to show.
+
+setLinkShieldType__11JAIZelBasicFll
+  ???
+  r3 - pointer to ?
+  r4 - shield type.
+    0 - no shield
+    1 - hero's shield
+    2 - mirror shield
+
+seStart
+bgmStart
+start__Q28JASystem8TSeqCtrlFPvUl
+  related to playing audio
+
+adaptor_do_SOUND__Q214JStudio_JAudio14TAdaptor_soundFQ37JStudio4data15TEOperationDataPCvUl
+  handles playing sounds (sfx or music) during stb cutscenes
+
+startSoundVec__8JAIBasicFUlPP8JAISoundP3VecUlUlUc
+  generic sound (sfx or music) playing function, called by all others
+
+onOceanSvBit__11dSv_ocean_cFUcUs
+  sets a salvage point as gotten
+  r3 - pointer to 803C51C8, list of bitfield shorts for sunken treasure chests being salvaged
+  r4 - The island number the sunken treasure is in. (1-49)
+    This is used as the index in the list of bitfield shorts (803C51C8).
+    must be in the range 0x00-0x31
+  r5 - Index of the bit within the bitfield short.
+    must be in the range 0x00-0x0F
+
+drawPointSingle__6dMap_cFUcfffScsUcUcUc
+  draws an icon on the map
+  r6 - the treasure chest opened flag index.
+    0xF is for tingle chests - these won't show up until you've made them appear.
+
+init__13mDoExt_brkAnmFP16J3DMaterialTableP15J3DAnmTevRegKeyiifssbi
+  r3 - pointer to the BRK animation?
+  r4 - J3DMaterialTable *
+  r5 - J3DAnmTevRegKey *
+  r6 - int
+  r7 - int
+  f1 - float
+  r8 - short
+  r9 - short
+  r10 - bool
+  [sp+8,4] - int
+
+entry__13mDoExt_brkAnmFP12J3DModelDataf
+  updates a TEV register animation?
+  f1 - the keyframe to use
+  (more args)
+
+
+__mi__4cXyzCFRC3Vec
+  calculates the difference between two vector3s of floats. aka, it's just A - B.
+  r3 - pointer on the stack for the return value (a vector3 of the X diff, Y diff, and Z diff between the two input vectors)
+  r4 - input vector A
+  r5 - input vector B
+
+PSVECSquareMag
+  seems to take an input vector3 of floats, and returns in f1 the sum of the squares of each component of the vector
+  r3 - input vector
+
+
+da[NAMEHERE]_Create__FP10fopAc_ac_c
+da[NAMEHERE]_Delete__FP10daAgbsw0_c
+da[NAMEHERE]_Execute__FP10daAgbsw0_c
+da[NAMEHERE]_IsDelete__FP10daAgbsw0_c
+da[NAMEHERE]_Draw__FP10daAgbsw0_c
+  these methods exist for every REL code file. the [NAMEHERE] part varies for each REL.
+  Create - initializes the object.
+    if this returns 5, it means the object should not actually be created. for example, maybe there wasn't enough memory to load its model. or maybe the game is in such an event state that this object shouldn't exist (like Medli during some parts of the game).
+    the normal return value for when the object SHOULD exist seems to be 4.
+
+GetPolyId1
+  gets the AttributeCode aka AttributeCodeDirect aka AttribID from a certain polygon?
+  r3 - 
+  r4 - 
+  r5 - the face index
+  r6 - 
+  r7 - 
+  r8 - 
+  800A0A28 is where it reads the pointer to the start of the .dzb file
+  800A0A2C is where it reads the pointer to the Properties list in the .dzb file
+    (r28 has the index in the Properties list (read from the face))
+
+PSMTXMultVec
+  r3 - matrix? (big thing, at least least 0x2C bytes long)
+  r4 - vector3 of floats?
+  r5 - vector3 of floats (output)
+
+
+setScene__11JAIZelBasicFllll
+  sets the music for the next stage/room the player is about to go into?
+  r4 - Spot ID for the stage.
+  r5 - Room index.
+  r7 - Override layer number.
+  (more args)
+  This function hardcodes various checks for specific stages based on the spot ID. Here is a list:
+    802AA40C - sea
+    802AA644 - A_mori
+    802AA66C - MajyuE
+    802AA690 - M_DragB
+    802AA724 - kinBOSS
+    802AA7B0 - SirenB
+    802AA83C - kazeB
+    802AA8D0 - M_DaiB
+    802AA964 - Hyroom
+    802AA9AC - Hyrule
+    802AA9F0 - Hyroom
+    802AAA34 - kenroom
+    802AAA98 - Omori
+    802AAADC - Pjavdou
+    802AAB20 - Ekaze
+    802AAB64 - Edaichi
+    802AABA8 - LinkRM
+    802AAC18 - Obombh
+  If the stage is "sea", it also hardcodes a check for a specific island based on the room index. Here it is:
+    802AA44C - Outset Island
+  Each of these hardcoded checks includes various sub-checks for things like event bits and layer numbers and such to determine if music should be played or not.
+
+
+playerInit__9daPy_lk_cFv
+  initializes the player entity and everything related to them
+
+Set__8dCcD_CpsFRC11dCcD_SrcCps
+  initializes part of an entity that can deal damage...?
+  r3 - pointer to the entity? or something inside the entity?
+  r4 - pointer to something that has data related to the damage dealing entity to initialize
+    the word at [r4+4] is a bitfield of the damage types for this entity to deal
+
+setPlayerPosAndAngle__9daPy_lk_cFP4cXyzs
+  sets player position and angle
+  r3 - player entity
+  r4 - pointer on the stack
+    [r4+0] - X pos (float)
+    [r4+4] - Y pos (float)
+    [r4+8] - Z pos (float)
+  r5 - Y rotation
+
+
+isSwitch__10dSv_info_cFii
+  checks if a switch bit is set.
+  r3 - pointer to 803C4C08 (g_dComIfG_gameInfo)
+  r4 - switch index to check
+    the type of switch depends on the range the switch index is in:
+    00-7F: mem bit, calls function isSwitch__12dSv_memBit_cFi
+    80-BF: ? "dan bit"? calls function isSwitch__12dSv_danBit_cFi with r3 = 803C53A4 and r4 = switch index minus 0x80
+    C0-EF: ? "zone bit"? calls function isSwitch__13dSv_zoneBit_cFi
+    F0-FE: Also "zone bits", but these are invalid and will cause an error to happen.
+    FF: invalid switch, always return false
+  r5 - ??? room ID? valid values are 00-3F
+
+isSwitch__12dSv_memBit_cFi
+  checks if a switch mem bit is set.
+  r3 - pointer to the stage info to check the switch in
+  r4 - switch index to check (should be within the range 00-7F)
+
+isSwitch__12dSv_danBit_cFi
+  r3 - pointer to 803C53A4
+  r4 - dan bit index (should be within the range 00-3F)
+
+isSwitch__13dSv_zoneBit_cFi
+  r3 - pointer to the zone (within the zone list, 803C53B2)
+  r4 - zone bit index (should be within the range 00-2F)
