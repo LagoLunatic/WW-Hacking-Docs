@@ -1,0 +1,83 @@
+
+.jpc files are particle lists, they're located in the /res/Particle folder.
+
+Particle list header format (0x20 bytes long):
+00,08: "JPAC1-00"
+08,02: Number of particles in this particle list.
+0A,02: Number of textures in this particle list.
+0C,14: Padding, just null bytes.
+
+Following the header are a list of particles:
+Particle header format (0x20 bytes long):
+00,08: "JEFFjpa1"
+08,04: ???
+0C,04: Number of sections this particle has.
+10,04: Length of this entire particle in bytes (the particle header + all the sections for this particle).
+14,01: Number of ??? (read by calcKey__14JPABaseEmitter)
+15,01: Number of ??? (read by initField__15JPAFieldManager)
+16,01: ???
+17,01: (Maybe padding?)
+18,02: ID number of this particle.
+1A,06: Padding, just null bytes.
+
+After each particle header are a number of particle sections:
+Particle section format:
+00,04: Magic bytes identifying the type of this section.
+04,04: Length of this section in bytes.
+(The rest varies depending on the type of the section.)
+
+Particle sections:
+* BEM1
+* FLD1 (optional) (can have multiple per particle)
+* KFA1 (optional) (can have multiple per particle)
+* BSP1
+* ESP1
+* SSP1 (optional)
+* ETX1 (optional)
+* TDB1
+
+BSP1 (Base Shape Arc) section format:
+08,?
+0C,04: Bitfield
+  00080000 - EnableAnmTone
+  00400000 - ChildOrder
+  0000000F - Type
+14,04: Base size X (float).
+18,04: Base size Y (float).
+1C,02: LoopOffset
+1E,02: Bitfield
+20,02: ColLoopOffset
+22,02: TexLoopOffset
+24,01: Bitfield
+  02 - EnableGlobalColAnm
+25,01: TextureAnmKeyNum
+60+: List of texture indexes.
+  These are bytes which are indexes in the TDB1's list of texture IDs.
+
+ESP1 (Extra Shape Arc) section format:
+0C,04: Bitfield
+  00000100 - EnableScale
+  0000C000 - PivotX
+  00030000 - PivotY
+
+SSP1 (Sweep Shape Arc) section format:
+50,1: Texture index.
+  This is an index in the TDB1's list of texture IDs.
+
+ETX1 (Ex Tex Shape Arc) section format:
+2C,01: IndTextureID
+  This is an index in the TDB1's list of texture IDs.
+2D,01: SubTextureID
+
+TDB1 (maybe stands for Texture DataBase?) section format:
+0C+: List of texture IDs (halfwords).
+  The texture ID is an index in the list of TEX1 sections in this JPC file.
+
+After all of the particles are a list of TEX1 sections which contain the actual image data of the particles.
+TEX1 section format:
+00,04: "TEX1"
+04,04: Length of this section in bytes.
+08,04: ???
+0C,14: Filename?
+20,20: BTI header.
+40+: BTI data (image data and maybe palette data).

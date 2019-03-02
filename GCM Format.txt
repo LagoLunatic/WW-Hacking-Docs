@@ -1,0 +1,51 @@
+
+.gcm files are Gamecube DVD image files.
+
+GCM format:
+0,440: Header (boot.bin).
+440,2000: BI2 data.
+2440,(size varies): Apploader.
+
+Header (boot.bin) format:
+000,6: Game ID.
+006,1: Disc number?
+007,1: Revision?
+020,60: Internal game name.
+420,4: Offset to main.dol.
+424,4: Offset to file system table.
+428,4: File system table size.
+
+BI2 data format:
+018,4: Region.
+  0 - Japan
+  1 - USA
+  2 - PAL
+
+Apploader format:
+00,20: Header.
+00,10: Apploader date.
+14,4: Apploader size.
+18,4: Trailer size.
+(Total size of apploader.img: 0x20 for header + apploader size + trailer size.)
+
+File system table format:
+Entry length 0xC.
+00,4: Bitfield:
+  FF000000 - 00 if this entry is a file, or 01 if it's a directory.
+  00FFFFFF - Offset to this entry's name within the name table.
+04,4: File offset within the partition. Or for directories, FST index of the parent directory.
+08,4: File size. Or for directories, FST index of the next entry not in this directory.
+
+File named "opening.bnr": Has the banner. Size: 0x1960.
+Format:
+00,4: "BNR1" (or "BNR2" for a slightly different format for some games).
+04,1C: Padding, all 00s.
+20,1800: Banner image data.
+  The banner is a 96x32 image. Each pixel is a short, which is the RGB5A3 color for that pixel.
+Banner information:
+1820,20: Short game name.
+1840,20: Short game maker name.
+1860,40: Long game name.
+18A0,40: Long game maker name.
+18E0,80: Long game maker name.
+For BNR2, there are 6 banner informations instead of one (for 6 different languages).
