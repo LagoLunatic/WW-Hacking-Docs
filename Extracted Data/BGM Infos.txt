@@ -1,0 +1,176 @@
+Stages:
+BGM ID, scene wave index, 2nd dynamic scene wave index - Stage name
+0000 00 00 - [N/A]
+0006 01 05 - M_NewD2
+0000 01 01 - M_DragB
+0026 03 05 - kindan
+005E 02 05 - ma3room
+0042 17 00 - GanonF
+0042 17 00 - GanonG
+0000 03 02 - kinBOSS
+0007 02 05 - majroom
+0000 07 04 - Mjtower
+0028 06 05 - Siren
+0008 1B 00 - LinkRM
+002C 04 00 - Asoko
+0018 09 00 - Ojhous
+001B 10 00 - Obshop
+002D 12 05 - M_Dai
+0017 05 03 - A_mori
+002A 0E 00 - A_umikz
+0000 00 00 - sea
+0007 02 00 - MajyuE
+0042 17 00 - GanonH
+0042 17 00 - GanonI
+0057 28 00 - Ekaze
+002F 08 05 - kaze
+0000 08 09 - kazeB
+0042 17 00 - GanonL
+0008 09 00 - Opub
+0040 16 00 - Pdrgsh
+0008 0C 00 - Pnezumi
+0008 1A 00 - Kaisen
+0008 0D 00 - Orichh
+0008 1B 00 - Ocmera
+0008 1B 00 - Obombh
+0000 19 00 - Adanmae
+0008 19 00 - Atorizk
+0000 01 05 - M_Dra09
+0043 18 0A - GanonJ
+0000 06 07 - SirenB
+0040 16 00 - Ocrogh
+003F 0F 0C - Omori
+0000 1C 00 - Xboss0
+0057 22 00 - Pjavdou
+0008 09 00 - Omasao
+0008 09 00 - Onobuta
+0057 27 00 - Edaichi
+0000 12 0B - M_DaiB
+0042 17 00 - GanonA
+0130 17 00 - GanonB
+0131 17 00 - GanonC
+0132 17 00 - GanonD
+0133 17 00 - GanonE
+0042 17 00 - GanonF
+0042 17 00 - GanonG
+0056 25 00 - Hyrule
+0035 14 00 - Hyroom
+0000 1D 00 - Xboss1
+0028 06 05 - SirenMB
+0000 0F 0C - Otkura
+0000 1E 00 - Xboss2
+0000 1F 00 - Xboss3
+002D 12 05 - M_DaiMB
+0008 19 00 - Comori
+0026 03 05 - kinMB
+005E 02 05 - ma2room
+0000 07 04 - M2tower
+002F 08 05 - kazeMB
+0058 26 00 - MiniKaz
+0058 26 00 - MiniHyo
+0058 26 00 - TyuTyu
+0058 26 00 - WarpD
+0058 26 00 - ShipD
+0058 26 00 - Cave01
+0058 26 00 - Cave02
+0058 26 00 - Cave03
+0058 26 00 - Cave04
+0058 26 00 - TF_01
+0058 26 00 - TF_02
+0058 26 00 - TF_03
+0053 24 00 - Fairy01
+0053 24 00 - Fairy02
+0053 24 00 - Fairy03
+0053 24 00 - Fairy04
+0053 24 00 - Fairy05
+0058 26 00 - TF_04
+0058 23 0D - PShip
+0000 06 05 - ADMumi
+0008 1B 00 - Nitiyou
+0008 0C 00 - Abesso
+0058 29 00 - Abship
+0035 14 05 - kenroom
+0000 2C 00 - M2ganon
+0000 2A 00 - GanonK
+0000 20 00 - GTower
+0053 24 00 - Fairy06
+0058 26 00 - Cave05
+0058 26 00 - Cave06
+0008 09 00 - Pfigure
+0008 09 00 - figureA
+0008 09 00 - figureB
+0008 09 00 - figureC
+0008 09 00 - figureD
+0008 09 00 - figureE
+0008 09 00 - figureF
+0008 09 00 - figureG
+0018 09 00 - Ojhous2
+0043 18 0A - GanonM
+0042 17 00 - GanonN
+0058 26 00 - Cave09
+0058 26 00 - Cave10
+0058 26 00 - Cave11
+0058 26 00 - Cave07
+0058 26 00 - TF_06
+0058 26 00 - ITest62
+0058 26 00 - ITest63
+0058 26 00 - SubD71
+0058 26 00 - SubD43
+0058 26 00 - SubD42
+0000 00 00 - sea_T
+0000 00 00 - dummy
+0000 00 00 - dummy
+0000 00 00 - [empty string]
+
+Islands:
+BGM ID, scene wave index, 2nd dynamic scene wave index - Island name
+0000 00 00 - [N/A]
+0007 02 0A - Forsaken Fortress
+0000 0A 06 - Star Island
+0000 0A 06 - Northern Fairy Island
+0000 0A 06 - Gale Isle
+0000 0A 06 - Crescent Moon Island
+0000 0A 06 - Seven-Star Isles
+0000 0A 06 - Overlook Island
+0000 0A 06 - Four-Eye Reef
+0000 2B 06 - Mother and Child Isles
+0000 1A 06 - Spectacle Island
+003B 0B 00 - Windfall Island
+0000 0A 06 - Pawprint Isle
+003A 19 06 - Dragon Roost Island
+0000 15 06 - Flight Control Platform
+0000 0A 06 - Western Fairy Island
+0000 0A 06 - Rock Spire Isle
+0000 11 06 - Tingle Island
+0000 21 06 - Northern Triangle Island
+0000 0A 06 - Eastern Fairy Island
+0000 0A 06 - Fire Mountain
+0000 0A 06 - Star Belt Archipelago
+0000 0A 06 - Three-Eye Reef
+0000 0A 06 - Greatfish Isle
+0000 0A 06 - Cyclops Reef
+0000 0A 06 - Six-Eye Reef
+0000 10 06 - Tower of the Gods
+0000 0A 06 - Eastern Triangle Island
+0000 0A 06 - Thorned Fairy Island
+0000 0A 06 - Needle Rock Isle
+0000 0A 06 - Islet of Steel
+0000 0A 06 - Stone Watcher Island
+0000 0A 06 - Southern Triangle Island
+0000 13 06 - Private Oasis
+0000 0A 06 - Bomb Island
+0000 0A 06 - Bird's Peak Rock
+0000 13 06 - Diamond Steppe Island
+0000 0A 06 - Five-Eye Reef
+0000 21 06 - Shark Island
+0000 0A 06 - Southern Fairy Island
+0000 0A 06 - Ice Ring Isle
+0039 0F 00 - Forest Haven
+0000 0A 06 - Cliff Plateau Isles
+0000 0A 06 - Horseshoe Island
+0001 0A 06 - Outset Island
+0000 0A 06 - Headstone Island
+0000 24 06 - Two-Eye Reef
+0000 0A 06 - Angular Isles
+0000 15 06 - Boating Course
+0000 0A 06 - Five-Star Isles

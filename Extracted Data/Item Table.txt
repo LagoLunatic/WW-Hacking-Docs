@@ -1,0 +1,126 @@
+Drop type 0x20:
+   12.50% 10 Arrows (Pickup)
+   12.50% 5 Bombs (Pickup)
+   12.50% Small Magic Jar (Pickup)
+   12.50% Green Rupee
+   12.50% Heart (Pickup)
+   37.50% (Nothing)
+Drop type 0x21:
+   12.50% Heart (Pickup)
+   25.00% Green Rupee
+   62.50% (Nothing)
+Drop type 0x22:
+   37.50% Heart (Pickup)
+   18.75% Green Rupee
+   43.75% (Nothing)
+Drop type 0x23:
+   56.25% Heart (Pickup)
+   18.75% Green Rupee
+   25.00% (Nothing)
+Drop type 0x24:
+   93.75% Heart (Pickup)
+    6.25% Blue Rupee
+Drop type 0x25:
+   62.50% 10 Arrows (Pickup)
+   12.50% 20 Arrows (Pickup)
+   12.50% Small Magic Jar (Pickup)
+   12.50% Large Magic Jar (Pickup)
+Drop type 0x26:
+   50.00% Heart (Pickup)
+   50.00% (Nothing)
+Drop type 0x27:
+   100.00% Heart (Pickup)
+Drop type 0x28:
+   50.00% Green Rupee
+   50.00% (Nothing)
+Drop type 0x29:
+   62.50% Green Rupee
+   25.00% Blue Rupee
+   12.50% Yellow Rupee
+Drop type 0x2A:
+    6.25% Heart (Pickup)
+    6.25% Green Rupee
+   87.50% (Nothing)
+Drop type 0x2B:
+   18.75% Green Rupee
+   81.25% (Nothing)
+Drop type 0x2C:
+   62.50% Green Rupee
+   37.50% (Nothing)
+Drop type 0x2D:
+   18.75% 5 Bombs (Pickup)
+   81.25% (Nothing)
+Drop type 0x2E:
+   18.75% 10 Arrows (Pickup)
+   81.25% (Nothing)
+Drop type 0x2F:
+   18.75% Heart (Pickup)
+   81.25% (Nothing)
+Drop type 0x30:
+    6.25% Red Rupee
+    6.25% Yellow Rupee
+   12.50% Blue Rupee
+   75.00% Green Rupee
+Drop type 0x31:
+    6.25% Heart (Pickup)
+    6.25% 10 Arrows (Pickup)
+    6.25% Small Magic Jar (Pickup)
+    6.25% Green Rupee
+    6.25% 5 Bombs (Pickup)
+   68.75% (Nothing)
+Drop type 0x32:
+   18.75% Small Magic Jar (Pickup)
+   81.25% (Nothing)
+Drop type 0x33:
+    6.25% Purple Rupee
+    6.25% Red Rupee
+    6.25% Yellow Rupee
+   12.50% Blue Rupee
+   68.75% Green Rupee
+Drop type 0x34:
+   18.75% Fairy (Pickup)
+   81.25% (Nothing)
+Drop type 0x35:
+   50.00% 10 Arrows (Pickup)
+   25.00% 20 Arrows (Pickup)
+   18.75% 30 Arrows (Pickup)
+    6.25% (Nothing)
+Drop type 0x36:
+   37.50% 5 Bombs (Pickup)
+   31.25% 10 Bombs (Pickup)
+   18.75% 20 Bombs (Pickup)
+   12.50% 30 Bombs (Pickup)
+Drop type 0x37:
+    6.25% Small Magic Jar (Pickup)
+    6.25% Large Magic Jar (Pickup)
+   87.50% (Nothing)
+Drop type 0x38:
+   62.50% Small Magic Jar (Pickup)
+   37.50% Large Magic Jar (Pickup)
+Drop type 0x39:
+   43.75% Green Rupee
+   25.00% Blue Rupee
+   18.75% Yellow Rupee
+   12.50% Red Rupee
+Drop type 0x3A:
+   12.50% 10 Arrows (Pickup)
+   12.50% 5 Bombs (Pickup)
+   12.50% Small Magic Jar (Pickup)
+   18.75% Green Rupee
+   12.50% Heart (Pickup)
+   12.50% Blue Rupee
+    6.25% Yellow Rupee
+   12.50% Fairy (Pickup)
+Drop type 0x3B:
+    6.25% 10 Arrows (Pickup)
+    6.25% 5 Bombs (Pickup)
+    6.25% Small Magic Jar (Pickup)
+    6.25% Green Rupee
+    6.25% Heart (Pickup)
+   68.75% (Nothing)
+Drop type 0x3C:
+    6.25% 5 Bombs (Pickup)
+   93.75% (Nothing)
+Drop type 0x3D:
+    6.25% 10 Arrows (Pickup)
+   93.75% (Nothing)

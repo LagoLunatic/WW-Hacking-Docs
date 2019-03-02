@@ -1,0 +1,203 @@
+
+Chest opened flags:
+Stage ID: 00
+  00 (Item: Piece of Heart) in sea/Room47
+  01 (Item: Treasure Chart 25) in sea/Room42
+  02 (Item: Red Rupee) in sea/Room49
+  03 (Item: Piece of Heart) in sea/Room29
+  04 (Item: Treasure Chart 10) in sea/Room5
+  05 (Item: Treasure Chart 28) in sea/Room43
+  06 (Item: Piece of Heart) in sea/Room23
+  07 (Item: Treasure Chart 3) in sea/Room41
+  08 (Item: Silver Rupee) in sea/Room13
+  09 (Item: Orange Rupee) in sea/Room13
+  0A (Item: Piece of Heart) in sea/Room11
+  0A (Item: Piece of Heart) in sea/Room11
+  0A (Item: Piece of Heart) in sea/Room11
+  0B (Item: Treasure Chart 21) in sea/Room24
+  0C (Item: Treasure Chart 32) in sea/Room22
+  0D (Item: Treasure Chart 13) in sea/Room46
+  0E (Item: Treasure Chart 19) in sea/Room8
+  0F (Item: Treasure Chart 41) in sea/Room37
+  10 (Item: Skull Hammer) in sea/Room1
+  11 (Item: Treasure Chart 26) in sea/Room25
+  12 (Item: Treasure Chart 36) in sea/Room40
+  13 (Item: Treasure Chart 27) in sea/Room33
+  14 (Item: Piece of Heart) in sea/Room31
+  15 (Item: Boko Baba Seed) in sea/Room48
+  16 (Item: Treasure Chart 16) in sea/Room6
+  17 (Item: Treasure Chart 40) in sea/Room39
+Stage ID: 01
+  00 (Item: Golden Feather) in sea/Room20
+  01 (Item: Yellow Rupee) in sea/Room20
+  02 (Item: Golden Feather) in sea/Room49
+  03 (Item: Red Rupee) in sea/Room34
+  04 (Item: Golden Feather) in sea/Room2
+  05 (Item: Red Rupee) in sea/Room12
+  06 (Item: Skull Necklace) in sea/Room15
+  07 (Item: Golden Feather) in sea/Room6
+  08 (Item: Red Rupee) in sea/Room6
+  0A (Item: Boko Baba Seed) in sea/Room19
+  0B (Item: Red Rupee) in sea/Room21
+  0C (Item: Golden Feather) in sea/Room24
+  0D (Item: Skull Necklace) in sea/Room25
+  0E (Item: Golden Feather) in sea/Room28
+  0F (Item: Boko Baba Seed) in sea/Room28
+  10 (Item: Skull Necklace) in sea/Room30
+  11 (Item: Skull Necklace) in sea/Room39
+  12 (Item: Red Rupee) in sea/Room31
+  13 (Item: Boko Baba Seed) in sea/Room42
+  14 (Item: Golden Feather) in sea/Room37
+  15 (Item: Purple Rupee) in sea/Room46
+  17 (Item: Orange Rupee) in sea/Room16
+  18 (Item: Golden Feather) in sea/Room16
+  19 (Item: Red Rupee) in sea/Room16
+  1A (Item: Skull Necklace) in sea/Room43
+  1B (Item: Golden Feather) in sea/Room43
+Stage ID: 02
+  00 (Item: Dungeon Map) in ma2room/Stage
+  00 (Item: Dungeon Map) in ma3room/Stage
+  00 (Item: Dungeon Map) in majroom/Stage
+  01 (Item: Yellow Rupee) in ma2room/Stage
+  01 (Item: Yellow Rupee) in ma3room/Stage
+  01 (Item: Yellow Rupee) in majroom/Stage
+  02 (Item: Compass) in ma2room/Stage
+  02 (Item: Compass) in ma3room/Stage
+  02 (Item: Compass) in majroom/Stage
+  03 (Item: Piece of Heart) in ma2room/Stage
+  03 (Item: Piece of Heart) in ma3room/Stage
+  03 (Item: Piece of Heart) in majroom/Stage
+Stage ID: 03
+  00 (Item: Small Key) in M_NewD2/Stage
+  01 (Item: Small Key) in M_NewD2/Stage
+  02 (Item: Dungeon Map) in M_NewD2/Stage
+  03 (Item: Small Key) in M_NewD2/Stage
+  04 (Item: Joy Pendant) in M_NewD2/Stage
+  06 (Item: Treasure Chart 39) in M_NewD2/Stage
+  07 (Item: Joy Pendant) in M_NewD2/Stage
+  0A (Item: Yellow Rupee) in M_NewD2/Stage
+  0B (Item: Knight's Crest) in M_NewD2/Stage
+  0C (Item: Big Key) in M_NewD2/Stage
+  0D (Item: Treasure Chart 11) in M_NewD2/Stage
+  0E (Item: Compass) in M_NewD2/Stage
+  0F (Item: Dragon Tingle Statue) in M_NewD2/Stage
+  10 (Item: Yellow Rupee) in M_NewD2/Stage
+Stage ID: 04
+  00 (Item: Dungeon Map) in kindan/Stage
+  01 (Item: Knight's Crest) in kindan/Stage
+  02 (Item: Treasure Chart 1) in kindan/Stage
+  03 (Item: Joy Pendant) in kindan/Stage
+  04 (Item: Big Key) in kindan/Stage
+  05 (Item: Small Key) in kindan/Stage
+  06 (Item: Red Rupee) in kindan/Stage
+  07 (Item: Compass) in kindan/Stage
+  08 (Item: Yellow Rupee) in kindan/Stage
+  09 (Item: Treasure Chart 15) in kindan/Stage
+  0A (Item: Boomerang) in kinMB/Stage
+  0A (Item: INVALID ID 0xFF) in kindan/Stage
+  0B (Item: Yellow Rupee) in kindan/Stage
+  0C (Item: Joy Pendant) in kindan/Stage
+  0E (Item: Joy Pendant) in kindan/Stage
+  0F (Item: Forbidden Tingle Statue) in kindan/Stage
+Stage ID: 05
+  00 (Item: Big Key) in Siren/Stage
+  01 (Item: Small Key) in Siren/Stage
+  02 (Item: Dungeon Map) in Siren/Stage
+  03 (Item: Compass) in Siren/Stage
+  04 (Item: Small Key) in Siren/Stage
+  05 (Item: Hero's Bow) in Siren/Stage
+  05 (Item: Hero's Bow) in SirenMB/Stage
+  06 (Item: Joy Pendant) in Siren/Stage
+  08 (Item: Treasure Chart 30) in Siren/Stage
+  09 (Item: Treasure Chart 6) in Siren/Stage
+  0A (Item: Joy Pendant) in Siren/Stage
+  0B (Item: Joy Pendant) in Siren/Stage
+  0F (Item: Goddess Tingle Statue) in Siren/Stage
+Stage ID: 06
+  00 (Item: Dungeon Map) in M_Dai/Stage
+  01 (Item: Small Key) in M_Dai/Stage
+  02 (Item: Compass) in M_Dai/Stage
+  03 (Item: Joy Pendant) in M_Dai/Stage
+  04 (Item: Small Key) in M_Dai/Stage
+  05 (Item: Red Rupee) in M_Dai/Stage
+  06 (Item: Big Key) in M_Dai/Stage
+  07 (Item: INVALID ID 0xFF) in M_Dai/Stage
+  07 (Item: Mirror Shield) in M_DaiMB/Stage
+  09 (Item: Purple Rupee) in M_Dai/Stage
+  0A (Item: Joy Pendant) in M_Dai/Stage
+  0B (Item: Treasure Chart 20) in M_Dai/Stage
+  0C (Item: Joy Pendant) in M_Dai/Stage
+  0E (Item: Treasure Chart 12) in M_Dai/Stage
+  0F (Item: Earth Tingle Statue) in M_Dai/Stage
+Stage ID: 07
+  00 (Item: Orange Rupee) in kaze/Stage
+  02 (Item: Joy Pendant) in kaze/Stage
+  03 (Item: Joy Pendant) in kaze/Stage
+  04 (Item: Small Key) in kaze/Stage
+  05 (Item: INVALID ID 0xFF) in kaze/Stage
+  05 (Item: Hookshot) in kazeMB/Stage
+  07 (Item: Joy Pendant) in kaze/Stage
+  08 (Item: Big Key) in kaze/Stage
+  09 (Item: Small Key) in kaze/Stage
+  0A (Item: Treasure Chart 35) in kaze/Stage
+  0B (Item: Dungeon Map) in kaze/Stage
+  0C (Item: Treasure Chart 5) in kaze/Stage
+  0D (Item: Compass) in kaze/Stage
+  0F (Item: Wind Tingle Statue) in kaze/Stage
+Stage ID: 08
+  00 (Item: Light Arrow) in GanonJ/Stage
+Stage ID: 09
+Stage ID: 0A
+  00 (Item: Piece of Heart) in Abship/Room1
+  01 (Item: Piece of Heart) in Abship/Room0
+  02 (Item: Empty Bottle) in Abship/Room2
+  03 (Item: Platform Chart) in Abship/Room6
+  04 (Item: Treasure Chart 14) in Abship/Room5
+  05 (Item: Treasure Chart 14) in Abship/Room3
+  06 (Item: Treasure Chart 22) in Abship/Room4
+  07 (Item: Treasure Chart 9) in Abship/Room7
+  15 (Item: Triforce Chart 4) in PShip/Stage
+  16 (Item: Triforce Chart 4) in PShip/Stage
+  17 (Item: Triforce Chart 4) in PShip/Stage
+Stage ID: 0B
+  00 (Item: Picto Box) in Pnezumi/Stage
+  01 (Item: Treasure Chart 29) in Ocmera/Stage
+  02 (Item: Purple Rupee) in Ocmera/Stage
+  03 (Item: Red Rupee) in Orichh/Room0
+  04 (Item: Red Rupee) in Omasao/Stage
+  05 (Item: Orange Rupee) in LinkUG/Stage
+Stage ID: 0C
+  00 (Item: Power Bracelets) in MiniKaz/Stage
+  01 (Item: Iron Boots) in MiniHyo/Stage
+  02 (Item: Red Rupee) in TyuTyu/Stage
+  03 (Item: Ghost Ship Chart) in WarpD/Stage
+  04 (Item: Triforce Chart 1) in ShipD/Stage
+  05 (Item: Piece of Heart) in Cave01/Stage
+  06 (Item: Piece of Heart) in Cave02/Stage
+  07 (Item: Joy Pendant) in Cave03/Stage
+  08 (Item: Treasure Chart 37) in Cave04/Stage
+  0A (Item: Triforce Chart 7) in TF_01/Stage
+  0B (Item: Triforce Chart 8) in TF_02/Stage
+  10 (Item: Triforce Chart 3) in TF_03/Stage
+  11 (Item: Triforce Chart 2) in TF_04/Stage
+  12 (Item: Triforce Chart 4) in PShip2/Stage
+  12 (Item: Triforce Chart 4) in PShip3/Stage
+  15 (Item: Orange Rupee) in ITest62/Stage
+  16 (Item: Orange Rupee) in TF_04/Stage
+  17 (Item: Joy Pendant) in WarpD/Stage
+  18 (Item: Purple Rupee) in TyuTyu/Stage
+  19 (Item: Joy Pendant) in TyuTyu/Stage
+  1A (Item: Piece of Heart) in TyuTyu/Stage
+Stage ID: 0D
+  00 (Item: Purple Rupee) in TF_06/Stage
+  01 (Item: Treasure Chart 8) in Cave05/Stage
+  02 (Item: Silver Rupee) in Cave07/Stage
+  04 (Item: Spoils Bag) in Asoko/Stage
+  05 (Item: Bombs) in Asoko/Stage
+  05 (Item: Bombs) in Asoko/Stage
+  06 (Item: Silver Rupee) in SubD43/Stage
+  09 (Item: Orange Rupee) in SubD42/Stage
+  0B (Item: Triforce Chart 6) in Cave09/Room20
+  0C (Item: Piece of Heart) in Cave10/Room20
+  0F (Item: Submarine Chart) in SubD71/Stage
+  16 (Item: Silver Rupee) in ITest63/Stage

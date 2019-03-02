@@ -1,0 +1,47 @@
+Stages with each stage ID:
+Stage ID: 00
+  A_nami
+  E3ROOP
+  sea_E
+  sea_T
+Stage ID: 07
+  Cave08
+Stage ID: 0A
+  SubD45
+Stage ID: 0B
+  Ocean
+  tincle
+Stage ID: 0C
+  Cave06
+  I_SubAN
+  SubD44
+Stage ID: 0D
+  ITest61
+  SubD51
+  TF_05
+  TF_07
+Stage ID: 0F
+  A_R00
+  Amos_T
+  Ebesso
+  I_TestM
+  I_TestR
+  KATA_HB
+  KATA_RM
+  K_Test2
+  K_Test3
+  K_Test4
+  K_Test5
+  K_Test6
+  K_Test8
+  K_Test9
+  K_Testa
+  K_Testb
+  K_Testc
+  K_Testd
+  K_Teste
+  Msmoke
+  Mukao
+  TEST
+  VrTest
+  kazan

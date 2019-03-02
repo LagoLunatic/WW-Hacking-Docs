@@ -1,0 +1,127 @@
+Stages with each stage ID:
+Stage ID: 00
+  ADMumi
+  ENDumi
+  sea
+Stage ID: 02
+  M2ganon
+  M2tower
+  MajyuE
+  Mjtower
+  ma2room
+  ma3room
+  majroom
+Stage ID: 03
+  M_Dra09
+  M_DragB
+  M_NewD2
+Stage ID: 04
+  kinBOSS
+  kinMB
+  kindan
+Stage ID: 05
+  Siren
+  SirenB
+  SirenMB
+Stage ID: 06
+  M_Dai
+  M_DaiB
+  M_DaiMB
+Stage ID: 07
+  kaze
+  kazeB
+  kazeMB
+Stage ID: 08
+  GTower
+  GanonA
+  GanonB
+  GanonC
+  GanonD
+  GanonE
+  GanonJ
+  GanonK
+  GanonL
+  GanonM
+  GanonN
+  Xboss0
+  Xboss1
+  Xboss2
+  Xboss3
+Stage ID: 09
+  Hyroom
+  Hyrule
+  kenroom
+Stage ID: 0A
+  A_umikz
+  Abship
+  Obshop
+  PShip
+Stage ID: 0B
+  A_mori
+  Abesso
+  Adanmae
+  Atorizk
+  Comori
+  Edaichi
+  Ekaze
+  Kaisen
+  LinkRM
+  LinkUG
+  Nitiyou
+  Obombh
+  Ocmera
+  Ocrogh
+  Ojhous2
+  Ojhous
+  Omasao
+  Omori
+  Onobuta
+  Opub
+  Orichh
+  Otkura
+  Pdrgsh
+  Pfigure
+  Pjavdou
+  Pnezumi
+  figureA
+  figureB
+  figureC
+  figureD
+  figureE
+  figureF
+  figureG
+Stage ID: 0C
+  Cave01
+  Cave02
+  Cave03
+  Cave04
+  Fairy01
+  Fairy02
+  Fairy03
+  Fairy04
+  Fairy05
+  Fairy06
+  ITest62
+  MiniHyo
+  MiniKaz
+  PShip2
+  PShip3
+  ShipD
+  TF_01
+  TF_02
+  TF_03
+  TF_04
+  TyuTyu
+  WarpD
+Stage ID: 0D
+  Asoko
+  Cave05
+  Cave07
+  Cave09
+  Cave10
+  Cave11
+  ITest63
+  SubD42
+  SubD43
+  SubD71
+  TF_06

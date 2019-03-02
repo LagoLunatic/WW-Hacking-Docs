@@ -1,0 +1,54 @@
+
+Chest opened flags:
+Stage ID: 07
+  00 (Item: Dungeon Map) in Cave08/Stage
+  02 (Item: Joy Pendant) in Cave08/Stage
+  03 (Item: Joy Pendant) in Cave08/Stage
+  04 (Item: Small Key) in Cave08/Stage
+  07 (Item: Joy Pendant) in Cave08/Stage
+  08 (Item: Big Key) in Cave08/Stage
+  09 (Item: Small Key) in Cave08/Stage
+  0A (Item: Treasure Chart 35) in Cave08/Stage
+  0B (Item: Compass) in Cave08/Stage
+  0C (Item: Treasure Chart 5) in Cave08/Stage
+  0D (Item: Purple Rupee) in Cave08/Stage
+Stage ID: 0A
+  15 (Item: Purple Rupee) in SubD45/Stage
+  16 (Item: Orange Rupee) in SubD45/Stage
+  17 (Item: Triforce Chart 4) in SubD45/Stage
+Stage ID: 0C
+  00 (Item: Power Bracelets) in I_SubAN/Stage
+  07 (Item: Piece of Heart) in I_SubAN/Stage
+  0A (Item: Triforce Chart 7) in SubD44/Stage
+  12 (Item: Piece of Heart) in Cave06/Stage
+Stage ID: 0D
+  00 (Item: Green Rupee) in ITest61/Stage
+  00 (Item: Orange Rupee) in TF_05/Stage
+  03 (Item: Silver Rupee) in TF_07/Stage
+  05 (Item: Orange Rupee) in SubD51/Stage
+Stage ID: 0F
+  00 (Item: Piece of Heart) in Amos_T/Stage
+  00 (Item: Piece of Heart) in I_TestM/Stage
+  00 (Item: Green Rupee) in K_Test2/Stage
+  00 (Item: Small Key) in K_Test5/Stage
+  00 (Item: Small Key) in K_Test9/Stage
+  00 (Item: Yellow Rupee) in K_Testa/Stage
+  01 (Item: Green Rupee) in K_Test2/Stage
+  02 (Item: Green Rupee) in K_Test2/Stage
+  0D (Item: Green Rupee) in K_Test2/Stage
+  10 (Item: Green Rupee) in K_Test2/Stage
+  11 (Item: Green Rupee) in K_Test2/Stage
+  12 (Item: Green Rupee) in K_Test2/Stage
+  13 (Item: Green Rupee) in K_Test2/Stage
+  14 (Item: Green Rupee) in K_Test2/Stage
+  15 (Item: Green Rupee) in K_Test2/Stage
+  16 (Item: Green Rupee) in K_Test2/Stage
+  17 (Item: Green Rupee) in K_Test2/Stage
+  18 (Item: Green Rupee) in K_Test2/Stage
+  19 (Item: Green Rupee) in K_Test2/Stage
+  1A (Item: Green Rupee) in K_Test2/Stage
+  1B (Item: Green Rupee) in K_Test2/Stage
+  1C (Item: Green Rupee) in K_Test2/Stage
+  1D (Item: Green Rupee) in K_Test2/Stage
+  1E (Item: Green Rupee) in K_Test2/Stage
+  1F (Item: Green Rupee) in K_Test2/Stage

@@ -1,0 +1,26 @@
+
+Item flags:
+Stage ID: 00
+  01 (Item: Blue Rupee) in DmSpot0/Room0
+  02 (Item: Blue Rupee) in DmSpot0/Room0
+  03 (Item: Green Rupee) in DmSpot0/Room0
+  04 (Item: Green Rupee) in DmSpot0/Room0
+  05 (Item: Green Rupee) in DmSpot0/Room0
+  06 (Item: Pot drop type 0x20) in DmSpot0/Room0
+  07 (Item: Pot drop type 0x20) in DmSpot0/Room0
+  16 (Item: Pot drop type 0x20) in DmSpot0/Room0
+  17 (Item: Pot drop type 0x20) in DmSpot0/Room0
+  18 (Item: Pot drop type 0x20) in DmSpot0/Room0
+  19 (Item: Pot drop type 0x20) in DmSpot0/Room0
+  1A (Item: Pot drop type 0x20) in DmSpot0/Room0
+  1C (Item: Pot drop type 0x20) in DmSpot0/Room0
+  1D (Item: Pot drop type 0x20) in DmSpot0/Room0
+  1E (Item: Pot drop type 0x20) in DmSpot0/Room0
+Stage ID: 0F
+  00 (Item: Green Rupee) in K_Test5/Room0
+  02 (Item: Green Rupee) in K_Test2/Room0
+  32 (Item: Heart (Pickup)) in K_Test2/Room0
+  33 (Item: Piece of Heart) in K_Test2/Room0
+  34 (Item: Heart Container) in K_Test2/Room0
+  35 (Item: Blue Rupee) in K_Test2/Room0
+  35 (Item: Pot drop type 0x2C) in K_Test2/Room0

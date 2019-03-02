@@ -1,0 +1,199 @@
+
+Item flags:
+Stage ID: 00
+  06 (Item: Red Rupee) in sea/Room11
+  07 (Item: Yellow Rupee) in sea/Room44
+  08 (Item: Piece of Heart) in sea/Room45
+  09 (Item: Blue Rupee) in sea/Room11
+  0B (Item: Red Rupee) in sea/Room13
+  0C (Item: Red Rupee) in sea/Room11
+  0D (Item: Blue Rupee) in sea/Room13
+  0F (Item: Green Rupee) in sea/Room13
+  0F (Item: Green Rupee) in sea/Room13
+  0F (Item: Heart (Pickup)) in sea/Room13
+  0F (Item: Green Rupee) in sea/Room13
+  0F (Item: Green Rupee) in sea/Room13
+  0F (Item: Green Rupee) in sea/Room13
+  16 (Item: Blue Rupee) in sea/Room44
+  17 (Item: Yellow Rupee) in sea/Room44
+  18 (Item: Blue Rupee) in sea/Room44
+  19 (Item: Blue Rupee) in sea/Room44
+  1A (Item: Red Rupee) in sea/Room44
+  1B (Item: Blue Rupee) in sea/Room44
+  1B (Item: Green Rupee) in sea/Room44
+  1C (Item: Yellow Rupee) in sea/Room44
+  1E (Item: Pot drop type 0x39) in sea/Room11
+Stage ID: 02
+  00 (Item: Red Rupee) in MajyuE/Room0
+  01 (Item: Red Rupee) in MajyuE/Room0
+  40 (Item: Pot drop type 0x29) in ma2room/Room0
+  40 (Item: Pot drop type 0x20) in ma3room/Room0
+  40 (Item: Pot drop type 0x29) in majroom/Room0
+  41 (Item: Blue Rupee) in ma2room/Room1
+  41 (Item: Pot drop type 0x2B) in ma2room/Room1
+  41 (Item: Pot drop type 0x3F) in ma3room/Room1
+  41 (Item: Pot drop type 0x20) in ma3room/Room1
+  41 (Item: Blue Rupee) in majroom/Room1
+  41 (Item: Pot drop type 0x2B) in majroom/Room1
+  42 (Item: Pot drop type 0x38) in ma2room/Room2
+  42 (Item: Pot drop type 0x20) in ma3room/Room2
+  42 (Item: Heart (Pickup)) in majroom/Room2
+  42 (Item: Heart (Pickup)) in majroom/Room2
+  43 (Item: Heart (Pickup)) in ma2room/Room2
+Stage ID: 03
+  00 (Item: Joy Pendant) in M_NewD2/Room6
+  01 (Item: Joy Pendant) in M_NewD2/Room13
+  03 (Item: Small Key) in M_NewD2/Room3
+  06 (Item: Purple Rupee) in M_NewD2/Room0
+  06 (Item: Joy Pendant) in M_NewD2/Room10
+  40 (Item: Pot drop type 0x20) in M_NewD2/Room0
+  40 (Item: Blue Rupee) in M_NewD2/Room3
+  40 (Item: Pot drop type 0x20) in M_NewD2/Room4
+  40 (Item: Pot drop type 0x20) in M_NewD2/Room6
+  40 (Item: Heart (Pickup)) in M_NewD2/Room11
+  41 (Item: Heart (Pickup)) in M_NewD2/Room4
+  41 (Item: Pot drop type 0x20) in M_NewD2/Room6
+  41 (Item: Heart (Pickup)) in M_NewD2/Room11
+  42 (Item: Heart (Pickup)) in M_NewD2/Room4
+  42 (Item: Heart (Pickup)) in M_NewD2/Room6
+  43 (Item: Heart (Pickup)) in M_NewD2/Room0
+  43 (Item: Pot drop type 0x20) in M_NewD2/Room4
+  43 (Item: Pot drop type 0x20) in M_NewD2/Room6
+  43 (Item: Yellow Rupee) in M_NewD2/Room14
+  44 (Item: Green Rupee) in M_NewD2/Room3
+  44 (Item: Pot drop type 0x20) in M_NewD2/Room6
+  44 (Item: Yellow Rupee) in M_NewD2/Room14
+  45 (Item: Heart (Pickup)) in M_NewD2/Room0
+  45 (Item: Heart (Pickup)) in M_NewD2/Room3
+  45 (Item: Pot drop type 0x20) in M_NewD2/Room6
+  45 (Item: Yellow Rupee) in M_NewD2/Room14
+  45 (Item: Green Rupee) in M_NewD2/Room14
+  45 (Item: Green Rupee) in M_NewD2/Room14
+  45 (Item: Green Rupee) in M_NewD2/Room14
+  45 (Item: Blue Rupee) in M_NewD2/Room14
+  45 (Item: Blue Rupee) in M_NewD2/Room14
+  45 (Item: Green Rupee) in M_NewD2/Room14
+  46 (Item: Pot drop type 0x20) in M_NewD2/Room0
+  46 (Item: Pot drop type 0x20) in M_NewD2/Room6
+  47 (Item: Heart (Pickup)) in M_NewD2/Room0
+  47 (Item: Pot drop type 0x20) in M_NewD2/Room6
+  48 (Item: Pot drop type 0x20) in M_NewD2/Room6
+  49 (Item: Pot drop type 0x20) in M_NewD2/Room6
+  4A (Item: Pot drop type 0x20) in M_NewD2/Room6
+Stage ID: 04
+  00 (Item: Purple Rupee) in kindan/Room3
+  01 (Item: Joy Pendant) in kindan/Room1
+  04 (Item: Green Rupee) in kinMB/Room10
+  04 (Item: Green Rupee) in kinMB/Room10
+  04 (Item: Green Rupee) in kinMB/Room10
+  04 (Item: Green Rupee) in kinMB/Room10
+  04 (Item: Green Rupee) in kinMB/Room10
+  04 (Item: Green Rupee) in kinMB/Room10
+  04 (Item: Green Rupee) in kinMB/Room10
+  04 (Item: Green Rupee) in kinMB/Room10
+  04 (Item: Blue Rupee) in kindan/Room5
+  04 (Item: Green Rupee) in kindan/Room5
+  04 (Item: Green Rupee) in kindan/Room5
+  04 (Item: Green Rupee) in kindan/Room5
+  04 (Item: Green Rupee) in kindan/Room5
+Stage ID: 05
+  00 (Item: Joy Pendant) in Siren/Room3
+  01 (Item: Joy Pendant) in Siren/Room17
+  04 (Item: Purple Rupee) in Siren/Room7
+  40 (Item: 5 Bombs (Pickup)) in Siren/Room0
+  40 (Item: 5 Bombs (Pickup)) in Siren/Room0
+  40 (Item: 5 Bombs (Pickup)) in Siren/Room3
+  41 (Item: 5 Bombs (Pickup)) in Siren/Room3
+  41 (Item: 5 Bombs (Pickup)) in Siren/Room3
+Stage ID: 06
+  00 (Item: Joy Pendant) in M_Dai/Room2
+  01 (Item: Joy Pendant) in M_Dai/Room13
+  06 (Item: Blue Rupee) in M_Dai/Room7
+  0D (Item: Yellow Rupee) in M_Dai/Room8
+  0E (Item: Small Key) in M_Dai/Room8
+  17 (Item: Blue Rupee) in M_Dai/Room7
+  18 (Item: Yellow Rupee) in M_Dai/Room7
+  19 (Item: Blue Rupee) in M_Dai/Room7
+  1A (Item: Yellow Rupee) in M_Dai/Room7
+  1B (Item: Red Rupee) in M_Dai/Room7
+  1C (Item: Yellow Rupee) in M_Dai/Room7
+  1D (Item: Blue Rupee) in M_Dai/Room7
+  1E (Item: Yellow Rupee) in M_Dai/Room7
+  1F (Item: Blue Rupee) in M_Dai/Room7
+  40 (Item: Large Magic Jar (Pickup)) in M_Dai/Room10
+  41 (Item: Heart (Pickup)) in M_Dai/Room14
+  42 (Item: Yellow Rupee) in M_Dai/Room14
+  43 (Item: Blue Rupee) in M_Dai/Room14
+  44 (Item: Large Magic Jar (Pickup)) in M_Dai/Room14
+  45 (Item: Pot drop type 0x2C) in M_Dai/Room16
+  46 (Item: Pot drop type 0x30) in M_Dai/Room16
+  47 (Item: Pot drop type 0x2C) in M_Dai/Room16
+  48 (Item: Pot drop type 0x33) in M_Dai/Room16
+  49 (Item: Blue Rupee) in M_Dai/Room2
+  4A (Item: Large Magic Jar (Pickup)) in M_Dai/Room2
+  4B (Item: Large Magic Jar (Pickup)) in M_Dai/Room5
+  4C (Item: Large Magic Jar (Pickup)) in M_Dai/Room13
+  4D (Item: Yellow Rupee) in M_Dai/Room13
+  4E (Item: Pot drop type 0x30) in M_Dai/Room15
+Stage ID: 07
+  0F (Item: Blue Rupee) in kaze/Room5
+  10 (Item: Blue Rupee) in kaze/Room5
+  11 (Item: Blue Rupee) in kaze/Room5
+  40 (Item: Pot drop type 0x30) in kaze/Room11
+  41 (Item: Pot drop type 0x34) in kaze/Room12
+  42 (Item: Pot drop type 0x30) in kaze/Room12
+  43 (Item: Pot drop type 0x32) in kaze/Room12
+  44 (Item: Pot drop type 0x2C) in kaze/Room12
+  45 (Item: Pot drop type 0x2F) in kaze/Room12
+Stage ID: 08
+Stage ID: 09
+Stage ID: 0A
+Stage ID: 0B
+  03 (Item: Pot drop type 0x2B) in Ocmera/Room0
+  04 (Item: Pot drop type 0x2B) in Ocmera/Room0
+  05 (Item: Pot drop type 0x2C) in Ocmera/Room0
+  06 (Item: Pot drop type 0x31) in Ocmera/Room0
+  0A (Item: Pot drop type 0x39) in Obombh/Room0
+  0A (Item: Pot drop type 0x2C) in Obombh/Room0
+  0B (Item: Pot drop type 0x2C) in Obombh/Room0
+  0C (Item: Pot drop type 0x2C) in Obombh/Room0
+  0D (Item: Red Rupee) in A_mori/Room0
+  0E (Item: Blue Rupee) in Pnezumi/Room0
+  0F (Item: Blue Rupee) in Pnezumi/Room0
+  10 (Item: Blue Rupee) in Pnezumi/Room0
+  11 (Item: Blue Rupee) in Pnezumi/Room0
+  12 (Item: Yellow Rupee) in Pnezumi/Room0
+  13 (Item: Pot drop type 0x2B) in Obombh/Room0
+  14 (Item: Pot drop type 0x2B) in Obombh/Room0
+  15 (Item: Pot drop type 0x39) in Obombh/Room0
+  15 (Item: Pot drop type 0x2C) in Obombh/Room0
+  15 (Item: Pot drop type 0x2C) in Obombh/Room0
+  16 (Item: Yellow Rupee) in Kaisen/Room0
+  17 (Item: Yellow Rupee) in Kaisen/Room0
+  18 (Item: Yellow Rupee) in Kaisen/Room0
+  1A (Item: Blue Rupee) in Pdrgsh/Room0
+  1B (Item: Green Rupee) in Pdrgsh/Room0
+  1C (Item: Pot drop type 0x30) in Abesso/Room0
+  1D (Item: Pot drop type 0x30) in Abesso/Room0
+  1E (Item: Pot drop type 0x33) in Abesso/Room0
+  1F (Item: Pot drop type 0x30) in Abesso/Room0
+Stage ID: 0C
+  0D (Item: Pot drop type 0x30) in TF_04/Room0
+  0E (Item: Pot drop type 0x30) in TF_04/Room0
+  40 (Item: Pot drop type 0x2C) in TF_01/Room6
+  40 (Item: Pot drop type 0x30) in TF_02/Room6
+  41 (Item: Pot drop type 0x30) in TF_01/Room6
+  41 (Item: Pot drop type 0x2C) in TF_02/Room6
+Stage ID: 0D
+  40 (Item: Green Rupee) in Asoko/Room0
+  40 (Item: Green Rupee) in Asoko/Room0
+  41 (Item: Green Rupee) in Asoko/Room0
+  41 (Item: Green Rupee) in Asoko/Room0
+  42 (Item: Green Rupee) in Asoko/Room0
+  42 (Item: Green Rupee) in Asoko/Room0
+  43 (Item: Green Rupee) in Asoko/Room0
+  43 (Item: Green Rupee) in Asoko/Room0
+  44 (Item: Pot drop type 0x20) in Asoko/Room0
+  44 (Item: Pot drop type 0x20) in Asoko/Room0
+  45 (Item: Pot drop type 0x20) in Asoko/Room0
+  45 (Item: Pot drop type 0x20) in Asoko/Room0
