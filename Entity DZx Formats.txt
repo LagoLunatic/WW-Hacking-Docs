@@ -46,27 +46,28 @@ For entities that have parameters, it also documents their parameters and the co
 
 ### TRES:
 Treasure chests. (d_a_tbox)
-  params & 00F00000 - Chest type.
-  params & 000FF000 - Switch index for this chest having appeared with a fading in animation.
-    If this is FF, the chest is just there from the beginning, it doesn't need to appear.
+  params & 00F00000 - Chest appearance type.
+    0 - Light wood
+    1 - Dark wood
+    2 - Metal
+    3 - Big key
+  params & 000FF000 - Switch index for this chest having appeared/become openable.
+    If this is FF, the chest is there and openable from the beginning, without a switch needing to be set.
   params & 00000F80 - Chest open flag for having opened this chest.
-  params & 0000007F - Affects how this chest behaves.
+  params & 0000007F - Chest behavior type.
     0 - Normal chest with no special behavior.
-    1 - 
+    1 - Only appears once a switch is set.
     2 - Only appears once all enemies in the room are dead.
-    3 - 
+    3 - Chest cannot be opened until a switch is set. (Used for the chests in FW that have eye flowers on them.)
     4 - Chest is transparent and cannot be opened. It will become fully visible and openable once a certain switch is set.
-    5 - When this chest is created, it teleports downwards onto the raft below it, and follows the raft as it bobs up and down.
-    6 - 
+    5 - When this chest is created, it teleports downwards onto whatever is below it (can be an actor). If the thing below it moves up and down (like a raft) the chest will follow, and if the thing below it is destroyed (like a boulder) the chest will fall to the ground.
+    6 - Chest is invisible, but there is a triforce emblem on the ground below it. The chest will appear once a certain switch is set.
     7 - Consider this chest's open flag to be in stage ID 1 instead of the actual stage ID of the current stage.
-    8 - Consider this chest's open flag to be in stage ID 1 instead of the actual stage ID of the current stage.
+    8 - Only appears once a switch is set. Also consider this chest's open flag to be in stage ID 1 instead of the actual stage ID of the current stage.
   auxilary_param & 0x003F - Room number.
   auxilary_param & 0xFFC0 - Unused.
   auxilary_param_2 & 0x00FF - Switch index to set when opening this chest, or 0xFF for none.
   auxilary_param_2 & 0xFF00 - Item ID in this chest.
-  Examples:
-    FF133602 - chest in tall basement room of WT (invisible)
-    FF15D504 - windfall transparent chest
 
 ### ACTR:
 NpcSo: Fishman. (d_a_npc_so)
@@ -159,7 +160,7 @@ Ecube: Pushable/pullable cube. (d_a_obj_movebox)
   Example params:
   8C004500 - both Ecubes at start of dragon roost island
   8C00FF00 - all Ecubes inside angular isles
-kotubo/ootubo1/Odokuro: Pot/skull. (d_a_tsubo)
+kotubo, ootubo1, Odokuro: Pot/skull. (d_a_tsubo)
   params & 0x0000003F - Affects the item to spawn.
     00-1F mean to spawn that item ID directly.
     35 means choose (randomly?) from the pot item table.
@@ -273,15 +274,7 @@ Homen2: Statue face with a hookshot target on it. (d_a_obj_homen)
   993CA17F
   9A3EC17F
   9B0FF106
-agbTBOX: Trigger for a Tingle Chest to appear. (d_a_agbsw0)
-agbA, agbAT, agbA2, agbF, agbF2, agbMARK, agbMW, agbCSW, agbR, agbB, agbD, agbFA: Other Tingle Tuner-related triggers. (d_a_agbsw0)
-  params & 0x0000FFFF - ?
-  params & 0x00FF0000 - Switch index to set when a Tingle bomb is used on this object.
-    The chest then has an appear condition set up so that it appears when this same switch is set.
-  params & 0xFF000000 - Switch index for ...?
-  auxilary_param & 0xFFFF - Type of trigger maybe? 9/A/B/C/D for the 5 types of tingle statues?
-  auxilary_param_2 & 0x00FF - 
-c_green/c_red/c_blue/c_black/c_kiiro: Blue/Green/Yellow/Red ChuChu. (d_a_cc)
+c_green, c_red, c_blue, c_black, c_kiiro: ChuChu. (d_a_cc)
   params & 0x000000FF - ?
     00 - Normal.
     03 - Stays permanently dead...? Like it has to use the switch index below...?
@@ -527,6 +520,10 @@ Puti: Miniblin. (d_a_pt)
     829DFFF0
     9497FFFF
     9396FFFF
+BigElf: Great Fairy. (d_a_bigelf)
+  params & 0x000000FF - Type. Which specific Great Fairy this is.
+  params & 0x0000FF00 - "Swbit"
+  params & 0x00FF0000 - "Swbit2"
 
 ### SCOB:
 Salvage: Main salvages that require a chart to see.
@@ -567,6 +564,14 @@ TagHt, TagHt2: Trigger region for a Pirate's Charm hint. (d_a_tag_hint)
   params & 0x000000C0 - "Type2"?
   auxilary_param - Message ID of the text to show.
   auxilary_param_2 - Event flag?
+agbTBOX: Trigger for a Tingle Chest to appear. (d_a_agbsw0)
+agbA, agbAT, agbA2, agbF, agbF2, agbMARK, agbMW, agbCSW, agbR, agbB, agbD, agbFA: Other Tingle Tuner-related triggers. (d_a_agbsw0)
+  params & 0x0000FFFF - ?
+  params & 0x00FF0000 - Switch index to set when a Tingle bomb is used on this object.
+    The chest then has an appear condition set up so that it appears when this same switch is set.
+  params & 0xFF000000 - Switch index for ...?
+  auxilary_param & 0xFFFF - Type of trigger maybe? 9/A/B/C/D for the 5 types of tingle statues?
+  auxilary_param_2 & 0x00FF - 
 
 ### TGDR:
 door12, door12M, door12B, door13, door13M, door13B, keyS12, ZenS12: Door (TGDR type). (d_a_door12)

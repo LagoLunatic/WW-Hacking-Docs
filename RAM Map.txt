@@ -322,6 +322,17 @@ Each inventory slot:
 803C4C53,1 - Bottle 2
 803C4C54,1 - Bottle 3
 803C4C55,1 - Bottle 4
+  Bottle item IDs:
+    50 - Empty Bottle
+    51 - Red Potion
+    52 - Green Potion
+    53 - Blue Potion
+    54 - Elixir Soup (1/2)
+    55 - Elixir Soup
+    56 - Bottled Water
+    57 - Fairy in Bottle
+    58 - Forest Firefly
+    59 - Forest Water
 803C4C56,1 - Delivery Bag (30)
 803C4C57,1 - Hookshot (2F)
 803C4C58,1 - Skull Hammer (33)
@@ -586,7 +597,7 @@ bits set during vanilla game in order:
   The index in this list is the stage ID.
 Stage info format:
   00,04: Bitfield of the stage's treasure chest open flags.
-  04,10: Bitfield of the stage's event switches.
+  04,10: Bitfield of the stage's event switches (mem bits).
     There are 0x80 bits in total.
     These bits are grouped into words.
   14,04: Bitfield of the stage's item pickup flags.
@@ -645,6 +656,8 @@ List of switches:
     08,2: Padding?
     0A,40: List of pointers to "zone actors".
       Not sure what these are, but they are also zeroed out when you change stages.
+      These are set by the onActor function when an enemy is killed, if its "enemy number" is not FFFF.
+      These are be temporary enemy death flags. Once this is set, the enemy is dead, even if you go through a door and come back. But it will respawn after a stage transition.
     4A,1: ?
     4B,1: Padding?
 

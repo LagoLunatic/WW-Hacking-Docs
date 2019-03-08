@@ -7,6 +7,7 @@ Format of entities in RAM:
 010,2: X rotation?
 012,2: Y rotation?
 014,2: Z rotation?
+016,2: "Enemy number" from the ACTR data
 018,1: X scale.
 019,1: Y scale.
 01A,1: Z scale.
@@ -23,6 +24,7 @@ Append entity?:
 0B0,4: Parameters.
 0EC,4: Pointer to something in the loaded REL file for this entity?
   Go to this pointer+8, and read the pointer there. That has a pointer to the execute code for this entity.
+1BC,2: "Enemy number" from the ACTR data
 1C1,1: Actor subtype index.
 1C2,1: Actor unknown value 0xB
 1D0,4: Desired X pos to gradually move towards...?
