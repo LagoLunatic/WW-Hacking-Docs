@@ -453,6 +453,24 @@ fopAcM_create__FsUlP4cXyziP5csXyzP4cXyzScPFPv_i
   f4 - params.
   (more args)
 
+fopAcM_createChild__FsUiUlP4cXyziP5csXyzP4cXyzScPFPv_i
+  creates an entity as a child of another entity
+  r3 - Actor ID
+  r4 - unique ID of the parent entity
+  r5 - params
+
+createAppend__FUlP4cXyziP5csXyzP4cXyzScUi
+  part of creating an entity
+  r3 - params
+  r9 - unique ID of the parent entity, or -1 for no parent
+  (more args)
+
+fpcSCtRq_Request__FP11layer_classsPFPvPv_iPvPv
+  part of creating an entity
+  r4 - Actor ID
+  r7 - "append" entity? (return value from createAppend__FUlP4cXyziP5csXyzP4cXyzScUi)
+  (more args)
+
 
 checkRopeSwingWall__9daPy_lk_cFP4cXyzP4cXyzPsPf
 daPy_lk_c::checkRopeSwingWall((cXyz *,cXyz *,short *,float *))
@@ -676,3 +694,7 @@ isSwitch__12dSv_danBit_cFi
 isSwitch__13dSv_zoneBit_cFi
   r3 - pointer to the zone (within the zone list, 803C53B2)
   r4 - zone bit index (should be within the range 00-2F)
+
+dPath_GetRoomPath__Fii
+  r3 - Path index
+  r4 - Room index

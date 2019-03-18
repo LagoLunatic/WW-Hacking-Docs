@@ -71,9 +71,13 @@ Treasure chests. (d_a_tbox)
 
 ### ACTR:
 NpcSo: Fishman. (d_a_npc_so)
+  params: None.
 TagSo, TagMSo: Trigger area for a fishman. (d_a_tag_so)
   There are multiple of these per sector, only one is active at a time.
   There seem to be 5x TagSo and 1x TagMSo in each sector. Difference between the two types is currently unknown.
+  params & 0x000000FF
+  params & 0x0000FF00
+  params & 0x00FF0000
 item: A field item lying on the ground. (no REL file, item code is part of the core engine)
   params & 0x000000FF - The item ID.
   params & 0x0000FF00 - The item pickup flag to set.
@@ -91,6 +95,7 @@ itemDek: The Deku Leaf spawned on one of the Deku Tree's branches. (d_a_deku_ite
 BFlower, VbakH: Bomb flowers. (d_a_bflower)
   BFlower is a normal bomb flower.
   VbakH is a dried out bomb flowers from the Dragon Roost Cavern entrance.
+  params & 0x000000F0 - 
   params & 0x0000FF00 - The switch index for this bomb flower being watered.
 Eskban: Boulder from the Dragon Roost Cavern entrance. (d_a_obj_eskban)
   params & 0x000000FF - The switch index for this boulder being destroyed.
@@ -98,9 +103,16 @@ Ebrock, Ekao, Ebrock2: Boulder. (d_a_stone2)
   Ebrock  - Normal big boulder.
   Ekao    - Big boulder in the shape of a stone face that needs power bracelets.
   Ebrock2 - Smaller boulder.
+  params & 0x0000003F - 
+  params & 0x000000C0 - 
   params & 0x0000FF00 - The switch index for this boulder being destroyed.
+  params & 0x007F0000 - 
+  params & 0x07000000 - 
+  params & 0x70000000 - 
 Md1: Medli. (d_a_npc_md)
+  params & 0x000000FF - ?
   params & 0x0000FF00 - ?
+  params & 0x00FF0000 - ?
 Mori1: Gate of wooden columns. (d_a_mdoor)
   params & 0x000000FF - Switch index
   params & 0x0000FF00 - Type
@@ -122,7 +134,7 @@ TagCb13: Something related to Makar when he gets captured by floormasters (d_a_t
   params & 0x0000FFFF - 
   params & 0x00FF0000 - Switch index to check
   params & 0xFF000000 - 
-YLzou: Hero of Time statue in Hyrule.
+YLzou: Hero of Time statue in Hyrule. (d_a_obj_YLzou)
   params & 0x000000FF - Switch index to check if the statue should be moved out of the way. If FF, the statue will be moved by default.
 Mhsg4h: Ladder. (d_a_obj_ladder)
   params & 0x00000007 - Which model to use. 0-4 are valid. From shortest to longest: 4, 0, 1, 2, 3
@@ -151,9 +163,9 @@ bridge: Bridge. (d_a_bridge)
     bridge's param 0x0000FF00 should be FF.
     bridge's param 0x000000FF should be ...? try both 00 and 04. it's a bitfield.
 Ecube: Pushable/pullable cube. (d_a_obj_movebox)
-  params & 0x0000002F - argument r4 to createItemFromTable
+  params & 0x0000003F - argument r4 to createItemFromTable
   params & 0x0000FF00 - Switch index to set
-  params & 0x003F0000 - argument r5 to createItemFromTable
+  params & 0x007F0000 - argument r5 to createItemFromTable
   params & 0x0F000000 - Type of box. Controls which model to use for this box. (stored to entity+5F8)
   params & 0x40000000 - 
   params & 0x80000000 - ?? (only works for certain types of boxes)
@@ -357,36 +369,48 @@ Boko: Weapon lying on the ground. (d_a_boko)
 Bk: Bokoblin. (d_a_bk)
   params & 0000000F - Type?
     stored to entity+2B4,1
-    0 - Blue Bokoblin.
-    1 - ?
-    2 - Bokoblin hiding inside a pot.
-    3 - Green Bokoblin.
-    4 - Pink Bokoblin.
+    0 - Normal
+    1 - Normal?
+    2 - In a pot waiting to ambush Link
+    3 - Hiding in a pot
+    4 - Stands guard
+    5 - Bokoblin being carried through the air.
+      Just floats with the carried animation if manually placed.
+      Can be attacked to make it fall down.
     6 - Bokoblin operating a Forsaken Fortress searchlight.
-    7 - Tutorial Bokoblins in the Forest of Fairies.
-    8 - ?
-    A - Might stop BGM when it dies?
+    7 - Looking up and jumping trying to reach Tetra
+    8 - Does not load in?
+    9 - Crash
+    A - Stands guard, yawns periodically
     B - Pink Bokoblin holding a telescope.
-      Has the following effects:
-        unknown_2 is set to false
-        entity+2DC,1 is set to 1
-        and then this type field is set to 4
-    F - Only used in debug test maps.
-  params & 00000010 - unknown_1
+      Overrides params & 00000020 trying to make the Bokoblin green.
+      Also sets a bool at entity+2DC to true to make it pink.
+      Also sets this type field to 4.
+    F - ?
+      Only used in debug test maps.
+  params & 00000010 - Change switch behavior.
     stored to entity+2B9,1
-  params & 00000020 - unknown_2
+    0 - The switch at params & FF000000, if it's valid, MUST be set for this Bokoblin to spawn.
+    1 - The switch at params & FF000000 MUST NOT be set for this Bokoblin to spawn.
+  params & 00000020 - Boolean to make the Bokoblin green and give it a wooden shield.
     stored to entity+2D4,1
-  params & 000000C0 - unknown_3
+  params & 000000C0 - What the Bokoblin should hold in its hand.
     stored to entity+2D5,1
+    0 - Unlit torch
+    1 - Machete
+    2 - Lit torch
+    3 - Machete
+    Note: In the A_mori stage, no Bokoblins will hold anything in their hands regardless of this value.
   params & 0000FF00 - unknown_4
     stored to entity+2B5,1
     This is multiplied by 10.0 - maybe this is the range the Bokoblin notices you in?
     If this is FF, the range defaults to 500.0 (NOT 255*10.0).
-  params & 00FF0000 - unknown_5
+  params & 00FF0000 - Path index?
     stored to entity+2B6,1
-  params & FF000000 - unknown_6
+  params & FF000000 - Switch index for whether this Bokoblin should exist or not.
     stored to entity+2B7,1
-  auxilary_param_2 & 00FF - unknown_7
+    See params & 00000010 for exactly what this switch affects.
+    - unknown_7
     stored to entity+2B8,1
 mo2: Moblin. (d_a_mo2)
   params & 000000FF - Type.
@@ -479,6 +503,7 @@ Auzu: Whirlpool outside Jabun's cave. (d_a_obj_auzu)
   params & 0x00010000 - ?
   params & 0x00F00000 - ? Affects whether it disappears after Endless Night is over or not maybe?
 Stoudai: Lighthouse. (d_a_obj_light)
+  params: None.
 Figure: A figurine in the Nintendo Gallery. (d_a_obj_figure)
   params & 0x000000FF - Figurine ID.
     This is the index in the figurine data table (l_figure_dat_tbl of d_a_obj_figure).
@@ -524,6 +549,25 @@ BigElf: Great Fairy. (d_a_bigelf)
   params & 0x000000FF - Type. Which specific Great Fairy this is.
   params & 0x0000FF00 - "Swbit"
   params & 0x00FF0000 - "Swbit2"
+Zl1: Tetra. (d_a_npc_zl1)
+  params & 000000FF - Type?
+p_zelda: Princess Zelda. (d_a_pz)
+  params & 0000FF00 - ?
+    0xFF here defaults to 0 instead.
+    Seems to be a boolean
+pow: Poe. (d_a_pw)
+  params & 0x000000FF - 
+  params & 0x00000100 - 
+  params & 0x0000FE00 - Color.
+    If this is 6 or greater, it defaults to 0 instead.
+    0 - Blue
+    1 - Purple
+    2 - Orange
+    3 - Yellow
+    4 - Red
+    5 - Green
+  params & 0x00FF0000 - 
+  params & 0xFF000000 - 
 
 ### SCOB:
 Salvage: Main salvages that require a chart to see.

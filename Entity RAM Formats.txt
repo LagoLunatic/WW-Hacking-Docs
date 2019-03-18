@@ -34,6 +34,9 @@ Append entity?:
 1DE,2: Y rotation.
 1E0,2: Auxilary parameter 2.
 1E2,1: Room index?
+1F0,2: Auxilary parameter. (duplicate?)
+1F2,
+1F4,2: Auxilary parameter 2. (duplicate?)
 1F6,1: Room index?
 1F8,4: X pos.
 1FC,4: Y pos.
@@ -41,7 +44,7 @@ Append entity?:
 204,2: Auxilary parameter. (duplicate?)
 206,2: Y rotation. (duplicate?)
 208,2: Auxilary parameter 2. (duplicate?)
-20A,1: Room index?
+20A,1: Room index.
 20C,2: Auxilary parameter. (duplicate?)
 20E,2: Y rotation. (duplicate?)
 210,2: Auxilary parameter 2. (duplicate?)
