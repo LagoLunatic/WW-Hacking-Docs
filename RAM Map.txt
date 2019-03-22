@@ -595,6 +595,22 @@ bits set during vanilla game in order:
   Entry length 0x24.
   There are 0x10 stage infos in total.
   The index in this list is the stage ID.
+803C4F88-803C4FAB - Stage ID 0 stage info (Sea)
+803C4FAC-803C4FCF - Stage ID 1 stage info (Sea Alt)
+803C4FD0-803C4FF3 - Stage ID 2 stage info (Forsaken Fortress)
+803C4FF4-803C5017 - Stage ID 3 stage info (Dragon Roost Cavern)
+803C5018-803C503B - Stage ID 4 stage info (Forbidden Woods)
+803C503C-803C505F - Stage ID 5 stage info (Tower of the Gods)
+803C5060-803C5083 - Stage ID 6 stage info (Earth Temple)
+803C5084-803C50A7 - Stage ID 7 stage info (Wind Temple)
+803C50A8-803C50CB - Stage ID 8 stage info (Ganon's Tower)
+803C50CC-803C50EF - Stage ID 9 stage info (Hyrule)
+803C50F0-803C5113 - Stage ID A stage info (Ship Interiors)
+803C5114-803C5137 - Stage ID B stage info (Houses & Misc Places)
+803C5138-803C515B - Stage ID C stage info (Cave Interiors)
+803C515C-803C517F - Stage ID D stage info (More Cave Interiors & Ship Interiors)
+803C5180-803C51A3 - Stage ID E stage info (???)
+803C51A4-803C51C7 - Stage ID F stage info (Test Maps)
 Stage info format:
   00,04: Bitfield of the stage's treasure chest open flags.
   04,10: Bitfield of the stage's event switches (mem bits).
@@ -634,11 +650,6 @@ Stage info format:
 803C53A4,1 - Currently loaded stage info ID (current stage ID).
 803C53A5,1 - ???
 803C53A8,8 - Bitfield of "dan bits"
-
-List of switches:
-(in Omori):
-  0A - killed chuchus on deku tree's face and saw cutscene where he talks to you
-  1E - saw the intro to the forest haven interior
 
 803C53B0,1 - ??? Something related to zones? Maybe the number of zones that are currently initialized?
 803C53B1,1 - Padding?
@@ -739,11 +750,12 @@ Player's partner's room restart position? ("restart option")
   There are 0x2800 spots for flags in total. They take up 0x500 bytes.
   These bits are grouped into words.
 
-803CA410,4 - Always has a pointer to the player entity in RAM??
+803CA410,4 - Always has a pointer to the player entity in RAM.
+  This refers not only to Link, but to Medli/Makar/etc when you're controlling them.
 
 803CA74C,4 - Always has a pointer to the player entity in RAM.
-  Maybe this points to entities being controlled by the command melody as well?
-803CA754,4 - Always has a pointer to the player entity in RAM.
+  This refers not only to Link, but to Medli/Makar/etc when you're controlling them.
+803CA754,4 - Always has a pointer to the Link entity in RAM.
 803CA75C,4 - Always has a pointer to the ship entity in RAM (KoRL).
 
 803CA7FF,1 - Affects which place name is shown?

@@ -33,11 +33,11 @@ Append entity?:
 1DC,2: Auxilary parameter.
 1DE,2: Y rotation.
 1E0,2: Auxilary parameter 2.
-1E2,1: Room index?
+1E2,1: Room index.
 1F0,2: Auxilary parameter. (duplicate?)
 1F2,
 1F4,2: Auxilary parameter 2. (duplicate?)
-1F6,1: Room index?
+1F6,1: Room index.
 1F8,4: X pos.
 1FC,4: Y pos.
 200,4: Z pos.
@@ -149,6 +149,11 @@ For KoRL:
 For doors:
 2A0,1: This is 0 if you're in front of the door (can see the lock), or 1 if you're behind the door.
   This is set by frontCheck__12dDoor_info_cFv
+
+For Zunari:
+  788,4: State?
+    -1 = On the left side of his stall
+    0 = On the right side of his stall
 
 Model entity format:
 18,4: X scale.

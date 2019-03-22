@@ -103,12 +103,20 @@ Ebrock, Ekao, Ebrock2: Boulder. (d_a_stone2)
   Ebrock  - Normal big boulder.
   Ekao    - Big boulder in the shape of a stone face that needs power bracelets.
   Ebrock2 - Smaller boulder.
-  params & 0x0000003F - 
+  params & 0x0000003F - Affects what item(s) to spawn.
+    This parameter gets passed as argument r4 to createItemFromTable when the object is destroyed.
+    If in the range 00-1F:
+      This is the item ID to spawn.
+    If in the range 20-3F:
+      Subtract 0x20 from this parameter to get the index in the random item table. https://wiki.cloudmodding.com/tww/ItemTable.bin
   params & 0x000000C0 - 
   params & 0x0000FF00 - The switch index for this boulder being destroyed.
   params & 0x007F0000 - 
-  params & 0x07000000 - 
+  params & 0x07000000 - Affects the type of stone.
+    4 - Big stone head. (Ekao)
   params & 0x70000000 - 
+  737F6C3F - Outset head
+  F37F243F - Headstone head
 Md1: Medli. (d_a_npc_md)
   params & 0x000000FF - ?
   params & 0x0000FF00 - ?
@@ -163,9 +171,14 @@ bridge: Bridge. (d_a_bridge)
     bridge's param 0x0000FF00 should be FF.
     bridge's param 0x000000FF should be ...? try both 00 and 04. it's a bitfield.
 Ecube: Pushable/pullable cube. (d_a_obj_movebox)
-  params & 0x0000003F - argument r4 to createItemFromTable
+  params & 0x0000003F - Affects what item(s) to spawn.
+    This parameter gets passed as argument r4 to createItemFromTable when the object is destroyed.
+    If in the range 00-1F:
+      This is the item ID to spawn.
+    If in the range 20-3F:
+      Subtract 0x20 from this parameter to get the index in the random item table. https://wiki.cloudmodding.com/tww/ItemTable.bin
   params & 0x0000FF00 - Switch index to set
-  params & 0x007F0000 - argument r5 to createItemFromTable
+  params & 0x007F0000 - Item pickup flag to set, or 0x7F for none.
   params & 0x0F000000 - Type of box. Controls which model to use for this box. (stored to entity+5F8)
   params & 0x40000000 - 
   params & 0x80000000 - ?? (only works for certain types of boxes)
@@ -306,15 +319,6 @@ c_green, c_red, c_blue, c_black, c_kiiro: ChuChu. (d_a_cc)
   FF500101 - Red ChuChu in DRC.
   FF460300 - Black ChuChu in ET.
   FFFF01FF - Red ChuChu in ChuChu cave.
-Ekao: Big stone head. (d_a_stone2)
-  params & 07000000 - Affects the type of stone.
-    4 - Big stone head.
-  params & 007F0000 - ?
-  params & 0000FF00 - Switch index?
-  params & 0000003F - Item ID to spawn?
-  Example params:
-  737F6C3F - Outset head
-  F37F243F - Headstone head
 Hhbot1N: Heavy switch you must depress with the iron boots. (d_a_obj_swheavy)
   params & 07000000 - Type maybe?
   params & 0000FF00 - Switch index to set when depressed.
@@ -568,6 +572,13 @@ pow: Poe. (d_a_pw)
     5 - Green
   params & 0x00FF0000 - 
   params & 0xFF000000 - 
+Ls1: Aryll. (d_a_npc_ls1)
+  params & 0x000000FF - Type.
+    00 - On her lookout, after you have Hero's Clothes
+    01 - In FF1 tower
+    02 - In FF2 tower, and when being kidnapped on Outset's bridge
+    03 - On her lookout, before you have Hero's Clothes
+    04 - Ending cutscene
 
 ### SCOB:
 Salvage: Main salvages that require a chart to see.

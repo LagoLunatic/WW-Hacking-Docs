@@ -22,7 +22,7 @@ fopAcM_orderOtherEventId__FP10fopAc_ac_csUcUsUsUs
   this is what really starts an event.
   if you go up a call from here, you'll get whatever actor really started the event.
   r3 - pointer to the entity that called this function
-  r4 - the event index to start.
+  r4 - the event index to start in the event_list.dat
   r5 - ? (uchar)
   r6 - ? (ushort)
   r7 - ? (ushort)
@@ -237,12 +237,14 @@ fopAcM_createItemForKP2__FP4cXyziiP5csXyzP4cXyzfffUs
     not sure if they're actually used though?
 
 fopAcM_createItemFromTable__FP4cXyziiiiP5csXyziP4cXyz
-  r3 - 
-  r4 - 
-  r5 - item pickup flag to set, or -1 for none (or 0x7F for none)
-  r6 - 
+  r3 - Position. Pointer to a vector3 of floats.
+  r4 - Affects what item to spawn.
+    00-1F: It spawns this exact item ID.
+    20-3F: Subtract 20 from this value and it's the index in the random item table.
+  r5 - Item pickup flag to set, or -1 for none, or 0x7F for none.
+  r6 - Room index.
   r7 - 
-  r8 - 
+  r8 - Pointer to a vector3 of shorts, maybe rotations?
   r9 - 
   r10 - 
 
