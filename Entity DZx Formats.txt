@@ -186,10 +186,12 @@ Ecube: Pushable/pullable cube. (d_a_obj_movebox)
   8C004500 - both Ecubes at start of dragon roost island
   8C00FF00 - all Ecubes inside angular isles
 kotubo, ootubo1, Odokuro: Pot/skull. (d_a_tsubo)
-  params & 0x0000003F - Affects the item to spawn.
-    00-1F mean to spawn that item ID directly.
-    35 means choose (randomly?) from the pot item table.
-    3F means spawn no item.
+  params & 0x0000003F - Affects what item(s) to spawn.
+    This parameter gets passed as argument r4 to createItemFromTable when the object is destroyed.
+    If in the range 00-1F:
+      This is the item ID to spawn.
+    If in the range 20-3F:
+      Subtract 0x20 from this parameter to get the index in the random item table. https://wiki.cloudmodding.com/tww/ItemTable.bin
   params & 0x00003F00 - 
   params & 0x0000C000 - 
   params & 0x007F0000 - Item pickup flag for the item spawned.

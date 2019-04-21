@@ -33,7 +33,7 @@ fopAcM_orderOtherEvent2__FP10fopAc_ac_cPcUsUs
   argument r4 is a pointer to a string which is the event name.
 
 getEventIdx__16dEvent_manager_cFPCcUc
-  gets the index of an event based on its name
+  gets the index of an event in the event_list.dat based on its name
   r3 - pointer to 803C9ED4?
   r4 - pointer to the event name string
   r5 - 0xFF
@@ -700,3 +700,29 @@ isSwitch__13dSv_zoneBit_cFi
 dPath_GetRoomPath__Fii
   r3 - Path index
   r4 - Room index
+
+fopAcM_setCarryNow__FP10fopAc_ac_ci
+  sets a weapon as being carried by an enemy?
+  r3 - pointer to the weapon entity
+  r4 - ?
+
+fopAcM_cancelCarryNow__FP10fopAc_ac_c
+  unsets a weapon as being carried by an enemy?
+  r3 - pointer to the weapon entity
+
+
+fopScnM_ChangeReq__FP11scene_classssUs
+  r3 - scene_class*
+  r4 - short
+  r5 - short
+  r6 - unsigned short
+
+init__10dSv_info_cFv
+  initializes a new save file
+  r3 - ?
+
+card_to_memory__10dSv_info_cFPci
+  loads a save file
+  r3 - (803C4C08, where to load the save file. but this function just hardcodes that pointer anyway so this arg doesn't matter.)
+  r4 - the current scene entity pointer.
+  r5 - save file index

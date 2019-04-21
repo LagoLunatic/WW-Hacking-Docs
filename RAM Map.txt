@@ -634,7 +634,7 @@ Stage info format:
 
 803C5380-803C53A3 - The currently loaded stage info in the save file.
 803C5380,04 - Bitfield of the current stage's treasure chest open flags.
-803C5384,10 - Bitfield of the current stage's event switches.
+803C5384,10 - Bitfield of the current stage's event switches (mem bits).
 803C5394,04 - Bitfield of the current stage's item pickup flags.
 803C5398,04 - Bitfield of the current dungeon's visited rooms. (These might also function as item pickup flags too?)
 803C539C - ?
@@ -900,3 +900,9 @@ Player's true position (this gets copied to the player entity's position every f
 
 803F7984,4 - 
 803F798C,4 - 
+
+803720E8 - ? game state related
+803720F0,4 - pointer to ? for game state
+
+803B39A0 - temp location for save file data?
+803B5048 - temp location for save file data?
