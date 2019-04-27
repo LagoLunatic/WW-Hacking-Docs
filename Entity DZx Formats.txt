@@ -284,9 +284,18 @@ Warpt, Warpnt: One-way warp pot that only works within a single room. (d_a_obj_w
       auxilary_param_2: 0000
 wiz_r: Wizzrobe. (d_a_wz)
   params & 0x000000FF - ?
+    If this is FF, it defaults to 00.
   params & 0x0000FF00 - Switch index to set when this Wizzrobe dies?
   params & 0x00FF0000 - Switch index to check and not allow the Wizzrobe to appear until it's set?
   params & 0xFF000000 - ?
+  auxilary_param & 00FF - Which enemy summon table to use.
+    If this is FF, it defaults to 00.
+    The list of possible enemy actor IDs to summon is enemy_name_dt$6153.
+    This parameter determines which of the possible spawn tables within that list to use. Each table is 0x10 bytes long.
+    Each table has 4 entries in it. The Wizzrobe seems to select which of the 4 to start on randomly, and then cycles through them in order?
+    Each entry is composed of 2 halfwords. The first halfword is the first enemy actor ID to spawn. The second halfword is either the second enemy actor ID to spawn, or 0x7FFF for no second enemy.
+    The parameters of each enemy to spawn is in list enemy_arg_dt$6154. Each entry in this list is composed of 2 words instead of 2 halfwords, but other than that you access entries the same as above (first use the summon table index parameter, then the random entry index).
+    The number of each enemy to spawn at once is in list birth_dt$6155. Works the same as above.
 Homen2: Statue face with a hookshot target on it. (d_a_obj_homen)
   params & 0x0000007F - Item pickup flag for the item inside it.
   params & 0x00000F00 - ?
