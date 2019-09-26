@@ -4,9 +4,9 @@ The first word is the number of charts in this list.
 Starting at offset 4 is the data for each chart.
 Format of each chart:
   Entry length 0x26.
-  Each entry is broken down into 4 entries 0x8 bytes long (what's with the extra 6 bytes?) for random salvage positioning.
+  Each entry has a 6 byte header followed by 4 0x8 byte subentries. The 4 subentries are the possible random positions for the salvage to be at depending on the save file.
   00,1: The ID of the texture image filename for this chart. Used to determine which texture filename to load.
-    For example, if this value is 0x2C, then the four texture images (for four different random possible salvage locations) will be named:
+    For example, if this value is 0x2C, then the four texture images (for four different random possible salvage positions) will be named:
       r2c_col_0.bti
       r2c_col_1.bti
       r2c_col_2.bti

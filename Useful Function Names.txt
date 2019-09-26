@@ -447,12 +447,13 @@ execWaitMainFromBoss__8daItem_cFv
 fopAcM_fastCreate__FsUlP4cXyziP5csXyzP4cXyzScPFPv_iPv
   creates an entity.
   r3 - Actor ID.
+  r4 - Params
   (more args)
 
 fopAcM_create__FsUlP4cXyziP5csXyzP4cXyzScPFPv_i
   creates an entity.
   r3 - Actor ID.
-  f4 - params.
+  r4 - Params
   (more args)
 
 fopAcM_createChild__FsUiUlP4cXyziP5csXyzP4cXyzScPFPv_i
@@ -726,3 +727,32 @@ card_to_memory__10dSv_info_cFPci
   r3 - (803C4C08, where to load the save file. but this function just hardcodes that pointer anyway so this arg doesn't matter.)
   r4 - the current scene entity pointer.
   r5 - save file index
+
+makeItemType__9daPy_lk_cFv
+  handles creating an item when the player uses it, such as taking out a bomb
+
+set__13dPa_control_cFUcUsPC4cXyzPC5csXyzPC4cXyzUcP18dPa_levelEcallBackScPC8_GXColorPC8_GXColorPC4cXyz
+dPa_control_c::set(unsigned char, unsigned short, cXyz const *, csXyz const *, cXyz const *, unsigned char, dPa_levelEcallBack *, signed char, _GXColor const *, _GXColor const *, cXyz const *)
+  Initializes a particle effect?
+  r3 - this word is read from from 803CA6CC
+  r4 - 0?
+  r5 - The particle ID
+  r6 - Position to create the particle effect at? (pointer to a vector3 of floats)
+  r7 - 0?
+  r8 - 0?
+  r9 - 0xFF?
+  r10 - ??? pointer to somewhere in the calling entity, like [calling_entity+0x844] or [calling_entity+0x858]
+
+fopAcM_myRoomSearchEnemy__FSc
+fopAcM_myRoomSearchEnemy(signed char)
+  checks for any enemies in the room and returns a pointer to one of them.
+  this is used by things that want to know if all the enemies in the room are dead.
+  r3 - room index
+
+GetIndex__12cDT_NamePTblCFPCci
+cDT_NamePTbl::GetIndex( const(char const *, int))
+  returns something that affects this enemy's drops
+  it seems to be the value that gets passed as argument r4 to createIball
+  r3 - 803C9CB4
+  r4 - Pointer to a string of the actor name
+  r5 - 0?

@@ -429,9 +429,15 @@ Bk: Bokoblin. (d_a_bk)
     stored to entity+2B8,1
 mo2: Moblin. (d_a_mo2)
   params & 000000FF - Type.
-    0 - Normal.
-    1 - Carries a lantern.
-    F - ? Used in Hyrule, the Ganon's Tower Maze, and debug test rooms.
+    00 - No lantern. Brown skin.
+    01 - Has a lantern. Brown skin.
+    05 - ? Calls anm_init. Unused ingame.
+    0F - No lantern. Blue skin. Used in Hyrule and debug test rooms.
+      stores 0x17 to entity+61A,2
+      stores 0 to entity+2C1,1
+    64 - ? Skips doing some matrix related math among other things? Unused ingame.
+    FF - No lantern. Blue skin. Used in the Ganon's Tower Maze and debug test rooms.
+  aux_params_2 & 00FF - ?
 Keeth, Fkeeth: Keese. (d_a_ki)
   params & 000000FF - 
     stored to entity+2CC,1 and then copied to entity+2D1,1
@@ -590,6 +596,112 @@ Ls1: Aryll. (d_a_npc_ls1)
     02 - In FF2 tower, and when being kidnapped on Outset's bridge
     03 - On her lookout, before you have Hero's Clothes
     04 - Ending cutscene
+p_hat, sea_hat: Peahats and Seahats.
+  params & 0x000000FF - Type.
+    00 - Peahat.
+    01 - Seahat.
+    FF - Defaults to 00 instead.
+    If the value located at 803E75AA,2 is not 0, this value will be forcibly changed to 01.
+  params & 0x0000FF00 - 
+  params & 0x00FF0000 - 
+bable: Red Bubbles and Blue Bubbles.
+  params & 000000FF - Type.
+    00 - Red Bubble
+      uses particle ID 8124, while the others use particle ID 8213??
+      (used in earth temple, totg, savage labyrinth, and ganon's toewr earth temple section)
+    01 - Blue Bubble
+      (used in savage labyrinth)
+    02 - Red Bubble
+      (used in earth temple and totg)
+    03 - Blue Bubble
+      (used in earth temple and wind temple)
+    80 - Just an inanimate, destructible skull. Used in the Jalhalla fight.
+    FF - Defaults to 00 instead.
+    If the value located at 803E75AA,2 is not 0, this value will be forcibly changed to (value at 803E75AA,2 minus 1).
+    There may be a difference between types 00 vs 02 and 01 vs 03, but I'm not sure what
+  params & 0000FF00 - 
+  params & 00FF0000 - 
+  params & FF000000 - 
+    FF - Defaults to 00 instead.
+    If the value located at 803E75A8,2 is not 0, this value will be forcibly changed to 01.
+kuro_s, kuro_t: Morths.
+  params & 000000FF - Type?
+    00 - 
+    01 - used for kuro_t type
+    04 - Unused ingame.
+    05 - Unused ingame.
+    06 - 
+    FF - Defaults to 00.
+  params & 0000FF00 - 
+  params & 00FF0000 - 
+nezumi: Rats and Bombchus.
+  params & 000000FF - 
+    00 - 
+    01-FE - 
+    FF - Defaults to 00 instead.
+  params & 0000FF00 - Type.
+    00 - Rat
+    01 - Bombchu
+    FF - Defaults to 00 instead.
+  params & FF000000 - 
+nezumi: Hole that Rats or Bombchus come out of.
+  params & 000000FF - 
+  params & 0000FF00 - Maximum number of spawned entities that can be out at once.
+    00 - Defaults to 01 instead.
+  params & 00FF0000 - Type.
+    00 - Spawns Rats. Also spawns the Rat Shopkeeper that sells you things if you give it All-Purpose Bait.
+    01 - Spawns Bombchus.
+    02 - Spawns Rats and Bombchus.
+      It's a random 50% chance what each one will come out as.
+    03+ - Defaults to 00 instead.
+  params & FF000000 - 
+  It gives the Rats it creates the following params:
+    params & 000000FF - 01.
+    params & 0000FF00 - 00 for normal Rats, 01 for Bombchus.
+    params & FF000000 - Copied from this hole's params & FF000000.
+Fire, Zenfire: Ring of flames that prevents you from accessing something in the center of it. (d_a_fire)
+  params & 000000FF - Switch index to check.
+    If this is FF, and type is 0, change type to 2. The purpose of doing this might just be a way of avoiding the code that runs every frame for type 0 that checks if the switch is set yet, since there is no switch in this case?
+  params & 00000F00 - 
+  params & 0001F000 - 
+  params & 000E0000 - Type.
+    0 - Fire that disappears when a switch is set. (Fire)
+    1 - Fire that disappears when all enemies in the room are dead, like in Savage Labyrinth. (Zenfire)
+    2 - Fire that disappears after a switch is set.
+      Unlike type 0, this type does not disappear immediately if the switch is set when you are in the same room as the fire. The fire will simply not be there the next time the room is loaded.
+  params & 00F00000 - 
+Hmos1, Hmos2, Hmos3: Beamos and laser forcefields. (d_a_obj_bemos)
+  params & 000000FF - 
+  params & 0000FF00 - 
+  params & 00FF0000 - 
+  params & F0000000 - Type.
+    0 - Blue Beamos
+    1 - Red Beamos
+    2 - Laser forcefield.
+  aux_params_2 & 003F - 
+  aux_params_2 & 1FC0 - 
+Fmaster, Fmastr1, Fmastr2: Floormasters. (d_a_fm)
+  params & 000000FF - Where to take Link when he is captured.
+    Exit index in this room's SCLS list.
+  params & 00000300 - Type.
+    0 - Not a fightable Floormaster. Black hole that appears briefly under Link after he is sent back to the beginning of a dungeon. (Fmaster)
+    1 - Moves along a path. (Fmastr1)
+    2 - Does not move along a path. (Fmastr2)
+    3 - Defaults to 0 instead.
+    (There may be more differences between Fmastr1 and Fmastr2 - they might drop different items when killed?)
+  params & 00000C00 - Targeting behavior type.
+    0 - Prioritizes targeting Medli or Makar if either of them are present, but will target Link if they are not.
+    1 - Targets Link, but does not target Medli or Makar.
+    2 - Targets Medli and Makar, but does not target Link. (Will still pull Link in if he stands on it for too long.)
+    3 - Defaults to 0 instead.
+  params & 00FF0000 - Path index to follow (for type 1).
+  params & FF000000 - Switch index to check and not appear until it is set.
+    If this is FF the Floormaster will appear from the start.
+  When the game engine spawns a Floormaster under Link after he is sent back to the beginning of a dungeon, the whole params field is set to 0.
+  aux_params_1 & 00FF - Switch index that, once it's set, this Floormaster will not appear.
+  aux_params_1 & FF00 - Something related to Medli/Makar being captured maybe?
+    this is argument r4 to setPointRestart
+  aux_params_2 & 00FF - ?
 
 ### SCOB:
 Salvage: Main salvages that require a chart to see.

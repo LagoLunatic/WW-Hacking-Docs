@@ -207,6 +207,8 @@ g_fopAcTg_Queue:
   If this is 0, music does not get played on Windfall.
   But if it's 8000003B music does get played on Windfall.
 
+803A2F16,1 - Related to currently playing music...?
+
 803A2F1A,1 - The next "scene wave index" to load.
 803A2F1D,1 - The next "2nd dynamic scene wave index" to load.
 803A2F20,1 - The next island room number the player is about to go to, for deciding what the next BGM should be.
