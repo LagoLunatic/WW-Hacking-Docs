@@ -283,12 +283,20 @@ Warpt, Warpnt: One-way warp pot that only works within a single room. (d_a_obj_w
       auxilary_param: 07 08
       auxilary_param_2: 0000
 wiz_r: Wizzrobe. (d_a_wz)
-  params & 0x000000FF - ?
-    If this is FF, it defaults to 00.
+  params & 0x000000FF - Type.
+    00 - Shoots fireballs.
+    01 - Spawns enemies and shoots fireballs.
+    02 - Defaults to 01 instead.
+    FF - Defaults to 00 instead.
   params & 0x0000FF00 - Switch index to set when this Wizzrobe dies?
   params & 0x00FF0000 - Switch index to check and not allow the Wizzrobe to appear until it's set?
-  params & 0xFF000000 - ?
-  auxilary_param & 00FF - Which enemy summon table to use.
+  params & 0xFF000000 - Path index for the Wizzrobe to appear on.
+    The Wizzrobe seems to teleport to random points on the path.
+    For type 0 Wizzrobes, this can be FF for no pat, and it will just repeatedly teleport around its initial position.
+    But for type 1 Wizzrobes, having no path will crash the game.
+    For type 1 Wizzrobes, this path must also have a "next path"/"AssociatedPathIndex" specified, and that next path's two points will be used as the positions to spawn the two enemies this Wizzrobe creates.
+    If there is no next path, type 1 Wizzrobes will crash the game.
+  auxilary_param_2 & 00FF - Which enemy summon table to use.
     If this is FF, it defaults to 00.
     The list of possible enemy actor IDs to summon is enemy_name_dt$6153.
     This parameter determines which of the possible spawn tables within that list to use. Each table is 0x10 bytes long.
@@ -321,6 +329,13 @@ c_green, c_red, c_blue, c_black, c_kiiro: ChuChu. (d_a_cc)
      2 - Blue
      3 - Black
      4 - Yellow
+     A - Switches itself to 0 (Green)
+     B - Switches itself to 1 (Red)
+     C - Switches itself to 2 (Blue)
+     D - Switches itself to 3 (Black)
+     E - Switches itself to 4 (Yellow)
+     Types A-E run a little bit of code before switching to 0-4. Not sure what that changes.
+     One purpose of the duplicate A-E types is for Wizzrobe spawning - most of the ChuChus spawned by Wizzrobes have their type randomly selected (Green, Red, Yellow, MAYBE Black??), but ones with the A-E type specified will always spawn as that type, with no randomness.
   params & 0x00FF0000 - ? Affects how it behaves
   params & 0xFF000000 - Switch index for this ChuChu to be permanently dead.
   Example params:
@@ -351,11 +366,11 @@ Hmos1, Hmos2, Hmos3: Beamos. (d_a_obj_bemos)
     Only set for Hmos2?
     FF - Defaults to 00 instead.
   params & 00FF0000 - Seems to be the index of a path in this room's RPAT list.
-    I think this is only for unused beamos Hmos3 (laser barrier). Should be 00 for actual Beamos.
+    I think this is only for laser barrier (Hmos3). Should be 00 for actual Beamos.
   params & F0000000 - Type.
     0 - Blue Beamos. Always fires at a specific spot.
     1 - Red Beamos. Tracks you.
-    2 - Unused laser barrier?
+    2 - Lasier barrier.
   auxilary_param_2 & 003F - Might affect the item it drops?
     stored to entity+6BF,1
 Ikada, ikada_h, ikadaS, ikada_u, Svsp: Various types of rafts/ships. (d_a_obj_ikada)
@@ -382,7 +397,7 @@ Boko: Weapon lying on the ground. (d_a_boko)
     4 - Moblin spear. (Spear.arc)
     5 - Phantom Ganon sword. (Pgsw.arc)
 Bk: Bokoblin. (d_a_bk)
-  params & 0000000F - Type?
+  params & 0000000F - Type.
     stored to entity+2B4,1
     0 - Normal
     1 - Normal?
@@ -427,6 +442,9 @@ Bk: Bokoblin. (d_a_bk)
     See params & 00000010 for exactly what this switch affects.
     - unknown_7
     stored to entity+2B8,1
+  aux_params_2 & 00FF - Switch index to set when this Bokoblin dies. The Bokoblin will stay dead as long as the switch is set.
+    00 - Invalid switch.
+    FF - Defaults to 00 instead.
 mo2: Moblin. (d_a_mo2)
   params & 000000FF - Type.
     00 - No lantern. Brown skin.
@@ -625,15 +643,20 @@ bable: Red Bubbles and Blue Bubbles.
     FF - Defaults to 00 instead.
     If the value located at 803E75A8,2 is not 0, this value will be forcibly changed to 01.
 kuro_s, kuro_t: Morths.
-  params & 000000FF - Type?
-    00 - 
-    01 - used for kuro_t type
-    04 - Unused ingame.
-    05 - Unused ingame.
-    06 - 
+  params & 000000FF - Type.
+    00 - Chases the player when they move.
+    01 - Stays in place. (kuro_t)
+      Ones that the player touches and then shakes off will then chase the player like type 0.
+    04 - ? Don't seem to appear when placed? Unused ingame?
+    05 - ? Don't seem to appear when placed? Unused ingame?
+    06 - Morths in a pot.
     FF - Defaults to 00.
-  params & 0000FF00 - 
-  params & 00FF0000 - 
+  params & 0000FF00 - Number of Morths to spawn.
+    00 - Defaults to 01.
+    16+ - Defaults to 01.
+  params & 00FF0000 - Radius around the pot that they will look for Link within and break out of the pot if they see him.
+    No effect on types besides 6.
+    FF - Defaults to 00.
 nezumi: Rats and Bombchus.
   params & 000000FF - 
     00 - 
@@ -698,10 +721,23 @@ Fmaster, Fmastr1, Fmastr2: Floormasters. (d_a_fm)
   params & FF000000 - Switch index to check and not appear until it is set.
     If this is FF the Floormaster will appear from the start.
   When the game engine spawns a Floormaster under Link after he is sent back to the beginning of a dungeon, the whole params field is set to 0.
-  aux_params_1 & 00FF - Switch index that, once it's set, this Floormaster will not appear.
+  aux_params_1 & 00FF - Switch index that, once it's set, this Floormaster will not appear anymore.
   aux_params_1 & FF00 - Something related to Medli/Makar being captured maybe?
     this is argument r4 to setPointRestart
   aux_params_2 & 00FF - ?
+Bb: Kargarocs. (d_a_bb)
+  params & 000000FF - 
+  params & 0000FF00 - 
+  params & 00FF0000 - 
+  params & FF000000 - 
+  aux_params_2 & 00FF - 
+magtail: Magtails. (d_a_mt)
+  params & 000000FF - 
+  params & 00007F00 - 
+  params & 00008000 - 
+  params & 00FF0000 - 
+  params & FF000000 - 
+  aux_params_2 & 00FF - 
 
 ### SCOB:
 Salvage: Main salvages that require a chart to see.

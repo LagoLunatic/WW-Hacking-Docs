@@ -699,7 +699,12 @@ isSwitch__13dSv_zoneBit_cFi
   r4 - zone bit index (should be within the range 00-2F)
 
 dPath_GetRoomPath__Fii
+  returns a pointer to the requested path
   r3 - Path index
+  r4 - Room index
+
+dPath_GetNextRoomPath(dPath *, int)
+  r3 - Pointer to a path
   r4 - Room index
 
 fopAcM_setCarryNow__FP10fopAc_ac_ci
