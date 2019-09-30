@@ -748,6 +748,17 @@ dPa_control_c::set(unsigned char, unsigned short, cXyz const *, csXyz const *, c
   r9 - 0xFF?
   r10 - ??? pointer to somewhere in the calling entity, like [calling_entity+0x844] or [calling_entity+0x858]
 
+createSimpleEmitterID__17JPAEmitterManagerFRCQ29JGeometry8TVec3<f>UsUcUcP34JPACallBackBase<P14JPABaseEmitter>P54JPACallBackBase2<P14JPABaseEmitter,P15JPABaseParticle>
+  part of initializing a particle effect
+  r3 - 
+  r4 - 
+  r5 - The particle ID
+  r6 - 
+  r7 - 
+  r8 - 
+  r9 - 
+  8025F1EC - this is where the missing particle warning happens. the particle ID in question will be in r21.
+
 fopAcM_myRoomSearchEnemy__FSc
 fopAcM_myRoomSearchEnemy(signed char)
   checks for any enemies in the room and returns a pointer to one of them.

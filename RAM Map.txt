@@ -611,7 +611,7 @@ bits set during vanilla game in order:
 803C5114-803C5137 - Stage ID B stage info (Houses & Misc Places)
 803C5138-803C515B - Stage ID C stage info (Cave Interiors)
 803C515C-803C517F - Stage ID D stage info (More Cave Interiors & Ship Interiors)
-803C5180-803C51A3 - Stage ID E stage info (???)
+803C5180-803C51A3 - Stage ID E stage info (??? - no stages have this stage info ID set, yet something in the game sets mem bits here)
 803C51A4-803C51C7 - Stage ID F stage info (Test Maps)
 Stage info format:
   00,04: Bitfield of the stage's treasure chest open flags.

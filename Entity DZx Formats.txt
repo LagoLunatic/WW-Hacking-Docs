@@ -40,6 +40,10 @@ For entities that have parameters, it also documents their parameters and the co
       1 - 0.6 strength.
       2 - 0.9 strength.
       3 - No wind.
+    0x1FE00000 - Particle bank ID to load for this stage.
+      This is used on the sea, where the stage doesn't specify a particle bank to load (0xFF) and instead each individual room does it.
+      The filename of the particle bank to load is:
+      "files/res/Particle/Pscene%03d.jpc" % particle_bank_id
 
 ### EVNT:
   13,1: The switch index to check and set.
@@ -292,7 +296,7 @@ wiz_r: Wizzrobe. (d_a_wz)
   params & 0x00FF0000 - Switch index to check and not allow the Wizzrobe to appear until it's set?
   params & 0xFF000000 - Path index for the Wizzrobe to appear on.
     The Wizzrobe seems to teleport to random points on the path.
-    For type 0 Wizzrobes, this can be FF for no pat, and it will just repeatedly teleport around its initial position.
+    For type 0 Wizzrobes, this can be FF for no path, and it will just repeatedly teleport around its initial position.
     But for type 1 Wizzrobes, having no path will crash the game.
     For type 1 Wizzrobes, this path must also have a "next path"/"AssociatedPathIndex" specified, and that next path's two points will be used as the positions to spawn the two enemies this Wizzrobe creates.
     If there is no next path, type 1 Wizzrobes will crash the game.
@@ -319,10 +323,12 @@ Homen2: Statue face with a hookshot target on it. (d_a_obj_homen)
   9A3EC17F
   9B0FF106
 c_green, c_red, c_blue, c_black, c_kiiro: ChuChu. (d_a_cc)
-  params & 0x000000FF - ?
+  params & 0x000000FF - Behavior type.
     00 - Normal.
+    01 - Falls from the ceiling.
     03 - Stays permanently dead...? Like it has to use the switch index below...?
-    FF - Same as 00.
+    04 - Hiding in a pot.
+    FF - Defaults to 00 instead.
   params & 0x0000FF00 - Type of ChuChu.
      0 - Green
      1 - Red
@@ -434,7 +440,7 @@ Bk: Bokoblin. (d_a_bk)
   params & 0000FF00 - unknown_4
     stored to entity+2B5,1
     This is multiplied by 10.0 - maybe this is the range the Bokoblin notices you in?
-    If this is FF, the range defaults to 500.0 (NOT 255*10.0).
+    If this is FF, the range defaults to 500.0 (instead of 255*10.0).
   params & 00FF0000 - Path index?
     stored to entity+2B6,1
   params & FF000000 - Switch index for whether this Bokoblin should exist or not.
@@ -489,19 +495,19 @@ Rdead1, Rdead2: ReDead. (d_a_rd)
 Tn: Darknut. (d_a_tn)
   params & 0000000F - Affects behavior of the Darknut.
     stored to entity+2BC,1
-    0 - Darknut without shield.
-    4 - Darknut with shield.
+    0 - Starts roaming around immediately.
+    4 - Stands in place holding its sword up in front of its face until it notices Link.
     D - Tower of the Gods Mini-Boss Darknut.
     E - Mighty Darknuts in the Master Sword chamber.
     F - Frozen Darknuts in Hyrule Castle.
   params & 000000F0 - Affects the color of the Darknut's armor.
     stored to entity+3C4,1
-    0 - 
-    1 - 
-    2 - Gold.
-    3 - 
-    4 - Black.
-    5 - Red.
+    0 - Greenish silver with blue trim.
+    1 - Silver with red trim.
+    2 - Gold with black trim.
+    3 - White with silver trim.
+    4 - Black with brown trim.
+    5 - Red with gold trim.
     6+ - Defaults to 5.
     The RGB value for the main color of the armor is in list prim$7755 (at E2AC in d_a_tn.rel).
     The RGB value for the trim color of the armor is in list env$7756 (at E2C4 in d_a_tn.rel).
@@ -513,7 +519,14 @@ Tn: Darknut. (d_a_tn)
   params & FF000000 - switch index?
     stored to entity+2BF,1
     FF is a special value that disables something
-  auxilary_param & 00E0 - 
+  auxilary_param & 00E0 - Affects equipment.
+    0 - Normal, no special equipment.
+    1 - Has a full face helmet.
+    2 - Has a shield.
+    3 - Has a full face helmet and a shield.
+    4 - Has a shield and a cape.
+    5 - Has a full face helmet, a shield, and a cape.
+    6+ - Defaults to 5.
     stored to entity+3C5,1
   auxilary_param_2 & 00FF - Switch index to set when killed, makes the Darknut permanently dead.
     stored to entity+2C0,1
@@ -595,18 +608,34 @@ p_zelda: Princess Zelda. (d_a_pz)
     0xFF here defaults to 0 instead.
     Seems to be a boolean
 pow: Poe. (d_a_pw)
-  params & 0x000000FF - 
+  params & 0x000000FF - Type.
+    00 - The Poe and its lantern are both visible from the start. The Poe starts wandering around on its own even before it notices the player.
+    01 - Both the Poe and its lantern are invisible at first, but become visible when the player gets close.
+    02 - At first the Poe is invisible but the lantern is visible. The Poe becomes visible when the player gets close.
+    03 - Poe does not appear at all? These are spawned by Jalhalla.
+    04 - Poe does not appear at all? These are spawned by Jalhalla.
+    FF - Defaults to 00 instead.
+    If the value located at 803E75AA,2 is not 0, this value will be forcibly changed to (value at 803E75AA,2 minus 1).
   params & 0x00000100 - 
+    0 - ??? read float from entity+0x490
+    1 - ???
+    This bit is always set for placed Poes, but never for Poes spawned by Jalhalla.
   params & 0x0000FE00 - Color.
-    If this is 6 or greater, it defaults to 0 instead.
     0 - Blue
     1 - Purple
     2 - Orange
     3 - Yellow
     4 - Red
     5 - Green
-  params & 0x00FF0000 - 
-  params & 0xFF000000 - 
+    6+ - Defaults to 0 instead.
+  params & 0x00FF0000 - This number multiplied by 10.0 is used as a range for ??? (doesn't seem to affect how far away the Poe will notice the player at...)
+    FF - Defaults to a range of 1000.0 (instead of 255*10.0).
+  params & 0xFF000000 - Path index to follow.
+    Can be FF for none.
+  The Poes created by Jalhalla have the following params:
+    FF000003
+    FF000004
+    Except the color param, which is a random number from 0-4 for the first Poe spawned, and then increases by 1 for each Poe after, looping back to 0 after it goes past 5.
 Ls1: Aryll. (d_a_npc_ls1)
   params & 0x000000FF - Type.
     00 - On her lookout, after you have Hero's Clothes
@@ -643,10 +672,12 @@ bable: Red Bubbles and Blue Bubbles.
     FF - Defaults to 00 instead.
     If the value located at 803E75A8,2 is not 0, this value will be forcibly changed to 01.
 kuro_s, kuro_t: Morths.
-  params & 000000FF - Type.
+  params & 000000FF - Behavior type.
     00 - Chases the player when they move.
     01 - Stays in place. (kuro_t)
       Ones that the player touches and then shakes off will then chase the player like type 0.
+    03 - morths spawned by wizzrobes?
+      TODO: these might count as being "alive" for killing all enemies in a room, while other types of morths don't?
     04 - ? Don't seem to appear when placed? Unused ingame?
     05 - ? Don't seem to appear when placed? Unused ingame?
     06 - Morths in a pot.
@@ -667,8 +698,8 @@ nezumi: Rats and Bombchus.
     01 - Bombchu
     FF - Defaults to 00 instead.
   params & FF000000 - 
-nezumi: Hole that Rats or Bombchus come out of.
-  params & 000000FF - 
+nezuana: Hole that Rats or Bombchus come out of.
+  params & 000000FF - This number multiplied by 10.0 multiplied by 0.5 is the range within it will check for the player and start spawning entities.
   params & 0000FF00 - Maximum number of spawned entities that can be out at once.
     00 - Defaults to 01 instead.
   params & 00FF0000 - Type.
@@ -678,7 +709,7 @@ nezumi: Hole that Rats or Bombchus come out of.
       It's a random 50% chance what each one will come out as.
     03+ - Defaults to 00 instead.
   params & FF000000 - 
-  It gives the Rats it creates the following params:
+  It gives the entities it creates the following params:
     params & 000000FF - 01.
     params & 0000FF00 - 00 for normal Rats, 01 for Bombchus.
     params & FF000000 - Copied from this hole's params & FF000000.
@@ -708,6 +739,7 @@ Fmaster, Fmastr1, Fmastr2: Floormasters. (d_a_fm)
     Exit index in this room's SCLS list.
   params & 00000300 - Type.
     0 - Not a fightable Floormaster. Black hole that appears briefly under Link after he is sent back to the beginning of a dungeon. (Fmaster)
+      Note that type 0 behaves differently if it has a valid prerequisite switch index (params & FF000000) specified, and that switch is turned on after the Floormaster is already spawned in. In this case, it triggers an unused behavior where the Floormaster follows underneath Link while submerged in the floor. This can be seen in test room KATA_RM/Room21.
     1 - Moves along a path. (Fmastr1)
     2 - Does not move along a path. (Fmastr2)
     3 - Defaults to 0 instead.
@@ -726,11 +758,26 @@ Fmaster, Fmastr1, Fmastr2: Floormasters. (d_a_fm)
     this is argument r4 to setPointRestart
   aux_params_2 & 00FF - ?
 Bb: Kargarocs. (d_a_bb)
-  params & 000000FF - 
-  params & 0000FF00 - 
-  params & 00FF0000 - 
-  params & FF000000 - 
-  aux_params_2 & 00FF - 
+  params & 000000FF - Behavior type.
+    00 - Flying around.
+    01 - Flying around.
+    02 - Flying around.
+    03 - Immediately targets the player.
+    04 - Sits in place.
+    05 - Carries a Moblin, flying around.
+    06 - Carries a Bokoblin, flying around.
+    07 - Sits in place.
+    FF - Flying around.
+  params & 0000FF00 - This number multiplied by 100.0 is the range within it will notice you.
+    FF - Defaults to range of 1500.0 (instead of 255*100.0).
+  params & 00FF0000 - Path index to follow, or FF for none.
+    If a path is set, this prevents it from sitting in place even if its behavior type is set to do so.
+    If the path it's following has a next path defined, it seems the Kargaroc will move to the next path once it reaches the end of this path.
+  params & FF000000 - Switch index that must be set before this Kargaroc appears.
+    FF - This Kargaroc appears from the start.
+  aux_params_2 & 00FF - Disappearance switch index. The Kargaroc will permanently disappear once something sets this switch.
+    00 - This Kargaroc never permanently disappears.
+    FF - Defaults to 00 instead.
 magtail: Magtails. (d_a_mt)
   params & 000000FF - 
   params & 00007F00 - 
@@ -738,6 +785,21 @@ magtail: Magtails. (d_a_mt)
   params & 00FF0000 - 
   params & FF000000 - 
   aux_params_2 & 00FF - 
+amos2: Armos. (d_a_am2)
+  params & 000000FF - Unused?
+    FF - Defaults to 00 instead.
+    If the value located at 803E75AA,2 is not 0, this value will be forcibly changed to 01.
+  params & 0000FF00 - This number multiplied by 100.0 is the range within it will notice you.
+    00 - Defaults to range of 600.0 (instead of 0*100.0).
+    FF - Defaults to range of 600.0 (instead of 255*100.0).
+  params & 00FF0000 - Change switch behavior.
+    00 - The switch at params & FF000000, if it's valid, causes the Armos to permanently disappear once it's set.
+    01 - If the the switch at params & FF000000 is valid, the Armos starts of inanimate, and the switch causes the Armos to activate once it's set.
+    FF - Defaults to 00 instead.
+    Read at 3FF8 in func daAM2_Create(fopAc_ac_c *)
+  params & FF000000 - Switch index.
+    Variable behavior - see params & 00FF0000 for details.
+    FF - None. The Armos is always normal, it never disappears or is inanimate.
 
 ### SCOB:
 Salvage: Main salvages that require a chart to see.
