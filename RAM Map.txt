@@ -668,9 +668,8 @@ Stage info format:
       This bitfield is zeroed out when you change stages.
     08,2: Padding?
     0A,40: List of pointers to "zone actors".
-      Not sure what these are, but they are also zeroed out when you change stages.
       These are set by the onActor function when an enemy is killed, if its "enemy number" is not FFFF.
-      These are be temporary enemy death flags. Once this is set, the enemy is dead, even if you go through a door and come back. But it will respawn after a stage transition.
+      These are temporary enemy death flags. Once this is set, the enemy is dead, even if you go through a door and come back. But it will respawn after a stage transition.
     4A,1: ?
     4B,1: Padding?
 

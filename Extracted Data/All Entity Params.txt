@@ -1,3 +1,4 @@
+   name   params aux1 aux2    stage/arc    chunk/index
     sea 00010000 0000 0000 in ADMumi/Stage ACTR/000
    Ship 0000FFFF 0000 0000 in A_nami/Stage ACTR/000
     sea 00010000 0000 0000 in A_umikz/Stage ACTR/000

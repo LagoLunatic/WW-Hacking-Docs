@@ -342,7 +342,11 @@ c_green, c_red, c_blue, c_black, c_kiiro: ChuChu. (d_a_cc)
      E - Switches itself to 4 (Yellow)
      Types A-E run a little bit of code before switching to 0-4. Not sure what that changes.
      One purpose of the duplicate A-E types is for Wizzrobe spawning - most of the ChuChus spawned by Wizzrobes have their type randomly selected (Green, Red, Yellow, MAYBE Black??), but ones with the A-E type specified will always spawn as that type, with no randomness.
-  params & 0x00FF0000 - ? Affects how it behaves
+  params & 0x00FF0000 - This number multiplied by 10.0 is used as a range within it notices the player.
+    00 or FF:
+      If behavior type is 1, these default to a range of 1200.0.
+      If behavior type is 4, these do not default to anything, and actually use 0 or 255*10.0 as the range. Though I'm not sure if the range actually affects how type 4s act anyway?
+      If behavior type is anything else, these default to a range of 1000.0.
   params & 0xFF000000 - Switch index for this ChuChu to be permanently dead.
   Example params:
   0B1E0203 - Blue ChuChu on Eastern Fairy Island.
@@ -417,7 +421,9 @@ Bk: Bokoblin. (d_a_bk)
     7 - Looking up and jumping trying to reach Tetra
     8 - Does not load in?
     9 - Crash
-    A - Stands guard, yawns periodically
+    A - Mini-boss Bokoblin standing guard.
+      When it dies, a short event plays where the camera focuses on its death animation.
+      Used for the Bokoblin at the end of FF1.
     B - Pink Bokoblin holding a telescope.
       Overrides params & 00000020 trying to make the Bokoblin green.
       Also sets a bool at entity+2DC to true to make it pink.
@@ -453,15 +459,23 @@ Bk: Bokoblin. (d_a_bk)
     FF - Defaults to 00 instead.
 mo2: Moblin. (d_a_mo2)
   params & 000000FF - Type.
-    00 - No lantern. Brown skin.
+    00 - No lantern. Blue skin.
     01 - Has a lantern. Brown skin.
     05 - ? Calls anm_init. Unused ingame.
-    0F - No lantern. Blue skin. Used in Hyrule and debug test rooms.
-      stores 0x17 to entity+61A,2
-      stores 0 to entity+2C1,1
+    0F - No lantern. Blue skin. Frozen in time.
+      Once event bit 3802 (COLORS_IN_HYRULE) is set, this Moblin will no longer be frozen in time.
     64 - ? Skips doing some matrix related math among other things? Unused ingame.
     FF - No lantern. Blue skin. Used in the Ganon's Tower Maze and debug test rooms.
-  aux_params_2 & 00FF - ?
+  params & 0000FF00 - For type 0F, this affects what animation to use when frozen in time.
+    00 - Frozen in an attacking pose.
+    01+ - Frozen in a walking pose.
+  params & 00FF0000 - Path index to follow, or FF for none.
+  params & FF000000 - Switch index to check and not appear until it is set.
+    If this is FF the Moblin will appear from the start.
+  aux_params_2 & 00FF - Switch index to set when the Moblin dies. The Moblin stays dead as long as the switch is set.
+    00 - Invalid switch, don't set or check.
+    FF - Defaults to 00 instead.
+    Read at BD38 in func daMo2_Create(fopAc_ac_c *)
 Keeth, Fkeeth: Keese. (d_a_ki)
   params & 000000FF - 
     stored to entity+2CC,1 and then copied to entity+2D1,1
@@ -651,10 +665,9 @@ p_hat, sea_hat: Peahats and Seahats.
     If the value located at 803E75AA,2 is not 0, this value will be forcibly changed to 01.
   params & 0x0000FF00 - 
   params & 0x00FF0000 - 
-bable: Red Bubbles and Blue Bubbles.
+bable: Red Bubbles and Blue Bubbles. (d_a_bl)
   params & 000000FF - Type.
     00 - Red Bubble
-      uses particle ID 8124, while the others use particle ID 8213??
       (used in earth temple, totg, savage labyrinth, and ganon's toewr earth temple section)
     01 - Blue Bubble
       (used in savage labyrinth)
@@ -685,7 +698,7 @@ kuro_s, kuro_t: Morths.
   params & 0000FF00 - Number of Morths to spawn.
     00 - Defaults to 01.
     16+ - Defaults to 01.
-  params & 00FF0000 - Radius around the pot that they will look for Link within and break out of the pot if they see him.
+  params & 00FF0000 - This number multiplied by 10.0 is the range around the pot that they will look for Link within and break out of the pot if they see him.
     No effect on types besides 6.
     FF - Defaults to 00.
 nezumi: Rats and Bombchus.
@@ -700,7 +713,7 @@ nezumi: Rats and Bombchus.
   params & FF000000 - 
 nezuana: Hole that Rats or Bombchus come out of.
   params & 000000FF - This number multiplied by 10.0 multiplied by 0.5 is the range within it will check for the player and start spawning entities.
-  params & 0000FF00 - Maximum number of spawned entities that can be out at once.
+  params & 0000FF00 - Maximum number of entities it can spawn.
     00 - Defaults to 01 instead.
   params & 00FF0000 - Type.
     00 - Spawns Rats. Also spawns the Rat Shopkeeper that sells you things if you give it All-Purpose Bait.
@@ -785,6 +798,25 @@ magtail: Magtails. (d_a_mt)
   params & 00FF0000 - 
   params & FF000000 - 
   aux_params_2 & 00FF - 
+amos: Armos Knights. (d_a_am)
+  params & 000000FF - Behavior type.
+    00 - Normal. Follows Link as far as it needs to and does not return to its spawn point.
+    01 - Has a fixed range around its spawn point that it stays in and guards.
+    FF - Defaults to 00 instead.
+    (Note that only the lowest bit actually matters, so all even numbers act as type 00 and all odd numbers except FF act as type 01.)
+    If the value located at 803E75AA,2 is not 0, this value will be forcibly changed to 01.
+  params & 0000FF00 - For type 01, this number multiplied by 100.0 is the range the Armos Knight can wander from its spawn point.
+    If the player is outside of this range from the spawn point, the Armos Knight will turn around and go back to its spawn point.
+    00 - Defaults to range of 400.0 (instead of 0*100.0).
+    FF - Defaults to range of 400.0 (instead of 255*100.0).
+  params & 00FF0000 - Change switch behavior.
+    00 - The switch at params & FF000000, if it's valid, causes the Armos Knight to permanently disappear once it's set.
+    01 - If the the switch at params & FF000000 is valid, the Armos Knight starts off inanimate, and the switch causes the Armos Knight to activate once it's set.
+    02+ - If the the switch at params & FF000000 has no effect.
+    FF - Defaults to 00 instead.
+  params & FF000000 - Switch index.
+    Variable behavior - see params & 00FF0000 for details.
+    FF - None. The Armos Knight is always normal, it never disappears or is inanimate.
 amos2: Armos. (d_a_am2)
   params & 000000FF - Unused?
     FF - Defaults to 00 instead.
@@ -794,12 +826,31 @@ amos2: Armos. (d_a_am2)
     FF - Defaults to range of 600.0 (instead of 255*100.0).
   params & 00FF0000 - Change switch behavior.
     00 - The switch at params & FF000000, if it's valid, causes the Armos to permanently disappear once it's set.
-    01 - If the the switch at params & FF000000 is valid, the Armos starts of inanimate, and the switch causes the Armos to activate once it's set.
+    01 - If the the switch at params & FF000000 is valid, the Armos starts off inanimate, and the switch causes the Armos to activate once it's set.
     FF - Defaults to 00 instead.
     Read at 3FF8 in func daAM2_Create(fopAc_ac_c *)
   params & FF000000 - Switch index.
     Variable behavior - see params & 00FF0000 for details.
     FF - None. The Armos is always normal, it never disappears or is inanimate.
+Gy: Gyorgs. (d_a_gy)
+  Will not appear until you have the Boomerang.
+  Will not appear if no Gyorg spawner (GyCtrl or GyCtrlB) is present.
+  aux_params & FFFF - X rotation.
+  aux_params_2 & FFFF - Z rotation.
+GyCtrl, GyCtrlB: Gyorg spawners. (d_a_gy_ctrl)
+  Will not appear until you have the Boomerang.
+  params & 0000000F - Type.
+    0 - Can follow you out of the sector. (GyCtrl)
+      Note that once a single cross-sector Gyorg spawner exists, more cross-sector Gyorg spawners will not load in to prevent an infinite number of them being created by exiting and re-entering a sector that has one placed.
+    1 - Stays within the sector it's placed in. (GyCtrlB)
+      This type might despawn its Gyorgs when they get close to Big Octos, Rafts or Fishmen?
+    F - Defaults to 0 instead.
+  params & 000000F0 - Number of Gyorgs to spawn.
+    F - Defaults to 1 instead.
+  params & 0000FF00 - This number multiplied by 1000.0 is the range within it will notice KoRL and start spawning Gyorgs.
+    FF - Defaults to a range of 10000.0 instead.
+  params & FF000000 - Switch index. The spawner will not start creating Gyorgs until this switch is set.
+    Unused in the vanilla game, but seems to work fine.
 
 ### SCOB:
 Salvage: Main salvages that require a chart to see.
