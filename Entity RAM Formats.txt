@@ -24,6 +24,8 @@ Append entity?:
 0B0,4: Parameters.
 0EC,4: Pointer to something in the loaded REL file for this entity?
   Go to this pointer+8, and read the pointer there. That has a pointer to the execute code for this entity.
+0F0,4: Pointer to the game heap memory allocated for this entity by fopAcM_entrySolidHeap?
+  This pointer is 0x10 bytes after the start of the free space block that was chosen for this entity.
 1BC,2: "Enemy number" from the ACTR data
 1C1,1: Actor subtype index.
 1C2,1: Actor unknown value 0xB
@@ -151,11 +153,16 @@ For doors:
   This is set by frontCheck__12dDoor_info_cFv
 
 For Zunari:
-  788,4: State?
-    -1 = On the left side of his stall
-    0 = On the right side of his stall
+788,4: State?
+  -1 = On the left side of his stall
+  0 = On the right side of his stall
 
 Model entity format:
 18,4: X scale.
 1C,4: Y scale.
 20,4: Z scale.
+
+Bounding box(?) format:
+(Bounding boxes are created by calling dBgS_Acch::__ct(void) with r3 equal to the pointer to where the entity should be, which is at a variable location within the entity's RAM depending on what class of entity it is.)
+094,4: Floating point Y position of the floor below this entity.
+

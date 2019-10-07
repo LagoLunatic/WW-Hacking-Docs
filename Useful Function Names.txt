@@ -266,12 +266,18 @@ dKyw_tact_wind_set__Fss
   r3 - ? angle stored to 803E5458. usually 0?
   r4 - wind direction. stored to 803E545A.
 
+setNextStageBySclsNum
+  r3 - Exit index in the SCLS list
+  r4 - Room index for which room to look in the SCLS list for. If this is -1, it will look in the stage's SCLS list instead of the room's.
+
 setPointRestart
   sets the "restart" position (e.g. if a floormaster grabs you)
-  r3 - 
-  r4 - 
-  r5 - 
-  can either set link or medli/makar's restart position depending on arguments.
+  r3 - Pointer to the partner entity
+  r4 - Exit index in the stage.dzs's SCLS list for the player's partner to go through to be put in jail when captured
+  r5 - Partner ID number of the partner to set the restart position for
+    1 - Makar
+    2 - Medli
+    3 - Servant of the Tower
 
 setRestartOption
   sets Medli or Makar's "restart" position if they're grabbed by a floormaster
@@ -473,6 +479,13 @@ fpcSCtRq_Request__FP11layer_classsPFPvPv_iPvPv
   r4 - Actor ID
   r7 - "append" entity? (return value from createAppend__FUlP4cXyziP5csXyzP4cXyzScUi)
   (more args)
+
+createChild__16mDoHIO_subRoot_cFPCcP13JORReflexible
+mDoHIO_subRoot_c::createChild(char const *, JORReflexible *)
+  creates a child entity...? used by darknuts for example
+  r3 - Pointer to 803A5774 + 4
+  r4 - Pointer to a string for this entity's name? not the actor name, but an actual japanese name. e.g. for darknut, this points to a SHIFT JIS string of "タートナック".
+  r5 - Pointer to "HIO" in the BSS section?
 
 
 checkRopeSwingWall__9daPy_lk_cFP4cXyzP4cXyzPsPf
@@ -772,3 +785,32 @@ cDT_NamePTbl::GetIndex( const(char const *, int))
   r3 - 803C9CB4
   r4 - Pointer to a string of the actor name
   r5 - 0?
+
+fopAcM_getProcNameString__FP10fopAc_ac_c
+  given an actor instance, it returns that actor's actor name.
+  e.g. darknut entity -> "Tn"
+  r3 - Pointer to an actor entity
+  returns r3 - Pointer to the actor name
+
+fopAcM_entrySolidHeap(fopAc_ac_c *, int (*)(fopAc_ac_c *), unsigned long)
+  gets some memory on the GAME heap and initializes an entity.
+  this function stores a pointer to the start of the memory block to [entity+0xF0]
+  in order to know how much memory actually gets used, it first temporarily allocates an amount of memory from a block equal to the amount of memory specified in r5, the maximum that may be needed for this entity.
+  then it runs the callback function so the entity initializes itself, and lets it use as much of the allocated memory as it wants, and then sees how much space that used, and remarks the space in the block that WASN'T used to be free again.
+  if argument r5 is 0, then it seems to just allocate the entirety of the biggest block temporarily.
+  r3 - Entity pointer
+  r4 - Callback function for this entity to initialize itself
+  r5 - Maximum amount of memory that may be needed, or 0 for no maximum.
+
+daPy_lk_c::loadTextureAnimeResource(unsigned long, int)
+  loads a .btp animation (facial texture animation) into memory for Link to use.
+  r3 - Pointer to the player entity
+  r4 - File ID of the .btp animation inside LkAnm.arc
+  r5 - 0?
+  returns r3 - Pointer to the loaded .btp animation
+
+daPy_lk_c::setTextureAnimeResource(J3DAnmTexPattern *, int)
+  sets Link's current .btp animation (facial texture animation)
+  r3 - Pointer to the player entity
+  r4 - Return value from daPy_lk_c::loadTextureAnimeResource
+  r5 - ?

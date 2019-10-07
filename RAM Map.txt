@@ -109,6 +109,26 @@ g_fopAcTg_Queue:
   80376398 - Beedle's shop on Outset.
   80376404 - Beedle's shop on Rock Spire.
 
+80371618,24 - Data related to the game heap. (GameHeapCheck)
+80371618,4 - Pointer to the string "Game".
+8037161C,4 - Pointer to the game heap.
+Game heap format:
+78,4: Pointer to the first free block of memory.
+7C,4: Pointer to the last free block of memory.
+80,4: Pointer to the first used block of memory.
+84,4: Pointer to the last used block of memory.
+Format of each block of memory in the game heap:
+00,2: 0x0000 for free blocks. For used blocks, constant 0x484D? (Maybe the string "HM"...?)
+02,1: 0x00?
+03,1: 0x00 for free blocks, 0xFF for used blocks?
+04,4: Size of this block of memory.
+08,4: Pointer to the previous block of memory of this type. (e.g. The previous free block if this is a free block.)
+0C,4: Pointer to the next block of memory of this type.
+10,[size]: The actual data in this block of memory.
+
+803F772C,4 - This global variable has a pointer to the last allocated memory block on the game heap. This is used by constructors to know what memory to use. (sCurrentHeap__7JKRHeap)
+  This is accessed as r13-0x69B4.
+
 803842B0 (3812B0 in main.dol) - List of item resources.
   Entry length 0x24. Index is an item ID.
   00,4: Pointer to a string, the name of the .arc containing this item's model.
@@ -677,6 +697,8 @@ Stage info format:
 
 Player's partner's room restart position? ("restart option")
 803C5D30,1 - ?
+803C5D31,1 - ?
+803C5D34,2 - ? SCLS exit index for partner to use?
 803C5D36,2 - Room restart rotation?
 803C5D38,4 - Room restart X pos.
 803C5D3C,4 - Room restart Y pos.
@@ -745,6 +767,7 @@ Player's partner's room restart position? ("restart option")
   Can also be something related to your delivery bag? (1-3)
 
 803C9EC8,2 - Bitfield relating to events?
+  0001 - Must be set for an event to work properly if the player triggers it while coming out of a door?
   0008 - Should check if there are any events ready to be run.
 
 803C9F10-803CA40F - Huge bitfield of event flags. These are for the "flag" fields set by everything in event_list.dat.
@@ -757,6 +780,7 @@ Player's partner's room restart position? ("restart option")
 803CA74C,4 - Always has a pointer to the player entity in RAM.
   This refers not only to Link, but to Medli/Makar/etc when you're controlling them.
 803CA754,4 - Always has a pointer to the Link entity in RAM.
+803CA758,4 - Always has a pointer to the partner??? like Medli
 803CA75C,4 - Always has a pointer to the ship entity in RAM (KoRL).
 
 803CA7FF,1 - Affects which place name is shown?
@@ -887,6 +911,7 @@ Player's true position (this gets copied to the player entity's position every f
 
 803ED818,2 - Bitfield of currently pressed buttons. (For Pad.c)
 803ED848,4 - Bitfield of currently pressed buttons. (For JUTGamePad.cpp)
+  00000004 - D-pad down
 803F0F30,4 - Bitfield of currently pressed buttons. (For SIBios.c)
 
 803F6A68,4 - Has a pointer to something related to the map select screen maybe?
