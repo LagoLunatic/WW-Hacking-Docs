@@ -452,25 +452,32 @@ execWaitMainFromBoss__8daItem_cFv
 
 fopAcM_fastCreate__FsUlP4cXyziP5csXyzP4cXyzScPFPv_iPv
   creates an entity.
-  r3 - Actor ID.
+  r3 - Actor ID
   r4 - Params
   (more args)
 
+fopAcM_create(short, unsigned long, cXyz *, int, csXyz *, cXyz *, signed char, int (*)(void *))
 fopAcM_create__FsUlP4cXyziP5csXyzP4cXyzScPFPv_i
   creates an entity.
-  r3 - Actor ID.
+  r3 - Actor ID
   r4 - Params
-  (more args)
+  r5 - Position (pointer to a vector3 of floats)
+  r6 - Room index
+  r7 - Auxilary params and rotation (pointer to a vector3 of shorts, auxilary params 1, Y rotation, auxilary params 2)
+  r8 - Scale (pointer to a vector3 of floats)
+  r9 - 0?
+  r10 - 0?
 
 fopAcM_createChild__FsUiUlP4cXyziP5csXyzP4cXyzScPFPv_i
   creates an entity as a child of another entity
   r3 - Actor ID
   r4 - unique ID of the parent entity
-  r5 - params
+  r5 - Params
+  (more args)
 
 createAppend__FUlP4cXyziP5csXyzP4cXyzScUi
   part of creating an entity
-  r3 - params
+  r3 - Params
   r9 - unique ID of the parent entity, or -1 for no parent
   (more args)
 

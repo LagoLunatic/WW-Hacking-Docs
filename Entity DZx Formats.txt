@@ -68,10 +68,10 @@ Treasure chests. (d_a_tbox)
     6 - Chest is invisible, but there is a triforce emblem on the ground below it. The chest will appear once a certain switch is set.
     7 - Consider this chest's open flag to be in stage ID 1 instead of the actual stage ID of the current stage.
     8 - Only appears once a switch is set. Also consider this chest's open flag to be in stage ID 1 instead of the actual stage ID of the current stage.
-  auxilary_param & 0x003F - Room number.
-  auxilary_param & 0xFFC0 - Unused.
-  auxilary_param_2 & 0x00FF - Switch index to set when opening this chest, or 0xFF for none.
-  auxilary_param_2 & 0xFF00 - Item ID in this chest.
+  aux_params & 0x003F - Room number.
+  aux_params & 0xFFC0 - Unused.
+  aux_params_2 & 0x00FF - Switch index to set when opening this chest, or 0xFF for none.
+  aux_params_2 & 0xFF00 - Item ID in this chest.
 
 ### ACTR:
 NpcSo: Fishman. (d_a_npc_so)
@@ -253,10 +253,10 @@ Warpts1, Warpts2, Warpts3: Warp pot. (d_a_obj_warpt)
   params & 0xFF000000 - Where to warp when going to the third warp pot in this dungeon.
     This is an SCLS exit index in this room's SCLS list.
     Gets stored to entity+0x2A8,4
-  auxilary_param & 0x00FF - ?
-  auxilary_param & 0xFF00 - ?
-  auxilary_param_2 & 0x00FF - Affects whether a sound effect should be played or not?
-  auxilary_param_2 & 0xFF00 - If this is 0xFF, the warp will be locked by default. Otherwise it will be unlocked.
+  aux_params & 0x00FF - ?
+  aux_params & 0xFF00 - ?
+  aux_params_2 & 0x00FF - Affects whether a sound effect should be played or not?
+  aux_params_2 & 0xFF00 - If this is 0xFF, the warp will be locked by default. Otherwise it will be unlocked.
   first warp pot in DRC:  03020102
   second warp pot in DRC: 02010003
   third warp pot in DRC:  04030204
@@ -271,36 +271,36 @@ Warpt, Warpnt: One-way warp pot that only works within a single room. (d_a_obj_w
   params & 0x000FF000 - Where to warp when succesfully going into this warp pot.
     This is an SCLS exit index in this room's SCLS list.
     Gets stored to entity+29C,4
-  auxilary_param & 0x00FF - Switch index for this warp pot being opened.
+  aux_params & 0x00FF - Switch index for this warp pot being opened.
     For the entrance pot (type 1), this switch is set by default when the warp pot is created.
     Gets stored to entity+2AC,4
-  auxilary_param & 0xFF00 - Switch index for the other warp pot connected to this one being opened.
+  aux_params & 0xFF00 - Switch index for the other warp pot connected to this one being opened.
     Gets stored to entity+2B0,4
-  auxilary_param_2 - Unused for one-way warp pots.
+  aux_params_2 - Unused for one-way warp pots.
   Example params:
     entrance warp pot in puppet ganon's room:
       params: 000 02 03 1
-      auxilary_param: 08 07
-      auxilary_param_2: 0000
+      aux_params: 08 07
+      aux_params_2: 0000
     exit warp pot in puppet ganon's room:
       params: 000 03 02 0
-      auxilary_param: 07 08
-      auxilary_param_2: 0000
+      aux_params: 07 08
+      aux_params_2: 0000
 wiz_r: Wizzrobe. (d_a_wz)
   params & 0x000000FF - Type.
     00 - Shoots fireballs.
     01 - Spawns enemies and shoots fireballs.
     02 - Defaults to 01 instead.
     FF - Defaults to 00 instead.
-  params & 0x0000FF00 - Switch index to set when this Wizzrobe dies?
-  params & 0x00FF0000 - Switch index to check and not allow the Wizzrobe to appear until it's set?
+  params & 0x0000FF00 - Disable spawn on death switch.
+  params & 0x00FF0000 - Enable spawn switch.
   params & 0xFF000000 - Path index for the Wizzrobe to appear on.
     The Wizzrobe seems to teleport to random points on the path.
     For type 0 Wizzrobes, this can be FF for no path, and it will just repeatedly teleport around its initial position.
     But for type 1 Wizzrobes, having no path will crash the game.
     For type 1 Wizzrobes, this path must also have a "next path"/"AssociatedPathIndex" specified, and that next path's two points will be used as the positions to spawn the two enemies this Wizzrobe creates.
     If there is no next path, type 1 Wizzrobes will crash the game.
-  auxilary_param_2 & 00FF - Which enemy summon table to use.
+  aux_params_2 & 00FF - Which enemy summon table to use.
     If this is FF, it defaults to 00.
     The list of possible enemy actor IDs to summon is enemy_name_dt$6153.
     This parameter determines which of the possible spawn tables within that list to use. Each table is 0x10 bytes long.
@@ -326,9 +326,13 @@ c_green, c_red, c_blue, c_black, c_kiiro: ChuChu. (d_a_cc)
   params & 0x000000FF - Behavior type.
     00 - Normal.
     01 - Falls from the ceiling.
-    03 - Stays permanently dead...? Like it has to use the switch index below...?
+    02 - ChuChu never spawns in properly.
+      It's impossible to see or kill, but still counts as alive so it will prevent you from completing the room.
+    03 - Does not attack Link, just moves around randomly.
+      This behavior type is intended for Blu ChuChus. It causes Grappling Hook to not steal Chu Jelly from them, and Hookshot to not pull the them to Link (only makes it stand up if in a puddle).
     04 - Hiding in a pot.
     FF - Defaults to 00 instead.
+    If the value located at 803E75A8,2 is not 0, this value will be forcibly changed to 03.
   params & 0x0000FF00 - Type of ChuChu.
      0 - Green
      1 - Red
@@ -361,28 +365,108 @@ Hhbot1N: Heavy switch you must depress with the iron boots. (d_a_obj_swheavy)
   Example params:
   03013200 - Tall Basement Room in Wind Temple
 gmos, gmos_g, gmos_f: Mothulas. (d_a_gm)
-  params & 000000FF - Always 0?
-  params & 0000FF00 - Always 0?
+  params & 000000FF - Which wings this Mothula starts out already missing. Bitfield.
+    & 01 - Missing lower right wing.
+    & 02 - Missing lower left wing.
+    & 04 - Missing upper right wing.
+    & 08 - Missing upper left wing.
+    FF - Defaults to 00 (not missing any wings).
+    If this is a wingless Mothula type, it automatically sets this to 0F so it's missing all wings.
+    If this is a winged Mothula type, and you manually set this to 0F so it's missing all wings, it bugs out. Instead of becoming a wingless Mothula type, it will fly with no wings, and also be immune to all damage (not counting being shattered with Ice Arrows or killed with Light Arrows).
+    If this is a wing instead of an actual Mothula (i.e. wing type is 1 or 2), then this params & 000000FF is instead an int from 01-04 for which wing it is:
+      01 - Lower right wing.
+      02 - Lower left wing.
+      03 - Upper right wing.
+      04 - Upper left wing.
+  params & 0000FF00 - Wing type.
+    00 - Not a wing, this is actually a Mothula.
+    01 - Wing that falls down while spinning.
+    02 - Wing that floats down gently.
+    FF - Defaults to 00.
   params & 00FF0000 - Type.
     00 - Mini-boss Winged Mothula.
     01 - Wingless Mothula.
     02 - Common enemy Winged Mothula.
     FF - Same as 00.
-  params & FF000000 - 19 for mini-boss version of winged mothula.
-Hmos1, Hmos2, Hmos3: Beamos. (d_a_obj_bemos)
-  params & 000000FF - Maybe range?
-    FF - Defaults to 00 instead.
-  params & 0000FF00 - Might affect how fast the head turns and in what direction...?
-    Only set for Hmos2?
-    FF - Defaults to 00 instead.
-  params & 00FF0000 - Seems to be the index of a path in this room's RPAT list.
-    I think this is only for laser barrier (Hmos3). Should be 00 for actual Beamos.
+    Read at 8030 in func daGM_Create(fopAc_ac_c *)
+  params & FF000000 - Disable spawn on death switch.
+    FF - Invalid.
+  aux_params_2 & 00FF - If 00, do not set switch at params & FF00000, even if it is valid.
+Hmos1, Hmos2, Hmos3: Beamos and laser barriers. (d_a_obj_bemos)
+  params & 000000FF - Varies depending on the type of Beamos.
+    For Red and Blue Beamos: This number multiplied by 100.0 plus 500.0 is the range within it will notice the player and start firing its laser.
+      Note that values here larger than 5 or so won't work as expected. The Beamos might notice you at higher ranges but it will wind up firing its laser into the floor, or trying to fire it at you but the laser is too short and is cut off.
+      FF - Defaults to a range of 500.0 instead.
+    For laser forcefields: Deactivation switch index.
+      When this switch is set the lasers will stop firing.
+      FF - Invalid.
+  params & 0000FF00 - Varies depending on whether this is a Red Beamos or a laser barrier. (No effect on Blue Beamos.)
+    For Red Beamos: This is the speed the head turns at, and whether it's clockwise or counterclockwise.
+      Signed byte.
+      If positive or zero: turn_speed = this*250 + 750
+      If negative: turn_speed = this*250 - 750
+      (Note: 0x4000 or 16384 turn speed is equal to 90 degrees per frame.)
+      Examples:
+        00 - 750
+        01 - 1000
+        03 - 1500
+        05 - 2000
+        FD - -1500
+    For laser barriers:
+      00 - Normal.
+      01 - Lasers only appear if the active Servant of the Tower is in the same room as this.
+      02 - Lasers have no solid collision. The player can walk through them if they just took damage and have iframes.
+      FF - Defaults to 00 instead.
+  params & 00FF0000 - Path index for the laser barrier's laser to follow.
+    One end of the barrier will be at one point, the other end at the other point.
+    No effect on actual Beamos types.
+    If this is not a valid path index and this is a laser barrier type, then it will just be half of the laser barrier (one of the wall decorations + one laser).
   params & F0000000 - Type.
-    0 - Blue Beamos. Always fires at a specific spot.
-    1 - Red Beamos. Tracks you.
-    2 - Lasier barrier.
-  auxilary_param_2 & 003F - Might affect the item it drops?
-    stored to entity+6BF,1
+    0 - Blue Beamos. Always fires at a specific spot. (Hmos1)
+    1 - Red Beamos. Tracks you. (Hmos2)
+    2 - Laser barrier. (Hmos3)
+  aux_params_2 & 003F - Affects what item it drops when the eye is destroyed. (Red and Blue Beamos only.)
+    This is argument r4 to createItemFromTable.
+  aux_params_2 & 1FC0 - Item pickup flag to give to the item it drops when the eye is destroyed. (Red and Blue Beamos only.)
+    7F - No permanent pickup flag, the Beamos will drop this item every time its eye is destroyed.
+  If this is a single laser (type is laser barrier and path index is invalid), then it has these paremeters:
+    aux_params_1 & FFFF - X rotation.
+      Read at 0E8C in func daBemos_c::CreateInit3(void)
+      Read at 0F40 in func daBemos_c::CreateInit3(void)
+      Read at 10D4 in func daBemos_c::CreateInit3(void)
+      Read at 1134 in func daBemos_c::CreateInit3(void)
+    aux_params_2 & FFFF - Z rotation...? doesn't seem to work
+      Read at 0E9C in func daBemos_c::CreateInit3(void)
+      Read at 0F50 in func daBemos_c::CreateInit3(void)
+      Read at 10E4 in func daBemos_c::CreateInit3(void)
+      Read at 1144 in func daBemos_c::CreateInit3(void)
+Ylesr00: Laser beam fired by a Hmos3 laser barrier. (d_a_beam)
+  params & 000000FF
+    Read at 0DEC in func daBeam_c::CreateInit(void)
+  params & 0000FF00
+    Read at 0DF0 in func daBeam_c::CreateInit(void)
+  params & 00FF0000
+    Read at 0F50 in func daBeam_c::CreateInit(void)
+  params & 0F000000
+    Read at 0FB8 in func daBeam_c::CreateInit(void)
+  params & 10000000 (WARNING: overlaps)
+    Read at 0FC8 in func daBeam_c::CreateInit(void)
+  params & 30000000 (WARNING: overlaps)
+    Read at 0FC4 in func daBeam_c::CreateInit(void)
+  params & C0000000
+    Read at 0BD4 in func daBeam_c::CreateInit(void)
+  aux_params_1 & FFFF
+    Read at 0C34 in func daBeam_c::CreateInit(void)
+    Read at 1118 in func daBeam_c::_execute(void)
+    Read at 12B8 in func daBeam_c::_execute(void)
+    Read at 1430 in func daBeam_c::_execute(void)
+    Read at 1D60 in func daBeam_c::wait_proc(void)
+  aux_params_2 & FFFF
+    Read at 1D70 in func daBeam_c::wait_proc(void)
+  Example params:
+  11000000 - Laser beam created by a Hmos3 that you can walk through (no solid collision).
+  41000000 - Laser beam created by a Hmos3 that you can't walk through (has solid collision).
+  
 Ikada, ikada_h, ikadaS, ikada_u, Svsp: Various types of rafts/ships. (d_a_obj_ikada)
   params & 0000000F - Type.
     0 - Ikada   - Raft
@@ -394,8 +478,8 @@ Ikada, ikada_h, ikadaS, ikada_u, Svsp: Various types of rafts/ships. (d_a_obj_ik
     params & 000003F0 - 
     params & 0003FC00 - 
     params & 03FC0000 - 
-    auxilary_param & 00FF - Unused?
-    auxilary_param & FF00 - Path index of the path for the ship to follow.
+    aux_params & 00FF - Unused?
+    aux_params & FF00 - Path index of the path for the ship to follow.
   If type is 4 (Salvage corp):
     params & 00FF0000 - Path index of the path for the ship to follow.
 Boko: Weapon lying on the ground. (d_a_boko)
@@ -420,6 +504,7 @@ Bk: Bokoblin. (d_a_bk)
     6 - Bokoblin operating a Forsaken Fortress searchlight.
     7 - Looking up and jumping trying to reach Tetra
     8 - Does not load in?
+      Not placed in the vanilla game.
     9 - Crash
     A - Mini-boss Bokoblin standing guard.
       When it dies, a short event plays where the camera focuses on its death animation.
@@ -430,6 +515,7 @@ Bk: Bokoblin. (d_a_bk)
       Also sets this type field to 4.
     F - ?
       Only used in debug test maps.
+      Sets entity+376,2 to 0x17 and entity+2BA,1 to 0.
   params & 00000010 - Change switch behavior.
     stored to entity+2B9,1
     0 - The switch at params & FF000000, if it's valid, MUST be set for this Bokoblin to spawn.
@@ -479,35 +565,42 @@ mo2: Moblin. (d_a_mo2)
     FF - Defaults to 00 instead.
     Read at BD38 in func daMo2_Create(fopAc_ac_c *)
 Keeth, Fkeeth: Keese. (d_a_ki)
-  params & 000000FF - 
+  params & 000000FF - Behavior type.
+    00 - Hanging from the ceiling until it notices the player
+    01 - Flying around in circles
+    02 - Launches like a cannonball
+      As soon as it spawns it will launch diagonally up as if shot from a cannon. It will be in the hanging upside down animation while it is launching.
+      After a second of being launched it starts acting normal and immediately targets the player.
+    03 - Immediately targets the player.
+    0A - Same as 03...? Never placed, probably a state
+    14 - Same as 03...? Never placed, probably a state
+    1E - Instantly plays its death animation twice when spawned.
+    80 - Hanging from the ceiling like type 00, but it never attacks the player.
+      Only used in test rooms.
+      Note: Invalid types (ones not in this list) act the same as type 80.
+    FF - Defaults to 00 instead.
+    Read at 44C4 in func daKi_Create(fopAc_ac_c *)
     stored to entity+2CC,1 and then copied to entity+2D1,1
-    If this is FF, it defaults to being 0 instead.
-  params & 00007F00 - Affects the distance the Keese will notice the player at? Or, maybe the distance away from the player it tries to stay at?
-    stored to entity+2CD,1
-    0 - 300.0
-    1 - 800.0
-    2 - 1500.0
-    Any other value - 3000.0
+  params & 00007F00 - Affects the range within it notices the player.
+    00 - 300.0
+    01 - 800.0
+    02 - 1500.0
+    03-7F - 3000.0
   params & 00008000 - Boolean for whether this is a Fire Keese.
-    stored to entity+905,1
-  params & 00FF0000 - 
-    stored to entity+2CE,1
-  params & FF000000 - 
-    stored to entity+2CF,1
-Rdead1, Rdead2: ReDead. (d_a_rd)
+  params & 00FF0000 - Path index to follow.
+  params & FF000000 - Enable spawn switch.
+Rdead1, Rdead2: ReDeads. (d_a_rd)
   params & 00000001 - Affects which idle animation to use.
-    stored to entity+2B4,4
-    0 - Rdead1, not hunched over
-    1 - Rdead2, hunched over
-  params & 000000FE - Range within the ReDead will notice the player?
-    7F - defaults to 0
-    gets converted to a float, then to int, then stored to entity+2B8,4
-  params & 0000FF00 - 
-    stored to entity+2BC,4
-    00 - ?
-    01-FF - ?
-  params & FF000000 - 
-    stored to entity+2C0,4
+    0 - Standing up. (Rdead1)
+    1 - Sitting down. (Rdead2)
+  params & 000000FE - This number plus 650.0 is the radius of the area it guards.
+    If it leaves this area, it will generally go back to its initial spawn point in the center of the area.
+    7F - Defaults to a range of 650.0.
+  params & 0000FF00 - Whether it should check the switch to enable its spawn.
+    00 - Do not appear until the switch at params & FF000000 is set. (If that switch is invalid, this ReDead will never appear.)
+    01-FF - ReDead appears from the start.
+      Out of this range, only FF is actually used.
+  params & FF000000 - Enable spawn switch.
 Tn: Darknut. (d_a_tn)
   params & 0000000F - Behavior type.
     0 - Starts roaming around immediately.
@@ -528,13 +621,17 @@ Tn: Darknut. (d_a_tn)
     The RGB value for the main color of the armor is in list prim$7755 (at E2AC in d_a_tn.rel).
     The RGB value for the trim color of the armor is in list env$7756 (at E2C4 in d_a_tn.rel).
     For both of these lists, each entry is 4 bytes long - red, green, blue, and the 4th byte is unused.
-  params & 0000FF00 - For type 04, this number multiplied by 10.0 is the radius of the area the Darknut guards.
-    If the player leaves this area, the Darknut will lose interest and go back to its spawn point.
-    FF - Defaults to a range of 500.0 instead.
+  params & 0000FF00 - Varies depending on type.
+    For type 04, this number multiplied by 10.0 is the radius of the area the Darknut guards.
+      If the player leaves this area, the Darknut will lose interest and go back to its spawn point.
+      FF - Defaults to a range of 500.0 instead.
+    For type 0F, this affects what animation to use when frozen in time.
+      00 - Frozen in a walking pose.
+      01+ - Frozen in an attacking pose.
   params & 00FF0000 - Path index to follow.
   params & FF000000 - Enable spawn switch.
     FF - Invalid.
-  auxilary_param & 00E0 - Affects equipment.
+  aux_params & 00E0 - Affects equipment.
     0 - Normal, no special equipment.
     1 - Has a full face helmet.
     2 - Has a shield.
@@ -542,7 +639,7 @@ Tn: Darknut. (d_a_tn)
     4 - Has a shield and a cape.
     5 - Has a full face helmet, a shield, and a cape.
     6+ - Defaults to 5.
-  auxilary_param_2 & 00FF - Disable spawn on death switch.
+  aux_params_2 & 00FF - Disable spawn on death switch.
 Oship: Gunboat/warship. (d_a_oship)
   params & 000000FF - 
   params & 00000F00 - Index of the triforce shard to check, and if the player has it this ship will disappear.
@@ -552,7 +649,7 @@ Oship: Gunboat/warship. (d_a_oship)
     0xF - Means no duplicate ID, this ship just always appears regardless of random salvage placement.
   params & 00FF0000 - 
   params & FF000000 - 
-  auxilary_param & 0x00FF - Switch index to check and not have this gunboat appear unless the switch is already set.
+  aux_params & 0x00FF - Switch index to check and not have this gunboat appear unless the switch is already set.
 VolTag: Ice Ring Isle and Fire Mountain kill triggers. (d_a_tag_volcano)
   params & 0000003F - 
   params & 000000C0 - Type?
@@ -591,12 +688,32 @@ kusax1, kusax7, kusax21, flower, flwr7, flwr17, pflower, pflwrx7, swood, swood3,
     This parameter gets passed as argument r4 to createItemFromTable when the object is cut down.
     Subtract 0x20 from this parameter to get the index in the random item table. https://wiki.cloudmodding.com/tww/ItemTable.bin
 Puti: Miniblin. (d_a_pt)
-  params & 0x0000000F - 
-  params & 0x00000010 - 
-  params & 0x000000E0 - 
-  params & 0x0000FF00 - 
-  params & 0x00FF0000 - switch to set?
-  params & 0xFF000000 - switch to set?
+  params & 0x0000000F - Type.
+    0 - Respawning Miniblin.
+    1 - Single Miniblin.
+    F - Single Miniblin.
+  params & 0x00000010 - Initial spawn type.
+    0 - The Miniblin is spawned from the start, even if it's in view of the player's camera.
+      For respawning Miniblins, only the first one when you enter the room is spawned like this - respawned ones will still not spawn if in view of the player's camera.
+    1 - Only spawns when the player's camera is turned away from its spawn point.
+  params & 0x000000E0 - Controls the delay between the Miniblin respawning.
+    00-06 - The delay before respawning the Miniblin after the last one dies is (this_value*0x14)+0x14 frames.
+    07 - Use the initial spawn delay (from aux_params & FFFF) as the respawn delay too.
+    Read at 4988 in func daPt_Create(fopAc_ac_c *)
+  params & 0x0000FF00 - This number multiplied by 100.0 is the range within it will notice you and become active.
+    00 and FF do not default to anything.
+    Miniblins that haven't activated yet are invincible - so Miniblins with a range of 00 can never be killed for example.
+  params & 0x00FF0000 - Disable respawning switch.
+    Once something sets this switch, respawning Miniblins will not respawn anymore.
+    If this switch index is valid and this is NOT a respawning Miniblin but a single one, it doesn't work properly.
+    The single Miniblin is coded to set this switch when it dies unlike the respawning Miniblin, but this switch being set doesn't disable its spawn when you exit and re-enter the room. So the single Miniblin just winds up being permanently deactivated and unkillable (and may be invisible too depending on params & 0x00000010).
+    Though if you use a temporary switch here instead of a permanent mem bit, you can use this just fine to have the single Miniblin set it when it dies to activate something else.
+  params & 0xFF000000 - Enable spawn switch.
+    But there's also some weird case where it will set this switch itself...? If some static variable at 6146 in the rel is nonzero? Not sure if that behavior is actually used.
+    Read at 49D0 in func daPt_Create(fopAc_ac_c *)
+  aux_params & FFFF - Initial spawn delay.
+    This is the number of frames after the player enters the room before the first Miniblin will spawn.
+    Note that if the initial spawn type is set to spawned from the start, the Miniblin will be visible but inactive and invincible until this initial spawn delay is up.
   Example params (shark island):
     FF82FFFF
     FF81FFFF
@@ -669,33 +786,32 @@ p_hat, sea_hat: Peahats and Seahats.
 bable: Red Bubbles and Blue Bubbles. (d_a_bl)
   params & 000000FF - Type.
     00 - Red Bubble
-      (used in earth temple, totg, savage labyrinth, and ganon's toewr earth temple section)
     01 - Blue Bubble
-      (used in savage labyrinth)
-    02 - Red Bubble
-      (used in earth temple and totg)
-    03 - Blue Bubble
-      (used in earth temple and wind temple)
+    02 - Red Bubble that follows a path
+    03 - Blue Bubble that follows a path
     80 - Just an inanimate, destructible skull. Used in the Jalhalla fight.
     FF - Defaults to 00 instead.
     If the value located at 803E75AA,2 is not 0, this value will be forcibly changed to (value at 803E75AA,2 minus 1).
-    There may be a difference between types 00 vs 02 and 01 vs 03, but I'm not sure what
-  params & 0000FF00 - 
-  params & 00FF0000 - 
-  params & FF000000 - 
+  params & 0000FF00 - Enable spawn switch index.
+  params & 00FF0000 - Path index to follow.
+  params & FF000000 - Boolean for whether this Bubble should stay high in the air.
+    00 - Will teleport itself down to the ground when spawned and float near there.
+    01 - Will float around the Y position it's placed at.
     FF - Defaults to 00 instead.
     If the value located at 803E75A8,2 is not 0, this value will be forcibly changed to 01.
 kuro_s, kuro_t: Morths. (d_a_ks)
   params & 000000FF - Behavior type.
-    00 - Chases the player when they move.
-    01 - Stays in place. (kuro_t)
-      Ones that the player touches and then shakes off will then chase the player like type 0.
-    03 - morths spawned by wizzrobes?
-      TODO: these might count as being "alive" for killing all enemies in a room, while other types of morths don't?
+    00 - Group of Morths that chase the player when the player moves.
+    01 - Group of Morths that stays in place. (kuro_t)
+      Ones that the player touches and then shakes off will then chase the player.
+    02 - Single Morth that stays in place.
+      Ones that the player touches and then shakes off will then chase the player.
+    03 - Single Morth that chases the player when the player moves.
     04 - ? Don't seem to appear when placed? Unused ingame?
     05 - ? Don't seem to appear when placed? Unused ingame?
     06 - Morths in a pot.
     FF - Defaults to 00.
+    Read at 3680 in func daKS_Create(fopAc_ac_c *)
   params & 0000FF00 - Number of Morths to spawn.
     00 - Defaults to 01.
     16+ - Defaults to 01.
@@ -703,15 +819,19 @@ kuro_s, kuro_t: Morths. (d_a_ks)
     No effect on types besides 6.
     FF - Defaults to 00.
 nezumi: Rats and Bombchus. (d_a_nz)
-  params & 000000FF - 
+  params & 000000FF - ???
     00 - 
     01-FE - 
+      02 is the only value in this range actually used ingame, and even then it's only used once.
     FF - Defaults to 00 instead.
+    If this is zero, and this is not a Bombchu, skip some code that relates to several things, including setting scale to 0...?
+    Read at 82FC in func daNZ_Create(fopAc_ac_c *)
   params & 0000FF00 - Type.
     00 - Rat
     01 - Bombchu
     FF - Defaults to 00 instead.
-  params & FF000000 - 
+  params & FF000000 - Unused.
+    This might have been intended to be a path index for the rat to follow, since the rat hole entity copies its params & FF000000 to the params & FF000000 of its spawned rats, and the rat hole's params & FF000000 appear to be a path index. But it doesn't actually do anything.
 nezuana: Hole that Rats or Bombchus come out of. (d_a_nzg)
   params & 000000FF - This number multiplied by 10.0 multiplied by 0.5 is the range within it will check for the player and start spawning entities.
   params & 0000FF00 - Maximum number of entities it can spawn.
@@ -722,7 +842,8 @@ nezuana: Hole that Rats or Bombchus come out of. (d_a_nzg)
     02 - Spawns Rats and Bombchus.
       It's a random 50% chance what each one will come out as.
     03+ - Defaults to 00 instead.
-  params & FF000000 - 
+  params & FF000000 - Unused.
+    This seems like it was supposed to be a path index for something, maybe the path for its spawned entities to follow. But it doesn't actually do anything.
   It gives the entities it creates the following params:
     params & 000000FF - 01.
     params & 0000FF00 - 00 for normal Rats, 01 for Bombchus.
@@ -738,16 +859,6 @@ Fire, Zenfire: Ring of flames that prevents you from accessing something in the 
     2 - Fire that disappears after a switch is set.
       Unlike type 0, this type does not disappear immediately if the switch is set when you are in the same room as the fire. The fire will simply not be there the next time the room is loaded.
   params & 00F00000 - 
-Hmos1, Hmos2, Hmos3: Beamos and laser forcefields. (d_a_obj_bemos)
-  params & 000000FF - 
-  params & 0000FF00 - 
-  params & 00FF0000 - 
-  params & F0000000 - Type.
-    0 - Blue Beamos
-    1 - Red Beamos
-    2 - Laser forcefield.
-  aux_params_2 & 003F - 
-  aux_params_2 & 1FC0 - 
 Fmaster, Fmastr1, Fmastr2: Floormasters. (d_a_fm)
   params & 000000FF - Where to take Link when he is captured.
     Exit index in this room's SCLS list.
@@ -928,6 +1039,25 @@ Sss: Dexivines. (d_a_sss)
     This switch checking behavior is never used in the vanilla game.
     00 and FF - Invalid. Dexivine will come out of the ground when the player gets near.
       Also, this causes 230.0 to be added to the initial Y position of the hand part - meaning it will start off above ground when spawned, slowly sink below ground, then when the player gets near it comes back up.
+Oq, Oqw: Octoroks. (d_a_oq)
+  params & 000000FF - Type.
+    00 - Freshwater Octorok.
+    01 - Saltwater Octorok that shoots once the player is a certain range away from it.
+    02 - Saltwater Octorok that appears close to the player (ignoring the position it was placed at). Also shoots the player after a certain delay.
+      This type is unused.
+    03 - Saltwater Octorok spawner. Spawns type 05 Octoroks if the player is within a certain range of the spawner.
+    04 - Saltwater Octorok that shoots the player after a certain delay.
+    05 - Spawned Saltwater Octorok. Doesn't seem to appear when manually placed, must be created by type 03.
+    06 - Rock shot by a Freshwater Octorok.
+    FF - Defaults to 00 instead.
+    Read at 4844 in func daOQ_Create(fopAc_ac_c *)
+  params & 0000FF00 - Affects what Freshwater Octoroks shoot out of their mouth. No effect on Saltwater Octoroks?
+    00 - Freshwater Octorok that shoots rocks.
+    01 - Freshwater Octorok that shoots bombs.
+    02-FF - Defaults to 00.
+    If the value located at 803E75AA,2 is not 0, this value will be XORed with 01 to toggle it.
+  params & 00FF0000 - For type 3, this number multiplied by 1000.0 is the range within it will notice you and start spawning Octoroks.
+    00 or FF - Defaults to a range of 80000.0.
 
 ### SCOB:
 Salvage: Main salvages that require a chart to see.
@@ -986,16 +1116,16 @@ TagHt, TagHt2: Trigger region for a Pirate's Charm hint. (d_a_tag_hint)
   params & 0x0000FF00 - Switch index to set and check for whether you've already seen this hint event.
   params & 0x0000003F - "Type"?
   params & 0x000000C0 - "Type2"?
-  auxilary_param - Message ID of the text to show.
-  auxilary_param_2 - Event flag?
+  aux_params - Message ID of the text to show.
+  aux_params_2 - Event flag?
 agbTBOX: Trigger for a Tingle Chest to appear. (d_a_agbsw0)
 agbA, agbAT, agbA2, agbF, agbF2, agbMARK, agbMW, agbCSW, agbR, agbB, agbD, agbFA: Other Tingle Tuner-related triggers. (d_a_agbsw0)
   params & 0x0000FFFF - ?
   params & 0x00FF0000 - Switch index to set when a Tingle bomb is used on this object.
     The chest then has an appear condition set up so that it appears when this same switch is set.
   params & 0xFF000000 - Switch index for ...?
-  auxilary_param & 0xFFFF - Type of trigger maybe? 9/A/B/C/D for the 5 types of tingle statues?
-  auxilary_param_2 & 0x00FF - 
+  aux_params & 0xFFFF - Type of trigger maybe? 9/A/B/C/D for the 5 types of tingle statues?
+  aux_params_2 & 0x00FF - 
 
 ### TGDR:
 door12, door12M, door12B, door13, door13M, door13B, keyS12, ZenS12: Door (TGDR type). (d_a_door12)
@@ -1003,7 +1133,7 @@ door12, door12M, door12B, door13, door13M, door13B, keyS12, ZenS12: Door (TGDR t
   params & 0x00000F00 - "Type"
   params & 0x000FF000 - "EventNo"
   params & 0x0FF00000 - "Swbit2"
-  auxilary_param & 0x003F - "FRoomNo"
-  auxilary_param & 0x0FC0 - "BRoomNo"
-  auxilary_param_2 & 0x003F - "ShipId" (unused?)
-  auxilary_param_2 & 0xFF00 - "Arg1"
+  aux_params & 0x003F - "FRoomNo"
+  aux_params & 0x0FC0 - "BRoomNo"
+  aux_params_2 & 0x003F - "ShipId" (unused?)
+  aux_params_2 & 0xFF00 - "Arg1"

@@ -4,9 +4,9 @@ Format of entities in RAM:
 000,4: Parameters.
 004,4: ID of this specific entity?
   This entity can be found by calling fopAcM_SearchByID__FUiPP10fopAc_ac_c with r3=this ID?
-010,2: X rotation?
-012,2: Y rotation?
-014,2: Z rotation?
+010,2: Auxilary parameter.
+012,2: Y rotation.
+014,2: Auxilary parameter 2.
 016,2: "Enemy number" from the ACTR data
 018,1: X scale.
 019,1: Y scale.
@@ -47,9 +47,9 @@ Append entity?:
 206,2: Y rotation. (duplicate?)
 208,2: Auxilary parameter 2. (duplicate?)
 20A,1: Room index.
-20C,2: Auxilary parameter. (duplicate?)
+20C,2: Auxilary parameter or X rotation??
 20E,2: Y rotation. (duplicate?)
-210,2: Auxilary parameter 2. (duplicate?)
+210,2: Auxilary parameter 2 or Z rotation??
 214,4: X scale.
 218,4: Y scale.
 21C,4: Z scale.
