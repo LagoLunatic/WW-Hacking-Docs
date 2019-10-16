@@ -365,11 +365,20 @@ fopMsg_Create__FPv
   creates a message
   breakpoint on 8002A804 and look in r0 for the message ID
 
+dRes_control_c::getRes(char const *, long, dRes_info_c *, int)
 getRes__14dRes_control_cFPCclP11dRes_info_ci
   loads a resource from a RARC
-  r3 - pointer to the filename of the arc (without the .arc)
-  r4 - file ID of the file to load.
-  r5 - entity loading the file? or a pointer to the string "System"??
+  r3 - Pointer to the filename of the arc (without the .arc)
+  r4 - File ID of the file to load.
+  r5 - 0x803E0BC8 (Pointer to the string "System")
+  r6 - ??? 0x40
+
+dRes_control_c::getRes(char const *, char const *, dRes_info_c *, int)
+getRes__14dRes_control_cFPCcPCcP11dRes_info_ci
+  loads a resource from a RARC
+  r3 - Pointer to the filename of the arc (without the .arc)
+  r4 - File name of the file to load
+  r5 - 0x803E0BC8 (Pointer to the string "System")
   r6 - ??? 0x40
 
 set__19dStage_startStage_cFPCcScsSc

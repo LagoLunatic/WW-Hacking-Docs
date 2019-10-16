@@ -199,7 +199,23 @@ kotubo, ootubo1, Odokuro: Pot/skull. (d_a_tsubo)
   params & 0x00003F00 - 
   params & 0x0000C000 - 
   params & 0x007F0000 - Item pickup flag for the item spawned.
-  params & 0x0F000000 - 
+  params & 0x0F000000 - Type.
+    0 - Small pot (kotubo)
+    1 - Large pot (ootubo1)
+    2 - Water pot (Kmtub)
+    3 - Barrel (Ktaru)
+    4 - Stool (Ostool)
+    5 - Skull (Odokuro)
+    6 - Bucket (Okioke)
+    7 - Nut (Kmi00)
+    8 - Golden crate (Hbox2S)
+    9 - TotG pillar statue (does not light up when picked up, but if a real TotG pillar statue is picked up then both of these will light up)
+    A - 
+    B - 
+    C - 
+    D - Seed (Kmi02)
+    E - Fancy pot (Ptubo)
+    F - Wooden crate (KkibaB)
   params & 0x70000000 - 
   params & 0x80000000 - 
   Example params:
@@ -308,9 +324,11 @@ wiz_r: Wizzrobe. (d_a_wz)
     Each entry is composed of 2 halfwords. The first halfword is the first enemy actor ID to spawn. The second halfword is either the second enemy actor ID to spawn, or 0x7FFF for no second enemy.
     The parameters of each enemy to spawn is in list enemy_arg_dt$6154. Each entry in this list is composed of 2 words instead of 2 halfwords, but other than that you access entries the same as above (first use the summon table index parameter, then the random entry index).
     The number of each enemy to spawn at once is in list birth_dt$6155. Works the same as above.
-Homen2: Statue face with a hookshot target on it. (d_a_obj_homen)
+Homen1, Homen2: Stone head with a hookshot target on it. (d_a_obj_homen)
   params & 0x0000007F - Item pickup flag for the item inside it.
-  params & 0x00000F00 - ?
+  params & 0x00000F00 - Type.
+    0 - Large stone head. (Homen1)
+    1 - Small stone head. (Homen2)
   params & 0x0003F000 - Affects the item spawned? Like what item table it chooses from?
   params & 0x003C0000 - Might affect what enemy is spawned when you remove this statue from the wall?
     2 - Bokoblin?
@@ -523,12 +541,12 @@ Bk: Bokoblin. (d_a_bk)
   params & 00000020 - Boolean to make the Bokoblin green and give it a wooden shield.
     stored to entity+2D4,1
   params & 000000C0 - What the Bokoblin should hold in its hand.
-    stored to entity+2D5,1
     0 - Unlit torch
     1 - Machete
     2 - Lit torch
     3 - Machete
     Note: In the A_mori stage, no Bokoblins will hold anything in their hands regardless of this value.
+    stored to entity+2D5,1
   params & 0000FF00 - unknown_4
     stored to entity+2B5,1
     This is multiplied by 10.0 - maybe this is the range the Bokoblin notices you in?
@@ -547,7 +565,7 @@ mo2: Moblin. (d_a_mo2)
   params & 000000FF - Type.
     00 - No lantern. Blue skin.
     01 - Has a lantern. Brown skin.
-    05 - Bokoblin being carried through the air.
+    05 - Moblin being carried through the air.
       Just floats with the carried animation if manually placed.
       Can be attacked to make it fall down.
     0F - No lantern. Blue skin. Frozen in time.
@@ -819,8 +837,8 @@ kuro_s, kuro_t: Morths. (d_a_ks)
     No effect on types besides 6.
     FF - Defaults to 00.
 nezumi: Rats and Bombchus. (d_a_nz)
-  params & 000000FF - ???
-    00 - 
+  params & 000000FF - ??? I can't notice any effect this has ingame, but the code suggests that it's doing something.
+    00 - ? (most placed in the vanilla game use this)
     01-FE - 
       02 is the only value in this range actually used ingame, and even then it's only used once.
     FF - Defaults to 00 instead.
@@ -862,6 +880,7 @@ Fire, Zenfire: Ring of flames that prevents you from accessing something in the 
 Fmaster, Fmastr1, Fmastr2: Floormasters. (d_a_fm)
   params & 000000FF - Where to take Link when he is captured.
     Exit index in this room's SCLS list.
+    If this is FF, it will instead just take Link to the spawn with ID 0 in the current room.
   params & 00000300 - Type.
     0 - Not a fightable Floormaster. Black hole that appears briefly under Link after he is sent back to the beginning of a dungeon. (Fmaster)
       Note that type 0 behaves differently if it has a valid prerequisite switch index (params & FF000000) specified, and that switch is turned on after the Floormaster is already spawned in. In this case, it triggers an unused behavior where the Floormaster follows underneath Link while submerged in the floor. This can be seen in test room KATA_RM/Room21.
@@ -932,7 +951,7 @@ magtail: Magtails. (d_a_mt)
     FF - Invalid.
     Read at 864C in func daMt_Create(fopAc_ac_c *)
   aux_params_2 & 00FF - Disable spawn on death switch index???
-    00 and FF - Invalid.
+    00 or FF - Invalid.
     Read at 8664 in func daMt_Create(fopAc_ac_c *)
     Read at 869C in func daMt_Create(fopAc_ac_c *)
 amos: Armos Knights. (d_a_am)
@@ -1058,6 +1077,34 @@ Oq, Oqw: Octoroks. (d_a_oq)
     If the value located at 803E75AA,2 is not 0, this value will be XORed with 01 to toggle it.
   params & 00FF0000 - For type 3, this number multiplied by 1000.0 is the range within it will notice you and start spawning Octoroks.
     00 or FF - Defaults to a range of 80000.0.
+LTag0, LTag1, LTagR0: Light ray. (d_a_tag_light)
+  params & 00000003 - Type?
+    0 - invisible? not a light ray but a thing that detects when a chest is being hit by light? (LTag0)
+    1 - light ray. (LTag1)
+    2 - (LTagR0)
+    Read at 0514 in func daTagLight::Act_c::_create( (void))
+  params & 00000300 (WARNING: overlaps)
+    Read at 0168 in func daTagLight::Act_c::get_cc_r( const(void))
+  params & 000003FC (WARNING: overlaps)
+    Read at 09F4 in func daTagLight::Act_c::chk_sw( const(void))
+  params & 00003C00 - affects the shape?
+    this/15.0 being >= 8.5/15.0 means use cylinder model. in other words:
+    0-8 - Use cone model
+    9-F - Use cylinder model
+    Read at 0230 in func daTagLight::Act_c::create_heap( (void))
+    Read at 0C0C in func daTagLight::Act_c::get_base_model_light_start_offset( (cXyz *))
+    Read at 0D24 in func daTagLight::Act_c::get_projection_info( (cXyz *, cXyz *, cXyz *, cXyz const *, cXyz const *))
+    Read at 17BC in func daTagLight::Act_c::make_projection_mtx( (cXyz const *, cXyz const *, cXyz const *, cXyz const *))
+    Read at 1B28 in func daTagLight::Act_c::set_spot_mtx( (void))
+  params & 0000C000
+    Read at 1D18 in func daTagLight::Act_c::_execute( (void))
+  params & 00FF0000
+    Read at 09E0 in func daTagLight::Act_c::chk_sw( const(void))
+    Read at 1C98 in func daTagLight::Act_c::_execute( (void))
+  params & FF000000
+    Read at 0AAC in func daTagLight::Act_c::chk_sch( const(void))
+  aux_params & FFFF - X rotation.
+  aux_params_2 & FFFF - Z rotation.
 
 ### SCOB:
 Salvage: Main salvages that require a chart to see.
