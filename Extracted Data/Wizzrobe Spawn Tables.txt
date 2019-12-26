@@ -1,0 +1,195 @@
+Table 00:
+  Group 00:
+     8x 00D8 FFFFFF03 Keese
+     0x 7FFF 00000000 [nothing]
+  Group 01:
+     2x 00D9 FFFFFF00 Magtail
+     0x 7FFF 00000000 [nothing]
+  Group 02:
+     1x 00D9 FFFFFF00 Magtail
+     3x 00D8 FFFFFF03 Keese
+  Group 03:
+     6x 00D8 FFFFFF03 Keese
+     0x 7FFF 00000000 [nothing]
+Table 01:
+  Group 00:
+     8x 00D8 FFFFFF03 Keese
+     0x 7FFF 00000000 [nothing]
+  Group 01:
+     2x 00D0 0100FF00 Bubble
+     0x 7FFF 00000000 [nothing]
+  Group 02:
+     6x 00D8 FFFFFF03 Keese
+     0x 7FFF 00000000 [nothing]
+  Group 03:
+     1x 00D0 0100FF00 Bubble
+     3x 00D8 FFFFFF03 Keese
+Table 02:
+  Group 00:
+     2x 00D0 0100FF01 Bubble
+     0x 7FFF 00000000 [nothing]
+  Group 01:
+     1x 00D0 0100FF01 Bubble
+     0x 7FFF 00000000 [nothing]
+  Group 02:
+     1x 00D0 0100FF01 Bubble
+     0x 7FFF 00000000 [nothing]
+  Group 03:
+     1x 00D0 0100FF01 Bubble
+     0x 7FFF 00000000 [nothing]
+Table 03:
+  Group 00:
+    20x 00CE 00000003 Morth
+     0x 7FFF 00000000 [nothing]
+  Group 01:
+    15x 00CE 00000003 Morth
+     0x 7FFF 00000000 [nothing]
+  Group 02:
+    15x 00CE 00000003 Morth
+     0x 7FFF 00000000 [nothing]
+  Group 03:
+    20x 00CE 00000003 Morth
+     0x 7FFF 00000000 [nothing]
+Table 04:
+  Group 00:
+     8x 00CF FFFF0000 ChuChu
+     0x 7FFF 00000000 [nothing]
+  Group 01:
+    10x 00CF FFFF0000 ChuChu
+     0x 7FFF 00000000 [nothing]
+  Group 02:
+     8x 00CF FFFF0000 ChuChu
+     0x 7FFF 00000000 [nothing]
+  Group 03:
+     8x 00CF FFFF0000 ChuChu
+     0x 7FFF 00000000 [nothing]
+Table 05:
+  Group 00:
+     2x 00D0 0100FF00 Bubble
+     0x 7FFF 00000000 [nothing]
+  Group 01:
+     2x 00D0 0100FF00 Bubble
+     0x 7FFF 00000000 [nothing]
+  Group 02:
+     1x 00D0 0100FF01 Bubble
+     1x 00D0 0100FF00 Bubble
+  Group 03:
+     1x 00D5 FF000000 Poe
+     2x 00D0 0100FF01 Bubble
+Table 06:
+  Group 00:
+     1x 00BF FFFFFF00 Stalfos
+     0x 7FFF 00000000 [nothing]
+  Group 01:
+     1x 00E1 FFFFFFFE ReDead
+     0x 7FFF 00000000 [nothing]
+  Group 02:
+     1x 00BF FFFFFF00 Stalfos
+     0x 7FFF 00000000 [nothing]
+  Group 03:
+     1x 00E1 FFFFFFFE ReDead
+     0x 7FFF 00000000 [nothing]
+Table 07:
+  Group 00:
+     1x 00BD FFFFFF00 Moblin
+     0x 7FFF 00000000 [nothing]
+  Group 01:
+     1x 00C0 FFFFFF20 Darknut
+     0x 7FFF 00000000 [nothing]
+  Group 02:
+     1x 00BD FFFFFF00 Moblin
+     0x 7FFF 00000000 [nothing]
+  Group 03:
+     1x 00C0 FFFFFF20 Darknut
+     0x 7FFF 00000000 [nothing]
+Table 08:
+  Group 00:
+     2x 00D2 FFF0F000 Peahat
+     0x 7FFF 00000000 [nothing]
+  Group 01:
+     6x 00D8 FFFF0003 Keese
+     0x 7FFF 00000000 [nothing]
+  Group 02:
+     3x 00D2 FFF0F000 Peahat
+     0x 7FFF 00000000 [nothing]
+  Group 03:
+     2x 00B6 FFFFFF03 Kargaroc
+     0x 7FFF 00000000 [nothing]
+Table 09:
+  Group 00:
+     4x 00D8 FFFFFF03 Keese
+     0x 7FFF 00000000 [nothing]
+  Group 01:
+     1x 00D9 FFFFFF00 Magtail
+     0x 7FFF 00000000 [nothing]
+  Group 02:
+     1x 00D9 FFFFFF00 Magtail
+     2x 00D8 FFFFFF03 Keese
+  Group 03:
+     3x 00D8 FFFFFF03 Keese
+     0x 7FFF 00000000 [nothing]
+Table 0A:
+  Group 00:
+     4x 00D8 FFFFFF03 Keese
+     0x 7FFF 00000000 [nothing]
+  Group 01:
+     1x 00D0 0100FF00 Bubble
+     0x 7FFF 00000000 [nothing]
+  Group 02:
+     3x 00D8 FFFFFF03 Keese
+     0x 7FFF 00000000 [nothing]
+  Group 03:
+     1x 00D0 0100FF00 Bubble
+     2x 00D8 FFFFFF03 Keese
+Table 0B:
+  Group 00:
+    10x 00CE 00000003 Morth
+     0x 7FFF 00000000 [nothing]
+  Group 01:
+     8x 00CE 00000003 Morth
+     0x 7FFF 00000000 [nothing]
+  Group 02:
+     8x 00CE 00000003 Morth
+     0x 7FFF 00000000 [nothing]
+  Group 03:
+    10x 00CE 00000003 Morth
+     0x 7FFF 00000000 [nothing]
+Table 0C:
+  Group 00:
+     4x 00CF FFFF0000 ChuChu
+     0x 7FFF 00000000 [nothing]
+  Group 01:
+     5x 00CF FFFF0000 ChuChu
+     0x 7FFF 00000000 [nothing]
+  Group 02:
+     4x 00CF FFFF0000 ChuChu
+     0x 7FFF 00000000 [nothing]
+  Group 03:
+     4x 00CF FFFF0000 ChuChu
+     0x 7FFF 00000000 [nothing]
+Table 0D:
+  Group 00:
+     1x 00BE FFFFFF00 Bokoblin
+     0x 7FFF 00000000 [nothing]
+  Group 01:
+     1x 00BE FFFFFF00 Bokoblin
+     1x 00BD FFFFFF00 Moblin
+  Group 02:
+     1x 00BE FFFFFF00 Bokoblin
+     1x 00BE FFFFFF20 Bokoblin
+  Group 03:
+     1x 00BE FFFFFF00 Bokoblin
+     1x 00BD FFFFFF00 Moblin
+Table 0E:
+  Group 00:
+     2x 00B6 FFFFFF03 Kargaroc
+     0x 7FFF 00000000 [nothing]
+  Group 01:
+     4x 00D8 FFFFFF03 Keese
+     0x 7FFF 00000000 [nothing]
+  Group 02:
+     2x 00CF FFFF0A00 ChuChu
+     2x 00CF FFFF0B00 ChuChu
+  Group 03:
+     4x 00D8 FFFF0003 Keese
+     8x 00CE 00000003 Morth
