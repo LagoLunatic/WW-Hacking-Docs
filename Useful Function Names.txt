@@ -365,6 +365,11 @@ fopMsg_Create__FPv
   creates a message
   breakpoint on 8002A804 and look in r0 for the message ID
 
+dComIfG_resLoad(request_of_phase_process_class *, char const *)
+  loads a RARC into memory maybe?
+  r3 - Pointer to somewhere in the entity? e.g. entity+0x2AC
+  r4 - Pointer to the filename of the arc (without the .arc)
+
 dRes_control_c::getRes(char const *, long, dRes_info_c *, int)
 getRes__14dRes_control_cFPCclP11dRes_info_ci
   loads a resource from a RARC
@@ -372,6 +377,7 @@ getRes__14dRes_control_cFPCclP11dRes_info_ci
   r4 - File ID of the file to load.
   r5 - 0x803E0BC8 (Pointer to the string "System")
   r6 - ??? 0x40
+  returns a pointer to the loaded resource
 
 dRes_control_c::getRes(char const *, char const *, dRes_info_c *, int)
 getRes__14dRes_control_cFPCcPCcP11dRes_info_ci
@@ -380,6 +386,14 @@ getRes__14dRes_control_cFPCcPCcP11dRes_info_ci
   r4 - File name of the file to load
   r5 - 0x803E0BC8 (Pointer to the string "System")
   r6 - ??? 0x40
+  returns a pointer to the loaded resource
+
+dBgWSv::Set(cBgD_t *, unsigned long)
+  sets the collision for an entity by a .dzb file
+  r3 - ? read from entity+0x2E8
+  r4 - Pointer to the .dzb file resource (return value from getRes)
+  r5 - 0?
+
 
 set__19dStage_startStage_cFPCcScsSc
   changes the game to a different stage
@@ -503,6 +517,11 @@ mDoHIO_subRoot_c::createChild(char const *, JORReflexible *)
   r4 - Pointer to a string for this entity's name? not the actor name, but an actual japanese name. e.g. for darknut, this points to a SHIFT JIS string of "タートナック".
   r5 - Pointer to "HIO" in the BSS section?
 
+fopAcM_delete__FP10fopAc_ac_c
+fopAcM_delete(fopAc_ac_c *)
+  deletes an entity
+  r3 - Entity to delete
+
 
 checkRopeSwingWall__9daPy_lk_cFP4cXyzP4cXyzPsPf
 daPy_lk_c::checkRopeSwingWall((cXyz *,cXyz *,short *,float *))
@@ -595,6 +614,24 @@ drawPointSingle__6dMap_cFUcfffScsUcUcUc
   draws an icon on the map
   r6 - the treasure chest opened flag index.
     0xF is for tingle chests - these won't show up until you've made them appear.
+
+__ct__14mDoExt_McaMorfFP12J3DModelDataP25mDoExt_McaMorfCallBack1_cP25mDoExt_McaMorfCallBack2_cP15J3DAnmTransformifiiiPvUlUl
+mDoExt_McaMorf::__ct(J3DModelData *, mDoExt_McaMorfCallBack1_c *, mDoExt_McaMorfCallBack2_c *, J3DAnmTransform *, int, float, int, int, int, void *, unsigned long, unsigned long)
+  creates a J3D model?
+  r3 - 
+  r4 - 
+  r5 - model resource
+  r6 - 
+  r7 - 
+  r8 - 
+  r9 - 
+  f1 - 
+  r10 - 
+  [sp+8,4] - 
+  [sp+C,4] - 
+  [sp+10,4] - 
+  [sp+14,4] - 
+  [sp+18,4] - 
 
 init__13mDoExt_brkAnmFP16J3DMaterialTableP15J3DAnmTevRegKeyiifssbi
   r3 - pointer to the BRK animation?
@@ -777,6 +814,11 @@ dPa_control_c::set(unsigned char, unsigned short, cXyz const *, csXyz const *, c
   r9 - 0xFF?
   r10 - ??? pointer to somewhere in the calling entity, like [calling_entity+0x844] or [calling_entity+0x858]
 
+dPa_control_c::setSimple(unsigned short, cXyz const *, unsigned char, _GXColor const &, _GXColor const &, int)
+  r3 - this word is read from from 803CA6CC
+  r4 - The particle ID
+  (more args)
+
 createSimpleEmitterID__17JPAEmitterManagerFRCQ29JGeometry8TVec3<f>UsUcUcP34JPACallBackBase<P14JPABaseEmitter>P54JPACallBackBase2<P14JPABaseEmitter,P15JPABaseParticle>
   part of initializing a particle effect
   r3 - 
@@ -830,3 +872,40 @@ daPy_lk_c::setTextureAnimeResource(J3DAnmTexPattern *, int)
   r3 - Pointer to the player entity
   r4 - Return value from daPy_lk_c::loadTextureAnimeResource
   r5 - ?
+
+
+objectSetCheck__FP19room_of_scene_class
+  handles creating a new room, the model and collision specifically.
+  80236A80 - where it starts getting ready to create the new room as an entity
+  it calls fopAcM_create__FsUlP4cXyziP5csXyzP4cXyzScPFPv_i to create the entity
+  the room is an actor of type "Bg" (actor ID 1BC)
+  the params to the room are just the room ID.
+  note that this function does NOT handle creating entities at all.
+
+
+dScnRoom_Create__FP11scene_class
+  initializes changing a room?
+phase_0__FP19room_of_scene_class
+phase_1__FP19room_of_scene_class
+phase_2__FP19room_of_scene_class
+phase_3__FP19room_of_scene_class
+phase_4__FP19room_of_scene_class
+  handles changing rooms?
+
+dScnRoom_Delete__FP19room_of_scene_class
+  deletes a room
+
+stayRoomCheck__FiPUci
+  checks whether a room should stay loaded or unload itself?
+  if all rooms unload themselves, the game engine then loads a new room on the sea?
+
+loadRoom__20dStage_roomControl_cFiPUc
+  handles checking if an island should be loaded
+  r5 - pointer to the list of "adjacent rooms" in the current RTBL entry
+
+createRoomScene__Fi
+  handles actually loading a room
+
+ChkGrpInf__4dBgSFR13cBgS_PolyInfoUl
+  gets group info for a group from a dzb file
+  802472ec

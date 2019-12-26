@@ -25,6 +25,33 @@ For entities that have parameters, it also documents their parameters and the co
   10,4:
     0x00FF0000 - ? Read in func SetSchBit
 
+### RTBL:
+  RTBL (Room TaBLe) is responsible for loading in rooms when in a given part of a room. RTBL chunks appear in the stage.dzs file.
+  Which RTBL entry to use is determined by the collision group below the player. Collision groups have an RTBL index in their data to handle this. (The index can be FF for no RTBL entry in that location.)
+  For example, on the sea stage, each of the 50 rooms has its own unique entry in the sea stage's RTBL list. Outset for example has an RTBL entry specifying that both room 0 and room 44 (Outset itself) should be loaded. In the sea, room 0's role is to always be loaded regardless of which sector you're in. Room 0 has collision through the whole sea floor, a different group for each sector. Because this collision groups have different RTBL indexes set for each sector, room 0's collision on the sea floor causes different RTBL entries to be used when the player crosses over sector borders. This is what handles loading and unloading rooms on the sea.
+  Note that while in many cases (like the sea) the room index and the RTBL index will happen to be the same because each room only has one RTBL entry, this is not always the case. For example, the hub room in DRC has three different RTBL entries depending on what part of it you're in, because you can be near the doors to many different rooms in the hub room.
+  Main entry format:
+    00,4: Offset within this dzs file to this entry's subentry.
+  Sub entry format:
+    00,1: Number of rooms in this entry's rooms list.
+    01,1: "Reverb amount"
+    02,1: Boolean(?) for whether time should pass here.
+    03,1: ???
+    04,4: Offset within this dzs file to this entry's rooms list.
+  Rooms list:
+    Each room takes up 1 byte:
+    & 80 - room should be visible...?
+      If set, both bits & 02 and & 08 in 104,1 bitfield in this room's zone data will be set on. If not set, only bit & 02 will be set there.
+      loadRoom__20dStage_roomControl_cFiPUc is the function that handles setting those bits like this.
+    & 40 - ?
+      all the sea rooms have room 0 constantly loaded, and this bit is set for room 0 being there.
+      guess it loads the collision?
+    & 3F - Room index of this room.
+    Note about which bits to set:
+      For dungeons it seems like both bits 80 and 40 should be set for the current room (the one that owns this RTBL entry), while for non-current rooms neither bit should be set.
+      For the sea, it seems like room 0 should always have both bits 80 and 40 set, while whatever the room for the current sector is should have bit 80 set but not bit 40.
+      Perhaps bit 80 means the room's collision and entities should be loaded, while bit 40 means it's the "active" room...?
+
 ### 2DMA:
   36,1: Determines which island the player will be placed on when save and quitting.
     0x0F - X coordinate of the island's sector.
@@ -135,11 +162,16 @@ Mori1: Gate of wooden columns. (d_a_mdoor)
   FFFF012D
 VmcBS: Dirt patch Makar can plant a seed in. (d_a_obj_vmc)
   params & 0x0000FF00 - Switch index
-AND_SW2: Some kind of entity to check multiple switches, and then set another switch, and maybe play an event? (d_a_andsw2)
+AND_SW2: A switch AND operator. It checks multiple sequential switches, and once all of them are set it sets another switch of its own. (d_a_andsw2)
   params & 0x000000FF - Number of switches to check. (Sequentially, starting from the first specified switch index.)
   params & 0x0000FF00 - Type?
   params & 0x00FF0000 - Switch index to set once all the checked switches are set.
   params & 0xFF000000 - First switch index to check.
+  aux_params_1 & 00FF - The event index to start, in this stage's EVNT list?
+    Read at 0150 in func daAndsw2_c::getEventNo(void)
+  aux_params_2 & 00FF - Delay in half seconds (15 frames) after all the switches to check are set before the switch to set should be set?
+    FF - Defaults to no delay instead.
+    Read at 0180 in func daAndsw2_c::getTimer(void)
 ALLdie: Entity that sets a switch when all enemies in the room are dead. (d_a_alldie)
   params & 0x0000FF00 - Switch index to set.
 TagCb13: Something related to Makar when he gets captured by floormasters (d_a_tag_md_cb)
@@ -158,10 +190,24 @@ TagMk: Item hidden inside a tree? (d_a_tag_mk)
   params & 0x00FF0000 - a switch index?
 bridge: Bridge. (d_a_bridge)
   params & 0x000000FF - bitfield?
-    0x02 - ?
-    0x04 - ?
+    & 0x01 - Which plank model to use.
+      0 - obm_bridge.bdl (plain wood)
+      1 - obm_bridge2.bdl (wood with metal reinforcement)
+    & 0x02 - ?
+      0 - Calculate how many planks there should be as follows:
+        If bridge_length is greater than 1300.0:
+          num_planks = floor(bridge_length / 75.0)
+        Otherwise:
+          num_planks = floor(bridge_length / 70.5)
+      1 - ? maybe only half a bridge?
+    & 0x04 - ?
+      if this is 1, it makes bit &0x01 also be forcibly switched to 1?
+    & 0x08 - Affects the type of ropes holding it up.
+      0 - Held up by cuttable ropes.
+      1 - Held up by indestructible ropes.
+    FF - Defaults to 00 instead.
   params & 0x0000FF00 - 
-  params & 0x00FF0000 - RPAT path index?
+  params & 0x00FF0000 - Path index.
   Example params:
   FF12FF04 - short bridge
   FF11FF00 - medium bridge
@@ -307,6 +353,9 @@ wiz_r: Wizzrobe. (d_a_wz)
     00 - Shoots fireballs.
     01 - Spawns enemies and shoots fireballs.
     02 - Defaults to 01 instead.
+    03 - 
+    0C - Spawner orb? white orb that actually spawns the enemies
+    0D - Spawner orb? white orb that actually spawns the enemies
     FF - Defaults to 00 instead.
   params & 0x0000FF00 - Disable spawn on death switch.
   params & 0x00FF0000 - Enable spawn switch.
@@ -1116,6 +1165,7 @@ Salvage: Main salvages that require a chart to see.
     On starting new game+, it's always 3.
 SwSlvg: Shipwreck salvages (from Gunboats or Big Octos you defeat).
   params & 0xF0000000 - Salvage type. 2 for these shipwreck salvages.
+  (maybe SwSlvg is short for SWitch SaLVaGe and it checks the switch set by the enemy when it dies)
 Salvag2: ??? salvages.
   params & 0xF0000000 - Salvage type. 3 for these ??? salvages.
 SalvagN: Light ring salvages.
@@ -1173,6 +1223,24 @@ agbA, agbAT, agbA2, agbF, agbF2, agbMARK, agbMW, agbCSW, agbR, agbB, agbD, agbFA
   params & 0xFF000000 - Switch index for ...?
   aux_params & 0xFFFF - Type of trigger maybe? 9/A/B/C/D for the 5 types of tingle statues?
   aux_params_2 & 0x00FF - 
+bonbori: Torch. (d_a_ep)
+  params & 0000003F - Type.
+    00 - Has brazier.
+    01 - Does not have brazier.
+    02 - Does not have brazier. Skips some particle code?
+    03 - Has brazier. Does not play event?
+    3F - Defaults to 00.
+    Read at 274C in func daEp_Create(fopAc_ac_c *)
+  params & 00000040
+    Read at 276C in func daEp_Create(fopAc_ac_c *)
+  params & 00000080
+    Read at 2778 in func daEp_Create(fopAc_ac_c *)
+  params & 0000FF00
+    Read at 2784 in func daEp_Create(fopAc_ac_c *)
+  params & 00FF0000
+    Read at 2790 in func daEp_Create(fopAc_ac_c *)
+  params & FF000000
+    Read at 279C in func daEp_Create(fopAc_ac_c *)
 
 ### TGDR:
 door12, door12M, door12B, door13, door13M, door13B, keyS12, ZenS12: Door (TGDR type). (d_a_door12)

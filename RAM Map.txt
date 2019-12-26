@@ -109,6 +109,14 @@ g_fopAcTg_Queue:
   80376398 - Beedle's shop on Outset.
   80376404 - Beedle's shop on Rock Spire.
 
+80377018-8037705F - List of position offsets(???) for carryable weapons (Boko).
+  Entry length 0xC.
+  6 entries in total.
+  The index in this list is the parameter of the weapon entity.
+  00,4: float
+  04,4: float
+  08,4: float
+
 80371618,24 - Data related to the game heap. (GameHeapCheck)
 80371618,4 - Pointer to the string "Game".
 8037161C,4 - Pointer to the game heap.
@@ -282,11 +290,19 @@ Format of each block of memory in the game heap:
   The index in this list is the actor ID.
   Each entry is a pointer to something? (e.g. 80ad4e30) Or 0 if it's invalid?
 
-803BDC88 - List of "zones"? (mStatus__20dStage_roomControl_c)
+803BDC88-803C2187 - List of "zones"? (mStatus__20dStage_roomControl_c)
   Entry length 0x114.
-  The index in this list is the room ID?
+  The index in this list is the room ID.
+  There are 0x40 entries in total, the maximum number of rooms a given stage can have.
+  104,1: bitfield relating to room loading??
+    & 01 - Must be 0 before the room will load in?
+    & 06 - if nonzero, stop looping over all zones...?
+    & 08 - Something checked by treasure chests, in daTbox_c::checkRoomDisp(int)
+    & 10 - Something checked by treasure chests, in daTbox_c::checkRoomDisp(int)
+    If 08 is not set and 10 is set, the room is considered loaded and treasure chests will be considered active, otherwise not?
   107,1: Zone number? Read by getZoneNo func.
     valid zone numbers are 00-1F
+  10C,4: The entity ID of the room entity for this room.
 
 
 =========== 803C4C08: g_dComIfG_gameInfo
@@ -775,10 +791,10 @@ Player's partner's room restart position? ("restart option")
   These bits are grouped into words.
 
 803CA410,4 - Always has a pointer to the player entity in RAM.
-  This refers not only to Link, but to Medli/Makar/etc when you're controlling them.
+  This refers not only to Link, but to Medli/Makar/Tower Servant/seagull when you're controlling them.
 
 803CA74C,4 - Always has a pointer to the player entity in RAM.
-  This refers not only to Link, but to Medli/Makar/etc when you're controlling them.
+  This refers not only to Link, but to Medli/Makar/Tower Servant/seagull when you're controlling them.
 803CA754,4 - Always has a pointer to the Link entity in RAM.
 803CA758,4 - Always has a pointer to the partner??? like Medli
 803CA75C,4 - Always has a pointer to the ship entity in RAM (KoRL).
@@ -856,6 +872,8 @@ Backup inventory data used by recollection bosses in order to restore the player
 
 803E2270 - Filename of the currently loaded .jpc particle archive file for the current stage.
 
+803E7FE8 - Filename of the currently loaded room .arc file (e.g. "Room44").
+
 Player's true position (this gets copied to the player entity's position every frame, and copied back too):
 803E440C,4 - Player's X pos.
 803E4410,4 - Player's Y pos.
@@ -930,5 +948,22 @@ Player's true position (this gets copied to the player entity's position every f
 803720E8 - ? game state related
 803720F0,4 - pointer to ? for game state
 
+Entity deletion queue (g_fpcDtTg_Queue):
+803726A0,4 - Pointer to the first entity node to delete.
+  entity_node+8,4 has a pointer to the next entity node in the list to delete.
+803726A4,4 - Pointer to the last entity node to delete.
+803726A8,4 - Number of entities to delete.
+
 803B39A0 - temp location for save file data?
 803B5048 - temp location for save file data?
+
+8037b630  - dPa_name::j_o_id list of common particles that can be used with setSimple?
+8037b640  - dPa_name::s_o_id list of stage bank particles that can be used with setSimple?
+
+803F7988 - Has a pointer to a table of sine values. (jmaSinTable)
+  Each entry is a float.
+  The index in this list is the input value to the sin function, in terms of 0x3FE (0d1022) = 90 degrees.
+
+803F6A68 - Has a pointer to a table of pointers to "profiles" for each actor type. (g_fpcPf_ProfileList_p)
+  The index in the list is the actor ID.
+  Profiles located inside a REL not currently loaded in will simply have null pointers in this list until the REL is loaded.

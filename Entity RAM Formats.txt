@@ -19,7 +19,7 @@ Format of entities in RAM:
 048,4: Pointer to a callback function?
 04C,4: Pointer to a callback function?
 
-Append entity?:
+fopAc_ac_c (entity created by createAppend):
 008,2: Actor ID.
 0B0,4: Parameters.
 0EC,4: Pointer to something in the loaded REL file for this entity?
@@ -161,6 +161,11 @@ Model entity format:
 18,4: X scale.
 1C,4: Y scale.
 20,4: Z scale.
+
+Model entity format?:
+070,4: Something texture related
+074,4: Something texture related
+  these two values are used by Ajav to copy the first model's texture to the other 5 models in the function daObjAjav::Act_c::set_tex( (void))
 
 Bounding box(?) format:
 (Bounding boxes are created by calling dBgS_Acch::__ct(void) with r3 equal to the pointer to where the entity should be, which is at a variable location within the entity's RAM depending on what class of entity it is.)
