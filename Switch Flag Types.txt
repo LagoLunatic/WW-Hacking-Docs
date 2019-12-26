@@ -1,0 +1,12 @@
+
+A switch flag can have an index from 00-FF.
+The range the index is in controls what type of switch it is specifically.
+Checking if a switch is currently set is done by calling isSwitch__10dSv_info_cFii.
+isSwitch__10dSv_info_cFii will call one of various other more specific functions depending on the type of switch you passed to it.
+
+00-7F: Mem bit. (Calls isSwitch__12dSv_memBit_cFi)
+80-BF: Dan bit. (Calls isSwitch__12dSv_danBit_cFi)
+C0-DF: Zone bit that gets cleared on stage transition. (Calls isSwitch__13dSv_zoneBit_cFi)
+E0-EF: Zone bit that gets cleared on stage transition or room transition. (Calls isSwitch__13dSv_zoneBit_cFi)
+F0-FE: Zone bit that is invalid and will throw an error if checked.
+FF: Invalid switch. Always returns false.
