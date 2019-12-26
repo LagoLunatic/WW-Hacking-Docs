@@ -1,0 +1,2060 @@
+d_a_acorn_leaf:
+  Actor names: VigaH
+  params & 80000000
+Params for possible subclass:
+  params & 0000003F
+  params & 00001FC0
+
+d_a_agbsw0:
+  Actor names: agbA, agbAT, agbA2, agbF, agbF2, agbMARK, agbMW, agbCSW, agbTBOX, agbR, agbB, agbD, agbFA
+  params & 0000FFFF
+  params & 00FF0000 (WARNING: overlaps)
+  params & FF000000 (WARNING: overlaps)
+  params & FFFF0000 (WARNING: overlaps)
+  aux_params_1 & FFFF
+  aux_params_2 & 00FF
+
+d_a_alldie:
+  Actor names: ALLdie
+  params & 0000FF00
+
+d_a_am:
+  Actor names: amos
+  params & 000000FF
+  params & 0000FF00
+  params & 00FF0000
+  params & FF000000
+
+d_a_am2:
+  Actor names: amos2
+  params & 000000FF
+  params & 0000FF00
+  params & 00FF0000
+  params & FF000000
+
+d_a_amiprop:
+  Actor names: Hami1, HamiY
+  params & 000000FF
+  params & 00000F00
+
+d_a_andsw0:
+  Actor names: AND_SW0
+  params & 0000000F (WARNING: overlaps)
+  params & 000000FF (WARNING: overlaps)
+  params & 0000FF00
+  params & 00FF0000
+  params & FF000000
+  aux_params_1 & 00FF
+  aux_params_2 & 00FF
+
+d_a_andsw2:
+  Actor names: AND_SW2
+  params & 000000FF
+  params & 0000FF00
+  params & 00FF0000
+  params & FF000000
+  aux_params_1 & 00FF
+  aux_params_2 & 00FF
+
+d_a_arrow_iceeff:
+  Actor names: Arrow_i
+
+d_a_arrow_lighteff:
+  Actor names: Arrow_l
+  params & 000000FF
+
+d_a_atdoor:
+  Actor names: ATdoor
+  params & 000000FF
+
+d_a_att:
+  Actor names: 
+  params & 000000FF
+
+d_a_auction:
+  Actor names: Auction
+
+d_a_bb:
+  Actor names: Bb
+  params & 000000FF
+  params & 0000FF00
+  params & 00FF0000
+  params & FF000000
+  aux_params_2 & 00FF
+
+d_a_bdk:
+  Actor names: Bdk
+  params & 000000FF
+Params for possible subclass:
+  params & 0000000F
+
+d_a_bdkobj:
+  Actor names: Bdkobj
+  params & 0000000F (WARNING: overlaps)
+  params & 000000FF (WARNING: overlaps)
+
+d_a_beam:
+  Actor names: Ylesr00
+  params & 000000FF
+  params & 0000FF00
+  params & 00FF0000
+  params & 0F000000
+  params & 10000000 (WARNING: overlaps)
+  params & 30000000 (WARNING: overlaps)
+  params & C0000000
+  aux_params_1 & FFFF
+
+d_a_bflower:
+  Actor names: BFlower, VbakH
+  params & 000000F0
+  params & 0000FF00
+
+d_a_bgn:
+  Actor names: Bgn
+  params & 000000FF
+
+d_a_bgn2:
+  Actor names: 
+
+d_a_bgn3:
+  Actor names: 
+
+d_a_bigelf:
+  Actor names: BigElf
+  params & 000000FF
+  params & 0000FF00
+  params & 00FF0000
+
+d_a_bita:
+  Actor names: Bita
+  params & 000000FF
+  params & 0000FF00
+
+d_a_bk:
+  Actor names: Bk
+  params & 0000000F
+  params & 00000010
+  params & 00000020
+  params & 000000C0
+  params & 0000FF00
+  params & 00FF0000
+  params & FF000000
+  aux_params_2 & 00FF
+Params for possible subclass:
+  params & FFFFFFFF
+
+d_a_bl:
+  Actor names: bable, bable_r
+  params & 000000FF
+  params & 0000FF00
+  params & 00FF0000
+  params & FF000000
+
+d_a_bmd:
+  Actor names: Bkm
+
+d_a_bmdfoot:
+  Actor names: 
+  params & 0000000F
+
+d_a_bmdhand:
+  Actor names: 
+  params & 00000001 (WARNING: overlaps)
+  params & 00000003 (WARNING: overlaps)
+  params & 0000001F (WARNING: overlaps)
+
+d_a_bo:
+  Actor names: bbaba
+  params & 000000FF
+  params & 0000FF00
+
+d_a_boko:
+  Actor names: Boko, Boko
+  params & 3FFFFFFF (WARNING: overlaps)
+  params & FFFFFFFF (WARNING: overlaps)
+  aux_params_1 & FFFF
+
+d_a_boss_item:
+  Actor names: Bitem
+  params & 000000FF
+
+d_a_bpw:
+  Actor names: big_pow
+  params & 000000FF
+  params & 0000FF00
+  params & 00FF0000
+
+d_a_branch:
+  Actor names: Branch
+
+d_a_bridge:
+  Actor names: bridge
+  params & 000000FF
+  params & 0000FF00
+  params & 00FF0000
+
+d_a_bst:
+  Actor names: Bst
+  params & 000000FF
+
+d_a_btd:
+  Actor names: Btd
+Params for possible subclass:
+  params & FFFFFFFF
+
+d_a_bwd:
+  Actor names: Bwd
+  params & 000000FF
+
+d_a_bwdg:
+  Actor names: 
+
+d_a_bwds:
+  Actor names: Bwds
+  params & 000000FF
+
+d_a_canon:
+  Actor names: Canon
+  aux_params_1 & FFFF
+
+d_a_cc:
+  Actor names: c_green, c_red, c_blue, c_black, c_kiiro
+  params & 000000FF
+  params & 0000FF00
+  params & 00FF0000
+  params & FF000000
+
+d_a_coming2:
+  Actor names: Com_B
+
+d_a_coming3:
+  Actor names: Com_C
+
+d_a_dai:
+  Actor names: Fdai
+  params & 000000FF
+
+d_a_daiocta:
+  Actor names: Daiocta
+  params & 000000FF
+  params & 0000FF00
+  params & 00FF0000
+  params & FF000000
+  aux_params_2 & 00FF
+
+d_a_daiocta_eye:
+  Actor names: Daioeye
+
+d_a_deku_item:
+  Actor names: itemDek
+  params & 000000FF
+
+d_a_demo_dk:
+  Actor names: Demo_Dk
+
+d_a_demo_item:
+  Actor names: Ditem
+  params & 000000FF
+  params & 00FF0000
+
+d_a_demo_kmm:
+  Actor names: DmKmm, DmKmm2
+
+d_a_dk:
+  Actor names: Dk
+  params & 000000FF
+
+d_a_door10:
+  Actor names: door10, door11, door20, door21, Zenshut, keyshut, K_Zshut
+
+d_a_door12:
+  Actor names: door12, door12M, door12B, door13, door13M, door13B, keyS12, ZenS12
+
+d_a_dr:
+  Actor names: dragon
+
+d_a_dr2:
+  Actor names: Dr2
+
+d_a_dummy:
+  Actor names: TagD1, TagD2, TagD3, TagD4
+
+d_a_ep:
+  Actor names: bonbori
+  params & 0000003F
+  params & 00000040
+  params & 00000080
+  params & 0000FF00
+  params & 00FF0000
+  params & FF000000
+
+d_a_fallrock:
+  Actor names: fallrck
+
+d_a_fallrock_tag:
+  Actor names: frock
+  params & 000000FF
+
+d_a_fan:
+  Actor names: Hsen1, Hsen2, Hsen3
+  params & 000000FF
+  params & 00000300
+
+d_a_ff:
+  Actor names: ho
+  params & 000000FF (WARNING: overlaps)
+  params & 0000FF00
+  params & FFFF00FF (WARNING: overlaps)
+
+d_a_fganon:
+  Actor names: Fganon
+  params & 0000000F
+  params & 000000F0
+  params & 0000FF00
+  params & 00FF0000
+  params & FF000000
+
+d_a_fgmahou:
+  Actor names: 
+  params & 0000000F
+
+d_a_fire:
+  Actor names: Fire, Zenfire
+  params & 000000FF
+  params & 00000F00
+  params & 0001F000
+  params & 000E0000
+  params & 00F00000
+
+d_a_floor:
+  Actor names: Hhyu1
+  params & 000000FF
+
+d_a_fm:
+  Actor names: Fmaster, Fmastr1, Fmastr2
+  params & 000000FF
+  params & 00000300
+  params & 00000C00
+  params & 00FF0000
+  params & 0F000000 (WARNING: overlaps)
+  params & FF000000 (WARNING: overlaps)
+  aux_params_1 & 00FF
+  aux_params_1 & FF00
+  aux_params_2 & 00FF
+
+d_a_ghostship:
+  Actor names: Ayush
+  params & 000000FF
+  params & 00FF0000
+
+d_a_gm:
+  Actor names: gmos, gmos_g, gmos_f
+  params & 000000FF
+  params & 0000FF00
+  params & 00FF0000
+  params & FF000000
+  aux_params_2 & 00FF
+
+d_a_gnd:
+  Actor names: Gnd
+  params & 0000000F (WARNING: overlaps)
+  params & 000000FF (WARNING: overlaps)
+
+d_a_goal_flag:
+  Actor names: Gflag
+  params & 000000FF
+  params & 00FF0000
+
+d_a_grass:
+  Actor names: kusax1, kusax7, kusax21, flower, flwr7, flwr17, pflower, pflwrx7, swood, swood3, swood5, Grass
+  params & 0000000F
+  params & 00000030
+  params & 00000FC0
+
+d_a_gy:
+  Actor names: Gy
+
+d_a_gy_ctrl:
+  Actor names: GyCtrl, GyCtrlB
+
+d_a_himo3:
+  Actor names: RopeR
+  params & 000000FF (WARNING: overlaps)
+  params & 0000FF00 (WARNING: overlaps)
+  params & 00FF0000 (WARNING: overlaps)
+  params & FF000000 (WARNING: overlaps)
+  params & FFFFFFFF (WARNING: overlaps)
+
+d_a_hitobj:
+  Actor names: 
+  params & 000000FF
+
+d_a_hmlif:
+  Actor names: Hmlif, Hyuf1, Hyuf2
+  params & 000000FF
+  params & 0000FF00
+  params & 000F0000
+  params & 00300000
+  params & 07C00000
+  params & 78000000
+  params & 80000000
+  aux_params_2 & 00FF
+
+d_a_hot_floor:
+  Actor names: HFloor
+  params & 00000001
+  params & 00000002
+
+d_a_hys:
+  Actor names: Hys, Hys2
+  params & 000000FF
+  params & 0000FF00
+
+d_a_icelift:
+  Actor names: Ylsic, Yllic, Ylkic
+  params & 0000000F
+  params & 00000FF0
+  params & 000FF000
+
+d_a_ikari:
+  Actor names: Ikari
+  params & 000000FF
+  params & 0000FF00
+
+d_a_jbo:
+  Actor names: jbaba
+  params & 000000FF
+
+d_a_kaji:
+  Actor names: Kaji
+
+d_a_kamome:
+  Actor names: Kamome
+  params & 000000FF
+  params & 0000FF00
+  params & 00FF0000
+  params & FF000000
+Params for possible subclass:
+  params & 0000000F
+
+d_a_kanban:
+  Actor names: Kanban
+  params & FFF00000
+
+d_a_kantera:
+  Actor names: Kantera
+  params & 000000FF
+  params & 0000FF00
+  params & FF000000
+
+d_a_kb:
+  Actor names: Pig
+  params & 0000000F
+  params & 000000F0
+  params & 0000FF00
+  params & 00FF0000
+  aux_params_2 & FFFF
+
+d_a_kddoor:
+  Actor names: doorKD, ZenshKD, K_ZshKD, doorSH, doorSZ
+
+d_a_ki:
+  Actor names: keeth, Fkeeth
+  params & 000000FF
+  params & 00007F00
+  params & 00008000
+  params & 00FF0000
+  params & FF000000
+
+d_a_kita:
+  Actor names: Kita
+  params & 000000FF
+  params & 0000FF00
+
+d_a_klft:
+  Actor names: Klft
+  params & 000000FF
+  params & 00FF0000
+  aux_params_2 & 00FF
+
+d_a_kmon:
+  Actor names: Kmon
+
+d_a_kn:
+  Actor names: kani
+  params & 000000FF
+  params & 0000FF00
+
+d_a_knob00:
+  Actor names: KNOB00, KNOB01, KNOB02, KNOB03, KNOB00D, KNOB01D, KNOB02D, KNOB03D
+  params & F0000000
+
+d_a_kokiie:
+  Actor names: Kokiie
+  params & 000000FF
+  params & FF000000
+
+d_a_komore:
+  Actor names: Yfrlt00
+
+d_a_ks:
+  Actor names: kuro_s, kuro_t
+  params & 000000FF
+  params & 0000FF00
+  params & 00FF0000
+
+d_a_kt:
+  Actor names: kt
+  params & FFFFFFFF
+
+d_a_kui:
+  Actor names: Kui
+  params & 000000F0
+  params & 0000FF00
+  params & FF000000
+
+d_a_kytag00:
+  Actor names: ky_tag0, kytag00, ky00you
+  params & 000000FF
+  params & 0000FF00
+  params & 00FF0000
+  params & FF000000
+  aux_params_1 & 00FF
+  aux_params_1 & FF00
+  aux_params_2 & 00FF
+
+d_a_kytag01:
+  Actor names: ky_tag1
+
+d_a_kytag02:
+  Actor names: ky_tag2
+  params & 00FF0000
+
+d_a_kytag03:
+  Actor names: ky_tag3
+  params & 000000FF
+
+d_a_kytag04:
+  Actor names: kytag4
+  params & 000000FF
+  params & 0000FF00
+  aux_params_1 & 00FF
+
+d_a_kytag05:
+  Actor names: kytag5
+  params & 000000FF
+
+d_a_kytag06:
+  Actor names: kytag6
+
+d_a_kytag07:
+  Actor names: kytag7
+  params & 000000FF
+
+d_a_lamp:
+  Actor names: Lamp
+  params & 000000FF
+
+d_a_lbridge:
+  Actor names: Gbrg00
+  params & 000000FF
+
+d_a_leaflift:
+  Actor names: Olift
+  params & 0000000F
+
+d_a_lod_bg:
+  Actor names: LOD01, LOD02, LOD03, LOD04, LOD05, LOD06, LOD07, LOD08, LOD09, LOD10, LOD11, LOD12, LOD13, LOD14, LOD15, LOD16, LOD17, LOD18, LOD19, LOD20, LOD21, LOD22, LOD23, LOD24, LOD25, LOD26, LOD27, LOD28, LOD29, LOD30, LOD31, LOD32, LOD33, LOD34, LOD35, LOD36, LOD37, LOD38, LOD39, LOD40, LOD41, LOD42, LOD43, LOD44, LOD45, LOD46, LOD47, LOD48, LOD49
+
+d_a_lstair:
+  Actor names: Gkai00
+  params & 000000FF
+
+d_a_lwood:
+  Actor names: lwood
+
+d_a_machine:
+  Actor names: Hkikai1
+  params & 000000FF
+
+d_a_magma:
+  Actor names: magma
+
+d_a_majuu_flag:
+  Actor names: MjFlag, MtFlag, HcFlag
+  params & 000000FF
+  params & FF000000
+
+d_a_mant:
+  Actor names: 
+  params & 000000FF
+
+d_a_mbdoor:
+  Actor names: SMBdor, KGBdor
+  params & 000000FF
+  params & 00000F00
+  aux_params_2 & 003F
+
+d_a_mdoor:
+  Actor names: Mori1
+  params & 000000FF
+  params & 0000FF00
+  params & 00FF0000
+  params & FF000000
+
+d_a_mflft:
+  Actor names: Mflft
+  params & 000000FF
+  params & FF000000
+
+d_a_mgameboard:
+  Actor names: GBoard
+
+d_a_mmusic:
+  Actor names: Mmusic
+
+d_a_mo2:
+  Actor names: mo2
+  params & 000000FF
+  params & 0000FF00
+  params & 00FF0000
+  params & FF000000
+  aux_params_2 & 00FF
+Params for possible subclass:
+  params & FFFFFFFF
+
+d_a_movie_player:
+  Actor names: mp
+
+d_a_mozo:
+  Actor names: moZOU
+  params & 000000FF
+
+d_a_msw:
+  Actor names: Mswing
+  params & 000000FF
+
+d_a_mt:
+  Actor names: magtail
+  params & 000000FF
+  params & 00007F00
+  params & 00008000
+  params & 00FF0000
+  params & FF000000
+  aux_params_2 & 00FF
+
+d_a_mtoge:
+  Actor names: SMtoge
+  params & 000000FF
+
+d_a_npc_ac1:
+  Actor names: Ac1
+  params & 000000FF
+  params & 00FF0000
+
+d_a_npc_ah:
+  Actor names: Ah
+  params & 000000FF
+  params & 0000FF00
+
+d_a_npc_aj1:
+  Actor names: Aj1
+  params & 000000FF
+  params & 0000FF00
+
+d_a_npc_auction:
+  Actor names: Auc7, Auc1, Auc2, Auc3, Auc4, Auc5, Auc6, Auc0
+
+d_a_npc_ba1:
+  Actor names: Ba1
+  params & 000000FF
+
+d_a_npc_bj1:
+  Actor names: Bj1, Bj2, Bj3, Bj4, Bj5, Bj6, Bj7, Bj8, Bj9
+  params & 000000FF
+  params & 00FF0000
+
+d_a_npc_bm1:
+  Actor names: Bm1, Bm2, Bm3, Bm4, Bm5
+  params & 000000FF
+  params & 0000FF00
+  params & 00FF0000
+
+d_a_npc_bmcon1:
+  Actor names: Bmcon1, Bmcon2
+  params & 00FF0000
+
+d_a_npc_bms1:
+  Actor names: Bms1, Bms2
+  params & FF000000
+
+d_a_npc_bmsw:
+  Actor names: Bmsw
+
+d_a_npc_bs1:
+  Actor names: Bs1, Bs2
+  params & 000000FF
+  params & 00F00000
+
+d_a_npc_btsw:
+  Actor names: Btsw
+
+d_a_npc_btsw2:
+  Actor names: Btsw2
+  params & 00FF0000
+
+d_a_npc_cb1:
+  Actor names: Cb1
+  params & FFFFFFFF
+
+d_a_npc_co1:
+  Actor names: Co1
+  params & 000000FF
+
+d_a_npc_de1:
+  Actor names: De1
+  params & 000000FF
+
+d_a_npc_ds1:
+  Actor names: Ds1
+  params & 00F00000
+
+d_a_npc_gk1:
+  Actor names: Gk1
+  params & 000000FF
+
+d_a_npc_gp1:
+  Actor names: Gp1
+  params & 000000FF
+  params & 00FF0000
+
+d_a_npc_hi1:
+  Actor names: Hi1
+  params & 000000FF
+
+d_a_npc_ho:
+  Actor names: Ho
+
+d_a_npc_hr:
+  Actor names: Hr, Hr2
+  params & 000000FF
+  params & 0000FF00
+  aux_params_1 & FFFF
+
+d_a_npc_jb1:
+  Actor names: Jb1
+  params & 000000FF
+
+d_a_npc_ji1:
+  Actor names: Ji1
+
+d_a_npc_kamome:
+  Actor names: HyoiKam
+  aux_params_1 & FFFF
+  aux_params_2 & FFFF
+
+d_a_npc_kf1:
+  Actor names: Kf1
+  params & 000000FF
+  params & 0000FF00
+  params & 00FF0000
+  params & 0F000000
+
+d_a_npc_kg1:
+  Actor names: Kg1
+
+d_a_npc_kg2:
+  Actor names: Kg2
+
+d_a_npc_kk1:
+  Actor names: Kk1
+  params & 000000FF
+  params & 0000FF00
+  params & 00030000 (WARNING: overlaps)
+  params & 00FF0000 (WARNING: overlaps)
+
+d_a_npc_km1:
+  Actor names: Km1
+  params & 000000FF
+
+d_a_npc_ko1:
+  Actor names: Ko1, Ko2
+  params & 000000FF
+  params & 00FF0000
+
+d_a_npc_kp1:
+  Actor names: Kp1
+  params & 000000FF
+
+d_a_npc_ls1:
+  Actor names: Ls1
+  params & 000000FF
+
+d_a_npc_md:
+  Actor names: Md1
+  params & 000000FF
+  params & 0000FF00
+  params & 00FF0000
+
+d_a_npc_mk:
+  Actor names: Mk, Mk2
+  params & 000000FF
+  params & 0000FF00
+
+d_a_npc_mn:
+  Actor names: Mn
+  params & 0000FF00
+  params & 00FF0000
+  params & FF000000
+
+d_a_npc_mt:
+  Actor names: Mt
+
+d_a_npc_nz:
+  Actor names: NpcNz
+
+d_a_npc_ob1:
+  Actor names: Ob1
+  params & 000000FF
+  params & 00FF0000
+
+d_a_npc_os:
+  Actor names: Os, Os1, Os2
+  params & 00FF0000
+
+d_a_npc_p1:
+  Actor names: P1a, P1b, P1c
+  params & 000000FF
+  params & 00F00000
+
+d_a_npc_p2:
+  Actor names: P2a, P2b, P2c
+  params & 00000003
+  params & 000003FC
+  params & 0003FC00
+
+d_a_npc_people:
+  Actor names: Uo1, Uo2, Uo3, Ub1, Ub2, Ub3, Ub4, Uw1, Uw2, Um1, Um2, Um3, Sa1, Sa2, Sa3, Sa4, Sa5, Ug1, Ug2
+  params & 000000FF
+  params & 00FF0000
+  params & 80000000
+
+d_a_npc_pf1:
+  Actor names: Pf1
+  params & 000000FF
+  params & 00FF0000
+
+d_a_npc_photo:
+  Actor names: Po
+  params & 000000FF
+  params & 00FF0000
+
+d_a_npc_pm1:
+  Actor names: Pm1
+  params & 000000FF
+
+d_a_npc_roten:
+  Actor names: RotenA, RotenB, RotenC
+  params & 00FF0000
+  params & FF000000
+
+d_a_npc_rsh1:
+  Actor names: Rsh1
+  params & 00F00000 (WARNING: overlaps)
+  params & 00FF0000 (WARNING: overlaps)
+
+d_a_npc_sarace:
+  Actor names: Sarace
+
+d_a_npc_so:
+  Actor names: NpcSo
+
+d_a_npc_sv:
+  Actor names: Sv0, Sv1, Sv2, Sv3
+
+d_a_npc_tc:
+  Actor names: Tc
+  params & 0000000F (WARNING: overlaps)
+  params & 000000FF (WARNING: overlaps)
+
+d_a_npc_tt:
+  Actor names: Tt
+
+d_a_npc_uk:
+  Actor names: UkB, UkC, UkD, UkB2, UkC2, UkD2
+  params & 000000FF
+  params & 0000FF00
+  params & 000F0000
+
+d_a_npc_ym1:
+  Actor names: Ym1, Ym2
+  params & 000000FF
+
+d_a_npc_yw1:
+  Actor names: Yw1
+  params & 000000FF
+  params & 00FF0000
+
+d_a_npc_zk1:
+  Actor names: Zk1
+  params & 000000FF
+
+d_a_npc_zl1:
+  Actor names: Zl1
+  params & 000000FF
+
+d_a_nz:
+  Actor names: nezumi
+  params & 000000FF
+  params & 0000FF00
+  params & FF000000
+Params for possible subclass:
+  params & FFFFFFFF
+
+d_a_nzg:
+  Actor names: nezuana
+  params & 000000FF
+  params & 0000FF00
+  params & 00FF0000
+  params & FF000000
+
+d_a_obj_adnno:
+  Actor names: Adnno
+
+d_a_obj_ajav:
+  Actor names: Ajav
+  params & 000000FF
+
+d_a_obj_ajavw:
+  Actor names: 
+
+d_a_obj_akabe:
+  Actor names: Akabe, Akabe10, NBOX, NBOX10
+  params & 000000FF
+  params & 00000300
+  params & 00001000
+  params & 000F0000
+
+d_a_obj_apzl:
+  Actor names: Apzl
+  params & 0000FF00
+
+d_a_obj_ashut:
+  Actor names: Ashut
+  params & 000000FF
+  params & 0000FF00
+
+d_a_obj_auzu:
+  Actor names: Auzu
+  params & 000000FF
+  params & 0000FF00
+  params & 00010000
+  params & 00F00000
+
+d_a_obj_aygr:
+  Actor names: Aygr
+  params & 00000001
+
+d_a_obj_balancelift:
+  Actor names: Blift
+  params & 00FF0000
+
+d_a_obj_barrel:
+  Actor names: Ktarux
+  params & 70000000
+  aux_params_2 & FFFF
+
+d_a_obj_barrel2:
+  Actor names: Ktarur
+  params & 0000003F
+  params & 00000100
+  params & 00000400
+  params & 007F0000
+  params & 03000000
+  params & 10000000
+
+d_a_obj_barrier:
+  Actor names: Ycage00
+  params & 00000100
+  params & 00010000
+
+d_a_obj_bemos:
+  Actor names: Hmos1, Hmos2, Hmos3
+  params & 000000FF
+  params & 0000FF00
+  params & 00FF0000
+  params & F0000000
+  aux_params_2 & 003F
+  aux_params_2 & 1FC0
+
+d_a_obj_bscurtain:
+  Actor names: Ptco, Ptcu
+  params & 000000FF
+
+d_a_obj_buoyflag:
+  Actor names: 
+  params & 00000003
+  params & 00000100
+  params & 80000000
+
+d_a_obj_buoyrace:
+  Actor names: Buoyr
+  params & 000000FF
+  params & 0000FF00
+
+d_a_obj_cafelmp:
+  Actor names: Cafelmp
+
+d_a_obj_canon:
+  Actor names: Ocanon
+  params & 000000FF
+  params & 0000FF00
+  params & 00FF0000
+  params & FF000000
+
+d_a_obj_coming:
+  Actor names: Com_A
+  params & 0000000F
+  params & 00000040
+  params & 00000700
+  params & 00FF0000
+  params & 03000000
+  params & 30000000
+
+d_a_obj_correct:
+  Actor names: BLK_CR, CrTrS3, CrTrS4, CrTrS5, CrTrM1, CrTrM2, CrTrGr, CrTrBl
+  params & 0000000F
+  params & 0000FF00
+  params & 00FF0000
+  params & 40000000
+
+d_a_obj_demo_barrel:
+  Actor names: Ktaruo
+
+d_a_obj_dmgroom:
+  Actor names: dmgroom
+
+d_a_obj_doguu:
+  Actor names: Doguu, MegamiD, MegamiF, MegamiN
+  params & 000000FF
+
+d_a_obj_doguu_demo:
+  Actor names: DoguuD
+  params & 000000FF
+
+d_a_obj_dragonhead:
+  Actor names: Qdghd
+  params & 0000FF00
+
+d_a_obj_drift:
+  Actor names: Kryu00
+  params & 00000007
+
+d_a_obj_eayogn:
+  Actor names: Eayogn
+
+d_a_obj_ebomzo:
+  Actor names: Ebomzo
+  params & 000000FF
+
+d_a_obj_eff:
+  Actor names: 
+  params & 000000FF
+
+d_a_obj_ekskz:
+  Actor names: Ekskz
+  params & 000000FF
+
+d_a_obj_eskban:
+  Actor names: Eskban
+  params & 000000FF
+
+d_a_obj_ferris:
+  Actor names: Skanran
+  params & 000000FF
+
+d_a_obj_figure:
+  Actor names: Figure
+  params & 000000FF
+
+d_a_obj_firewall:
+  Actor names: Yswdr00
+  params & 000000FF
+
+d_a_obj_flame:
+  Actor names: Yfire00
+  params & 000000FF
+  params & 00001F00
+  params & 00006000
+  params & 00FF0000
+  params & 30000000
+  params & 80000000
+
+d_a_obj_ftree:
+  Actor names: FTree
+  params & 0000000F
+
+d_a_obj_ganonbed:
+  Actor names: Gbed
+
+d_a_obj_gaship:
+  Actor names: Gaship1
+
+d_a_obj_gaship2:
+  Actor names: Gaship2
+
+d_a_obj_gnnbtltaki:
+  Actor names: Gnbtaki
+  params & 0000000F
+
+d_a_obj_gnndemotakie:
+  Actor names: Gntakie
+
+d_a_obj_gnndemotakis:
+  Actor names: Gntakis
+
+d_a_obj_gong:
+  Actor names: Vdora
+
+d_a_obj_gryw00:
+  Actor names: Gryw00
+  params & 000000FF
+
+d_a_obj_gtaki:
+  Actor names: Gtaki
+
+d_a_obj_hami2:
+  Actor names: Hami2
+  params & 000000FF
+
+d_a_obj_hami3:
+  Actor names: Hami3
+  params & 000000FF
+  params & 0000FF00
+  params & 00010000
+
+d_a_obj_hami4:
+  Actor names: Hami4
+  params & 000000FF
+
+d_a_obj_hat:
+  Actor names: RoHat
+  params & 000000FF
+
+d_a_obj_hbrf1:
+  Actor names: Hbrf1
+  params & 000000FF
+  params & 00000100
+  params & 00FF0000
+
+d_a_obj_hcbh:
+  Actor names: Hcbh
+  params & 0000003F
+  params & 00001FC0
+  params & 001FE000
+
+d_a_obj_hfuck1:
+  Actor names: Hfuck1
+
+d_a_obj_hha:
+  Actor names: Hha
+  params & 000000FF
+  params & 0000FF00
+
+d_a_obj_hlift:
+  Actor names: Hlift, Hliftb
+  params & 00000007
+  params & 00000010
+  params & 0000FF00
+  params & 00FF0000
+
+d_a_obj_hole:
+  Actor names: Ypit00, Pitfall
+  params & 000000FF
+  params & 0000FF00
+
+d_a_obj_homen:
+  Actor names: Homen1, Homen2
+  params & 0000007F
+  params & 00000F00
+  params & 0003F000
+  params & 003C0000
+  params & FF000000
+
+d_a_obj_homensmoke:
+  Actor names: Omensmk
+  params & 00000001
+  params & 00000002
+
+d_a_obj_hsehi1:
+  Actor names: Hsh, Hsh2
+  params & 000000FF
+  params & 00FFFF00
+
+d_a_obj_htetu1:
+  Actor names: Htetu1
+  params & 000000FF
+
+d_a_obj_ice:
+  Actor names: Ikori
+  params & 000000FF
+
+d_a_obj_iceisland:
+  Actor names: GiceL
+  params & 0000FF00
+
+d_a_obj_ikada:
+  Actor names: Ikada, ikada_h, ikadaS, ikada_u, Svsp
+  params & 0000000F
+  params & 000003F0
+  params & 0003FC00 (WARNING: overlaps)
+  params & 00FF0000 (WARNING: overlaps)
+  params & 03FC0000 (WARNING: overlaps)
+  aux_params_1 & 00FF
+  aux_params_1 & FF00
+
+d_a_obj_Itnak:
+  Actor names: Itnak
+  params & 000000FF
+  params & 0000FF00
+
+d_a_obj_jump:
+  Actor names: Hjump2
+  params & 00000001
+
+d_a_obj_kanat:
+  Actor names: Kanat
+  params & 000000FF
+
+d_a_obj_kanoke:
+  Actor names: MKanoke, MKanok2
+  params & 00000001
+  params & 0000003E
+  params & 00000040
+  params & 0000FF00
+  params & 00FF0000
+
+d_a_obj_ladder:
+  Actor names: Mhsg6, Mhsg9, Mhsg12, Mhsg15, Mhsg4h
+  params & 00000007
+  params & 0000FF00
+  params & 00FF0000
+
+d_a_obj_leaves:
+  Actor names: Vochi
+  params & 0000003F
+  params & 00001FC0
+  params & 001FE000
+
+d_a_obj_light:
+  Actor names: Stoudai
+
+d_a_obj_lpalm:
+  Actor names: Oyashi
+
+d_a_obj_magmarock:
+  Actor names: Magrock
+  params & 000000FF
+  params & FF000000
+
+d_a_obj_majyuu_door:
+  Actor names: MjDoor
+  params & 000000FF
+
+d_a_obj_mkie:
+  Actor names: MkieBA, MkieBAB
+  params & 000000FF
+  params & 00000100
+  params & 00001000
+  params & 00002000
+  params & 00FF0000
+
+d_a_obj_mkiek:
+  Actor names: MkieK
+  params & 000000FF
+  params & 00000100
+
+d_a_obj_mknjd:
+  Actor names: MknjD
+  params & 000000FF
+  params & 00010000
+
+d_a_obj_mmrr:
+  Actor names: 
+
+d_a_obj_monument:
+  Actor names: Esekh, Esekh2
+  params & 00000001
+  params & 0000FF00
+
+d_a_obj_movebox:
+  Actor names: osiBLK0, osiBLK1, Kkiba, Hseki2, Hseki7, Mmrr, MkieBB, Ecube, Hjump1, Hbox1, MpwrB, DBLK0, DBLK1, DKkiba, Hbox2
+  params & 0000003F
+  params & 0000FF00
+  params & 007F0000
+  params & 0F000000
+  params & 40000000
+  params & 80000000
+
+d_a_obj_msdan:
+  Actor names: Msdan
+  params & 000000FF
+  params & 00010000
+  params & 00040000
+  params & FF000000
+
+d_a_obj_msdan2:
+  Actor names: Msdan2
+  params & 000000FF
+
+d_a_obj_msdan_sub:
+  Actor names: MsdanSb
+  params & 000000FF
+  params & 0000FF00
+  params & 00010000
+
+d_a_obj_msdan_sub2:
+  Actor names: MsdanS2
+  params & 000000FF
+  params & 0000FF00
+
+d_a_obj_mshokki:
+  Actor names: MPot, MOsara, MKoppu
+  params & 00000003
+
+d_a_obj_mtest:
+  Actor names: Mcube, Mcyln, Mcube10, Mcyln10, MwtrSB, MygnSB, Owater, Astop
+  params & 00000007
+  params & 0000FF00
+  params & 000F0000
+  params & 0F000000
+
+d_a_obj_nest:
+  Actor names: MtoriSU
+
+d_a_obj_ohatch:
+  Actor names: Ohatch
+  params & 000000FF
+
+d_a_obj_ojtree:
+  Actor names: Ojtree
+
+d_a_obj_ospbox:
+  Actor names: Ospbox
+  params & 0000003F
+  params & 00000700
+
+d_a_obj_otble:
+  Actor names: Otble, OtbleL
+  params & 000000FF
+
+d_a_obj_paper:
+  Actor names: Paper, Ppos, Piwa
+  params & 0000FFFF
+  params & 000F0000
+
+d_a_obj_pbco:
+  Actor names: Pbco
+
+d_a_obj_pbka:
+  Actor names: Pbka
+
+d_a_obj_pfall:
+  Actor names: Nzfall
+
+d_a_obj_pirateship:
+  Actor names: Pirates
+  params & 0000000F
+  params & 00FF0000
+  params & FF000000
+
+d_a_obj_plant:
+  Actor names: Plant
+
+d_a_obj_quake:
+  Actor names: Quake
+  params & 000000FF
+  params & 00000700
+  params & 00003800
+
+d_a_obj_rcloud:
+  Actor names: Rcloud, Ocloud
+  params & 00000001
+
+d_a_obj_rflw:
+  Actor names: Rflw
+
+d_a_obj_rforce:
+  Actor names: Rforce
+
+d_a_obj_roten:
+  Actor names: Roten2, Roten3, Roten4
+  params & FF000000
+
+d_a_obj_shelf:
+  Actor names: Otana, OtanaG
+  params & 00000001
+  aux_params_1 & FFFF
+
+d_a_obj_shmrgrd:
+  Actor names: Shmrgrd
+  params & 000000FF
+
+d_a_obj_smplbg:
+  Actor names: Qtkhd
+  params & 000000FF
+
+d_a_obj_stair:
+  Actor names: Mkdan1
+  params & 000000FF
+
+d_a_obj_swflat:
+  Actor names: Hfbot1A, Hfbot1B, Hfbot1C
+  params & 00000003
+  params & 0000FF00
+  params & 00FF0000
+
+d_a_obj_swhammer:
+  Actor names: MhmrSW0
+  params & 000000FF
+  params & 0000FF00
+
+d_a_obj_swheavy:
+  Actor names: Hhbot1, Hhbot1N
+  params & 0000FF00
+  params & 07000000
+
+d_a_obj_swlight:
+  Actor names: MsuSW, MsuSWB
+  params & 000000FF
+  params & 0000FF00
+  params & 00010000
+
+d_a_obj_swpush:
+  Actor names: Kbota_A, Kbota_B, KbotaC
+  params & 000000FF
+  params & 0000FF00
+  params & 00010000
+  params & 07000000
+  params & 40000000
+
+d_a_obj_table:
+  Actor names: Table
+  params & 000000FF
+
+d_a_obj_tapestry:
+  Actor names: Mcrtn
+  params & 000000FF
+  params & 0000FF00
+
+d_a_obj_tenmado:
+  Actor names: Tenmado
+  params & 000000FF
+  params & 0000FF00
+
+d_a_obj_tide:
+  Actor names: Humi0z, Humi4z, Humi5z, Tide3, Humi2z, Humi3z
+  params & 00070000
+  params & FF000000
+
+d_a_obj_timer:
+  Actor names: ObjTime
+  params & 000000FF
+  params & 00FF0000
+
+d_a_obj_tntrap:
+  Actor names: TnTrap, FgTrap, CmTrap
+  params & 000000FF
+  params & 0000FF00
+  params & 00010000
+  params & 00060000
+
+d_a_obj_toripost:
+  Actor names: Tpost
+
+d_a_obj_tousekiki:
+  Actor names: Touseki
+
+d_a_obj_tower:
+  Actor names: X_tower
+
+d_a_obj_trap:
+  Actor names: Trap
+  params & 000000FF
+  params & 00000F00
+
+d_a_obj_tribox:
+  Actor names: MtryB, MtryBCr
+  params & 0000FF00
+  params & 00010000
+
+d_a_obj_try:
+  Actor names: Hseki1, Hseki6, Hseki3, Hseki4, Hseki5, Hmon1, Hmon1d, Hmon2, Hmon2d, Hseki31, Hseki41, Hseki51, Hseki32, Hseki42, Hseki52
+  params & 0000000F (WARNING: overlaps)
+  params & 0000FF00
+  params & 80000000 (WARNING: overlaps)
+  params & FFFF00FF (WARNING: overlaps)
+
+d_a_obj_usovmc:
+  Actor names: Usovmc
+
+d_a_obj_Vds:
+  Actor names: Vds
+  params & 000000FF
+
+d_a_obj_vfan:
+  Actor names: Vfan
+  params & 000000FF
+
+d_a_obj_vgnfd:
+  Actor names: VgnFD
+
+d_a_obj_vmc:
+  Actor names: VmcBS
+  params & 0000FF00
+
+d_a_obj_vmsdz:
+  Actor names: VmsDZ
+
+d_a_obj_vmsms:
+  Actor names: VmsMS
+
+d_a_obj_volcano:
+  Actor names: Ykzyg
+  params & 0000FF00
+
+d_a_obj_Vteng:
+  Actor names: Vteng
+
+d_a_obj_vtil:
+  Actor names: Vtil1, Vtil2, Vtil3, Vtil4, Vtil5
+  params & 0000000F
+
+d_a_obj_vyasi:
+  Actor names: Vyasi
+  params & 000000FF
+
+d_a_obj_warpt:
+  Actor names: Warpt, Warpnt, Warpts1, Warpts2, Warpts3
+  params & 0000000F
+  params & 000000F0 (WARNING: overlaps)
+  params & 00000FF0 (WARNING: overlaps)
+  params & 0000FF00 (WARNING: overlaps)
+  params & 000FF000 (WARNING: overlaps)
+  params & 00FF0000 (WARNING: overlaps)
+  params & FF000000
+  aux_params_1 & 00FF
+  aux_params_1 & FF00
+  aux_params_2 & 00FF
+  aux_params_2 & FF00
+
+d_a_obj_wood:
+  Actor names: woodb, woodbx
+
+d_a_obj_xfuta:
+  Actor names: Xfuta
+
+d_a_obj_Yboil:
+  Actor names: Yboil00
+  params & 0000FF00
+
+d_a_obj_ygush00:
+  Actor names: 
+  params & 00000007
+
+d_a_obj_YLzou:
+  Actor names: YLzou
+  params & 000000FF
+
+d_a_obj_zouK:
+  Actor names: zouK, zouK1, zouK2, zouK3, zouK4
+  params & 0000000F
+
+d_a_oq:
+  Actor names: Oq, Oqw
+  params & 000000FF
+  params & 0000FF00
+  params & 00FF0000
+
+d_a_oship:
+  Actor names: Oship
+  params & 000000FF
+  params & 00000F00
+  params & 0000F000
+  params & 00FF0000
+  params & FF000000
+  aux_params_1 & 00FF
+  aux_params_1 & FF00
+
+d_a_pedestal:
+  Actor names: Hdai1, Hdai2, Hdai3
+  params & 000000FF
+
+d_a_ph:
+  Actor names: p_hat, sea_hat
+  params & 000000FF
+  params & 0000FF00
+  params & 00FF0000
+
+d_a_pirate_flag:
+  Actor names: 
+
+d_a_pt:
+  Actor names: Puti
+  params & 0000000F
+  params & 00000010
+  params & 000000E0
+  params & 0000FF00
+  params & 00FF0000
+  params & FF000000
+
+d_a_pw:
+  Actor names: pow
+  params & 000000FF
+  params & 00000100
+  params & 0000FE00
+  params & 00FF0000
+  params & FF000000
+
+d_a_pz:
+  Actor names: p_zelda
+  params & 0000FF00
+
+d_a_race_item:
+  Actor names: Ritem
+  params & 000000FF
+  params & 00007F00
+  params & 00078000
+
+d_a_rd:
+  Actor names: Rdead1, Rdead2
+  params & 00000001
+  params & 000000FE
+  params & 0000FF00
+  params & FF000000
+
+d_a_rectangle:
+  Actor names: hotest
+
+d_a_sail:
+  Actor names: Psail
+
+d_a_saku:
+  Actor names: Ksaku, Dsaku
+  params & 0000000F
+  params & 000000F0
+  params & 0000FF00
+  params & 00FF0000
+
+d_a_salvage:
+  Actor names: Salvage, SwSlvg, Salvag2, SalvagN, SalvagE, SalvFM
+
+d_a_salvage_tbox:
+  Actor names: STBox
+  params & 000000FF
+  params & 00000F00
+
+d_a_sbox:
+  Actor names: tkrSlv
+
+d_a_scene_change:
+  Actor names: ScnChg
+
+d_a_seatag:
+  Actor names: Seatag
+
+d_a_shand:
+  Actor names: 
+  params & 000000FF
+
+d_a_ship:
+  Actor names: Ship
+  params & 000000FF
+  params & 0000FF00
+  aux_params_1 & FFFF
+
+d_a_shop_item:
+  Actor names: Sitem
+  params & 000000FF
+  params & 00000F00
+
+d_a_shutter:
+  Actor names: Htobi1, Htobi2
+  params & 000000FF
+  params & 00000F00
+
+d_a_shutter2:
+  Actor names: Htobi3
+  params & 000000FF
+
+d_a_sie_flag:
+  Actor names: SieFlag
+
+d_a_sitem:
+  Actor names: Sitem
+  params & 000000FF
+  params & 0000FF00
+  params & 00FF0000
+  params & FF000000
+
+d_a_sk:
+  Actor names: Turu
+  params & 000000FF
+  params & FF000000
+
+d_a_sk2:
+  Actor names: Turu2, Turu3
+  params & 000000FF
+  params & 0000FF00
+  params & FF000000
+
+d_a_spotbox:
+  Actor names: spotbox, spotbx1
+  params & 00000001
+
+d_a_ss:
+  Actor names: Ss
+  params & 000000FF
+  params & 0000FF00
+  params & FF000000
+
+d_a_ssk:
+  Actor names: s_turu
+  params & 000000FF
+  params & 0000FF00
+  params & FF000000
+
+d_a_sss:
+  Actor names: Sss
+  params & 000000FF
+  params & 0000FF00
+  params & 00FF0000
+
+d_a_st:
+  Actor names: Stal
+  params & 0000000F
+  params & 0000FF00
+  params & 00FF0000
+  params & FF000000
+  aux_params_2 & 00FF
+
+d_a_steam_tag:
+  Actor names: Ystm0, Ystm1
+  params & 000003FC
+
+d_a_stone:
+  Actor names: koisi1, koisi2
+  params & 0000003F
+  params & 000000C0
+  params & 0000FF00
+  params & 007F0000
+  params & 07000000
+  params & 70000000
+
+d_a_stone2:
+  Actor names: Ebrock, Ekao, Ebrock2
+  params & 0000003F
+  params & 0000FF00
+  params & 007F0000
+  params & 07000000
+  params & 70000000
+  params & 80000000
+
+d_a_swattack:
+  Actor names: SWat00
+  params & 000000FF
+  params & 0000FF00
+
+d_a_swc00:
+  Actor names: SW_C00
+  params & 000000FF
+  params & 0000FF00
+  params & 00030000
+
+d_a_swhit0:
+  Actor names: SW_HIT0
+  params & 000000FF
+  params & 0000FF00
+  params & 000F0000
+  params & 0FF00000
+  aux_params_1 & FFFF
+  aux_params_2 & 00FF
+
+d_a_switem:
+  Actor names: ITat00
+  params & 000000FF
+  params & 00003F00
+  params & 001FC000
+
+d_a_swpropeller:
+  Actor names: Hpbot1, Vpbot
+  params & 000000FF
+  params & 00000F00
+
+d_a_swtact:
+  Actor names: SWtact, SWtactB
+  params & 000000FF
+  params & 0000FF00
+  params & 000F0000
+
+d_a_swtdoor:
+  Actor names: SWTdoor
+  params & 000000FF
+  params & FF000000
+
+d_a_syan:
+  Actor names: SYAN
+
+d_a_tag_attention:
+  Actor names: AttTag, AttTagB
+  params & 000000FF
+  params & 00000300
+
+d_a_tag_ba1:
+  Actor names: TagBa1
+
+d_a_tag_etc:
+  Actor names: TagMd
+  params & 00000F00
+  params & FF000000
+
+d_a_tag_event:
+  Actor names: TagEv
+  params & 000000FF
+  params & 0000FF00
+  params & 00FF0000
+  params & FF000000
+  aux_params_2 & FFFF
+
+d_a_tag_evsw:
+  Actor names: Evsw
+  params & 000000FF
+  params & 00FFFF00
+  params & 03000000
+
+d_a_tag_ghostship:
+  Actor names: PScnChg
+  params & 000000FF
+  params & 0000FF00
+
+d_a_tag_hint:
+  Actor names: TagHt, TagHt2
+  params & 0000003F
+  params & 000000C0
+  params & 0000FF00
+  params & 00FF0000
+  params & FF000000
+  aux_params_1 & FFFF
+  aux_params_2 & FFFF
+
+d_a_tag_island:
+  Actor names: TagIsl
+  params & 000000FF
+  params & 0000FF00
+  params & FF000000
+
+d_a_tag_kb_item:
+  Actor names: TagKb
+  params & 000000FF
+  params & 0000FF00
+  params & 00FF0000
+  params & FF000000
+
+d_a_tag_kf1:
+  Actor names: TagKf1
+  params & 0F000000
+
+d_a_tag_kk1:
+  Actor names: TagKk1
+
+d_a_tag_light:
+  Actor names: LTag0, LTag1, LTagR0
+  params & 00000003
+  params & 00000300 (WARNING: overlaps)
+  params & 000003FC (WARNING: overlaps)
+  params & 00003C00
+  params & 0000C000
+  params & 00FF0000
+  params & FF000000
+
+d_a_tag_md_cb:
+  Actor names: TagMd1, TagCb1, TagMd11, TagMd12, TagMd13, TagMd14, TagMd15, TagMd16, TagCb11, TagCb12, TagCb13, TagCb14
+  params & 0000FFFF
+  params & 00FF0000
+  params & FF000000
+  aux_params_1 & 00FF
+
+d_a_tag_mk:
+  Actor names: TagMk, TagWp, TagDM, TagTy
+  params & 000000FF
+  params & 0000FF00
+  params & 00FF0000
+
+d_a_tag_msg:
+  Actor names: TagMsg, TagMsg2
+  params & 000000C0
+  params & 0000FF00
+  params & 00FF0000
+  params & FF000000
+  aux_params_1 & FFFF
+  aux_params_2 & FFFF
+
+d_a_tag_photo:
+  Actor names: TagPo
+  params & 000000FF
+
+d_a_tag_ret:
+  Actor names: ReTag0
+  params & 000000FF
+
+d_a_tag_so:
+  Actor names: TagSo, TagMSo
+  params & 000000FF
+  params & 0000FF00
+  params & 00FF0000
+
+d_a_tag_volcano:
+  Actor names: VolTag
+  params & 0000003F
+  params & 000000C0
+  params & 0000FF00
+  params & 00FF0000
+
+d_a_tag_waterlevel:
+  Actor names: WLvTag
+  params & 000000FF
+
+d_a_tama:
+  Actor names: Tama
+  aux_params_1 & FFFF
+
+d_a_tbox:
+  Actor names: takara, takara2, takara3, takara4, takara5, takara6, takara7, takara8, takaraK, takaraI, takaraM, tkrASw, tkrAGc, tkrAKd, tkrAIk, tkrBMs, tkrCTf, tkrAOc, tkrAOs
+  params & 0000007F
+  params & 00000F80
+  params & 000FF000
+  params & 00F00000
+  aux_params_1 & 003F
+  aux_params_2 & 00FF
+  aux_params_2 & FF00
+
+d_a_title:
+  Actor names: 
+
+d_a_tn:
+  Actor names: Tn
+  params & 0000000F
+  params & 000000F0
+  params & 0000FF00
+  params & 00FF0000
+  params & FF000000
+  aux_params_1 & 00E0
+  aux_params_2 & 00FF
+
+d_a_toge:
+  Actor names: Htoge1
+  params & 000000FF
+  params & 00000F00
+
+d_a_tori_flag:
+  Actor names: TrFlag
+
+d_a_tornado:
+  Actor names: Ytrnd00
+  params & FFFFFFFF
+
+d_a_tpota:
+  Actor names: Tpota
+
+d_a_tsubo:
+  Actor names: kotubo, ootubo1, Kmtub, Ktaru, Ostool, Odokuro, Okioke, Kmi02, Ptubo, KkibaB, Kmi00, Hbox2S
+  params & 0000003F
+  params & 00003F00
+  params & 0000C000
+  params & 007F0000
+  params & 0F000000
+  params & 70000000
+  params & 80000000
+
+d_a_wall:
+  Actor names: Wall
+  params & 000000FF
+  params & 0000FF00
+
+d_a_warpdm20:
+  Actor names: Gdemo20
+  params & 0000000F
+
+d_a_warpf:
+  Actor names: Warpf
+  params & F0000000
+
+d_a_warpfout:
+  Actor names: Warpfo
+
+d_a_warpgn:
+  Actor names: Warpgn
+  params & 000000FF
+  params & 0000FF00
+
+d_a_warphr:
+  Actor names: Ghrwp
+  params & F0000000
+
+d_a_warpls:
+  Actor names: Ywarp00, Ysdls00
+  params & 000000FF
+  params & 0000FF00
+  params & 00FF0000
+  params & F0000000
+
+d_a_warpmj:
+  Actor names: Warpmj
+  params & 000000FF
+
+d_a_waterfall:
+  Actor names: Yswtr00
+  params & 000000FF
+  params & 00000F00
+
+d_a_wbird:
+  Actor names: WBird
+
+d_a_windmill:
+  Actor names: Hpu1, Hpu2
+  params & 0000000F
+
+d_a_wind_tag:
+  Actor names: WindTag, Ybgaf00
+  params & 000000FF
+  params & 0000FF00
+  params & 001F0000
+  params & 00600000
+  params & 00800000
+  params & FF000000
+  aux_params_2 & 000F
+  aux_params_2 & 00F0
+
+d_a_wz:
+  Actor names: wiz_r, wiz_s, wiz_m, wiz_o
+  params & 000000FF
+  params & 0000FF00
+  params & 00FF0000
+  params & FF000000
+  aux_params_2 & 00FF
+
+d_a_ygcwp:
+  Actor names: Ygcwp
+  params & 0000000F
+
+d_a_ykgr:
+  Actor names: YkgrON, YkgrOFF
+  params & 0000FF00
+  params & 00F00000
+
+d_a_yougan:
+  Actor names: yg_awa
+
+f_pc_profile_lst:
+  Actor names: 
+

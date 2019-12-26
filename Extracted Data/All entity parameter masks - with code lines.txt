@@ -1,0 +1,3307 @@
+d_a_acorn_leaf:
+  Actor names: VigaH
+  params & 80000000
+    Read at 0A24 in func daAleaf_c::_execute(void)
+Params for possible subclass:
+  params & 0000003F
+    Read at 0498 in func daAleaf_c::create_acorn_sub(bool)
+  params & 00001FC0
+    Read at 0494 in func daAleaf_c::create_acorn_sub(bool)
+
+d_a_agbsw0:
+  Actor names: agbA, agbAT, agbA2, agbF, agbF2, agbMARK, agbMW, agbCSW, agbTBOX, agbR, agbB, agbD, agbFA
+  params & 0000FFFF
+    Read at 03A8 in func daAgbsw0_c::ExeSubA(void)
+    Read at 06A4 in func daAgbsw0_c::ExeSubAT(void)
+    Read at 06D0 in func daAgbsw0_c::ExeSubAT(void)
+    Read at 09A4 in func daAgbsw0_c::ExeSubA2(void)
+    Read at 0B58 in func daAgbsw0_c::ExeSubF(void)
+    Read at 0E60 in func daAgbsw0_c::ExeSubF2(void)
+    Read at 104C in func daAgbsw0_c::ExeSubM(void)
+    Read at 1200 in func daAgbsw0_c::ExeSubM2(void)
+    Read at 1C54 in func daAgbsw0_c::ExeSubT(void)
+    Read at 1D54 in func daAgbsw0_c::ExeSubT(void)
+    Read at 1EE0 in func daAgbsw0_c::ExeSubS(void)
+    Read at 1F50 in func daAgbsw0_c::ExeSubS(void)
+    Read at 1F90 in func daAgbsw0_c::ExeSubS(void)
+    Read at 1FF8 in func daAgbsw0_c::ExeSubS(void)
+    Read at 2244 in func daAgbsw0_c::ExeSubR(void)
+    Read at 2CD4 in func daAgbsw0_c::ExeSubD(void)
+    Read at 3140 in func daAgbsw0_c::ExeSubFA(void)
+    Read at 533C in func daAgbsw0_c::create(void)
+    Read at 537C in func daAgbsw0_c::create(void)
+  params & 00FF0000 (WARNING: overlaps)
+    Read at 0178 in func daAgbsw0_c::ExeSubA(void)
+    Read at 0444 in func daAgbsw0_c::ExeSubAT(void)
+    Read at 076C in func daAgbsw0_c::ExeSubA2(void)
+    Read at 0A40 in func daAgbsw0_c::ExeSubF(void)
+    Read at 0BB4 in func daAgbsw0_c::ExeSubF2(void)
+    Read at 0F44 in func daAgbsw0_c::ExeSubM(void)
+    Read at 18B8 in func daAgbsw0_c::ExeSubMW(void)
+    Read at 1BD0 in func daAgbsw0_c::ExeSubT(void)
+    Read at 1DC8 in func daAgbsw0_c::ExeSubS(void)
+    Read at 20B4 in func daAgbsw0_c::ExeSubR(void)
+    Read at 225C in func daAgbsw0_c::ExeSubR(void)
+    Read at 22FC in func daAgbsw0_c::ExeSubB(void)
+    Read at 2B30 in func daAgbsw0_c::ExeSubD(void)
+    Read at 2E90 in func daAgbsw0_c::ExeSubFA(void)
+    Read at 4938 in func daAgbsw0_c::draw(void)
+    Read at 508C in func daAgbsw0_c::create(void)
+  params & FF000000 (WARNING: overlaps)
+    Read at 03BC in func daAgbsw0_c::ExeSubA(void)
+    Read at 06B8 in func daAgbsw0_c::ExeSubAT(void)
+    Read at 09B8 in func daAgbsw0_c::ExeSubA2(void)
+    Read at 0B6C in func daAgbsw0_c::ExeSubF(void)
+    Read at 0E74 in func daAgbsw0_c::ExeSubF2(void)
+    Read at 1DCC in func daAgbsw0_c::ExeSubS(void)
+    Read at 2CE8 in func daAgbsw0_c::ExeSubD(void)
+    Read at 2D3C in func daAgbsw0_c::ExeSubD(void)
+    Read at 3154 in func daAgbsw0_c::ExeSubFA(void)
+    Read at 51D8 in func daAgbsw0_c::create(void)
+  params & FFFF0000 (WARNING: overlaps)
+    Read at 5348 in func daAgbsw0_c::create(void)
+  aux_params_1 & FFFF
+    Read at 0180 in func daAgbsw0_c::ExeSubA(void)
+    Read at 044C in func daAgbsw0_c::ExeSubAT(void)
+    Read at 0774 in func daAgbsw0_c::ExeSubA2(void)
+    Read at 0A48 in func daAgbsw0_c::ExeSubF(void)
+    Read at 0BBC in func daAgbsw0_c::ExeSubF2(void)
+    Read at 1B40 in func daAgbsw0_c::ExeSubMW(void)
+    Read at 1E94 in func daAgbsw0_c::ExeSubS(void)
+    Read at 211C in func daAgbsw0_c::ExeSubR(void)
+    Read at 2304 in func daAgbsw0_c::ExeSubB(void)
+    Read at 2D58 in func daAgbsw0_c::ExeSubD(void)
+    Read at 2E98 in func daAgbsw0_c::ExeSubFA(void)
+    Read at 4948 in func daAgbsw0_c::draw(void)
+    Read at 4E24 in func daAgbsw0_Delete(daAgbsw0_c *)
+    Read at 5094 in func daAgbsw0_c::create(void)
+    Read at 5128 in func daAgbsw0_c::create(void)
+    Read at 52F8 in func daAgbsw0_c::create(void)
+  aux_params_2 & 00FF
+    Read at 4940 in func daAgbsw0_c::draw(void)
+    Read at 4DB0 in func daAgbsw0_Execute(daAgbsw0_c *)
+    Read at 4E0C in func daAgbsw0_Delete(daAgbsw0_c *)
+    Read at 5080 in func daAgbsw0_c::create(void)
+
+d_a_alldie:
+  Actor names: ALLdie
+  params & 0000FF00
+    Read at 0150 in func daAlldie_c::getSwbit(void)
+
+d_a_am:
+  Actor names: amos
+  params & 000000FF
+    Read at 3D84 in func daAM_Create(fopAc_ac_c *)
+  params & 0000FF00
+    Read at 3D8C in func daAM_Create(fopAc_ac_c *)
+  params & 00FF0000
+    Read at 3D98 in func daAM_Create(fopAc_ac_c *)
+  params & FF000000
+    Read at 3DA4 in func daAM_Create(fopAc_ac_c *)
+
+d_a_am2:
+  Actor names: amos2
+  params & 000000FF
+    Read at 3FE4 in func daAM2_Create(fopAc_ac_c *)
+  params & 0000FF00
+    Read at 3FEC in func daAM2_Create(fopAc_ac_c *)
+  params & 00FF0000
+    Read at 3FF8 in func daAM2_Create(fopAc_ac_c *)
+  params & FF000000
+    Read at 4004 in func daAM2_Create(fopAc_ac_c *)
+
+d_a_amiprop:
+  Actor names: Hami1, HamiY
+  params & 000000FF
+    Read at 03A0 in func daAmiProp_c::CreateInit(void)
+  params & 00000F00
+    Read at 0848 in func daAmiProp_c::_execute(void)
+
+d_a_andsw0:
+  Actor names: AND_SW0
+  params & 0000000F (WARNING: overlaps)
+    Read at 04D0 in func bk_s_sub1(void *, void *)
+    Read at 0558 in func bk_s_sub2(void *, void *)
+    Read at 05E0 in func bk_s_sub3(void *, void *)
+  params & 000000FF (WARNING: overlaps)
+    Read at 0A8C in func daAndsw0_Create(fopAc_ac_c *)
+  params & 0000FF00
+    Read at 0A94 in func daAndsw0_Create(fopAc_ac_c *)
+  params & 00FF0000
+    Read at 0AAC in func daAndsw0_Create(fopAc_ac_c *)
+  params & FF000000
+    Read at 0AA0 in func daAndsw0_Create(fopAc_ac_c *)
+  aux_params_1 & 00FF
+    Read at 0AC8 in func daAndsw0_Create(fopAc_ac_c *)
+  aux_params_2 & 00FF
+    Read at 02F0 in func daAndsw0_check(andsw0_class *)
+    Read at 0AB8 in func daAndsw0_Create(fopAc_ac_c *)
+
+d_a_andsw2:
+  Actor names: AND_SW2
+  params & 000000FF
+    Read at 018C in func daAndsw2_c::getNum(void)
+  params & 0000FF00
+    Read at 0174 in func daAndsw2_c::getType(void)
+  params & 00FF0000
+    Read at 015C in func daAndsw2_c::getSwbit(void)
+  params & FF000000
+    Read at 0168 in func daAndsw2_c::getSwbit2(void)
+  aux_params_1 & 00FF
+    Read at 0150 in func daAndsw2_c::getEventNo(void)
+  aux_params_2 & 00FF
+    Read at 0180 in func daAndsw2_c::getTimer(void)
+
+d_a_arrow_iceeff:
+  Actor names: Arrow_i
+
+d_a_arrow_lighteff:
+  Actor names: Arrow_l
+  params & 000000FF
+    Read at 03D8 in func daArrow_Lighteff_c::CreateHeap(void)
+
+d_a_atdoor:
+  Actor names: ATdoor
+  params & 000000FF
+    Read at 0158 in func daAtdoor_c::getSwbit(void)
+
+d_a_att:
+  Actor names: 
+  params & 000000FF
+    Read at 07A0 in func daAtt_Create(fopAc_ac_c *)
+
+d_a_auction:
+  Actor names: Auction
+
+d_a_bb:
+  Actor names: Bb
+  params & 000000FF
+    Read at 7BCC in func daBb_Create(fopAc_ac_c *)
+  params & 0000FF00
+    Read at 7BDC in func daBb_Create(fopAc_ac_c *)
+  params & 00FF0000
+    Read at 7BE8 in func daBb_Create(fopAc_ac_c *)
+  params & FF000000
+    Read at 7BF4 in func daBb_Create(fopAc_ac_c *)
+    Read at 7E10 in func daBb_Create(fopAc_ac_c *)
+  aux_params_2 & 00FF
+    Read at 7C00 in func daBb_Create(fopAc_ac_c *)
+
+d_a_bdk:
+  Actor names: Bdk
+  params & 000000FF
+    Read at C87C in func daBdk_Create(fopAc_ac_c *)
+Params for possible subclass:
+  params & 0000000F
+    Read at 03B0 in func obj_delete_sub(void *, void *)
+    Read at 5FC4 in func obj_s_sub(void *, void *)
+
+d_a_bdkobj:
+  Actor names: Bdkobj
+  params & 0000000F (WARNING: overlaps)
+    Read at 1AB0 in func tower_kaidan_move(bdkobj_class *)
+  params & 000000FF (WARNING: overlaps)
+    Read at 26F0 in func daBdkobj_Create(fopAc_ac_c *)
+
+d_a_beam:
+  Actor names: Ylesr00
+  params & 000000FF
+    Read at 0DEC in func daBeam_c::CreateInit(void)
+  params & 0000FF00
+    Read at 0DF0 in func daBeam_c::CreateInit(void)
+  params & 00FF0000
+    Read at 0F50 in func daBeam_c::CreateInit(void)
+  params & 0F000000
+    Read at 0FB8 in func daBeam_c::CreateInit(void)
+  params & 10000000 (WARNING: overlaps)
+    Read at 0FC8 in func daBeam_c::CreateInit(void)
+  params & 30000000 (WARNING: overlaps)
+    Read at 0FC4 in func daBeam_c::CreateInit(void)
+  params & C0000000
+    Read at 0BD4 in func daBeam_c::CreateInit(void)
+  aux_params_1 & FFFF
+    Read at 0C34 in func daBeam_c::CreateInit(void)
+    Read at 1118 in func daBeam_c::_execute(void)
+    Read at 12B8 in func daBeam_c::_execute(void)
+    Read at 1430 in func daBeam_c::_execute(void)
+
+d_a_bflower:
+  Actor names: BFlower, VbakH
+  params & 000000F0
+    Read at 0224 in func daBFlower_c::CreateHeap(void)
+  params & 0000FF00
+    Read at 0230 in func daBFlower_c::CreateHeap(void)
+
+d_a_bgn:
+  Actor names: Bgn
+  params & 000000FF
+    Read at BB60 in func daBgn_Create(fopAc_ac_c *)
+
+d_a_bgn2:
+  Actor names: 
+
+d_a_bgn3:
+  Actor names: 
+
+d_a_bigelf:
+  Actor names: BigElf
+  params & 000000FF
+    Read at 1DB4 in func daBigelf_c::getType(void)
+  params & 0000FF00
+    Read at 1DC0 in func daBigelf_c::getSwbit(void)
+  params & 00FF0000
+    Read at 1DCC in func daBigelf_c::getSwbit2(void)
+
+d_a_bita:
+  Actor names: Bita
+  params & 000000FF
+    Read at 0C40 in func daBita_Create(fopAc_ac_c *)
+  params & 0000FF00
+    Read at 0C48 in func daBita_Create(fopAc_ac_c *)
+
+d_a_bk:
+  Actor names: Bk
+  params & 0000000F
+    Read at E4D8 in func daBk_Create(fopAc_ac_c *)
+  params & 00000010
+    Read at E4E4 in func daBk_Create(fopAc_ac_c *)
+  params & 00000020
+    Read at E4F0 in func daBk_Create(fopAc_ac_c *)
+  params & 000000C0
+    Read at E520 in func daBk_Create(fopAc_ac_c *)
+  params & 0000FF00
+    Read at E52C in func daBk_Create(fopAc_ac_c *)
+  params & 00FF0000
+    Read at E538 in func daBk_Create(fopAc_ac_c *)
+  params & FF000000
+    Read at E544 in func daBk_Create(fopAc_ac_c *)
+  aux_params_2 & 00FF
+    Read at E550 in func daBk_Create(fopAc_ac_c *)
+    Read at E858 in func daBk_Create(fopAc_ac_c *)
+Params for possible subclass:
+  params & FFFFFFFF
+    Read at 2D70 in func s_w_sub(void *, void *)
+    Read at 30D4 in func s_b_sub(void *, void *)
+
+d_a_bl:
+  Actor names: bable, bable_r
+  params & 000000FF
+    Read at 59CC in func daBL_Create(fopAc_ac_c *)
+  params & 0000FF00
+    Read at 59EC in func daBL_Create(fopAc_ac_c *)
+  params & 00FF0000
+    Read at 59E0 in func daBL_Create(fopAc_ac_c *)
+  params & FF000000
+    Read at 59D4 in func daBL_Create(fopAc_ac_c *)
+
+d_a_bmd:
+  Actor names: Bkm
+
+d_a_bmdfoot:
+  Actor names: 
+  params & 0000000F
+    Read at 1CD8 in func damage(bmdfoot_class *)
+    Read at 20D8 in func move(bmdfoot_class *)
+
+d_a_bmdhand:
+  Actor names: 
+  params & 00000001 (WARNING: overlaps)
+    Read at 1A80 in func hand_calc(bmdhand_class *)
+    Read at 1BC4 in func hand_calc(bmdhand_class *)
+    Read at 2520 in func start_hand_calc(bmdhand_class *)
+  params & 00000003 (WARNING: overlaps)
+    Read at 2788 in func hand_move(bmdhand_class *)
+  params & 0000001F (WARNING: overlaps)
+    Read at 2710 in func hand_move(bmdhand_class *)
+    Read at 2744 in func hand_move(bmdhand_class *)
+
+d_a_bo:
+  Actor names: bbaba
+  params & 000000FF
+    Read at 4EA8 in func daBO_Create(fopAc_ac_c *)
+  params & 0000FF00
+    Read at 4EB0 in func daBO_Create(fopAc_ac_c *)
+
+d_a_boko:
+  Actor names: Boko, Boko
+  params & 3FFFFFFF (WARNING: overlaps)
+    Read at 14E8 in func daBoko_c::setThrowReverse(short)
+    Read at 1B84 in func daBoko_c::procMove(void)
+    Read at 1EE4 in func daBoko_c::procMove(void)
+    Read at 2B6C in func daBoko_c::bokoDelete(void)
+    Read at 2C38 in func daBoko_c::createHeap(void)
+    Read at 30F0 in func daBoko_c::create(void)
+    Read at 3108 in func daBoko_c::create(void)
+    Read at 3134 in func daBoko_c::create(void)
+  params & FFFFFFFF (WARNING: overlaps)
+    Read at 0DC4 in func daBoko_c::draw(void)
+    Read at 0DF0 in func daBoko_c::draw(void)
+    Read at 0E10 in func daBoko_c::draw(void)
+    Read at 1000 in func daBoko_c::setBaseMatrix(void)
+    Read at 29D0 in func daBoko_c::execute(void)
+    Read at 2A78 in func daBoko_c::execute(void)
+    Read at 2BF8 in func daBoko_c::createHeap(void)
+    Read at 2CB8 in func daBoko_c::createHeap(void)
+    Read at 2CE0 in func daBoko_c::createHeap(void)
+    Read at 2F2C in func daBoko_c::create(void)
+  aux_params_1 & FFFF
+    Read at 23D0 in func daBoko_c::procCarry(void)
+    Read at 2404 in func daBoko_c::procCarry(void)
+
+d_a_boss_item:
+  Actor names: Bitem
+  params & 000000FF
+    Read at 019C in func daBossItem_Create(fopAc_ac_c *)
+
+d_a_bpw:
+  Actor names: big_pow
+  params & 000000FF
+    Read at D59C in func daBPW_Create(fopAc_ac_c *)
+  params & 0000FF00
+    Read at D5A4 in func daBPW_Create(fopAc_ac_c *)
+  params & 00FF0000
+    Read at D5B0 in func daBPW_Create(fopAc_ac_c *)
+
+d_a_branch:
+  Actor names: Branch
+
+d_a_bridge:
+  Actor names: bridge
+  params & 000000FF
+    Read at 44C8 in func daBridge_Create(fopAc_ac_c *)
+  params & 0000FF00
+    Read at 44E4 in func daBridge_Create(fopAc_ac_c *)
+  params & 00FF0000
+    Read at 44F0 in func daBridge_Create(fopAc_ac_c *)
+
+d_a_bst:
+  Actor names: Bst
+  params & 000000FF
+    Read at B488 in func daBst_Create(fopAc_ac_c *)
+
+d_a_btd:
+  Actor names: Btd
+Params for possible subclass:
+  params & FFFFFFFF
+    Read at 5CF0 in func k_a_d_sub(void *, void *)
+
+d_a_bwd:
+  Actor names: Bwd
+  params & 000000FF
+    Read at 98A8 in func daBwd_Create(fopAc_ac_c *)
+
+d_a_bwdg:
+  Actor names: 
+
+d_a_bwds:
+  Actor names: Bwds
+  params & 000000FF
+    Read at 3938 in func daBwds_Create(fopAc_ac_c *)
+
+d_a_canon:
+  Actor names: Canon
+  aux_params_1 & FFFF
+    Read at 0F98 in func daCanon_c::game_proc(void)
+    Read at 1A14 in func daCanon_c::PadMove(void)
+    Read at 1A20 in func daCanon_c::PadMove(void)
+    Read at 1A5C in func daCanon_c::PadMove(void)
+    Read at 1A68 in func daCanon_c::PadMove(void)
+    Read at 23F0 in func daCanon_c::_create(void)
+    Read at 2448 in func daCanon_c::_create(void)
+
+d_a_cc:
+  Actor names: c_green, c_red, c_blue, c_black, c_kiiro
+  params & 000000FF
+    Read at 6BF0 in func daCC_Create(fopAc_ac_c *)
+  params & 0000FF00
+    Read at 6BF8 in func daCC_Create(fopAc_ac_c *)
+  params & 00FF0000
+    Read at 6C04 in func daCC_Create(fopAc_ac_c *)
+  params & FF000000
+    Read at 6C10 in func daCC_Create(fopAc_ac_c *)
+
+d_a_coming2:
+  Actor names: Com_B
+
+d_a_coming3:
+  Actor names: Com_C
+
+d_a_dai:
+  Actor names: Fdai
+  params & 000000FF
+    Read at 03A0 in func daDai_c::CreateInit(void)
+
+d_a_daiocta:
+  Actor names: Daiocta
+  params & 000000FF
+    Read at 4344 in func daDaiocta_c::getArg(void)
+  params & 0000FF00
+    Read at 4348 in func daDaiocta_c::getArg(void)
+  params & 00FF0000
+    Read at 434C in func daDaiocta_c::getArg(void)
+  params & FF000000
+    Read at 4354 in func daDaiocta_c::getArg(void)
+  aux_params_2 & 00FF
+    Read at 435C in func daDaiocta_c::getArg(void)
+
+d_a_daiocta_eye:
+  Actor names: Daioeye
+
+d_a_deku_item:
+  Actor names: itemDek
+  params & 000000FF
+    Read at 05C4 in func daDekuItem_c::_create(void)
+
+d_a_demo_dk:
+  Actor names: Demo_Dk
+
+d_a_demo_item:
+  Actor names: Ditem
+  params & 000000FF
+    Read at 0B9C in func daDitem_Create(daDitem_c *)
+  params & 00FF0000
+    Read at 0478 in func daDitem_c::CreateInit(void)
+
+d_a_demo_kmm:
+  Actor names: DmKmm, DmKmm2
+
+d_a_dk:
+  Actor names: Dk
+  params & 000000FF
+    Read at 11C8 in func daDk_Create(fopAc_ac_c *)
+
+d_a_door10:
+  Actor names: door10, door11, door20, door21, Zenshut, keyshut, K_Zshut
+
+d_a_door12:
+  Actor names: door12, door12M, door12B, door13, door13M, door13B, keyS12, ZenS12
+
+d_a_dr:
+  Actor names: dragon
+
+d_a_dr2:
+  Actor names: Dr2
+
+d_a_dummy:
+  Actor names: TagD1, TagD2, TagD3, TagD4
+
+d_a_ep:
+  Actor names: bonbori
+  params & 0000003F
+    Read at 274C in func daEp_Create(fopAc_ac_c *)
+  params & 00000040
+    Read at 276C in func daEp_Create(fopAc_ac_c *)
+  params & 00000080
+    Read at 2778 in func daEp_Create(fopAc_ac_c *)
+  params & 0000FF00
+    Read at 2784 in func daEp_Create(fopAc_ac_c *)
+  params & 00FF0000
+    Read at 2790 in func daEp_Create(fopAc_ac_c *)
+  params & FF000000
+    Read at 279C in func daEp_Create(fopAc_ac_c *)
+
+d_a_fallrock:
+  Actor names: fallrck
+
+d_a_fallrock_tag:
+  Actor names: frock
+  params & 000000FF
+    Read at 0418 in func daFallRockTag_Create(fopAc_ac_c *)
+
+d_a_fan:
+  Actor names: Hsen1, Hsen2, Hsen3
+  params & 000000FF
+    Read at 0644 in func daFan_c::Create(void)
+  params & 00000300
+    Read at 0918 in func daFan_c::_create(void)
+
+d_a_ff:
+  Actor names: ho
+  params & 000000FF (WARNING: overlaps)
+    Read at 15C4 in func daFf_Create(fopAc_ac_c *)
+  params & 0000FF00
+    Read at 1654 in func daFf_Create(fopAc_ac_c *)
+  params & FFFF00FF (WARNING: overlaps)
+    Read at 15CC in func daFf_Create(fopAc_ac_c *)
+
+d_a_fganon:
+  Actor names: Fganon
+  params & 0000000F
+    Read at 99D4 in func daFganon_Create(fopAc_ac_c *)
+    Read at 9A7C in func daFganon_Create(fopAc_ac_c *)
+  params & 000000F0
+    Read at 9AB8 in func daFganon_Create(fopAc_ac_c *)
+  params & 0000FF00
+    Read at 9A88 in func daFganon_Create(fopAc_ac_c *)
+  params & 00FF0000
+    Read at 999C in func daFganon_Create(fopAc_ac_c *)
+    Read at 9A94 in func daFganon_Create(fopAc_ac_c *)
+  params & FF000000
+    Read at 9AA0 in func daFganon_Create(fopAc_ac_c *)
+
+d_a_fgmahou:
+  Actor names: 
+  params & 0000000F
+    Read at 1334 in func daFgmahou_Create(fopAc_ac_c *)
+
+d_a_fire:
+  Actor names: Fire, Zenfire
+  params & 000000FF
+    Read at 0200 in func daFire_c::CreateInit(void)
+  params & 00000F00
+    Read at 02C0 in func daFire_c::CreateInit(void)
+  params & 0001F000
+    Read at 020C in func daFire_c::CreateInit(void)
+  params & 000E0000
+    Read at 0284 in func daFire_c::CreateInit(void)
+  params & 00F00000
+    Read at 04A4 in func daFire_c::CreateInit(void)
+    Read at 0528 in func daFire_c::CreateInit(void)
+
+d_a_floor:
+  Actor names: Hhyu1
+  params & 000000FF
+    Read at 0394 in func daFloor_c::_create(void)
+
+d_a_fm:
+  Actor names: Fmaster, Fmastr1, Fmastr2
+  params & 000000FF
+    Read at 8C58 in func daFm_c::getArg(void)
+  params & 00000300
+    Read at 8C5C in func daFm_c::getArg(void)
+  params & 00000C00
+    Read at 8C64 in func daFm_c::getArg(void)
+  params & 00FF0000
+    Read at 8C6C in func daFm_c::getArg(void)
+  params & 0F000000 (WARNING: overlaps)
+    Read at 0FB8 in func daFm_c::searchNearOtherActor(fopAc_ac_c *)
+    Read at 28B4 in func daFm_c::getOffsetPos(void)
+    Read at 4D00 in func daFm_c::modeThrow(void)
+    Read at 7338 in func daFm_c::grabTsubo(void)
+  params & FF000000 (WARNING: overlaps)
+    Read at 8C74 in func daFm_c::getArg(void)
+  aux_params_1 & 00FF
+    Read at 8C7C in func daFm_c::getArg(void)
+  aux_params_1 & FF00
+    Read at 8C84 in func daFm_c::getArg(void)
+  aux_params_2 & 00FF
+    Read at 8C8C in func daFm_c::getArg(void)
+
+d_a_ghostship:
+  Actor names: Ayush
+  params & 000000FF
+    Read at 0D78 in func daGhostship_c::getArg(void)
+  params & 00FF0000
+    Read at 0D70 in func daGhostship_c::getArg(void)
+
+d_a_gm:
+  Actor names: gmos, gmos_g, gmos_f
+  params & 000000FF
+    Read at 801C in func daGM_Create(fopAc_ac_c *)
+  params & 0000FF00
+    Read at 8024 in func daGM_Create(fopAc_ac_c *)
+  params & 00FF0000
+    Read at 8030 in func daGM_Create(fopAc_ac_c *)
+  params & FF000000
+    Read at 803C in func daGM_Create(fopAc_ac_c *)
+  aux_params_2 & 00FF
+    Read at 8090 in func daGM_Create(fopAc_ac_c *)
+
+d_a_gnd:
+  Actor names: Gnd
+  params & 0000000F (WARNING: overlaps)
+    Read at 7C30 in func daGnd_Create(fopAc_ac_c *)
+  params & 000000FF (WARNING: overlaps)
+    Read at 6F68 in func daGnd_Execute(gnd_class *)
+
+d_a_goal_flag:
+  Actor names: Gflag
+  params & 000000FF
+    Read at 2654 in func daGoal_Flag_c::_create(void)
+    Read at 2ADC in func daGoal_FlagDelete(void *)
+  params & 00FF0000
+    Read at 26F0 in func daGoal_Flag_c::_create(void)
+    Read at 27CC in func daGoal_Flag_c::_create(void)
+
+d_a_grass:
+  Actor names: kusax1, kusax7, kusax21, flower, flwr7, flwr17, pflower, pflwrx7, swood, swood3, swood5, Grass
+  params & 0000000F
+    Read at 1270 in func daGrass_Create(fopAc_ac_c *)
+  params & 00000030
+    Read at 1284 in func daGrass_Create(fopAc_ac_c *)
+  params & 00000FC0
+    Read at 12A8 in func daGrass_Create(fopAc_ac_c *)
+    Read at 14C0 in func daGrass_Create(fopAc_ac_c *)
+
+d_a_gy:
+  Actor names: Gy
+
+d_a_gy_ctrl:
+  Actor names: GyCtrl, GyCtrlB
+
+d_a_himo3:
+  Actor names: RopeR
+  params & 000000FF (WARNING: overlaps)
+    Read at 1F40 in func daHimo3_Create(fopAc_ac_c *)
+  params & 0000FF00 (WARNING: overlaps)
+    Read at 1FBC in func daHimo3_Create(fopAc_ac_c *)
+  params & 00FF0000 (WARNING: overlaps)
+    Read at 1F48 in func daHimo3_Create(fopAc_ac_c *)
+  params & FF000000 (WARNING: overlaps)
+    Read at 1F54 in func daHimo3_Create(fopAc_ac_c *)
+  params & FFFFFFFF (WARNING: overlaps)
+    Read at 0578 in func himo3_control(himo3_class *, himo3_s *)
+    Read at 0628 in func himo3_control(himo3_class *, himo3_s *)
+
+d_a_hitobj:
+  Actor names: 
+  params & 000000FF
+    Read at 02E4 in func daHitobj_Create(fopAc_ac_c *)
+
+d_a_hmlif:
+  Actor names: Hmlif, Hyuf1, Hyuf2
+  params & 000000FF
+    Read at 05C8 in func daHmlif_c::Create(void)
+    Read at 07AC in func daHmlif_c::Create(void)
+  params & 0000FF00
+    Read at 05BC in func daHmlif_c::Create(void)
+  params & 000F0000
+    Read at 0774 in func daHmlif_c::Create(void)
+  params & 00300000
+    Read at 06F8 in func daHmlif_c::Create(void)
+  params & 07C00000
+    Read at 0640 in func daHmlif_c::Create(void)
+  params & 78000000
+    Read at 097C in func daHmlif_c::daHmlifCreate(void)
+  params & 80000000
+    Read at 07A0 in func daHmlif_c::Create(void)
+  aux_params_2 & 00FF
+    Read at 029C in func daHmlif_c::CreateHeap(void)
+
+d_a_hot_floor:
+  Actor names: HFloor
+  params & 00000001
+    Read at 0558 in func daHot_FloorExecute(void *)
+  params & 00000002
+    Read at 05BC in func daHot_FloorExecute(void *)
+
+d_a_hys:
+  Actor names: Hys, Hys2
+  params & 000000FF
+    Read at 03CC in func daHys_c::Create(void)
+  params & 0000FF00
+    Read at 0958 in func daHys_Create(void *)
+
+d_a_icelift:
+  Actor names: Ylsic, Yllic, Ylkic
+  params & 0000000F
+    Read at 07D8 in func daIlift_c::_create(void)
+  params & 00000FF0
+    Read at 0650 in func daIlift_c::CreateInit(void)
+  params & 000FF000
+    Read at 0714 in func daIlift_c::CreateInit(void)
+
+d_a_ikari:
+  Actor names: Ikari
+  params & 000000FF
+    Read at 0390 in func daIkari_c::getArg(void)
+  params & 0000FF00
+    Read at 0388 in func daIkari_c::getArg(void)
+
+d_a_jbo:
+  Actor names: jbaba
+  params & 000000FF
+    Read at 0A0C in func daJBO_Create(fopAc_ac_c *)
+
+d_a_kaji:
+  Actor names: Kaji
+
+d_a_kamome:
+  Actor names: Kamome
+  params & 000000FF
+    Read at 4DB8 in func daKamome_Create(fopAc_ac_c *)
+  params & 0000FF00
+    Read at 4DD4 in func daKamome_Create(fopAc_ac_c *)
+  params & 00FF0000
+    Read at 4DE0 in func daKamome_Create(fopAc_ac_c *)
+  params & FF000000
+    Read at 4DEC in func daKamome_Create(fopAc_ac_c *)
+Params for possible subclass:
+  params & 0000000F
+    Read at 1274 in func ko_s_sub(void *, void *)
+    Read at 1428 in func h_s_sub(void *, void *)
+
+d_a_kanban:
+  Actor names: Kanban
+  params & FFF00000
+    Read at 2860 in func daKanban_Create(fopAc_ac_c *)
+
+d_a_kantera:
+  Actor names: Kantera
+  params & 000000FF
+    Read at 21FC in func daKantera_Create(fopAc_ac_c *)
+  params & 0000FF00
+    Read at 2204 in func daKantera_Create(fopAc_ac_c *)
+  params & FF000000
+    Read at 2210 in func daKantera_Create(fopAc_ac_c *)
+
+d_a_kb:
+  Actor names: Pig
+  params & 0000000F
+    Read at 73A0 in func daKb_Create(fopAc_ac_c *)
+  params & 000000F0
+    Read at 73AC in func daKb_Create(fopAc_ac_c *)
+  params & 0000FF00
+    Read at 73B8 in func daKb_Create(fopAc_ac_c *)
+  params & 00FF0000
+    Read at 73C4 in func daKb_Create(fopAc_ac_c *)
+  aux_params_2 & FFFF
+    Read at 3174 in func normal_move(kb_class *)
+    Read at 51E4 in func attack_move(kb_class *)
+
+d_a_kddoor:
+  Actor names: doorKD, ZenshKD, K_ZshKD, doorSH, doorSZ
+
+d_a_ki:
+  Actor names: keeth, Fkeeth
+  params & 000000FF
+    Read at 44C4 in func daKi_Create(fopAc_ac_c *)
+  params & 00007F00
+    Read at 44E8 in func daKi_Create(fopAc_ac_c *)
+  params & 00008000
+    Read at 44F4 in func daKi_Create(fopAc_ac_c *)
+  params & 00FF0000
+    Read at 4500 in func daKi_Create(fopAc_ac_c *)
+  params & FF000000
+    Read at 450C in func daKi_Create(fopAc_ac_c *)
+
+d_a_kita:
+  Actor names: Kita
+  params & 000000FF
+    Read at 20D8 in func daKita_Create(fopAc_ac_c *)
+  params & 0000FF00
+    Read at 20E0 in func daKita_Create(fopAc_ac_c *)
+
+d_a_klft:
+  Actor names: Klft
+  params & 000000FF
+    Read at 1A38 in func daKlft_Create(fopAc_ac_c *)
+  params & 00FF0000
+    Read at 1A40 in func daKlft_Create(fopAc_ac_c *)
+  aux_params_2 & 00FF
+    Read at 1A48 in func daKlft_Create(fopAc_ac_c *)
+
+d_a_kmon:
+  Actor names: Kmon
+
+d_a_kn:
+  Actor names: kani
+  params & 000000FF
+    Read at 1268 in func daKN_Create(fopAc_ac_c *)
+  params & 0000FF00
+    Read at 1270 in func daKN_Create(fopAc_ac_c *)
+
+d_a_knob00:
+  Actor names: KNOB00, KNOB01, KNOB02, KNOB03, KNOB00D, KNOB01D, KNOB02D, KNOB03D
+  params & F0000000
+    Read at 0590 in func daKnob00_c::getType2(void)
+
+d_a_kokiie:
+  Actor names: Kokiie
+  params & 000000FF
+    Read at 13BC in func daKokiie_Create(fopAc_ac_c *)
+  params & FF000000
+    Read at 13D8 in func daKokiie_Create(fopAc_ac_c *)
+
+d_a_komore:
+  Actor names: Yfrlt00
+
+d_a_ks:
+  Actor names: kuro_s, kuro_t
+  params & 000000FF
+    Read at 3680 in func daKS_Create(fopAc_ac_c *)
+  params & 0000FF00
+    Read at 3688 in func daKS_Create(fopAc_ac_c *)
+  params & 00FF0000
+    Read at 3694 in func daKS_Create(fopAc_ac_c *)
+
+d_a_kt:
+  Actor names: kt
+  params & FFFFFFFF
+    Read at 05BC in func kotori_move(kt_class *)
+    Read at 1550 in func daKt_Create(fopAc_ac_c *)
+
+d_a_kui:
+  Actor names: Kui
+  params & 000000F0
+    Read at 17C8 in func daKui_Create(fopAc_ac_c *)
+  params & 0000FF00
+    Read at 17D4 in func daKui_Create(fopAc_ac_c *)
+  params & FF000000
+    Read at 17E0 in func daKui_Create(fopAc_ac_c *)
+
+d_a_kytag00:
+  Actor names: ky_tag0, kytag00, ky00you
+  params & 000000FF
+    Read at 0E90 in func daKytag00_Create(fopAc_ac_c *)
+  params & 0000FF00
+    Read at 0E98 in func daKytag00_Create(fopAc_ac_c *)
+  params & 00FF0000
+    Read at 0EA4 in func daKytag00_Create(fopAc_ac_c *)
+  params & FF000000
+    Read at 0EB0 in func daKytag00_Create(fopAc_ac_c *)
+  aux_params_1 & 00FF
+    Read at 0EBC in func daKytag00_Create(fopAc_ac_c *)
+  aux_params_1 & FF00
+    Read at 0EC4 in func daKytag00_Create(fopAc_ac_c *)
+  aux_params_2 & 00FF
+    Read at 0ED0 in func daKytag00_Create(fopAc_ac_c *)
+
+d_a_kytag01:
+  Actor names: ky_tag1
+
+d_a_kytag02:
+  Actor names: ky_tag2
+  params & 00FF0000
+    Read at 016C in func set_path_info(fopAc_ac_c *)
+
+d_a_kytag03:
+  Actor names: ky_tag3
+  params & 000000FF
+    Read at 06B4 in func daKytag03_Create(fopAc_ac_c *)
+
+d_a_kytag04:
+  Actor names: kytag4
+  params & 000000FF
+    Read at 0288 in func daKytag04_Create(fopAc_ac_c *)
+  params & 0000FF00
+    Read at 0290 in func daKytag04_Create(fopAc_ac_c *)
+  aux_params_1 & 00FF
+    Read at 029C in func daKytag04_Create(fopAc_ac_c *)
+
+d_a_kytag05:
+  Actor names: kytag5
+  params & 000000FF
+    Read at 054C in func daKytag05_Create(fopAc_ac_c *)
+
+d_a_kytag06:
+  Actor names: kytag6
+
+d_a_kytag07:
+  Actor names: kytag7
+  params & 000000FF
+    Read at 01E8 in func daKytag07_Execute(kytag07_class *)
+
+d_a_lamp:
+  Actor names: Lamp
+  params & 000000FF
+    Read at 095C in func daLamp_Create(fopAc_ac_c *)
+
+d_a_lbridge:
+  Actor names: Gbrg00
+  params & 000000FF
+    Read at 0524 in func daLbridge_c::CreateInit(void)
+
+d_a_leaflift:
+  Actor names: Olift
+  params & 0000000F
+    Read at 064C in func daLlift_c::CreateInit(void)
+
+d_a_lod_bg:
+  Actor names: LOD01, LOD02, LOD03, LOD04, LOD05, LOD06, LOD07, LOD08, LOD09, LOD10, LOD11, LOD12, LOD13, LOD14, LOD15, LOD16, LOD17, LOD18, LOD19, LOD20, LOD21, LOD22, LOD23, LOD24, LOD25, LOD26, LOD27, LOD28, LOD29, LOD30, LOD31, LOD32, LOD33, LOD34, LOD35, LOD36, LOD37, LOD38, LOD39, LOD40, LOD41, LOD42, LOD43, LOD44, LOD45, LOD46, LOD47, LOD48, LOD49
+
+d_a_lstair:
+  Actor names: Gkai00
+  params & 000000FF
+    Read at 0628 in func daLStair_c::CreateInit(void)
+
+d_a_lwood:
+  Actor names: lwood
+
+d_a_machine:
+  Actor names: Hkikai1
+  params & 000000FF
+    Read at 0528 in func daMachine_c::CreateInit(void)
+
+d_a_magma:
+  Actor names: magma
+
+d_a_majuu_flag:
+  Actor names: MjFlag, MtFlag, HcFlag
+  params & 000000FF
+    Read at 1668 in func daMajuu_Flag_Create(fopAc_ac_c *)
+  params & FF000000
+    Read at 166C in func daMajuu_Flag_Create(fopAc_ac_c *)
+
+d_a_mant:
+  Actor names: 
+  params & 000000FF
+    Read at 1CE4 in func daMant_Create(fopAc_ac_c *)
+
+d_a_mbdoor:
+  Actor names: SMBdor, KGBdor
+  params & 000000FF
+    Read at 0158 in func daMbdoor_c::getSwbit(void)
+  params & 00000F00
+    Read at 0170 in func daMbdoor_c::getShapeType(void)
+  aux_params_2 & 003F
+    Read at 0164 in func daMbdoor_c::getType(void)
+
+d_a_mdoor:
+  Actor names: Mori1
+  params & 000000FF
+    Read at 0158 in func daMdoor_c::getSwbit(void)
+  params & 0000FF00
+    Read at 0164 in func daMdoor_c::getType(void)
+  params & 00FF0000
+    Read at 0170 in func daMdoor_c::getToolId(void)
+  params & FF000000
+    Read at 017C in func daMdoor_c::getShapeType(void)
+
+d_a_mflft:
+  Actor names: Mflft
+  params & 000000FF
+    Read at 26C0 in func daMflft_Create(fopAc_ac_c *)
+  params & FF000000
+    Read at 26DC in func daMflft_Create(fopAc_ac_c *)
+
+d_a_mgameboard:
+  Actor names: GBoard
+
+d_a_mmusic:
+  Actor names: Mmusic
+
+d_a_mo2:
+  Actor names: mo2
+  params & 000000FF
+    Read at BC88 in func daMo2_Create(fopAc_ac_c *)
+  params & 0000FF00
+    Read at BD14 in func daMo2_Create(fopAc_ac_c *)
+  params & 00FF0000
+    Read at BD20 in func daMo2_Create(fopAc_ac_c *)
+  params & FF000000
+    Read at A8CC in func kantera_get_init(mo2_class *)
+    Read at BD2C in func daMo2_Create(fopAc_ac_c *)
+  aux_params_2 & 00FF
+    Read at BD38 in func daMo2_Create(fopAc_ac_c *)
+Params for possible subclass:
+  params & FFFFFFFF
+    Read at 32AC in func s_w_sub(void *, void *)
+
+d_a_movie_player:
+  Actor names: mp
+
+d_a_mozo:
+  Actor names: moZOU
+  params & 000000FF
+    Read at 2088 in func daMozo_c::CreateInit(void)
+
+d_a_msw:
+  Actor names: Mswing
+  params & 000000FF
+    Read at 0F08 in func daMsw_Create(fopAc_ac_c *)
+
+d_a_mt:
+  Actor names: magtail
+  params & 000000FF
+    Read at 860C in func daMt_Create(fopAc_ac_c *)
+  params & 00007F00
+    Read at 8628 in func daMt_Create(fopAc_ac_c *)
+  params & 00008000
+    Read at 8634 in func daMt_Create(fopAc_ac_c *)
+  params & 00FF0000
+    Read at 8640 in func daMt_Create(fopAc_ac_c *)
+  params & FF000000
+    Read at 864C in func daMt_Create(fopAc_ac_c *)
+  aux_params_2 & 00FF
+    Read at 8664 in func daMt_Create(fopAc_ac_c *)
+    Read at 869C in func daMt_Create(fopAc_ac_c *)
+
+d_a_mtoge:
+  Actor names: SMtoge
+  params & 000000FF
+    Read at 0158 in func daMtoge_c::getSwbit(void)
+
+d_a_npc_ac1:
+  Actor names: Ac1
+  params & 000000FF
+    Read at 2180 in func daNpc_Ac1_c::_create(void)
+  params & 00FF0000
+    Read at 0784 in func daNpc_Ac1_c::createInit(void)
+
+d_a_npc_ah:
+  Actor names: Ah
+  params & 000000FF
+    Read at 1AC8 in func daNpcAh_c::getPrmArg0(void)
+  params & 0000FF00
+    Read at 1B00 in func daNpcAh_c::getSwBit(void)
+
+d_a_npc_aj1:
+  Actor names: Aj1
+  params & 000000FF
+    Read at 38D4 in func daNpc_Aj1_c::_create(void)
+  params & 0000FF00
+    Read at 07C0 in func daNpc_Aj1_c::createInit(void)
+
+d_a_npc_auction:
+  Actor names: Auc7, Auc1, Auc2, Auc3, Auc4, Auc5, Auc6, Auc0
+
+d_a_npc_ba1:
+  Actor names: Ba1
+  params & 000000FF
+    Read at 3FFC in func daNpc_Ba1_c::_create(void)
+
+d_a_npc_bj1:
+  Actor names: Bj1, Bj2, Bj3, Bj4, Bj5, Bj6, Bj7, Bj8, Bj9
+  params & 000000FF
+    Read at 6328 in func daNpc_Bj1_c::_create(void)
+  params & 00FF0000
+    Read at 0C20 in func daNpc_Bj1_c::createInit(void)
+
+d_a_npc_bm1:
+  Actor names: Bm1, Bm2, Bm3, Bm4, Bm5
+  params & 000000FF
+    Read at 7EB0 in func daNpc_Bm1_c::_create(void)
+  params & 0000FF00
+    Read at 7EB4 in func daNpc_Bm1_c::_create(void)
+  params & 00FF0000
+    Read at 12D0 in func daNpc_Bm1_c::createInit(void)
+
+d_a_npc_bmcon1:
+  Actor names: Bmcon1, Bmcon2
+  params & 00FF0000
+    Read at 3280 in func daNpcBmcon_c::getPrmRailID(void)
+
+d_a_npc_bms1:
+  Actor names: Bms1, Bms2
+  params & FF000000
+    Read at 3668 in func daNpc_Bms1_c::_create(void)
+
+d_a_npc_bmsw:
+  Actor names: Bmsw
+
+d_a_npc_bs1:
+  Actor names: Bs1, Bs2
+  params & 000000FF
+    Read at 3418 in func daNpc_Bs1_c::CreateInit(void)
+  params & 00F00000
+    Read at 4AD0 in func daNpc_Bs1_c::_create(void)
+
+d_a_npc_btsw:
+  Actor names: Btsw
+
+d_a_npc_btsw2:
+  Actor names: Btsw2
+  params & 00FF0000
+    Read at 112C in func daNpc_Btsw2_c::CreateInit(void)
+
+d_a_npc_cb1:
+  Actor names: Cb1
+  params & FFFFFFFF
+    Read at 062C in func daNpc_Cb1_c::create(void)
+    Read at 0648 in func daNpc_Cb1_c::create(void)
+    Read at 067C in func daNpc_Cb1_c::create(void)
+    Read at 06A4 in func daNpc_Cb1_c::create(void)
+    Read at 071C in func daNpc_Cb1_c::create(void)
+    Read at 075C in func daNpc_Cb1_c::create(void)
+    Read at 0798 in func daNpc_Cb1_c::create(void)
+    Read at 081C in func daNpc_Cb1_c::create(void)
+    Read at 0824 in func daNpc_Cb1_c::create(void)
+    Read at 082C in func daNpc_Cb1_c::create(void)
+    Read at 0834 in func daNpc_Cb1_c::create(void)
+    Read at 083C in func daNpc_Cb1_c::create(void)
+    Read at 66A4 in func daNpc_Cb1_c::musicNpcAction(void *)
+    Read at 66F8 in func daNpc_Cb1_c::musicNpcAction(void *)
+    Read at 7358 in func daNpc_Cb1_c::musicPlay(void)
+    Read at 73B8 in func daNpc_Cb1_c::musicStop(void)
+    Read at 7558 in func daNpc_Cb1_c::playAnm(void)
+    Read at 7AB0 in func daNpc_Cb1_c::getMsg(void)
+    Read at 7AC0 in func daNpc_Cb1_c::getMsg(void)
+    Read at 8050 in func daNpc_Cb1_c::init(void)
+    Read at 8058 in func daNpc_Cb1_c::init(void)
+    Read at 8060 in func daNpc_Cb1_c::init(void)
+    Read at 8154 in func daNpc_Cb1_c::init(void)
+    Read at 8650 in func daNpc_Cb1_c::execute(void)
+
+d_a_npc_co1:
+  Actor names: Co1
+  params & 000000FF
+    Read at 2CF0 in func daNpc_Co1_c::_create(void)
+
+d_a_npc_de1:
+  Actor names: De1
+  params & 000000FF
+    Read at 27A0 in func daNpc_De1_c::_create(void)
+
+d_a_npc_ds1:
+  Actor names: Ds1
+  params & 00F00000
+    Read at 47CC in func daNpc_Ds1_c::_create(void)
+
+d_a_npc_gk1:
+  Actor names: Gk1
+  params & 000000FF
+    Read at 2534 in func daNpc_Gk1_c::_create(void)
+
+d_a_npc_gp1:
+  Actor names: Gp1
+  params & 000000FF
+    Read at 31E8 in func daNpc_Gp1_c::_create(void)
+  params & 00FF0000
+    Read at 0600 in func daNpc_Gp1_c::createInit(void)
+
+d_a_npc_hi1:
+  Actor names: Hi1
+  params & 000000FF
+    Read at 2070 in func daNpc_Hi1_c::_create(void)
+
+d_a_npc_ho:
+  Actor names: Ho
+
+d_a_npc_hr:
+  Actor names: Hr, Hr2
+  params & 000000FF
+    Read at 08E8 in func daNpc_Hr_c::getShapeType(void)
+  params & 0000FF00
+    Read at 08F4 in func daNpc_Hr_c::getSwbit(void)
+  aux_params_1 & FFFF
+    Read at 400C in func daNpc_Hr_c::rt_angry(void)
+
+d_a_npc_jb1:
+  Actor names: Jb1
+  params & 000000FF
+    Read at 11D0 in func daNpc_Jb1_c::_create(void)
+
+d_a_npc_ji1:
+  Actor names: Ji1
+
+d_a_npc_kamome:
+  Actor names: HyoiKam
+  aux_params_1 & FFFF
+    Read at 4184 in func daNpc_kam_c::execute(void)
+  aux_params_2 & FFFF
+    Read at 3A2C in func daNpc_kam_c::actionAreaOutTurn(int)
+    Read at 3A40 in func daNpc_kam_c::actionAreaOutTurn(int)
+
+d_a_npc_kf1:
+  Actor names: Kf1
+  params & 000000FF
+    Read at 3E78 in func daNpc_Kf1_c::_create(void)
+  params & 0000FF00
+    Read at 0794 in func daNpc_Kf1_c::createInit(void)
+  params & 00FF0000
+    Read at 07A4 in func daNpc_Kf1_c::createInit(void)
+  params & 0F000000
+    Read at 0648 in func searchActor_Tsubo(void *, void *)
+
+d_a_npc_kg1:
+  Actor names: Kg1
+
+d_a_npc_kg2:
+  Actor names: Kg2
+
+d_a_npc_kk1:
+  Actor names: Kk1
+  params & 000000FF
+    Read at 0590 in func searchActor_SWC00(void *, void *)
+    Read at 5B98 in func daNpc_Kk1_c::_create(void)
+  params & 0000FF00
+    Read at 0710 in func daNpc_Kk1_c::createInit(void)
+  params & 00030000 (WARNING: overlaps)
+    Read at 0588 in func searchActor_SWC00(void *, void *)
+  params & 00FF0000 (WARNING: overlaps)
+    Read at 071C in func daNpc_Kk1_c::createInit(void)
+
+d_a_npc_km1:
+  Actor names: Km1
+  params & 000000FF
+    Read at 19EC in func daNpc_Km1_c::_create(void)
+
+d_a_npc_ko1:
+  Actor names: Ko1, Ko2
+  params & 000000FF
+    Read at 7774 in func daNpc_Ko1_c::_create(void)
+  params & 00FF0000
+    Read at 0E40 in func daNpc_Ko1_c::createInit(void)
+
+d_a_npc_kp1:
+  Actor names: Kp1
+  params & 000000FF
+    Read at 22E0 in func daNpc_Kp1_c::_create(void)
+
+d_a_npc_ls1:
+  Actor names: Ls1
+  params & 000000FF
+    Read at 47E8 in func daNpc_Ls1_c::_create(void)
+
+d_a_npc_md:
+  Actor names: Md1
+  params & 000000FF
+    Read at F290 in func daNpc_Md_c::init(void)
+  params & 0000FF00
+    Read at 09DC in func daNpc_Md_c::create(void)
+  params & 00FF0000
+    Read at F294 in func daNpc_Md_c::init(void)
+
+d_a_npc_mk:
+  Actor names: Mk, Mk2
+  params & 000000FF
+    Read at 1364 in func daNpc_Mk_c::getType(void)
+  params & 0000FF00
+    Read at 1370 in func daNpc_Mk_c::getPath(void)
+
+d_a_npc_mn:
+  Actor names: Mn
+  params & 0000FF00
+    Read at 3160 in func daNpcMn_c::getPrmSwitchBit(void)
+  params & 00FF0000
+    Read at 318C in func daNpcMn_c::getPrmSwitchBit2(void)
+  params & FF000000
+    Read at 3134 in func daNpcMn_c::getPrmRailID(void)
+
+d_a_npc_mt:
+  Actor names: Mt
+
+d_a_npc_nz:
+  Actor names: NpcNz
+
+d_a_npc_ob1:
+  Actor names: Ob1
+  params & 000000FF
+    Read at 33D0 in func daNpc_Ob1_c::_create(void)
+  params & 00FF0000
+    Read at 0744 in func daNpc_Ob1_c::createInit(void)
+
+d_a_npc_os:
+  Actor names: Os, Os1, Os2
+  params & 00FF0000
+    Read at 5950 in func daNpc_Os_c::init(void)
+
+d_a_npc_p1:
+  Actor names: P1a, P1b, P1c
+  params & 000000FF
+    Read at 2D88 in func daNpc_P1_c::_create(void)
+  params & 00F00000
+    Read at 2D84 in func daNpc_P1_c::_create(void)
+
+d_a_npc_p2:
+  Actor names: P2a, P2b, P2c
+  params & 00000003
+    Read at 3C08 in func daNpc_P2_c::getArg(void)
+  params & 000003FC
+    Read at 3C10 in func daNpc_P2_c::getArg(void)
+  params & 0003FC00
+    Read at 3C18 in func daNpc_P2_c::getArg(void)
+
+d_a_npc_people:
+  Actor names: Uo1, Uo2, Uo3, Ub1, Ub2, Ub3, Ub4, Uw1, Uw2, Um1, Um2, Um3, Sa1, Sa2, Sa3, Sa4, Sa5, Ug1, Ug2
+  params & 000000FF
+    Read at 7C6C in func daNpcPeople_c::getPrmArg0(void)
+  params & 00FF0000
+    Read at 7C40 in func daNpcPeople_c::getPrmRailID(void)
+  params & 80000000
+    Read at 9928 in func daNpcPeople_c::warp(void)
+    Read at 9930 in func daNpcPeople_c::warp(void)
+
+d_a_npc_pf1:
+  Actor names: Pf1
+  params & 000000FF
+    Read at 3258 in func daNpc_Pf1_c::_create(void)
+  params & 00FF0000
+    Read at 0620 in func daNpc_Pf1_c::createInit(void)
+
+d_a_npc_photo:
+  Actor names: Po
+  params & 000000FF
+    Read at 410C in func daNpcPhoto_c::getPrmArg0(void)
+  params & 00FF0000
+    Read at 40E0 in func daNpcPhoto_c::getPrmRailID(void)
+
+d_a_npc_pm1:
+  Actor names: Pm1
+  params & 000000FF
+    Read at 19FC in func daNpc_Pm1_c::_create(void)
+
+d_a_npc_roten:
+  Actor names: RotenA, RotenB, RotenC
+  params & 00FF0000
+    Read at 32BC in func daNpcRoten_c::getPrmRailID(void)
+  params & FF000000
+    Read at 3290 in func daNpcRoten_c::getPrmNpcNo(void)
+
+d_a_npc_rsh1:
+  Actor names: Rsh1
+  params & 00F00000 (WARNING: overlaps)
+    Read at 4480 in func daNpc_Rsh1_c::_create(void)
+  params & 00FF0000 (WARNING: overlaps)
+    Read at 297C in func daNpc_Rsh1_c::pathGet(void)
+
+d_a_npc_sarace:
+  Actor names: Sarace
+
+d_a_npc_so:
+  Actor names: NpcSo
+
+d_a_npc_sv:
+  Actor names: Sv0, Sv1, Sv2, Sv3
+
+d_a_npc_tc:
+  Actor names: Tc
+  params & 0000000F (WARNING: overlaps)
+    Read at 1D6C in func daNpc_Tc_c::getArg(void)
+  params & 000000FF (WARNING: overlaps)
+    Read at 06F8 in func daNpc_Tc_c::_searchTower(fopAc_ac_c *)
+
+d_a_npc_tt:
+  Actor names: Tt
+
+d_a_npc_uk:
+  Actor names: UkB, UkC, UkD, UkB2, UkC2, UkD2
+  params & 000000FF
+    Read at 01DC in func daNpc_Uk_c::getType(void)
+  params & 0000FF00
+    Read at 01E8 in func daNpc_Uk_c::getPath(void)
+  params & 000F0000
+    Read at 01F4 in func daNpc_Uk_c::getShapeType(void)
+
+d_a_npc_ym1:
+  Actor names: Ym1, Ym2
+  params & 000000FF
+    Read at 3BF0 in func daNpc_Ym1_c::_create(void)
+
+d_a_npc_yw1:
+  Actor names: Yw1
+  params & 000000FF
+    Read at 41C0 in func daNpc_Yw1_c::_create(void)
+  params & 00FF0000
+    Read at 0BF0 in func daNpc_Yw1_c::createInit(void)
+
+d_a_npc_zk1:
+  Actor names: Zk1
+  params & 000000FF
+    Read at 215C in func daNpc_Zk1_c::_create(void)
+
+d_a_npc_zl1:
+  Actor names: Zl1
+  params & 000000FF
+    Read at 6E34 in func daNpc_Zl1_c::_create(void)
+
+d_a_nz:
+  Actor names: nezumi
+  params & 000000FF
+    Read at 82FC in func daNZ_Create(fopAc_ac_c *)
+  params & 0000FF00
+    Read at 8304 in func daNZ_Create(fopAc_ac_c *)
+  params & FF000000
+    Read at 8310 in func daNZ_Create(fopAc_ac_c *)
+Params for possible subclass:
+  params & FFFFFFFF
+    Read at 21B8 in func s_a_d_sub(void *, void *)
+
+d_a_nzg:
+  Actor names: nezuana
+  params & 000000FF
+    Read at 0808 in func daNZG_Create(fopAc_ac_c *)
+  params & 0000FF00
+    Read at 0810 in func daNZG_Create(fopAc_ac_c *)
+  params & 00FF0000
+    Read at 081C in func daNZG_Create(fopAc_ac_c *)
+  params & FF000000
+    Read at 02CC in func nzg_00_move(nzg_class *)
+    Read at 0828 in func daNZG_Create(fopAc_ac_c *)
+
+d_a_obj_adnno:
+  Actor names: Adnno
+
+d_a_obj_ajav:
+  Actor names: Ajav
+  params & 000000FF
+    Read at 1540 in func daObjAjav::Act_c::_create( (void))
+
+d_a_obj_ajavw:
+  Actor names: 
+
+d_a_obj_akabe:
+  Actor names: Akabe, Akabe10, NBOX, NBOX10
+  params & 000000FF
+    Read at 0630 in func daObjAkabe::Act_c::chk_appear( (void))
+  params & 00000300
+    Read at 04F8 in func daObjAkabe::Act_c::init_scale( (void))
+  params & 00001000
+    Read at 0610 in func daObjAkabe::Act_c::chk_appear( (void))
+  params & 000F0000
+    Read at 02B4 in func daObjAkabe::Act_c::_create( (void))
+
+d_a_obj_apzl:
+  Actor names: Apzl
+  params & 0000FF00
+    Read at 1188 in func daObjApzl_c::CreateInit(void)
+
+d_a_obj_ashut:
+  Actor names: Ashut
+  params & 000000FF
+    Read at 02B4 in func daObjAshut::Act_c::Create( (void))
+    Read at 03F0 in func daObjAshut::Act_c::Mthd_Create( (void))
+    Read at 06BC in func daObjAshut::Act_c::mode_upper( (void))
+    Read at 08D8 in func daObjAshut::Act_c::mode_lower( (void))
+  params & 0000FF00
+    Read at 0280 in func daObjAshut::Act_c::Create( (void))
+    Read at 0C50 in func daObjAshut::Act_c::mode_demoreq( (void))
+
+d_a_obj_auzu:
+  Actor names: Auzu
+  params & 000000FF
+    Read at 0420 in func daObjAuzu::Act_c::_create( (void))
+    Read at 09B4 in func daObjAuzu::Act_c::_execute( (void))
+  params & 0000FF00
+    Read at 07C0 in func daObjAuzu::Act_c::ship_whirl( (void))
+    Read at 07FC in func daObjAuzu::Act_c::ship_whirl( (void))
+  params & 00010000
+    Read at 03FC in func daObjAuzu::Act_c::_create( (void))
+    Read at 06B0 in func daObjAuzu::Act_c::set_state_map( (void))
+    Read at 0980 in func daObjAuzu::Act_c::_execute( (void))
+  params & 00F00000
+    Read at 0300 in func daObjAuzu::Act_c::_create( (void))
+
+d_a_obj_aygr:
+  Actor names: Aygr
+  params & 00000001
+    Read at 020C in func daObjAygr::Act_c::CreateHeap( (void))
+    Read at 04D8 in func daObjAygr::Act_c::Mthd_Create( (void))
+    Read at 0694 in func daObjAygr::Act_c::set_mtx( (void))
+    Read at 0714 in func daObjAygr::Act_c::init_mtx( (void))
+    Read at 07E4 in func daObjAygr::Act_c::Draw( (void))
+    Read at 0838 in func daObjAygr::Act_c::Draw( (void))
+
+d_a_obj_balancelift:
+  Actor names: Blift
+  params & 00FF0000
+    Read at 0CB8 in func daBalancelift_c::CreateInit(void)
+
+d_a_obj_barrel:
+  Actor names: Ktarux
+  params & 70000000
+    Read at 228C in func daObjBarrel::Act_c::_execute( (void))
+  aux_params_2 & FFFF
+    Read at 14A4 in func daObjBarrel::Act_c::set_mtx( (void))
+    Read at 16EC in func daObjBarrel::Act_c::set_walk_rot( (void))
+
+d_a_obj_barrel2:
+  Actor names: Ktarur
+  params & 0000003F
+    Read at 07B8 in func daObjBarrel2::Act_c::_create( (void))
+  params & 00000100
+    Read at 0808 in func daObjBarrel2::Act_c::_create( (void))
+  params & 00000400
+    Read at 0888 in func daObjBarrel2::Act_c::_create( (void))
+    Read at 08F8 in func daObjBarrel2::Act_c::_create( (void))
+  params & 007F0000
+    Read at 07A4 in func daObjBarrel2::Act_c::_create( (void))
+  params & 03000000
+    Read at 04D0 in func daObjBarrel2::Act_c::_create( (void))
+  params & 10000000
+    Read at 05CC in func daObjBarrel2::Act_c::_create( (void))
+    Read at 077C in func daObjBarrel2::Act_c::_create( (void))
+    Read at 0EC0 in func daObjBarrel2::Act_c::mode_afl( (void))
+
+d_a_obj_barrier:
+  Actor names: Ycage00
+  params & 00000100
+    Read at 178C in func daObjBarrier_c::_create(void)
+  params & 00010000
+    Read at 18E0 in func daObjBarrier_c::_create(void)
+
+d_a_obj_bemos:
+  Actor names: Hmos1, Hmos2, Hmos3
+  params & 000000FF
+    Read at 0920 in func daBemos_c::CreateInit1(void)
+    Read at 0B64 in func daBemos_c::CreateInit2(void)
+    Read at 0DE4 in func daBemos_c::CreateInit3(void)
+  params & 0000FF00
+    Read at 0B68 in func daBemos_c::CreateInit2(void)
+    Read at 0DF0 in func daBemos_c::CreateInit3(void)
+  params & 00FF0000
+    Read at 0DFC in func daBemos_c::CreateInit3(void)
+  params & F0000000
+    Read at 40D0 in func daBemos_c::_create(void)
+  aux_params_2 & 003F
+    Read at 0B04 in func daBemos_c::CreateInit1(void)
+    Read at 0D74 in func daBemos_c::CreateInit2(void)
+  aux_params_2 & 1FC0
+    Read at 0B10 in func daBemos_c::CreateInit1(void)
+    Read at 0D80 in func daBemos_c::CreateInit2(void)
+
+d_a_obj_bscurtain:
+  Actor names: Ptco, Ptcu
+  params & 000000FF
+    Read at 0334 in func daObj_Bscurtain_c::CreateHeap(void)
+
+d_a_obj_buoyflag:
+  Actor names: 
+  params & 00000003
+    Read at 29E8 in func daObjBuoyflag::Act_c::_create( (void))
+  params & 00000100
+    Read at 239C in func daObjBuoyflag::Act_c::prm_get_texture( const(void))
+  params & 80000000
+    Read at 2A58 in func daObjBuoyflag::Act_c::_create( (void))
+
+d_a_obj_buoyrace:
+  Actor names: Buoyr
+  params & 000000FF
+    Read at 0A9C in func daObjBuoyrace::Act_c::set_rope_pos( (void))
+  params & 0000FF00
+    Read at 0A88 in func daObjBuoyrace::Act_c::set_rope_pos( (void))
+
+d_a_obj_cafelmp:
+  Actor names: Cafelmp
+
+d_a_obj_canon:
+  Actor names: Ocanon
+  params & 000000FF
+    Read at 1900 in func daObj_Canon_c::getArg(void)
+  params & 0000FF00
+    Read at 1904 in func daObj_Canon_c::getArg(void)
+  params & 00FF0000
+    Read at 190C in func daObj_Canon_c::getArg(void)
+  params & FF000000
+    Read at 1914 in func daObj_Canon_c::getArg(void)
+
+d_a_obj_coming:
+  Actor names: Com_A
+  params & 0000000F
+    Read at 04EC in func daObjComing::Act_c::_create( (void))
+  params & 00000040
+    Read at 0800 in func daObjComing::Act_c::chk_ship_range( const(fopAc_ac_c const *))
+    Read at 1054 in func daObjComing::Act_c::mode_barrel2_wait( (daObjComing::Ctrl_c *))
+  params & 00000700
+    Read at 0E34 in func daObjComing::Act_c::barrel2_get_ptn( const(void))
+  params & 00FF0000
+    Read at 0458 in func daObjComing::Act_c::chk_switch( (void))
+  params & 03000000
+    Read at 0428 in func daObjComing::Act_c::prm_get_waitTime( const(void))
+  params & 30000000
+    Read at 133C in func daObjComing::Act_c::_execute( (void))
+
+d_a_obj_correct:
+  Actor names: BLK_CR, CrTrS3, CrTrS4, CrTrS5, CrTrM1, CrTrM2, CrTrGr, CrTrBl
+  params & 0000000F
+    Read at 01D0 in func daObjCorrect::Act_c::_create( (void))
+    Read at 0328 in func daObjCorrect::Act_c::chk_try_actor1( const(daObjTry::Act_c *, daObjTry::Type_e, float))
+    Read at 0450 in func daObjCorrect::Act_c::chk_try_actor2( const(daObjTry::Act_c *, daObjTry::Type_e, bool, float, float))
+    Read at 0B5C in func daObjCorrect::Act_c::demo_non( (void))
+    Read at 0B80 in func daObjCorrect::Act_c::demo_non( (void))
+  params & 0000FF00
+    Read at 0184 in func daObjCorrect::Act_c::_create( (void))
+    Read at 0354 in func daObjCorrect::Act_c::chk_try_actor1( const(daObjTry::Act_c *, daObjTry::Type_e, float))
+    Read at 0368 in func daObjCorrect::Act_c::chk_try_actor1( const(daObjTry::Act_c *, daObjTry::Type_e, float))
+    Read at 0484 in func daObjCorrect::Act_c::chk_try_actor2( const(daObjTry::Act_c *, daObjTry::Type_e, bool, float, float))
+    Read at 0498 in func daObjCorrect::Act_c::chk_try_actor2( const(daObjTry::Act_c *, daObjTry::Type_e, bool, float, float))
+    Read at 058C in func daObjCorrect::Act_c::search_movebox( (void *, void *))
+    Read at 05A0 in func daObjCorrect::Act_c::search_movebox( (void *, void *))
+    Read at 09C0 in func daObjCorrect::Act_c::mode_off( (void))
+    Read at 0A78 in func daObjCorrect::Act_c::mode_on( (void))
+  params & 00FF0000
+    Read at 023C in func daObjCorrect::Act_c::_create( (void))
+    Read at 0CA0 in func daObjCorrect::Act_c::demo_req_init( (void))
+  params & 40000000
+    Read at 05B8 in func daObjCorrect::Act_c::search_movebox( (void *, void *))
+
+d_a_obj_demo_barrel:
+  Actor names: Ktaruo
+
+d_a_obj_dmgroom:
+  Actor names: dmgroom
+
+d_a_obj_doguu:
+  Actor names: Doguu, MegamiD, MegamiF, MegamiN
+  params & 000000FF
+    Read at 17FC in func daObjDoguu_c::_create(void)
+
+d_a_obj_doguu_demo:
+  Actor names: DoguuD
+  params & 000000FF
+    Read at 0190 in func daObjDoguuD_c::CreateHeap(void)
+
+d_a_obj_dragonhead:
+  Actor names: Qdghd
+  params & 0000FF00
+    Read at 0348 in func daObjDragonhead_c::CreateInit(void)
+    Read at 09B4 in func daObjDragonhead_Execute(void *)
+    Read at 09D8 in func daObjDragonhead_Execute(void *)
+
+d_a_obj_drift:
+  Actor names: Kryu00
+  params & 00000007
+    Read at 0558 in func daObjDrift::Act_c::Mthd_Create( (void))
+
+d_a_obj_eayogn:
+  Actor names: Eayogn
+
+d_a_obj_ebomzo:
+  Actor names: Ebomzo
+  params & 000000FF
+    Read at 02A4 in func daObjEbomzo::Act_c::Create( (void))
+    Read at 0898 in func daObjEbomzo::Act_c::check( (void))
+
+d_a_obj_eff:
+  Actor names: 
+  params & 000000FF
+    Read at 1078 in func daObjEff::Act_c::_create( (void))
+
+d_a_obj_ekskz:
+  Actor names: Ekskz
+  params & 000000FF
+    Read at 068C in func daObjEkskz::Act_c::Mthd_Create( (void))
+    Read at 0F54 in func daObjEkskz::Act_c::Execute( (float (**)[3][4]))
+
+d_a_obj_eskban:
+  Actor names: Eskban
+  params & 000000FF
+    Read at 04E0 in func daObjEskban::Act_c::Mthd_Create( (void))
+    Read at 13C4 in func daObjEskban::Act_c::Execute( (float (**)[3][4]))
+    Read at 13F4 in func daObjEskban::Act_c::Execute( (float (**)[3][4]))
+
+d_a_obj_ferris:
+  Actor names: Skanran
+  params & 000000FF
+    Read at 07A8 in func daObjFerris::Act_c::_create( (void))
+    Read at 14F0 in func daObjFerris::Act_c::rot_mng( (void))
+    Read at 15CC in func daObjFerris::Act_c::rot_mng( (void))
+
+d_a_obj_figure:
+  Actor names: Figure
+  params & 000000FF
+    Read at 1904 in func daObjFigure_c::getPrmFigureNo(void)
+
+d_a_obj_firewall:
+  Actor names: Yswdr00
+  params & 000000FF
+    Read at 1230 in func daObjFirewall_c::_create(void)
+
+d_a_obj_flame:
+  Actor names: Yfire00
+  params & 000000FF
+    Read at 0568 in func daObjFlame::Act_c::create_mode_init( (void))
+    Read at 1990 in func daObjFlame::Act_c::mode_wait( (void))
+    Read at 1C94 in func daObjFlame::Act_c::mode_l_after( (void))
+  params & 00001F00
+    Read at 1110 in func daObjFlame::Act_c::ki_init( (void))
+    Read at 1188 in func daObjFlame::Act_c::ki_make( (void))
+  params & 00006000
+    Read at 1244 in func daObjFlame::Act_c::ki_make( (void))
+    Read at 2268 in func daObjFlame::Act_c::_create( (void))
+  params & 00FF0000
+    Read at 019C in func daObjFlame::Act_c::set_switch( (void))
+    Read at 01C4 in func daObjFlame::Act_c::set_switch( (void))
+  params & 30000000
+    Read at 20B4 in func daObjFlame::Act_c::_create( (void))
+  params & 80000000
+    Read at 2630 in func daObjFlame::Method::Execute( (void *))
+
+d_a_obj_ftree:
+  Actor names: FTree
+  params & 0000000F
+    Read at 085C in func daObjFtree::Act_c::param_get_tree_idx( const(void))
+    Read at 11E8 in func daObjFtree::Act_c::is_brought( (void))
+    Read at 12FC in func daObjFtree::Act_c::set_brought( (void))
+    Read at 13D0 in func daObjFtree::Act_c::unset_brought( (void))
+    Read at 34C0 in func daObjFtree::Act_c::_create( (void))
+
+d_a_obj_ganonbed:
+  Actor names: Gbed
+
+d_a_obj_gaship:
+  Actor names: Gaship1
+
+d_a_obj_gaship2:
+  Actor names: Gaship2
+
+d_a_obj_gnnbtltaki:
+  Actor names: Gnbtaki
+  params & 0000000F
+    Read at 0374 in func daObjGnnbtaki_c::_create(void)
+
+d_a_obj_gnndemotakie:
+  Actor names: Gntakie
+
+d_a_obj_gnndemotakis:
+  Actor names: Gntakis
+
+d_a_obj_gong:
+  Actor names: Vdora
+
+d_a_obj_gryw00:
+  Actor names: Gryw00
+  params & 000000FF
+    Read at 0758 in func daObjGryw00_c::Create(void)
+
+d_a_obj_gtaki:
+  Actor names: Gtaki
+
+d_a_obj_hami2:
+  Actor names: Hami2
+  params & 000000FF
+    Read at 0444 in func daObjHami2::Act_c::Create( (void))
+    Read at 07B4 in func daObjHami2::Act_c::daObjHami2_close_stop( (void))
+    Read at 09A0 in func daObjHami2::Act_c::daObjHami2_open_stop( (void))
+
+d_a_obj_hami3:
+  Actor names: Hami3
+  params & 000000FF
+    Read at 0378 in func daObjHami3::Act_c::Create( (void))
+    Read at 0660 in func daObjHami3::Act_c::daObjHami3_close_stop( (void))
+    Read at 088C in func daObjHami3::Act_c::daObjHami3_open_stop( (void))
+  params & 0000FF00
+    Read at 0834 in func daObjHami3::Act_c::daObjHami3_open_demo( (void))
+  params & 00010000
+    Read at 06E8 in func daObjHami3::Act_c::daObjHami3_open_demo_wait( (void))
+
+d_a_obj_hami4:
+  Actor names: Hami4
+  params & 000000FF
+    Read at 0208 in func daObjHami4_c::CreateHeap(void)
+    Read at 06B0 in func daObjHami4_c::daObjHami4_close_stop(void)
+
+d_a_obj_hat:
+  Actor names: RoHat
+  params & 000000FF
+    Read at 0980 in func daObjHat_c::getPrmHatNo(void)
+
+d_a_obj_hbrf1:
+  Actor names: Hbrf1
+  params & 000000FF
+    Read at 025C in func daObjHbrf1::Act_c::Create( (void))
+    Read at 02C0 in func daObjHbrf1::Act_c::Create( (void))
+    Read at 05DC in func daObjHbrf1::Act_c::daObjHbrf1_down_stop( (void))
+    Read at 0624 in func daObjHbrf1::Act_c::daObjHbrf1_down_stop( (void))
+    Read at 0918 in func daObjHbrf1::Act_c::daObjHbrf1_up_stop( (void))
+    Read at 0960 in func daObjHbrf1::Act_c::daObjHbrf1_up_stop( (void))
+  params & 00000100
+    Read at 0244 in func daObjHbrf1::Act_c::Create( (void))
+    Read at 02A8 in func daObjHbrf1::Act_c::Create( (void))
+    Read at 05C4 in func daObjHbrf1::Act_c::daObjHbrf1_down_stop( (void))
+    Read at 060C in func daObjHbrf1::Act_c::daObjHbrf1_down_stop( (void))
+    Read at 0900 in func daObjHbrf1::Act_c::daObjHbrf1_up_stop( (void))
+    Read at 0948 in func daObjHbrf1::Act_c::daObjHbrf1_up_stop( (void))
+  params & 00FF0000
+    Read at 0654 in func daObjHbrf1::Act_c::daObjHbrf1_down_stop( (void))
+    Read at 06C8 in func daObjHbrf1::Act_c::daObjHbrf1_down_stop( (void))
+    Read at 0990 in func daObjHbrf1::Act_c::daObjHbrf1_up_stop( (void))
+    Read at 0A08 in func daObjHbrf1::Act_c::daObjHbrf1_up_stop( (void))
+
+d_a_obj_hcbh:
+  Actor names: Hcbh
+  params & 0000003F
+    Read at 09F4 in func daObjHcbh_c::make_item(void)
+  params & 00001FC0
+    Read at 0A08 in func daObjHcbh_c::make_item(void)
+  params & 001FE000
+    Read at 0170 in func daObjHcbh_c::chk_appear(void)
+    Read at 0A84 in func daObjHcbh_c::make_item(void)
+
+d_a_obj_hfuck1:
+  Actor names: Hfuck1
+
+d_a_obj_hha:
+  Actor names: Hha
+  params & 000000FF
+    Read at 0FA4 in func daObjHha_c::_create(void)
+  params & 0000FF00
+    Read at 0FB0 in func daObjHha_c::_create(void)
+
+d_a_obj_hlift:
+  Actor names: Hlift, Hliftb
+  params & 00000007
+    Read at 0424 in func daObjHlift::Act_c::Mthd_Create( (void))
+  params & 00000010
+    Read at 0438 in func daObjHlift::Act_c::Mthd_Create( (void))
+  params & 0000FF00
+    Read at 02D0 in func daObjHlift::Act_c::Create( (void))
+    Read at 0590 in func daObjHlift::Act_c::mode_lower( (void))
+    Read at 0878 in func daObjHlift::Act_c::mode_upper( (void))
+  params & 00FF0000
+    Read at 0324 in func daObjHlift::Act_c::Create( (void))
+    Read at 0B44 in func daObjHlift::Act_c::mode_demoreq_init( (daObjHlift::Act_c::Mode_e))
+
+d_a_obj_hole:
+  Actor names: Ypit00, Pitfall
+  params & 000000FF
+    Read at 0A20 in func daObj_Hole_c::getArg(void)
+  params & 0000FF00
+    Read at 0A24 in func daObj_Hole_c::getArg(void)
+
+d_a_obj_homen:
+  Actor names: Homen1, Homen2
+  params & 0000007F
+    Read at 16F0 in func daObjHomen::Act_c::make_item( (void))
+  params & 00000F00
+    Read at 045C in func daObjHomen::Act_c::_create( (void))
+  params & 0003F000
+    Read at 16D4 in func daObjHomen::Act_c::make_item( (void))
+    Read at 1704 in func daObjHomen::Act_c::make_item( (void))
+  params & 003C0000
+    Read at 0640 in func daObjHomen::Act_c::_create( (void))
+    Read at 15AC in func daObjHomen::Act_c::make_enemy( (void))
+  params & FF000000
+    Read at 03F0 in func daObjHomen::Act_c::_create( (void))
+    Read at 0408 in func daObjHomen::Act_c::_create( (void))
+    Read at 1FD0 in func daObjHomen::Act_c::process_wait_init( (void))
+
+d_a_obj_homensmoke:
+  Actor names: Omensmk
+  params & 00000001
+    Read at 03D4 in func daObjHomensmoke::Act_c::_create( (void))
+  params & 00000002
+    Read at 0200 in func daObjHomensmoke::Act_c::set_mtx( (void))
+
+d_a_obj_hsehi1:
+  Actor names: Hsh, Hsh2
+  params & 000000FF
+    Read at 0D9C in func daObj_hsh_c::init(void)
+  params & 00FFFF00
+    Read at 0DA8 in func daObj_hsh_c::init(void)
+
+d_a_obj_htetu1:
+  Actor names: Htetu1
+  params & 000000FF
+    Read at 0424 in func daObjHtetu1_c::_create(void)
+
+d_a_obj_ice:
+  Actor names: Ikori
+  params & 000000FF
+    Read at 0174 in func daObjIce_c::chk_appear(void)
+    Read at 0E80 in func daObjIce_c::fade_out_retire_act_proc(void)
+
+d_a_obj_iceisland:
+  Actor names: GiceL
+  params & 0000FF00
+    Read at 0558 in func daObjIceisland_c::CreateInit(void)
+    Read at 06FC in func daObjIceisland_c::daObjIceisland_freeze_main(void)
+    Read at 08D0 in func daObjIceisland_c::daObjIceisland_melt_main(void)
+    Read at 0A1C in func daObjIceisland_c::daObjIceisland_fail_demo_wait(void)
+    Read at 0E9C in func daObjIceisland_Execute(void *)
+
+d_a_obj_ikada:
+  Actor names: Ikada, ikada_h, ikadaS, ikada_u, Svsp
+  params & 0000000F
+    Read at 3FDC in func daObj_Ikada_c::getArg(void)
+  params & 000003F0
+    Read at 3FF0 in func daObj_Ikada_c::getArg(void)
+  params & 0003FC00 (WARNING: overlaps)
+    Read at 3FF8 in func daObj_Ikada_c::getArg(void)
+  params & 00FF0000 (WARNING: overlaps)
+    Read at 401C in func daObj_Ikada_c::getArg(void)
+  params & 03FC0000 (WARNING: overlaps)
+    Read at 4000 in func daObj_Ikada_c::getArg(void)
+  aux_params_1 & 00FF
+    Read at 4008 in func daObj_Ikada_c::getArg(void)
+  aux_params_1 & FF00
+    Read at 4010 in func daObj_Ikada_c::getArg(void)
+
+d_a_obj_Itnak:
+  Actor names: Itnak
+  params & 000000FF
+    Read at 02A8 in func daObjItnak::Act_c::_create( (void))
+  params & 0000FF00
+    Read at 0FC0 in func daObjItnak::Act_c::manage_draw_flag( (void))
+    Read at 1018 in func daObjItnak::Act_c::manage_draw_flag( (void))
+
+d_a_obj_jump:
+  Actor names: Hjump2
+  params & 00000001
+    Read at 0574 in func daObjJump::Act_c::Mthd_Create( (void))
+
+d_a_obj_kanat:
+  Actor names: Kanat
+  params & 000000FF
+    Read at 02F4 in func daObjKanat::Act_c::Mthd_Create( (void))
+    Read at 0544 in func daObjKanat::Act_c::Execute( (float (**)[3][4]))
+
+d_a_obj_kanoke:
+  Actor names: MKanoke, MKanok2
+  params & 00000001
+    Read at 1C30 in func daObjKanoke_c::getPrmType(void)
+  params & 0000003E
+    Read at 1C5C in func daObjKanoke_c::getPrmSearch(void)
+  params & 00000040
+    Read at 1C88 in func daObjKanoke_c::getPrmYure(void)
+  params & 0000FF00
+    Read at 1CB4 in func daObjKanoke_c::getPrmSwNo(void)
+  params & 00FF0000
+    Read at 1CE0 in func daObjKanoke_c::getPrmSwNo2(void)
+
+d_a_obj_ladder:
+  Actor names: Mhsg6, Mhsg9, Mhsg12, Mhsg15, Mhsg4h
+  params & 00000007
+    Read at 0528 in func daObjLadder::Act_c::Mthd_Create( (void))
+  params & 0000FF00
+    Read at 0358 in func daObjLadder::Act_c::Create( (void))
+    Read at 0370 in func daObjLadder::Act_c::Create( (void))
+    Read at 0B84 in func daObjLadder::Act_c::mode_wait( (void))
+  params & 00FF0000
+    Read at 0334 in func daObjLadder::Act_c::Create( (void))
+    Read at 0C38 in func daObjLadder::Act_c::mode_demoreq( (void))
+
+d_a_obj_leaves:
+  Actor names: Vochi
+  params & 0000003F
+    Read at 0FD8 in func daObjLeaves_c::item_set_wait_proc(void)
+  params & 00001FC0
+    Read at 0FEC in func daObjLeaves_c::item_set_wait_proc(void)
+  params & 001FE000
+    Read at 0170 in func daObjLeaves_c::chk_appear(void)
+    Read at 0EB8 in func daObjLeaves_c::wait_proc(void)
+
+d_a_obj_light:
+  Actor names: Stoudai
+
+d_a_obj_lpalm:
+  Actor names: Oyashi
+
+d_a_obj_magmarock:
+  Actor names: Magrock
+  params & 000000FF
+    Read at 0738 in func daObjMagmarock::Act_c::stay_proc_init( (void))
+  params & FF000000
+    Read at 0FD8 in func daObjMagmarock::Act_c::CreateInit( (void))
+
+d_a_obj_majyuu_door:
+  Actor names: MjDoor
+  params & 000000FF
+    Read at 0498 in func daObj_MjDoor_c::getArg(void)
+
+d_a_obj_mkie:
+  Actor names: MkieBA, MkieBAB
+  params & 000000FF
+    Read at 060C in func daObjMkie::Act_c::Create( (void))
+    Read at 11F4 in func daObjMkie::Act_c::mode_demoWait( (void))
+  params & 00000100
+    Read at 0774 in func daObjMkie::Act_c::Mthd_Create( (void))
+  params & 00001000
+    Read at 1280 in func daObjMkie::Act_c::mode_demo_init( (void))
+  params & 00002000
+    Read at 0594 in func daObjMkie::Act_c::Create( (void))
+  params & 00FF0000
+    Read at 0718 in func daObjMkie::Act_c::Mthd_Create( (void))
+    Read at 1338 in func daObjMkie::Act_c::mode_demo( (void))
+
+d_a_obj_mkiek:
+  Actor names: MkieK
+  params & 000000FF
+    Read at 0500 in func daObjMkiek::Act_c::Mthd_Create( (void))
+    Read at 0B64 in func daObjMkiek::Act_c::demo_wait( (void))
+  params & 00000100
+    Read at 0A4C in func daObjMkiek::Act_c::demo_wait( (void))
+
+d_a_obj_mknjd:
+  Actor names: MknjD
+  params & 000000FF
+    Read at 0A78 in func daObjMknjD::Act_c::Mthd_Create( (void))
+    Read at 11AC in func daObjMknjD::Act_c::privateCut( (void))
+  params & 00010000
+    Read at 0A64 in func daObjMknjD::Act_c::Mthd_Create( (void))
+
+d_a_obj_mmrr:
+  Actor names: 
+
+d_a_obj_monument:
+  Actor names: Esekh, Esekh2
+  params & 00000001
+    Read at 0380 in func daObjMonument::Act_c::_create( (void))
+  params & 0000FF00
+    Read at 0560 in func daObjMonument::Act_c::_draw( (void))
+
+d_a_obj_movebox:
+  Actor names: osiBLK0, osiBLK1, Kkiba, Hseki2, Hseki7, Mmrr, MkieBB, Ecube, Hjump1, Hbox1, MpwrB, DBLK0, DBLK1, DKkiba, Hbox2
+  params & 0000003F
+    Read at 34F4 in func daObjMovebox::Act_c::make_item( (void))
+  params & 0000FF00
+    Read at 13F0 in func daObjMovebox::Act_c::prm_get_swSave1( const(void))
+  params & 007F0000
+    Read at 3508 in func daObjMovebox::Act_c::make_item( (void))
+  params & 0F000000
+    Read at 44A4 in func Mthd_Create__Q212daObjMovebox29@unnamed@d_a_obj_movebox_cpp@FPv
+  params & 40000000
+    Read at 1434 in func daObjMovebox::Act_c::prmZ_init( (void))
+    Read at 2814 in func daObjMovebox::Act_c::chk_appear( const(void))
+  params & 80000000
+    Read at 2114 in func daObjMovebox::Act_c::Create( (void))
+
+d_a_obj_msdan:
+  Actor names: Msdan
+  params & 000000FF
+    Read at 02A8 in func daObjMsdan::Act_c::Mthd_Create( (void))
+    Read at 0394 in func daObjMsdan::Act_c::Mthd_Create( (void))
+    Read at 0454 in func daObjMsdan::Act_c::Mthd_Create( (void))
+    Read at 04F4 in func daObjMsdan::Act_c::Mthd_Execute( (void))
+  params & 00010000
+    Read at 01FC in func daObjMsdan::Act_c::Mthd_Create( (void))
+    Read at 0294 in func daObjMsdan::Act_c::Mthd_Create( (void))
+    Read at 0380 in func daObjMsdan::Act_c::Mthd_Create( (void))
+    Read at 0524 in func daObjMsdan::Act_c::Mthd_Execute( (void))
+  params & 00040000
+    Read at 0548 in func daObjMsdan::Act_c::Mthd_Execute( (void))
+  params & FF000000
+    Read at 03E8 in func daObjMsdan::Act_c::Mthd_Create( (void))
+    Read at 0428 in func daObjMsdan::Act_c::Mthd_Create( (void))
+
+d_a_obj_msdan2:
+  Actor names: Msdan2
+  params & 000000FF
+    Read at 0260 in func daObjMsdan2::Act_c::Mthd_Create( (void))
+    Read at 02CC in func daObjMsdan2::Act_c::Mthd_Create( (void))
+    Read at 036C in func daObjMsdan2::Act_c::Mthd_Execute( (void))
+
+d_a_obj_msdan_sub:
+  Actor names: MsdanSb
+  params & 000000FF
+    Read at 027C in func daObjMsdanSub::Act_c::Create( (void))
+    Read at 0318 in func daObjMsdanSub::Act_c::Create( (void))
+    Read at 065C in func daObjMsdanSub::Act_c::Execute( (float (**)[3][4]))
+    Read at 08A4 in func daObjMsdanSub::Act_c::Execute( (float (**)[3][4]))
+  params & 0000FF00
+    Read at 02B4 in func daObjMsdanSub::Act_c::Create( (void))
+    Read at 0350 in func daObjMsdanSub::Act_c::Create( (void))
+    Read at 06CC in func daObjMsdanSub::Act_c::Execute( (float (**)[3][4]))
+    Read at 0914 in func daObjMsdanSub::Act_c::Execute( (float (**)[3][4]))
+    Read at 0984 in func daObjMsdanSub::Act_c::Execute( (float (**)[3][4]))
+    Read at 0A38 in func daObjMsdanSub::Act_c::Execute( (float (**)[3][4]))
+    Read at 0B44 in func daObjMsdanSub::Act_c::Execute( (float (**)[3][4]))
+    Read at 0B7C in func daObjMsdanSub::Act_c::Execute( (float (**)[3][4]))
+    Read at 0BB0 in func daObjMsdanSub::Act_c::Execute( (float (**)[3][4]))
+  params & 00010000
+    Read at 0264 in func daObjMsdanSub::Act_c::Create( (void))
+    Read at 0644 in func daObjMsdanSub::Act_c::Execute( (float (**)[3][4]))
+
+d_a_obj_msdan_sub2:
+  Actor names: MsdanS2
+  params & 000000FF
+    Read at 0264 in func daObjMsdanSub2::Act_c::Create( (void))
+    Read at 04B4 in func daObjMsdanSub2::Act_c::Mthd_Create( (void))
+    Read at 06A8 in func daObjMsdanSub2::Act_c::Execute( (float (**)[3][4]))
+  params & 0000FF00
+    Read at 0294 in func daObjMsdanSub2::Act_c::Create( (void))
+    Read at 0768 in func daObjMsdanSub2::Act_c::Execute( (float (**)[3][4]))
+    Read at 0884 in func daObjMsdanSub2::Act_c::Execute( (float (**)[3][4]))
+
+d_a_obj_mshokki:
+  Actor names: MPot, MOsara, MKoppu
+  params & 00000003
+    Read at 093C in func daObjMshokki_c::_create(void)
+
+d_a_obj_mtest:
+  Actor names: Mcube, Mcyln, Mcube10, Mcyln10, MwtrSB, MygnSB, Owater, Astop
+  params & 00000007
+    Read at 05C4 in func daObjMtest::Act_c::Mthd_Create( (void))
+  params & 0000FF00
+    Read at 0200 in func daObjMtest::Act_c::chk_appear( (void))
+  params & 000F0000
+    Read at 0214 in func daObjMtest::Act_c::chk_appear( (void))
+  params & 0F000000
+    Read at 0428 in func daObjMtest::Act_c::Create( (void))
+    Read at 0644 in func daObjMtest::Act_c::Mthd_Create( (void))
+    Read at 0664 in func daObjMtest::Act_c::Mthd_Create( (void))
+    Read at 0684 in func daObjMtest::Act_c::Mthd_Create( (void))
+    Read at 06A4 in func daObjMtest::Act_c::Mthd_Create( (void))
+    Read at 0BFC in func daObjMtest::Act_c::Execute( (float (**)[3][4]))
+    Read at 0CAC in func daObjMtest::Act_c::Draw( (void))
+    Read at 0CC4 in func daObjMtest::Act_c::Draw( (void))
+
+d_a_obj_nest:
+  Actor names: MtoriSU
+
+d_a_obj_ohatch:
+  Actor names: Ohatch
+  params & 000000FF
+    Read at 0534 in func daObjOhatch_c::_create(void)
+
+d_a_obj_ojtree:
+  Actor names: Ojtree
+
+d_a_obj_ospbox:
+  Actor names: Ospbox
+  params & 0000003F
+    Read at 0DF4 in func daObjOspbox::Act_c::make_item( (void))
+  params & 00000700
+    Read at 0DC8 in func daObjOspbox::Act_c::make_item( (void))
+
+d_a_obj_otble:
+  Actor names: Otble, OtbleL
+  params & 000000FF
+    Read at 06F8 in func daObj_Otble::Mthd::Create( (void *))
+
+d_a_obj_paper:
+  Actor names: Paper, Ppos, Piwa
+  params & 0000FFFF
+    Read at 08E0 in func daObjPaper::Act_c::mode_talk0( (void))
+  params & 000F0000
+    Read at 0338 in func daObjPaper::Act_c::_create( (void))
+
+d_a_obj_pbco:
+  Actor names: Pbco
+
+d_a_obj_pbka:
+  Actor names: Pbka
+
+d_a_obj_pfall:
+  Actor names: Nzfall
+
+d_a_obj_pirateship:
+  Actor names: Pirates
+  params & 0000000F
+    Read at 11D4 in func daObjPirateship::Act_c::_create( (void))
+  params & 00FF0000
+    Read at 1340 in func daObjPirateship::Act_c::_create( (void))
+  params & FF000000
+    Read at 11FC in func daObjPirateship::Act_c::_create( (void))
+
+d_a_obj_plant:
+  Actor names: Plant
+
+d_a_obj_quake:
+  Actor names: Quake
+  params & 000000FF
+    Read at 07B0 in func daObjQuake_c::getPrmSch(void)
+  params & 00000700
+    Read at 0784 in func daObjQuake_c::getPrmType(void)
+  params & 00003800
+    Read at 07DC in func daObjQuake_c::getPrmPower(void)
+
+d_a_obj_rcloud:
+  Actor names: Rcloud, Ocloud
+  params & 00000001
+    Read at 0398 in func daObjRcloud_c::_create(void)
+
+d_a_obj_rflw:
+  Actor names: Rflw
+
+d_a_obj_rforce:
+  Actor names: Rforce
+
+d_a_obj_roten:
+  Actor names: Roten2, Roten3, Roten4
+  params & FF000000
+    Read at 0540 in func daObj_RotenCreate(void *)
+
+d_a_obj_shelf:
+  Actor names: Otana, OtanaG
+  params & 00000001
+    Read at 046C in func daObjShelf::Act_c::mode_wait( (void))
+  aux_params_1 & FFFF
+    Read at 078C in func daObjShelf::Act_c::mode_rot( (void))
+
+d_a_obj_shmrgrd:
+  Actor names: Shmrgrd
+  params & 000000FF
+    Read at 097C in func daObjShmrgrd_c::_create(void)
+    Read at 099C in func daObjShmrgrd_c::_create(void)
+    Read at 1698 in func daObjShmrgrd_c::mode_upper(void)
+    Read at 16B8 in func daObjShmrgrd_c::mode_upper(void)
+    Read at 1838 in func daObjShmrgrd_c::mode_u_l(void)
+    Read at 1850 in func daObjShmrgrd_c::mode_u_l(void)
+
+d_a_obj_smplbg:
+  Actor names: Qtkhd
+  params & 000000FF
+    Read at 046C in func daObjSmplbg::Act_c::Mthd_Create( (void))
+
+d_a_obj_stair:
+  Actor names: Mkdan1
+  params & 000000FF
+    Read at 06C8 in func daObj_Stair_c::_create(void)
+
+d_a_obj_swflat:
+  Actor names: Hfbot1A, Hfbot1B, Hfbot1C
+  params & 00000003
+    Read at 043C in func daObjSwflat::Act_c::Create( (void))
+    Read at 0D2C in func daObjSwflat::Act_c::Execute( (float (**)[3][4]))
+    Read at 0EF4 in func daObjSwflat::Act_c::Execute( (float (**)[3][4]))
+  params & 0000FF00
+    Read at 0450 in func daObjSwflat::Act_c::Create( (void))
+  params & 00FF0000
+    Read at 0464 in func daObjSwflat::Act_c::Create( (void))
+
+d_a_obj_swhammer:
+  Actor names: MhmrSW0
+  params & 000000FF
+    Read at 12D0 in func daObjSwhammer::Act_c::mode_u_l( (void))
+  params & 0000FF00
+    Read at 075C in func daObjSwhammer::Act_c::Create( (void))
+    Read at 1128 in func daObjSwhammer::Act_c::mode_upper( (void))
+    Read at 129C in func daObjSwhammer::Act_c::mode_u_l( (void))
+    Read at 1394 in func daObjSwhammer::Act_c::mode_lower( (void))
+
+d_a_obj_swheavy:
+  Actor names: Hhbot1, Hhbot1N
+  params & 0000FF00
+    Read at 04AC in func daObjSwheavy::Act_c::_create( (void))
+    Read at 0670 in func daObjSwheavy::Act_c::_create( (void))
+    Read at 0CA0 in func daObjSwheavy::Act_c::mode_upper( (void))
+    Read at 0DD8 in func daObjSwheavy::Act_c::mode_u_l( (void))
+    Read at 0E00 in func daObjSwheavy::Act_c::mode_u_l( (void))
+    Read at 0F48 in func daObjSwheavy::Act_c::mode_lower( (void))
+    Read at 1068 in func daObjSwheavy::Act_c::mode_l_u( (void))
+  params & 07000000
+    Read at 0478 in func daObjSwheavy::Act_c::_create( (void))
+
+d_a_obj_swlight:
+  Actor names: MsuSW, MsuSWB
+  params & 000000FF
+    Read at 071C in func daObjSwlight::Act_c::_create( (void))
+    Read at 0784 in func daObjSwlight::Act_c::_create( (void))
+    Read at 133C in func daObjSwlight::Act_c::mode_norm_moon( (void))
+    Read at 13D8 in func daObjSwlight::Act_c::mode_norm_moon( (void))
+    Read at 1448 in func daObjSwlight::Act_c::mode_norm_sun( (void))
+    Read at 15CC in func daObjSwlight::Act_c::mode_active_moon( (void))
+    Read at 16D4 in func daObjSwlight::Act_c::mode_active_sun( (void))
+  params & 0000FF00
+    Read at 01F4 in func daObjSwlight::Act_c::is_switch2( const(void))
+  params & 00010000
+    Read at 0618 in func daObjSwlight::Act_c::_create( (void))
+
+d_a_obj_swpush:
+  Actor names: Kbota_A, Kbota_B, KbotaC
+  params & 000000FF
+    Read at 0974 in func daObjSwpush::Act_c::Mthd_Create( (void))
+    Read at 1C54 in func daObjSwpush::Act_c::demo_reqSw_init( (void))
+    Read at 1CC8 in func daObjSwpush::Act_c::demo_reqSw( (void))
+  params & 0000FF00
+    Read at 08AC in func daObjSwpush::Act_c::Mthd_Create( (void))
+    Read at 0BD8 in func daObjSwpush::Act_c::set_btp_frame( (void))
+    Read at 1518 in func daObjSwpush::Act_c::mode_upper( (void))
+    Read at 16C0 in func daObjSwpush::Act_c::mode_u_l( (void))
+    Read at 16F0 in func daObjSwpush::Act_c::mode_u_l( (void))
+    Read at 1718 in func daObjSwpush::Act_c::mode_u_l( (void))
+    Read at 185C in func daObjSwpush::Act_c::mode_lower( (void))
+    Read at 1A24 in func daObjSwpush::Act_c::mode_l_u( (void))
+    Read at 1A4C in func daObjSwpush::Act_c::mode_l_u( (void))
+  params & 00010000
+    Read at 02D8 in func daObjSwpush::Act_c::create_heap( (void))
+  params & 07000000
+    Read at 068C in func daObjSwpush::Act_c::Mthd_Create( (void))
+  params & 40000000
+    Read at 022C in func daObjSwpush::Act_c::is_switch2( const(void))
+
+d_a_obj_table:
+  Actor names: Table
+  params & 000000FF
+    Read at 017C in func daObjTable::Act_c::CreateHeap( (void))
+    Read at 02F8 in func daObjTable::Act_c::Create( (void))
+    Read at 03D8 in func daObjTable::Act_c::Mthd_Create( (void))
+    Read at 067C in func daObjTable::Act_c::Draw( (void))
+
+d_a_obj_tapestry:
+  Actor names: Mcrtn
+  params & 000000FF
+    Read at 46D8 in func daObjTapestry_c::chk_appear(void)
+    Read at 5958 in func daObjTapestry_c::burn_act_proc(void)
+  params & 0000FF00
+    Read at 5170 in func daObjTapestry_c::_create(void)
+    Read at 5860 in func daObjTapestry_c::demo_request_act_proc(void)
+
+d_a_obj_tenmado:
+  Actor names: Tenmado
+  params & 000000FF
+    Read at 02F4 in func daObjTenmado::Act_c::Create( (void))
+    Read at 0664 in func daObjTenmado::Act_c::Execute( (float (**)[3][4]))
+  params & 0000FF00
+    Read at 0324 in func daObjTenmado::Act_c::Create( (void))
+    Read at 072C in func daObjTenmado::Act_c::Execute( (float (**)[3][4]))
+
+d_a_obj_tide:
+  Actor names: Humi0z, Humi4z, Humi5z, Tide3, Humi2z, Humi3z
+  params & 00070000
+    Read at 08FC in func daObjTide::Act_c::Mthd_Create( (void))
+  params & FF000000
+    Read at 1308 in func daObjTide::Act_c::mode_gmtw( (void))
+    Read at 1374 in func daObjTide::Act_c::mode_gmtw( (void))
+
+d_a_obj_timer:
+  Actor names: ObjTime
+  params & 000000FF
+    Read at 0288 in func daObjTimer::Act_c::mode_count_init( (void))
+  params & 00FF0000
+    Read at 01A8 in func daObjTimer::Act_c::_create( (void))
+    Read at 022C in func daObjTimer::Act_c::mode_wait( (void))
+    Read at 0380 in func daObjTimer::Act_c::mode_count( (void))
+    Read at 03B0 in func daObjTimer::Act_c::mode_count( (void))
+
+d_a_obj_tntrap:
+  Actor names: TnTrap, FgTrap, CmTrap
+  params & 000000FF
+    Read at 0180 in func daObjTnTrap_c::chk_appear(void)
+  params & 0000FF00
+    Read at 0194 in func daObjTnTrap_c::chk_appear(void)
+  params & 00010000
+    Read at 01A8 in func daObjTnTrap_c::chk_appear(void)
+  params & 00060000
+    Read at 01BC in func daObjTnTrap_c::chk_appear(void)
+
+d_a_obj_toripost:
+  Actor names: Tpost
+
+d_a_obj_tousekiki:
+  Actor names: Touseki
+
+d_a_obj_tower:
+  Actor names: X_tower
+
+d_a_obj_trap:
+  Actor names: Trap
+  params & 000000FF
+    Read at 0410 in func daObjTrap_c::_create(void)
+  params & 00000F00
+    Read at 044C in func daObjTrap_c::_create(void)
+
+d_a_obj_tribox:
+  Actor names: MtryB, MtryBCr
+  params & 0000FF00
+    Read at 0214 in func daObjTribox::Act_c::set_state( (void))
+    Read at 315C in func daObjTribox::Act_c::mode_correct_demorun( (void))
+  params & 00010000
+    Read at 0200 in func daObjTribox::Act_c::set_state( (void))
+    Read at 0864 in func daObjTribox::Act_c::controll_set( (void))
+    Read at 0948 in func daObjTribox::Act_c::controll_clear( (void))
+    Read at 1AB0 in func daObjTribox::Act_c::search_block( (void *, void *))
+    Read at 3434 in func daObjTribox::Act_c::_execute( (void))
+
+d_a_obj_try:
+  Actor names: Hseki1, Hseki6, Hseki3, Hseki4, Hseki5, Hmon1, Hmon1d, Hmon2, Hmon2d, Hseki31, Hseki41, Hseki51, Hseki32, Hseki42, Hseki52
+  params & 0000000F (WARNING: overlaps)
+    Read at 04BC in func daObjTry::Act_c::search_sameType( (void *, void *))
+    Read at 04D0 in func daObjTry::Act_c::search_sameType( (void *, void *))
+    Read at 0760 in func daObjTry::Act_c::_create( (void))
+  params & 0000FF00
+    Read at 056C in func daObjTry::Act_c::chk_appear( const(void))
+    Read at 1BF4 in func daObjTry::Act_c::mode_proc_call( (void))
+  params & 80000000 (WARNING: overlaps)
+    Read at 02E8 in func daObjTry::Act_c::create_heap( (void))
+    Read at 0550 in func daObjTry::Act_c::chk_appear( const(void))
+  params & FFFF00FF (WARNING: overlaps)
+    Read at 0160 in func daObjTry::Act_c::prm_set_swSave( (int))
+
+d_a_obj_usovmc:
+  Actor names: Usovmc
+
+d_a_obj_Vds:
+  Actor names: Vds
+  params & 000000FF
+    Read at 0288 in func daObjVds::Act_c::set_first_process( (void))
+    Read at 0510 in func daObjVds::Act_c::process_off_main( (void))
+
+d_a_obj_vfan:
+  Actor names: Vfan
+  params & 000000FF
+    Read at 03D8 in func daObjVfan::Act_c::Mthd_Create( (void))
+    Read at 0CE4 in func daObjVfan::Act_c::Execute( (float (**)[3][4]))
+
+d_a_obj_vgnfd:
+  Actor names: VgnFD
+
+d_a_obj_vmc:
+  Actor names: VmcBS
+  params & 0000FF00
+    Read at 0578 in func daObjVmc::Act_c::CreateInit( (void))
+    Read at 0DFC in func daObjVmc::Act_c::daObjVmc_tree_demo_main( (void))
+
+d_a_obj_vmsdz:
+  Actor names: VmsDZ
+
+d_a_obj_vmsms:
+  Actor names: VmsMS
+
+d_a_obj_volcano:
+  Actor names: Ykzyg
+  params & 0000FF00
+    Read at 099C in func daObjVolcano::Act_c::Create( (void))
+    Read at 1394 in func daObjVolcano::Act_c::daObjVolcano_freeze_demo_wait( (void))
+    Read at 1658 in func daObjVolcano::Act_c::daObjVolcano_freeze_main( (void))
+    Read at 16E8 in func daObjVolcano::Act_c::daObjVolcano_fail_demo_wait( (void))
+
+d_a_obj_Vteng:
+  Actor names: Vteng
+
+d_a_obj_vtil:
+  Actor names: Vtil1, Vtil2, Vtil3, Vtil4, Vtil5
+  params & 0000000F
+    Read at 0368 in func daObjVtil_c::_create(void)
+
+d_a_obj_vyasi:
+  Actor names: Vyasi
+  params & 000000FF
+    Read at 029C in func daObjVyasi::Act_c::set_first_process( (void))
+    Read at 0DC8 in func daObjVyasi::Act_c::process_sagWind_main( (void))
+
+d_a_obj_warpt:
+  Actor names: Warpt, Warpnt, Warpts1, Warpts2, Warpts3
+  params & 0000000F
+    Read at 1E94 in func daObj_Warpt_c::getArg(void)
+  params & 000000F0 (WARNING: overlaps)
+    Read at 1F2C in func daObj_Warpt_c::getArg(void)
+  params & 00000FF0 (WARNING: overlaps)
+    Read at 1EA8 in func daObj_Warpt_c::getArg(void)
+  params & 0000FF00 (WARNING: overlaps)
+    Read at 1F34 in func daObj_Warpt_c::getArg(void)
+  params & 000FF000 (WARNING: overlaps)
+    Read at 1EB0 in func daObj_Warpt_c::getArg(void)
+  params & 00FF0000 (WARNING: overlaps)
+    Read at 1F3C in func daObj_Warpt_c::getArg(void)
+  params & FF000000
+    Read at 1F44 in func daObj_Warpt_c::getArg(void)
+  aux_params_1 & 00FF
+    Read at 1EB8 in func daObj_Warpt_c::getArg(void)
+    Read at 1FAC in func daObj_Warpt_c::getArg(void)
+  aux_params_1 & FF00
+    Read at 1EC0 in func daObj_Warpt_c::getArg(void)
+    Read at 1FB4 in func daObj_Warpt_c::getArg(void)
+  aux_params_2 & 00FF
+    Read at 1FBC in func daObj_Warpt_c::getArg(void)
+  aux_params_2 & FF00
+    Read at 1FC4 in func daObj_Warpt_c::getArg(void)
+
+d_a_obj_wood:
+  Actor names: woodb, woodbx
+
+d_a_obj_xfuta:
+  Actor names: Xfuta
+
+d_a_obj_Yboil:
+  Actor names: Yboil00
+  params & 0000FF00
+    Read at 0E48 in func daObjYboil_Execute(void *)
+
+d_a_obj_ygush00:
+  Actor names: 
+  params & 00000007
+    Read at 03C4 in func daObjYgush00_c::_create(void)
+
+d_a_obj_YLzou:
+  Actor names: YLzou
+  params & 000000FF
+    Read at 0B08 in func daObjYLzou_c::_create(void)
+
+d_a_obj_zouK:
+  Actor names: zouK, zouK1, zouK2, zouK3, zouK4
+  params & 0000000F
+    Read at 0758 in func daObjZouk::Act_c::_create( (void))
+    Read at 1428 in func daObjZouk::Act_c::_execute( (void))
+
+d_a_oq:
+  Actor names: Oq, Oqw
+  params & 000000FF
+    Read at 4844 in func daOQ_Create(fopAc_ac_c *)
+  params & 0000FF00
+    Read at 484C in func daOQ_Create(fopAc_ac_c *)
+  params & 00FF0000
+    Read at 4858 in func daOQ_Create(fopAc_ac_c *)
+
+d_a_oship:
+  Actor names: Oship
+  params & 000000FF
+    Read at 303C in func daOship_c::getArg(void)
+  params & 00000F00
+    Read at 3040 in func daOship_c::getArg(void)
+  params & 0000F000
+    Read at 3048 in func daOship_c::getArg(void)
+  params & 00FF0000
+    Read at 3050 in func daOship_c::getArg(void)
+  params & FF000000
+    Read at 3058 in func daOship_c::getArg(void)
+  aux_params_1 & 00FF
+    Read at 3064 in func daOship_c::getArg(void)
+  aux_params_1 & FF00
+    Read at 3068 in func daOship_c::getArg(void)
+
+d_a_pedestal:
+  Actor names: Hdai1, Hdai2, Hdai3
+  params & 000000FF
+    Read at 034C in func daPedestal::daPds_c::CreateInit( (void))
+
+d_a_ph:
+  Actor names: p_hat, sea_hat
+  params & 000000FF
+    Read at 680C in func daPH_Create(fopAc_ac_c *)
+  params & 0000FF00
+    Read at 68D8 in func daPH_Create(fopAc_ac_c *)
+  params & 00FF0000
+    Read at 68DC in func daPH_Create(fopAc_ac_c *)
+
+d_a_pirate_flag:
+  Actor names: 
+
+d_a_pt:
+  Actor names: Puti
+  params & 0000000F
+    Read at 497C in func daPt_Create(fopAc_ac_c *)
+  params & 00000010
+    Read at 49A0 in func daPt_Create(fopAc_ac_c *)
+  params & 000000E0
+    Read at 4988 in func daPt_Create(fopAc_ac_c *)
+  params & 0000FF00
+    Read at 4994 in func daPt_Create(fopAc_ac_c *)
+  params & 00FF0000
+    Read at 49C4 in func daPt_Create(fopAc_ac_c *)
+  params & FF000000
+    Read at 49D0 in func daPt_Create(fopAc_ac_c *)
+
+d_a_pw:
+  Actor names: pow
+  params & 000000FF
+    Read at 6870 in func daPW_Create(fopAc_ac_c *)
+  params & 00000100
+    Read at 6878 in func daPW_Create(fopAc_ac_c *)
+  params & 0000FE00
+    Read at 6890 in func daPW_Create(fopAc_ac_c *)
+  params & 00FF0000
+    Read at 6884 in func daPW_Create(fopAc_ac_c *)
+  params & FF000000
+    Read at 689C in func daPW_Create(fopAc_ac_c *)
+
+d_a_pz:
+  Actor names: p_zelda
+  params & 0000FF00
+    Read at 1FE4 in func daPz_c::getArg(void)
+
+d_a_race_item:
+  Actor names: Ritem
+  params & 000000FF
+    Read at 0324 in func daRaceItem_c::create(void)
+  params & 00007F00
+    Read at 032C in func daRaceItem_c::create(void)
+  params & 00078000
+    Read at 0758 in func daRaceItem_c::CreateInit(void)
+
+d_a_rd:
+  Actor names: Rdead1, Rdead2
+  params & 00000001
+    Read at 47A0 in func daRd_c::getArg(void)
+  params & 000000FE
+    Read at 47A8 in func daRd_c::getArg(void)
+  params & 0000FF00
+    Read at 47B0 in func daRd_c::getArg(void)
+  params & FF000000
+    Read at 47B8 in func daRd_c::getArg(void)
+
+d_a_rectangle:
+  Actor names: hotest
+
+d_a_sail:
+  Actor names: Psail
+
+d_a_saku:
+  Actor names: Ksaku, Dsaku
+  params & 0000000F
+    Read at 1E70 in func daSaku_c::_daSaku_create(void)
+  params & 000000F0
+    Read at 1DBC in func daSaku_c::_daSaku_create(void)
+  params & 0000FF00
+    Read at 1E20 in func daSaku_c::_daSaku_create(void)
+  params & 00FF0000
+    Read at 1E2C in func daSaku_c::_daSaku_create(void)
+
+d_a_salvage:
+  Actor names: Salvage, SwSlvg, Salvag2, SalvagN, SalvagE, SalvFM
+
+d_a_salvage_tbox:
+  Actor names: STBox
+  params & 000000FF
+    Read at 0978 in func daSTBox_c::CreateInit(void)
+  params & 00000F00
+    Read at 0C64 in func daSTBox_c::_create(void)
+
+d_a_sbox:
+  Actor names: tkrSlv
+
+d_a_scene_change:
+  Actor names: ScnChg
+
+d_a_seatag:
+  Actor names: Seatag
+
+d_a_shand:
+  Actor names: 
+  params & 000000FF
+    Read at 16E4 in func hand_move(shand_class *)
+    Read at 23E8 in func useHeapInit(shand_class *)
+    Read at 2610 in func daShand_Create(fopAc_ac_c *)
+
+d_a_ship:
+  Actor names: Ship
+  params & 000000FF
+    Read at C3F8 in func daShip_c::create(void)
+  params & 0000FF00
+    Read at C150 in func daShip_c::create(void)
+  aux_params_1 & FFFF
+    Read at 8D58 in func daShip_c::setRopePos(void)
+
+d_a_shop_item:
+  Actor names: Sitem
+  params & 000000FF
+    Read at 09C4 in func daShopItem_c::_create(void)
+  params & 00000F00
+    Read at 0160 in func daShopItem_c::getShopArcname(void)
+    Read at 01C0 in func daShopItem_c::getShopBmdIdx(void)
+    Read at 0A68 in func daShopItem_c::_create(void)
+
+d_a_shutter:
+  Actor names: Htobi1, Htobi2
+  params & 000000FF
+    Read at 0428 in func daShutter_c::Create(void)
+  params & 00000F00
+    Read at 05F4 in func daShutter_c::_create(void)
+
+d_a_shutter2:
+  Actor names: Htobi3
+  params & 000000FF
+    Read at 0304 in func daShutter2_c::Create(void)
+
+d_a_sie_flag:
+  Actor names: SieFlag
+
+d_a_sitem:
+  Actor names: Sitem
+  params & 000000FF
+    Read at 2B30 in func daSitem_Create(fopAc_ac_c *)
+  params & 0000FF00
+    Read at 2B4C in func daSitem_Create(fopAc_ac_c *)
+  params & 00FF0000
+    Read at 2B8C in func daSitem_Create(fopAc_ac_c *)
+  params & FF000000
+    Read at 2B6C in func daSitem_Create(fopAc_ac_c *)
+
+d_a_sk:
+  Actor names: Turu
+  params & 000000FF
+    Read at 0C38 in func daSk_Create(fopAc_ac_c *)
+  params & FF000000
+    Read at 0C54 in func daSk_Create(fopAc_ac_c *)
+
+d_a_sk2:
+  Actor names: Turu2, Turu3
+  params & 000000FF
+    Read at 0AD4 in func daSk2_Create(fopAc_ac_c *)
+  params & 0000FF00
+    Read at 0ADC in func daSk2_Create(fopAc_ac_c *)
+  params & FF000000
+    Read at 0B3C in func daSk2_Create(fopAc_ac_c *)
+
+d_a_spotbox:
+  Actor names: spotbox, spotbx1
+  params & 00000001
+    Read at 0294 in func daSpotbox_Create(fopAc_ac_c *)
+
+d_a_ss:
+  Actor names: Ss
+  params & 000000FF
+    Read at 32FC in func daSs_Create(fopAc_ac_c *)
+  params & 0000FF00
+    Read at 3304 in func daSs_Create(fopAc_ac_c *)
+  params & FF000000
+    Read at 3310 in func daSs_Create(fopAc_ac_c *)
+
+d_a_ssk:
+  Actor names: s_turu
+  params & 000000FF
+    Read at 1110 in func daSsk_Create(fopAc_ac_c *)
+  params & 0000FF00
+    Read at 1118 in func daSsk_Create(fopAc_ac_c *)
+  params & FF000000
+    Read at 1124 in func daSsk_Create(fopAc_ac_c *)
+
+d_a_sss:
+  Actor names: Sss
+  params & 000000FF
+    Read at 2B6C in func daSss_Create(fopAc_ac_c *)
+  params & 0000FF00
+    Read at 2B9C in func daSss_Create(fopAc_ac_c *)
+  params & 00FF0000
+    Read at 2BA8 in func daSss_Create(fopAc_ac_c *)
+
+d_a_st:
+  Actor names: Stal
+  params & 0000000F
+    Read at 8CCC in func daSt_Create(fopAc_ac_c *)
+  params & 0000FF00
+    Read at 8CD8 in func daSt_Create(fopAc_ac_c *)
+  params & 00FF0000
+    Read at 8CE4 in func daSt_Create(fopAc_ac_c *)
+  params & FF000000
+    Read at 8CF0 in func daSt_Create(fopAc_ac_c *)
+  aux_params_2 & 00FF
+    Read at 8CFC in func daSt_Create(fopAc_ac_c *)
+
+d_a_steam_tag:
+  Actor names: Ystm0, Ystm1
+  params & 000003FC
+    Read at 018C in func daSteamTag_c::CreateInit(void)
+
+d_a_stone:
+  Actor names: koisi1, koisi2
+  params & 0000003F
+    Read at 1E74 in func daStone::Act_c::damaged( (int))
+  params & 000000C0
+    Read at 071C in func daStone::Act_c::_create( (void))
+    Read at 1B98 in func daStone::Act_c::mode_proc_call( (void))
+    Read at 1C6C in func daStone::Act_c::mode_proc_call( (void))
+    Read at 32D4 in func daStone::Act_c::_execute( (void))
+    Read at 3470 in func daStone::Act_c::_draw( (void))
+  params & 0000FF00
+    Read at 03C8 in func daStone::Act_c::chk_appear( (void))
+    Read at 1FC0 in func daStone::Act_c::damaged( (int))
+  params & 007F0000
+    Read at 1E88 in func daStone::Act_c::damaged( (int))
+  params & 07000000
+    Read at 0488 in func daStone::Act_c::_create( (void))
+  params & 70000000
+    Read at 32AC in func daStone::Act_c::_execute( (void))
+
+d_a_stone2:
+  Actor names: Ebrock, Ekao, Ebrock2
+  params & 0000003F
+    Read at 0F9C in func daStone2::Act_c::damaged( (int))
+  params & 0000FF00
+    Read at 0690 in func daStone2::Act_c::is_switch( const(void))
+    Read at 06F4 in func daStone2::Act_c::on_switch( const(void))
+  params & 007F0000
+    Read at 0FB0 in func daStone2::Act_c::damaged( (int))
+  params & 07000000
+    Read at 0B38 in func daStone2::Act_c::Mthd_Create( (void))
+  params & 70000000
+    Read at 24F4 in func daStone2::Act_c::Execute( (float (**)[3][4]))
+  params & 80000000
+    Read at 2684 in func daStone2::Act_c::draw_shadow( (void))
+
+d_a_swattack:
+  Actor names: SWat00
+  params & 000000FF
+    Read at 01D0 in func daSwAt_c::CreateInit(void)
+  params & 0000FF00
+    Read at 01D8 in func daSwAt_c::CreateInit(void)
+
+d_a_swc00:
+  Actor names: SW_C00
+  params & 000000FF
+    Read at 019C in func daSwc00_Execute(swc00_class *)
+    Read at 02B0 in func daSwc00_Create(fopAc_ac_c *)
+    Read at 02D4 in func daSwc00_Create(fopAc_ac_c *)
+  params & 0000FF00
+    Read at 0170 in func daSwc00_Execute(swc00_class *)
+  params & 00030000
+    Read at 0208 in func daSwc00_Execute(swc00_class *)
+    Read at 0220 in func daSwc00_Execute(swc00_class *)
+    Read at 02CC in func daSwc00_Create(fopAc_ac_c *)
+
+d_a_swhit0:
+  Actor names: SW_HIT0
+  params & 000000FF
+    Read at 0158 in func daSwhit0_c::getSwNo(void)
+  params & 0000FF00
+    Read at 0164 in func daSwhit0_c::getEvNo(void)
+  params & 000F0000
+    Read at 0170 in func daSwhit0_c::getType(void)
+  params & 0FF00000
+    Read at 017C in func daSwhit0_c::getTimer(void)
+  aux_params_1 & FFFF
+    Read at 03C0 in func daSwhit0_c::CreateInit(void)
+    Read at 03FC in func daSwhit0_c::CreateInit(void)
+    Read at 0444 in func daSwhit0_c::CreateInit(void)
+  aux_params_2 & 00FF
+    Read at 0198 in func daSwhit0_c::getSwNo2(void)
+
+d_a_switem:
+  Actor names: ITat00
+  params & 000000FF
+    Read at 017C in func daSwItem_c::CreateInit(void)
+  params & 00003F00
+    Read at 0638 in func daSwItem_c::_execute(void)
+  params & 001FC000
+    Read at 0178 in func daSwItem_c::CreateInit(void)
+    Read at 063C in func daSwItem_c::_execute(void)
+
+d_a_swpropeller:
+  Actor names: Hpbot1, Vpbot
+  params & 000000FF
+    Read at 0374 in func daSwProp_c::CreateInit(void)
+  params & 00000F00
+    Read at 05E4 in func daSwProp_c::_create(void)
+
+d_a_swtact:
+  Actor names: SWtact, SWtactB
+  params & 000000FF
+    Read at 0294 in func daSwTact_c::CreateInit(void)
+  params & 0000FF00
+    Read at 02A0 in func daSwTact_c::CreateInit(void)
+  params & 000F0000
+    Read at 02AC in func daSwTact_c::CreateInit(void)
+    Read at 0340 in func daSwTact_c::set_mtx(void)
+    Read at 03EC in func daSwTact_c::_create(void)
+    Read at 07A0 in func daSwTact_c::_draw(void)
+
+d_a_swtdoor:
+  Actor names: SWTdoor
+  params & 000000FF
+    Read at 03B0 in func daSwtdoor_Create(fopAc_ac_c *)
+  params & FF000000
+    Read at 03CC in func daSwtdoor_Create(fopAc_ac_c *)
+
+d_a_syan:
+  Actor names: SYAN
+
+d_a_tag_attention:
+  Actor names: AttTag, AttTagB
+  params & 000000FF
+    Read at 0494 in func daTagAttention::Act_c::_execute( (void))
+    Read at 04E8 in func daTagAttention::Act_c::_execute( (void))
+  params & 00000300
+    Read at 047C in func daTagAttention::Act_c::_execute( (void))
+    Read at 04D0 in func daTagAttention::Act_c::_execute( (void))
+
+d_a_tag_ba1:
+  Actor names: TagBa1
+
+d_a_tag_etc:
+  Actor names: TagMd
+  params & 00000F00
+    Read at 0164 in func daTag_Etc_c::getType2(void)
+  params & FF000000
+    Read at 0158 in func daTag_Etc_c::getEventNo(void)
+
+d_a_tag_event:
+  Actor names: TagEv
+  params & 000000FF
+    Read at 01AC in func daTag_Event_c::getType(void)
+  params & 0000FF00
+    Read at 0194 in func daTag_Event_c::getSwbit(void)
+  params & 00FF0000
+    Read at 01A0 in func daTag_Event_c::getSwbit2(void)
+  params & FF000000
+    Read at 0188 in func daTag_Event_c::getEventNo(void)
+  aux_params_2 & FFFF
+    Read at 01B8 in func daTag_Event_c::getEventFlag(void)
+
+d_a_tag_evsw:
+  Actor names: Evsw
+  params & 000000FF
+    Read at 024C in func daTagEvsw::Act_c::_create( (void))
+    Read at 0294 in func daTagEvsw::Act_c::_create( (void))
+    Read at 04D4 in func daTagEvsw::Act_c::_execute( (void))
+    Read at 051C in func daTagEvsw::Act_c::_execute( (void))
+  params & 00FFFF00
+    Read at 0220 in func daTagEvsw::Act_c::_create( (void))
+    Read at 04A8 in func daTagEvsw::Act_c::_execute( (void))
+  params & 03000000
+    Read at 0278 in func daTagEvsw::Act_c::_create( (void))
+    Read at 0500 in func daTagEvsw::Act_c::_execute( (void))
+
+d_a_tag_ghostship:
+  Actor names: PScnChg
+  params & 000000FF
+    Read at 0638 in func daTag_Gship_c::getArg(void)
+  params & 0000FF00
+    Read at 063C in func daTag_Gship_c::getArg(void)
+
+d_a_tag_hint:
+  Actor names: TagHt, TagHt2
+  params & 0000003F
+    Read at 0208 in func daTag_Hint_c::getType(void)
+  params & 000000C0
+    Read at 0214 in func daTag_Hint_c::getType2(void)
+  params & 0000FF00
+    Read at 01F0 in func daTag_Hint_c::getSwbit(void)
+  params & 00FF0000
+    Read at 01FC in func daTag_Hint_c::getSwbit2(void)
+  params & FF000000
+    Read at 01E4 in func daTag_Hint_c::getEventNo(void)
+  aux_params_1 & FFFF
+    Read at 0220 in func daTag_Hint_c::getMessage(void)
+  aux_params_2 & FFFF
+    Read at 022C in func daTag_Hint_c::getEventFlag(void)
+
+d_a_tag_island:
+  Actor names: TagIsl
+  params & 000000FF
+    Read at 0178 in func daTag_Island_c::getType(void)
+  params & 0000FF00
+    Read at 016C in func daTag_Island_c::getSwbit(void)
+  params & FF000000
+    Read at 0160 in func daTag_Island_c::getEventNo(void)
+
+d_a_tag_kb_item:
+  Actor names: TagKb
+  params & 000000FF
+    Read at 01A0 in func daTagKbItem_c::CreateInit(void)
+  params & 0000FF00
+    Read at 01A8 in func daTagKbItem_c::CreateInit(void)
+  params & 00FF0000
+    Read at 01B8 in func daTagKbItem_c::CreateInit(void)
+  params & FF000000
+    Read at 01C4 in func daTagKbItem_c::CreateInit(void)
+
+d_a_tag_kf1:
+  Actor names: TagKf1
+  params & 0F000000
+    Read at 025C in func searchActor_Kutani(void *, void *)
+
+d_a_tag_kk1:
+  Actor names: TagKk1
+
+d_a_tag_light:
+  Actor names: LTag0, LTag1, LTagR0
+  params & 00000003
+    Read at 0514 in func daTagLight::Act_c::_create( (void))
+  params & 00000300 (WARNING: overlaps)
+    Read at 0168 in func daTagLight::Act_c::get_cc_r( const(void))
+  params & 000003FC (WARNING: overlaps)
+    Read at 09F4 in func daTagLight::Act_c::chk_sw( const(void))
+  params & 00003C00
+    Read at 0230 in func daTagLight::Act_c::create_heap( (void))
+    Read at 0C0C in func daTagLight::Act_c::get_base_model_light_start_offset( (cXyz *))
+    Read at 0D24 in func daTagLight::Act_c::get_projection_info( (cXyz *, cXyz *, cXyz *, cXyz const *, cXyz const *))
+    Read at 17BC in func daTagLight::Act_c::make_projection_mtx( (cXyz const *, cXyz const *, cXyz const *, cXyz const *))
+    Read at 1B28 in func daTagLight::Act_c::set_spot_mtx( (void))
+  params & 0000C000
+    Read at 1D18 in func daTagLight::Act_c::_execute( (void))
+  params & 00FF0000
+    Read at 09E0 in func daTagLight::Act_c::chk_sw( const(void))
+    Read at 1C98 in func daTagLight::Act_c::_execute( (void))
+  params & FF000000
+    Read at 0AAC in func daTagLight::Act_c::chk_sch( const(void))
+
+d_a_tag_md_cb:
+  Actor names: TagMd1, TagCb1, TagMd11, TagMd12, TagMd13, TagMd14, TagMd15, TagMd16, TagCb11, TagCb12, TagCb13, TagCb14
+  params & 0000FFFF
+    Read at 03E8 in func daTag_MdCb_c::init(void)
+  params & 00FF0000
+    Read at 03F4 in func daTag_MdCb_c::init(void)
+  params & FF000000
+    Read at 0400 in func daTag_MdCb_c::init(void)
+  aux_params_1 & 00FF
+    Read at 040C in func daTag_MdCb_c::init(void)
+
+d_a_tag_mk:
+  Actor names: TagMk, TagWp, TagDM, TagTy
+  params & 000000FF
+    Read at 0178 in func daTag_Mk_c::getType(void)
+  params & 0000FF00
+    Read at 0160 in func daTag_Mk_c::getSwbit(void)
+  params & 00FF0000
+    Read at 016C in func daTag_Mk_c::getSwbit2(void)
+
+d_a_tag_msg:
+  Actor names: TagMsg, TagMsg2
+  params & 000000C0
+    Read at 0184 in func daTag_Msg_c::getType2(void)
+  params & 0000FF00
+    Read at 016C in func daTag_Msg_c::getSwbit(void)
+  params & 00FF0000
+    Read at 0178 in func daTag_Msg_c::getSwbit2(void)
+  params & FF000000
+    Read at 0160 in func daTag_Msg_c::getEventNo(void)
+  aux_params_1 & FFFF
+    Read at 0244 in func daTag_Msg_c::getMessage(void)
+  aux_params_2 & FFFF
+    Read at 0250 in func daTag_Msg_c::getEventFlag(void)
+
+d_a_tag_photo:
+  Actor names: TagPo
+  params & 000000FF
+    Read at 09F4 in func daTagPhoto_c::getPrmTagNo(void)
+
+d_a_tag_ret:
+  Actor names: ReTag0
+  params & 000000FF
+    Read at 04F4 in func daTagRet::Act_c::_execute( (void))
+
+d_a_tag_so:
+  Actor names: TagSo, TagMSo
+  params & 000000FF
+    Read at 02C0 in func daTag_So_c::getArg(void)
+  params & 0000FF00
+    Read at 02C4 in func daTag_So_c::getArg(void)
+  params & 00FF0000
+    Read at 02C8 in func daTag_So_c::getArg(void)
+
+d_a_tag_volcano:
+  Actor names: VolTag
+  params & 0000003F
+    Read at 0778 in func daTagvolcano::Act_c::_execute( (void))
+  params & 000000C0
+    Read at 01A4 in func daTagvolcano::Act_c::_create( (void))
+  params & 0000FF00
+    Read at 01F4 in func daTagvolcano::Act_c::_create( (void))
+    Read at 0254 in func daTagvolcano::Act_c::_create( (void))
+    Read at 0280 in func daTagvolcano::Act_c::_create( (void))
+    Read at 02C8 in func daTagvolcano::Act_c::_create( (void))
+    Read at 0328 in func daTagvolcano::Act_c::_create( (void))
+    Read at 0354 in func daTagvolcano::Act_c::_create( (void))
+    Read at 0464 in func daTagvolcano::Act_c::_delete( (void))
+    Read at 04CC in func daTagvolcano::Act_c::_execute( (void))
+    Read at 051C in func daTagvolcano::Act_c::_execute( (void))
+    Read at 0654 in func daTagvolcano::Act_c::_execute( (void))
+  params & 00FF0000
+    Read at 06B0 in func daTagvolcano::Act_c::_execute( (void))
+
+d_a_tag_waterlevel:
+  Actor names: WLvTag
+  params & 000000FF
+    Read at 019C in func daTagWaterlevel::Act_c::_create( (void))
+    Read at 02DC in func daTagWaterlevel::Act_c::_execute( (void))
+
+d_a_tama:
+  Actor names: Tama
+  aux_params_1 & FFFF
+    Read at 0280 in func daTama_c::_execute(void)
+
+d_a_tbox:
+  Actor names: takara, takara2, takara3, takara4, takara5, takara6, takara7, takara8, takaraK, takaraI, takaraM, tkrASw, tkrAGc, tkrAKd, tkrAIk, tkrBMs, tkrCTf, tkrAOc, tkrAOs
+  params & 0000007F
+    Read at 10DC in func daTbox_c::getFuncType(void)
+  params & 00000F80
+    Read at 0E00 in func daTbox_c::checkOpen(void)
+    Read at 0E14 in func daTbox_c::checkOpen(void)
+    Read at 1634 in func daTbox_c::CreateInit(void)
+    Read at 224C in func daTbox_c::OpenInit_com(void)
+    Read at 225C in func daTbox_c::OpenInit_com(void)
+  params & 000FF000
+    Read at 0F0C in func daTbox_c::setDzb(void)
+    Read at 1144 in func daTbox_c::checkNormal(void)
+    Read at 136C in func daTbox_c::CreateInit(void)
+    Read at 2934 in func daTbox_c::actionSwOnWait(void)
+    Read at 29AC in func daTbox_c::actionSwOnWait2(void)
+    Read at 2AF4 in func daTbox_c::actionGenocide(void)
+  params & 00F00000
+    Read at 10B8 in func daTbox_c::getShapeType(void)
+  aux_params_1 & 003F
+    Read at 0CC0 in func daTbox_c::searchRoomNo(void)
+    Read at 31C0 in func daTbox_Create(fopAc_ac_c *)
+  aux_params_2 & 00FF
+    Read at 2274 in func daTbox_c::OpenInit_com(void)
+  aux_params_2 & FF00
+    Read at 2764 in func daTbox_c::actionOpenWait(void)
+
+d_a_title:
+  Actor names: 
+
+d_a_tn:
+  Actor names: Tn
+  params & 0000000F
+    Read at C6D0 in func daTn_Create(fopAc_ac_c *)
+  params & 000000F0
+    Read at C6DC in func daTn_Create(fopAc_ac_c *)
+  params & 0000FF00
+    Read at C6E8 in func daTn_Create(fopAc_ac_c *)
+  params & 00FF0000
+    Read at C6F4 in func daTn_Create(fopAc_ac_c *)
+  params & FF000000
+    Read at C700 in func daTn_Create(fopAc_ac_c *)
+  aux_params_1 & 00E0
+    Read at C778 in func daTn_Create(fopAc_ac_c *)
+  aux_params_2 & 00FF
+    Read at C70C in func daTn_Create(fopAc_ac_c *)
+
+d_a_toge:
+  Actor names: Htoge1
+  params & 000000FF
+    Read at 049C in func daToge_c::Create(void)
+  params & 00000F00
+    Read at 0D18 in func daToge_c::toge_seStart(unsigned long)
+
+d_a_tori_flag:
+  Actor names: TrFlag
+
+d_a_tornado:
+  Actor names: Ytrnd00
+  params & FFFFFFFF
+    Read at 0298 in func daTornado_c::jointCallBack(int)
+    Read at 0480 in func daTornado_c::draw(void)
+    Read at 06C4 in func daTornado_c::execute(void)
+    Read at 0724 in func daTornado_c::execute(void)
+    Read at 0820 in func daTornado_c::execute(void)
+    Read at 0DC8 in func daTornado_c::tornado_delete(void)
+    Read at 1390 in func daTornado_c::create(void)
+    Read at 13EC in func daTornado_c::create(void)
+
+d_a_tpota:
+  Actor names: Tpota
+
+d_a_tsubo:
+  Actor names: kotubo, ootubo1, Kmtub, Ktaru, Ostool, Odokuro, Okioke, Kmi02, Ptubo, KkibaB, Kmi00, Hbox2S
+  params & 0000003F
+    Read at 3E28 in func daTsubo::Act_c::damaged( (int, cBgS_PolyInfo *, bool, cXyz const *))
+  params & 00003F00
+    Read at 09A4 in func daTsubo::Act_c::_create( (void))
+    Read at 0AC4 in func daTsubo::Act_c::_create( (void))
+    Read at 1AA4 in func daTsubo::Act_c::spec_init( (void))
+    Read at 1AF4 in func daTsubo::Act_c::spec_init( (void))
+    Read at 1BA8 in func daTsubo::Act_c::spec_set_actor( (void))
+    Read at 1BC0 in func daTsubo::Act_c::spec_set_actor( (void))
+    Read at 1C94 in func daTsubo::Act_c::spec_clr_actor( (void))
+    Read at 1CAC in func daTsubo::Act_c::spec_clr_actor( (void))
+    Read at 1D48 in func daTsubo::Act_c::spec_carry_spec( (void))
+    Read at 1D60 in func daTsubo::Act_c::spec_carry_spec( (void))
+    Read at 1E2C in func daTsubo::Act_c::spec_mode_carry_init( (void))
+    Read at 1E44 in func daTsubo::Act_c::spec_mode_carry_init( (void))
+    Read at 1F18 in func daTsubo::Act_c::spec_mode_carry( (bool))
+    Read at 1F30 in func daTsubo::Act_c::spec_mode_carry( (bool))
+    Read at 209C in func daTsubo::Act_c::spec_mode_put_init( (void))
+    Read at 20B4 in func daTsubo::Act_c::spec_mode_put_init( (void))
+    Read at 21A4 in func daTsubo::Act_c::spec_set_room( (void))
+    Read at 21BC in func daTsubo::Act_c::spec_set_room( (void))
+    Read at 2284 in func daTsubo::Act_c::spec_remove( (void))
+    Read at 229C in func daTsubo::Act_c::spec_remove( (void))
+    Read at 23B0 in func daTsubo::Act_c::spec_kill( (void))
+    Read at 23C8 in func daTsubo::Act_c::spec_kill( (void))
+    Read at 24A4 in func daTsubo::Act_c::spec_mtx( (void))
+    Read at 24BC in func daTsubo::Act_c::spec_mtx( (void))
+    Read at 2774 in func daTsubo::Act_c::mode_appear_init( (void))
+    Read at 2818 in func daTsubo::Act_c::mode_appear( (void))
+    Read at 302C in func daTsubo::Act_c::mode_carry( (void))
+    Read at 7994 in func daTsubo::Act_c::_execute( (void))
+  params & 0000C000
+    Read at 0928 in func daTsubo::Act_c::_create( (void))
+    Read at 3A8C in func daTsubo::Act_c::mode_proc_call( (void))
+    Read at 4E84 in func daTsubo::Act_c::crr_pos( (cXyz const &))
+    Read at 4F4C in func daTsubo::Act_c::crr_pos( (cXyz const &))
+    Read at 7A40 in func daTsubo::Act_c::_execute( (void))
+    Read at 7C34 in func daTsubo::Act_c::_draw( (void))
+  params & 007F0000
+    Read at 3E3C in func daTsubo::Act_c::damaged( (int, cBgS_PolyInfo *, bool, cXyz const *))
+  params & 0F000000
+    Read at 07B8 in func daTsubo::Act_c::_create( (void))
+  params & 70000000
+    Read at 1B50 in func daTsubo::Act_c::spec_init( (void))
+    Read at 7A0C in func daTsubo::Act_c::_execute( (void))
+  params & 80000000
+    Read at 090C in func daTsubo::Act_c::_create( (void))
+    Read at 0A98 in func daTsubo::Act_c::_create( (void))
+    Read at 2B2C in func daTsubo::Act_c::mode_wait( (void))
+    Read at 2F94 in func daTsubo::Act_c::mode_carry_init( (void))
+    Read at 2FB8 in func daTsubo::Act_c::mode_carry_init( (void))
+    Read at 4540 in func daTsubo::Act_c::damage_cc_proc( (void))
+    Read at 45A4 in func daTsubo::Act_c::damage_cc_proc( (void))
+    Read at 45CC in func daTsubo::Act_c::damage_cc_proc( (void))
+    Read at 45E4 in func daTsubo::Act_c::damage_cc_proc( (void))
+    Read at 4EC0 in func daTsubo::Act_c::crr_pos( (cXyz const &))
+    Read at 605C in func daTsubo::Act_c::set_tensor_wait( (void))
+
+d_a_wall:
+  Actor names: Wall
+  params & 000000FF
+    Read at 0440 in func daWall_c::CreateInit(void)
+    Read at 0514 in func daWall_c::_create(void)
+  params & 0000FF00
+    Read at 0508 in func daWall_c::_create(void)
+
+d_a_warpdm20:
+  Actor names: Gdemo20
+  params & 0000000F
+    Read at 0718 in func daWarpdm20_c::_create(void)
+
+d_a_warpf:
+  Actor names: Warpf
+  params & F0000000
+    Read at 18B4 in func daWarpf_c::get_earth_pos(void)
+    Read at 1A44 in func daWarpf_c::set_effect(void)
+    Read at 1B84 in func daWarpf_c::set_effect(void)
+    Read at 20B0 in func daWarpf_c::set_se(void)
+
+d_a_warpfout:
+  Actor names: Warpfo
+
+d_a_warpgn:
+  Actor names: Warpgn
+  params & 000000FF
+    Read at 0884 in func daWarpgn_c::CreateInit(void)
+  params & 0000FF00
+    Read at 0858 in func daWarpgn_c::CreateInit(void)
+
+d_a_warphr:
+  Actor names: Ghrwp
+  params & F0000000
+    Read at 07F0 in func daWarphr_c::_create(void)
+
+d_a_warpls:
+  Actor names: Ywarp00, Ysdls00
+  params & 000000FF
+    Read at 059C in func daWarpls_c::CreateInit(void)
+  params & 0000FF00
+    Read at 05A8 in func daWarpls_c::CreateInit(void)
+  params & 00FF0000
+    Read at 07A4 in func daWarpls_c::CreateInit(void)
+    Read at 0BF0 in func daWarpls_c::eventOrder(void)
+  params & F0000000
+    Read at 0888 in func daWarpls_c::_create(void)
+
+d_a_warpmj:
+  Actor names: Warpmj
+  params & 000000FF
+    Read at 06E4 in func daWarpmj_c::CreateInit(void)
+
+d_a_waterfall:
+  Actor names: Yswtr00
+  params & 000000FF
+    Read at 06E0 in func daWfall_c::CreateInit(void)
+  params & 00000F00
+    Read at 08BC in func daWfall_c::_create(void)
+
+d_a_wbird:
+  Actor names: WBird
+
+d_a_windmill:
+  Actor names: Hpu1, Hpu2
+  params & 0000000F
+    Read at 0858 in func daWindMill_c::_create(void)
+
+d_a_wind_tag:
+  Actor names: WindTag, Ybgaf00
+  params & 000000FF
+    Read at 1344 in func daWindTag::daWindTag_c::_execute( (void))
+  params & 0000FF00
+    Read at 06D8 in func daWindTag::daWindTag_c::CreateInit( (void))
+  params & 001F0000
+    Read at 0780 in func daWindTag::daWindTag_c::CreateInit( (void))
+    Read at 134C in func daWindTag::daWindTag_c::_execute( (void))
+  params & 00600000
+    Read at 09F0 in func daWindTag::daWindTag_c::_create( (void))
+  params & 00800000
+    Read at 05F4 in func daWindTag::daWindTag_c::CreateInit( (void))
+    Read at 13AC in func daWindTag::daWindTag_c::_execute( (void))
+    Read at 151C in func daWindTag::daWindTag_c::_execute( (void))
+  params & FF000000
+    Read at 05BC in func daWindTag::daWindTag_c::CreateInit( (void))
+  aux_params_2 & 000F
+    Read at 0504 in func daWindTag::daWindTag_c::CreateInit( (void))
+  aux_params_2 & 00F0
+    Read at 04E4 in func daWindTag::daWindTag_c::CreateInit( (void))
+
+d_a_wz:
+  Actor names: wiz_r, wiz_s, wiz_m, wiz_o
+  params & 000000FF
+    Read at 69BC in func daWZ_Create(fopAc_ac_c *)
+  params & 0000FF00
+    Read at 69C4 in func daWZ_Create(fopAc_ac_c *)
+  params & 00FF0000
+    Read at 69D0 in func daWZ_Create(fopAc_ac_c *)
+  params & FF000000
+    Read at 69DC in func daWZ_Create(fopAc_ac_c *)
+  aux_params_2 & 00FF
+    Read at 69E8 in func daWZ_Create(fopAc_ac_c *)
+
+d_a_ygcwp:
+  Actor names: Ygcwp
+  params & 0000000F
+    Read at 03D0 in func daYgcwp_c::_create(void)
+
+d_a_ykgr:
+  Actor names: YkgrON, YkgrOFF
+  params & 0000FF00
+    Read at 056C in func daYkgr_c::_create(void)
+  params & 00F00000
+    Read at 0540 in func daYkgr_c::_create(void)
+
+d_a_yougan:
+  Actor names: yg_awa
+
+f_pc_profile_lst:
+  Actor names: 
+
