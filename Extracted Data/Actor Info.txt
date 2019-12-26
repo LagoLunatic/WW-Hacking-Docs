@@ -823,3 +823,18 @@ Arrow_l:   ID 01E0,   Subtype FF,   Unknown 00,   REL d_a_arrow_lighteff
   Vrbox:   ID 01BA,   Subtype FF,   Unknown 00,   REL [none]
  Vrbox2:   ID 01BB,   Subtype FF,   Unknown 00,   REL [none]
 EndCode:   ID 0007,   Subtype FF,   Unknown 00,   REL [none]
+ [none]:   ID 0065,   Subtype [],   Unknown [],   REL d_a_shand
+ [none]:   ID 00AE,   Subtype [],   Unknown [],   REL d_a_pirate_flag
+ [none]:   ID 00B8,   Subtype [],   Unknown [],   REL d_a_hitobj
+ [none]:   ID 00C1,   Subtype [],   Unknown [],   REL d_a_mant
+ [none]:   ID 00DC,   Subtype [],   Unknown [],   REL d_a_bwdg
+ [none]:   ID 00ED,   Subtype [],   Unknown [],   REL d_a_bmdhand
+ [none]:   ID 00EE,   Subtype [],   Unknown [],   REL d_a_bmdfoot
+ [none]:   ID 00F4,   Subtype [],   Unknown [],   REL d_a_fgmahou
+ [none]:   ID 00F6,   Subtype [],   Unknown [],   REL d_a_bgn2
+ [none]:   ID 00F7,   Subtype [],   Unknown [],   REL d_a_bgn3
+ [none]:   ID 0112,   Subtype [],   Unknown [],   REL d_a_obj_mmrr
+ [none]:   ID 01C1,   Subtype [],   Unknown [],   REL d_a_title
+ [none]:   ID 01C6,   Subtype [],   Unknown [],   REL d_a_att
+ [none]:   ID 01D7,   Subtype [],   Unknown [],   REL d_a_obj_buoyflag
+ [none]:   ID 01D9,   Subtype [],   Unknown [],   REL d_a_obj_eff
