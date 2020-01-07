@@ -33,10 +33,11 @@ fopAcM_orderOtherEvent2__FP10fopAc_ac_cPcUsUs
   argument r4 is a pointer to a string which is the event name.
 
 getEventIdx__16dEvent_manager_cFPCcUc
-  gets the index of an event in the event_list.dat based on its name
+  gets the index of an event in the event_list.dat based on its name (or its EVNT index)
+  it will try to find the event with the given EVNT index first, and fall back to the name if the EVNT index is invalid
   r3 - pointer to 803C9ED4?
   r4 - pointer to the event name string
-  r5 - 0xFF
+  r5 - EVNT index
 
 finish_check__12dEvDtEvent_cFv
   checks if an event should end based on its flags.
@@ -85,10 +86,6 @@ check_itemno
   This takes a consumable item ID as an argument, and returns what consumable ID should actually be created.
   For example, if the item given is a spoil, but the player doesn't have the Spoils Bag, then it will return 1 (Green Rupee) instead, replacing all spoils with green rupees.
   It does this for: arrows, bombs, bait, and spoils.
-
-fopAcM_createItem
-  argument r7 - affects the item's gravity. 3 means it's affected by gravity. 1 means it's not.
-  argument r9 - the SFX to play?
 
 GroundCheck
   checks if an object hit the ground and sets y vel to 0 if so
@@ -450,7 +447,10 @@ dComIfGp_setNextStage__FPCcsScScfUliSc
   f1 - 
   r7 - 
   r8 - 
-  r9 - 
+  r9 - wipe type, affects the screen fade out type
+    0 - fade whole screen to white
+    1 - fade whole screen to black
+    B - fade letterboxed part of the screen to white (not the black borders at the top and bottom)
 
 init__20dSeaFightGame_info_cFii
 put_ship__20dSeaFightGame_info_cFUcUc
@@ -689,6 +689,15 @@ PSMTXMultVec
   r4 - vector3 of floats?
   r5 - vector3 of floats (output)
 
+PSMTXCopy
+  r3 - matrix
+  r4 - matrix (output)
+
+MtxPosition(cXyz *, cXyz *)
+  translates the last used matrix (803F63A0 calc_mtx) by an offset?
+  r3 - vector3 of floats (offset?)
+  r4 - vector3 of floats (output)
+
 
 setScene__11JAIZelBasicFllll
   sets the music for the next stage/room the player is about to go into?
@@ -909,3 +918,44 @@ createRoomScene__Fi
 ChkGrpInf__4dBgSFR13cBgS_PolyInfoUl
   gets group info for a group from a dzb file
   802472ec
+
+
+GFSetArray(_GXAttr, void *, unsigned char)
+  part of drawing a procedural model with its data compiled into the code (e.g. grass, flowers, cape)
+  r3 - the type of data to set. (_GXAttr enum) values according to noclip.website's code:
+  (9, 10, 11, and 13 are the ones most relevant here)
+    PNMTXIDX = 0,
+    TEX0MTXIDX = 1,
+    TEX1MTXIDX = 2,
+    TEX2MTXIDX = 3,
+    TEX3MTXIDX = 4,
+    TEX4MTXIDX = 5,
+    TEX5MTXIDX = 6,
+    TEX6MTXIDX = 7,
+    TEX7MTXIDX = 8,
+    POS = 9,
+    NRM = 10,
+    CLR0 = 11,
+    CLR1 = 12,
+    TEX0 = 13,
+    TEX1 = 14,
+    TEX2 = 15,
+    TEX3 = 16,
+    TEX4 = 17,
+    TEX5 = 18,
+    TEX6 = 19,
+    TEX7 = 20,
+    MAX = TEX7,
+    NBT = 25,
+    NULL = 0xFF,
+  r4 - pointer to the data
+
+mDoExt_3DlineMat0_c::update(unsigned short, float, _GXColor &, unsigned short, dKy_tevstr_c *)
+mDoExt_3DlineMatSortPacket::setMat(mDoExt_3DlineMat_c *)
+  these functions are related to drawing line-objects, such as the strings on the stalfos's hat.
+
+fopAcM_setGbaName
+  r4 - item ID
+  r5 - gbaName to use if the player does not have the item
+  r6 - gbaName to use if the player has the item
+

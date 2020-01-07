@@ -1,6 +1,7 @@
 
 Format of entities in RAM:
 
+fopAcM_prm_class (created and returned by f_op_actor_mng::fopAcM_CreateAppend)
 000,4: Parameters.
 004,4: ID of this specific entity?
   This entity can be found by calling fopAcM_SearchByID__FUiPP10fopAc_ac_c with r3=this ID?
@@ -11,7 +12,7 @@ Format of entities in RAM:
 018,1: X scale.
 019,1: Y scale.
 01A,1: Z scale.
-01B,1: Actor unknown value 0xB
+01B,1: Actor GBA type.
 020,1: Actor subtype index.
 021,1: Room index.
 03C,4: ID of this specific entity?
@@ -19,16 +20,21 @@ Format of entities in RAM:
 048,4: Pointer to a callback function?
 04C,4: Pointer to a callback function?
 
-fopAc_ac_c (entity created by createAppend):
+fopAc_ac_c (entity created by f_op_actor_mng::createAppend):
+Size: 0x290 bytes.
 008,2: Actor ID.
 0B0,4: Parameters.
 0EC,4: Pointer to something in the loaded REL file for this entity?
   Go to this pointer+8, and read the pointer there. That has a pointer to the execute code for this entity.
-0F0,4: Pointer to the game heap memory allocated for this entity by fopAcM_entrySolidHeap?
+0F0,4: Pointer to the game heap memory allocated for this entity by fopAcM_entrySolidHeap? (instance of JKRHeap)
   This pointer is 0x10 bytes after the start of the free space block that was chosen for this entity.
 1BC,2: "Enemy number" from the ACTR data
 1C1,1: Actor subtype index.
-1C2,1: Actor unknown value 0xB
+1C2,1: Actor GBA type.
+1C4,4: Bitfield?
+  & 00000020 - should be drawn on minimap
+  & 00000100 - used by miniblins
+  & 04000000 - Is a boss or mini-boss (?)
 1D0,4: Desired X pos to gradually move towards...?
 1D4,4: Desired Y pos to gradually move towards...?
 1D8,4: Desired Z pos to gradually move towards...?
@@ -61,6 +67,17 @@ fopAc_ac_c (entity created by createAppend):
 25C,4: Terminal velocity. (Minimum Y velocity.)
 284,1: Max HP.
 285,1: Current HP.
+
+enemyice (passed to enemy_ice(enemyice *) for enemy status effect handling):
+004,2: Total number of frames the enemy should stay frozen.
+  The enemy's code sets this value when hit by ice arrows, then enemy_ice(enemyice *) sees that, resets this value to zero, and sets 00E,2 to this value instead.
+006,1: Number of frames this enemy has been dying to light arrows so far.
+  The enemy's code sets this value to 1 when hit by light arrows, then enemy_ice(enemyice *) increases it by 1 per frame.
+00E,2: Number of frames left the enemy should stay frozen.
+  enemy_ice(enemyice *) decreases this by 1 per frame.
+1B1,1: Death switch index.
+
+???:
 328,4: Pointer to the entity's model data?
   In the model data, the pointer at offset 2C points to the model's list of joints?
   8153AC58 - list of joints for link
@@ -81,6 +98,7 @@ For item entities:
     read at 800F8568
     read at 800F8684 for a switch statement
 669,1: bitfield?
+66B,1: maybe the item's current state?
 
 For treasure chest entities:
 3F0,2: Bitfield.
@@ -91,7 +109,7 @@ For treasure chest entities:
   F - For tingle statue chests. This special value means the chest will not appear on the dungeon map with the compass until you have revealed the chest.
 
 For the player:
-290,1: This is related to whether the player is currently attacking?
+290,1: The player's current attack state.
   0 - Not attacking
   1 - Attacking with sword while locked on
   4 - Attacking with sword while not locked on
@@ -118,22 +136,34 @@ For the player:
 For enemies:
 [Varies]+14,1: Damage for this enemy to do.
   [Varies] depends on the enemy. To determine what it is for a particular enemy, find where it calls 80242D04 and check r4. That has the varying pointer.
+  The [Varies] seems to be an instance of cCcD_Obj
 
 For weapons:
 010,4: Bitfield of damage types this weapon does.
   00000002 - Sword.
+  00000008 - Enemy weapon wielded by an enemy?
   00000020 - Bombs.
   00000040 - Boomerang.
+  00000080 - Boko stick.
   00000100 - ? (checked by bomb flowers, boko sticks)
-  00000200 - ? (checked by warp pots)
+  00000200 - fire? (checked by warp pots, wooden fences) (on for red bubbles)
+  00000400 - Bokoblin scimitar.
+  00000800 - ? (winged mothulas do this type of damage)
   00004000 - Normal arrows.
   00008000 - Hookshot.
-  00010000 - Skull hammer.
-  00020000 - ? (checked by warp pots)
+  00010000 - Skull hammer. (also Darknut sword, while wielded by a Darknut?)
+  00020000 - ? (checked by warp pots, wooden fences)
   00040000 - Fire arrows.
   00080000 - Ice arrows.
   00100000 - Light arrows.
+  00200000 - Deku Leaf's wind.
+  00400000 - Maybe another type of wind?
+  01000000 - Stalfos mace.
+  04000000 - Darknut sword.
   08000000 - Grappling hook.
+  10000000 - Moblin spear.
+  20000000 - Phantom Ganon sword.
+  These weapon entities seem to be instances of cCcD_Obj as well
 
 For the enemy HP bar entity:
 58C,4: Width of the red HP bar? In pixels, maybe?

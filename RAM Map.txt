@@ -67,7 +67,8 @@
   00,2: Actor ID. This is the ID mentioned in list 80372818.
   02,2: Padding (always 0x0000).
   04,4: Pointer to the rel filename.
-80372818-80374EC3 - Actor info. This is a mapping of ACTR names to the data corresponding to that name.
+80372818-80374EC3 - Actor info. (l_objectName)
+  This is a mapping of ACTR names to the data corresponding to that name.
   Entry length 0xC.
   Total entries: 0x339.
   00,8: ACTR name.
@@ -182,7 +183,12 @@ Format of each block of memory in the game heap:
   00,1: ? this is an integer but gets converted to a float before being used by setShadow.
   01,1: Y offset.
   02,1: Radius. This affects how close to the player the item needs to be for it to be picked up. 
-  03,1: Whether this item has a time limit before fading out or not. 00 to fade out, 01 to never fade out.
+  03,1: Bitfield.
+    & 01 - This item does not fade out and disappear after a time limit.
+    & 02 - Item is permanently deactivated.
+      It acts the same as if the item has an activation switch that isn't set yet where it can't be picked up, except it never activates from a switch.
+    & 04 - Set for small and big keys, but seems to never be read by code?
+    & 10 - Shadow related. Call dComIfGd_setShadow instead of dComIfGd_setSimpleShadow2?
 803886B0 - Item special effect info.
   Entry length 4. Index is an item ID. (Not all items have entries here. It only goes from item 00 to item 80.)
   00,2: Which special effect?
@@ -805,6 +811,10 @@ Player's partner's room restart position? ("restart option")
 803CA754,4 - Always has a pointer to the Link entity in RAM.
 803CA758,4 - Always has a pointer to the partner??? like Medli
 803CA75C,4 - Always has a pointer to the ship entity in RAM (KoRL).
+
+803CA7D7,1 - Related to what the player is currently L-targeting?
+  02 - An NPC?
+  1A - An enemy
 
 803CA7FF,1 - Affects which place name is shown?
   e.g. if a MESSAGE actor is given a TELOP_ON action with tlpNo=0xD, it will show "Dragon Roost Cavern" on the screen as the place name.

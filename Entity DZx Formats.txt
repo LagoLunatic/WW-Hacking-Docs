@@ -121,6 +121,9 @@ item: A field item lying on the ground. (no REL file, item code is part of the c
   params & 0xFC000000 - Item action.
     Known possible values:
     5 - The item makes a ding sound effect
+  aux_params_2 & 0x00FF - Activation switch index.
+    The item will be visible and animated, but can't be picked up and will not start to fade out until this switch is set.
+    Used for a rupee inside a block of ice in the vanilla game to make it only activate once the ice is melted.
 itemDek: The Deku Leaf spawned on one of the Deku Tree's branches. (d_a_deku_item)
   params & 0x000000FF - The item pickup flag to set.
 BFlower, VbakH: Bomb flowers. (d_a_bflower)
@@ -162,6 +165,20 @@ Mori1: Gate of wooden columns. (d_a_mdoor)
   FFFF012D
 VmcBS: Dirt patch Makar can plant a seed in. (d_a_obj_vmc)
   params & 0x0000FF00 - Switch index
+AND_SW0: A switch AND operator. (d_a_andsw0)
+  params & 000000FF - Number of switches to check, sequentially starting at the first switch index to check.
+    If this number is FF, it's a special case for the Forest of Fairies.
+  params & 0000FF00 - Behavior type.
+    00 - Normal. Once all switches to check have been set, it sets the switch index to set.
+    01, FF - Once all the switches have been set, it continuously checks for one to be unset, and unsets switch_index when that happens, then goes back to checking for all switches to be set again.
+    02 - Checks for any one of the switches to check being set, then starts a timer. If all of the remaining switches to check are set within that time limit, the switch to set is set. If not, all the switches to check are unset.
+    03 - Waits 0d65 frames after the switches it checks are set before setting switch_index.
+  params & 00FF0000 - First switch index to check.
+    If this is 00, the first switch index to check is considered to be switch_index_to_set+1.
+  params & FF000000 - Switch index to set.
+  aux_params_1 & 00FF - The event index to start once the switch has been set. Index in this stage's EVNT list.
+    Read at 0AC8 in func daAndsw0_Create(fopAc_ac_c *)
+  aux_params_2 & 00FF - For behavior type 02, this times 0d15 is the time limit in frames within the player must set all of the switches to check, starting at the moment they set the first switch.
 AND_SW2: A switch AND operator. It checks multiple sequential switches, and once all of them are set it sets another switch of its own. (d_a_andsw2)
   params & 0x000000FF - Number of switches to check. (Sequentially, starting from the first specified switch index.)
   params & 0x0000FF00 - Type?
@@ -243,6 +260,10 @@ kotubo, ootubo1, Odokuro: Pot/skull. (d_a_tsubo)
     If in the range 20-3F:
       Subtract 0x20 from this parameter to get the index in the random item table. https://wiki.cloudmodding.com/tww/ItemTable.bin
   params & 0x00003F00 - 
+    01 - Has 1 Boko Stick in it.
+    02 - Has 2 Boko Sticks in it.
+    03 - Has 3 Boko Sticks in it.
+    3F - Normal.
   params & 0x0000C000 - 
   params & 0x007F0000 - Item pickup flag for the item spawned.
   params & 0x0F000000 - Type.
@@ -268,7 +289,11 @@ kotubo, ootubo1, Odokuro: Pot/skull. (d_a_tsubo)
   707FFF16 - small pot that drops fairy
   7106FF1F - large pot that drops joy pendant only one time
   757FC03F - skull on the middle island of forest haven that appears when you place a tingle bomb. drops no item.
-Ksaku: Weak boarded up wall, can be destroyed with normal sword. (d_a_saku)
+Ksaku, Dsaku: Boarded up wall/fence. (d_a_saku)
+  params & 0x0000000F - 
+  params & 0x000000F0 - Type.
+    0 - Weak one that can be destroyed with a normal sword. (Ksaku)
+    1 - Strong one. (Dsaku)
   params & 0x0000FF00 - Switch index for the bottom half being destroyed.
   params & 0x00FF0000 - Switch index for the top half being destroyed.
 Piwa: Stone tablet with writing on it. (d_a_obj_paper)
@@ -349,11 +374,13 @@ Warpt, Warpnt: One-way warp pot that only works within a single room. (d_a_obj_w
       aux_params: 07 08
       aux_params_2: 0000
 wiz_r: Wizzrobe. (d_a_wz)
-  params & 0x000000FF - Type.
+  params & 0x000000FF - Behavior type.
     00 - Shoots fireballs.
     01 - Spawns enemies and shoots fireballs.
-    02 - Defaults to 01 instead.
-    03 - 
+    02 - Mini-boss Wizzrobe.
+      Behaves similar to type 1.
+    03 - ?
+      Behaves similar to type 0.
     0C - Spawner orb? white orb that actually spawns the enemies
     0D - Spawner orb? white orb that actually spawns the enemies
     FF - Defaults to 00 instead.
@@ -770,11 +797,11 @@ Puti: Miniblin. (d_a_pt)
   params & 0x0000FF00 - This number multiplied by 100.0 is the range within it will notice you and become active.
     00 and FF do not default to anything.
     Miniblins that haven't activated yet are invincible - so Miniblins with a range of 00 can never be killed for example.
-  params & 0x00FF0000 - Disable respawning switch.
+  params & 0x00FF0000 - Disable respawning switch / set on non-respawning death switch.
     Once something sets this switch, respawning Miniblins will not respawn anymore.
-    If this switch index is valid and this is NOT a respawning Miniblin but a single one, it doesn't work properly.
+    If this switch index is a valid permanent switch and this is NOT a respawning Miniblin but a single one, it doesn't work properly.
     The single Miniblin is coded to set this switch when it dies unlike the respawning Miniblin, but this switch being set doesn't disable its spawn when you exit and re-enter the room. So the single Miniblin just winds up being permanently deactivated and unkillable (and may be invisible too depending on params & 0x00000010).
-    Though if you use a temporary switch here instead of a permanent mem bit, you can use this just fine to have the single Miniblin set it when it dies to activate something else.
+    But if you use a temporary switch here instead of a permanent mem bit, you can use this just fine to have the single Miniblin set it when it dies to activate something else.
   params & 0xFF000000 - Enable spawn switch.
     But there's also some weird case where it will set this switch itself...? If some static variable at 6146 in the rel is nonzero? Not sure if that behavior is actually used.
     Read at 49D0 in func daPt_Create(fopAc_ac_c *)
@@ -808,8 +835,10 @@ pow: Poe. (d_a_pw)
     00 - The Poe and its lantern are both visible from the start. The Poe starts wandering around on its own even before it notices the player.
     01 - Both the Poe and its lantern are invisible at first, but become visible when the player gets close.
     02 - At first the Poe is invisible but the lantern is visible. The Poe becomes visible when the player gets close.
-    03 - Poe does not appear at all? These are spawned by Jalhalla.
-    04 - Poe does not appear at all? These are spawned by Jalhalla.
+    03 - Jalhalla spawned Poe.
+    04 - Jalhalla spawned Poe.
+      Types 03 and 04 do not appear when placed in a level, they need to be created by fopAcM_createChild so they have have Jalhalla's entity ID available as their parent ID.
+      Also, I'm not sure how 03 and 04 are different from each other.
     FF - Defaults to 00 instead.
     If the value located at 803E75AA,2 is not 0, this value will be forcibly changed to (value at 803E75AA,2 minus 1).
   params & 0x00000100 - How it floats.
@@ -833,6 +862,21 @@ pow: Poe. (d_a_pw)
     FF000003
     FF000004
     Except the color param, which is a random number from 0-4 for the first Poe spawned, and then increases by 1 for each Poe after, looping back to 0 after it goes past 5.
+big_pow: Jalhalla. (d_a_bpw)
+  params & 0x000000FF - Type.
+    00 - Jalhalla.
+    01 - Jalhalla's lantern.
+    02 - Jalhalla's flame breath.
+    03+ - Curse effect over Link's head.
+    FF - Defaults to 00 instead.
+  params & 0x0000FF00 - 
+    00 - 
+    01 - 
+    FF - Defaults to 00 instead.
+  params & 0x00FF0000 - Switch index?
+    Jalhalla sets this switch, this switch +1, and this switch +2 in light_on_off.
+  aux_params_1 & FFFF - X rotation.
+  aux_params_2 & FFFF - Z rotation.
 Ls1: Aryll. (d_a_npc_ls1)
   params & 0x000000FF - Type.
     00 - On her lookout, after you have Hero's Clothes
@@ -1065,7 +1109,7 @@ Stal: Stalfos. (d_a_st)
     3 - Standing inside a vertical coffin.
     4-D - Normal.
     E - Upper half of a Stalfos body only.
-      Unused ingame.
+      Never placed directly in the vanilla game.
     F - Normal.
     Read at 8CCC in func daSt_Create(fopAc_ac_c *)
   params & 0000FF00 - When underground or in a coffin, this number multiplied by 10.0 is the range within it will notice the player and come out.
@@ -1154,6 +1198,19 @@ LTag0, LTag1, LTagR0: Light ray. (d_a_tag_light)
     Read at 0AAC in func daTagLight::Act_c::chk_sch( const(void))
   aux_params & FFFF - X rotation.
   aux_params_2 & FFFF - Z rotation.
+Sitem: Nut hanging from a vine on the ceiling. (d_a_sitem)
+  params & 000000FF - Type of nut.
+    00 - Normal nut.
+    01 - Spiky nut.
+    02 - Acorn.
+    Read at 2B30 in func daSitem_Create(fopAc_ac_c *)
+  params & 0000FF00
+    Read at 2B4C in func daSitem_Create(fopAc_ac_c *)
+  params & 00FF0000
+    Read at 2B8C in func daSitem_Create(fopAc_ac_c *)
+  params & FF000000
+    Read at 2B6C in func daSitem_Create(fopAc_ac_c *)
+Kmon: Knight's Crest on Orca's shelf. (d_a_kmon)
 
 ### SCOB:
 Salvage: Main salvages that require a chart to see.
@@ -1187,7 +1244,7 @@ TagEv: This object acts as a trigger region to cause an event to occur. (d_a_tag
     07 - 
       Event works correctly if the player hits it while coming out of a door. (Sets bit 0001 of bitfield 803C9EC8,2.) (cancelShutter)
     08 - 
-    09 - 
+    09 - gets a password?
     0A - 
     0B - MjReady
     0C - Ignores the event bit param at aux_params_2 & FFFF, it won't matter if that event bit is set or not.
