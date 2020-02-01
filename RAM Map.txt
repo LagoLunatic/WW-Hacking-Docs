@@ -103,7 +103,7 @@ g_fopAcTg_Queue:
     4 - This item requires an empty bottle.
     5 - This item costs rupees to buy.
   0D,3: Padding.
-80375FBC-80376263 - Shop item set data.
+80375FBC-80376263 (372FBC in main.dol) - Shop item set data.
   Entry length 0x14.
   00,4: Pointer to the shop item data for this item. (In list 80375E1C.)
   04,4: Message ID shown when you select this item in the shop.
@@ -781,6 +781,8 @@ Player's partner's room restart position? ("restart option")
 
 803C9DF0,2 - Has the event index of the next event about to be started.
 
+803C9ED4 - Event manager start.
+
 803C9EA0,1 - related to events
 803C9EA1,1 - related to events
 803C9EA2,1 - related to events
@@ -809,7 +811,7 @@ Player's partner's room restart position? ("restart option")
 803CA74C,4 - Always has a pointer to the player entity in RAM.
   This refers not only to Link, but to Medli/Makar/Tower Servant/seagull when you're controlling them.
 803CA754,4 - Always has a pointer to the Link entity in RAM.
-803CA758,4 - Always has a pointer to the partner??? like Medli
+803CA758,4 - Always has a pointer to the player's partner entity in RAM (e.g. Medli).
 803CA75C,4 - Always has a pointer to the ship entity in RAM (KoRL).
 
 803CA7D7,1 - Related to what the player is currently L-targeting?

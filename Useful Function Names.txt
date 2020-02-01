@@ -18,6 +18,15 @@ endProc__16dEvent_manager_c
   ends an event
   breakpoint on 80074134 and look in r3 for a pointer to the event
 
+getMyActIdx__16dEvent_manager_cFiPCPCciii
+  r3 - Pointer to the event manager (803C9ED4).
+  r4 - ? read from the entity
+  r5 - Pointer to a list of pointers to valid action names for this entity.
+  r6 - Number of actions in the list?
+  r7 - 1?
+  r8 - 0?
+  Returns the action index that this entity should execute next.
+
 fopAcM_orderOtherEventId__FP10fopAc_ac_csUcUsUsUs
   this is what really starts an event.
   if you go up a call from here, you'll get whatever actor really started the event.
@@ -35,7 +44,7 @@ fopAcM_orderOtherEvent2__FP10fopAc_ac_cPcUsUs
 getEventIdx__16dEvent_manager_cFPCcUc
   gets the index of an event in the event_list.dat based on its name (or its EVNT index)
   it will try to find the event with the given EVNT index first, and fall back to the name if the EVNT index is invalid
-  r3 - pointer to 803C9ED4?
+  r3 - Pointer to the event manager (803C9ED4).
   r4 - pointer to the event name string
   r5 - EVNT index
 
@@ -137,9 +146,8 @@ fopAcM_fastCreateItem__FP4cXyziiP5csXyzP4cXyzfffiPFPv_i
   r5 - room index to create the item in
   r6 - rotation (pointer to a vector3 of shorts (csXyz))
   r7 - scale from entity RAM format (pointer to a vector3 (cXyz))
-  f1 - ??? float
+  f1 - speed
     stored to entity+254
-    speed?
   f2 - ??? float
     stored to entity+224
     y velocity? upward momentum?
@@ -617,7 +625,7 @@ drawPointSingle__6dMap_cFUcfffScsUcUcUc
 
 __ct__14mDoExt_McaMorfFP12J3DModelDataP25mDoExt_McaMorfCallBack1_cP25mDoExt_McaMorfCallBack2_cP15J3DAnmTransformifiiiPvUlUl
 mDoExt_McaMorf::__ct(J3DModelData *, mDoExt_McaMorfCallBack1_c *, mDoExt_McaMorfCallBack2_c *, J3DAnmTransform *, int, float, int, int, int, void *, unsigned long, unsigned long)
-  creates a J3D model?
+  creates a BCK/BCA animation
   r3 - 
   r4 - 
   r5 - model resource
@@ -959,3 +967,35 @@ fopAcM_setGbaName
   r5 - gbaName to use if the player does not have the item
   r6 - gbaName to use if the player has the item
 
+
+fopAcIt_Judge(void *(*)(void *, void *), void *)
+  This function searches through all actors that currently exist, and returns a pointer to the first one that matches some criteria, or it returns 0 if no actor does.
+  r3 - Pointer to a callback function that checks whether a given actor meets the criteria or not.
+    The callback function should take the following arguments:
+      r3 - The actor that is currently being checked by fopAcIt_Judge.
+      r4 - The pointer to some custom data that was passed as argument r4 to fopAcIt_Judge.
+  r4 - A pointer to some custom data to be used to check if an actor meets the criteria or not.
+  An example of a function that can be passed as r3 is fpcSch_JudgeByID(void *, void *) - refer to that for an example.
+
+fpcSch_JudgeByID(void *, void *)
+  A callback function that can be passed to fopAcIt_Judge for checking if an actor has a certain unique ID.
+  r3 - The actor that is currently being checked by fopAcIt_Judge.
+  r4 - A pointer to the unique ID to check for.
+  For example you can do this:
+    li      r0,1234            ; Unique ID to find the actor for
+    stw     r0,32(r1)
+    lis     r3,0x80040068@ha   ; fpcSch_JudgeByID(void *, void *)
+    addi    r3,r3,0x80040068@l ; fpcSch_JudgeByID(void *, void *)
+    addi    r4,r1,32
+    bl      0x80023FB4         ; fopAcIt_Judge(void *(*)(void *, void *), void *)
+  The above code will get a pointer to the actor with unique ID 1234, or 0 if said actor doesn't exist.
+
+fopAcM_SearchByID(unsigned int, fopAc_ac_c **)
+  This function checks if an actor with a given unique ID currently exists or not.
+  r3 - The unique ID to check for.
+  r4 - A pointer to where to store the pointer to the actor.
+  This function returns r3 - a boolean for whether the actor exists or not.
+  This function is similar to calling fopAcIt_Judge with fpcSch_JudgeByID, but there's one major difference:
+  If fopAcIt_Judge can't find the actor, it will just return 0.
+  If fopAcM_SearchByID can't find the actor, it will put 0 at where r4 points to, but if the actor is in the process of being asynchronously created and simply doesn't exist YET, it will still return true, not false.
+  This is very useful when you need to know if the actor hasn't spawned in yet, or if it used to exist but was deleted.

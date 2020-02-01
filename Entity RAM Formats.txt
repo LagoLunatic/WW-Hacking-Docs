@@ -3,8 +3,6 @@ Format of entities in RAM:
 
 fopAcM_prm_class (created and returned by f_op_actor_mng::fopAcM_CreateAppend)
 000,4: Parameters.
-004,4: ID of this specific entity?
-  This entity can be found by calling fopAcM_SearchByID__FUiPP10fopAc_ac_c with r3=this ID?
 010,2: Auxilary parameter.
 012,2: Y rotation.
 014,2: Auxilary parameter 2.
@@ -15,13 +13,15 @@ fopAcM_prm_class (created and returned by f_op_actor_mng::fopAcM_CreateAppend)
 01B,1: Actor GBA type.
 020,1: Actor subtype index.
 021,1: Room index.
-03C,4: ID of this specific entity?
-  This entity can be found by calling fopAcM_SearchByID__FUiPP10fopAc_ac_c with r3=this ID?
+03C,4: Unique ID of this specific entity instance.
+  This entity can be found by calling fopAcM_SearchByID__FUiPP10fopAc_ac_c with r3=this ID.
 048,4: Pointer to a callback function?
 04C,4: Pointer to a callback function?
 
 fopAc_ac_c (entity created by f_op_actor_mng::createAppend):
 Size: 0x290 bytes.
+004,4: Unique ID of this specific entity instance.
+  This entity can be found by calling fopAcM_SearchByID__FUiPP10fopAc_ac_c with r3=this ID.
 008,2: Actor ID.
 0B0,4: Parameters.
 0EC,4: Pointer to something in the loaded REL file for this entity?
@@ -62,7 +62,8 @@ Size: 0x290 bytes.
 220,4: X velocity.
 224,4: Y velocity.
 228,4: Z velocity.
-254,4: Current speed?
+254,4: Forward velocity.
+  fopAcM_calcSpeed uses this value and the Y rotation value at 206,2 to calculate what this actor's X and Z velocity should be.
 258,4: Gravity.
 25C,4: Terminal velocity. (Minimum Y velocity.)
 284,1: Max HP.
@@ -128,7 +129,7 @@ For the player:
   00-FF - The item ID of the item.
   0100 - No item.
   010B - ?
-3562,2: Item in hand, same as above? Not sure how it's different.
+3562,2: Item in hand like above, but when throwing the boomerang this value will still have the boomerang's ID in it, while the above will not.
 3584,4: "AttributeCode"? seems to be something from the level polygon that the player is currently standing on.
   called "Attrib ID" in DZB-i-Fy
   related to taking damage from lava maybe? This is passed as argument r5 to checkLavaFace (but only when the value is 6 or 8?)

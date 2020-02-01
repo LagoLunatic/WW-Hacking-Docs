@@ -485,7 +485,7 @@ gmos, gmos_g, gmos_f: Mothulas. (d_a_gm)
     Read at 8030 in func daGM_Create(fopAc_ac_c *)
   params & FF000000 - Disable spawn on death switch.
     FF - Invalid.
-  aux_params_2 & 00FF - If 00, do not set switch at params & FF00000, even if it is valid.
+  aux_params_2 & 00FF - If 00, do not set switch at params & FF000000, even if it is valid.
 Hmos1, Hmos2, Hmos3: Beamos and laser barriers. (d_a_obj_bemos)
   params & 000000FF - Varies depending on the type of Beamos.
     For Red and Blue Beamos: This number multiplied by 100.0 plus 500.0 is the range within it will notice the player and start firing its laser.
@@ -1258,20 +1258,20 @@ TagEv: This object acts as a trigger region to cause an event to occur. (d_a_tag
   params & 0xFF000000 - The event index to start, in this stage's EVNT list.
   aux_params_2 & FFFF - Event bit that must be set for this trigger region to become enabled.
     0000 or FFFF - Invalid, no event bit must be set.
+TagHt, TagHt2: Trigger region for a Pirate's Charm hint. (d_a_tag_hint)
+  params & 0x0000003F - "Type"?
+  params & 0x000000C0 - "Type2"?
+  params & 0x0000FF00 - Switch index to set and check for whether you've already seen this hint event.
+  params & 0x00FF0000 - Another switch index? (Swbit2)
+  params & 0xFF000000 - Event index? (EventNo)
+  aux_params_1 & 0xFFFF - Message ID of the text to show.
+  aux_params_2 & 0xFFFF - Event flag?
 TagKb: Trigger region for having the big pig dig up an item in black soil.
   params & 0x000000FF - Item ID.
   params & 0x0000FF00 - The item pickup flag to set.
 Akabe: Invisible wall. (d_a_obj_akabe)
   params & 0x000000FF - Switch index to check for if this invisible wall should disappear yet.
     FF - Special case that means the invisible wall should disappear when the player owns any sword.
-TagHt, TagHt2: Trigger region for a Pirate's Charm hint. (d_a_tag_hint)
-  params & 0xFF000000 - Event index? (EventNo)
-  params & 0x00FF0000 - Another switch index? (Swbit2)
-  params & 0x0000FF00 - Switch index to set and check for whether you've already seen this hint event.
-  params & 0x0000003F - "Type"?
-  params & 0x000000C0 - "Type2"?
-  aux_params - Message ID of the text to show.
-  aux_params_2 - Event flag?
 agbTBOX: Trigger for a Tingle Chest to appear. (d_a_agbsw0)
 agbA, agbAT, agbA2, agbF, agbF2, agbMARK, agbMW, agbCSW, agbR, agbB, agbD, agbFA: Other Tingle Tuner-related triggers. (d_a_agbsw0)
   params & 0x0000FFFF - ?
