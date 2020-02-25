@@ -28,6 +28,11 @@ Size: 0x290 bytes.
   Go to this pointer+8, and read the pointer there. That has a pointer to the execute code for this entity.
 0F0,4: Pointer to the game heap memory allocated for this entity by fopAcM_entrySolidHeap? (instance of JKRHeap)
   This pointer is 0x10 bytes after the start of the free space block that was chosen for this entity.
+0FC,2: Event index for this actor to trigger.
+18C,8: Color C0
+194,4: Color K0
+198,4: Color K1
+19C,8: Fog color
 1BC,2: "Enemy number" from the ACTR data
 1C1,1: Actor subtype index.
 1C2,1: Actor GBA type.
@@ -64,7 +69,7 @@ Size: 0x290 bytes.
 228,4: Z velocity.
 254,4: Forward velocity.
   fopAcM_calcSpeed uses this value and the Y rotation value at 206,2 to calculate what this actor's X and Z velocity should be.
-258,4: Gravity.
+258,4: Gravity. (Y acceleration.)
 25C,4: Terminal velocity. (Minimum Y velocity.)
 284,1: Max HP.
 285,1: Current HP.
@@ -119,15 +124,26 @@ For the player:
 29C,4: Bitfield
   02000000 - Player is currently wearing the iron boots.
 2A4,4: Bitfield
+  00000080 - ?? maybe about to use an equipped item?
   00200000 - Player's mirror shield is currently reflecting light.
 314,4: The current action index. e.g. 11 (0xB) for 011get_item.
 554,2: The index of the face the player is currently colliding with.
   This is an index in the currently loaded .dzb file's list of faces.
 25BC,4: The player's true speed?
+34C8,1: Bitfield of pressed buttons.
+  01 - A
+  02 - B
+  04 - X
+  08 - Y
+  10 - Z
+  20 - L
+  40 - R
 34D4,2: Rotational velocity? Used by procRopeHangWait_init and procRopeHangWait
 3560,2: What item the player is holding in their hand.
   00-FF - The item ID of the item.
   0100 - No item.
+  0101 - ?
+  0103 - ?
   010B - ?
 3562,2: Item in hand like above, but when throwing the boomerang this value will still have the boomerang's ID in it, while the above will not.
 3584,4: "AttributeCode"? seems to be something from the level polygon that the player is currently standing on.

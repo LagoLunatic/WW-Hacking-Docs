@@ -38,8 +38,12 @@ fopAcM_orderOtherEventId__FP10fopAc_ac_csUcUsUsUs
   r8 - ? (ushort)
 
 fopAcM_orderOtherEvent2__FP10fopAc_ac_cPcUsUs
+fopAcM_orderOtherEvent2(fopAc_ac_c *, char *, unsigned short, unsigned short)
   another option for what really starts an event.
-  argument r4 is a pointer to a string which is the event name.
+  r3 - Pointer to the entity starting the event
+  r4 - Pointer to the event name (string)
+  r5 - 1?
+  r6 - 0xFFFF?
 
 getEventIdx__16dEvent_manager_cFPCcUc
   gets the index of an event in the event_list.dat based on its name (or its EVNT index)
@@ -93,8 +97,11 @@ dComIfGs_isStageBossEnemy__Fi
 
 check_itemno
   This takes a consumable item ID as an argument, and returns what consumable ID should actually be created.
-  For example, if the item given is a spoil, but the player doesn't have the Spoils Bag, then it will return 1 (Green Rupee) instead, replacing all spoils with green rupees.
-  It does this for: arrows, bombs, bait, and spoils.
+  Specifically:
+    Turns arrow refills into green rupees if the player doesn't own any of the three bow items.
+    Turns bomb refills into green rupees if the player doesn't own the bombs item.
+    Turns bait into green rupees if the player doesn't own the bait bag.
+    Turns spoils into green rupees if the player doesn't own the spoils bag.
 
 GroundCheck
   checks if an object hit the ground and sets y vel to 0 if so
@@ -393,6 +400,18 @@ getRes__14dRes_control_cFPCcPCcP11dRes_info_ci
   r6 - ??? 0x40
   returns a pointer to the loaded resource
 
+JASystem::ResArcLoader::getResSize( (JKRArchive *, unsigned short))
+  Returns the filesize of a file in a RARC.
+  r3 - 
+  r4 - File ID of the file.
+
+JKRArchive::readTypeResource(void *, unsigned long, unsigned long, char const *, JKRArchive *)
+  r3 - 
+  r4 - 
+  r5 - The node type to read from (e.g. "TIMG").
+  r6 - 
+  r7 - 
+
 dBgWSv::Set(cBgD_t *, unsigned long)
   sets the collision for an entity by a .dzb file
   r3 - ? read from entity+0x2E8
@@ -599,7 +618,47 @@ setLinkShieldType__11JAIZelBasicFll
     2 - mirror shield
 
 seStart
+JAIZelBasic::seStart(unsigned long, Vec *, unsigned long, signed char, float, float, float, float, unsigned char)
+  Plays a sound effect. The puzzle complete jingle counts as a sound effect.
+  r3 - Pointer to 803A2CE8, which is read from 803F7710 (JAIZelBasic::zel_basic(void))
+  r4 - The sound ID.
+    & 000003FF - The index of the sound in its category.
+    & 00000400 - ?
+    & 00000800 - ?
+    & 000FF000 - Sound category.
+      0-7 - Valid sound categories.
+  r5 - 
+  r6 - 
+  r7 - 
+  f1 - 
+  f2 - 
+  f3 - 
+  f4 - 
+  r8 - 0?
+
+JAIGlobalParameter::getParamSeCategoryMax(void)
+  This can be called to get the number of sound categories that exist (8).
+
+JAInter::SoundTable::getInfoPointer( (unsigned long))
+  Gets a pointer to a sound's info.
+  r3 - The sound ID.
+
+JAIBasic::getSoundOffsetNumberFromID(unsigned long)
+  r3 - (pointer to the something. read from 803F7578)
+  r4 - The sound ID.
+
 bgmStart
+  Starts playing background music. Boss music counts as background music.
+
+bgmNowBattle
+  Starts playing the music for fighting common enemies.
+
+subBgmStart
+  Starts playing "sub" background music. Mini-boss music, whirlpool music, and item get jingles are included in this.
+
+bgmStreamPlay
+  Plays an background music stream? Boss defeat fanfares count as this, maybe other things?
+
 start__Q28JASystem8TSeqCtrlFPvUl
   related to playing audio
 
@@ -608,6 +667,18 @@ adaptor_do_SOUND__Q214JStudio_JAudio14TAdaptor_soundFQ37JStudio4data15TEOperatio
 
 startSoundVec__8JAIBasicFUlPP8JAISoundP3VecUlUlUc
   generic sound (sfx or music) playing function, called by all others
+
+JAIZelBasic::setScene(long, long, long, long)
+  loads necessary audio stuff for a particular stage?
+  r3 - 
+  r4 - The spot ID for this stage.
+  r5 - 
+  r6 - 
+  r7 - 
+  This MIGHT hardcode loading certain things, like some of the instruments for Molgera's fight theme that are only loaded for kazeB.
+  or, maybe the hardcoding is just for UNLOADING them when the boss is dead...?
+
+
 
 onOceanSvBit__11dSv_ocean_cFUcUs
   sets a salvage point as gotten
@@ -801,10 +872,18 @@ fopAcM_cancelCarryNow__FP10fopAc_ac_c
 
 
 fopScnM_ChangeReq__FP11scene_classssUs
-  r3 - scene_class*
-  r4 - short
-  r5 - short
-  r6 - unsigned short
+  Changes the game state.
+  r3 - (scene_class*)
+  r4 - The new game state.
+    6 - Debug map select.
+    7 - Ingame.
+    8 - Title screen.
+    11 - Ending?
+  r5 - Wipe type, affects the screen fade out type.
+    0 - Fade whole screen to white
+    1 - Fade whole screen to black
+    B - Fade letterboxed part of the screen to white (not the black borders at the top and bottom)
+  r6 - (unsigned short)
 
 init__10dSv_info_cFv
   initializes a new save file
@@ -821,7 +900,7 @@ makeItemType__9daPy_lk_cFv
 
 set__13dPa_control_cFUcUsPC4cXyzPC5csXyzPC4cXyzUcP18dPa_levelEcallBackScPC8_GXColorPC8_GXColorPC4cXyz
 dPa_control_c::set(unsigned char, unsigned short, cXyz const *, csXyz const *, cXyz const *, unsigned char, dPa_levelEcallBack *, signed char, _GXColor const *, _GXColor const *, cXyz const *)
-  Initializes a particle effect?
+  Initializes a particle effect.
   r3 - this word is read from from 803CA6CC
   r4 - 0?
   r5 - The particle ID
@@ -835,6 +914,7 @@ dPa_control_c::setSimple(unsigned short, cXyz const *, unsigned char, _GXColor c
   r3 - this word is read from from 803CA6CC
   r4 - The particle ID
   (more args)
+  8007DC64 - breakpoint here to find if there's a missing particle created with setSimple. the particle ID will be inr3.
 
 createSimpleEmitterID__17JPAEmitterManagerFRCQ29JGeometry8TVec3<f>UsUcUcP34JPACallBackBase<P14JPABaseEmitter>P54JPACallBackBase2<P14JPABaseEmitter,P15JPABaseParticle>
   part of initializing a particle effect
@@ -958,6 +1038,11 @@ GFSetArray(_GXAttr, void *, unsigned char)
     NULL = 0xFF,
   r4 - pointer to the data
 
+GXCallDisplayList
+  r3 - pointer to the compiled material data (same format as MDL entries in the MDL3 section of BDL models)
+  r4 - ?
+
+
 mDoExt_3DlineMat0_c::update(unsigned short, float, _GXColor &, unsigned short, dKy_tevstr_c *)
 mDoExt_3DlineMatSortPacket::setMat(mDoExt_3DlineMat_c *)
   these functions are related to drawing line-objects, such as the strings on the stalfos's hat.
@@ -999,3 +1084,13 @@ fopAcM_SearchByID(unsigned int, fopAc_ac_c **)
   If fopAcIt_Judge can't find the actor, it will just return 0.
   If fopAcM_SearchByID can't find the actor, it will put 0 at where r4 points to, but if the actor is in the process of being asynchronously created and simply doesn't exist YET, it will still return true, not false.
   This is very useful when you need to know if the actor hasn't spawned in yet, or if it used to exist but was deleted.
+
+d_s_play::phase_0
+  This handles loading LkD00.arc or LkD01.arc depending on whether event bit 0x2D01 is set or not (for animation set 1 vs 2).
+
+specialProcPackage
+  handles starting an stb cutscene?
+
+dDemo_manager_c::create(unsigned char const *, cXyz *, float)
+  handles starting an stb cutscene?
+  note: if an actor needed for this stb cutscene isn't present in the room, this function will log a warning and give up, the stb cutscene will not start.

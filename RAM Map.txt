@@ -151,28 +151,30 @@ Format of each block of memory in the game heap:
   04,4: Pointer to a string. Filename of the item icon to show in the inventory for this item.
     Item icon textures are stored in: /files/res/Msg/itemicon.arc
   08,2: File ID within the .arc of this item's 3D model.
-  0A,2: texture index?? 5D for rupees, 5B for heart piece, 5C for heart container
+  0A,2: File ID within the .arc of this item's texture animation (BTK).
   0C,2: (equivalent of 08,2 for field items)
-  0E,2: 8 for rupees
+  0E,2: File ID within the .arc of this item's TEV register animation (BRK).
   10,2: (equivalent of 0C,2 for field items)
-  12,2: (equivalent of 0E,2 for field items)
+  12,2: File ID within the .arc of this item's bone animation (BCK)...? TODO check if this is used
   14,1: Keyframe index in the TEV register animation to use.
     This is used for rupees to give them a different color.
     All rupees have the same model and texture, and have the same TEV register animation that simply cycles through all the different colors.
     By pausing the TEV register animation on different keyframes, different rupees have different colors.
+  15,1: Padding?
   16,2: Message ID of the item's name.
     Not sure what this is used for, and not all items have this set.
+  1E,1: ?
   20,2: ?
 803866B0 (3836B0 in main.dol) - List of field item resources. Items that appear freely placed in the world as ACTRs.
   Entry length 0x1C.
   Format:
   00,4: Pointer to a string, the name of the .arc containing this item's field model.
   04,2: File ID within the .arc of this item's 3D model.
-  06,2: texture index?? 5D for rupees, 5B for heart piece, 5C for heart container
+  06,2: File ID within the .arc of this item's texture animation (BTK).
   08,2: 
-  0A,2: 0x51 for rupees
+  0A,2: File ID within the .arc of this item's TEV register animation (BRK).
   0C,2: 
-  0E,2: 
+  0E,2: File ID within the .arc of this item's bone animation (BCK).
   10,1: Keyframe index in the TEV register animation to use.
     This seems unused - the equivalent value in the item resources is instead used even for field items.
   18,2: 
@@ -194,6 +196,12 @@ Format of each block of memory in the game heap:
   00,2: Which special effect?
   02,2: 0x8466 here means no special effect.
 803888C8 (3858C8 in main.dol) - List of item get function pointers.
+
+8038F8E4,??? - List of Link event actions.
+  Entry length 0xC.
+  The index in this list is Link's event action index. e.g. 11 (0xB) for 011get_item.
+  08,04: Pointer to the initialization function for this Link state.
+  Note that this list is just all 00s in main.dol. It's initialized at runtime by __sinit_d_a_player_main_cpp.
 
 8038DDAC,4 - Bitfield of damage types the player's sword should do? maybe?
 80371DD4,4 - Bitfield of damage types for...? skull hammer maybe?
@@ -247,6 +255,9 @@ Format of each block of memory in the game heap:
 803A2F10,4 - Might be what the next scene music to play should be?
   If this is 0, music does not get played on Windfall.
   But if it's 8000003B music does get played on Windfall.
+
+80398B60,40 - Directory name for wave banks.
+  "Audiores/Banks/"
 
 803A2F16,1 - Related to currently playing music...?
 
@@ -469,6 +480,12 @@ Each inventory slot:
 
 803C4D4D - Bitfield of what Triforce charts you've gotten deciphered.
 
+803C4D64,1 - The player's name. "Link" by default.
+  If the first character here is 0x00, the save file is considered nonexistent.
+
+803C4DA8,1 - Whether you're on new game+ or not, boolean.
+  (It might actually be a counter for how many times you've cleared the game on this save? Not sure.)
+
 803C4DA9,1 - Which placement of salvage points to use for this save file.
   This can be from 0 to 3. On a new game it's a random number from 0-2, on new game+ it's always 3.
   Each salvage point has four possible locations. Only the location with the duplicate ID corresponding to this value will show up on a given playthrough.
@@ -689,8 +706,8 @@ Stage info format:
 803C5394,04 - Bitfield of the current stage's item pickup flags.
 803C5398,04 - Bitfield of the current dungeon's visited rooms. (These might also function as item pickup flags too?)
 803C539C - ?
-803C53A0,1 - Number of small keys you currently have in the current dungeon.
-803C53A1,1 - Bitfield of dungeon-specific flags for the current dungeon.
+803C53A0,01 - Number of small keys you currently have in the current dungeon.
+803C53A1,01 - Bitfield of dungeon-specific flags for the current dungeon.
   0 - Got dungeon map.
   1 - Got compass.
   2 - Got big key.
@@ -735,6 +752,7 @@ Player's partner's room restart position? ("restart option")
   how are these different from the above ones at 803C4DB4?
 
 803C5D60 - Another bitfield of event bits.
+  803C5D61  04  Got Cabana Deed??
   803C5D63  10  Got the Hero's Clothes from Grandma.
   803C5D63  08  Saw the first event with the deku tree where chuchus appear on his face.
   803C5D63  04  Knocked the chuchus off deku tree's face.
@@ -751,6 +769,7 @@ Player's partner's room restart position? ("restart option")
 803C9D50,2 - The next spawn ID to spawn the player at.
 803C9D52,1 - The next room ID to spawn the player in.
 803C9D53,1 - The next override layer number to spawn the player in, or FF for none.
+803C9D54,1 - Whether a stage transition should happen right now?
 803C9D58,4 - ?
 
 803C5D5C,4 - Affects how the player is going to spawn in a moment?
@@ -759,6 +778,9 @@ Player's partner's room restart position? ("restart option")
   (there are other valid values here, seems like this is argument r4 to changeSceneExitId)
   Note that spawn on KoRL can freeze the game if KoRL does not exist in the destination stage.
   However, spawn on KoRL is ignored if spawn type is anything other than 5.
+
+803CA778,4 - Current item ID up for bidding at the auction.
+803CA7C0,2 - Message ID for the name of the item currently up for bidding at the auction.
 
 803CA7F8,1 - Song index of the song to display in the message box for the interactive tutorial.
 
@@ -814,9 +836,21 @@ Player's partner's room restart position? ("restart option")
 803CA758,4 - Always has a pointer to the player's partner entity in RAM (e.g. Medli).
 803CA75C,4 - Always has a pointer to the ship entity in RAM (KoRL).
 
-803CA7D7,1 - Related to what the player is currently L-targeting?
-  02 - An NPC?
-  1A - An enemy
+803CA7D7,1 - Related to L-targeting?
+  02 - L-targeting an NPC?
+  04 - ?
+  05 - ?
+  08 - ?
+  0B - ?
+  0C - Holding L and not moving backwards
+  10 - ?
+  12 - Holding L and moving backwards
+  17 - ?
+  1A - L-targeting an enemy? maybe specifically one that can be parried right now?
+  1B - ?
+  1C - ?
+  31 - ?
+  43 - ?
 
 803CA7FF,1 - Affects which place name is shown?
   e.g. if a MESSAGE actor is given a TELOP_ON action with tlpNo=0xD, it will show "Dragon Roost Cavern" on the screen as the place name.
@@ -831,8 +865,10 @@ Player's partner's room restart position? ("restart option")
   Can be negative to damage the player.
 
 803CA77C,2 - Number of small keys to gradually add to the player's current number of small keys in this dungeon.
+803CA77E,2 - Number of heart pieces to gradually add to the player's current life meter.
 803CA780,2 - Amount of MP to gradually add to the player's current magic meter.
 803CA784,2 - Amount of MP to gradually add to the player's maximum magic meter.
+803CA78C,2 - Number of bombs to gradually add to the player's current number of bombs?
 
 803CA7C4,2 - Number of rupees the currently selected shop item costs.
 
@@ -845,6 +881,7 @@ Player's partner's room restart position? ("restart option")
 803C9810,2 - related to heart meter?
 803CA7CC,2 - related to heart meter?
 
+803CA7D5,1 - What is currently shown on the R button icon?
 803CA7D6,1 - What is currently shown on the B button icon.
   07 - "Return"
   35 - Player's current sword (based on the bitfield at 803C4CBC)
@@ -957,12 +994,29 @@ Note: See 80352EA0 for details about the layout of blue fog in a given room of E
 
 803ED818,2 - Bitfield of currently pressed buttons. (For Pad.c)
 803ED848,4 - Bitfield of currently pressed buttons. (For JUTGamePad.cpp)
+  00000001 - D-pad left
+  00000002 - D-pad right
   00000004 - D-pad down
+  00000008 - D-pad up
+  00000010 - Z
+  00000020 - R
+  00000040 - L
+  00000100 - A
+  00000200 - B
+  00000400 - X
+  00000800 - Y
+  00001000 - Start
+803ED84C,4 - Bitfield of buttons pressed this frame. (For JUTGamePad.cpp)
 803F0F30,4 - Bitfield of currently pressed buttons. (For SIBios.c)
 
 803F6A68,4 - Has a pointer to something related to the map select screen maybe?
 
 803F7199,1 - Currently selected arrows index (0-3).
+803FB394 - List of particle IDs for the arrow icons at the top of the screen when you have the bow out.
+  Halfwords.
+  02E1 - Particle ID for fire arrows.
+  02E2 - Particle ID for ice arrows.
+  02EF - Particle ID for light arrows.
 
 803F7338,4 - Part of the current random seed.
 803F733C,4 - Part of the current random seed.
@@ -987,6 +1041,26 @@ Entity deletion queue (g_fpcDtTg_Queue):
 
 8037b630  - dPa_name::j_o_id list of common particles that can be used with setSimple?
 8037b640  - dPa_name::s_o_id list of stage bank particles that can be used with setSimple?
+
+803F7631,1 - The number of sound categories (8).
+803F7634,4 - Has a pointer to a list of how many sounds are in each sound category.
+  Each entry in that list is an unsigned short, the number of sounds in that category.
+  There are 8 categories.
+803F763C,4 - Has a pointer to the sound categories' sound info list.
+  Each entry in that list is a pointer to a list of sound infos.
+  Each sound info has the same format as in the AAF file.
+803F75F4 - Has a pointer to a list of ??? for each sound category.
+  Format of that list:
+    Entry length 0xC.
+    04,04: Maybe a pointer to another sound??? Or 0 for none.
+803F7620 - Has a pointer to to the "seqTrackInfo" list.
+  Format of that list:
+    Entry length 0x50.
+    48,04: Pointer to ???, or 0 for none.
+      The code that reads ??? starts at 8029805C, in storeSeqBuffer.
+      Format of ???:
+        05,01: ???
+        3C,04: Pointer to "SeqParameter"?
 
 803F7988 - Has a pointer to a table of sine values. (jmaSinTable)
   Each entry is a float.

@@ -42,6 +42,8 @@ BSP1 (Base Shape Arc) section format:
   00080000 - EnableAnmTone
   00400000 - ChildOrder
   0000000F - Type
+10,02: Offset to prm color data list.
+12,02: Offset to env color data list.
 14,04: Base size X (float).
 18,04: Base size Y (float).
 1C,02: LoopOffset
@@ -49,10 +51,16 @@ BSP1 (Base Shape Arc) section format:
 20,02: ColLoopOffset
 22,02: TexLoopOffset
 24,01: Bitfield
+  01 - EnableTextureAnm
   02 - EnableGlobalColAnm
 25,01: TextureAnmKeyNum
-60+: List of texture indexes.
+27,01: Bitfield
+  02 - EnablePrmAnm
+28,01: Prm color data count.
+29,01: Env color data count.
+(???): List of texture indexes.
   These are bytes which are indexes in the TDB1's list of texture IDs.
+(varies, optional): List of color animation data.
 
 ESP1 (Extra Shape Arc) section format:
 0C,04: Bitfield

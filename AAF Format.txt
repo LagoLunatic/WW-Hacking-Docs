@@ -1,0 +1,19 @@
+
+Header:
+04,4: Offset within the file to the start of the sound categories list?
+
+Sound categories list:
+06,48: List of metadata for each category.
+  Entry length 4. 0x12 entries in total.
+  00,02: Number of sounds in this category.
+  02,02: Index of the first sound info for this category in the list of all sound infos.
+50+: List of sound infos for all sounds in all categories.
+  Entry length 0x10.
+  00,04: Bitfield of flags?
+    & 00000020 - ?
+    & 00080000 - ?
+  04,01: The sound's priority.
+  05,01: Index in the seqTrackInfo list.
+  06,02: File ID of the sound in JaiSeqs.arc (SoundOffsetNumber).
+  08,04: (looks like a float)
+  0C,??: 

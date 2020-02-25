@@ -381,6 +381,7 @@ wiz_r: Wizzrobe. (d_a_wz)
       Behaves similar to type 1.
     03 - ?
       Behaves similar to type 0.
+    0A - Fireball?
     0C - Spawner orb? white orb that actually spawns the enemies
     0D - Spawner orb? white orb that actually spawns the enemies
     FF - Defaults to 00 instead.
@@ -612,8 +613,8 @@ Bk: Bokoblin. (d_a_bk)
       Sets entity+376,2 to 0x17 and entity+2BA,1 to 0.
   params & 00000010 - Change switch behavior.
     stored to entity+2B9,1
-    0 - The switch at params & FF000000, if it's valid, MUST be set for this Bokoblin to spawn.
-    1 - The switch at params & FF000000 MUST NOT be set for this Bokoblin to spawn.
+    0 - The switch at params & FF000000, if it's valid, MUST be set for this Bokoblin to spawn. (Enable spawn switch.)
+    1 - The switch at params & FF000000 MUST NOT be set for this Bokoblin to spawn. (Disable spawn switch.)
   params & 00000020 - Boolean to make the Bokoblin green and give it a wooden shield.
     stored to entity+2D4,1
   params & 000000C0 - What the Bokoblin should hold in its hand.
@@ -1211,6 +1212,26 @@ Sitem: Nut hanging from a vine on the ceiling. (d_a_sitem)
   params & FF000000
     Read at 2B6C in func daSitem_Create(fopAc_ac_c *)
 Kmon: Knight's Crest on Orca's shelf. (d_a_kmon)
+SWtact, SWtactB: Sets a switch when the player plays Wind's Requiem. (d_a_swtact)
+  params & 000000FF - Switch to set.
+  params & 0000FF00 - Wind direction to require, or FF for just playing Wind's Requiem without requiring a specific direction?
+  params & 000F0000 - ?
+    0 for SWtact, 1 for SWtactB
+ho: Firefly. (d_a_ff)
+  params & 000000FF - Number of fireflies to spawn in this group?
+  params & 0000FF00
+    00 for a group of fireflies, 01 for a single one that runs away??
+Pig: Pig. (d_a_kb)
+  params & 0000000F - Maybe color?
+    0 - 
+    1 - 
+    2 - Black?
+  params & 000000F0
+  params & 0000FF00 - Maybe caught vs uncaught on Outset?
+    00 - Uncaught?
+    01 - Caught?
+  params & 00FF0000
+  aux_params_2 & FFFF
 
 ### SCOB:
 Salvage: Main salvages that require a chart to see.

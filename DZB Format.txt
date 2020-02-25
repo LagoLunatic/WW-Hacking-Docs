@@ -1,0 +1,4 @@
+
+Groups:
+30,4: Bitfield.
+  & 000000FF - Room index.
