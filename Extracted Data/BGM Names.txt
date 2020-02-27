@@ -1,0 +1,98 @@
+BGM index, BGM name, description of what the BGM is used for
+0000   defaultse.bms      Silence
+0001   i_link.bms         Outset
+0002   get.bms            Good item get jingle
+0003   goma_a.bms         Gohma phase 1
+0004   enemy2.bms         Fight with a common land enemy
+0005   boco.bms           Kalle Demos
+0006   d_ryumt.bms        Dragon Roost Cavern
+0007   i_maju.bms         Inside Forsaken Fortress 1
+0008   house.bms          Inside someone's house
+0009   open_box.bms       Dramatic chest open build up
+000A   die_link.bms       Game over
+000B   sea_game.bms       Boating course minigame
+000C   sea_goal.bms       Won the boating course minigame
+000D   sea_fail.bms       Lost the boating course minigame
+000E   i_link2.bms        Outset (exact duplicate)
+000F   i_maju_j.bms       Got thrown in Forsaken Fortress jail
+0010   goma_b.bms         Gohma phase 2
+0011   house_t.bms        Training with Orca
+0012   tetra_meet.bms     First meeting with Tetra
+0013   enemy_comes.bms    Kargarocs drop Bokoblins into Fairy Woods
+0014   bird.bms           Helmaroc
+0015   tower.bms          Helmaroc chasing you up the tower
+0016   find_ttr.bms       See Tetra hanging from a tree
+0017   i_linkf.bms        Fairy Woods
+0018   house_g.bms        Orca and Sturgeon's house
+0019   mboss.bms          Land miniboss
+001A   mboss_s.bms        Land miniboss (no intro)
+001B   store.bms          Beedle's shop
+001C   sea_enemy.bms      Fight with a common sea enemy
+001D   sea_dawn.bms       Sun rises on the Great Sea
+001E   select.bms         File select
+001F   okmedori.bms       Unused trumpet jingle 1
+0020   okmacole.bms       Unused trumpet jingle 2
+0021   takt_mcl.bms       Wind God's Aria by Makar, played when destroying a song stone
+0022   takt_mdr.bms       Earth God's Lyric by Medli, played when destroying a song stone
+0023   d_amosu.bms        Gohdan
+0024   get_h.bms          Heart container get jingle
+0025   get_s.bms          Meh item get jingle
+0026   d_forest.bms       Forbidden Woods
+0027   get_song.bms       Song get jingle
+0028   kaminoto.bms       Tower of the Gods
+0029   rane.bms           Molgera
+002A   pirate.bms         Riding on the outside of the pirate ship to Forsaken Fortress
+002B   e_diocta.bms       Sea miniboss
+002C   pirate_c.bms       Inside the pirate ship
+002D   d_earth.bms        Earth Temple
+002E   sea.bms            Sailing on the Great Sea
+002F   d_wind.bms         Wind Temple
+0030   takt_dn.bms        Song of Passing jingle
+0031   takt_wnd.bms       Wind's Requiem jingle
+0032   takt_wrp.bms       Ballad of Gales jingle
+0033   tetra_meet_b.bms   Unused Tetra theme
+0034   hyrul_of.bms       Hyrule Castle, asleep
+0035   hyrul_on.bms       Hyrule Castle, awake
+0036   next_dry.bms       Makar practicing the violin, heard from outside the cave
+0037   next_wet.bms       Makar practicing the violin, heard from inside the cave
+0038   i_linkin.bms       Outset with new game intro
+0039   i_mori.bms         Forest Haven Island
+003A   i_ryu.bms          Dragon Roost Island
+003B   i_taura.bms        Windfall Island
+003C   sea_strm.bms       Sailing on the Great Sea during endless night
+003D   pirate_5.bms       Pirates robbing the bomb shop
+003E   house_t2.bms       Training with Orca alternate (unused?, has a few extra instruments)
+003F   i_moridk.bms       Inside Forest Haven
+0040   drug.bms           Doc Bandam and Hollo's shops
+0041   p_ganon1.bms       Phantom Ganon (with intro, at Forsaken Fortress)
+0042   d_ganon1.bms       Ganon's Tower
+0043   d_ganon2.bms       Ganon's Tower maze
+0044   baachan.bms        Grandma's theme
+0045   dekpinch.bms       Deku Tree being attacked by ChuChus
+0046   e_dioct2.bms       Sea miniboss (no intro)
+0047   p_ganon2.bms       Phantom Ganon (no intro, in Ganon's Tower, or resuming after interruption at FF)
+0048   bigpow.bms         Jalhalla
+0049   p_bigpow.bms       Rematch Jalhalla
+004A   p_boco.bms         Rematch Kalle Demos
+004B   p_goma_a.bms       Rematch Gohma phase 1
+004C   p_rane.bms         Rematch Molgera fight
+004D   e_ganon.bms        Ganondorf fight
+004E   mastersword.bms    Pulling out the Master Sword
+004F   get_perl.bms       Pearl get jingle
+0050   sea_game.bms       Bird-man contest minigame (same as boating course)
+0051   sea_goal.bms       Won the bird-man contest minigame (same as boating course)
+0052   sea_fail.bms       Lost the bird-man contest minigame (same as boating course)
+0053   elf.bms            Fairy Fountain
+0054   p_goma_b.bms       Rematch Gohma phase 2
+0055   i_link3.bms        Outset alternate
+0056   death_vl.bms       Hyrule (very quiet and slow)
+0057   jaboo.bms          Jabun's cave, and the entrance room of Earth/Wind Temples
+0058   subdun.bms         Secret caves
+0059   kugutu1.bms        Puppet Ganon phase 1
+005A   kugutu2.bms        Puppet Ganon phase 2
+005B   kugutu3.bms        Puppet Ganon phase 3
+005C   taraba_intro.bms   Puppet Ganon fake victory fanfare
+005D   get_box.bms        Salvage get jingle
+005E   i_maju.bms         Inside Forsaken Fortress 2/3 (same as FF1)
+005F   tak8_mcl.bms       Wind God's Aria by Makar, played when returning to Molgera's room after defeating it
+0060   tak8_mdr.bms       Earth God's Lyric by Medli, played when returning to Jalhalla's room after defeating it

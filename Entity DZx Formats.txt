@@ -29,7 +29,7 @@ For entities that have parameters, it also documents their parameters and the co
   RTBL (Room TaBLe) is responsible for loading in rooms when in a given part of a room. RTBL chunks appear in the stage.dzs file.
   Which RTBL entry to use is determined by the collision group below the player. Collision groups have an RTBL index in their data to handle this. (The index can be FF for no RTBL entry in that location.)
   For example, on the sea stage, each of the 50 rooms has its own unique entry in the sea stage's RTBL list. Outset for example has an RTBL entry specifying that both room 0 and room 44 (Outset itself) should be loaded. In the sea, room 0's role is to always be loaded regardless of which sector you're in. Room 0 has collision through the whole sea floor, a different group for each sector. Because this collision groups have different RTBL indexes set for each sector, room 0's collision on the sea floor causes different RTBL entries to be used when the player crosses over sector borders. This is what handles loading and unloading rooms on the sea.
-  Note that while in many cases (like the sea) the room index and the RTBL index will happen to be the same because each room only has one RTBL entry, this is not always the case. For example, the hub room in DRC has three different RTBL entries depending on what part of it you're in, because you can be near the doors to many different rooms in the hub room.
+  Note that while in many cases (like the sea) the room number and the RTBL index will happen to be the same because each room only has one RTBL entry, this is not always the case. For example, the hub room in DRC has three different RTBL entries depending on what part of it you're in, because you can be near the doors to many different rooms in the hub room.
   Main entry format:
     00,4: Offset within this dzs file to this entry's subentry.
   Sub entry format:
@@ -46,7 +46,7 @@ For entities that have parameters, it also documents their parameters and the co
     & 40 - ?
       all the sea rooms have room 0 constantly loaded, and this bit is set for room 0 being there.
       guess it loads the collision?
-    & 3F - Room index of this room.
+    & 3F - Room number of this room.
     Note about which bits to set:
       For dungeons it seems like both bits 80 and 40 should be set for the current room (the one that owns this RTBL entry), while for non-current rooms neither bit should be set.
       For the sea, it seems like room 0 should always have both bits 80 and 40 set, while whatever the room for the current sector is should have bit 80 set but not bit 40.
@@ -1232,6 +1232,15 @@ Pig: Pig. (d_a_kb)
     01 - Caught?
   params & 00FF0000
   aux_params_2 & FFFF
+Cb1: Makar. (d_a_npc_cb1)
+  params & FFFFFFFF - Which instance of Makar this is.
+    2 - Makar in his cave behind the waterfall practicing violin.
+      For this Makar to appear, you need the following conditions to be met:
+        Full Power Master Sword (item 3E) is not owned
+        Event bit 2910 is not set
+        Event bit 2E02 is not set
+        Event bit 1610 is not set
+        Half Power Master Sword (item 3A) is owned
 
 ### SCOB:
 Salvage: Main salvages that require a chart to see.

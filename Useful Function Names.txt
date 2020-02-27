@@ -150,7 +150,7 @@ fopAcM_fastCreateItem__FP4cXyziiP5csXyzP4cXyzfffiPFPv_i
   If you try to create an item that doesn't have its model loaded the game will crash.
   r3 - position (pointer to a vector3 of floats (cXyz))
   r4 - item ID
-  r5 - room index to create the item in
+  r5 - Room number to create the item in
   r6 - rotation (pointer to a vector3 of shorts (csXyz))
   r7 - scale from entity RAM format (pointer to a vector3 (cXyz))
   f1 - speed
@@ -172,7 +172,7 @@ fopAcM_createItem__FP4cXyziiiiP5csXyziP4cXyz
   r3 - position (pointer to a vector3 of floats (cXyz))
   r4 - item ID
   r5 - item pickup flag to set, or -1 for none
-  r6 - room index to create the item in
+  r6 - Room number to create the item in
   r7 - unknown_2 int (e.g. 0 or 3)
     If this is 0 or 2 the item will fade out if the player doesn't get it fast enough. If this is 1 or 3, it does not fade out.
     If this is 1, the item is not affected by gravity. Otherwise it is.
@@ -193,7 +193,7 @@ fopAcM_fastCreateItem2__FP4cXyziiiiP5csXyziP4cXyz
 fopAcM_createItemForBoss__FP4cXyziiP5csXyzP4cXyzi
   r3 - position (pointer to a vector3 of floats (cXyz))
   r4 - ???
-  r5 - room index to create the item in
+  r5 - Room number to create the item in
   r6 - rotation (pointer to a vector3 of shorts (csXyz))
   r7 - scale from entity RAM format (pointer to a vector3 (cXyz))
   r8 - ?
@@ -230,7 +230,7 @@ fopAcM_createDemoItem__FP4cXyziiP5csXyziP4cXyzUc
 fopAcM_createItemForKP2__FP4cXyziiP5csXyzP4cXyzfffUs
   r3 - position (pointer to a vector3 of floats (cXyz))
   r4 - item ID
-  r5 - room index to create the item in
+  r5 - Room number to create the item in
   r6 - rotation (pointer to a vector3 of shorts (csXyz))
   r7 - scale from entity RAM format (pointer to a vector3 (cXyz))
   f1 - ??? float
@@ -254,7 +254,7 @@ fopAcM_createItemFromTable__FP4cXyziiiiP5csXyziP4cXyz
     00-1F: It spawns this exact item ID.
     20-3F: Subtract 20 from this value and it's the index in the random item table.
   r5 - Item pickup flag to set, or -1 for none, or 0x7F for none.
-  r6 - Room index.
+  r6 - Room number.
   r7 - 
   r8 - Pointer to a vector3 of shorts, maybe rotations?
   r9 - 
@@ -280,7 +280,7 @@ dKyw_tact_wind_set__Fss
 
 setNextStageBySclsNum
   r3 - Exit index in the SCLS list
-  r4 - Room index for which room to look in the SCLS list for. If this is -1, it will look in the stage's SCLS list instead of the room's.
+  r4 - Room number for which room to look in the SCLS list for. If this is -1, it will look in the stage's SCLS list instead of the room's.
 
 setPointRestart
   sets the "restart" position (e.g. if a floormaster grabs you)
@@ -469,7 +469,7 @@ dComIfGp_setNextStage__FPCcsScScfUliSc
   changes the current stage
   r3 - stage name pointer
   r4 - spawn ID
-  r5 - room index
+  r5 - Room number
   r6 - override layer number, or FF for none
   f1 - 
   r7 - 
@@ -512,7 +512,7 @@ fopAcM_create__FsUlP4cXyziP5csXyzP4cXyzScPFPv_i
   r3 - Actor ID
   r4 - Params
   r5 - Position (pointer to a vector3 of floats)
-  r6 - Room index
+  r6 - Room number
   r7 - Auxilary params and rotation (pointer to a vector3 of shorts, auxilary params 1, Y rotation, auxilary params 2)
   r8 - Scale (pointer to a vector3 of floats)
   r9 - 0?
@@ -627,6 +627,11 @@ JAIZelBasic::seStart(unsigned long, Vec *, unsigned long, signed char, float, fl
     & 00000800 - ?
     & 000FF000 - Sound category.
       0-7 - Valid sound categories.
+    & C0000000 - Some type of special flag?
+      0 - Use the sound category specified with the mask 000FF000.
+      1 - Maybe invalid?
+      2 - Use sound category 0x10. (For music?)
+      3 - Use sound category 0x11.
   r5 - 
   r6 - 
   r7 - 
@@ -649,12 +654,55 @@ JAIBasic::getSoundOffsetNumberFromID(unsigned long)
 
 bgmStart
   Starts playing background music. Boss music counts as background music.
+  r4 - The BGM ID.
+    BGM IDs can be a bit different from normal sound IDs.
+    Normally they are the same, for example:
+      80000002 - Plays BGM with index 02.
+    But sometimes, the BGM ID is over 0x100, for example:
+      80000130 - Plays BGM with index 42.
+    These 100+ BGM IDs allow playing certain hardcoded BGMs with different instruments.
+    For example, 120-123 all play Gohdan's theme (d_amosu.bms), but they sound quite different.
+    How to map these special BGM IDs to BGM indexes is hardcoded into bgmStart.
+    Full list:
+      80000105 -> 80000005
+      80000110 -> 80000014
+      80000111 -> 80000014
+      80000112 -> 80000014
+      80000115 -> 80000015
+      80000120 -> 80000023
+      80000121 -> 80000023
+      80000122 -> 80000023
+      80000123 -> 80000023
+      80000124 -> 80000029
+      80000125 -> 80000028
+      80000126 -> 80000028
+      80000130 -> 80000042
+      80000131 -> 80000042
+      80000132 -> 80000042
+      80000133 -> 80000042
+      80000140 -> 80000048
+      80000150 -> 80000049
+      80000151 -> 8000004A
+      80000152 -> 8000004C
+
+expandSceneBgmNum
+  r4 - Halfword BGM ID read from a BGM info for a spot/island.
+  This function returns the BGM ID in a full word format.
+  e.g. 0012 -> 80000012
+  If the halfword BGM ID has the highest bit set, it instead returns like this:
+  e.g. 8012 -> C0000012
 
 bgmNowBattle
   Starts playing the music for fighting common enemies.
 
+JAIZelBasic::mbossBgmNearByProcess(float)
+  TODO look into this function, it might be detecting if a miniboss is near the player
+  r3 - 
+  f1 - 
+
 subBgmStart
   Starts playing "sub" background music. Mini-boss music, whirlpool music, and item get jingles are included in this.
+  Also sets 803A2D9E to know what the previous sub background music was before it was interrupted.
 
 bgmStreamPlay
   Plays an background music stream? Boss defeat fanfares count as this, maybe other things?
@@ -677,6 +725,14 @@ JAIZelBasic::setScene(long, long, long, long)
   r7 - 
   This MIGHT hardcode loading certain things, like some of the instruments for Molgera's fight theme that are only loaded for kazeB.
   or, maybe the hardcoding is just for UNLOADING them when the boss is dead...?
+
+JAInter::BankWave::loadSceneWave
+JAInter::BankWave::loadGroupWave
+JASystem::WaveBankMgr::loadWave
+JASystem::WaveBankMgr::getWaveArc
+JASystem::WaveBankMgr::getWaveBank
+  These functions are part of loading a wave bank
+  r3 - The wave bank index (this is the same as the index of the .aw file in the .aaf file)
 
 
 
@@ -781,7 +837,7 @@ MtxPosition(cXyz *, cXyz *)
 setScene__11JAIZelBasicFllll
   sets the music for the next stage/room the player is about to go into?
   r4 - Spot ID for the stage.
-  r5 - Room index.
+  r5 - Room number.
   r7 - Override layer number.
   (more args)
   This function hardcodes various checks for specific stages based on the spot ID. Here is a list:
@@ -803,7 +859,7 @@ setScene__11JAIZelBasicFllll
     802AAB64 - Edaichi
     802AABA8 - LinkRM
     802AAC18 - Obombh
-  If the stage is "sea", it also hardcodes a check for a specific island based on the room index. Here it is:
+  If the stage is "sea", it also hardcodes a check for a specific island based on the Room number. Here it is:
     802AA44C - Outset Island
   Each of these hardcoded checks includes various sub-checks for things like event bits and layer numbers and such to determine if music should be played or not.
 
@@ -837,7 +893,7 @@ isSwitch__10dSv_info_cFii
     C0-EF: ? "zone bit"? calls function isSwitch__13dSv_zoneBit_cFi
     F0-FE: Also "zone bits", but these are invalid and will cause an error to happen.
     FF: invalid switch, always return false
-  r5 - ??? room ID? valid values are 00-3F
+  r5 - ??? room number? valid values are 00-3F
 
 isSwitch__12dSv_memBit_cFi
   checks if a switch mem bit is set.
@@ -855,11 +911,11 @@ isSwitch__13dSv_zoneBit_cFi
 dPath_GetRoomPath__Fii
   returns a pointer to the requested path
   r3 - Path index
-  r4 - Room index
+  r4 - Room number
 
 dPath_GetNextRoomPath(dPath *, int)
   r3 - Pointer to a path
-  r4 - Room index
+  r4 - Room number
 
 fopAcM_setCarryNow__FP10fopAc_ac_ci
   sets a weapon as being carried by an enemy?
@@ -931,7 +987,7 @@ fopAcM_myRoomSearchEnemy__FSc
 fopAcM_myRoomSearchEnemy(signed char)
   checks for any enemies in the room and returns a pointer to one of them.
   this is used by things that want to know if all the enemies in the room are dead.
-  r3 - room index
+  r3 - Room number
 
 GetIndex__12cDT_NamePTblCFPCci
 cDT_NamePTbl::GetIndex( const(char const *, int))
@@ -976,7 +1032,7 @@ objectSetCheck__FP19room_of_scene_class
   80236A80 - where it starts getting ready to create the new room as an entity
   it calls fopAcM_create__FsUlP4cXyziP5csXyzP4cXyzScPFPv_i to create the entity
   the room is an actor of type "Bg" (actor ID 1BC)
-  the params to the room are just the room ID.
+  the params to the room are just the room number.
   note that this function does NOT handle creating entities at all.
 
 
@@ -1094,3 +1150,6 @@ specialProcPackage
 dDemo_manager_c::create(unsigned char const *, cXyz *, float)
   handles starting an stb cutscene?
   note: if an actor needed for this stb cutscene isn't present in the room, this function will log a warning and give up, the stb cutscene will not start.
+
+daBoomerang_rockLineCallback
+  something related to boomerang targetting

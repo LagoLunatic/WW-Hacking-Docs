@@ -26,7 +26,7 @@
   1E,2: Padding.
 
 80352EA0-80352EDF - List of blue fog spawn patterns for each room of Earth Temple.
-  The index in this list is the room index of a room in the M_Dai stage.
+  The index in this list is the room number of a room in the M_Dai stage.
   There are decimal 16 entries in total for rooms 0-15. Rooms 16-20 don't get entries.
   Each entry is a word, which is a number 0-4 for which blue fog spawn pattern to use.
   Or the number can be -1 if no blue fog appears in this room.
@@ -35,7 +35,7 @@
 8035ABE4-8035B54F - List of figurines.
   Entry length 0x12.
   0x86 entries in total.
-  10,1: Which figurine room ID is this figurine in???
+  10,1: Which figurine room number is this figurine in???
 
 8035C764 - List of Link's animations?
   Entry length 8.
@@ -124,6 +124,13 @@ g_fopAcTg_Queue:
   00,4: float
   04,4: float
   08,4: float
+
+80377754-8037775F - List of BGM IDs that can be started by events in event_list.dat.
+  Each entry is a word, the BGM ID. 3 entries total.
+  The index in this list is the "BGM_ID" property of a "BGM_START" action of a "DIRECTOR" actor in an event.
+  0 - 80000007 - Inside FF1
+  1 - 80000012 - Meet Tetra
+  2 - 80000017 - Fairy Woods
 
 80371618,24 - Data related to the game heap. (GameHeapCheck)
 80371618,4 - Pointer to the string "Game".
@@ -224,14 +231,14 @@ Format of each block of memory in the game heap:
     3 - Down
     4 - Left
 
-8039C280-8039C2E3 - List of "scene waves". (BGM related) (m_dy_wave_set_1st__11JAIZelBasic)
+8039C280-8039C2E3 - List of 1st dynamic scene waves. (BGM related) (m_dy_wave_set_1st__11JAIZelBasic)
   Entry length 2. 0x32 entries in total.
-  "scene wave index" is an index in this list.
+  1st dynamic scene wave index is an index in this list.
   00,1: One scene wave to load (or 0 for blank). (This is argument r3 to loadSceneWave.)
   01,1: Another scene wave to load (or 0 for blank). (This is argument r3 to loadSceneWave.)
-8039C2E4-8039C30B - List of "2nd dynamic scene waves". (BGM related) (m_dy_wave_set_2nd__11JAIZelBasic)
+8039C2E4-8039C30B - List of 2nd dynamic scene waves. (BGM related) (m_dy_wave_set_2nd__11JAIZelBasic)
   Entry length 2. 0x14 entries in total.
-  "2nd dynamic scene wave index" is an index in this list.
+  2nd dynamic scene wave index is an index in this list.
   00,1: One scene wave to load (or 0 for blank). (This is argument r3 to loadSceneWave.)
   01,1: Another scene wave to load (or 0 for blank). (This is argument r3 to loadSceneWave.)
 
@@ -239,14 +246,14 @@ Format of each block of memory in the game heap:
   Each entry is 4 bytes long. 0x79 entries in total.
   The spot ID of a particular stage is its index in this list (see list 8039C5B8 for more info on spot IDs).
   00,2: BGM ID to play.
-  02,1: "Scene wave index" to load.
-  03,1: "2nd dynamic scene wave index" to load.
+  02,1: 1st dynamic scene wave index to load.
+  03,1: 2nd dynamic scene wave index to load.
 8039C4F0-8039C5B7 (3994F0 in main.dol) - List of island BGM info. (BGM related) (m_isle_info__11JAIZelBasic)
   Each entry is 4 bytes long. 0x32 (decimal 50) entries in total.
   The island's room number is its index in this list.
   00,2: BGM ID to play.
-  02,1: "Scene wave index" to load.
-  03,1: "2nd dynamic scene wave index" to load.
+  02,1: 1st dynamic scene wave index to load.
+  03,1: 2nd dynamic scene wave index to load.
 8039C5B8-8039C797 (3995B8 in main.dol) - List of BGM spot names. (BGM related) (spot_dir_name__11JAIZelBasic)
   Each entry is 4 bytes long. 0x78 entries in total.
   Each entry is a pointer to a string that is a stage name.
@@ -261,11 +268,12 @@ Format of each block of memory in the game heap:
 
 803A2F16,1 - Related to currently playing music...?
 
-803A2F1A,1 - The next "scene wave index" to load.
-803A2F1D,1 - The next "2nd dynamic scene wave index" to load.
+803A2F1A,1 - The next 1st dynamic scene wave index to load.
+803A2F1D,1 - The next 2nd dynamic scene wave index to load.
 803A2F20,1 - The next island room number the player is about to go to, for deciding what the next BGM should be.
 
 803A4C25,1 - Ship sail state. 1 if sailing, 0 if not.
+  (This variable is part of the JAIZelBasic audio struct, so it's likely used for controlling the sailing music.)
 
 803A4DF0 - Has info on the current controller input state. (g_mDoCPd_cpadInfo)
 803A4DF0,4 - Control stick horizontal axis. Float from -1 to 1.
@@ -316,7 +324,7 @@ Format of each block of memory in the game heap:
 
 803BDC88-803C2187 - List of "zones"? (mStatus__20dStage_roomControl_c)
   Entry length 0x114.
-  The index in this list is the room ID.
+  The index in this list is the room number.
   There are 0x40 entries in total, the maximum number of rooms a given stage can have.
   104,1: bitfield relating to room loading??
     & 01 - Must be 0 before the room will load in?
@@ -651,7 +659,7 @@ bits set during vanilla game in order:
 803C4DB8,4 - Player's partner's Y pos.
 803C4DBC,4 - Player's partner's Z pos.
 803C4DC0,2 - Player's partner's rotation.
-803C4DC2,1 - Player's partner's room index.
+803C4DC2,1 - Player's partner's room number.
 803C4DC3,1 - Player's partner's ID number.
   this is argument r4 to set__19dSv_player_priest_cFUcR4cXyzsSc
   1 - Makar
@@ -762,12 +770,12 @@ Player's partner's room restart position? ("restart option")
 
 803C9D3C,8 - The current stage name.
 803C9D44,2 - The most recent spawn ID the player spawned from.
-803C9D46,1 - The most recent room ID the player spawned in.
+803C9D46,1 - The most recent room number the player spawned in.
 803C9D47,1 - The most recent override layer number for the player to spawn in, or FF for none.
 
 803C9D48,8 - The next stage name the player is about to go to.
 803C9D50,2 - The next spawn ID to spawn the player at.
-803C9D52,1 - The next room ID to spawn the player in.
+803C9D52,1 - The next room number to spawn the player in.
 803C9D53,1 - The next override layer number to spawn the player in, or FF for none.
 803C9D54,1 - Whether a stage transition should happen right now?
 803C9D58,4 - ?
@@ -790,13 +798,13 @@ Player's partner's room restart position? ("restart option")
 
 803C4C38,8 - Stage name of the player's "return place" (where you will be placed when you reload your save).
   The 8th byte must be 00.
-803C4C40,1 - Room index of the player's "return place" (where you will be placed when you reload your save).
+803C4C40,1 - Room number of the player's "return place" (where you will be placed when you reload your save).
 803C4C41,1 - Spawn ID of the player's "return place" (where you will be placed when you reload your save).
 
 8034F69D,1 - Empty string "".
 
 8034F7D8,4 (34C7D8,4 in main.dol) - Stage name the player starts a new game in ("sea").
-80058BA7,1 (055AE7,1 in main.dol) - Room index the player starts a new game in (0d44, Outset Island).
+80058BA7,1 (055AE7,1 in main.dol) - Room number the player starts a new game in (0d44, Outset Island).
 80058BAF,1 (055AEF,1 in main.dol) - Spawn ID the player starts the game at (0d206, on Aryll's Lookout).
 
 803C9DA0,4 - Has a pointer to the current stage info from the DZx file (the STAG chunk's only entry).
@@ -976,7 +984,8 @@ Note: See 80352EA0 for details about the layout of blue fog in a given room of E
 
 803F660C,4 - Bitfield of what buttons need to be pressed in order to reset the game (X+B+Start).
 
-803F6A78,1 - Current room index. (mStayNo__20dStage_roomControl_c)
+803F6A78,1 - Current room number. (mStayNo__20dStage_roomControl_c)
+803F6A79,1 - Previous room number. (mOldStayNo__20dStage_roomControl_c)
 
 803F6B5D,1 - Total number of Windfall item pedestals in the current stage.
 803F6B5E,1 - Current number of Windfall item pedestals in the current stage that you've placed an item in.
@@ -1049,7 +1058,7 @@ Entity deletion queue (g_fpcDtTg_Queue):
 803F763C,4 - Has a pointer to the sound categories' sound info list.
   Each entry in that list is a pointer to a list of sound infos.
   Each sound info has the same format as in the AAF file.
-803F75F4 - Has a pointer to a list of ??? for each sound category.
+803F75F4,4 - Has a pointer to a list of ??? for each sound category.
   Format of that list:
     Entry length 0xC.
     04,04: Maybe a pointer to another sound??? Or 0 for none.
@@ -1061,6 +1070,35 @@ Entity deletion queue (g_fpcDtTg_Queue):
       Format of ???:
         05,01: ???
         3C,04: Pointer to "SeqParameter"?
+803F7640,4 - Has a pointer to the start of the sound categories data. (mAddress)
+803F7584,4 - Has a pointer to the start of the list of ??? for each wave bank. (JAInter::BankWave::initOnCodeWs)
+  Format of that list:
+    Entry length 0xC.
+    A wave index is the index in this list. (e.g. r3 to loadSceneWave or loadGroupWave)
+     08,04: Type...?
+      0 - 
+      1 - 
+      2 - 
+803F7588,4 - Has a pointer to the start of the list of ??? for each wave bank. (JAInter::BankWave::wsGroupNumber)
+  Format of that list:
+    Entry length 4.
+    Each entry is a word. e.g. 0xFFFFFFFF.
+803F74D0,4 - Maximum number of wave banks. (sTableSize)
+803F74D4,4 - Has a pointer to the list of wave banks. (JASystem::WaveBankMgr::sWaveBank)
+  Each entry in that list is a pointer to ???.
+  [pointer+0x74] - the filesize of the .aw file.
+
+803A2D9D,1 - Some special flag set for certain BGMs?
+  e.g. BGM ID 80000115 (Helmaroc chasing you up the tower) actually plays the BGM with index 15, not 115, but sets this flag to 01.
+  But then this flag is never actually read...?
+803A2D9E,1 - Somehow keeps track of the last sub BGM that was playing so that the game can resume it after an item get jingle?
+  00 - None
+  01 - Land miniboss music (0x0019)
+    Causes no-intro land miniboss music (0x001A) to play
+  02 - Sea miniboss music (0x002B)
+    Causes no-intro sea miniboss music (0x0046) to play
+  03 - Phantom Ganon music (0x0041)
+    Causes no-intro Phantom Ganon music (0x0047) to play
 
 803F7988 - Has a pointer to a table of sine values. (jmaSinTable)
   Each entry is a float.

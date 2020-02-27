@@ -1,8 +1,8 @@
 
 Header:
-04,4: Offset within the file to the start of the sound categories list?
+04,4: Offset within the file to the start of the sound categories data?
 
-Sound categories list:
+Sound categories data:
 06,48: List of metadata for each category.
   Entry length 4. 0x12 entries in total.
   00,02: Number of sounds in this category.

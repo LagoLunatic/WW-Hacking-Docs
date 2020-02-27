@@ -12,7 +12,7 @@ fopAcM_prm_class (created and returned by f_op_actor_mng::fopAcM_CreateAppend)
 01A,1: Z scale.
 01B,1: Actor GBA type.
 020,1: Actor subtype index.
-021,1: Room index.
+021,1: Room number.
 03C,4: Unique ID of this specific entity instance.
   This entity can be found by calling fopAcM_SearchByID__FUiPP10fopAc_ac_c with r3=this ID.
 048,4: Pointer to a callback function?
@@ -46,18 +46,18 @@ Size: 0x290 bytes.
 1DC,2: Auxilary parameter.
 1DE,2: Y rotation.
 1E0,2: Auxilary parameter 2.
-1E2,1: Room index.
+1E2,1: Room number.
 1F0,2: Auxilary parameter. (duplicate?)
 1F2,
 1F4,2: Auxilary parameter 2. (duplicate?)
-1F6,1: Room index.
+1F6,1: Room number.
 1F8,4: X pos.
 1FC,4: Y pos.
 200,4: Z pos.
 204,2: Auxilary parameter. (duplicate?)
 206,2: Y rotation. (duplicate?)
 208,2: Auxilary parameter 2. (duplicate?)
-20A,1: Room index.
+20A,1: Room number.
 20C,2: Auxilary parameter or X rotation??
 20E,2: Y rotation. (duplicate?)
 210,2: Auxilary parameter 2 or Z rotation??
