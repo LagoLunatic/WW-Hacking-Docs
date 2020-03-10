@@ -189,6 +189,7 @@ fopAcM_createItem__FP4cXyziiiiP5csXyziP4cXyz
 
 fopAcM_fastCreateItem2__FP4cXyziiiiP5csXyziP4cXyz
   ???
+  r9 - Item action.
 
 fopAcM_createItemForBoss__FP4cXyziiP5csXyzP4cXyzi
   r3 - position (pointer to a vector3 of floats (cXyz))
@@ -259,6 +260,14 @@ fopAcM_createItemFromTable__FP4cXyziiiiP5csXyziP4cXyz
   r8 - Pointer to a vector3 of shorts, maybe rotations?
   r9 - 
   r10 - 
+
+fopAcM_createDisappear(fopAc_ac_c *, cXyz *, unsigned char, unsigned char, unsigned char)
+  Creates a cloud of smoke for when an enemy dies.
+  r3 - The actor that just died.
+  r4 - Position to create the disappear at.
+  r5 - 5?
+  r6 - 0?
+  r7 - The item pickup flag for the created item?
 
 
 
@@ -1153,3 +1162,40 @@ dDemo_manager_c::create(unsigned char const *, cXyz *, float)
 
 daBoomerang_rockLineCallback
   something related to boomerang targetting
+
+
+DynamicModuleControl::__ct(char const *)
+  constructs a REL file?
+  r3 - ?
+  r4 - Pointer to a string of the REL's filename (not including the .rel).
+
+
+daPy_lk_c::checkSetItemTrigger(int, int)
+  Checks if the player just pressed an item button to trigger an item's effect.
+  r3 - Pointer to the Link entity.
+  r4 - Item ID to check if it was just triggered. (This can also be values too high to be item IDs, such as 0x107)
+  r5 - 1?
+
+
+daPy_lk_c::hideHatAndBackle(J3DMaterial *)
+  Handles hiding some of Link's meshes based on certain conditions.
+  80106CD4: If bit 0x800 in link_entity+0x2A0,4 is set, it hides the eyes and eyebrow meshes (for when Link is frozen).
+  80106D08: If bit 0x8 in link_entity+0x2A0,4 is set, it hides the hat mesh (for casual clothes).
+  80106D48: If bit 0x8 in link_entity+0x2A0,4 is set, it hides the belt buckle mesh (for casual clothes).
+
+daPy_lk_c::draw(void)
+  Link's draw function.
+  80107C58: If bit 0x8 in link_entity+0x2A0,4 is set, it draws the casual hair model, katsura (for casual clothes).
+  80107BAC: If bit 0x800 in bitfield link_entity+0x2A0,4 is set, ??? (for when Link is frozen).
+
+daPy_lk_c::execute(void)
+  Link's execute function.
+  80122760: Copies the transform of Link's head_jnt bone to the katsura.bdl model.
+  8012278C: Copies the transform of Link's head_jnt bone to the ??? model.
+
+daPy_lk_c::initModel(J3DModel **, int, unsigned long)
+  Initializes one of Link's models.
+  r3 - Pointer to the Link entity.
+  r4 - Pointer to where in the Link entity the pointer to this model should be stored.
+  r5 - File ID of the model in Link.arc.
+  r6 - 0x37221222 (what is this...?)

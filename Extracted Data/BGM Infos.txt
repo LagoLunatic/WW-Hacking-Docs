@@ -1,176 +1,176 @@
 Stages:
-BGM ID, scene wave index, 2nd dynamic scene wave index - Stage name
-0000 00 00 - [N/A]
-0006 01 05 - M_NewD2
-0000 01 01 - M_DragB
-0026 03 05 - kindan
-005E 02 05 - ma3room
-0042 17 00 - GanonF
-0042 17 00 - GanonG
-0000 03 02 - kinBOSS
-0007 02 05 - majroom
-0000 07 04 - Mjtower
-0028 06 05 - Siren
-0008 1B 00 - LinkRM
-002C 04 00 - Asoko
-0018 09 00 - Ojhous
-001B 10 00 - Obshop
-002D 12 05 - M_Dai
-0017 05 03 - A_mori
-002A 0E 00 - A_umikz
-0000 00 00 - sea
-0007 02 00 - MajyuE
-0042 17 00 - GanonH
-0042 17 00 - GanonI
-0057 28 00 - Ekaze
-002F 08 05 - kaze
-0000 08 09 - kazeB
-0042 17 00 - GanonL
-0008 09 00 - Opub
-0040 16 00 - Pdrgsh
-0008 0C 00 - Pnezumi
-0008 1A 00 - Kaisen
-0008 0D 00 - Orichh
-0008 1B 00 - Ocmera
-0008 1B 00 - Obombh
-0000 19 00 - Adanmae
-0008 19 00 - Atorizk
-0000 01 05 - M_Dra09
-0043 18 0A - GanonJ
-0000 06 07 - SirenB
-0040 16 00 - Ocrogh
-003F 0F 0C - Omori
-0000 1C 00 - Xboss0
-0057 22 00 - Pjavdou
-0008 09 00 - Omasao
-0008 09 00 - Onobuta
-0057 27 00 - Edaichi
-0000 12 0B - M_DaiB
-0042 17 00 - GanonA
-0130 17 00 - GanonB
-0131 17 00 - GanonC
-0132 17 00 - GanonD
-0133 17 00 - GanonE
-0042 17 00 - GanonF
-0042 17 00 - GanonG
-0056 25 00 - Hyrule
-0035 14 00 - Hyroom
-0000 1D 00 - Xboss1
-0028 06 05 - SirenMB
-0000 0F 0C - Otkura
-0000 1E 00 - Xboss2
-0000 1F 00 - Xboss3
-002D 12 05 - M_DaiMB
-0008 19 00 - Comori
-0026 03 05 - kinMB
-005E 02 05 - ma2room
-0000 07 04 - M2tower
-002F 08 05 - kazeMB
-0058 26 00 - MiniKaz
-0058 26 00 - MiniHyo
-0058 26 00 - TyuTyu
-0058 26 00 - WarpD
-0058 26 00 - ShipD
-0058 26 00 - Cave01
-0058 26 00 - Cave02
-0058 26 00 - Cave03
-0058 26 00 - Cave04
-0058 26 00 - TF_01
-0058 26 00 - TF_02
-0058 26 00 - TF_03
-0053 24 00 - Fairy01
-0053 24 00 - Fairy02
-0053 24 00 - Fairy03
-0053 24 00 - Fairy04
-0053 24 00 - Fairy05
-0058 26 00 - TF_04
-0058 23 0D - PShip
-0000 06 05 - ADMumi
-0008 1B 00 - Nitiyou
-0008 0C 00 - Abesso
-0058 29 00 - Abship
-0035 14 05 - kenroom
-0000 2C 00 - M2ganon
-0000 2A 00 - GanonK
-0000 20 00 - GTower
-0053 24 00 - Fairy06
-0058 26 00 - Cave05
-0058 26 00 - Cave06
-0008 09 00 - Pfigure
-0008 09 00 - figureA
-0008 09 00 - figureB
-0008 09 00 - figureC
-0008 09 00 - figureD
-0008 09 00 - figureE
-0008 09 00 - figureF
-0008 09 00 - figureG
-0018 09 00 - Ojhous2
-0043 18 0A - GanonM
-0042 17 00 - GanonN
-0058 26 00 - Cave09
-0058 26 00 - Cave10
-0058 26 00 - Cave11
-0058 26 00 - Cave07
-0058 26 00 - TF_06
-0058 26 00 - ITest62
-0058 26 00 - ITest63
-0058 26 00 - SubD71
-0058 26 00 - SubD43
-0058 26 00 - SubD42
-0000 00 00 - sea_T
-0000 00 00 - dummy
-0000 00 00 - dummy
-0000 00 00 - [empty string]
+BGM info pointer, BGM ID, scene wave index, 2nd dynamic scene wave index - Stage name
+8039C30C:  0000 00 00 - [N/A]
+8039C310:  0006 01 05 - M_NewD2
+8039C314:  0000 01 01 - M_DragB
+8039C318:  0026 03 05 - kindan
+8039C31C:  005E 02 05 - ma3room
+8039C320:  0042 17 00 - GanonF
+8039C324:  0042 17 00 - GanonG
+8039C328:  0000 03 02 - kinBOSS
+8039C32C:  0007 02 05 - majroom
+8039C330:  0000 07 04 - Mjtower
+8039C334:  0028 06 05 - Siren
+8039C338:  0008 1B 00 - LinkRM
+8039C33C:  002C 04 00 - Asoko
+8039C340:  0018 09 00 - Ojhous
+8039C344:  001B 10 00 - Obshop
+8039C348:  002D 12 05 - M_Dai
+8039C34C:  0017 05 03 - A_mori
+8039C350:  002A 0E 00 - A_umikz
+8039C354:  0000 00 00 - sea
+8039C358:  0007 02 00 - MajyuE
+8039C35C:  0042 17 00 - GanonH
+8039C360:  0042 17 00 - GanonI
+8039C364:  0057 28 00 - Ekaze
+8039C368:  002F 08 05 - kaze
+8039C36C:  0000 08 09 - kazeB
+8039C370:  0042 17 00 - GanonL
+8039C374:  0008 09 00 - Opub
+8039C378:  0040 16 00 - Pdrgsh
+8039C37C:  0008 0C 00 - Pnezumi
+8039C380:  0008 1A 00 - Kaisen
+8039C384:  0008 0D 00 - Orichh
+8039C388:  0008 1B 00 - Ocmera
+8039C38C:  0008 1B 00 - Obombh
+8039C390:  0000 19 00 - Adanmae
+8039C394:  0008 19 00 - Atorizk
+8039C398:  0000 01 05 - M_Dra09
+8039C39C:  0043 18 0A - GanonJ
+8039C3A0:  0000 06 07 - SirenB
+8039C3A4:  0040 16 00 - Ocrogh
+8039C3A8:  003F 0F 0C - Omori
+8039C3AC:  0000 1C 00 - Xboss0
+8039C3B0:  0057 22 00 - Pjavdou
+8039C3B4:  0008 09 00 - Omasao
+8039C3B8:  0008 09 00 - Onobuta
+8039C3BC:  0057 27 00 - Edaichi
+8039C3C0:  0000 12 0B - M_DaiB
+8039C3C4:  0042 17 00 - GanonA
+8039C3C8:  0130 17 00 - GanonB
+8039C3CC:  0131 17 00 - GanonC
+8039C3D0:  0132 17 00 - GanonD
+8039C3D4:  0133 17 00 - GanonE
+8039C3D8:  0042 17 00 - GanonF
+8039C3DC:  0042 17 00 - GanonG
+8039C3E0:  0056 25 00 - Hyrule
+8039C3E4:  0035 14 00 - Hyroom
+8039C3E8:  0000 1D 00 - Xboss1
+8039C3EC:  0028 06 05 - SirenMB
+8039C3F0:  0000 0F 0C - Otkura
+8039C3F4:  0000 1E 00 - Xboss2
+8039C3F8:  0000 1F 00 - Xboss3
+8039C3FC:  002D 12 05 - M_DaiMB
+8039C400:  0008 19 00 - Comori
+8039C404:  0026 03 05 - kinMB
+8039C408:  005E 02 05 - ma2room
+8039C40C:  0000 07 04 - M2tower
+8039C410:  002F 08 05 - kazeMB
+8039C414:  0058 26 00 - MiniKaz
+8039C418:  0058 26 00 - MiniHyo
+8039C41C:  0058 26 00 - TyuTyu
+8039C420:  0058 26 00 - WarpD
+8039C424:  0058 26 00 - ShipD
+8039C428:  0058 26 00 - Cave01
+8039C42C:  0058 26 00 - Cave02
+8039C430:  0058 26 00 - Cave03
+8039C434:  0058 26 00 - Cave04
+8039C438:  0058 26 00 - TF_01
+8039C43C:  0058 26 00 - TF_02
+8039C440:  0058 26 00 - TF_03
+8039C444:  0053 24 00 - Fairy01
+8039C448:  0053 24 00 - Fairy02
+8039C44C:  0053 24 00 - Fairy03
+8039C450:  0053 24 00 - Fairy04
+8039C454:  0053 24 00 - Fairy05
+8039C458:  0058 26 00 - TF_04
+8039C45C:  0058 23 0D - PShip
+8039C460:  0000 06 05 - ADMumi
+8039C464:  0008 1B 00 - Nitiyou
+8039C468:  0008 0C 00 - Abesso
+8039C46C:  0058 29 00 - Abship
+8039C470:  0035 14 05 - kenroom
+8039C474:  0000 2C 00 - M2ganon
+8039C478:  0000 2A 00 - GanonK
+8039C47C:  0000 20 00 - GTower
+8039C480:  0053 24 00 - Fairy06
+8039C484:  0058 26 00 - Cave05
+8039C488:  0058 26 00 - Cave06
+8039C48C:  0008 09 00 - Pfigure
+8039C490:  0008 09 00 - figureA
+8039C494:  0008 09 00 - figureB
+8039C498:  0008 09 00 - figureC
+8039C49C:  0008 09 00 - figureD
+8039C4A0:  0008 09 00 - figureE
+8039C4A4:  0008 09 00 - figureF
+8039C4A8:  0008 09 00 - figureG
+8039C4AC:  0018 09 00 - Ojhous2
+8039C4B0:  0043 18 0A - GanonM
+8039C4B4:  0042 17 00 - GanonN
+8039C4B8:  0058 26 00 - Cave09
+8039C4BC:  0058 26 00 - Cave10
+8039C4C0:  0058 26 00 - Cave11
+8039C4C4:  0058 26 00 - Cave07
+8039C4C8:  0058 26 00 - TF_06
+8039C4CC:  0058 26 00 - ITest62
+8039C4D0:  0058 26 00 - ITest63
+8039C4D4:  0058 26 00 - SubD71
+8039C4D8:  0058 26 00 - SubD43
+8039C4DC:  0058 26 00 - SubD42
+8039C4E0:  0000 00 00 - sea_T
+8039C4E4:  0000 00 00 - dummy
+8039C4E8:  0000 00 00 - dummy
+8039C4EC:  0000 00 00 - [empty string]
 
 Islands:
-BGM ID, scene wave index, 2nd dynamic scene wave index - Island name
-0000 00 00 - [N/A]
-0007 02 0A - Forsaken Fortress
-0000 0A 06 - Star Island
-0000 0A 06 - Northern Fairy Island
-0000 0A 06 - Gale Isle
-0000 0A 06 - Crescent Moon Island
-0000 0A 06 - Seven-Star Isles
-0000 0A 06 - Overlook Island
-0000 0A 06 - Four-Eye Reef
-0000 2B 06 - Mother and Child Isles
-0000 1A 06 - Spectacle Island
-003B 0B 00 - Windfall Island
-0000 0A 06 - Pawprint Isle
-003A 19 06 - Dragon Roost Island
-0000 15 06 - Flight Control Platform
-0000 0A 06 - Western Fairy Island
-0000 0A 06 - Rock Spire Isle
-0000 11 06 - Tingle Island
-0000 21 06 - Northern Triangle Island
-0000 0A 06 - Eastern Fairy Island
-0000 0A 06 - Fire Mountain
-0000 0A 06 - Star Belt Archipelago
-0000 0A 06 - Three-Eye Reef
-0000 0A 06 - Greatfish Isle
-0000 0A 06 - Cyclops Reef
-0000 0A 06 - Six-Eye Reef
-0000 10 06 - Tower of the Gods
-0000 0A 06 - Eastern Triangle Island
-0000 0A 06 - Thorned Fairy Island
-0000 0A 06 - Needle Rock Isle
-0000 0A 06 - Islet of Steel
-0000 0A 06 - Stone Watcher Island
-0000 0A 06 - Southern Triangle Island
-0000 13 06 - Private Oasis
-0000 0A 06 - Bomb Island
-0000 0A 06 - Bird's Peak Rock
-0000 13 06 - Diamond Steppe Island
-0000 0A 06 - Five-Eye Reef
-0000 21 06 - Shark Island
-0000 0A 06 - Southern Fairy Island
-0000 0A 06 - Ice Ring Isle
-0039 0F 00 - Forest Haven
-0000 0A 06 - Cliff Plateau Isles
-0000 0A 06 - Horseshoe Island
-0001 0A 06 - Outset Island
-0000 0A 06 - Headstone Island
-0000 24 06 - Two-Eye Reef
-0000 0A 06 - Angular Isles
-0000 15 06 - Boating Course
-0000 0A 06 - Five-Star Isles
+BGM info pointer, BGM ID, scene wave index, 2nd dynamic scene wave index - Island name
+8039C4F0:  0000 00 00 - [N/A]
+8039C4F4:  0007 02 0A - Forsaken Fortress
+8039C4F8:  0000 0A 06 - Star Island
+8039C4FC:  0000 0A 06 - Northern Fairy Island
+8039C500:  0000 0A 06 - Gale Isle
+8039C504:  0000 0A 06 - Crescent Moon Island
+8039C508:  0000 0A 06 - Seven-Star Isles
+8039C50C:  0000 0A 06 - Overlook Island
+8039C510:  0000 0A 06 - Four-Eye Reef
+8039C514:  0000 2B 06 - Mother and Child Isles
+8039C518:  0000 1A 06 - Spectacle Island
+8039C51C:  003B 0B 00 - Windfall Island
+8039C520:  0000 0A 06 - Pawprint Isle
+8039C524:  003A 19 06 - Dragon Roost Island
+8039C528:  0000 15 06 - Flight Control Platform
+8039C52C:  0000 0A 06 - Western Fairy Island
+8039C530:  0000 0A 06 - Rock Spire Isle
+8039C534:  0000 11 06 - Tingle Island
+8039C538:  0000 21 06 - Northern Triangle Island
+8039C53C:  0000 0A 06 - Eastern Fairy Island
+8039C540:  0000 0A 06 - Fire Mountain
+8039C544:  0000 0A 06 - Star Belt Archipelago
+8039C548:  0000 0A 06 - Three-Eye Reef
+8039C54C:  0000 0A 06 - Greatfish Isle
+8039C550:  0000 0A 06 - Cyclops Reef
+8039C554:  0000 0A 06 - Six-Eye Reef
+8039C558:  0000 10 06 - Tower of the Gods
+8039C55C:  0000 0A 06 - Eastern Triangle Island
+8039C560:  0000 0A 06 - Thorned Fairy Island
+8039C564:  0000 0A 06 - Needle Rock Isle
+8039C568:  0000 0A 06 - Islet of Steel
+8039C56C:  0000 0A 06 - Stone Watcher Island
+8039C570:  0000 0A 06 - Southern Triangle Island
+8039C574:  0000 13 06 - Private Oasis
+8039C578:  0000 0A 06 - Bomb Island
+8039C57C:  0000 0A 06 - Bird's Peak Rock
+8039C580:  0000 13 06 - Diamond Steppe Island
+8039C584:  0000 0A 06 - Five-Eye Reef
+8039C588:  0000 21 06 - Shark Island
+8039C58C:  0000 0A 06 - Southern Fairy Island
+8039C590:  0000 0A 06 - Ice Ring Isle
+8039C594:  0039 0F 00 - Forest Haven
+8039C598:  0000 0A 06 - Cliff Plateau Isles
+8039C59C:  0000 0A 06 - Horseshoe Island
+8039C5A0:  0001 0A 06 - Outset Island
+8039C5A4:  0000 0A 06 - Headstone Island
+8039C5A8:  0000 24 06 - Two-Eye Reef
+8039C5AC:  0000 0A 06 - Angular Isles
+8039C5B0:  0000 15 06 - Boating Course
+8039C5B4:  0000 0A 06 - Five-Star Isles

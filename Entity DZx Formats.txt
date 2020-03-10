@@ -21,7 +21,10 @@ For entities that have parameters, it also documents their parameters and the co
     0xF800 - ???
   0C,4:
     0x000000FF - ? Read in func SetSchBit
-    0x00070000 - ? Read in func drawSun and in func setGameStartStage
+    0x00070000 - Stage type? Read in funcs drawSun, setGameStartStage, and checkRoofRestart
+      1 - Dungeon
+      3 - Boss
+      If this value is equal to 3, solid objects falling on the player do not cause the room to restart?
   10,4:
     0x00FF0000 - ? Read in func SetSchBit
 
@@ -114,16 +117,26 @@ item: A field item lying on the ground. (no REL file, item code is part of the c
   params & 0x0000FF00 - The item pickup flag to set.
     If this is in the range of 00 to 3F, it will set an item pickup flag in the current stage info.
     If this is in the range of 40 to 4F, it will set a zone bit (in the range 00 to 0F, just subtract 40 from it).
-  params & 0x00FF0000 - Prerequisite switch index.
-  params & 0x03000000 - unknown_2
-    Known possible values:
-    3 - Don't fade out if the player doesn't pick it up quickly enough
+    Note: If the item ID is 4B (Blue Chu Jelly), this item will not set an item pickup flag. In this case, this number is instead the switch index in stage ID E's stage info's mem bits to set to keep track of this Blue Chu Jelly being picked up globally.
+  params & 0x00FF0000 - Enable spawn switch index.
+  params & 0x03000000 - Behavior type.
+    0 - Normal for dropped items. Fades away after some time.
+    1 - Float in place, not doing anything but rotating. Not affected by gravity, and doesn't fade away.
+    2 - Same as 0 maybe?
+    3 - Normal for placed items. Does not fade away after some time.
   params & 0xFC000000 - Item action.
     Known possible values:
+    0 - Normal.
+    4 - ?
     5 - The item makes a ding sound effect
+    8 - ?
+    A - ?
+    B - ?
+    C - ?
   aux_params_2 & 0x00FF - Activation switch index.
-    The item will be visible and animated, but can't be picked up and will not start to fade out until this switch is set.
+    The item will be visible and animated, but can't be picked up and will not start to fade away until this switch is set.
     Used for a rupee inside a block of ice in the vanilla game to make it only activate once the ice is melted.
+    FF - No activation switch needed, always active.
 itemDek: The Deku Leaf spawned on one of the Deku Tree's branches. (d_a_deku_item)
   params & 0x000000FF - The item pickup flag to set.
 BFlower, VbakH: Bomb flowers. (d_a_bflower)
@@ -424,7 +437,7 @@ c_green, c_red, c_blue, c_black, c_kiiro: ChuChu. (d_a_cc)
     02 - ChuChu never spawns in properly.
       It's impossible to see or kill, but still counts as alive so it will prevent you from completing the room.
     03 - Does not attack Link, just moves around randomly.
-      This behavior type is intended for Blu ChuChus. It causes Grappling Hook to not steal Chu Jelly from them, and Hookshot to not pull the them to Link (only makes it stand up if in a puddle).
+      This behavior type is intended for Blu ChuChus. It causes Grappling Hook to not steal Chu Jelly from them, and Hookshot to not pull them to Link (only makes it stand up if in a puddle).
     04 - Hiding in a pot.
     FF - Defaults to 00 instead.
     If the value located at 803E75A8,2 is not 0, this value will be forcibly changed to 03.
@@ -447,6 +460,7 @@ c_green, c_red, c_blue, c_black, c_kiiro: ChuChu. (d_a_cc)
       If behavior type is 4, these do not default to anything, and actually use 0 or 255*10.0 as the range. Though I'm not sure if the range actually affects how type 4s act anyway?
       If behavior type is anything else, these default to a range of 1000.0.
   params & 0xFF000000 - Disable spawn switch.
+    TODO: how does this work for blue chuchus...?
   Example params:
   0B1E0203 - Blue ChuChu on Eastern Fairy Island.
   FFFF04FF - Yellow ChuChu in first room of TotG.
@@ -635,7 +649,7 @@ Bk: Bokoblin. (d_a_bk)
     See params & 00000010 for exactly what this switch affects.
     - unknown_7
     stored to entity+2B8,1
-  aux_params_2 & 00FF - Switch index to set when this Bokoblin dies. The Bokoblin will stay dead as long as the switch is set.
+  aux_params_2 & 00FF - Disable spawn on death switch.
     00 - Invalid switch.
     FF - Defaults to 00 instead.
 mo2: Moblin. (d_a_mo2)
@@ -655,7 +669,7 @@ mo2: Moblin. (d_a_mo2)
   params & 00FF0000 - Path index to follow, or FF for none.
   params & FF000000 - Switch index to check and not appear until it is set.
     If this is FF the Moblin will appear from the start.
-  aux_params_2 & 00FF - Switch index to set when the Moblin dies. The Moblin stays dead as long as the switch is set.
+  aux_params_2 & 00FF - Disable spawn on death switch.
     00 - Invalid switch, don't set or check.
     FF - Defaults to 00 instead.
     Read at BD38 in func daMo2_Create(fopAc_ac_c *)
@@ -737,8 +751,8 @@ Tn: Darknut. (d_a_tn)
   aux_params_2 & 00FF - Disable spawn on death switch.
 Oship: Gunboat/warship. (d_a_oship)
   params & 000000FF - 
-  params & 00000F00 - Index of the triforce shard to check, and if the player has it this ship will disappear.
-    0xF - Means don't disappear after getting any triforce shard.
+  params & 00000F00 - Index of a triforce chart. The gunboat will only appear after the player has gotten this triforce chart deciphered.
+    0xF - Means don't check any triforce chart. Appear regardless.
   params & 0000F000 - Random duplicate ID of this ship.
     0-3, this is the same number that salvages use (at 803C4DA9).
     0xF - Means no duplicate ID, this ship just always appears regardless of random salvage placement.
@@ -1016,7 +1030,7 @@ Bb: Kargarocs. (d_a_bb)
     If the path it's following has a next path defined, it seems the Kargaroc will move to the next path once it reaches the end of this path.
   params & FF000000 - Switch index that must be set before this Kargaroc appears.
     FF - This Kargaroc appears from the start.
-  aux_params_2 & 00FF - Disappearance switch index. The Kargaroc will permanently disappear once something sets this switch.
+  aux_params_2 & 00FF - Disable spawn switch index. The Kargaroc will permanently disappear once something sets this switch.
     00 - This Kargaroc never permanently disappears.
     FF - Defaults to 00 instead.
 magtail: Magtails. (d_a_mt)
@@ -1044,7 +1058,7 @@ magtail: Magtails. (d_a_mt)
     If set while in the same room as the Magtail, the Magtail will suddenly pop into existence.
     FF - Invalid.
     Read at 864C in func daMt_Create(fopAc_ac_c *)
-  aux_params_2 & 00FF - Disable spawn on death switch index???
+  aux_params_2 & 00FF - Disable spawn on death switch index.
     00 or FF - Invalid.
     Read at 8664 in func daMt_Create(fopAc_ac_c *)
     Read at 869C in func daMt_Create(fopAc_ac_c *)
@@ -1120,7 +1134,7 @@ Stal: Stalfos. (d_a_st)
   params & 00FF0000 - Unused.
   params & FF000000 - Switch index. When underground or in a coffin, if this switch is valid the Stalfos will appear when it is set.
     FE and FF - Invalid. No switch is used to decide when to come out, and the distance to the player is used instead.
-  aux_params_2 & 00FF - Switch index to set on death.
+  aux_params_2 & 00FF - Disable spawn on death switch index.
     00 - Invalid, don't set a switch.
     If this is from 01-7F, set bit 0x400 in bitfield at entity+0x1C4??
     FF - Defaults to 00 instead.
@@ -1247,7 +1261,7 @@ Salvage: Main salvages that require a chart to see.
   params & 0xF0000000 - Salvage type. 0 for these chart salvages.
   params & 0x00000FF0 - Item ID.
   params & 0x0FF00000 - Chart index+1 that reveals this salvage.
-  params & 0x00000003 - Duplicate ID of this salvage.
+  aux_params_2 & 0x00000003 - Duplicate ID of this salvage.
     On starting a new game, your save file has a random number generated from 0-2 for which set of these salvages you get.
     On starting new game+, it's always 3.
 SwSlvg: Shipwreck salvages (from Gunboats or Big Octos you defeat).

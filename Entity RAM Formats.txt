@@ -104,6 +104,10 @@ For item entities:
     read at 800F8568
     read at 800F8684 for a switch statement
 669,1: bitfield?
+66A,1: Current mode of the item.
+  0 - Normal. (mode_wait_init)
+  1 - ? Duplicate of normal mode? Unused?
+  2 - In water. (mode_water_init)
 66B,1: maybe the item's current state?
 
 For treasure chest entities:
@@ -115,19 +119,41 @@ For treasure chest entities:
   F - For tingle statue chests. This special value means the chest will not appear on the dungeon map with the compass until you have revealed the chest.
 
 For the player:
-290,1: The player's current attack state.
+0290,1: The player's current attack state.
   0 - Not attacking
   1 - Attacking with sword while locked on
   4 - Attacking with sword while not locked on
   8 - Spin attacking
   A - Jump attacking
-29C,4: Bitfield
+029C,4: Bitfield
   02000000 - Player is currently wearing the iron boots.
-2A4,4: Bitfield
+02A0,4: Bitfield
+  00000008 - Player is in their casual clothes.
+  00000800 - Player is frozen as a solid block of ice?
+  00040000 - ?? set automatically after 00000800 is set?
+02A4,4: Bitfield
   00000080 - ?? maybe about to use an equipped item?
   00200000 - Player's mirror shield is currently reflecting light.
-314,4: The current action index. e.g. 11 (0xB) for 011get_item.
-554,2: The index of the face the player is currently colliding with.
+0314,4: The current action index. e.g. 11 (0xB) for 011get_item.
+032C,4: Pointer to Link's main cl.bdl model.
+0330,4: Pointer to Link's katsura.bdl model.
+0334,4: Pointer to Link's yamu.bdl model.
+0954,4: Pointer to Link's hands.bdl model.
+095C,4: Pointer to Link's swgripa.bdl model.
+0960,4: Pointer to Link's swgripms.bdl model.
+097C,4: Pointer to Link's podms.bdl model.
+0984,4: Pointer to Link's sha.bdl model.
+0988,4: Pointer to Link's shms.bdl model.
+2E7C,4: Pointer to Link's ymsls00.bdl model.
+2E84,4: Pointer to Link's hboots.bdl model (either left or right foot, not sure which).
+2E88,4: Pointer to Link's hboots.bdl model (either left or right foot, not sure which).
+2E8C,4: Pointer to Link's pring.bdl model.
+2F14,4: Pointer to Link's suimen_munya.bdl model.
+2F1C,4: Pointer to Link's yuchw00.bdl model.
+2F38,4: Pointer to Link's ybafo00.bdl model.
+2F8C,4: Pointer to Link's ymgcs00.bdl model.
+0338,4: Pointer to ???
+0554,2: The index of the face the player is currently colliding with.
   This is an index in the currently loaded .dzb file's list of faces.
 25BC,4: The player's true speed?
 34C8,1: Bitfield of pressed buttons.
@@ -204,10 +230,14 @@ For Zunari:
   -1 = On the left side of his stall
   0 = On the right side of his stall
 
-Model entity format:
-18,4: X scale.
-1C,4: Y scale.
-20,4: Z scale.
+Model format (J3DModel):
+18,04: X scale.
+1C,04: Y scale.
+20,04: Z scale.
+24,30: Base transform matrix.
+8C,04: Pointer to a list of the matrices for each of the model's joints.
+  The index in the list of matrices is simply the joint index.
+  e.g. For joint 0xF, the offset in that list would be 0xF*0x30 = 0x2D0.
 
 Model entity format?:
 070,4: Something texture related

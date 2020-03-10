@@ -1,0 +1,153 @@
+
+ ADMumi 1
+  A_R00 0
+ A_mori 0
+ A_nami 0
+A_umikz 0
+ Abesso 2
+ Abship 4
+Adanmae 0
+ Amos_T 0
+  Asoko 2
+Atorizk 2
+ Cave01 4
+ Cave02 4
+ Cave03 4
+ Cave04 4
+ Cave05 4
+ Cave06 4
+ Cave07 4
+ Cave08 1
+ Cave09 4
+ Cave10 4
+ Cave11 4
+ Comori 2
+ E3ROOP 0
+ ENDumi 1
+ Ebesso 0
+Edaichi 4
+  Ekaze 4
+Fairy01 4
+Fairy02 4
+Fairy03 4
+Fairy04 4
+Fairy05 4
+Fairy06 4
+ GTower 3
+ GanonA 1
+ GanonB 1
+ GanonC 1
+ GanonD 1
+ GanonE 1
+ GanonJ 1
+ GanonK 1
+ GanonL 1
+ GanonM 1
+ GanonN 1
+ Hyroom 4
+ Hyrule 4
+ITest61 4
+ITest62 4
+ITest63 4
+I_SubAN 4
+I_TestM 0
+I_TestR 0
+KATA_HB 0
+KATA_RM 1
+K_Test2 0
+K_Test3 0
+K_Test4 0
+K_Test5 0
+K_Test6 0
+K_Test8 0
+K_Test9 0
+K_Testa 0
+K_Testb 0
+K_Testc 0
+K_Testd 0
+K_Teste 0
+ Kaisen 2
+ LinkRM 2
+ LinkUG 2
+M2ganon 2
+M2tower 3
+  M_Dai 1
+ M_DaiB 3
+M_DaiMB 6
+M_Dra09 6
+M_DragB 3
+M_NewD2 1
+ MajyuE 5
+MiniHyo 4
+MiniKaz 4
+Mjtower 3
+ Msmoke 1
+  Mukao 0
+Nitiyou 2
+ Obombh 2
+ Obshop 2
+  Ocean 0
+ Ocmera 2
+ Ocrogh 2
+Ojhous2 2
+ Ojhous 2
+ Omasao 2
+  Omori 0
+Onobuta 2
+   Opub 2
+ Orichh 2
+ Otkura 2
+ PShip2 4
+ PShip3 4
+  PShip 4
+ Pdrgsh 2
+Pfigure 2
+Pjavdou 4
+Pnezumi 2
+  ShipD 4
+  Siren 1
+ SirenB 3
+SirenMB 6
+ SubD42 4
+ SubD43 4
+ SubD44 4
+ SubD45 4
+ SubD51 4
+ SubD71 4
+   TEST 1
+  TF_01 4
+  TF_02 4
+  TF_03 4
+  TF_04 4
+  TF_05 4
+  TF_06 4
+  TF_07 4
+ TyuTyu 4
+ VrTest 0
+  WarpD 4
+ Xboss0 3
+ Xboss1 3
+ Xboss2 3
+ Xboss3 3
+figureA 2
+figureB 2
+figureC 2
+figureD 2
+figureE 2
+figureF 2
+figureG 2
+  kazan 0
+   kaze 1
+  kazeB 3
+ kazeMB 6
+kenroom 4
+kinBOSS 3
+  kinMB 6
+ kindan 1
+ma2room 1
+ma3room 1
+majroom 1
+    sea 7
+  sea_E 7
+  sea_T 7
+ tincle 2

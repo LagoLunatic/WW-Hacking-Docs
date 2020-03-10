@@ -685,7 +685,7 @@ bits set during vanilla game in order:
 803C5114-803C5137 - Stage ID B stage info (Houses & Misc Places)
 803C5138-803C515B - Stage ID C stage info (Cave Interiors)
 803C515C-803C517F - Stage ID D stage info (More Cave Interiors & Ship Interiors)
-803C5180-803C51A3 - Stage ID E stage info (??? - no stages have this stage info ID set, yet something in the game sets mem bits here)
+803C5180-803C51A3 - Stage ID E stage info (This stage info's mem bits are used to keep track of Blue ChuChus being dead.)
 803C51A4-803C51C7 - Stage ID F stage info (Test Maps)
 Stage info format:
   00,04: Bitfield of the stage's treasure chest open flags.
@@ -792,9 +792,11 @@ Player's partner's room restart position? ("restart option")
 
 803CA7F8,1 - Song index of the song to display in the message box for the interactive tutorial.
 
-803CA8D0,4 - Bitfield of ??? related to the player
+803CA8D0,4 - First bitfield of player statuses (PlayerStatus0).
   00010000 - Player is riding the ship. (Checked at 80120484)
-  00100000 - Player is swimming
+  00100000 - Player is swimming.
+803CA8D4,4 - Second bitfield of player statuses (PlayerStatus1).
+  00000400 - In ship while it is sailing.
 
 803C4C38,8 - Stage name of the player's "return place" (where you will be placed when you reload your save).
   The 8th byte must be 00.
@@ -835,12 +837,12 @@ Player's partner's room restart position? ("restart option")
   There are 0x2800 spots for flags in total. They take up 0x500 bytes.
   These bits are grouped into words.
 
-803CA410,4 - Always has a pointer to the player entity in RAM.
+803CA410,4 - Always has a pointer to the player entity in RAM. (for dAttention_c)
   This refers not only to Link, but to Medli/Makar/Tower Servant/seagull when you're controlling them.
 
-803CA74C,4 - Always has a pointer to the player entity in RAM.
+803CA74C,4 - Always has a pointer to the player entity in RAM. (for dComIfG_play_c)
   This refers not only to Link, but to Medli/Makar/Tower Servant/seagull when you're controlling them.
-803CA754,4 - Always has a pointer to the Link entity in RAM.
+803CA754,4 - Always has a pointer to the Link entity in RAM. (for dComIfG_inf_c)
 803CA758,4 - Always has a pointer to the player's partner entity in RAM (e.g. Medli).
 803CA75C,4 - Always has a pointer to the ship entity in RAM (KoRL).
 
@@ -922,9 +924,6 @@ Backup inventory data used by recollection bosses in order to restore the player
 803CA8BB-803CA8C7 - Backup bitfield of what items the player owns.
   Copied to/from 803C4CBC.
 
-803CA8D4,4 - Bitfield of player statuses?
-  00000400 - In ship while it is sailing?
-
 803CA8E4,2 - Number of times you've hit Orca displayed on the screen.
   Does not affect how many times Orca knows you've actually hit him. That's inside Orca's entity.
 
@@ -933,6 +932,24 @@ Backup inventory data used by recollection bosses in order to restore the player
 
 803CA91C,4 - Pointer to the item table for certain pots to choose what to drop from when destroyed.
   This pointer seems to lead inside of an entity or REL.
+
+=========== 803E0BC8-803E1DC7: dRes_control_c
+
+803E0BC8-803E14C7 - List of currently loaded resource archives from the res/Object folder.
+803E14C8-803E1DC7 - List of currently loaded resource archives from the res/Stage folder.
+  Entry length 0x24.
+  00,0E: Name of the RARC loaded in this slot (without the .arc extension).
+  0E,02: Number of actors that currently exist that need this arc to still be loaded (ref count).
+  10,04: Pointer to ??? (Can be 0.)
+  14,04: Pointer to ???
+  18,04: Pointer to ??? (Can be 0.)
+  1C,04: Pointer to ???
+  20,04: Pointer to a list of files in this archive.
+    Each entry in the list is a pointer the file loaded in memory.
+    The index in this list is the file ID from the RARC.
+    You can set a read breakpoint on the pointer for a particular file ID in a particular loaded archive in order to find what is calling getRes to load that file when.
+
+=========== 803E1DC7: End of dRes_control_c
 
 803E2270 - Filename of the currently loaded .jpc particle archive file for the current stage.
 

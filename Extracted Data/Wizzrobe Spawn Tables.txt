@@ -16,26 +16,26 @@ Table 01:
      8x 00D8 FFFFFF03 Keese
      0x 7FFF 00000000 [nothing]
   Group 01:
-     2x 00D0 0100FF00 Bubble
+     2x 00D0 0100FF00 Red Bubble
      0x 7FFF 00000000 [nothing]
   Group 02:
      6x 00D8 FFFFFF03 Keese
      0x 7FFF 00000000 [nothing]
   Group 03:
-     1x 00D0 0100FF00 Bubble
+     1x 00D0 0100FF00 Red Bubble
      3x 00D8 FFFFFF03 Keese
 Table 02:
   Group 00:
-     2x 00D0 0100FF01 Bubble
+     2x 00D0 0100FF01 Blue Bubble
      0x 7FFF 00000000 [nothing]
   Group 01:
-     1x 00D0 0100FF01 Bubble
+     1x 00D0 0100FF01 Blue Bubble
      0x 7FFF 00000000 [nothing]
   Group 02:
-     1x 00D0 0100FF01 Bubble
+     1x 00D0 0100FF01 Blue Bubble
      0x 7FFF 00000000 [nothing]
   Group 03:
-     1x 00D0 0100FF01 Bubble
+     1x 00D0 0100FF01 Blue Bubble
      0x 7FFF 00000000 [nothing]
 Table 03:
   Group 00:
@@ -52,30 +52,30 @@ Table 03:
      0x 7FFF 00000000 [nothing]
 Table 04:
   Group 00:
-     8x 00CF FFFF0000 ChuChu
+     8x 00CF FFFF0000 Green ChuChu
      0x 7FFF 00000000 [nothing]
   Group 01:
-    10x 00CF FFFF0000 ChuChu
+    10x 00CF FFFF0000 Green ChuChu
      0x 7FFF 00000000 [nothing]
   Group 02:
-     8x 00CF FFFF0000 ChuChu
+     8x 00CF FFFF0000 Green ChuChu
      0x 7FFF 00000000 [nothing]
   Group 03:
-     8x 00CF FFFF0000 ChuChu
+     8x 00CF FFFF0000 Green ChuChu
      0x 7FFF 00000000 [nothing]
 Table 05:
   Group 00:
-     2x 00D0 0100FF00 Bubble
+     2x 00D0 0100FF00 Red Bubble
      0x 7FFF 00000000 [nothing]
   Group 01:
-     2x 00D0 0100FF00 Bubble
+     2x 00D0 0100FF00 Red Bubble
      0x 7FFF 00000000 [nothing]
   Group 02:
-     1x 00D0 0100FF01 Bubble
-     1x 00D0 0100FF00 Bubble
+     1x 00D0 0100FF01 Blue Bubble
+     1x 00D0 0100FF00 Red Bubble
   Group 03:
      1x 00D5 FF000000 Poe
-     2x 00D0 0100FF01 Bubble
+     2x 00D0 0100FF01 Blue Bubble
 Table 06:
   Group 00:
      1x 00BF FFFFFF00 Stalfos
@@ -133,13 +133,13 @@ Table 0A:
      4x 00D8 FFFFFF03 Keese
      0x 7FFF 00000000 [nothing]
   Group 01:
-     1x 00D0 0100FF00 Bubble
+     1x 00D0 0100FF00 Red Bubble
      0x 7FFF 00000000 [nothing]
   Group 02:
      3x 00D8 FFFFFF03 Keese
      0x 7FFF 00000000 [nothing]
   Group 03:
-     1x 00D0 0100FF00 Bubble
+     1x 00D0 0100FF00 Red Bubble
      2x 00D8 FFFFFF03 Keese
 Table 0B:
   Group 00:
@@ -156,16 +156,16 @@ Table 0B:
      0x 7FFF 00000000 [nothing]
 Table 0C:
   Group 00:
-     4x 00CF FFFF0000 ChuChu
+     4x 00CF FFFF0000 Green ChuChu
      0x 7FFF 00000000 [nothing]
   Group 01:
-     5x 00CF FFFF0000 ChuChu
+     5x 00CF FFFF0000 Green ChuChu
      0x 7FFF 00000000 [nothing]
   Group 02:
-     4x 00CF FFFF0000 ChuChu
+     4x 00CF FFFF0000 Green ChuChu
      0x 7FFF 00000000 [nothing]
   Group 03:
-     4x 00CF FFFF0000 ChuChu
+     4x 00CF FFFF0000 Green ChuChu
      0x 7FFF 00000000 [nothing]
 Table 0D:
   Group 00:
@@ -188,8 +188,8 @@ Table 0E:
      4x 00D8 FFFFFF03 Keese
      0x 7FFF 00000000 [nothing]
   Group 02:
-     2x 00CF FFFF0A00 ChuChu
-     2x 00CF FFFF0B00 ChuChu
+     2x 00CF FFFF0A00 Green ChuChu
+     2x 00CF FFFF0B00 Red ChuChu
   Group 03:
      4x 00D8 FFFF0003 Keese
      8x 00CE 00000003 Morth
