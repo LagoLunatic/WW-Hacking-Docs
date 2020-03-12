@@ -327,13 +327,13 @@ Pirates: Pirate ship. (d_a_obj_pirateship)
     01FF0001 - When Link is with the Pirates riding to Forsaken Fortress near the start of the game
     02FF0000 - Outside FF1
     FFFF0100 - Windfall pirate ship
-Warpts1, Warpts2, Warpts3: Warp pot. (d_a_obj_warpt)
+Warpts1, Warpts2, Warpts3: Cyclic warp pot. (d_a_obj_warpt)
   params & 0x0000000F - Which warp pot this is.
     Affects which bit in the event register is set when you unlock this pot:
       2 - Set bit 1.
       3 - Set bit 2.
       4 - Set bit 4.
-      If this value is anything other than 2, 3, or 4, this becomes a one-way warp pot instead (see below).
+      If this value is anything other than 2, 3, or 4, this becomes a paired warp pot instead (see below).
     Gets stored to entity+0x2B4,4
   params & 0x000000F0 - Which event register of unlocked warp jars to use.
     Index in list 2DC0 (entry length 2).
@@ -353,36 +353,38 @@ Warpts1, Warpts2, Warpts3: Warp pot. (d_a_obj_warpt)
   params & 0xFF000000 - Where to warp when going to the third warp pot in this dungeon.
     This is an SCLS exit index in this room's SCLS list.
     Gets stored to entity+0x2A8,4
-  aux_params & 0x00FF - ?
-  aux_params & 0xFF00 - ?
-  aux_params_2 & 0x00FF - Affects whether a sound effect should be played or not?
-  aux_params_2 & 0xFF00 - If this is 0xFF, the warp will be locked by default. Otherwise it will be unlocked.
+  aux_params & 0x00FF - The switch index of whatever is blocking this pot's top being destroyed.
+    If this is FF, the thing blocking the top will be a normal lid that is part of the pot actor.
+    If this is any other value, you will need to place a separate actor on top of the warp pot that sets the relevant switch when it's destroyed. The pot itself will have no lid - so the player can actually use it if you don't block the top properly, despite the warp pot thinking it should be locked. Note that because it thinks it's locked, the smoke particle coming from the pot will seethe outwards instead of upwards.
+  aux_params & 0xFF00 - Unused for cyclic warp pots.
+  aux_params_2 & 0x00FF - If this is 0xFF, the warp pot will play a sound effect when unlocked. Otherwise it won't.
+  aux_params_2 & 0xFF00 - If this is 0xFF, the warp pot will be locked by default. Otherwise it will be unlocked.
   first warp pot in DRC:  03020102
   second warp pot in DRC: 02010003
   third warp pot in DRC:  04030204
-Warpt, Warpnt: One-way warp pot that only works within a single room. (d_a_obj_warpt)
-  params & 0x0000000F - Which warp pot this is.
-      0 - Exit pot (Warpt).
-      1 - Entrance pot (Warpnt).
+Warpt, Warpnt: Paired warp pot that only works within a single room. (d_a_obj_warpt)
+  params & 0x0000000F - Type of warp pot.
+      0 - Paired warp pot that started off locked (Warpt).
+      1 - Paired warp pot that is unlocked (Warpnt).
     If this value is 2, 3, or 4, this becomes a regular warp pot instead (see above).
     Gets stored to entity+0x2B4,4
-  params & 0x00000FF0 - Seems to be an unused SCLS index.
+  params & 0x00000FF0 - Seems to be an unused SCLS index that points to the spawn coming out of this warp pot.
     Gets stored to entity+298,4
-  params & 0x000FF000 - Where to warp when succesfully going into this warp pot.
+  params & 0x000FF000 - Where to warp when successfully going into this warp pot.
     This is an SCLS exit index in this room's SCLS list.
     Gets stored to entity+29C,4
   aux_params & 0x00FF - Switch index for this warp pot being opened.
-    For the entrance pot (type 1), this switch is set by default when the warp pot is created.
+    For unlocked pots (type 1), this switch is set by default when the warp pot is created.
     Gets stored to entity+2AC,4
   aux_params & 0xFF00 - Switch index for the other warp pot connected to this one being opened.
     Gets stored to entity+2B0,4
-  aux_params_2 - Unused for one-way warp pots.
+  aux_params_2 - Unused for paired warp pots.
   Example params:
-    entrance warp pot in puppet ganon's room:
+    Unlocked lower warp pot in puppet ganon's room:
       params: 000 02 03 1
       aux_params: 08 07
       aux_params_2: 0000
-    exit warp pot in puppet ganon's room:
+    Locked upper warp pot in puppet ganon's room:
       params: 000 03 02 0
       aux_params: 07 08
       aux_params_2: 0000
