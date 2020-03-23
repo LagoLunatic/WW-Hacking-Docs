@@ -140,9 +140,9 @@ item: A field item lying on the ground. (no REL file, item code is part of the c
 itemDek: The Deku Leaf spawned on one of the Deku Tree's branches. (d_a_deku_item)
   params & 0x000000FF - The item pickup flag to set.
 BFlower, VbakH: Bomb flowers. (d_a_bflower)
-  BFlower is a normal bomb flower.
-  VbakH is a dried out bomb flowers from the Dragon Roost Cavern entrance.
-  params & 0x000000F0 - 
+  params & 0x000000F0 - Type.
+    0 - Normal ripe bomb flower. (BFlower)
+    1 - Dried out bomb flower. (VbakH)
   params & 0x0000FF00 - The switch index for this bomb flower being watered.
 Eskban: Boulder from the Dragon Roost Cavern entrance. (d_a_obj_eskban)
   params & 0x000000FF - The switch index for this boulder being destroyed.
@@ -298,6 +298,7 @@ kotubo, ootubo1, Odokuro: Pot/skull. (d_a_tsubo)
     F - Wooden crate (KkibaB)
   params & 0x70000000 - 
   params & 0x80000000 - 
+  aux_params_2 & 0x00FF - Enable spawn switch.
   Example params:
   707FFF16 - small pot that drops fairy
   7106FF1F - large pot that drops joy pendant only one time
@@ -551,7 +552,7 @@ Hmos1, Hmos2, Hmos3: Beamos and laser barriers. (d_a_obj_bemos)
       Read at 0F50 in func daBemos_c::CreateInit3(void)
       Read at 10E4 in func daBemos_c::CreateInit3(void)
       Read at 1144 in func daBemos_c::CreateInit3(void)
-Ylesr00: Laser beam fired by a Hmos3 laser barrier. (d_a_beam)
+Ylesr00: Laser beam fired by a Hmos3 laser barrier, or by a Moblin statue. (d_a_beam)
   params & 000000FF
     Read at 0DEC in func daBeam_c::CreateInit(void)
   params & 0000FF00
@@ -577,7 +578,6 @@ Ylesr00: Laser beam fired by a Hmos3 laser barrier. (d_a_beam)
   Example params:
   11000000 - Laser beam created by a Hmos3 that you can walk through (no solid collision).
   41000000 - Laser beam created by a Hmos3 that you can't walk through (has solid collision).
-  
 Ikada, ikada_h, ikadaS, ikada_u, Svsp: Various types of rafts/ships. (d_a_obj_ikada)
   params & 0000000F - Type.
     0 - Ikada   - Raft
@@ -729,8 +729,8 @@ Tn: Darknut. (d_a_tn)
     4 - Black with brown trim.
     5 - Red with gold trim.
     6+ - Defaults to 5.
-    The RGB value for the main color of the armor is in list prim$7755 (at E2AC in d_a_tn.rel).
-    The RGB value for the trim color of the armor is in list env$7756 (at E2C4 in d_a_tn.rel).
+    The RGB value for the main color of the armor for particles is in list prim$7755 (at E2AC in d_a_tn.rel).
+    The RGB value for the trim color of the armor for particles is in list env$7756 (at E2C4 in d_a_tn.rel).
     For both of these lists, each entry is 4 bytes long - red, green, blue, and the 4th byte is unused.
   params & 0000FF00 - Varies depending on type.
     For type 04, this number multiplied by 10.0 is the radius of the area the Darknut guards.
@@ -792,8 +792,8 @@ kusax1, kusax7, kusax21, flower, flwr7, flwr17, pflower, pflwrx7, swood, swood3,
   params & 0x00000030 - Type.
     0 - Grass (kusa)
     1 - Tree (swood)
-    2 - Flower
-    3 - Flower
+    2 - White Flower (flower)
+    3 - Pink Flower (pflower)
   params & 0x00000FC0 - Affects what item(s) to spawn.
     Valid values appear to be 0x20 to 0x3F. Other values seem to default to -1 (no item) instead.
     This parameter gets passed as argument r4 to createItemFromTable when the object is cut down.
@@ -1173,7 +1173,7 @@ Oq, Oqw: Octoroks. (d_a_oq)
     00 - Freshwater Octorok.
     01 - Saltwater Octorok that shoots once the player is a certain range away from it.
     02 - Saltwater Octorok that appears close to the player (ignoring the position it was placed at). Also shoots the player after a certain delay.
-      This type is unused.
+      This type is used for the Saltwater Octorok spawned by the salvage object after you salvage a vase.
     03 - Saltwater Octorok spawner. Spawns type 05 Octoroks if the player is within a certain range of the spawner.
     04 - Saltwater Octorok that shoots the player after a certain delay.
     05 - Spawned Saltwater Octorok. Doesn't seem to appear when manually placed, must be created by type 03.
@@ -1293,16 +1293,18 @@ TagEv: This object acts as a trigger region to cause an event to occur. (d_a_tag
     09 - gets a password?
     0A - 
     0B - MjReady
-    0C - Ignores the event bit param at aux_params_2 & FFFF, it won't matter if that event bit is set or not.
-      Not sure what the point of this type is - they could just not set an event bit instead of using this?
+    0C - Invert enable spawn switch. This TagEv will not become active until that switch is NOT set.
+      Also ignores the event bit param at aux_params_2 & FFFF, it won't matter if that event bit is set or not.
       Event works correctly if the player hits it while coming out of a door. (Sets bit 0001 of bitfield 803C9EC8,2.) (cancelShutter)
     0D - 
     FF - Normal type, starts the event when you enter the trigger region.
+      This checks the enable spawn switch and the enable spawn event bit to know when to become active.
   params & 0x0000FF00 - The switch index to set when the event plays and disables this event from playing again.
+    Note that if something else sets this switch, the TagEv will become disabled without ever playing its event.
   params & 0x00FF0000 - Switch index that must be set before this trigger region will appear.
     FF - None, this region always appears.
   params & 0xFF000000 - The event index to start, in this stage's EVNT list.
-  aux_params_2 & FFFF - Event bit that must be set for this trigger region to become enabled.
+  aux_params_2 & FFFF - Event bit that must be set for this trigger region to become active.
     0000 or FFFF - Invalid, no event bit must be set.
 TagHt, TagHt2: Trigger region for a Pirate's Charm hint. (d_a_tag_hint)
   params & 0x0000003F - "Type"?
@@ -1318,7 +1320,7 @@ TagKb: Trigger region for having the big pig dig up an item in black soil.
 Akabe: Invisible wall. (d_a_obj_akabe)
   params & 0x000000FF - Switch index to check for if this invisible wall should disappear yet.
     FF - Special case that means the invisible wall should disappear when the player owns any sword.
-agbTBOX: Trigger for a Tingle Chest to appear. (d_a_agbsw0)
+agbTBOX: Trigger for a Tingle Chest to appear. (Or maybe just any item, not necessarily a chest?) (d_a_agbsw0)
 agbA, agbAT, agbA2, agbF, agbF2, agbMARK, agbMW, agbCSW, agbR, agbB, agbD, agbFA: Other Tingle Tuner-related triggers. (d_a_agbsw0)
   params & 0x0000FFFF - ?
   params & 0x00FF0000 - Switch index to set when a Tingle bomb is used on this object.

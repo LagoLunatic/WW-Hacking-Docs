@@ -32,10 +32,10 @@ fopAcM_orderOtherEventId__FP10fopAc_ac_csUcUsUsUs
   if you go up a call from here, you'll get whatever actor really started the event.
   r3 - pointer to the entity that called this function
   r4 - the event index to start in the event_list.dat
-  r5 - ? (uchar)
-  r6 - ? (ushort)
-  r7 - ? (ushort)
-  r8 - ? (ushort)
+  r5 - the event index to start in the stage's EVNT list (optional?)
+  r6 - 0xFFFF? (ushort)
+  r7 - 0? (ushort)
+  r8 - 1? (ushort)
 
 fopAcM_orderOtherEvent2__FP10fopAc_ac_cPcUsUs
 fopAcM_orderOtherEvent2(fopAc_ac_c *, char *, unsigned short, unsigned short)
@@ -292,7 +292,7 @@ setNextStageBySclsNum
   r4 - Room number for which room to look in the SCLS list for. If this is -1, it will look in the stage's SCLS list instead of the room's.
 
 setPointRestart
-  sets the "restart" position (e.g. if a floormaster grabs you)
+  sets the partner's "restart" position (e.g. if a floormaster grabs them)
   r3 - Pointer to the partner entity
   r4 - Exit index in the stage.dzs's SCLS list for the player's partner to go through to be put in jail when captured
   r5 - Partner ID number of the partner to set the restart position for
@@ -475,15 +475,16 @@ init__18dDlst_mirrorPacketFP7ResTIMG
   r4 - 0 for link, or a pointer to the raw data of the md_spot.bti file for medli
 
 dComIfGp_setNextStage__FPCcsScScfUliSc
+dComIfGp_setNextStage(char const *, short, signed char, signed char, float, unsigned long, int, signed char)
   changes the current stage
-  r3 - stage name pointer
-  r4 - spawn ID
+  r3 - Stage name pointer
+  r4 - Spawn ID
   r5 - Room number
-  r6 - override layer number, or FF for none
+  r6 - Override layer number, or FF for none
   f1 - 
   r7 - 
   r8 - 
-  r9 - wipe type, affects the screen fade out type
+  r9 - Wipe type, affects the screen fade out type
     0 - fade whole screen to white
     1 - fade whole screen to black
     B - fade letterboxed part of the screen to white (not the black borders at the top and bottom)
@@ -649,6 +650,19 @@ JAIZelBasic::seStart(unsigned long, Vec *, unsigned long, signed char, float, fl
   f3 - 
   f4 - 
   r8 - 0?
+
+mDoAud_messageSePlay(unsigned short, Vec *, signed char)
+  Plays a sound from a message text command.
+  r3 - The sound value from the message command.
+  r4 - Pointer to ??? (can be 0)
+  r5 - Return value from dComIfGp_getReverb? (Or can be 0)
+
+JAIZelBasic::messageSePlay(unsigned short, Vec *, signed char)
+  Plays a sound from a message (either from a text command or the "initial sound" of the message).
+  r3 - Pointer to 803A2CE8 (JAIZelBasic::zel_basic)
+  r4 - The sound value from the message command.
+  r5 - Pointer to ??? (can be 0)
+  r6 - Return value from dComIfGp_getReverb? (Or can be 0)
 
 JAIGlobalParameter::getParamSeCategoryMax(void)
   This can be called to get the number of sound categories that exist (8).
@@ -894,15 +908,15 @@ setPlayerPosAndAngle__9daPy_lk_cFP4cXyzs
 
 isSwitch__10dSv_info_cFii
   checks if a switch bit is set.
-  r3 - pointer to 803C4C08 (g_dComIfG_gameInfo)
-  r4 - switch index to check
+  r3 - Pointer to 803C4C08 (g_dComIfG_gameInfo)
+  r4 - Switch index to check
     the type of switch depends on the range the switch index is in:
     00-7F: mem bit, calls function isSwitch__12dSv_memBit_cFi
-    80-BF: ? "dan bit"? calls function isSwitch__12dSv_danBit_cFi with r3 = 803C53A4 and r4 = switch index minus 0x80
-    C0-EF: ? "zone bit"? calls function isSwitch__13dSv_zoneBit_cFi
+    80-BF: dan bit, calls function isSwitch__12dSv_danBit_cFi with r3 = 803C53A4 and r4 = switch index minus 0x80
+    C0-EF: zone bit, calls function isSwitch__13dSv_zoneBit_cFi
     F0-FE: Also "zone bits", but these are invalid and will cause an error to happen.
     FF: invalid switch, always return false
-  r5 - ??? room number? valid values are 00-3F
+  r5 - Room number.
 
 isSwitch__12dSv_memBit_cFi
   checks if a switch mem bit is set.
@@ -1107,6 +1121,24 @@ GXCallDisplayList
   r3 - pointer to the compiled material data (same format as MDL entries in the MDL3 section of BDL models)
   r4 - ?
 
+GXInitTexObj
+  initializes a compiled texture
+  r3 - ?
+  r4 - Pointer to the texture data
+  r5 - Width
+  r6 - Height
+  r7 - Image format
+  r8 - U texture wrap mode
+  r9 - V texture wrap mode
+  r10 - 0?
+
+GXInitTlutObj
+  initializes a compiled palette
+  r3 - ?
+  r4 - Pointer to the palette data
+  r5 - Palette format
+  r6 - 0x100?
+
 
 mDoExt_3DlineMat0_c::update(unsigned short, float, _GXColor &, unsigned short, dKy_tevstr_c *)
 mDoExt_3DlineMatSortPacket::setMat(mDoExt_3DlineMat_c *)
@@ -1199,3 +1231,21 @@ daPy_lk_c::initModel(J3DModel **, int, unsigned long)
   r4 - Pointer to where in the Link entity the pointer to this model should be stored.
   r5 - File ID of the model in Link.arc.
   r6 - 0x37221222 (what is this...?)
+
+daPy_lk_c::setTextureAnime(unsigned short, int)
+
+daPy_lk_c::loadTextureScrollResource(unsigned long, int)
+  r3 - Pointer to the Link entity.
+  r4 - File ID of the .btk animation to load from LkAnm.arc.
+  r5 - 0?
+
+daPy_matAnm_c::calc( const(J3DMaterial *))
+  Updates the positioning of Link's pupils. (May handle other textures as well.)
+  r3 - ?
+  r4 - ?
+
+CallbackCreateHeap(fopAc_ac_c *) 	d_a_himo2.o
+  loads the grappling hook's resources
+  800F06B0 - first call to load rope.bti from Always.arc
+  800F0774 - second call to load rope.bti from Always.arc
+  800F07B8 - third call to load rope.bti from Always.arc

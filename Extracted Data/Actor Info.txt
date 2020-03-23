@@ -1,840 +1,840 @@
- kusax1:   ID 01B8,   Subtype FF,   Unknown 00,   REL d_a_grass
- kusax7:   ID 01B8,   Subtype FF,   Unknown 00,   REL d_a_grass
-kusax21:   ID 01B8,   Subtype FF,   Unknown 00,   REL d_a_grass
- flower:   ID 01B8,   Subtype FF,   Unknown 00,   REL d_a_grass
-  flwr7:   ID 01B8,   Subtype FF,   Unknown 00,   REL d_a_grass
- flwr17:   ID 01B8,   Subtype FF,   Unknown 00,   REL d_a_grass
-pflower:   ID 01B8,   Subtype FF,   Unknown 00,   REL d_a_grass
-pflwrx7:   ID 01B8,   Subtype FF,   Unknown 00,   REL d_a_grass
-  swood:   ID 01B8,   Subtype FF,   Unknown 00,   REL d_a_grass
- swood3:   ID 01B8,   Subtype FF,   Unknown 00,   REL d_a_grass
- swood5:   ID 01B8,   Subtype FF,   Unknown 00,   REL d_a_grass
-  woodb:   ID 010C,   Subtype FF,   Unknown 00,   REL d_a_obj_wood
- woodbx:   ID 010C,   Subtype FF,   Unknown 00,   REL d_a_obj_wood
- door10:   ID 012E,   Subtype FF,   Unknown 00,   REL d_a_door10
- door11:   ID 012E,   Subtype FF,   Unknown 00,   REL d_a_door10
- door20:   ID 012E,   Subtype FF,   Unknown 00,   REL d_a_door10
- door21:   ID 012E,   Subtype FF,   Unknown 00,   REL d_a_door10
-Zenshut:   ID 012E,   Subtype FF,   Unknown 00,   REL d_a_door10
-keyshut:   ID 012E,   Subtype FF,   Unknown 00,   REL d_a_door10
-K_Zshut:   ID 012E,   Subtype FF,   Unknown 00,   REL d_a_door10
- ATdoor:   ID 0130,   Subtype FF,   Unknown 00,   REL d_a_atdoor
-  Mori1:   ID 0131,   Subtype FF,   Unknown 00,   REL d_a_mdoor
- doorKD:   ID 0132,   Subtype FF,   Unknown 00,   REL d_a_kddoor
-ZenshKD:   ID 0132,   Subtype FF,   Unknown 00,   REL d_a_kddoor
-K_ZshKD:   ID 0132,   Subtype FF,   Unknown 00,   REL d_a_kddoor
- doorSH:   ID 0132,   Subtype FF,   Unknown 00,   REL d_a_kddoor
- doorSZ:   ID 0132,   Subtype FF,   Unknown 00,   REL d_a_kddoor
- KNOB00:   ID 0133,   Subtype FF,   Unknown 00,   REL d_a_knob00
- KNOB01:   ID 0133,   Subtype FF,   Unknown 00,   REL d_a_knob00
- KNOB02:   ID 0133,   Subtype FF,   Unknown 00,   REL d_a_knob00
- KNOB03:   ID 0133,   Subtype FF,   Unknown 00,   REL d_a_knob00
-KNOB00D:   ID 0133,   Subtype FF,   Unknown 00,   REL d_a_knob00
-KNOB01D:   ID 0133,   Subtype FF,   Unknown 00,   REL d_a_knob00
-KNOB02D:   ID 0133,   Subtype FF,   Unknown 00,   REL d_a_knob00
-KNOB03D:   ID 0133,   Subtype FF,   Unknown 00,   REL d_a_knob00
- door12:   ID 012F,   Subtype 00,   Unknown 00,   REL d_a_door12
-door12M:   ID 012F,   Subtype 01,   Unknown 00,   REL d_a_door12
-door12B:   ID 012F,   Subtype 02,   Unknown 00,   REL d_a_door12
- door13:   ID 012F,   Subtype 03,   Unknown 00,   REL d_a_door12
-door13M:   ID 012F,   Subtype 04,   Unknown 00,   REL d_a_door12
-door13B:   ID 012F,   Subtype 05,   Unknown 00,   REL d_a_door12
- keyS12:   ID 012F,   Subtype 01,   Unknown 00,   REL d_a_door12
- ZenS12:   ID 012F,   Subtype 02,   Unknown 00,   REL d_a_door12
-bonbori:   ID 00BA,   Subtype FF,   Unknown 00,   REL d_a_ep
- SW_C00:   ID 012C,   Subtype FF,   Unknown 00,   REL d_a_swc00
- takara:   ID 0126,   Subtype FF,   Unknown 3E,   REL d_a_tbox
-takara2:   ID 0126,   Subtype FF,   Unknown 3E,   REL d_a_tbox
-takara3:   ID 0126,   Subtype FF,   Unknown 3E,   REL d_a_tbox
-takara4:   ID 0126,   Subtype FF,   Unknown 3E,   REL d_a_tbox
-takara5:   ID 0126,   Subtype FF,   Unknown 3E,   REL d_a_tbox
-takara6:   ID 0126,   Subtype FF,   Unknown 3E,   REL d_a_tbox
-takara7:   ID 0126,   Subtype FF,   Unknown 3E,   REL d_a_tbox
-takara8:   ID 0126,   Subtype FF,   Unknown 3E,   REL d_a_tbox
-takaraK:   ID 0126,   Subtype FF,   Unknown 3E,   REL d_a_tbox
-takaraI:   ID 0126,   Subtype FF,   Unknown 3E,   REL d_a_tbox
-takaraM:   ID 0126,   Subtype FF,   Unknown 3E,   REL d_a_tbox
- tkrASw:   ID 0126,   Subtype FF,   Unknown 3E,   REL d_a_tbox
- tkrAGc:   ID 0126,   Subtype FF,   Unknown 3E,   REL d_a_tbox
- tkrAKd:   ID 0126,   Subtype FF,   Unknown 3E,   REL d_a_tbox
- tkrAIk:   ID 0126,   Subtype FF,   Unknown 3E,   REL d_a_tbox
- tkrBMs:   ID 0126,   Subtype FF,   Unknown 3E,   REL d_a_tbox
- tkrCTf:   ID 0126,   Subtype FF,   Unknown 3E,   REL d_a_tbox
- tkrAOc:   ID 0126,   Subtype FF,   Unknown 3E,   REL d_a_tbox
- tkrAOs:   ID 0126,   Subtype FF,   Unknown 3E,   REL d_a_tbox
- tkrSlv:   ID 0127,   Subtype FF,   Unknown 3E,   REL d_a_sbox
-   agbA:   ID 01B6,   Subtype FF,   Unknown 00,   REL d_a_agbsw0
-  agbAT:   ID 01B6,   Subtype FF,   Unknown 00,   REL d_a_agbsw0
-  agbA2:   ID 01B6,   Subtype FF,   Unknown 00,   REL d_a_agbsw0
-   agbF:   ID 01B6,   Subtype FF,   Unknown 00,   REL d_a_agbsw0
-  agbF2:   ID 01B6,   Subtype FF,   Unknown 00,   REL d_a_agbsw0
-agbMARK:   ID 01B6,   Subtype FF,   Unknown 00,   REL d_a_agbsw0
-  agbMW:   ID 01B6,   Subtype FF,   Unknown 00,   REL d_a_agbsw0
- agbCSW:   ID 01B6,   Subtype FF,   Unknown 00,   REL d_a_agbsw0
-agbTBOX:   ID 01B6,   Subtype FF,   Unknown 00,   REL d_a_agbsw0
-   agbR:   ID 01B6,   Subtype FF,   Unknown 00,   REL d_a_agbsw0
-   agbB:   ID 01B6,   Subtype FF,   Unknown 00,   REL d_a_agbsw0
-   agbD:   ID 01B6,   Subtype FF,   Unknown 00,   REL d_a_agbsw0
-  agbFA:   ID 01B6,   Subtype FF,   Unknown 00,   REL d_a_agbsw0
-NoneCam:   ID 01E2,   Subtype FF,   Unknown 00,   REL [none]
-NormCam:   ID 01E2,   Subtype FF,   Unknown 00,   REL [none]
-   Link:   ID 00A9,   Subtype FF,   Unknown 00,   REL [none]
- kotubo:   ID 01CB,   Subtype 00,   Unknown 00,   REL d_a_tsubo
-ootubo1:   ID 01CB,   Subtype 01,   Unknown 00,   REL d_a_tsubo
-  Kmtub:   ID 01CB,   Subtype 02,   Unknown 00,   REL d_a_tsubo
-  Ktaru:   ID 01CB,   Subtype 03,   Unknown 00,   REL d_a_tsubo
- Ostool:   ID 01CB,   Subtype 04,   Unknown 00,   REL d_a_tsubo
-Odokuro:   ID 01CB,   Subtype 05,   Unknown 00,   REL d_a_tsubo
- Okioke:   ID 01CB,   Subtype 06,   Unknown 00,   REL d_a_tsubo
-  Kmi02:   ID 01CB,   Subtype 07,   Unknown 00,   REL d_a_tsubo
-  Ptubo:   ID 01CB,   Subtype 08,   Unknown 00,   REL d_a_tsubo
- KkibaB:   ID 01CB,   Subtype 09,   Unknown 00,   REL d_a_tsubo
-  Kmi00:   ID 01CB,   Subtype 0A,   Unknown 00,   REL d_a_tsubo
- Hbox2S:   ID 01CB,   Subtype 0B,   Unknown 00,   REL d_a_tsubo
-SW_HIT0:   ID 01C9,   Subtype FF,   Unknown 00,   REL d_a_swhit0
- koisi1:   ID 01CC,   Subtype 00,   Unknown 00,   REL d_a_stone
- koisi2:   ID 01CC,   Subtype 01,   Unknown 00,   REL d_a_stone
-   Aygr:   ID 00A6,   Subtype FF,   Unknown 00,   REL d_a_obj_aygr
-Salvage:   ID 0194,   Subtype FF,   Unknown 00,   REL d_a_salvage
- SwSlvg:   ID 0194,   Subtype FF,   Unknown 3F,   REL d_a_salvage
-Salvag2:   ID 0194,   Subtype FF,   Unknown 3F,   REL d_a_salvage
-SalvagN:   ID 0194,   Subtype FF,   Unknown 3F,   REL d_a_salvage
-SalvagE:   ID 0194,   Subtype FF,   Unknown 3F,   REL d_a_salvage
- SalvFM:   ID 0194,   Subtype FF,   Unknown 3F,   REL d_a_salvage
-osiBLK0:   ID 002D,   Subtype 00,   Unknown 3D,   REL d_a_obj_movebox
-osiBLK1:   ID 002D,   Subtype 01,   Unknown 3D,   REL d_a_obj_movebox
-  Kkiba:   ID 002D,   Subtype 02,   Unknown 3D,   REL d_a_obj_movebox
- Hseki2:   ID 002D,   Subtype 03,   Unknown 3D,   REL d_a_obj_movebox
- Hseki7:   ID 002D,   Subtype 04,   Unknown 3D,   REL d_a_obj_movebox
-   Mmrr:   ID 002D,   Subtype 05,   Unknown 3D,   REL d_a_obj_movebox
- MkieBB:   ID 002D,   Subtype 06,   Unknown 3D,   REL d_a_obj_movebox
-  Ecube:   ID 002D,   Subtype 07,   Unknown 3D,   REL d_a_obj_movebox
- Hjump1:   ID 002D,   Subtype 08,   Unknown 3D,   REL d_a_obj_movebox
-  Hbox1:   ID 002D,   Subtype 09,   Unknown 3D,   REL d_a_obj_movebox
-  MpwrB:   ID 002D,   Subtype 0A,   Unknown 3D,   REL d_a_obj_movebox
-  DBLK0:   ID 002D,   Subtype 0B,   Unknown 3D,   REL d_a_obj_movebox
-  DBLK1:   ID 002D,   Subtype 0C,   Unknown 3D,   REL d_a_obj_movebox
- DKkiba:   ID 002D,   Subtype 0D,   Unknown 3D,   REL d_a_obj_movebox
-  Hbox2:   ID 002D,   Subtype 0E,   Unknown 3D,   REL d_a_obj_movebox
- BLK_CR:   ID 01D8,   Subtype 00,   Unknown 00,   REL d_a_obj_correct
- CrTrS3:   ID 01D8,   Subtype 01,   Unknown 00,   REL d_a_obj_correct
- CrTrS4:   ID 01D8,   Subtype 02,   Unknown 00,   REL d_a_obj_correct
- CrTrS5:   ID 01D8,   Subtype 03,   Unknown 00,   REL d_a_obj_correct
- CrTrM1:   ID 01D8,   Subtype 04,   Unknown 00,   REL d_a_obj_correct
- CrTrM2:   ID 01D8,   Subtype 05,   Unknown 00,   REL d_a_obj_correct
- CrTrGr:   ID 01D8,   Subtype 06,   Unknown 3D,   REL d_a_obj_correct
- CrTrBl:   ID 01D8,   Subtype 07,   Unknown 3D,   REL d_a_obj_correct
-Kbota_A:   ID 001D,   Subtype 00,   Unknown 00,   REL d_a_obj_swpush
-Kbota_B:   ID 001D,   Subtype 01,   Unknown 00,   REL d_a_obj_swpush
- KbotaC:   ID 001D,   Subtype 02,   Unknown 00,   REL d_a_obj_swpush
- Hhbot1:   ID 001E,   Subtype 00,   Unknown 00,   REL d_a_obj_swheavy
-Hhbot1N:   ID 001E,   Subtype 01,   Unknown 00,   REL d_a_obj_swheavy
-MhmrSW0:   ID 0021,   Subtype FF,   Unknown 00,   REL d_a_obj_swhammer
-  TagSo:   ID 0025,   Subtype 00,   Unknown 00,   REL d_a_tag_so
- TagMSo:   ID 0025,   Subtype 01,   Unknown 00,   REL d_a_tag_so
-PScnChg:   ID 01CA,   Subtype FF,   Unknown 00,   REL d_a_tag_ghostship
- ALLdie:   ID 0016,   Subtype FF,   Unknown 00,   REL d_a_alldie
-  TagEv:   ID 019C,   Subtype FF,   Unknown 00,   REL d_a_tag_event
-  TagHt:   ID 019D,   Subtype 00,   Unknown 00,   REL d_a_tag_hint
- TagHt2:   ID 019D,   Subtype 01,   Unknown 00,   REL d_a_tag_hint
- TagMsg:   ID 019E,   Subtype 00,   Unknown 00,   REL d_a_tag_msg
-TagMsg2:   ID 019E,   Subtype 01,   Unknown 00,   REL d_a_tag_msg
- TagIsl:   ID 01A0,   Subtype 00,   Unknown 00,   REL d_a_tag_island
-  TagMd:   ID 019F,   Subtype 00,   Unknown 00,   REL d_a_tag_etc
- TagKf1:   ID 01A1,   Subtype FF,   Unknown 00,   REL d_a_tag_kf1
- TagKk1:   ID 01A2,   Subtype FF,   Unknown 00,   REL d_a_tag_kk1
-  TagKb:   ID 01A4,   Subtype FF,   Unknown 00,   REL d_a_tag_kb_item
-  TagMk:   ID 01A5,   Subtype 00,   Unknown 00,   REL d_a_tag_mk
-  TagWp:   ID 01A5,   Subtype 01,   Unknown 00,   REL d_a_tag_mk
-  TagDM:   ID 01A5,   Subtype 02,   Unknown 00,   REL d_a_tag_mk
-  TagTy:   ID 01A5,   Subtype 03,   Unknown 00,   REL d_a_tag_mk
- TagMd1:   ID 01A6,   Subtype 00,   Unknown 00,   REL d_a_tag_md_cb
- TagCb1:   ID 01A6,   Subtype 01,   Unknown 00,   REL d_a_tag_md_cb
-TagMd11:   ID 01A6,   Subtype 02,   Unknown 00,   REL d_a_tag_md_cb
-TagMd12:   ID 01A6,   Subtype 03,   Unknown 00,   REL d_a_tag_md_cb
-TagMd13:   ID 01A6,   Subtype 04,   Unknown 00,   REL d_a_tag_md_cb
-TagMd14:   ID 01A6,   Subtype 05,   Unknown 00,   REL d_a_tag_md_cb
-TagMd15:   ID 01A6,   Subtype 06,   Unknown 00,   REL d_a_tag_md_cb
-TagMd16:   ID 01A6,   Subtype 07,   Unknown 00,   REL d_a_tag_md_cb
-TagCb11:   ID 01A6,   Subtype 08,   Unknown 00,   REL d_a_tag_md_cb
-TagCb12:   ID 01A6,   Subtype 09,   Unknown 00,   REL d_a_tag_md_cb
-TagCb13:   ID 01A6,   Subtype 0A,   Unknown 00,   REL d_a_tag_md_cb
-TagCb14:   ID 01A6,   Subtype 0B,   Unknown 00,   REL d_a_tag_md_cb
- TagBa1:   ID 01A7,   Subtype 01,   Unknown 00,   REL d_a_tag_ba1
-   Evsw:   ID 001C,   Subtype FF,   Unknown 00,   REL d_a_tag_evsw
- Search:   ID 0044,   Subtype FF,   Unknown 00,   REL [none]
-  Otble:   ID 0042,   Subtype 00,   Unknown 00,   REL d_a_obj_otble
- OtbleL:   ID 0042,   Subtype 01,   Unknown 00,   REL d_a_obj_otble
-  Warpt:   ID 0043,   Subtype 00,   Unknown 31,   REL d_a_obj_warpt
- Warpnt:   ID 0043,   Subtype 01,   Unknown 31,   REL d_a_obj_warpt
-Warpts1:   ID 0043,   Subtype 02,   Unknown 31,   REL d_a_obj_warpt
-Warpts2:   ID 0043,   Subtype 03,   Unknown 31,   REL d_a_obj_warpt
-Warpts3:   ID 0043,   Subtype 04,   Unknown 31,   REL d_a_obj_warpt
- Seatag:   ID 0027,   Subtype FF,   Unknown 00,   REL d_a_seatag
-  Warpf:   ID 006A,   Subtype FF,   Unknown 00,   REL d_a_warpf
-    Hys:   ID 01C8,   Subtype FF,   Unknown 00,   REL d_a_hys
-   Hys2:   ID 01C8,   Subtype FF,   Unknown 00,   REL d_a_hys
-  Hsen1:   ID 012D,   Subtype FF,   Unknown 00,   REL d_a_fan
-  Hsen2:   ID 012D,   Subtype FF,   Unknown 00,   REL d_a_fan
-  Hsen3:   ID 012D,   Subtype FF,   Unknown 00,   REL d_a_fan
-  Olift:   ID 007A,   Subtype FF,   Unknown 00,   REL d_a_leaflift
-  Ylsic:   ID 005F,   Subtype FF,   Unknown 00,   REL d_a_icelift
-  Yllic:   ID 005F,   Subtype FF,   Unknown 00,   REL d_a_icelift
-  Ylkic:   ID 005F,   Subtype FF,   Unknown 00,   REL d_a_icelift
- Hpbot1:   ID 01B2,   Subtype FF,   Unknown 00,   REL d_a_swpropeller
-  Vpbot:   ID 01B2,   Subtype FF,   Unknown 00,   REL d_a_swpropeller
-  Hami1:   ID 0060,   Subtype FF,   Unknown 00,   REL d_a_amiprop
-  HamiY:   ID 0060,   Subtype FF,   Unknown 00,   REL d_a_amiprop
-  LTag0:   ID 01DB,   Subtype 00,   Unknown 00,   REL d_a_tag_light
-  LTag1:   ID 01DB,   Subtype 01,   Unknown 00,   REL d_a_tag_light
- LTagR0:   ID 01DB,   Subtype 02,   Unknown 00,   REL d_a_tag_light
- AttTag:   ID 01DC,   Subtype 00,   Unknown 00,   REL d_a_tag_attention
-AttTagB:   ID 01DC,   Subtype 01,   Unknown 00,   REL d_a_tag_attention
-  Ikori:   ID 01D2,   Subtype FF,   Unknown 00,   REL d_a_obj_ice
-  MsuSW:   ID 0020,   Subtype 00,   Unknown 00,   REL d_a_obj_swlight
- MsuSWB:   ID 0020,   Subtype 01,   Unknown 00,   REL d_a_obj_swlight
- SWat00:   ID 0138,   Subtype FF,   Unknown 00,   REL d_a_swattack
- ITat00:   ID 0139,   Subtype FF,   Unknown 00,   REL d_a_switem
- SWtact:   ID 013A,   Subtype FF,   Unknown 00,   REL d_a_swtact
-SWtactB:   ID 013A,   Subtype FF,   Unknown 00,   REL d_a_swtact
-  Hhyu1:   ID 0062,   Subtype FF,   Unknown 00,   REL d_a_floor
- Oyashi:   ID 004B,   Subtype FF,   Unknown 00,   REL d_a_obj_lpalm
- Kanban:   ID 00B7,   Subtype FF,   Unknown 34,   REL d_a_kanban
-     kt:   ID 00B9,   Subtype FF,   Unknown 00,   REL d_a_kt
-     ho:   ID 00BC,   Subtype FF,   Unknown 00,   REL d_a_ff
-    mo2:   ID 00BD,   Subtype FF,   Unknown 02,   REL d_a_mo2
-  moZOU:   ID 00FB,   Subtype FF,   Unknown 00,   REL d_a_mozo
- hotest:   ID 00B5,   Subtype FF,   Unknown 00,   REL d_a_rectangle
-    Kui:   ID 00FC,   Subtype FF,   Unknown 00,   REL d_a_kui
- Kamome:   ID 00C3,   Subtype FF,   Unknown 00,   REL d_a_kamome
-   item:   ID 0101,   Subtype FF,   Unknown 00,   REL [none]
-itemFLY:   ID 0101,   Subtype FF,   Unknown 00,   REL [none]
-itemDek:   ID 0106,   Subtype FF,   Unknown 00,   REL d_a_deku_item
-   Ship:   ID 00A7,   Subtype FF,   Unknown 00,   REL d_a_ship
-AND_SW0:   ID 0135,   Subtype FF,   Unknown 00,   REL d_a_andsw0
-AND_SW2:   ID 0136,   Subtype FF,   Unknown 00,   REL d_a_andsw2
-     Bb:   ID 00B6,   Subtype FF,   Unknown 1A,   REL d_a_bb
- Ebrock:   ID 01CD,   Subtype 00,   Unknown 00,   REL d_a_stone2
-   Ekao:   ID 01CD,   Subtype 01,   Unknown 00,   REL d_a_stone2
-Ebrock2:   ID 01CD,   Subtype 02,   Unknown 00,   REL d_a_stone2
-ky_tag0:   ID 0181,   Subtype FF,   Unknown 00,   REL d_a_kytag00
-kytag00:   ID 0181,   Subtype FF,   Unknown 00,   REL d_a_kytag00
-ky00you:   ID 0181,   Subtype FF,   Unknown 00,   REL d_a_kytag00
-ky_tag1:   ID 0182,   Subtype FF,   Unknown 00,   REL d_a_kytag01
-ky_tag2:   ID 0183,   Subtype FF,   Unknown 00,   REL d_a_kytag02
-ky_tag3:   ID 0184,   Subtype FF,   Unknown 00,   REL d_a_kytag03
- kytag4:   ID 0185,   Subtype FF,   Unknown 00,   REL d_a_kytag04
- kytag5:   ID 0186,   Subtype FF,   Unknown 00,   REL d_a_kytag05
- kytag6:   ID 0187,   Subtype FF,   Unknown 00,   REL d_a_kytag06
- kytag7:   ID 0188,   Subtype FF,   Unknown 00,   REL d_a_kytag07
-    sea:   ID 0028,   Subtype FF,   Unknown 00,   REL [none]
- nezumi:   ID 00C7,   Subtype FF,   Unknown 18,   REL d_a_nz
-nezuana:   ID 00C8,   Subtype FF,   Unknown 00,   REL d_a_nzg
-   kani:   ID 00C9,   Subtype FF,   Unknown 00,   REL d_a_kn
-Demo_Dk:   ID 00CA,   Subtype FF,   Unknown 00,   REL d_a_demo_dk
-  DmKmm:   ID 00C6,   Subtype 00,   Unknown 00,   REL d_a_demo_kmm
- DmKmm2:   ID 00C6,   Subtype 01,   Unknown 00,   REL d_a_demo_kmm
-   amos:   ID 00CB,   Subtype FF,   Unknown 0C,   REL d_a_am
-  amos2:   ID 00CC,   Subtype FF,   Unknown 0B,   REL d_a_am2
-   gmos:   ID 00CD,   Subtype FF,   Unknown 09,   REL d_a_gm
- gmos_g:   ID 00CD,   Subtype FF,   Unknown 09,   REL d_a_gm
- gmos_f:   ID 00CD,   Subtype FF,   Unknown 09,   REL d_a_gm
- kuro_s:   ID 00CE,   Subtype FF,   Unknown 14,   REL d_a_ks
- kuro_t:   ID 00CE,   Subtype FF,   Unknown 00,   REL d_a_ks
-c_green:   ID 00CF,   Subtype FF,   Unknown 16,   REL d_a_cc
-  c_red:   ID 00CF,   Subtype FF,   Unknown 15,   REL d_a_cc
- c_blue:   ID 00CF,   Subtype FF,   Unknown 1E,   REL d_a_cc
-c_black:   ID 00CF,   Subtype FF,   Unknown 10,   REL d_a_cc
-c_kiiro:   ID 00CF,   Subtype FF,   Unknown 0A,   REL d_a_cc
-  bable:   ID 00D0,   Subtype FF,   Unknown 0F,   REL d_a_bl
-bable_r:   ID 00D0,   Subtype FF,   Unknown 0E,   REL d_a_bl
-  wiz_r:   ID 00D1,   Subtype FF,   Unknown 11,   REL d_a_wz
-  wiz_s:   ID 00D1,   Subtype FF,   Unknown 11,   REL d_a_wz
-  wiz_m:   ID 00D1,   Subtype FF,   Unknown 11,   REL d_a_wz
-  wiz_o:   ID 00D1,   Subtype FF,   Unknown 11,   REL d_a_wz
-  p_hat:   ID 00D2,   Subtype FF,   Unknown 08,   REL d_a_ph
-p_zelda:   ID 00D3,   Subtype FF,   Unknown 3C,   REL d_a_pz
-big_pow:   ID 00D4,   Subtype FF,   Unknown 00,   REL d_a_bpw
-    pow:   ID 00D5,   Subtype FF,   Unknown 0D,   REL d_a_pw
-sea_hat:   ID 00D2,   Subtype FF,   Unknown 1F,   REL d_a_ph
-  jbaba:   ID 00D6,   Subtype FF,   Unknown 21,   REL d_a_jbo
-  bbaba:   ID 00D7,   Subtype FF,   Unknown 07,   REL d_a_bo
- bridge:   ID 005B,   Subtype FF,   Unknown 00,   REL d_a_bridge
- dragon:   ID 00DF,   Subtype FF,   Unknown 00,   REL d_a_dr
-     Nh:   ID 013B,   Subtype FF,   Unknown 00,   REL [none]
-  NpcSo:   ID 0078,   Subtype FF,   Unknown 00,   REL d_a_npc_so
-  NpcNz:   ID 0077,   Subtype FF,   Unknown 00,   REL d_a_npc_nz
-     Os:   ID 013C,   Subtype 00,   Unknown 00,   REL d_a_npc_os
-    Os1:   ID 013C,   Subtype 01,   Unknown 00,   REL d_a_npc_os
-    Os2:   ID 013C,   Subtype 02,   Unknown 00,   REL d_a_npc_os
-    Ym1:   ID 013D,   Subtype FF,   Unknown 3B,   REL d_a_npc_ym1
-    Ym2:   ID 013E,   Subtype FF,   Unknown 3B,   REL d_a_npc_ym1
-    Yw1:   ID 013F,   Subtype FF,   Unknown 3C,   REL d_a_npc_yw1
-    Ji1:   ID 0140,   Subtype FF,   Unknown 3B,   REL d_a_npc_ji1
-    Ko1:   ID 0141,   Subtype FF,   Unknown 3B,   REL d_a_npc_ko1
-    Ko2:   ID 0142,   Subtype FF,   Unknown 3B,   REL d_a_npc_ko1
-    Ls1:   ID 0143,   Subtype FF,   Unknown 3C,   REL d_a_npc_ls1
-    Bm1:   ID 0148,   Subtype FF,   Unknown 3B,   REL d_a_npc_bm1
-    Bm2:   ID 0149,   Subtype FF,   Unknown 3B,   REL d_a_npc_bm1
-    Bm3:   ID 014A,   Subtype FF,   Unknown 3B,   REL d_a_npc_bm1
-    Bm4:   ID 014B,   Subtype FF,   Unknown 3B,   REL d_a_npc_bm1
-    Bm5:   ID 014C,   Subtype FF,   Unknown 3B,   REL d_a_npc_bm1
- Bmcon1:   ID 015C,   Subtype 00,   Unknown 00,   REL d_a_npc_bmcon1
- Bmcon2:   ID 015C,   Subtype 01,   Unknown 00,   REL d_a_npc_bmcon1
-   Bmsw:   ID 015E,   Subtype FF,   Unknown 00,   REL d_a_npc_bmsw
-   Btsw:   ID 015F,   Subtype FF,   Unknown 00,   REL d_a_npc_btsw
-  Btsw2:   ID 0160,   Subtype FF,   Unknown 3B,   REL d_a_npc_btsw2
-    Zk1:   ID 0175,   Subtype FF,   Unknown 3B,   REL d_a_npc_zk1
-    Zl1:   ID 01AD,   Subtype FF,   Unknown 3C,   REL d_a_npc_zl1
-    Ob1:   ID 014D,   Subtype FF,   Unknown 3C,   REL d_a_npc_ob1
-    Aj1:   ID 014E,   Subtype FF,   Unknown 3B,   REL d_a_npc_aj1
-    Km1:   ID 014F,   Subtype FF,   Unknown 3C,   REL d_a_npc_km1
-    Cb1:   ID 0150,   Subtype FF,   Unknown 3B,   REL d_a_npc_cb1
-    Ba1:   ID 0151,   Subtype FF,   Unknown 3C,   REL d_a_npc_ba1
-    Bj1:   ID 0152,   Subtype FF,   Unknown 3B,   REL d_a_npc_bj1
-    Bj2:   ID 0153,   Subtype FF,   Unknown 3B,   REL d_a_npc_bj1
-    Bj3:   ID 0154,   Subtype FF,   Unknown 3B,   REL d_a_npc_bj1
-    Bj4:   ID 0155,   Subtype FF,   Unknown 3B,   REL d_a_npc_bj1
-    Bj5:   ID 0156,   Subtype FF,   Unknown 3B,   REL d_a_npc_bj1
-    Bj6:   ID 0157,   Subtype FF,   Unknown 3B,   REL d_a_npc_bj1
-    Bj7:   ID 0158,   Subtype FF,   Unknown 3B,   REL d_a_npc_bj1
-    Bj8:   ID 0159,   Subtype FF,   Unknown 3B,   REL d_a_npc_bj1
-    Bj9:   ID 015A,   Subtype FF,   Unknown 3B,   REL d_a_npc_bj1
-    Bs1:   ID 015B,   Subtype 00,   Unknown 3B,   REL d_a_npc_bs1
-    Bs2:   ID 015B,   Subtype 01,   Unknown 00,   REL d_a_npc_bs1
-   Bms1:   ID 015D,   Subtype 00,   Unknown 00,   REL d_a_npc_bms1
-   Bms2:   ID 015D,   Subtype 01,   Unknown 00,   REL d_a_npc_bms1
-    Ds1:   ID 0161,   Subtype FF,   Unknown 3B,   REL d_a_npc_ds1
-   Rsh1:   ID 0162,   Subtype FF,   Unknown 3B,   REL d_a_npc_rsh1
-    Kk1:   ID 0163,   Subtype FF,   Unknown 3C,   REL d_a_npc_kk1
-    Pm1:   ID 0164,   Subtype FF,   Unknown 3C,   REL d_a_npc_pm1
-    Kp1:   ID 0165,   Subtype FF,   Unknown 3C,   REL d_a_npc_kp1
-    Pf1:   ID 0166,   Subtype FF,   Unknown 3B,   REL d_a_npc_pf1
-    Gp1:   ID 0167,   Subtype FF,   Unknown 3B,   REL d_a_npc_gp1
-    Jb1:   ID 0168,   Subtype FF,   Unknown 00,   REL d_a_npc_jb1
-    Kf1:   ID 0169,   Subtype FF,   Unknown 3B,   REL d_a_npc_kf1
-    De1:   ID 0076,   Subtype FF,   Unknown 3B,   REL d_a_npc_de1
- Sfairy:   ID 016A,   Subtype FF,   Unknown 00,   REL [none]
-    Md1:   ID 0171,   Subtype FF,   Unknown 3C,   REL d_a_npc_md
-    Uo1:   ID 0177,   Subtype 00,   Unknown 3B,   REL d_a_npc_people
-    Uo2:   ID 0177,   Subtype 01,   Unknown 3B,   REL d_a_npc_people
-    Uo3:   ID 0177,   Subtype 02,   Unknown 3B,   REL d_a_npc_people
-    Ub1:   ID 0177,   Subtype 03,   Unknown 00,   REL d_a_npc_people
-    Ub2:   ID 0177,   Subtype 04,   Unknown 00,   REL d_a_npc_people
-    Ub3:   ID 0177,   Subtype 05,   Unknown 00,   REL d_a_npc_people
-    Ub4:   ID 0177,   Subtype 06,   Unknown 00,   REL d_a_npc_people
-    Uw1:   ID 0177,   Subtype 07,   Unknown 00,   REL d_a_npc_people
-    Uw2:   ID 0177,   Subtype 08,   Unknown 00,   REL d_a_npc_people
-    Um1:   ID 0177,   Subtype 09,   Unknown 00,   REL d_a_npc_people
-    Um2:   ID 0177,   Subtype 0A,   Unknown 00,   REL d_a_npc_people
-    Um3:   ID 0177,   Subtype 0B,   Unknown 00,   REL d_a_npc_people
-    Sa1:   ID 0177,   Subtype 0C,   Unknown 00,   REL d_a_npc_people
-    Sa2:   ID 0177,   Subtype 0D,   Unknown 00,   REL d_a_npc_people
-    Sa3:   ID 0177,   Subtype 0E,   Unknown 00,   REL d_a_npc_people
-    Sa4:   ID 0177,   Subtype 0F,   Unknown 00,   REL d_a_npc_people
-    Sa5:   ID 0177,   Subtype 10,   Unknown 00,   REL d_a_npc_people
-    Ug1:   ID 0177,   Subtype 11,   Unknown 00,   REL d_a_npc_people
-    Ug2:   ID 0177,   Subtype 12,   Unknown 00,   REL d_a_npc_people
-    Gk1:   ID 0178,   Subtype FF,   Unknown 3B,   REL d_a_npc_gk1
-    Ac1:   ID 017A,   Subtype FF,   Unknown 3B,   REL d_a_npc_ac1
-    Hi1:   ID 017B,   Subtype FF,   Unknown 3B,   REL d_a_npc_hi1
-Pirates:   ID 003B,   Subtype FF,   Unknown 00,   REL d_a_obj_pirateship
-  keeth:   ID 00D8,   Subtype FF,   Unknown 17,   REL d_a_ki
- Fkeeth:   ID 00D8,   Subtype FF,   Unknown 06,   REL d_a_ki
- yg_awa:   ID 018A,   Subtype FF,   Unknown 00,   REL d_a_yougan
-magtail:   ID 00D9,   Subtype FF,   Unknown 05,   REL d_a_mt
-  RopeR:   ID 01C5,   Subtype FF,   Unknown 00,   REL d_a_himo3
- Ktarur:   ID 01CF,   Subtype FF,   Unknown 3D,   REL d_a_obj_barrel2
- Ktarux:   ID 01CE,   Subtype FF,   Unknown 00,   REL d_a_obj_barrel
-Magrock:   ID 002C,   Subtype FF,   Unknown 00,   REL d_a_obj_magmarock
-  Quake:   ID 0022,   Subtype FF,   Unknown 00,   REL d_a_obj_quake
-Yfire00:   ID 010D,   Subtype FF,   Unknown 00,   REL d_a_obj_flame
-   Turu:   ID 0067,   Subtype 00,   Unknown 00,   REL d_a_sk
-  Turu2:   ID 0068,   Subtype 00,   Unknown 00,   REL d_a_sk2
-  Turu3:   ID 0068,   Subtype 01,   Unknown 00,   REL d_a_sk2
-  Kanat:   ID 00A5,   Subtype FF,   Unknown 00,   REL d_a_obj_kanat
- s_turu:   ID 0069,   Subtype FF,   Unknown 00,   REL d_a_ssk
-spotbox:   ID 01BF,   Subtype FF,   Unknown 00,   REL d_a_spotbox
-  Ksaku:   ID 0191,   Subtype FF,   Unknown 00,   REL d_a_saku
-spotbx1:   ID 01BF,   Subtype FF,   Unknown 00,   REL d_a_spotbox
- Mswing:   ID 005C,   Subtype FF,   Unknown 00,   REL d_a_msw
-    Pig:   ID 00DD,   Subtype FF,   Unknown 00,   REL d_a_kb
- Rdead1:   ID 00E1,   Subtype 00,   Unknown 12,   REL d_a_rd
- Rdead2:   ID 00E1,   Subtype 01,   Unknown 12,   REL d_a_rd
-Fmaster:   ID 0079,   Subtype 00,   Unknown 19,   REL d_a_fm
-Fmastr1:   ID 0079,   Subtype 01,   Unknown 19,   REL d_a_fm
-Fmastr2:   ID 0079,   Subtype 02,   Unknown 19,   REL d_a_fm
-Daiocta:   ID 00E2,   Subtype FF,   Unknown 1C,   REL d_a_daiocta
-Daioeye:   ID 00E3,   Subtype FF,   Unknown 00,   REL d_a_daiocta_eye
-     Oq:   ID 00E4,   Subtype 00,   Unknown 1B,   REL d_a_oq
-    Oqw:   ID 00E4,   Subtype 01,   Unknown 41,   REL d_a_oq
-     Gy:   ID 00E5,   Subtype FF,   Unknown 1D,   REL d_a_gy
- GyCtrl:   ID 00E6,   Subtype FF,   Unknown 00,   REL d_a_gy_ctrl
-GyCtrlB:   ID 00E7,   Subtype FF,   Unknown 00,   REL d_a_gy_ctrl
-     Bk:   ID 00BE,   Subtype FF,   Unknown 01,   REL d_a_bk
- Ypit00:   ID 0049,   Subtype 00,   Unknown 00,   REL d_a_obj_hole
-Pitfall:   ID 0049,   Subtype 01,   Unknown 00,   REL d_a_obj_hole
- Nzfall:   ID 0048,   Subtype FF,   Unknown 00,   REL d_a_obj_pfall
- ScnChg:   ID 002B,   Subtype FF,   Unknown 00,   REL d_a_scene_change
-  Oship:   ID 00B4,   Subtype FF,   Unknown 38,   REL d_a_oship
-  Ayush:   ID 00B3,   Subtype FF,   Unknown 39,   REL d_a_ghostship
-  Tpost:   ID 0045,   Subtype FF,   Unknown 35,   REL d_a_obj_toripost
- Ocanon:   ID 0041,   Subtype FF,   Unknown 00,   REL d_a_obj_canon
-  Ikada:   ID 0046,   Subtype 00,   Unknown 3D,   REL d_a_obj_ikada
-ikada_h:   ID 0046,   Subtype 01,   Unknown 3D,   REL d_a_obj_ikada
- ikadaS:   ID 0046,   Subtype 02,   Unknown 3D,   REL d_a_obj_ikada
-ikada_u:   ID 0046,   Subtype 03,   Unknown 3D,   REL d_a_obj_ikada
-   Svsp:   ID 0046,   Subtype 04,   Unknown 3D,   REL d_a_obj_ikada
-    Sv0:   ID 017C,   Subtype 00,   Unknown 00,   REL d_a_npc_sv
-    Sv1:   ID 017C,   Subtype 01,   Unknown 00,   REL d_a_npc_sv
-    Sv2:   ID 017C,   Subtype 02,   Unknown 00,   REL d_a_npc_sv
-    Sv3:   ID 017C,   Subtype 03,   Unknown 00,   REL d_a_npc_sv
- MjDoor:   ID 0047,   Subtype FF,   Unknown 00,   REL d_a_obj_majyuu_door
-  Ikari:   ID 01B3,   Subtype FF,   Unknown 00,   REL d_a_ikari
- MjFlag:   ID 00AF,   Subtype 00,   Unknown 00,   REL d_a_majuu_flag
- MtFlag:   ID 00AF,   Subtype 01,   Unknown 00,   REL d_a_majuu_flag
- HcFlag:   ID 00AF,   Subtype 03,   Unknown 00,   REL d_a_majuu_flag
- TrFlag:   ID 00B0,   Subtype 00,   Unknown 00,   REL d_a_tori_flag
-SieFlag:   ID 00B1,   Subtype 00,   Unknown 00,   REL d_a_sie_flag
-  lwood:   ID 019A,   Subtype FF,   Unknown 00,   REL d_a_lwood
- Ktaruo:   ID 0109,   Subtype FF,   Unknown 00,   REL d_a_obj_demo_barrel
-Touseki:   ID 003C,   Subtype FF,   Unknown 00,   REL d_a_obj_tousekiki
-  frock:   ID 01A8,   Subtype FF,   Unknown 00,   REL d_a_fallrock_tag
-fallrck:   ID 01A9,   Subtype FF,   Unknown 00,   REL d_a_fallrock
-    Dr2:   ID 00E0,   Subtype FF,   Unknown 00,   REL d_a_dr2
- Mkdan1:   ID 004A,   Subtype FF,   Unknown 00,   REL d_a_obj_stair
-    Btd:   ID 00EB,   Subtype FF,   Unknown 00,   REL d_a_btd
-     Dk:   ID 00EF,   Subtype FF,   Unknown 00,   REL d_a_dk
-  Ystm0:   ID 01AA,   Subtype FF,   Unknown 00,   REL d_a_steam_tag
-  Ystm1:   ID 01AA,   Subtype FF,   Unknown 00,   REL d_a_steam_tag
-  Gflag:   ID 0125,   Subtype FF,   Unknown 00,   REL d_a_goal_flag
- Branch:   ID 01AC,   Subtype FF,   Unknown 00,   REL d_a_branch
-    P1a:   ID 0144,   Subtype 00,   Unknown 3B,   REL d_a_npc_p1
-    P1b:   ID 0144,   Subtype 01,   Unknown 3B,   REL d_a_npc_p1
-    P1c:   ID 0144,   Subtype 02,   Unknown 3B,   REL d_a_npc_p1
-    P2a:   ID 0145,   Subtype 00,   Unknown 3B,   REL d_a_npc_p2
-    P2b:   ID 0145,   Subtype 01,   Unknown 3B,   REL d_a_npc_p2
-    P2c:   ID 0145,   Subtype 02,   Unknown 3B,   REL d_a_npc_p2
-     Tc:   ID 0147,   Subtype FF,   Unknown 3B,   REL d_a_npc_tc
- Throck:   ID 001B,   Subtype FF,   Unknown 00,   REL [none]
-  magma:   ID 01B7,   Subtype FF,   Unknown 00,   REL d_a_magma
-   Bita:   ID 0066,   Subtype FF,   Unknown 00,   REL d_a_bita
- YkgrON:   ID 0190,   Subtype FF,   Unknown 00,   REL d_a_ykgr
-YkgrOFF:   ID 0190,   Subtype FF,   Unknown 00,   REL d_a_ykgr
-  Dsaku:   ID 0191,   Subtype FF,   Unknown 00,   REL d_a_saku
-  Otana:   ID 002F,   Subtype 00,   Unknown 00,   REL d_a_obj_shelf
- OtanaG:   ID 002F,   Subtype 01,   Unknown 00,   REL d_a_obj_shelf
-    Bdk:   ID 00F0,   Subtype FF,   Unknown 00,   REL d_a_bdk
- Bdkobj:   ID 00F1,   Subtype FF,   Unknown 00,   REL d_a_bdkobj
-SWTdoor:   ID 00FA,   Subtype FF,   Unknown 00,   REL d_a_swtdoor
-  Canon:   ID 003F,   Subtype FF,   Unknown 00,   REL d_a_canon
- GBoard:   ID 0040,   Subtype FF,   Unknown 00,   REL d_a_mgameboard
-  Hlift:   ID 0030,   Subtype 00,   Unknown 00,   REL d_a_obj_hlift
- Hliftb:   ID 0030,   Subtype 01,   Unknown 00,   REL d_a_obj_hlift
-  Hami2:   ID 0031,   Subtype FF,   Unknown 00,   REL d_a_obj_hami2
-  Hami3:   ID 0032,   Subtype FF,   Unknown 00,   REL d_a_obj_hami3
-  Hami4:   ID 0033,   Subtype FF,   Unknown 00,   REL d_a_obj_hami4
-  Hbrf1:   ID 0034,   Subtype FF,   Unknown 00,   REL d_a_obj_hbrf1
-  Mflft:   ID 005D,   Subtype FF,   Unknown 00,   REL d_a_mflft
-ObjTime:   ID 01E1,   Subtype FF,   Unknown 00,   REL d_a_obj_timer
-   Klft:   ID 005E,   Subtype FF,   Unknown 00,   REL d_a_klft
-   Kita:   ID 0063,   Subtype FF,   Unknown 00,   REL d_a_kita
- Humi0z:   ID 0029,   Subtype 00,   Unknown 00,   REL d_a_obj_tide
- Humi4z:   ID 0029,   Subtype 01,   Unknown 00,   REL d_a_obj_tide
- Humi5z:   ID 0029,   Subtype 02,   Unknown 00,   REL d_a_obj_tide
-  Tide3:   ID 0029,   Subtype 03,   Unknown 00,   REL d_a_obj_tide
- Humi2z:   ID 0029,   Subtype 04,   Unknown 00,   REL d_a_obj_tide
- Humi3z:   ID 0029,   Subtype 05,   Unknown 00,   REL d_a_obj_tide
- WLvTag:   ID 01DD,   Subtype FF,   Unknown 00,   REL d_a_tag_waterlevel
-   Fire:   ID 01AB,   Subtype FF,   Unknown 00,   REL d_a_fire
-Zenfire:   ID 01AB,   Subtype FF,   Unknown 00,   REL d_a_fire
- Kokiie:   ID 0064,   Subtype FF,   Unknown 00,   REL d_a_kokiie
-  Paper:   ID 0108,   Subtype 00,   Unknown 00,   REL d_a_obj_paper
-   Ppos:   ID 0108,   Subtype 01,   Unknown 00,   REL d_a_obj_paper
-   Piwa:   ID 0108,   Subtype 02,   Unknown 36,   REL d_a_obj_paper
-     Ss:   ID 00FD,   Subtype FF,   Unknown 00,   REL d_a_ss
-WindTag:   ID 0189,   Subtype FF,   Unknown 00,   REL d_a_wind_tag
- Kryu00:   ID 0023,   Subtype FF,   Unknown 00,   REL d_a_obj_drift
-  Mcube:   ID 004C,   Subtype 00,   Unknown 00,   REL d_a_obj_mtest
-  Mcyln:   ID 004C,   Subtype 01,   Unknown 00,   REL d_a_obj_mtest
-Mcube10:   ID 004C,   Subtype 02,   Unknown 00,   REL d_a_obj_mtest
-Mcyln10:   ID 004C,   Subtype 03,   Unknown 00,   REL d_a_obj_mtest
- MwtrSB:   ID 004C,   Subtype 04,   Unknown 00,   REL d_a_obj_mtest
- MygnSB:   ID 004C,   Subtype 05,   Unknown 00,   REL d_a_obj_mtest
- Owater:   ID 004C,   Subtype 06,   Unknown 00,   REL d_a_obj_mtest
-  Astop:   ID 004C,   Subtype 07,   Unknown 00,   REL d_a_obj_mtest
- Ojtree:   ID 0055,   Subtype FF,   Unknown 00,   REL d_a_obj_ojtree
- Ospbox:   ID 0056,   Subtype FF,   Unknown 00,   REL d_a_obj_ospbox
-  Hmlif:   ID 002A,   Subtype FF,   Unknown 3D,   REL d_a_hmlif
-Ywarp00:   ID 006C,   Subtype FF,   Unknown 00,   REL d_a_warpls
-Ysdls00:   ID 006C,   Subtype FF,   Unknown 00,   REL d_a_warpls
-Yswtr00:   ID 01AE,   Subtype FF,   Unknown 00,   REL d_a_waterfall
- Gbrg00:   ID 01AF,   Subtype FF,   Unknown 00,   REL d_a_lbridge
-  Mhsg6:   ID 0057,   Subtype 00,   Unknown 00,   REL d_a_obj_ladder
-  Mhsg9:   ID 0057,   Subtype 01,   Unknown 00,   REL d_a_obj_ladder
- Mhsg12:   ID 0057,   Subtype 02,   Unknown 00,   REL d_a_obj_ladder
- Mhsg15:   ID 0057,   Subtype 03,   Unknown 00,   REL d_a_obj_ladder
- Mhsg4h:   ID 0057,   Subtype 04,   Unknown 00,   REL d_a_obj_ladder
-    Sss:   ID 00FE,   Subtype FF,   Unknown 00,   REL d_a_sss
-   Wall:   ID 01B1,   Subtype FF,   Unknown 00,   REL d_a_wall
-  Blift:   ID 0071,   Subtype FF,   Unknown 00,   REL d_a_obj_balancelift
-MtoriSU:   ID 0054,   Subtype FF,   Unknown 00,   REL d_a_obj_nest
-   Lamp:   ID 00BB,   Subtype FF,   Unknown 00,   REL d_a_lamp
-  Sitem:   ID 00FF,   Subtype FF,   Unknown 00,   REL d_a_sitem
-  Hmos1:   ID 00EA,   Subtype 00,   Unknown 23,   REL d_a_obj_bemos
-  Hmos2:   ID 00EA,   Subtype 01,   Unknown 23,   REL d_a_obj_bemos
-  Hmos3:   ID 00EA,   Subtype 02,   Unknown 23,   REL d_a_obj_bemos
-Ylesr00:   ID 00E9,   Subtype FF,   Unknown 00,   REL d_a_beam
- Hseki1:   ID 01D0,   Subtype 00,   Unknown 3D,   REL d_a_obj_try
- Hseki6:   ID 01D0,   Subtype 01,   Unknown 3D,   REL d_a_obj_try
- Hseki3:   ID 01D0,   Subtype 02,   Unknown 3D,   REL d_a_obj_try
- Hseki4:   ID 01D0,   Subtype 03,   Unknown 3D,   REL d_a_obj_try
- Hseki5:   ID 01D0,   Subtype 04,   Unknown 3D,   REL d_a_obj_try
-  Hmon1:   ID 01D0,   Subtype 05,   Unknown 3D,   REL d_a_obj_try
- Hmon1d:   ID 01D0,   Subtype 06,   Unknown 3D,   REL d_a_obj_try
-  Hmon2:   ID 01D0,   Subtype 07,   Unknown 3D,   REL d_a_obj_try
- Hmon2d:   ID 01D0,   Subtype 08,   Unknown 3D,   REL d_a_obj_try
-Hseki31:   ID 01D0,   Subtype 09,   Unknown 3D,   REL d_a_obj_try
-Hseki41:   ID 01D0,   Subtype 0A,   Unknown 3D,   REL d_a_obj_try
-Hseki51:   ID 01D0,   Subtype 0B,   Unknown 3D,   REL d_a_obj_try
-Hseki32:   ID 01D0,   Subtype 0C,   Unknown 3D,   REL d_a_obj_try
-Hseki42:   ID 01D0,   Subtype 0D,   Unknown 3D,   REL d_a_obj_try
-Hseki52:   ID 01D0,   Subtype 0E,   Unknown 3D,   REL d_a_obj_try
-  Com_A:   ID 010F,   Subtype FF,   Unknown 00,   REL d_a_obj_coming
-  WBird:   ID 00C5,   Subtype FF,   Unknown 00,   REL d_a_wbird
- SMtoge:   ID 0134,   Subtype FF,   Unknown 00,   REL d_a_mtoge
- SMBdor:   ID 0075,   Subtype 00,   Unknown 00,   REL d_a_mbdoor
- KGBdor:   ID 0075,   Subtype 01,   Unknown 00,   REL d_a_mbdoor
-BFlower:   ID 012A,   Subtype FF,   Unknown 00,   REL d_a_bflower
-  VbakH:   ID 012A,   Subtype FF,   Unknown 00,   REL d_a_bflower
-  VigaH:   ID 012B,   Subtype FF,   Unknown 00,   REL d_a_acorn_leaf
-   Stal:   ID 00BF,   Subtype FF,   Unknown 04,   REL d_a_st
- MkieBA:   ID 004D,   Subtype 00,   Unknown 3D,   REL d_a_obj_mkie
-MkieBAB:   ID 004D,   Subtype 01,   Unknown 3D,   REL d_a_obj_mkie
-  MkieK:   ID 004E,   Subtype FF,   Unknown 00,   REL d_a_obj_mkiek
-  MknjD:   ID 004F,   Subtype FF,   Unknown 00,   REL d_a_obj_mknjd
-  Msdan:   ID 0050,   Subtype FF,   Unknown 00,   REL d_a_obj_msdan
-MsdanSb:   ID 0051,   Subtype FF,   Unknown 00,   REL d_a_obj_msdan_sub
- Msdan2:   ID 0052,   Subtype FF,   Unknown 00,   REL d_a_obj_msdan2
-MsdanS2:   ID 0053,   Subtype FF,   Unknown 00,   REL d_a_obj_msdan_sub2
- Htobi1:   ID 0072,   Subtype FF,   Unknown 00,   REL d_a_shutter
- Htobi2:   ID 0072,   Subtype FF,   Unknown 00,   REL d_a_shutter
- Htobi3:   ID 0073,   Subtype FF,   Unknown 00,   REL d_a_shutter2
-Hfbot1A:   ID 001F,   Subtype 00,   Unknown 00,   REL d_a_obj_swflat
-Hfbot1B:   ID 001F,   Subtype 01,   Unknown 00,   REL d_a_obj_swflat
-Hfbot1C:   ID 001F,   Subtype 02,   Unknown 00,   REL d_a_obj_swflat
-  Ykzyg:   ID 0035,   Subtype FF,   Unknown 00,   REL d_a_obj_volcano
-  GiceL:   ID 0039,   Subtype FF,   Unknown 00,   REL d_a_obj_iceisland
-  Qdghd:   ID 003A,   Subtype FF,   Unknown 00,   REL d_a_obj_dragonhead
-dmgroom:   ID 010A,   Subtype FF,   Unknown 00,   REL d_a_obj_dmgroom
-  Doguu:   ID 010B,   Subtype 00,   Unknown 00,   REL d_a_obj_doguu
-MegamiD:   ID 010B,   Subtype 01,   Unknown 00,   REL d_a_obj_doguu
-MegamiF:   ID 010B,   Subtype 02,   Unknown 00,   REL d_a_obj_doguu
-MegamiN:   ID 010B,   Subtype 03,   Unknown 00,   REL d_a_obj_doguu
- DoguuD:   ID 01BE,   Subtype FF,   Unknown 00,   REL d_a_obj_doguu_demo
- ReTag0:   ID 003D,   Subtype FF,   Unknown 00,   REL d_a_tag_ret
- VolTag:   ID 0024,   Subtype FF,   Unknown 00,   REL d_a_tag_volcano
-   Auc7:   ID 016B,   Subtype 00,   Unknown 00,   REL d_a_npc_auction
-   Auc1:   ID 016B,   Subtype 01,   Unknown 00,   REL d_a_npc_auction
-   Auc2:   ID 016B,   Subtype 02,   Unknown 00,   REL d_a_npc_auction
-   Auc3:   ID 016B,   Subtype 03,   Unknown 00,   REL d_a_npc_auction
-   Auc4:   ID 016B,   Subtype 04,   Unknown 00,   REL d_a_npc_auction
-   Auc5:   ID 016B,   Subtype 05,   Unknown 00,   REL d_a_npc_auction
-   Auc6:   ID 016B,   Subtype 06,   Unknown 00,   REL d_a_npc_auction
-   Auc0:   ID 016B,   Subtype 07,   Unknown 3B,   REL d_a_npc_auction
- RotenA:   ID 0176,   Subtype 00,   Unknown 3B,   REL d_a_npc_roten
- RotenB:   ID 0176,   Subtype 01,   Unknown 3B,   REL d_a_npc_roten
- RotenC:   ID 0176,   Subtype 02,   Unknown 3B,   REL d_a_npc_roten
-     Tn:   ID 00C0,   Subtype FF,   Unknown 03,   REL d_a_tn
-   Fdai:   ID 0137,   Subtype FF,   Unknown 00,   REL d_a_dai
-Ytrnd00:   ID 01C0,   Subtype FF,   Unknown 3A,   REL d_a_tornado
-  Plant:   ID 0114,   Subtype FF,   Unknown 00,   REL d_a_obj_plant
-   Rflw:   ID 0117,   Subtype FF,   Unknown 00,   REL d_a_obj_rflw
-  Table:   ID 0118,   Subtype FF,   Unknown 00,   REL d_a_obj_table
-  Gtaki:   ID 0115,   Subtype FF,   Unknown 00,   REL d_a_obj_gtaki
-Tenmado:   ID 0119,   Subtype FF,   Unknown 00,   REL d_a_obj_tenmado
-X_tower:   ID 01BD,   Subtype FF,   Unknown 00,   REL d_a_obj_tower
- Eskban:   ID 00A2,   Subtype FF,   Unknown 00,   REL d_a_obj_eskban
-  Ekskz:   ID 00A3,   Subtype FF,   Unknown 00,   REL d_a_obj_ekskz
-   Pbka:   ID 0113,   Subtype FF,   Unknown 00,   REL d_a_obj_pbka
-Yboil00:   ID 0116,   Subtype FF,   Unknown 00,   REL d_a_obj_Yboil
-Cafelmp:   ID 011A,   Subtype FF,   Unknown 00,   REL d_a_obj_cafelmp
-MKanoke:   ID 00A1,   Subtype 00,   Unknown 3D,   REL d_a_obj_kanoke
-MKanok2:   ID 00A1,   Subtype 01,   Unknown 3D,   REL d_a_obj_kanoke
-    Kg1:   ID 016C,   Subtype FF,   Unknown 3B,   REL d_a_npc_kg1
-    Kg2:   ID 016D,   Subtype FF,   Unknown 00,   REL d_a_npc_kg2
-     Tt:   ID 016E,   Subtype FF,   Unknown 3B,   REL d_a_npc_tt
-     Hr:   ID 016F,   Subtype 00,   Unknown 00,   REL d_a_npc_hr
-    Hr2:   ID 016F,   Subtype 01,   Unknown 00,   REL d_a_npc_hr
- BigElf:   ID 0173,   Subtype 00,   Unknown 00,   REL d_a_bigelf
-     Ho:   ID 0170,   Subtype 00,   Unknown 00,   REL d_a_npc_ho
- Gkai00:   ID 01B0,   Subtype FF,   Unknown 00,   REL d_a_lstair
-     Mk:   ID 00AB,   Subtype 00,   Unknown 3B,   REL d_a_npc_mk
-    UkB:   ID 0172,   Subtype 01,   Unknown 3B,   REL d_a_npc_uk
-    UkC:   ID 0172,   Subtype 02,   Unknown 3B,   REL d_a_npc_uk
-    UkD:   ID 0172,   Subtype 03,   Unknown 3B,   REL d_a_npc_uk
-    Mk2:   ID 00AB,   Subtype 04,   Unknown 00,   REL d_a_npc_mk
-   UkB2:   ID 0172,   Subtype 05,   Unknown 00,   REL d_a_npc_uk
-   UkC2:   ID 0172,   Subtype 06,   Unknown 00,   REL d_a_npc_uk
-   UkD2:   ID 0172,   Subtype 07,   Unknown 00,   REL d_a_npc_uk
-    Co1:   ID 0174,   Subtype FF,   Unknown 3B,   REL d_a_npc_co1
-     Mt:   ID 017D,   Subtype FF,   Unknown 00,   REL d_a_npc_mt
-     Mn:   ID 017E,   Subtype FF,   Unknown 3B,   REL d_a_npc_mn
-     Ah:   ID 017F,   Subtype FF,   Unknown 00,   REL d_a_npc_ah
-  Hyuf1:   ID 002A,   Subtype FF,   Unknown 3D,   REL d_a_hmlif
-  Hyuf2:   ID 002A,   Subtype FF,   Unknown 3D,   REL d_a_hmlif
-  Hdai1:   ID 0061,   Subtype 00,   Unknown 3D,   REL d_a_pedestal
-  Hdai2:   ID 0061,   Subtype 01,   Unknown 3D,   REL d_a_pedestal
-  Hdai3:   ID 0061,   Subtype 02,   Unknown 3D,   REL d_a_pedestal
-Auction:   ID 0180,   Subtype FF,   Unknown 00,   REL d_a_auction
-   Auzu:   ID 011D,   Subtype FF,   Unknown 3A,   REL d_a_obj_auzu
-   Hpu1:   ID 0074,   Subtype FF,   Unknown 00,   REL d_a_windmill
-   Hpu2:   ID 0074,   Subtype FF,   Unknown 00,   REL d_a_windmill
-Hkikai1:   ID 0100,   Subtype FF,   Unknown 00,   REL d_a_machine
-Ybgaf00:   ID 0189,   Subtype FF,   Unknown 00,   REL d_a_wind_tag
-  LOD01:   ID 01C3,   Subtype FF,   Unknown 00,   REL d_a_lod_bg
-  LOD02:   ID 01C3,   Subtype FF,   Unknown 00,   REL d_a_lod_bg
-  LOD03:   ID 01C3,   Subtype FF,   Unknown 00,   REL d_a_lod_bg
-  LOD04:   ID 01C3,   Subtype FF,   Unknown 00,   REL d_a_lod_bg
-  LOD05:   ID 01C3,   Subtype FF,   Unknown 00,   REL d_a_lod_bg
-  LOD06:   ID 01C3,   Subtype FF,   Unknown 00,   REL d_a_lod_bg
-  LOD07:   ID 01C3,   Subtype FF,   Unknown 00,   REL d_a_lod_bg
-  LOD08:   ID 01C3,   Subtype FF,   Unknown 00,   REL d_a_lod_bg
-  LOD09:   ID 01C3,   Subtype FF,   Unknown 00,   REL d_a_lod_bg
-  LOD10:   ID 01C3,   Subtype FF,   Unknown 00,   REL d_a_lod_bg
-  LOD11:   ID 01C3,   Subtype FF,   Unknown 00,   REL d_a_lod_bg
-  LOD12:   ID 01C3,   Subtype FF,   Unknown 00,   REL d_a_lod_bg
-  LOD13:   ID 01C3,   Subtype FF,   Unknown 00,   REL d_a_lod_bg
-  LOD14:   ID 01C3,   Subtype FF,   Unknown 00,   REL d_a_lod_bg
-  LOD15:   ID 01C3,   Subtype FF,   Unknown 00,   REL d_a_lod_bg
-  LOD16:   ID 01C3,   Subtype FF,   Unknown 00,   REL d_a_lod_bg
-  LOD17:   ID 01C3,   Subtype FF,   Unknown 00,   REL d_a_lod_bg
-  LOD18:   ID 01C3,   Subtype FF,   Unknown 00,   REL d_a_lod_bg
-  LOD19:   ID 01C3,   Subtype FF,   Unknown 00,   REL d_a_lod_bg
-  LOD20:   ID 01C3,   Subtype FF,   Unknown 00,   REL d_a_lod_bg
-  LOD21:   ID 01C3,   Subtype FF,   Unknown 00,   REL d_a_lod_bg
-  LOD22:   ID 01C3,   Subtype FF,   Unknown 00,   REL d_a_lod_bg
-  LOD23:   ID 01C3,   Subtype FF,   Unknown 00,   REL d_a_lod_bg
-  LOD24:   ID 01C3,   Subtype FF,   Unknown 00,   REL d_a_lod_bg
-  LOD25:   ID 01C3,   Subtype FF,   Unknown 00,   REL d_a_lod_bg
-  LOD26:   ID 01C3,   Subtype FF,   Unknown 00,   REL d_a_lod_bg
-  LOD27:   ID 01C3,   Subtype FF,   Unknown 00,   REL d_a_lod_bg
-  LOD28:   ID 01C3,   Subtype FF,   Unknown 00,   REL d_a_lod_bg
-  LOD29:   ID 01C3,   Subtype FF,   Unknown 00,   REL d_a_lod_bg
-  LOD30:   ID 01C3,   Subtype FF,   Unknown 00,   REL d_a_lod_bg
-  LOD31:   ID 01C3,   Subtype FF,   Unknown 00,   REL d_a_lod_bg
-  LOD32:   ID 01C3,   Subtype FF,   Unknown 00,   REL d_a_lod_bg
-  LOD33:   ID 01C3,   Subtype FF,   Unknown 00,   REL d_a_lod_bg
-  LOD34:   ID 01C3,   Subtype FF,   Unknown 00,   REL d_a_lod_bg
-  LOD35:   ID 01C3,   Subtype FF,   Unknown 00,   REL d_a_lod_bg
-  LOD36:   ID 01C3,   Subtype FF,   Unknown 00,   REL d_a_lod_bg
-  LOD37:   ID 01C3,   Subtype FF,   Unknown 00,   REL d_a_lod_bg
-  LOD38:   ID 01C3,   Subtype FF,   Unknown 00,   REL d_a_lod_bg
-  LOD39:   ID 01C3,   Subtype FF,   Unknown 00,   REL d_a_lod_bg
-  LOD40:   ID 01C3,   Subtype FF,   Unknown 00,   REL d_a_lod_bg
-  LOD41:   ID 01C3,   Subtype FF,   Unknown 00,   REL d_a_lod_bg
-  LOD42:   ID 01C3,   Subtype FF,   Unknown 00,   REL d_a_lod_bg
-  LOD43:   ID 01C3,   Subtype FF,   Unknown 00,   REL d_a_lod_bg
-  LOD44:   ID 01C3,   Subtype FF,   Unknown 00,   REL d_a_lod_bg
-  LOD45:   ID 01C3,   Subtype FF,   Unknown 00,   REL d_a_lod_bg
-  LOD46:   ID 01C3,   Subtype FF,   Unknown 00,   REL d_a_lod_bg
-  LOD47:   ID 01C3,   Subtype FF,   Unknown 00,   REL d_a_lod_bg
-  LOD48:   ID 01C3,   Subtype FF,   Unknown 00,   REL d_a_lod_bg
-  LOD49:   ID 01C3,   Subtype FF,   Unknown 00,   REL d_a_lod_bg
-  MtryB:   ID 002E,   Subtype 00,   Unknown 00,   REL d_a_obj_tribox
-MtryBCr:   ID 002E,   Subtype 01,   Unknown 00,   REL d_a_obj_tribox
-  Vdora:   ID 011E,   Subtype FF,   Unknown 00,   REL d_a_obj_gong
- Roten2:   ID 007B,   Subtype 00,   Unknown 00,   REL d_a_obj_roten
- Roten3:   ID 007B,   Subtype 01,   Unknown 00,   REL d_a_obj_roten
- Roten4:   ID 007B,   Subtype 02,   Unknown 00,   REL d_a_obj_roten
-  Qtkhd:   ID 0058,   Subtype FF,   Unknown 00,   REL d_a_obj_smplbg
-  Akabe:   ID 0059,   Subtype 00,   Unknown 00,   REL d_a_obj_akabe
-Akabe10:   ID 0059,   Subtype 01,   Unknown 00,   REL d_a_obj_akabe
-   NBOX:   ID 0059,   Subtype 02,   Unknown 00,   REL d_a_obj_akabe
- NBOX10:   ID 0059,   Subtype 03,   Unknown 00,   REL d_a_obj_akabe
-  Ashut:   ID 005A,   Subtype FF,   Unknown 00,   REL d_a_obj_ashut
-  Mcrtn:   ID 0123,   Subtype FF,   Unknown 00,   REL d_a_obj_tapestry
-  VmcBS:   ID 0036,   Subtype FF,   Unknown 00,   REL d_a_obj_vmc
- Usovmc:   ID 0037,   Subtype FF,   Unknown 00,   REL d_a_obj_usovmc
-   Vfan:   ID 0038,   Subtype FF,   Unknown 00,   REL d_a_obj_vfan
-   Apzl:   ID 011B,   Subtype FF,   Unknown 00,   REL d_a_obj_apzl
-  Adnno:   ID 011C,   Subtype FF,   Unknown 00,   REL d_a_obj_adnno
-Ycage00:   ID 011F,   Subtype FF,   Unknown 00,   REL d_a_obj_barrier
-Yswdr00:   ID 0120,   Subtype FF,   Unknown 00,   REL d_a_obj_firewall
- TnTrap:   ID 0121,   Subtype FF,   Unknown 00,   REL d_a_obj_tntrap
- FgTrap:   ID 0121,   Subtype FF,   Unknown 00,   REL d_a_obj_tntrap
- CmTrap:   ID 0121,   Subtype FF,   Unknown 00,   REL d_a_obj_tntrap
- Hjump2:   ID 00A8,   Subtype FF,   Unknown 3D,   REL d_a_obj_jump
-  Esekh:   ID 0122,   Subtype 00,   Unknown 37,   REL d_a_obj_monument
- Esekh2:   ID 0122,   Subtype 01,   Unknown 37,   REL d_a_obj_monument
-     Po:   ID 0179,   Subtype FF,   Unknown 3B,   REL d_a_npc_photo
-  TagPo:   ID 01A3,   Subtype FF,   Unknown 00,   REL d_a_tag_photo
- Htoge1:   ID 007C,   Subtype FF,   Unknown 32,   REL d_a_toge
-Skanran:   ID 007D,   Subtype FF,   Unknown 00,   REL d_a_obj_ferris
-   Ajav:   ID 0088,   Subtype FF,   Unknown 00,   REL d_a_obj_ajav
-   Trap:   ID 0089,   Subtype FF,   Unknown 33,   REL d_a_obj_trap
-    Hha:   ID 008A,   Subtype FF,   Unknown 00,   REL d_a_obj_hha
- Htetu1:   ID 008B,   Subtype FF,   Unknown 00,   REL d_a_obj_htetu1
-  Tpota:   ID 018D,   Subtype FF,   Unknown 00,   REL d_a_tpota
-Stoudai:   ID 0082,   Subtype FF,   Unknown 00,   REL d_a_obj_light
-   Pbco:   ID 0026,   Subtype FF,   Unknown 00,   REL d_a_obj_pbco
- Ebomzo:   ID 00A4,   Subtype FF,   Unknown 00,   REL d_a_obj_ebomzo
-  Psail:   ID 00AD,   Subtype 00,   Unknown 00,   REL d_a_sail
- Homen1:   ID 0083,   Subtype 00,   Unknown 00,   REL d_a_obj_homen
- Homen2:   ID 0083,   Subtype 01,   Unknown 00,   REL d_a_obj_homen
-  Xfuta:   ID 007E,   Subtype 01,   Unknown 00,   REL d_a_obj_xfuta
-  Vochi:   ID 0092,   Subtype 00,   Unknown 00,   REL d_a_obj_leaves
- Hfuck1:   ID 0096,   Subtype 00,   Unknown 00,   REL d_a_obj_hfuck1
-  YLzou:   ID 0093,   Subtype 00,   Unknown 00,   REL d_a_obj_YLzou
-   Gbed:   ID 0094,   Subtype 00,   Unknown 00,   REL d_a_obj_ganonbed
-  Vteng:   ID 0095,   Subtype 00,   Unknown 00,   REL d_a_obj_Vteng
- Ohatch:   ID 0097,   Subtype FF,   Unknown 00,   REL d_a_obj_ohatch
- Rcloud:   ID 008F,   Subtype 00,   Unknown 00,   REL d_a_obj_rcloud
- Ocloud:   ID 008F,   Subtype 01,   Unknown 00,   REL d_a_obj_rcloud
-   MPot:   ID 01D3,   Subtype 00,   Unknown 00,   REL d_a_obj_mshokki
- MOsara:   ID 01D3,   Subtype 01,   Unknown 00,   REL d_a_obj_mshokki
- MKoppu:   ID 01D3,   Subtype 02,   Unknown 00,   REL d_a_obj_mshokki
-   Ptco:   ID 009A,   Subtype 00,   Unknown 00,   REL d_a_obj_bscurtain
-   Ptcu:   ID 009A,   Subtype 01,   Unknown 00,   REL d_a_obj_bscurtain
-   Kmon:   ID 0196,   Subtype 00,   Unknown 00,   REL d_a_kmon
- Sarace:   ID 0146,   Subtype 00,   Unknown 00,   REL d_a_npc_sarace
-    Hsh:   ID 0124,   Subtype 00,   Unknown 36,   REL d_a_obj_hsehi1
-   Hsh2:   ID 0124,   Subtype 01,   Unknown 36,   REL d_a_obj_hsehi1
- Mmusic:   ID 018B,   Subtype FF,   Unknown 00,   REL d_a_mmusic
- Gryw00:   ID 0090,   Subtype FF,   Unknown 00,   REL d_a_obj_gryw00
-  AjavW:   ID 0091,   Subtype 00,   Unknown 00,   REL d_a_obj_AjavW
-Omensmk:   ID 0084,   Subtype FF,   Unknown 00,   REL d_a_obj_homensmoke
-  Itnak:   ID 018E,   Subtype FF,   Unknown 00,   REL d_a_obj_Itnak
-Yfrlt00:   ID 018C,   Subtype FF,   Unknown 00,   REL d_a_komore
-  FTree:   ID 0085,   Subtype FF,   Unknown 00,   REL d_a_obj_ftree
-  Vyasi:   ID 0087,   Subtype FF,   Unknown 00,   REL d_a_obj_vyasi
-    Vds:   ID 0086,   Subtype FF,   Unknown 00,   REL d_a_obj_Vds
- Rforce:   ID 0080,   Subtype FF,   Unknown 00,   REL d_a_obj_rforce
-   zouK:   ID 018F,   Subtype 00,   Unknown 00,   REL d_a_obj_zouK
-  zouK1:   ID 018F,   Subtype 01,   Unknown 00,   REL d_a_obj_zouK
-  zouK2:   ID 018F,   Subtype 02,   Unknown 00,   REL d_a_obj_zouK
-  zouK3:   ID 018F,   Subtype 03,   Unknown 00,   REL d_a_obj_zouK
-  zouK4:   ID 018F,   Subtype 04,   Unknown 00,   REL d_a_obj_zouK
-Gaship1:   ID 007F,   Subtype FF,   Unknown 00,   REL d_a_obj_gaship
-Gaship2:   ID 0081,   Subtype FF,   Unknown 00,   REL d_a_obj_gaship2
-  Ghrwp:   ID 006D,   Subtype FF,   Unknown 00,   REL d_a_warphr
-Gdemo20:   ID 006E,   Subtype FF,   Unknown 00,   REL d_a_warpdm20
- Warpgn:   ID 006F,   Subtype FF,   Unknown 00,   REL d_a_warpgn
- Warpmj:   ID 0070,   Subtype FF,   Unknown 00,   REL d_a_warpmj
- Warpfo:   ID 006B,   Subtype FF,   Unknown 00,   REL d_a_warpfout
-Ygush00:   ID 0099,   Subtype FF,   Unknown 00,   REL d_a_obj_Ygush00
-Ygush01:   ID 0099,   Subtype FF,   Unknown 00,   REL d_a_obj_Ygush00
-Ygstp00:   ID 0099,   Subtype FF,   Unknown 00,   REL d_a_obj_Ygush00
-Ygush02:   ID 0099,   Subtype FF,   Unknown 00,   REL d_a_obj_Ygush00
-   Hcbh:   ID 0098,   Subtype 00,   Unknown 00,   REL d_a_obj_hcbh
-  Com_B:   ID 0110,   Subtype FF,   Unknown 00,   REL d_a_coming2
-  Com_C:   ID 0111,   Subtype FF,   Unknown 00,   REL d_a_coming3
- SPitem:   ID 0107,   Subtype FF,   Unknown 00,   REL [none]
-HyoiKam:   ID 00C4,   Subtype FF,   Unknown 00,   REL d_a_npc_kamome
-Shmrgrd:   ID 009B,   Subtype FF,   Unknown 00,   REL d_a_obj_shmrgrd
-  Vtil1:   ID 01D1,   Subtype 00,   Unknown 00,   REL d_a_obj_vtil
-  Vtil2:   ID 01D1,   Subtype 01,   Unknown 00,   REL d_a_obj_vtil
-  Vtil3:   ID 01D1,   Subtype 02,   Unknown 00,   REL d_a_obj_vtil
-  Vtil4:   ID 01D1,   Subtype 03,   Unknown 00,   REL d_a_obj_vtil
-  Vtil5:   ID 01D1,   Subtype 04,   Unknown 00,   REL d_a_obj_vtil
- Eayogn:   ID 009C,   Subtype FF,   Unknown 00,   REL d_a_obj_eayogn
-  VmsMS:   ID 009D,   Subtype FF,   Unknown 00,   REL d_a_obj_vmsms
-  VmsDZ:   ID 009E,   Subtype FF,   Unknown 00,   REL d_a_obj_vmsdz
-  VgnFD:   ID 00A0,   Subtype FF,   Unknown 00,   REL d_a_obj_vgnfd
-  Ygcwp:   ID 009F,   Subtype FF,   Unknown 00,   REL d_a_ygcwp
- Figure:   ID 0197,   Subtype FF,   Unknown 00,   REL d_a_obj_figure
-  RoHat:   ID 0198,   Subtype FF,   Unknown 00,   REL d_a_obj_hat
-Gntakis:   ID 008C,   Subtype FF,   Unknown 00,   REL d_a_obj_gnndemotakis
-Gntakie:   ID 008D,   Subtype FF,   Unknown 00,   REL d_a_obj_gnndemotakie
-Gnbtaki:   ID 008E,   Subtype FF,   Unknown 00,   REL d_a_obj_gnnbtltaki
-    Bkm:   ID 00EC,   Subtype FF,   Unknown 00,   REL d_a_bmd
-    Bst:   ID 00F2,   Subtype FF,   Unknown 00,   REL d_a_bst
-  Bitem:   ID 0102,   Subtype FF,   Unknown 00,   REL d_a_boss_item
- Fganon:   ID 00F3,   Subtype FF,   Unknown 00,   REL d_a_fganon
-    Bwd:   ID 00DA,   Subtype FF,   Unknown 00,   REL d_a_bwd
-   Bwds:   ID 00DB,   Subtype FF,   Unknown 00,   REL d_a_bwds
-    Bgn:   ID 00F5,   Subtype FF,   Unknown 00,   REL d_a_bgn
-    Gnd:   ID 00F8,   Subtype FF,   Unknown 00,   REL d_a_gnd
-   Puti:   ID 00F9,   Subtype FF,   Unknown 00,   REL d_a_pt
- d_act0:   ID 0199,   Subtype 00,   Unknown 00,   REL [none]
- d_act1:   ID 0199,   Subtype 01,   Unknown 00,   REL [none]
- d_act2:   ID 0199,   Subtype 02,   Unknown 00,   REL [none]
- d_act3:   ID 0199,   Subtype 03,   Unknown 00,   REL [none]
- d_act4:   ID 0199,   Subtype 04,   Unknown 00,   REL [none]
- d_act5:   ID 0199,   Subtype 05,   Unknown 00,   REL [none]
- d_act6:   ID 0199,   Subtype 06,   Unknown 00,   REL [none]
- d_act7:   ID 0199,   Subtype 07,   Unknown 00,   REL [none]
- d_act8:   ID 0199,   Subtype 08,   Unknown 00,   REL [none]
- d_act9:   ID 0199,   Subtype 09,   Unknown 00,   REL [none]
-d_act10:   ID 0199,   Subtype 0A,   Unknown 00,   REL [none]
-d_act11:   ID 0199,   Subtype 0B,   Unknown 00,   REL [none]
-d_act12:   ID 0199,   Subtype 0C,   Unknown 00,   REL [none]
-d_act13:   ID 0199,   Subtype 0D,   Unknown 00,   REL [none]
-d_act14:   ID 0199,   Subtype 0E,   Unknown 00,   REL [none]
-d_act15:   ID 0199,   Subtype 0F,   Unknown 00,   REL [none]
-d_act16:   ID 0199,   Subtype 10,   Unknown 00,   REL [none]
-d_act17:   ID 0199,   Subtype 11,   Unknown 00,   REL [none]
-d_act18:   ID 0199,   Subtype 12,   Unknown 00,   REL [none]
-d_act19:   ID 0199,   Subtype 13,   Unknown 00,   REL [none]
-d_act20:   ID 0199,   Subtype 14,   Unknown 00,   REL [none]
-d_act21:   ID 0199,   Subtype 15,   Unknown 00,   REL [none]
-d_act22:   ID 0199,   Subtype 16,   Unknown 00,   REL [none]
-d_act23:   ID 0199,   Subtype 17,   Unknown 00,   REL [none]
-d_act24:   ID 0199,   Subtype 18,   Unknown 00,   REL [none]
-d_act25:   ID 0199,   Subtype 19,   Unknown 00,   REL [none]
-d_act26:   ID 0199,   Subtype 1A,   Unknown 00,   REL [none]
-d_act27:   ID 0199,   Subtype 1B,   Unknown 00,   REL [none]
-d_act28:   ID 0199,   Subtype 1C,   Unknown 00,   REL [none]
-d_act29:   ID 0199,   Subtype 1D,   Unknown 00,   REL [none]
-d_act30:   ID 0199,   Subtype 1E,   Unknown 00,   REL [none]
-d_act31:   ID 0199,   Subtype 1F,   Unknown 00,   REL [none]
-   SYAN:   ID 00B2,   Subtype FF,   Unknown 00,   REL d_a_syan
-  TagD1:   ID 019B,   Subtype 00,   Unknown 00,   REL d_a_dummy
-  TagD2:   ID 019B,   Subtype 01,   Unknown 00,   REL d_a_dummy
-  TagD3:   ID 019B,   Subtype 02,   Unknown 00,   REL d_a_dummy
-  TagD4:   ID 019B,   Subtype 03,   Unknown 00,   REL d_a_dummy
-     mp:   ID 01C2,   Subtype FF,   Unknown 00,   REL d_a_movie_player
-  STBox:   ID 0195,   Subtype FF,   Unknown 00,   REL d_a_salvage_tbox
- Fobj00:   ID 01D4,   Subtype FF,   Unknown 00,   REL [none]
-   Tama:   ID 01D6,   Subtype FF,   Unknown 00,   REL d_a_tama
-    Agb:   ID 01B5,   Subtype FF,   Unknown 00,   REL [none]
-     Bg:   ID 01BC,   Subtype FF,   Unknown 00,   REL [none]
-  Himo2:   ID 01C4,   Subtype FF,   Unknown 00,   REL [none]
-    Esa:   ID 00DE,   Subtype FF,   Unknown 00,   REL [none]
-   Boko:   ID 01D5,   Subtype FF,   Unknown 00,   REL d_a_boko
-Kantera:   ID 00C2,   Subtype FF,   Unknown 00,   REL d_a_kantera
-  HShot:   ID 00AA,   Subtype FF,   Unknown 00,   REL [none]
-   Boom:   ID 01B4,   Subtype FF,   Unknown 00,   REL [none]
-   Bomb:   ID 0128,   Subtype FF,   Unknown 00,   REL [none]
-  Bomb2:   ID 0129,   Subtype FF,   Unknown 00,   REL [none]
-   Boko:   ID 01D5,   Subtype FF,   Unknown 00,   REL d_a_boko
-  Arrow:   ID 01DE,   Subtype FF,   Unknown 00,   REL [none]
-Arrow_i:   ID 01DF,   Subtype FF,   Unknown 00,   REL d_a_arrow_iceeff
-Arrow_l:   ID 01E0,   Subtype FF,   Unknown 00,   REL d_a_arrow_lighteff
-   Grid:   ID 00AC,   Subtype FF,   Unknown 00,   REL [none]
-   Kaji:   ID 003E,   Subtype FF,   Unknown 00,   REL d_a_kaji
- HFloor:   ID 00E8,   Subtype FF,   Unknown 00,   REL d_a_hot_floor
-  Buoyr:   ID 010E,   Subtype FF,   Unknown 00,   REL d_a_obj_buoyrace
-  Ritem:   ID 0104,   Subtype FF,   Unknown 00,   REL d_a_race_item
-  Sitem:   ID 0105,   Subtype FF,   Unknown 00,   REL d_a_shop_item
-  Ditem:   ID 0103,   Subtype FF,   Unknown 00,   REL d_a_demo_item
-  Iball:   ID 0192,   Subtype FF,   Unknown 00,   REL [none]
-  Grass:   ID 01B8,   Subtype FF,   Unknown 00,   REL d_a_grass
-  Vrbox:   ID 01BA,   Subtype FF,   Unknown 00,   REL [none]
- Vrbox2:   ID 01BB,   Subtype FF,   Unknown 00,   REL [none]
-EndCode:   ID 0007,   Subtype FF,   Unknown 00,   REL [none]
- [none]:   ID 0065,   Subtype [],   Unknown [],   REL d_a_shand
- [none]:   ID 00AE,   Subtype [],   Unknown [],   REL d_a_pirate_flag
- [none]:   ID 00B8,   Subtype [],   Unknown [],   REL d_a_hitobj
- [none]:   ID 00C1,   Subtype [],   Unknown [],   REL d_a_mant
- [none]:   ID 00DC,   Subtype [],   Unknown [],   REL d_a_bwdg
- [none]:   ID 00ED,   Subtype [],   Unknown [],   REL d_a_bmdhand
- [none]:   ID 00EE,   Subtype [],   Unknown [],   REL d_a_bmdfoot
- [none]:   ID 00F4,   Subtype [],   Unknown [],   REL d_a_fgmahou
- [none]:   ID 00F6,   Subtype [],   Unknown [],   REL d_a_bgn2
- [none]:   ID 00F7,   Subtype [],   Unknown [],   REL d_a_bgn3
- [none]:   ID 0112,   Subtype [],   Unknown [],   REL d_a_obj_mmrr
- [none]:   ID 01C1,   Subtype [],   Unknown [],   REL d_a_title
- [none]:   ID 01C6,   Subtype [],   Unknown [],   REL d_a_att
- [none]:   ID 01D7,   Subtype [],   Unknown [],   REL d_a_obj_buoyflag
- [none]:   ID 01D9,   Subtype [],   Unknown [],   REL d_a_obj_eff
+ kusax1:   ID 01B8,   Subtype FF,   GBAName 00,   REL d_a_grass
+ kusax7:   ID 01B8,   Subtype FF,   GBAName 00,   REL d_a_grass
+kusax21:   ID 01B8,   Subtype FF,   GBAName 00,   REL d_a_grass
+ flower:   ID 01B8,   Subtype FF,   GBAName 00,   REL d_a_grass
+  flwr7:   ID 01B8,   Subtype FF,   GBAName 00,   REL d_a_grass
+ flwr17:   ID 01B8,   Subtype FF,   GBAName 00,   REL d_a_grass
+pflower:   ID 01B8,   Subtype FF,   GBAName 00,   REL d_a_grass
+pflwrx7:   ID 01B8,   Subtype FF,   GBAName 00,   REL d_a_grass
+  swood:   ID 01B8,   Subtype FF,   GBAName 00,   REL d_a_grass
+ swood3:   ID 01B8,   Subtype FF,   GBAName 00,   REL d_a_grass
+ swood5:   ID 01B8,   Subtype FF,   GBAName 00,   REL d_a_grass
+  woodb:   ID 010C,   Subtype FF,   GBAName 00,   REL d_a_obj_wood
+ woodbx:   ID 010C,   Subtype FF,   GBAName 00,   REL d_a_obj_wood
+ door10:   ID 012E,   Subtype FF,   GBAName 00,   REL d_a_door10
+ door11:   ID 012E,   Subtype FF,   GBAName 00,   REL d_a_door10
+ door20:   ID 012E,   Subtype FF,   GBAName 00,   REL d_a_door10
+ door21:   ID 012E,   Subtype FF,   GBAName 00,   REL d_a_door10
+Zenshut:   ID 012E,   Subtype FF,   GBAName 00,   REL d_a_door10
+keyshut:   ID 012E,   Subtype FF,   GBAName 00,   REL d_a_door10
+K_Zshut:   ID 012E,   Subtype FF,   GBAName 00,   REL d_a_door10
+ ATdoor:   ID 0130,   Subtype FF,   GBAName 00,   REL d_a_atdoor
+  Mori1:   ID 0131,   Subtype FF,   GBAName 00,   REL d_a_mdoor
+ doorKD:   ID 0132,   Subtype FF,   GBAName 00,   REL d_a_kddoor
+ZenshKD:   ID 0132,   Subtype FF,   GBAName 00,   REL d_a_kddoor
+K_ZshKD:   ID 0132,   Subtype FF,   GBAName 00,   REL d_a_kddoor
+ doorSH:   ID 0132,   Subtype FF,   GBAName 00,   REL d_a_kddoor
+ doorSZ:   ID 0132,   Subtype FF,   GBAName 00,   REL d_a_kddoor
+ KNOB00:   ID 0133,   Subtype FF,   GBAName 00,   REL d_a_knob00
+ KNOB01:   ID 0133,   Subtype FF,   GBAName 00,   REL d_a_knob00
+ KNOB02:   ID 0133,   Subtype FF,   GBAName 00,   REL d_a_knob00
+ KNOB03:   ID 0133,   Subtype FF,   GBAName 00,   REL d_a_knob00
+KNOB00D:   ID 0133,   Subtype FF,   GBAName 00,   REL d_a_knob00
+KNOB01D:   ID 0133,   Subtype FF,   GBAName 00,   REL d_a_knob00
+KNOB02D:   ID 0133,   Subtype FF,   GBAName 00,   REL d_a_knob00
+KNOB03D:   ID 0133,   Subtype FF,   GBAName 00,   REL d_a_knob00
+ door12:   ID 012F,   Subtype 00,   GBAName 00,   REL d_a_door12
+door12M:   ID 012F,   Subtype 01,   GBAName 00,   REL d_a_door12
+door12B:   ID 012F,   Subtype 02,   GBAName 00,   REL d_a_door12
+ door13:   ID 012F,   Subtype 03,   GBAName 00,   REL d_a_door12
+door13M:   ID 012F,   Subtype 04,   GBAName 00,   REL d_a_door12
+door13B:   ID 012F,   Subtype 05,   GBAName 00,   REL d_a_door12
+ keyS12:   ID 012F,   Subtype 01,   GBAName 00,   REL d_a_door12
+ ZenS12:   ID 012F,   Subtype 02,   GBAName 00,   REL d_a_door12
+bonbori:   ID 00BA,   Subtype FF,   GBAName 00,   REL d_a_ep
+ SW_C00:   ID 012C,   Subtype FF,   GBAName 00,   REL d_a_swc00
+ takara:   ID 0126,   Subtype FF,   GBAName 3E,   REL d_a_tbox
+takara2:   ID 0126,   Subtype FF,   GBAName 3E,   REL d_a_tbox
+takara3:   ID 0126,   Subtype FF,   GBAName 3E,   REL d_a_tbox
+takara4:   ID 0126,   Subtype FF,   GBAName 3E,   REL d_a_tbox
+takara5:   ID 0126,   Subtype FF,   GBAName 3E,   REL d_a_tbox
+takara6:   ID 0126,   Subtype FF,   GBAName 3E,   REL d_a_tbox
+takara7:   ID 0126,   Subtype FF,   GBAName 3E,   REL d_a_tbox
+takara8:   ID 0126,   Subtype FF,   GBAName 3E,   REL d_a_tbox
+takaraK:   ID 0126,   Subtype FF,   GBAName 3E,   REL d_a_tbox
+takaraI:   ID 0126,   Subtype FF,   GBAName 3E,   REL d_a_tbox
+takaraM:   ID 0126,   Subtype FF,   GBAName 3E,   REL d_a_tbox
+ tkrASw:   ID 0126,   Subtype FF,   GBAName 3E,   REL d_a_tbox
+ tkrAGc:   ID 0126,   Subtype FF,   GBAName 3E,   REL d_a_tbox
+ tkrAKd:   ID 0126,   Subtype FF,   GBAName 3E,   REL d_a_tbox
+ tkrAIk:   ID 0126,   Subtype FF,   GBAName 3E,   REL d_a_tbox
+ tkrBMs:   ID 0126,   Subtype FF,   GBAName 3E,   REL d_a_tbox
+ tkrCTf:   ID 0126,   Subtype FF,   GBAName 3E,   REL d_a_tbox
+ tkrAOc:   ID 0126,   Subtype FF,   GBAName 3E,   REL d_a_tbox
+ tkrAOs:   ID 0126,   Subtype FF,   GBAName 3E,   REL d_a_tbox
+ tkrSlv:   ID 0127,   Subtype FF,   GBAName 3E,   REL d_a_sbox
+   agbA:   ID 01B6,   Subtype FF,   GBAName 00,   REL d_a_agbsw0
+  agbAT:   ID 01B6,   Subtype FF,   GBAName 00,   REL d_a_agbsw0
+  agbA2:   ID 01B6,   Subtype FF,   GBAName 00,   REL d_a_agbsw0
+   agbF:   ID 01B6,   Subtype FF,   GBAName 00,   REL d_a_agbsw0
+  agbF2:   ID 01B6,   Subtype FF,   GBAName 00,   REL d_a_agbsw0
+agbMARK:   ID 01B6,   Subtype FF,   GBAName 00,   REL d_a_agbsw0
+  agbMW:   ID 01B6,   Subtype FF,   GBAName 00,   REL d_a_agbsw0
+ agbCSW:   ID 01B6,   Subtype FF,   GBAName 00,   REL d_a_agbsw0
+agbTBOX:   ID 01B6,   Subtype FF,   GBAName 00,   REL d_a_agbsw0
+   agbR:   ID 01B6,   Subtype FF,   GBAName 00,   REL d_a_agbsw0
+   agbB:   ID 01B6,   Subtype FF,   GBAName 00,   REL d_a_agbsw0
+   agbD:   ID 01B6,   Subtype FF,   GBAName 00,   REL d_a_agbsw0
+  agbFA:   ID 01B6,   Subtype FF,   GBAName 00,   REL d_a_agbsw0
+NoneCam:   ID 01E2,   Subtype FF,   GBAName 00,   REL [none]
+NormCam:   ID 01E2,   Subtype FF,   GBAName 00,   REL [none]
+   Link:   ID 00A9,   Subtype FF,   GBAName 00,   REL [none]
+ kotubo:   ID 01CB,   Subtype 00,   GBAName 00,   REL d_a_tsubo
+ootubo1:   ID 01CB,   Subtype 01,   GBAName 00,   REL d_a_tsubo
+  Kmtub:   ID 01CB,   Subtype 02,   GBAName 00,   REL d_a_tsubo
+  Ktaru:   ID 01CB,   Subtype 03,   GBAName 00,   REL d_a_tsubo
+ Ostool:   ID 01CB,   Subtype 04,   GBAName 00,   REL d_a_tsubo
+Odokuro:   ID 01CB,   Subtype 05,   GBAName 00,   REL d_a_tsubo
+ Okioke:   ID 01CB,   Subtype 06,   GBAName 00,   REL d_a_tsubo
+  Kmi02:   ID 01CB,   Subtype 07,   GBAName 00,   REL d_a_tsubo
+  Ptubo:   ID 01CB,   Subtype 08,   GBAName 00,   REL d_a_tsubo
+ KkibaB:   ID 01CB,   Subtype 09,   GBAName 00,   REL d_a_tsubo
+  Kmi00:   ID 01CB,   Subtype 0A,   GBAName 00,   REL d_a_tsubo
+ Hbox2S:   ID 01CB,   Subtype 0B,   GBAName 00,   REL d_a_tsubo
+SW_HIT0:   ID 01C9,   Subtype FF,   GBAName 00,   REL d_a_swhit0
+ koisi1:   ID 01CC,   Subtype 00,   GBAName 00,   REL d_a_stone
+ koisi2:   ID 01CC,   Subtype 01,   GBAName 00,   REL d_a_stone
+   Aygr:   ID 00A6,   Subtype FF,   GBAName 00,   REL d_a_obj_aygr
+Salvage:   ID 0194,   Subtype FF,   GBAName 00,   REL d_a_salvage
+ SwSlvg:   ID 0194,   Subtype FF,   GBAName 3F,   REL d_a_salvage
+Salvag2:   ID 0194,   Subtype FF,   GBAName 3F,   REL d_a_salvage
+SalvagN:   ID 0194,   Subtype FF,   GBAName 3F,   REL d_a_salvage
+SalvagE:   ID 0194,   Subtype FF,   GBAName 3F,   REL d_a_salvage
+ SalvFM:   ID 0194,   Subtype FF,   GBAName 3F,   REL d_a_salvage
+osiBLK0:   ID 002D,   Subtype 00,   GBAName 3D,   REL d_a_obj_movebox
+osiBLK1:   ID 002D,   Subtype 01,   GBAName 3D,   REL d_a_obj_movebox
+  Kkiba:   ID 002D,   Subtype 02,   GBAName 3D,   REL d_a_obj_movebox
+ Hseki2:   ID 002D,   Subtype 03,   GBAName 3D,   REL d_a_obj_movebox
+ Hseki7:   ID 002D,   Subtype 04,   GBAName 3D,   REL d_a_obj_movebox
+   Mmrr:   ID 002D,   Subtype 05,   GBAName 3D,   REL d_a_obj_movebox
+ MkieBB:   ID 002D,   Subtype 06,   GBAName 3D,   REL d_a_obj_movebox
+  Ecube:   ID 002D,   Subtype 07,   GBAName 3D,   REL d_a_obj_movebox
+ Hjump1:   ID 002D,   Subtype 08,   GBAName 3D,   REL d_a_obj_movebox
+  Hbox1:   ID 002D,   Subtype 09,   GBAName 3D,   REL d_a_obj_movebox
+  MpwrB:   ID 002D,   Subtype 0A,   GBAName 3D,   REL d_a_obj_movebox
+  DBLK0:   ID 002D,   Subtype 0B,   GBAName 3D,   REL d_a_obj_movebox
+  DBLK1:   ID 002D,   Subtype 0C,   GBAName 3D,   REL d_a_obj_movebox
+ DKkiba:   ID 002D,   Subtype 0D,   GBAName 3D,   REL d_a_obj_movebox
+  Hbox2:   ID 002D,   Subtype 0E,   GBAName 3D,   REL d_a_obj_movebox
+ BLK_CR:   ID 01D8,   Subtype 00,   GBAName 00,   REL d_a_obj_correct
+ CrTrS3:   ID 01D8,   Subtype 01,   GBAName 00,   REL d_a_obj_correct
+ CrTrS4:   ID 01D8,   Subtype 02,   GBAName 00,   REL d_a_obj_correct
+ CrTrS5:   ID 01D8,   Subtype 03,   GBAName 00,   REL d_a_obj_correct
+ CrTrM1:   ID 01D8,   Subtype 04,   GBAName 00,   REL d_a_obj_correct
+ CrTrM2:   ID 01D8,   Subtype 05,   GBAName 00,   REL d_a_obj_correct
+ CrTrGr:   ID 01D8,   Subtype 06,   GBAName 3D,   REL d_a_obj_correct
+ CrTrBl:   ID 01D8,   Subtype 07,   GBAName 3D,   REL d_a_obj_correct
+Kbota_A:   ID 001D,   Subtype 00,   GBAName 00,   REL d_a_obj_swpush
+Kbota_B:   ID 001D,   Subtype 01,   GBAName 00,   REL d_a_obj_swpush
+ KbotaC:   ID 001D,   Subtype 02,   GBAName 00,   REL d_a_obj_swpush
+ Hhbot1:   ID 001E,   Subtype 00,   GBAName 00,   REL d_a_obj_swheavy
+Hhbot1N:   ID 001E,   Subtype 01,   GBAName 00,   REL d_a_obj_swheavy
+MhmrSW0:   ID 0021,   Subtype FF,   GBAName 00,   REL d_a_obj_swhammer
+  TagSo:   ID 0025,   Subtype 00,   GBAName 00,   REL d_a_tag_so
+ TagMSo:   ID 0025,   Subtype 01,   GBAName 00,   REL d_a_tag_so
+PScnChg:   ID 01CA,   Subtype FF,   GBAName 00,   REL d_a_tag_ghostship
+ ALLdie:   ID 0016,   Subtype FF,   GBAName 00,   REL d_a_alldie
+  TagEv:   ID 019C,   Subtype FF,   GBAName 00,   REL d_a_tag_event
+  TagHt:   ID 019D,   Subtype 00,   GBAName 00,   REL d_a_tag_hint
+ TagHt2:   ID 019D,   Subtype 01,   GBAName 00,   REL d_a_tag_hint
+ TagMsg:   ID 019E,   Subtype 00,   GBAName 00,   REL d_a_tag_msg
+TagMsg2:   ID 019E,   Subtype 01,   GBAName 00,   REL d_a_tag_msg
+ TagIsl:   ID 01A0,   Subtype 00,   GBAName 00,   REL d_a_tag_island
+  TagMd:   ID 019F,   Subtype 00,   GBAName 00,   REL d_a_tag_etc
+ TagKf1:   ID 01A1,   Subtype FF,   GBAName 00,   REL d_a_tag_kf1
+ TagKk1:   ID 01A2,   Subtype FF,   GBAName 00,   REL d_a_tag_kk1
+  TagKb:   ID 01A4,   Subtype FF,   GBAName 00,   REL d_a_tag_kb_item
+  TagMk:   ID 01A5,   Subtype 00,   GBAName 00,   REL d_a_tag_mk
+  TagWp:   ID 01A5,   Subtype 01,   GBAName 00,   REL d_a_tag_mk
+  TagDM:   ID 01A5,   Subtype 02,   GBAName 00,   REL d_a_tag_mk
+  TagTy:   ID 01A5,   Subtype 03,   GBAName 00,   REL d_a_tag_mk
+ TagMd1:   ID 01A6,   Subtype 00,   GBAName 00,   REL d_a_tag_md_cb
+ TagCb1:   ID 01A6,   Subtype 01,   GBAName 00,   REL d_a_tag_md_cb
+TagMd11:   ID 01A6,   Subtype 02,   GBAName 00,   REL d_a_tag_md_cb
+TagMd12:   ID 01A6,   Subtype 03,   GBAName 00,   REL d_a_tag_md_cb
+TagMd13:   ID 01A6,   Subtype 04,   GBAName 00,   REL d_a_tag_md_cb
+TagMd14:   ID 01A6,   Subtype 05,   GBAName 00,   REL d_a_tag_md_cb
+TagMd15:   ID 01A6,   Subtype 06,   GBAName 00,   REL d_a_tag_md_cb
+TagMd16:   ID 01A6,   Subtype 07,   GBAName 00,   REL d_a_tag_md_cb
+TagCb11:   ID 01A6,   Subtype 08,   GBAName 00,   REL d_a_tag_md_cb
+TagCb12:   ID 01A6,   Subtype 09,   GBAName 00,   REL d_a_tag_md_cb
+TagCb13:   ID 01A6,   Subtype 0A,   GBAName 00,   REL d_a_tag_md_cb
+TagCb14:   ID 01A6,   Subtype 0B,   GBAName 00,   REL d_a_tag_md_cb
+ TagBa1:   ID 01A7,   Subtype 01,   GBAName 00,   REL d_a_tag_ba1
+   Evsw:   ID 001C,   Subtype FF,   GBAName 00,   REL d_a_tag_evsw
+ Search:   ID 0044,   Subtype FF,   GBAName 00,   REL [none]
+  Otble:   ID 0042,   Subtype 00,   GBAName 00,   REL d_a_obj_otble
+ OtbleL:   ID 0042,   Subtype 01,   GBAName 00,   REL d_a_obj_otble
+  Warpt:   ID 0043,   Subtype 00,   GBAName 31,   REL d_a_obj_warpt
+ Warpnt:   ID 0043,   Subtype 01,   GBAName 31,   REL d_a_obj_warpt
+Warpts1:   ID 0043,   Subtype 02,   GBAName 31,   REL d_a_obj_warpt
+Warpts2:   ID 0043,   Subtype 03,   GBAName 31,   REL d_a_obj_warpt
+Warpts3:   ID 0043,   Subtype 04,   GBAName 31,   REL d_a_obj_warpt
+ Seatag:   ID 0027,   Subtype FF,   GBAName 00,   REL d_a_seatag
+  Warpf:   ID 006A,   Subtype FF,   GBAName 00,   REL d_a_warpf
+    Hys:   ID 01C8,   Subtype FF,   GBAName 00,   REL d_a_hys
+   Hys2:   ID 01C8,   Subtype FF,   GBAName 00,   REL d_a_hys
+  Hsen1:   ID 012D,   Subtype FF,   GBAName 00,   REL d_a_fan
+  Hsen2:   ID 012D,   Subtype FF,   GBAName 00,   REL d_a_fan
+  Hsen3:   ID 012D,   Subtype FF,   GBAName 00,   REL d_a_fan
+  Olift:   ID 007A,   Subtype FF,   GBAName 00,   REL d_a_leaflift
+  Ylsic:   ID 005F,   Subtype FF,   GBAName 00,   REL d_a_icelift
+  Yllic:   ID 005F,   Subtype FF,   GBAName 00,   REL d_a_icelift
+  Ylkic:   ID 005F,   Subtype FF,   GBAName 00,   REL d_a_icelift
+ Hpbot1:   ID 01B2,   Subtype FF,   GBAName 00,   REL d_a_swpropeller
+  Vpbot:   ID 01B2,   Subtype FF,   GBAName 00,   REL d_a_swpropeller
+  Hami1:   ID 0060,   Subtype FF,   GBAName 00,   REL d_a_amiprop
+  HamiY:   ID 0060,   Subtype FF,   GBAName 00,   REL d_a_amiprop
+  LTag0:   ID 01DB,   Subtype 00,   GBAName 00,   REL d_a_tag_light
+  LTag1:   ID 01DB,   Subtype 01,   GBAName 00,   REL d_a_tag_light
+ LTagR0:   ID 01DB,   Subtype 02,   GBAName 00,   REL d_a_tag_light
+ AttTag:   ID 01DC,   Subtype 00,   GBAName 00,   REL d_a_tag_attention
+AttTagB:   ID 01DC,   Subtype 01,   GBAName 00,   REL d_a_tag_attention
+  Ikori:   ID 01D2,   Subtype FF,   GBAName 00,   REL d_a_obj_ice
+  MsuSW:   ID 0020,   Subtype 00,   GBAName 00,   REL d_a_obj_swlight
+ MsuSWB:   ID 0020,   Subtype 01,   GBAName 00,   REL d_a_obj_swlight
+ SWat00:   ID 0138,   Subtype FF,   GBAName 00,   REL d_a_swattack
+ ITat00:   ID 0139,   Subtype FF,   GBAName 00,   REL d_a_switem
+ SWtact:   ID 013A,   Subtype FF,   GBAName 00,   REL d_a_swtact
+SWtactB:   ID 013A,   Subtype FF,   GBAName 00,   REL d_a_swtact
+  Hhyu1:   ID 0062,   Subtype FF,   GBAName 00,   REL d_a_floor
+ Oyashi:   ID 004B,   Subtype FF,   GBAName 00,   REL d_a_obj_lpalm
+ Kanban:   ID 00B7,   Subtype FF,   GBAName 34,   REL d_a_kanban
+     kt:   ID 00B9,   Subtype FF,   GBAName 00,   REL d_a_kt
+     ho:   ID 00BC,   Subtype FF,   GBAName 00,   REL d_a_ff
+    mo2:   ID 00BD,   Subtype FF,   GBAName 02,   REL d_a_mo2
+  moZOU:   ID 00FB,   Subtype FF,   GBAName 00,   REL d_a_mozo
+ hotest:   ID 00B5,   Subtype FF,   GBAName 00,   REL d_a_rectangle
+    Kui:   ID 00FC,   Subtype FF,   GBAName 00,   REL d_a_kui
+ Kamome:   ID 00C3,   Subtype FF,   GBAName 00,   REL d_a_kamome
+   item:   ID 0101,   Subtype FF,   GBAName 00,   REL [none]
+itemFLY:   ID 0101,   Subtype FF,   GBAName 00,   REL [none]
+itemDek:   ID 0106,   Subtype FF,   GBAName 00,   REL d_a_deku_item
+   Ship:   ID 00A7,   Subtype FF,   GBAName 00,   REL d_a_ship
+AND_SW0:   ID 0135,   Subtype FF,   GBAName 00,   REL d_a_andsw0
+AND_SW2:   ID 0136,   Subtype FF,   GBAName 00,   REL d_a_andsw2
+     Bb:   ID 00B6,   Subtype FF,   GBAName 1A,   REL d_a_bb
+ Ebrock:   ID 01CD,   Subtype 00,   GBAName 00,   REL d_a_stone2
+   Ekao:   ID 01CD,   Subtype 01,   GBAName 00,   REL d_a_stone2
+Ebrock2:   ID 01CD,   Subtype 02,   GBAName 00,   REL d_a_stone2
+ky_tag0:   ID 0181,   Subtype FF,   GBAName 00,   REL d_a_kytag00
+kytag00:   ID 0181,   Subtype FF,   GBAName 00,   REL d_a_kytag00
+ky00you:   ID 0181,   Subtype FF,   GBAName 00,   REL d_a_kytag00
+ky_tag1:   ID 0182,   Subtype FF,   GBAName 00,   REL d_a_kytag01
+ky_tag2:   ID 0183,   Subtype FF,   GBAName 00,   REL d_a_kytag02
+ky_tag3:   ID 0184,   Subtype FF,   GBAName 00,   REL d_a_kytag03
+ kytag4:   ID 0185,   Subtype FF,   GBAName 00,   REL d_a_kytag04
+ kytag5:   ID 0186,   Subtype FF,   GBAName 00,   REL d_a_kytag05
+ kytag6:   ID 0187,   Subtype FF,   GBAName 00,   REL d_a_kytag06
+ kytag7:   ID 0188,   Subtype FF,   GBAName 00,   REL d_a_kytag07
+    sea:   ID 0028,   Subtype FF,   GBAName 00,   REL [none]
+ nezumi:   ID 00C7,   Subtype FF,   GBAName 18,   REL d_a_nz
+nezuana:   ID 00C8,   Subtype FF,   GBAName 00,   REL d_a_nzg
+   kani:   ID 00C9,   Subtype FF,   GBAName 00,   REL d_a_kn
+Demo_Dk:   ID 00CA,   Subtype FF,   GBAName 00,   REL d_a_demo_dk
+  DmKmm:   ID 00C6,   Subtype 00,   GBAName 00,   REL d_a_demo_kmm
+ DmKmm2:   ID 00C6,   Subtype 01,   GBAName 00,   REL d_a_demo_kmm
+   amos:   ID 00CB,   Subtype FF,   GBAName 0C,   REL d_a_am
+  amos2:   ID 00CC,   Subtype FF,   GBAName 0B,   REL d_a_am2
+   gmos:   ID 00CD,   Subtype FF,   GBAName 09,   REL d_a_gm
+ gmos_g:   ID 00CD,   Subtype FF,   GBAName 09,   REL d_a_gm
+ gmos_f:   ID 00CD,   Subtype FF,   GBAName 09,   REL d_a_gm
+ kuro_s:   ID 00CE,   Subtype FF,   GBAName 14,   REL d_a_ks
+ kuro_t:   ID 00CE,   Subtype FF,   GBAName 00,   REL d_a_ks
+c_green:   ID 00CF,   Subtype FF,   GBAName 16,   REL d_a_cc
+  c_red:   ID 00CF,   Subtype FF,   GBAName 15,   REL d_a_cc
+ c_blue:   ID 00CF,   Subtype FF,   GBAName 1E,   REL d_a_cc
+c_black:   ID 00CF,   Subtype FF,   GBAName 10,   REL d_a_cc
+c_kiiro:   ID 00CF,   Subtype FF,   GBAName 0A,   REL d_a_cc
+  bable:   ID 00D0,   Subtype FF,   GBAName 0F,   REL d_a_bl
+bable_r:   ID 00D0,   Subtype FF,   GBAName 0E,   REL d_a_bl
+  wiz_r:   ID 00D1,   Subtype FF,   GBAName 11,   REL d_a_wz
+  wiz_s:   ID 00D1,   Subtype FF,   GBAName 11,   REL d_a_wz
+  wiz_m:   ID 00D1,   Subtype FF,   GBAName 11,   REL d_a_wz
+  wiz_o:   ID 00D1,   Subtype FF,   GBAName 11,   REL d_a_wz
+  p_hat:   ID 00D2,   Subtype FF,   GBAName 08,   REL d_a_ph
+p_zelda:   ID 00D3,   Subtype FF,   GBAName 3C,   REL d_a_pz
+big_pow:   ID 00D4,   Subtype FF,   GBAName 00,   REL d_a_bpw
+    pow:   ID 00D5,   Subtype FF,   GBAName 0D,   REL d_a_pw
+sea_hat:   ID 00D2,   Subtype FF,   GBAName 1F,   REL d_a_ph
+  jbaba:   ID 00D6,   Subtype FF,   GBAName 21,   REL d_a_jbo
+  bbaba:   ID 00D7,   Subtype FF,   GBAName 07,   REL d_a_bo
+ bridge:   ID 005B,   Subtype FF,   GBAName 00,   REL d_a_bridge
+ dragon:   ID 00DF,   Subtype FF,   GBAName 00,   REL d_a_dr
+     Nh:   ID 013B,   Subtype FF,   GBAName 00,   REL [none]
+  NpcSo:   ID 0078,   Subtype FF,   GBAName 00,   REL d_a_npc_so
+  NpcNz:   ID 0077,   Subtype FF,   GBAName 00,   REL d_a_npc_nz
+     Os:   ID 013C,   Subtype 00,   GBAName 00,   REL d_a_npc_os
+    Os1:   ID 013C,   Subtype 01,   GBAName 00,   REL d_a_npc_os
+    Os2:   ID 013C,   Subtype 02,   GBAName 00,   REL d_a_npc_os
+    Ym1:   ID 013D,   Subtype FF,   GBAName 3B,   REL d_a_npc_ym1
+    Ym2:   ID 013E,   Subtype FF,   GBAName 3B,   REL d_a_npc_ym1
+    Yw1:   ID 013F,   Subtype FF,   GBAName 3C,   REL d_a_npc_yw1
+    Ji1:   ID 0140,   Subtype FF,   GBAName 3B,   REL d_a_npc_ji1
+    Ko1:   ID 0141,   Subtype FF,   GBAName 3B,   REL d_a_npc_ko1
+    Ko2:   ID 0142,   Subtype FF,   GBAName 3B,   REL d_a_npc_ko1
+    Ls1:   ID 0143,   Subtype FF,   GBAName 3C,   REL d_a_npc_ls1
+    Bm1:   ID 0148,   Subtype FF,   GBAName 3B,   REL d_a_npc_bm1
+    Bm2:   ID 0149,   Subtype FF,   GBAName 3B,   REL d_a_npc_bm1
+    Bm3:   ID 014A,   Subtype FF,   GBAName 3B,   REL d_a_npc_bm1
+    Bm4:   ID 014B,   Subtype FF,   GBAName 3B,   REL d_a_npc_bm1
+    Bm5:   ID 014C,   Subtype FF,   GBAName 3B,   REL d_a_npc_bm1
+ Bmcon1:   ID 015C,   Subtype 00,   GBAName 00,   REL d_a_npc_bmcon1
+ Bmcon2:   ID 015C,   Subtype 01,   GBAName 00,   REL d_a_npc_bmcon1
+   Bmsw:   ID 015E,   Subtype FF,   GBAName 00,   REL d_a_npc_bmsw
+   Btsw:   ID 015F,   Subtype FF,   GBAName 00,   REL d_a_npc_btsw
+  Btsw2:   ID 0160,   Subtype FF,   GBAName 3B,   REL d_a_npc_btsw2
+    Zk1:   ID 0175,   Subtype FF,   GBAName 3B,   REL d_a_npc_zk1
+    Zl1:   ID 01AD,   Subtype FF,   GBAName 3C,   REL d_a_npc_zl1
+    Ob1:   ID 014D,   Subtype FF,   GBAName 3C,   REL d_a_npc_ob1
+    Aj1:   ID 014E,   Subtype FF,   GBAName 3B,   REL d_a_npc_aj1
+    Km1:   ID 014F,   Subtype FF,   GBAName 3C,   REL d_a_npc_km1
+    Cb1:   ID 0150,   Subtype FF,   GBAName 3B,   REL d_a_npc_cb1
+    Ba1:   ID 0151,   Subtype FF,   GBAName 3C,   REL d_a_npc_ba1
+    Bj1:   ID 0152,   Subtype FF,   GBAName 3B,   REL d_a_npc_bj1
+    Bj2:   ID 0153,   Subtype FF,   GBAName 3B,   REL d_a_npc_bj1
+    Bj3:   ID 0154,   Subtype FF,   GBAName 3B,   REL d_a_npc_bj1
+    Bj4:   ID 0155,   Subtype FF,   GBAName 3B,   REL d_a_npc_bj1
+    Bj5:   ID 0156,   Subtype FF,   GBAName 3B,   REL d_a_npc_bj1
+    Bj6:   ID 0157,   Subtype FF,   GBAName 3B,   REL d_a_npc_bj1
+    Bj7:   ID 0158,   Subtype FF,   GBAName 3B,   REL d_a_npc_bj1
+    Bj8:   ID 0159,   Subtype FF,   GBAName 3B,   REL d_a_npc_bj1
+    Bj9:   ID 015A,   Subtype FF,   GBAName 3B,   REL d_a_npc_bj1
+    Bs1:   ID 015B,   Subtype 00,   GBAName 3B,   REL d_a_npc_bs1
+    Bs2:   ID 015B,   Subtype 01,   GBAName 00,   REL d_a_npc_bs1
+   Bms1:   ID 015D,   Subtype 00,   GBAName 00,   REL d_a_npc_bms1
+   Bms2:   ID 015D,   Subtype 01,   GBAName 00,   REL d_a_npc_bms1
+    Ds1:   ID 0161,   Subtype FF,   GBAName 3B,   REL d_a_npc_ds1
+   Rsh1:   ID 0162,   Subtype FF,   GBAName 3B,   REL d_a_npc_rsh1
+    Kk1:   ID 0163,   Subtype FF,   GBAName 3C,   REL d_a_npc_kk1
+    Pm1:   ID 0164,   Subtype FF,   GBAName 3C,   REL d_a_npc_pm1
+    Kp1:   ID 0165,   Subtype FF,   GBAName 3C,   REL d_a_npc_kp1
+    Pf1:   ID 0166,   Subtype FF,   GBAName 3B,   REL d_a_npc_pf1
+    Gp1:   ID 0167,   Subtype FF,   GBAName 3B,   REL d_a_npc_gp1
+    Jb1:   ID 0168,   Subtype FF,   GBAName 00,   REL d_a_npc_jb1
+    Kf1:   ID 0169,   Subtype FF,   GBAName 3B,   REL d_a_npc_kf1
+    De1:   ID 0076,   Subtype FF,   GBAName 3B,   REL d_a_npc_de1
+ Sfairy:   ID 016A,   Subtype FF,   GBAName 00,   REL [none]
+    Md1:   ID 0171,   Subtype FF,   GBAName 3C,   REL d_a_npc_md
+    Uo1:   ID 0177,   Subtype 00,   GBAName 3B,   REL d_a_npc_people
+    Uo2:   ID 0177,   Subtype 01,   GBAName 3B,   REL d_a_npc_people
+    Uo3:   ID 0177,   Subtype 02,   GBAName 3B,   REL d_a_npc_people
+    Ub1:   ID 0177,   Subtype 03,   GBAName 00,   REL d_a_npc_people
+    Ub2:   ID 0177,   Subtype 04,   GBAName 00,   REL d_a_npc_people
+    Ub3:   ID 0177,   Subtype 05,   GBAName 00,   REL d_a_npc_people
+    Ub4:   ID 0177,   Subtype 06,   GBAName 00,   REL d_a_npc_people
+    Uw1:   ID 0177,   Subtype 07,   GBAName 00,   REL d_a_npc_people
+    Uw2:   ID 0177,   Subtype 08,   GBAName 00,   REL d_a_npc_people
+    Um1:   ID 0177,   Subtype 09,   GBAName 00,   REL d_a_npc_people
+    Um2:   ID 0177,   Subtype 0A,   GBAName 00,   REL d_a_npc_people
+    Um3:   ID 0177,   Subtype 0B,   GBAName 00,   REL d_a_npc_people
+    Sa1:   ID 0177,   Subtype 0C,   GBAName 00,   REL d_a_npc_people
+    Sa2:   ID 0177,   Subtype 0D,   GBAName 00,   REL d_a_npc_people
+    Sa3:   ID 0177,   Subtype 0E,   GBAName 00,   REL d_a_npc_people
+    Sa4:   ID 0177,   Subtype 0F,   GBAName 00,   REL d_a_npc_people
+    Sa5:   ID 0177,   Subtype 10,   GBAName 00,   REL d_a_npc_people
+    Ug1:   ID 0177,   Subtype 11,   GBAName 00,   REL d_a_npc_people
+    Ug2:   ID 0177,   Subtype 12,   GBAName 00,   REL d_a_npc_people
+    Gk1:   ID 0178,   Subtype FF,   GBAName 3B,   REL d_a_npc_gk1
+    Ac1:   ID 017A,   Subtype FF,   GBAName 3B,   REL d_a_npc_ac1
+    Hi1:   ID 017B,   Subtype FF,   GBAName 3B,   REL d_a_npc_hi1
+Pirates:   ID 003B,   Subtype FF,   GBAName 00,   REL d_a_obj_pirateship
+  keeth:   ID 00D8,   Subtype FF,   GBAName 17,   REL d_a_ki
+ Fkeeth:   ID 00D8,   Subtype FF,   GBAName 06,   REL d_a_ki
+ yg_awa:   ID 018A,   Subtype FF,   GBAName 00,   REL d_a_yougan
+magtail:   ID 00D9,   Subtype FF,   GBAName 05,   REL d_a_mt
+  RopeR:   ID 01C5,   Subtype FF,   GBAName 00,   REL d_a_himo3
+ Ktarur:   ID 01CF,   Subtype FF,   GBAName 3D,   REL d_a_obj_barrel2
+ Ktarux:   ID 01CE,   Subtype FF,   GBAName 00,   REL d_a_obj_barrel
+Magrock:   ID 002C,   Subtype FF,   GBAName 00,   REL d_a_obj_magmarock
+  Quake:   ID 0022,   Subtype FF,   GBAName 00,   REL d_a_obj_quake
+Yfire00:   ID 010D,   Subtype FF,   GBAName 00,   REL d_a_obj_flame
+   Turu:   ID 0067,   Subtype 00,   GBAName 00,   REL d_a_sk
+  Turu2:   ID 0068,   Subtype 00,   GBAName 00,   REL d_a_sk2
+  Turu3:   ID 0068,   Subtype 01,   GBAName 00,   REL d_a_sk2
+  Kanat:   ID 00A5,   Subtype FF,   GBAName 00,   REL d_a_obj_kanat
+ s_turu:   ID 0069,   Subtype FF,   GBAName 00,   REL d_a_ssk
+spotbox:   ID 01BF,   Subtype FF,   GBAName 00,   REL d_a_spotbox
+  Ksaku:   ID 0191,   Subtype FF,   GBAName 00,   REL d_a_saku
+spotbx1:   ID 01BF,   Subtype FF,   GBAName 00,   REL d_a_spotbox
+ Mswing:   ID 005C,   Subtype FF,   GBAName 00,   REL d_a_msw
+    Pig:   ID 00DD,   Subtype FF,   GBAName 00,   REL d_a_kb
+ Rdead1:   ID 00E1,   Subtype 00,   GBAName 12,   REL d_a_rd
+ Rdead2:   ID 00E1,   Subtype 01,   GBAName 12,   REL d_a_rd
+Fmaster:   ID 0079,   Subtype 00,   GBAName 19,   REL d_a_fm
+Fmastr1:   ID 0079,   Subtype 01,   GBAName 19,   REL d_a_fm
+Fmastr2:   ID 0079,   Subtype 02,   GBAName 19,   REL d_a_fm
+Daiocta:   ID 00E2,   Subtype FF,   GBAName 1C,   REL d_a_daiocta
+Daioeye:   ID 00E3,   Subtype FF,   GBAName 00,   REL d_a_daiocta_eye
+     Oq:   ID 00E4,   Subtype 00,   GBAName 1B,   REL d_a_oq
+    Oqw:   ID 00E4,   Subtype 01,   GBAName 41,   REL d_a_oq
+     Gy:   ID 00E5,   Subtype FF,   GBAName 1D,   REL d_a_gy
+ GyCtrl:   ID 00E6,   Subtype FF,   GBAName 00,   REL d_a_gy_ctrl
+GyCtrlB:   ID 00E7,   Subtype FF,   GBAName 00,   REL d_a_gy_ctrl
+     Bk:   ID 00BE,   Subtype FF,   GBAName 01,   REL d_a_bk
+ Ypit00:   ID 0049,   Subtype 00,   GBAName 00,   REL d_a_obj_hole
+Pitfall:   ID 0049,   Subtype 01,   GBAName 00,   REL d_a_obj_hole
+ Nzfall:   ID 0048,   Subtype FF,   GBAName 00,   REL d_a_obj_pfall
+ ScnChg:   ID 002B,   Subtype FF,   GBAName 00,   REL d_a_scene_change
+  Oship:   ID 00B4,   Subtype FF,   GBAName 38,   REL d_a_oship
+  Ayush:   ID 00B3,   Subtype FF,   GBAName 39,   REL d_a_ghostship
+  Tpost:   ID 0045,   Subtype FF,   GBAName 35,   REL d_a_obj_toripost
+ Ocanon:   ID 0041,   Subtype FF,   GBAName 00,   REL d_a_obj_canon
+  Ikada:   ID 0046,   Subtype 00,   GBAName 3D,   REL d_a_obj_ikada
+ikada_h:   ID 0046,   Subtype 01,   GBAName 3D,   REL d_a_obj_ikada
+ ikadaS:   ID 0046,   Subtype 02,   GBAName 3D,   REL d_a_obj_ikada
+ikada_u:   ID 0046,   Subtype 03,   GBAName 3D,   REL d_a_obj_ikada
+   Svsp:   ID 0046,   Subtype 04,   GBAName 3D,   REL d_a_obj_ikada
+    Sv0:   ID 017C,   Subtype 00,   GBAName 00,   REL d_a_npc_sv
+    Sv1:   ID 017C,   Subtype 01,   GBAName 00,   REL d_a_npc_sv
+    Sv2:   ID 017C,   Subtype 02,   GBAName 00,   REL d_a_npc_sv
+    Sv3:   ID 017C,   Subtype 03,   GBAName 00,   REL d_a_npc_sv
+ MjDoor:   ID 0047,   Subtype FF,   GBAName 00,   REL d_a_obj_majyuu_door
+  Ikari:   ID 01B3,   Subtype FF,   GBAName 00,   REL d_a_ikari
+ MjFlag:   ID 00AF,   Subtype 00,   GBAName 00,   REL d_a_majuu_flag
+ MtFlag:   ID 00AF,   Subtype 01,   GBAName 00,   REL d_a_majuu_flag
+ HcFlag:   ID 00AF,   Subtype 03,   GBAName 00,   REL d_a_majuu_flag
+ TrFlag:   ID 00B0,   Subtype 00,   GBAName 00,   REL d_a_tori_flag
+SieFlag:   ID 00B1,   Subtype 00,   GBAName 00,   REL d_a_sie_flag
+  lwood:   ID 019A,   Subtype FF,   GBAName 00,   REL d_a_lwood
+ Ktaruo:   ID 0109,   Subtype FF,   GBAName 00,   REL d_a_obj_demo_barrel
+Touseki:   ID 003C,   Subtype FF,   GBAName 00,   REL d_a_obj_tousekiki
+  frock:   ID 01A8,   Subtype FF,   GBAName 00,   REL d_a_fallrock_tag
+fallrck:   ID 01A9,   Subtype FF,   GBAName 00,   REL d_a_fallrock
+    Dr2:   ID 00E0,   Subtype FF,   GBAName 00,   REL d_a_dr2
+ Mkdan1:   ID 004A,   Subtype FF,   GBAName 00,   REL d_a_obj_stair
+    Btd:   ID 00EB,   Subtype FF,   GBAName 00,   REL d_a_btd
+     Dk:   ID 00EF,   Subtype FF,   GBAName 00,   REL d_a_dk
+  Ystm0:   ID 01AA,   Subtype FF,   GBAName 00,   REL d_a_steam_tag
+  Ystm1:   ID 01AA,   Subtype FF,   GBAName 00,   REL d_a_steam_tag
+  Gflag:   ID 0125,   Subtype FF,   GBAName 00,   REL d_a_goal_flag
+ Branch:   ID 01AC,   Subtype FF,   GBAName 00,   REL d_a_branch
+    P1a:   ID 0144,   Subtype 00,   GBAName 3B,   REL d_a_npc_p1
+    P1b:   ID 0144,   Subtype 01,   GBAName 3B,   REL d_a_npc_p1
+    P1c:   ID 0144,   Subtype 02,   GBAName 3B,   REL d_a_npc_p1
+    P2a:   ID 0145,   Subtype 00,   GBAName 3B,   REL d_a_npc_p2
+    P2b:   ID 0145,   Subtype 01,   GBAName 3B,   REL d_a_npc_p2
+    P2c:   ID 0145,   Subtype 02,   GBAName 3B,   REL d_a_npc_p2
+     Tc:   ID 0147,   Subtype FF,   GBAName 3B,   REL d_a_npc_tc
+ Throck:   ID 001B,   Subtype FF,   GBAName 00,   REL [none]
+  magma:   ID 01B7,   Subtype FF,   GBAName 00,   REL d_a_magma
+   Bita:   ID 0066,   Subtype FF,   GBAName 00,   REL d_a_bita
+ YkgrON:   ID 0190,   Subtype FF,   GBAName 00,   REL d_a_ykgr
+YkgrOFF:   ID 0190,   Subtype FF,   GBAName 00,   REL d_a_ykgr
+  Dsaku:   ID 0191,   Subtype FF,   GBAName 00,   REL d_a_saku
+  Otana:   ID 002F,   Subtype 00,   GBAName 00,   REL d_a_obj_shelf
+ OtanaG:   ID 002F,   Subtype 01,   GBAName 00,   REL d_a_obj_shelf
+    Bdk:   ID 00F0,   Subtype FF,   GBAName 00,   REL d_a_bdk
+ Bdkobj:   ID 00F1,   Subtype FF,   GBAName 00,   REL d_a_bdkobj
+SWTdoor:   ID 00FA,   Subtype FF,   GBAName 00,   REL d_a_swtdoor
+  Canon:   ID 003F,   Subtype FF,   GBAName 00,   REL d_a_canon
+ GBoard:   ID 0040,   Subtype FF,   GBAName 00,   REL d_a_mgameboard
+  Hlift:   ID 0030,   Subtype 00,   GBAName 00,   REL d_a_obj_hlift
+ Hliftb:   ID 0030,   Subtype 01,   GBAName 00,   REL d_a_obj_hlift
+  Hami2:   ID 0031,   Subtype FF,   GBAName 00,   REL d_a_obj_hami2
+  Hami3:   ID 0032,   Subtype FF,   GBAName 00,   REL d_a_obj_hami3
+  Hami4:   ID 0033,   Subtype FF,   GBAName 00,   REL d_a_obj_hami4
+  Hbrf1:   ID 0034,   Subtype FF,   GBAName 00,   REL d_a_obj_hbrf1
+  Mflft:   ID 005D,   Subtype FF,   GBAName 00,   REL d_a_mflft
+ObjTime:   ID 01E1,   Subtype FF,   GBAName 00,   REL d_a_obj_timer
+   Klft:   ID 005E,   Subtype FF,   GBAName 00,   REL d_a_klft
+   Kita:   ID 0063,   Subtype FF,   GBAName 00,   REL d_a_kita
+ Humi0z:   ID 0029,   Subtype 00,   GBAName 00,   REL d_a_obj_tide
+ Humi4z:   ID 0029,   Subtype 01,   GBAName 00,   REL d_a_obj_tide
+ Humi5z:   ID 0029,   Subtype 02,   GBAName 00,   REL d_a_obj_tide
+  Tide3:   ID 0029,   Subtype 03,   GBAName 00,   REL d_a_obj_tide
+ Humi2z:   ID 0029,   Subtype 04,   GBAName 00,   REL d_a_obj_tide
+ Humi3z:   ID 0029,   Subtype 05,   GBAName 00,   REL d_a_obj_tide
+ WLvTag:   ID 01DD,   Subtype FF,   GBAName 00,   REL d_a_tag_waterlevel
+   Fire:   ID 01AB,   Subtype FF,   GBAName 00,   REL d_a_fire
+Zenfire:   ID 01AB,   Subtype FF,   GBAName 00,   REL d_a_fire
+ Kokiie:   ID 0064,   Subtype FF,   GBAName 00,   REL d_a_kokiie
+  Paper:   ID 0108,   Subtype 00,   GBAName 00,   REL d_a_obj_paper
+   Ppos:   ID 0108,   Subtype 01,   GBAName 00,   REL d_a_obj_paper
+   Piwa:   ID 0108,   Subtype 02,   GBAName 36,   REL d_a_obj_paper
+     Ss:   ID 00FD,   Subtype FF,   GBAName 00,   REL d_a_ss
+WindTag:   ID 0189,   Subtype FF,   GBAName 00,   REL d_a_wind_tag
+ Kryu00:   ID 0023,   Subtype FF,   GBAName 00,   REL d_a_obj_drift
+  Mcube:   ID 004C,   Subtype 00,   GBAName 00,   REL d_a_obj_mtest
+  Mcyln:   ID 004C,   Subtype 01,   GBAName 00,   REL d_a_obj_mtest
+Mcube10:   ID 004C,   Subtype 02,   GBAName 00,   REL d_a_obj_mtest
+Mcyln10:   ID 004C,   Subtype 03,   GBAName 00,   REL d_a_obj_mtest
+ MwtrSB:   ID 004C,   Subtype 04,   GBAName 00,   REL d_a_obj_mtest
+ MygnSB:   ID 004C,   Subtype 05,   GBAName 00,   REL d_a_obj_mtest
+ Owater:   ID 004C,   Subtype 06,   GBAName 00,   REL d_a_obj_mtest
+  Astop:   ID 004C,   Subtype 07,   GBAName 00,   REL d_a_obj_mtest
+ Ojtree:   ID 0055,   Subtype FF,   GBAName 00,   REL d_a_obj_ojtree
+ Ospbox:   ID 0056,   Subtype FF,   GBAName 00,   REL d_a_obj_ospbox
+  Hmlif:   ID 002A,   Subtype FF,   GBAName 3D,   REL d_a_hmlif
+Ywarp00:   ID 006C,   Subtype FF,   GBAName 00,   REL d_a_warpls
+Ysdls00:   ID 006C,   Subtype FF,   GBAName 00,   REL d_a_warpls
+Yswtr00:   ID 01AE,   Subtype FF,   GBAName 00,   REL d_a_waterfall
+ Gbrg00:   ID 01AF,   Subtype FF,   GBAName 00,   REL d_a_lbridge
+  Mhsg6:   ID 0057,   Subtype 00,   GBAName 00,   REL d_a_obj_ladder
+  Mhsg9:   ID 0057,   Subtype 01,   GBAName 00,   REL d_a_obj_ladder
+ Mhsg12:   ID 0057,   Subtype 02,   GBAName 00,   REL d_a_obj_ladder
+ Mhsg15:   ID 0057,   Subtype 03,   GBAName 00,   REL d_a_obj_ladder
+ Mhsg4h:   ID 0057,   Subtype 04,   GBAName 00,   REL d_a_obj_ladder
+    Sss:   ID 00FE,   Subtype FF,   GBAName 00,   REL d_a_sss
+   Wall:   ID 01B1,   Subtype FF,   GBAName 00,   REL d_a_wall
+  Blift:   ID 0071,   Subtype FF,   GBAName 00,   REL d_a_obj_balancelift
+MtoriSU:   ID 0054,   Subtype FF,   GBAName 00,   REL d_a_obj_nest
+   Lamp:   ID 00BB,   Subtype FF,   GBAName 00,   REL d_a_lamp
+  Sitem:   ID 00FF,   Subtype FF,   GBAName 00,   REL d_a_sitem
+  Hmos1:   ID 00EA,   Subtype 00,   GBAName 23,   REL d_a_obj_bemos
+  Hmos2:   ID 00EA,   Subtype 01,   GBAName 23,   REL d_a_obj_bemos
+  Hmos3:   ID 00EA,   Subtype 02,   GBAName 23,   REL d_a_obj_bemos
+Ylesr00:   ID 00E9,   Subtype FF,   GBAName 00,   REL d_a_beam
+ Hseki1:   ID 01D0,   Subtype 00,   GBAName 3D,   REL d_a_obj_try
+ Hseki6:   ID 01D0,   Subtype 01,   GBAName 3D,   REL d_a_obj_try
+ Hseki3:   ID 01D0,   Subtype 02,   GBAName 3D,   REL d_a_obj_try
+ Hseki4:   ID 01D0,   Subtype 03,   GBAName 3D,   REL d_a_obj_try
+ Hseki5:   ID 01D0,   Subtype 04,   GBAName 3D,   REL d_a_obj_try
+  Hmon1:   ID 01D0,   Subtype 05,   GBAName 3D,   REL d_a_obj_try
+ Hmon1d:   ID 01D0,   Subtype 06,   GBAName 3D,   REL d_a_obj_try
+  Hmon2:   ID 01D0,   Subtype 07,   GBAName 3D,   REL d_a_obj_try
+ Hmon2d:   ID 01D0,   Subtype 08,   GBAName 3D,   REL d_a_obj_try
+Hseki31:   ID 01D0,   Subtype 09,   GBAName 3D,   REL d_a_obj_try
+Hseki41:   ID 01D0,   Subtype 0A,   GBAName 3D,   REL d_a_obj_try
+Hseki51:   ID 01D0,   Subtype 0B,   GBAName 3D,   REL d_a_obj_try
+Hseki32:   ID 01D0,   Subtype 0C,   GBAName 3D,   REL d_a_obj_try
+Hseki42:   ID 01D0,   Subtype 0D,   GBAName 3D,   REL d_a_obj_try
+Hseki52:   ID 01D0,   Subtype 0E,   GBAName 3D,   REL d_a_obj_try
+  Com_A:   ID 010F,   Subtype FF,   GBAName 00,   REL d_a_obj_coming
+  WBird:   ID 00C5,   Subtype FF,   GBAName 00,   REL d_a_wbird
+ SMtoge:   ID 0134,   Subtype FF,   GBAName 00,   REL d_a_mtoge
+ SMBdor:   ID 0075,   Subtype 00,   GBAName 00,   REL d_a_mbdoor
+ KGBdor:   ID 0075,   Subtype 01,   GBAName 00,   REL d_a_mbdoor
+BFlower:   ID 012A,   Subtype FF,   GBAName 00,   REL d_a_bflower
+  VbakH:   ID 012A,   Subtype FF,   GBAName 00,   REL d_a_bflower
+  VigaH:   ID 012B,   Subtype FF,   GBAName 00,   REL d_a_acorn_leaf
+   Stal:   ID 00BF,   Subtype FF,   GBAName 04,   REL d_a_st
+ MkieBA:   ID 004D,   Subtype 00,   GBAName 3D,   REL d_a_obj_mkie
+MkieBAB:   ID 004D,   Subtype 01,   GBAName 3D,   REL d_a_obj_mkie
+  MkieK:   ID 004E,   Subtype FF,   GBAName 00,   REL d_a_obj_mkiek
+  MknjD:   ID 004F,   Subtype FF,   GBAName 00,   REL d_a_obj_mknjd
+  Msdan:   ID 0050,   Subtype FF,   GBAName 00,   REL d_a_obj_msdan
+MsdanSb:   ID 0051,   Subtype FF,   GBAName 00,   REL d_a_obj_msdan_sub
+ Msdan2:   ID 0052,   Subtype FF,   GBAName 00,   REL d_a_obj_msdan2
+MsdanS2:   ID 0053,   Subtype FF,   GBAName 00,   REL d_a_obj_msdan_sub2
+ Htobi1:   ID 0072,   Subtype FF,   GBAName 00,   REL d_a_shutter
+ Htobi2:   ID 0072,   Subtype FF,   GBAName 00,   REL d_a_shutter
+ Htobi3:   ID 0073,   Subtype FF,   GBAName 00,   REL d_a_shutter2
+Hfbot1A:   ID 001F,   Subtype 00,   GBAName 00,   REL d_a_obj_swflat
+Hfbot1B:   ID 001F,   Subtype 01,   GBAName 00,   REL d_a_obj_swflat
+Hfbot1C:   ID 001F,   Subtype 02,   GBAName 00,   REL d_a_obj_swflat
+  Ykzyg:   ID 0035,   Subtype FF,   GBAName 00,   REL d_a_obj_volcano
+  GiceL:   ID 0039,   Subtype FF,   GBAName 00,   REL d_a_obj_iceisland
+  Qdghd:   ID 003A,   Subtype FF,   GBAName 00,   REL d_a_obj_dragonhead
+dmgroom:   ID 010A,   Subtype FF,   GBAName 00,   REL d_a_obj_dmgroom
+  Doguu:   ID 010B,   Subtype 00,   GBAName 00,   REL d_a_obj_doguu
+MegamiD:   ID 010B,   Subtype 01,   GBAName 00,   REL d_a_obj_doguu
+MegamiF:   ID 010B,   Subtype 02,   GBAName 00,   REL d_a_obj_doguu
+MegamiN:   ID 010B,   Subtype 03,   GBAName 00,   REL d_a_obj_doguu
+ DoguuD:   ID 01BE,   Subtype FF,   GBAName 00,   REL d_a_obj_doguu_demo
+ ReTag0:   ID 003D,   Subtype FF,   GBAName 00,   REL d_a_tag_ret
+ VolTag:   ID 0024,   Subtype FF,   GBAName 00,   REL d_a_tag_volcano
+   Auc7:   ID 016B,   Subtype 00,   GBAName 00,   REL d_a_npc_auction
+   Auc1:   ID 016B,   Subtype 01,   GBAName 00,   REL d_a_npc_auction
+   Auc2:   ID 016B,   Subtype 02,   GBAName 00,   REL d_a_npc_auction
+   Auc3:   ID 016B,   Subtype 03,   GBAName 00,   REL d_a_npc_auction
+   Auc4:   ID 016B,   Subtype 04,   GBAName 00,   REL d_a_npc_auction
+   Auc5:   ID 016B,   Subtype 05,   GBAName 00,   REL d_a_npc_auction
+   Auc6:   ID 016B,   Subtype 06,   GBAName 00,   REL d_a_npc_auction
+   Auc0:   ID 016B,   Subtype 07,   GBAName 3B,   REL d_a_npc_auction
+ RotenA:   ID 0176,   Subtype 00,   GBAName 3B,   REL d_a_npc_roten
+ RotenB:   ID 0176,   Subtype 01,   GBAName 3B,   REL d_a_npc_roten
+ RotenC:   ID 0176,   Subtype 02,   GBAName 3B,   REL d_a_npc_roten
+     Tn:   ID 00C0,   Subtype FF,   GBAName 03,   REL d_a_tn
+   Fdai:   ID 0137,   Subtype FF,   GBAName 00,   REL d_a_dai
+Ytrnd00:   ID 01C0,   Subtype FF,   GBAName 3A,   REL d_a_tornado
+  Plant:   ID 0114,   Subtype FF,   GBAName 00,   REL d_a_obj_plant
+   Rflw:   ID 0117,   Subtype FF,   GBAName 00,   REL d_a_obj_rflw
+  Table:   ID 0118,   Subtype FF,   GBAName 00,   REL d_a_obj_table
+  Gtaki:   ID 0115,   Subtype FF,   GBAName 00,   REL d_a_obj_gtaki
+Tenmado:   ID 0119,   Subtype FF,   GBAName 00,   REL d_a_obj_tenmado
+X_tower:   ID 01BD,   Subtype FF,   GBAName 00,   REL d_a_obj_tower
+ Eskban:   ID 00A2,   Subtype FF,   GBAName 00,   REL d_a_obj_eskban
+  Ekskz:   ID 00A3,   Subtype FF,   GBAName 00,   REL d_a_obj_ekskz
+   Pbka:   ID 0113,   Subtype FF,   GBAName 00,   REL d_a_obj_pbka
+Yboil00:   ID 0116,   Subtype FF,   GBAName 00,   REL d_a_obj_Yboil
+Cafelmp:   ID 011A,   Subtype FF,   GBAName 00,   REL d_a_obj_cafelmp
+MKanoke:   ID 00A1,   Subtype 00,   GBAName 3D,   REL d_a_obj_kanoke
+MKanok2:   ID 00A1,   Subtype 01,   GBAName 3D,   REL d_a_obj_kanoke
+    Kg1:   ID 016C,   Subtype FF,   GBAName 3B,   REL d_a_npc_kg1
+    Kg2:   ID 016D,   Subtype FF,   GBAName 00,   REL d_a_npc_kg2
+     Tt:   ID 016E,   Subtype FF,   GBAName 3B,   REL d_a_npc_tt
+     Hr:   ID 016F,   Subtype 00,   GBAName 00,   REL d_a_npc_hr
+    Hr2:   ID 016F,   Subtype 01,   GBAName 00,   REL d_a_npc_hr
+ BigElf:   ID 0173,   Subtype 00,   GBAName 00,   REL d_a_bigelf
+     Ho:   ID 0170,   Subtype 00,   GBAName 00,   REL d_a_npc_ho
+ Gkai00:   ID 01B0,   Subtype FF,   GBAName 00,   REL d_a_lstair
+     Mk:   ID 00AB,   Subtype 00,   GBAName 3B,   REL d_a_npc_mk
+    UkB:   ID 0172,   Subtype 01,   GBAName 3B,   REL d_a_npc_uk
+    UkC:   ID 0172,   Subtype 02,   GBAName 3B,   REL d_a_npc_uk
+    UkD:   ID 0172,   Subtype 03,   GBAName 3B,   REL d_a_npc_uk
+    Mk2:   ID 00AB,   Subtype 04,   GBAName 00,   REL d_a_npc_mk
+   UkB2:   ID 0172,   Subtype 05,   GBAName 00,   REL d_a_npc_uk
+   UkC2:   ID 0172,   Subtype 06,   GBAName 00,   REL d_a_npc_uk
+   UkD2:   ID 0172,   Subtype 07,   GBAName 00,   REL d_a_npc_uk
+    Co1:   ID 0174,   Subtype FF,   GBAName 3B,   REL d_a_npc_co1
+     Mt:   ID 017D,   Subtype FF,   GBAName 00,   REL d_a_npc_mt
+     Mn:   ID 017E,   Subtype FF,   GBAName 3B,   REL d_a_npc_mn
+     Ah:   ID 017F,   Subtype FF,   GBAName 00,   REL d_a_npc_ah
+  Hyuf1:   ID 002A,   Subtype FF,   GBAName 3D,   REL d_a_hmlif
+  Hyuf2:   ID 002A,   Subtype FF,   GBAName 3D,   REL d_a_hmlif
+  Hdai1:   ID 0061,   Subtype 00,   GBAName 3D,   REL d_a_pedestal
+  Hdai2:   ID 0061,   Subtype 01,   GBAName 3D,   REL d_a_pedestal
+  Hdai3:   ID 0061,   Subtype 02,   GBAName 3D,   REL d_a_pedestal
+Auction:   ID 0180,   Subtype FF,   GBAName 00,   REL d_a_auction
+   Auzu:   ID 011D,   Subtype FF,   GBAName 3A,   REL d_a_obj_auzu
+   Hpu1:   ID 0074,   Subtype FF,   GBAName 00,   REL d_a_windmill
+   Hpu2:   ID 0074,   Subtype FF,   GBAName 00,   REL d_a_windmill
+Hkikai1:   ID 0100,   Subtype FF,   GBAName 00,   REL d_a_machine
+Ybgaf00:   ID 0189,   Subtype FF,   GBAName 00,   REL d_a_wind_tag
+  LOD01:   ID 01C3,   Subtype FF,   GBAName 00,   REL d_a_lod_bg
+  LOD02:   ID 01C3,   Subtype FF,   GBAName 00,   REL d_a_lod_bg
+  LOD03:   ID 01C3,   Subtype FF,   GBAName 00,   REL d_a_lod_bg
+  LOD04:   ID 01C3,   Subtype FF,   GBAName 00,   REL d_a_lod_bg
+  LOD05:   ID 01C3,   Subtype FF,   GBAName 00,   REL d_a_lod_bg
+  LOD06:   ID 01C3,   Subtype FF,   GBAName 00,   REL d_a_lod_bg
+  LOD07:   ID 01C3,   Subtype FF,   GBAName 00,   REL d_a_lod_bg
+  LOD08:   ID 01C3,   Subtype FF,   GBAName 00,   REL d_a_lod_bg
+  LOD09:   ID 01C3,   Subtype FF,   GBAName 00,   REL d_a_lod_bg
+  LOD10:   ID 01C3,   Subtype FF,   GBAName 00,   REL d_a_lod_bg
+  LOD11:   ID 01C3,   Subtype FF,   GBAName 00,   REL d_a_lod_bg
+  LOD12:   ID 01C3,   Subtype FF,   GBAName 00,   REL d_a_lod_bg
+  LOD13:   ID 01C3,   Subtype FF,   GBAName 00,   REL d_a_lod_bg
+  LOD14:   ID 01C3,   Subtype FF,   GBAName 00,   REL d_a_lod_bg
+  LOD15:   ID 01C3,   Subtype FF,   GBAName 00,   REL d_a_lod_bg
+  LOD16:   ID 01C3,   Subtype FF,   GBAName 00,   REL d_a_lod_bg
+  LOD17:   ID 01C3,   Subtype FF,   GBAName 00,   REL d_a_lod_bg
+  LOD18:   ID 01C3,   Subtype FF,   GBAName 00,   REL d_a_lod_bg
+  LOD19:   ID 01C3,   Subtype FF,   GBAName 00,   REL d_a_lod_bg
+  LOD20:   ID 01C3,   Subtype FF,   GBAName 00,   REL d_a_lod_bg
+  LOD21:   ID 01C3,   Subtype FF,   GBAName 00,   REL d_a_lod_bg
+  LOD22:   ID 01C3,   Subtype FF,   GBAName 00,   REL d_a_lod_bg
+  LOD23:   ID 01C3,   Subtype FF,   GBAName 00,   REL d_a_lod_bg
+  LOD24:   ID 01C3,   Subtype FF,   GBAName 00,   REL d_a_lod_bg
+  LOD25:   ID 01C3,   Subtype FF,   GBAName 00,   REL d_a_lod_bg
+  LOD26:   ID 01C3,   Subtype FF,   GBAName 00,   REL d_a_lod_bg
+  LOD27:   ID 01C3,   Subtype FF,   GBAName 00,   REL d_a_lod_bg
+  LOD28:   ID 01C3,   Subtype FF,   GBAName 00,   REL d_a_lod_bg
+  LOD29:   ID 01C3,   Subtype FF,   GBAName 00,   REL d_a_lod_bg
+  LOD30:   ID 01C3,   Subtype FF,   GBAName 00,   REL d_a_lod_bg
+  LOD31:   ID 01C3,   Subtype FF,   GBAName 00,   REL d_a_lod_bg
+  LOD32:   ID 01C3,   Subtype FF,   GBAName 00,   REL d_a_lod_bg
+  LOD33:   ID 01C3,   Subtype FF,   GBAName 00,   REL d_a_lod_bg
+  LOD34:   ID 01C3,   Subtype FF,   GBAName 00,   REL d_a_lod_bg
+  LOD35:   ID 01C3,   Subtype FF,   GBAName 00,   REL d_a_lod_bg
+  LOD36:   ID 01C3,   Subtype FF,   GBAName 00,   REL d_a_lod_bg
+  LOD37:   ID 01C3,   Subtype FF,   GBAName 00,   REL d_a_lod_bg
+  LOD38:   ID 01C3,   Subtype FF,   GBAName 00,   REL d_a_lod_bg
+  LOD39:   ID 01C3,   Subtype FF,   GBAName 00,   REL d_a_lod_bg
+  LOD40:   ID 01C3,   Subtype FF,   GBAName 00,   REL d_a_lod_bg
+  LOD41:   ID 01C3,   Subtype FF,   GBAName 00,   REL d_a_lod_bg
+  LOD42:   ID 01C3,   Subtype FF,   GBAName 00,   REL d_a_lod_bg
+  LOD43:   ID 01C3,   Subtype FF,   GBAName 00,   REL d_a_lod_bg
+  LOD44:   ID 01C3,   Subtype FF,   GBAName 00,   REL d_a_lod_bg
+  LOD45:   ID 01C3,   Subtype FF,   GBAName 00,   REL d_a_lod_bg
+  LOD46:   ID 01C3,   Subtype FF,   GBAName 00,   REL d_a_lod_bg
+  LOD47:   ID 01C3,   Subtype FF,   GBAName 00,   REL d_a_lod_bg
+  LOD48:   ID 01C3,   Subtype FF,   GBAName 00,   REL d_a_lod_bg
+  LOD49:   ID 01C3,   Subtype FF,   GBAName 00,   REL d_a_lod_bg
+  MtryB:   ID 002E,   Subtype 00,   GBAName 00,   REL d_a_obj_tribox
+MtryBCr:   ID 002E,   Subtype 01,   GBAName 00,   REL d_a_obj_tribox
+  Vdora:   ID 011E,   Subtype FF,   GBAName 00,   REL d_a_obj_gong
+ Roten2:   ID 007B,   Subtype 00,   GBAName 00,   REL d_a_obj_roten
+ Roten3:   ID 007B,   Subtype 01,   GBAName 00,   REL d_a_obj_roten
+ Roten4:   ID 007B,   Subtype 02,   GBAName 00,   REL d_a_obj_roten
+  Qtkhd:   ID 0058,   Subtype FF,   GBAName 00,   REL d_a_obj_smplbg
+  Akabe:   ID 0059,   Subtype 00,   GBAName 00,   REL d_a_obj_akabe
+Akabe10:   ID 0059,   Subtype 01,   GBAName 00,   REL d_a_obj_akabe
+   NBOX:   ID 0059,   Subtype 02,   GBAName 00,   REL d_a_obj_akabe
+ NBOX10:   ID 0059,   Subtype 03,   GBAName 00,   REL d_a_obj_akabe
+  Ashut:   ID 005A,   Subtype FF,   GBAName 00,   REL d_a_obj_ashut
+  Mcrtn:   ID 0123,   Subtype FF,   GBAName 00,   REL d_a_obj_tapestry
+  VmcBS:   ID 0036,   Subtype FF,   GBAName 00,   REL d_a_obj_vmc
+ Usovmc:   ID 0037,   Subtype FF,   GBAName 00,   REL d_a_obj_usovmc
+   Vfan:   ID 0038,   Subtype FF,   GBAName 00,   REL d_a_obj_vfan
+   Apzl:   ID 011B,   Subtype FF,   GBAName 00,   REL d_a_obj_apzl
+  Adnno:   ID 011C,   Subtype FF,   GBAName 00,   REL d_a_obj_adnno
+Ycage00:   ID 011F,   Subtype FF,   GBAName 00,   REL d_a_obj_barrier
+Yswdr00:   ID 0120,   Subtype FF,   GBAName 00,   REL d_a_obj_firewall
+ TnTrap:   ID 0121,   Subtype FF,   GBAName 00,   REL d_a_obj_tntrap
+ FgTrap:   ID 0121,   Subtype FF,   GBAName 00,   REL d_a_obj_tntrap
+ CmTrap:   ID 0121,   Subtype FF,   GBAName 00,   REL d_a_obj_tntrap
+ Hjump2:   ID 00A8,   Subtype FF,   GBAName 3D,   REL d_a_obj_jump
+  Esekh:   ID 0122,   Subtype 00,   GBAName 37,   REL d_a_obj_monument
+ Esekh2:   ID 0122,   Subtype 01,   GBAName 37,   REL d_a_obj_monument
+     Po:   ID 0179,   Subtype FF,   GBAName 3B,   REL d_a_npc_photo
+  TagPo:   ID 01A3,   Subtype FF,   GBAName 00,   REL d_a_tag_photo
+ Htoge1:   ID 007C,   Subtype FF,   GBAName 32,   REL d_a_toge
+Skanran:   ID 007D,   Subtype FF,   GBAName 00,   REL d_a_obj_ferris
+   Ajav:   ID 0088,   Subtype FF,   GBAName 00,   REL d_a_obj_ajav
+   Trap:   ID 0089,   Subtype FF,   GBAName 33,   REL d_a_obj_trap
+    Hha:   ID 008A,   Subtype FF,   GBAName 00,   REL d_a_obj_hha
+ Htetu1:   ID 008B,   Subtype FF,   GBAName 00,   REL d_a_obj_htetu1
+  Tpota:   ID 018D,   Subtype FF,   GBAName 00,   REL d_a_tpota
+Stoudai:   ID 0082,   Subtype FF,   GBAName 00,   REL d_a_obj_light
+   Pbco:   ID 0026,   Subtype FF,   GBAName 00,   REL d_a_obj_pbco
+ Ebomzo:   ID 00A4,   Subtype FF,   GBAName 00,   REL d_a_obj_ebomzo
+  Psail:   ID 00AD,   Subtype 00,   GBAName 00,   REL d_a_sail
+ Homen1:   ID 0083,   Subtype 00,   GBAName 00,   REL d_a_obj_homen
+ Homen2:   ID 0083,   Subtype 01,   GBAName 00,   REL d_a_obj_homen
+  Xfuta:   ID 007E,   Subtype 01,   GBAName 00,   REL d_a_obj_xfuta
+  Vochi:   ID 0092,   Subtype 00,   GBAName 00,   REL d_a_obj_leaves
+ Hfuck1:   ID 0096,   Subtype 00,   GBAName 00,   REL d_a_obj_hfuck1
+  YLzou:   ID 0093,   Subtype 00,   GBAName 00,   REL d_a_obj_YLzou
+   Gbed:   ID 0094,   Subtype 00,   GBAName 00,   REL d_a_obj_ganonbed
+  Vteng:   ID 0095,   Subtype 00,   GBAName 00,   REL d_a_obj_Vteng
+ Ohatch:   ID 0097,   Subtype FF,   GBAName 00,   REL d_a_obj_ohatch
+ Rcloud:   ID 008F,   Subtype 00,   GBAName 00,   REL d_a_obj_rcloud
+ Ocloud:   ID 008F,   Subtype 01,   GBAName 00,   REL d_a_obj_rcloud
+   MPot:   ID 01D3,   Subtype 00,   GBAName 00,   REL d_a_obj_mshokki
+ MOsara:   ID 01D3,   Subtype 01,   GBAName 00,   REL d_a_obj_mshokki
+ MKoppu:   ID 01D3,   Subtype 02,   GBAName 00,   REL d_a_obj_mshokki
+   Ptco:   ID 009A,   Subtype 00,   GBAName 00,   REL d_a_obj_bscurtain
+   Ptcu:   ID 009A,   Subtype 01,   GBAName 00,   REL d_a_obj_bscurtain
+   Kmon:   ID 0196,   Subtype 00,   GBAName 00,   REL d_a_kmon
+ Sarace:   ID 0146,   Subtype 00,   GBAName 00,   REL d_a_npc_sarace
+    Hsh:   ID 0124,   Subtype 00,   GBAName 36,   REL d_a_obj_hsehi1
+   Hsh2:   ID 0124,   Subtype 01,   GBAName 36,   REL d_a_obj_hsehi1
+ Mmusic:   ID 018B,   Subtype FF,   GBAName 00,   REL d_a_mmusic
+ Gryw00:   ID 0090,   Subtype FF,   GBAName 00,   REL d_a_obj_gryw00
+  AjavW:   ID 0091,   Subtype 00,   GBAName 00,   REL d_a_obj_AjavW
+Omensmk:   ID 0084,   Subtype FF,   GBAName 00,   REL d_a_obj_homensmoke
+  Itnak:   ID 018E,   Subtype FF,   GBAName 00,   REL d_a_obj_Itnak
+Yfrlt00:   ID 018C,   Subtype FF,   GBAName 00,   REL d_a_komore
+  FTree:   ID 0085,   Subtype FF,   GBAName 00,   REL d_a_obj_ftree
+  Vyasi:   ID 0087,   Subtype FF,   GBAName 00,   REL d_a_obj_vyasi
+    Vds:   ID 0086,   Subtype FF,   GBAName 00,   REL d_a_obj_Vds
+ Rforce:   ID 0080,   Subtype FF,   GBAName 00,   REL d_a_obj_rforce
+   zouK:   ID 018F,   Subtype 00,   GBAName 00,   REL d_a_obj_zouK
+  zouK1:   ID 018F,   Subtype 01,   GBAName 00,   REL d_a_obj_zouK
+  zouK2:   ID 018F,   Subtype 02,   GBAName 00,   REL d_a_obj_zouK
+  zouK3:   ID 018F,   Subtype 03,   GBAName 00,   REL d_a_obj_zouK
+  zouK4:   ID 018F,   Subtype 04,   GBAName 00,   REL d_a_obj_zouK
+Gaship1:   ID 007F,   Subtype FF,   GBAName 00,   REL d_a_obj_gaship
+Gaship2:   ID 0081,   Subtype FF,   GBAName 00,   REL d_a_obj_gaship2
+  Ghrwp:   ID 006D,   Subtype FF,   GBAName 00,   REL d_a_warphr
+Gdemo20:   ID 006E,   Subtype FF,   GBAName 00,   REL d_a_warpdm20
+ Warpgn:   ID 006F,   Subtype FF,   GBAName 00,   REL d_a_warpgn
+ Warpmj:   ID 0070,   Subtype FF,   GBAName 00,   REL d_a_warpmj
+ Warpfo:   ID 006B,   Subtype FF,   GBAName 00,   REL d_a_warpfout
+Ygush00:   ID 0099,   Subtype FF,   GBAName 00,   REL d_a_obj_Ygush00
+Ygush01:   ID 0099,   Subtype FF,   GBAName 00,   REL d_a_obj_Ygush00
+Ygstp00:   ID 0099,   Subtype FF,   GBAName 00,   REL d_a_obj_Ygush00
+Ygush02:   ID 0099,   Subtype FF,   GBAName 00,   REL d_a_obj_Ygush00
+   Hcbh:   ID 0098,   Subtype 00,   GBAName 00,   REL d_a_obj_hcbh
+  Com_B:   ID 0110,   Subtype FF,   GBAName 00,   REL d_a_coming2
+  Com_C:   ID 0111,   Subtype FF,   GBAName 00,   REL d_a_coming3
+ SPitem:   ID 0107,   Subtype FF,   GBAName 00,   REL [none]
+HyoiKam:   ID 00C4,   Subtype FF,   GBAName 00,   REL d_a_npc_kamome
+Shmrgrd:   ID 009B,   Subtype FF,   GBAName 00,   REL d_a_obj_shmrgrd
+  Vtil1:   ID 01D1,   Subtype 00,   GBAName 00,   REL d_a_obj_vtil
+  Vtil2:   ID 01D1,   Subtype 01,   GBAName 00,   REL d_a_obj_vtil
+  Vtil3:   ID 01D1,   Subtype 02,   GBAName 00,   REL d_a_obj_vtil
+  Vtil4:   ID 01D1,   Subtype 03,   GBAName 00,   REL d_a_obj_vtil
+  Vtil5:   ID 01D1,   Subtype 04,   GBAName 00,   REL d_a_obj_vtil
+ Eayogn:   ID 009C,   Subtype FF,   GBAName 00,   REL d_a_obj_eayogn
+  VmsMS:   ID 009D,   Subtype FF,   GBAName 00,   REL d_a_obj_vmsms
+  VmsDZ:   ID 009E,   Subtype FF,   GBAName 00,   REL d_a_obj_vmsdz
+  VgnFD:   ID 00A0,   Subtype FF,   GBAName 00,   REL d_a_obj_vgnfd
+  Ygcwp:   ID 009F,   Subtype FF,   GBAName 00,   REL d_a_ygcwp
+ Figure:   ID 0197,   Subtype FF,   GBAName 00,   REL d_a_obj_figure
+  RoHat:   ID 0198,   Subtype FF,   GBAName 00,   REL d_a_obj_hat
+Gntakis:   ID 008C,   Subtype FF,   GBAName 00,   REL d_a_obj_gnndemotakis
+Gntakie:   ID 008D,   Subtype FF,   GBAName 00,   REL d_a_obj_gnndemotakie
+Gnbtaki:   ID 008E,   Subtype FF,   GBAName 00,   REL d_a_obj_gnnbtltaki
+    Bkm:   ID 00EC,   Subtype FF,   GBAName 00,   REL d_a_bmd
+    Bst:   ID 00F2,   Subtype FF,   GBAName 00,   REL d_a_bst
+  Bitem:   ID 0102,   Subtype FF,   GBAName 00,   REL d_a_boss_item
+ Fganon:   ID 00F3,   Subtype FF,   GBAName 00,   REL d_a_fganon
+    Bwd:   ID 00DA,   Subtype FF,   GBAName 00,   REL d_a_bwd
+   Bwds:   ID 00DB,   Subtype FF,   GBAName 00,   REL d_a_bwds
+    Bgn:   ID 00F5,   Subtype FF,   GBAName 00,   REL d_a_bgn
+    Gnd:   ID 00F8,   Subtype FF,   GBAName 00,   REL d_a_gnd
+   Puti:   ID 00F9,   Subtype FF,   GBAName 00,   REL d_a_pt
+ d_act0:   ID 0199,   Subtype 00,   GBAName 00,   REL [none]
+ d_act1:   ID 0199,   Subtype 01,   GBAName 00,   REL [none]
+ d_act2:   ID 0199,   Subtype 02,   GBAName 00,   REL [none]
+ d_act3:   ID 0199,   Subtype 03,   GBAName 00,   REL [none]
+ d_act4:   ID 0199,   Subtype 04,   GBAName 00,   REL [none]
+ d_act5:   ID 0199,   Subtype 05,   GBAName 00,   REL [none]
+ d_act6:   ID 0199,   Subtype 06,   GBAName 00,   REL [none]
+ d_act7:   ID 0199,   Subtype 07,   GBAName 00,   REL [none]
+ d_act8:   ID 0199,   Subtype 08,   GBAName 00,   REL [none]
+ d_act9:   ID 0199,   Subtype 09,   GBAName 00,   REL [none]
+d_act10:   ID 0199,   Subtype 0A,   GBAName 00,   REL [none]
+d_act11:   ID 0199,   Subtype 0B,   GBAName 00,   REL [none]
+d_act12:   ID 0199,   Subtype 0C,   GBAName 00,   REL [none]
+d_act13:   ID 0199,   Subtype 0D,   GBAName 00,   REL [none]
+d_act14:   ID 0199,   Subtype 0E,   GBAName 00,   REL [none]
+d_act15:   ID 0199,   Subtype 0F,   GBAName 00,   REL [none]
+d_act16:   ID 0199,   Subtype 10,   GBAName 00,   REL [none]
+d_act17:   ID 0199,   Subtype 11,   GBAName 00,   REL [none]
+d_act18:   ID 0199,   Subtype 12,   GBAName 00,   REL [none]
+d_act19:   ID 0199,   Subtype 13,   GBAName 00,   REL [none]
+d_act20:   ID 0199,   Subtype 14,   GBAName 00,   REL [none]
+d_act21:   ID 0199,   Subtype 15,   GBAName 00,   REL [none]
+d_act22:   ID 0199,   Subtype 16,   GBAName 00,   REL [none]
+d_act23:   ID 0199,   Subtype 17,   GBAName 00,   REL [none]
+d_act24:   ID 0199,   Subtype 18,   GBAName 00,   REL [none]
+d_act25:   ID 0199,   Subtype 19,   GBAName 00,   REL [none]
+d_act26:   ID 0199,   Subtype 1A,   GBAName 00,   REL [none]
+d_act27:   ID 0199,   Subtype 1B,   GBAName 00,   REL [none]
+d_act28:   ID 0199,   Subtype 1C,   GBAName 00,   REL [none]
+d_act29:   ID 0199,   Subtype 1D,   GBAName 00,   REL [none]
+d_act30:   ID 0199,   Subtype 1E,   GBAName 00,   REL [none]
+d_act31:   ID 0199,   Subtype 1F,   GBAName 00,   REL [none]
+   SYAN:   ID 00B2,   Subtype FF,   GBAName 00,   REL d_a_syan
+  TagD1:   ID 019B,   Subtype 00,   GBAName 00,   REL d_a_dummy
+  TagD2:   ID 019B,   Subtype 01,   GBAName 00,   REL d_a_dummy
+  TagD3:   ID 019B,   Subtype 02,   GBAName 00,   REL d_a_dummy
+  TagD4:   ID 019B,   Subtype 03,   GBAName 00,   REL d_a_dummy
+     mp:   ID 01C2,   Subtype FF,   GBAName 00,   REL d_a_movie_player
+  STBox:   ID 0195,   Subtype FF,   GBAName 00,   REL d_a_salvage_tbox
+ Fobj00:   ID 01D4,   Subtype FF,   GBAName 00,   REL [none]
+   Tama:   ID 01D6,   Subtype FF,   GBAName 00,   REL d_a_tama
+    Agb:   ID 01B5,   Subtype FF,   GBAName 00,   REL [none]
+     Bg:   ID 01BC,   Subtype FF,   GBAName 00,   REL [none]
+  Himo2:   ID 01C4,   Subtype FF,   GBAName 00,   REL [none]
+    Esa:   ID 00DE,   Subtype FF,   GBAName 00,   REL [none]
+   Boko:   ID 01D5,   Subtype FF,   GBAName 00,   REL d_a_boko
+Kantera:   ID 00C2,   Subtype FF,   GBAName 00,   REL d_a_kantera
+  HShot:   ID 00AA,   Subtype FF,   GBAName 00,   REL [none]
+   Boom:   ID 01B4,   Subtype FF,   GBAName 00,   REL [none]
+   Bomb:   ID 0128,   Subtype FF,   GBAName 00,   REL [none]
+  Bomb2:   ID 0129,   Subtype FF,   GBAName 00,   REL [none]
+   Boko:   ID 01D5,   Subtype FF,   GBAName 00,   REL d_a_boko
+  Arrow:   ID 01DE,   Subtype FF,   GBAName 00,   REL [none]
+Arrow_i:   ID 01DF,   Subtype FF,   GBAName 00,   REL d_a_arrow_iceeff
+Arrow_l:   ID 01E0,   Subtype FF,   GBAName 00,   REL d_a_arrow_lighteff
+   Grid:   ID 00AC,   Subtype FF,   GBAName 00,   REL [none]
+   Kaji:   ID 003E,   Subtype FF,   GBAName 00,   REL d_a_kaji
+ HFloor:   ID 00E8,   Subtype FF,   GBAName 00,   REL d_a_hot_floor
+  Buoyr:   ID 010E,   Subtype FF,   GBAName 00,   REL d_a_obj_buoyrace
+  Ritem:   ID 0104,   Subtype FF,   GBAName 00,   REL d_a_race_item
+  Sitem:   ID 0105,   Subtype FF,   GBAName 00,   REL d_a_shop_item
+  Ditem:   ID 0103,   Subtype FF,   GBAName 00,   REL d_a_demo_item
+  Iball:   ID 0192,   Subtype FF,   GBAName 00,   REL [none]
+  Grass:   ID 01B8,   Subtype FF,   GBAName 00,   REL d_a_grass
+  Vrbox:   ID 01BA,   Subtype FF,   GBAName 00,   REL [none]
+ Vrbox2:   ID 01BB,   Subtype FF,   GBAName 00,   REL [none]
+EndCode:   ID 0007,   Subtype FF,   GBAName 00,   REL [none]
+ [none]:   ID 0065,   Subtype [],   GBAName [],   REL d_a_shand
+ [none]:   ID 00AE,   Subtype [],   GBAName [],   REL d_a_pirate_flag
+ [none]:   ID 00B8,   Subtype [],   GBAName [],   REL d_a_hitobj
+ [none]:   ID 00C1,   Subtype [],   GBAName [],   REL d_a_mant
+ [none]:   ID 00DC,   Subtype [],   GBAName [],   REL d_a_bwdg
+ [none]:   ID 00ED,   Subtype [],   GBAName [],   REL d_a_bmdhand
+ [none]:   ID 00EE,   Subtype [],   GBAName [],   REL d_a_bmdfoot
+ [none]:   ID 00F4,   Subtype [],   GBAName [],   REL d_a_fgmahou
+ [none]:   ID 00F6,   Subtype [],   GBAName [],   REL d_a_bgn2
+ [none]:   ID 00F7,   Subtype [],   GBAName [],   REL d_a_bgn3
+ [none]:   ID 0112,   Subtype [],   GBAName [],   REL d_a_obj_mmrr
+ [none]:   ID 01C1,   Subtype [],   GBAName [],   REL d_a_title
+ [none]:   ID 01C6,   Subtype [],   GBAName [],   REL d_a_att
+ [none]:   ID 01D7,   Subtype [],   GBAName [],   REL d_a_obj_buoyflag
+ [none]:   ID 01D9,   Subtype [],   GBAName [],   REL d_a_obj_eff

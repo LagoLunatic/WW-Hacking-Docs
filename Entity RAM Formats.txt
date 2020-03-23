@@ -118,7 +118,7 @@ For treasure chest entities:
 76C,1: The treasure chest opened flag index.
   F - For tingle statue chests. This special value means the chest will not appear on the dungeon map with the compass until you have revealed the chest.
 
-For the player:
+For Link:
 0290,1: The player's current attack state.
   0 - Not attacking
   1 - Attacking with sword while locked on
@@ -175,6 +175,7 @@ For the player:
 3584,4: "AttributeCode"? seems to be something from the level polygon that the player is currently standing on.
   called "Attrib ID" in DZB-i-Fy
   related to taking damage from lava maybe? This is passed as argument r5 to checkLavaFace (but only when the value is 6 or 8?)
+3530,2: Current keyframe index for Link's eyes .btk animation.
 
 For enemies:
 [Varies]+14,1: Damage for this enemy to do.

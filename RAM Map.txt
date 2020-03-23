@@ -46,6 +46,11 @@
   05,1: hand model? maybe left or right
   06,2: texture anim?
 
+8035C36C-8035C61F - List of Link's texture animations. (daPy_lk_c::mTexAnmIndexTable)
+  Entry length 4. 0xAD entries in total.
+  00,2: File ID of the BTP animation from LkAnm.arc to play. (Swaps Link's facial textures out.)
+  02,2: File ID of the BTK animation from LkAnm.arc to play. (Scrolls Link's pupil UVs around.)
+
 8035F9B8-8035F9F7 - List of Ballad of Gales warp destinations.
   Entry length 7. There are 9 entries in total.
   00,1: X pos of the sector on the sea chart (-3 to 3).
@@ -61,25 +66,34 @@
   (this is equivalent to offset 358D34 in main.dol)
   this list is read from by 800e7420, execute__10daDemo00
 
-803398D8-8033A647 - Mapping of actor IDs to rel filenames.
+803398D8-8033A647 - Mapping of actor IDs to rel filenames. (DynamicNameTable)
   Entry length 8.
   Total entries: 0x1AE (though the very last one is just an end marker with actor ID = -1).
   00,2: Actor ID. This is the ID mentioned in list 80372818.
   02,2: Padding (always 0x0000).
   04,4: Pointer to the rel filename.
 80372818-80374EC3 - Actor info. (l_objectName)
-  This is a mapping of ACTR names to the data corresponding to that name.
+  This is a mapping of actor names to the data corresponding to that name.
   Entry length 0xC.
   Total entries: 0x339.
-  00,8: ACTR name.
+  00,8: Actor name.
   08,2: Actor ID. This is the key in list 803398D8.
   0A,1: Actor subtype index.
-    When multiple different ACTR names correspond to a single REL file, this index is what distinguishes them.
+    When multiple different actor names correspond to a single REL file, this index is what distinguishes them.
     Many REL files just ignore this value and instead use their parameters to know which way to behave.
     But some, like d_a_tag_md_cb.rel actually rely on this to determine what they should do.
-  0B,1: Actor unknown value 0xB
+  0B,1: GBA type.
     This is used by treasure chests and salvage points, passed as argument r7 to drawPointSingle__6dMap_cFUcfffScsUcUcUc
     In the main executable, this value for some unknown entity type is passed as argument r8 to setCollectPoint__6dMap_cFUcUcfffScsUcUcUcUc
+
+80363120 - List of which files to preload for each stage. (PreLoadInfoT)
+  Entry length 0x10.
+  00,4: Pointer to the stage name, a string.
+  04,4: ???
+  08,4: Pointer to a list of which files to preload for this stage.
+    This is a list of pointers to strings, which are the names of arc files in the res/Object folder, without the .arc file extension.
+  0C,1: ???
+  0D,1: Number of files to be preloaded.
 
 g_fopAcTg_Queue:
 80372028,4 - Pointer to last entity/node in RAM?
@@ -230,6 +244,21 @@ Format of each block of memory in the game heap:
     2 - Right
     3 - Down
     4 - Left
+
+8039BC30 - List of message sounds. (JAIZelBasic::charVoiceTable)
+  Entry length 4.
+  The index in this list is the sound value from a sound command in a message.
+  00,2: ?
+  02,2: ?
+  What each sound index in this list is:
+      0: N/A. Don't play any sound.
+      1: Aryll: "Ah!"
+      2: Aryll: "Wah!?"
+      7: Aryll: "Auhh!?"
+     95: Aryll: "Hai!"
+    104: Aryll: "Oyyyy!"
+    105: Aryll: "Hoyyyy!"
+    106: Aryll: "Haiiii~!"
 
 8039C280-8039C2E3 - List of 1st dynamic scene waves. (BGM related) (m_dy_wave_set_1st__11JAIZelBasic)
   Entry length 2. 0x32 entries in total.
@@ -493,6 +522,7 @@ Each inventory slot:
 
 803C4DA8,1 - Whether you're on new game+ or not, boolean.
   (It might actually be a counter for how many times you've cleared the game on this save? Not sure.)
+  If this is nonzero, the player will appear in their casual clothes even if they own the Hero's Clothes.
 
 803C4DA9,1 - Which placement of salvage points to use for this save file.
   This can be from 0 to 3. On a new game it's a random number from 0-2, on new game+ it's always 3.
@@ -652,9 +682,6 @@ bits set during vanilla game in order:
   803C52CF  07  ET warp pots
   803C52D0  07  FF-ET-WT inter-dungeon warp pots (added by the rando)
 
-803C4DA8,1 - Boolean for whether the player should have the Hero's New Clothes?
-  If this is nonzero, the player will appear in their casual clothes even if they own the Hero's Clothes.
-
 803C4DB4,4 - Player's partner's X pos.
 803C4DB8,4 - Player's partner's Y pos.
 803C4DBC,4 - Player's partner's Z pos.
@@ -667,7 +694,7 @@ bits set during vanilla game in order:
   3 - Servant of the Tower
   (There may be more IDs for different Servants of the Tower?)
 
-803C4F88-803C51C7 - List of all stage info in the save file.
+803C4F88-803C51C7 - List of all stage infos in the save file. (dSv_memory_c)
   Entry length 0x24.
   There are 0x10 stage infos in total.
   The index in this list is the stage ID.
@@ -725,7 +752,10 @@ Stage info format:
 
 803C53A4,1 - Currently loaded stage info ID (current stage ID).
 803C53A5,1 - ???
-803C53A8,8 - Bitfield of "dan bits"
+803C53A8,8 - Bitfield of dan bits.
+  Grouped into words.
+  Dan bits are cleared when changing stages to a stage that has a stage info ID that is different from the stage you were in previously.
+  So as long as you stay within a single dungeon for example, dan bits will be remembered, even if you change stages (like going to the miniboss room and back).
 
 803C53B0,1 - ??? Something related to zones? Maybe the number of zones that are currently initialized?
 803C53B1,1 - Padding?
@@ -767,6 +797,7 @@ Player's partner's room restart position? ("restart option")
   803C5D63  02  Related to Lenzo?
   803C5D63  01  Related to Lenzo?
   803C5D64  02  Temporarily has the Hurricane Spin during the training event with Orca.
+  803C5D65  80  Mrs. Marie related
 
 803C9D3C,8 - The current stage name.
 803C9D44,2 - The most recent spawn ID the player spawned from.
@@ -1018,6 +1049,9 @@ Note: See 80352EA0 for details about the layout of blue fog in a given room of E
   And maybe copied back too?
 803F6F1A,2 - Player's current Y rotation.
 
+803F6F1E,1 - Link's current blink timer.
+  When Link's eye .btk animation is changed, this timer is set to a random number from 75-104.
+
 803ED818,2 - Bitfield of currently pressed buttons. (For Pad.c)
 803ED848,4 - Bitfield of currently pressed buttons. (For JUTGamePad.cpp)
   00000001 - D-pad left
@@ -1034,6 +1068,9 @@ Note: See 80352EA0 for details about the layout of blue fog in a given room of E
   00001000 - Start
 803ED84C,4 - Bitfield of buttons pressed this frame. (For JUTGamePad.cpp)
 803F0F30,4 - Bitfield of currently pressed buttons. (For SIBios.c)
+
+803ED83A,1 - If no controller is connected to port 3, this will be 0xFF.
+  This is checked to know whether to show the debug heap display on screen.
 
 803F6A68,4 - Has a pointer to something related to the map select screen maybe?
 
