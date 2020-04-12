@@ -74,6 +74,16 @@ CheckItemCreateHeap
 CheckFieldItemCreateHeap
   reads from the field item resources list (803866B0) and calls CreateItemHeap.
 
+dComIfGs_checkGetItem
+  Checks if the player owns a certain item or not.
+  Only work for certain items. (TODO: document which)
+  r3 - The item ID to check.
+
+dComIfGs_checkGetItemNum
+  Returns the number of a certain item the player owns.
+  Only works for certain items. (TODO: document which)
+  r3 - The item ID to check.
+
 execItemGet
   argument r3 is the item ID. this simply calls the item get function for whatever that item is.
 
@@ -109,7 +119,7 @@ GroundCheck
 itemActionForRupee
   used for field items. calls CrrPos to update its position, which in turn calls GroundCheck.
 
-setDemoData
+daPy_lk_c::setDemoData(void)
   this player function reads the event actions for link, and determines what action to take based on the numbers that are the first 3 chars of the action name.
 
 getWarpAreaGridX
@@ -126,8 +136,9 @@ at_power_check
   Gets the damage an attack should do.
   r3 - Pointer on the stack. The amount of damage to do will be returned by storing it as a byte to [r3+8].
 
-GetTgHitObj
-  This function gets the entity that is in the process of damaging the current entity??
+dCcD_GObjInf::GetTgHitGObj
+  This function returns the damage-dealing hitbox (cCcD_ObjAt) that damaged this entity on this frame, or null for no entity damaging this entity.
+  cCcD_ObjAt+0x10,4 has the bitfield of damage types the hitbox does while cCcD_ObjAt+0x14,1 has the amount of damage it deals.
 
 setDamagePoint
   Sets the amount of damage to do to the player.
@@ -282,6 +293,13 @@ cLib_addCalc__FPfffff
   f3 - maximum amount to change by per call (absolute)
   f4 - minimum amount to change by per call (absolute)
 
+cLib_addCalc2
+  r3 - pointer to the float value to change
+  f1 - 
+  f2 - 
+  f3 - 
+  f4 - 
+
 dKyw_tact_wind_set__Fss
   function to change the wind direction to any angle.
   r3 - ? angle stored to 803E5458. usually 0?
@@ -290,6 +308,14 @@ dKyw_tact_wind_set__Fss
 setNextStageBySclsNum
   r3 - Exit index in the SCLS list
   r4 - Room number for which room to look in the SCLS list for. If this is -1, it will look in the stage's SCLS list instead of the room's.
+
+daPy_lk_c::startRestartRoom(unsigned long, int, float, int)
+  ???
+  r3 - Pointer to the Link entity
+  r4 - 6?
+  r5 - 0xC9?
+  f1 - ?
+  r6 - 1?
 
 setPointRestart
   sets the partner's "restart" position (e.g. if a floormaster grabs them)
@@ -385,6 +411,23 @@ GetTgHitObj__12dCcD_GObjInfFv
 fopMsg_Create__FPv
   creates a message
   breakpoint on 8002A804 and look in r0 for the message ID
+
+fopMsgM_hyrule_language_check
+  Checks if a message should be displayed in Hylian script or regular language. Returns true for Hylian script.
+  r3 - The message ID to check
+
+fopMsgM_itemMsgGet_c::getMesgHeader
+  r3 - ?
+  r4 - The message ID
+  Returns a pointer to the start of the BMG file header ("MESGbmg1")
+
+fopMsgM_itemMsgGet_c::getMessage
+  r3 - ?
+  r4 - Pointer to the BMG file header ("MESGbmg1")
+
+fopMsgM_itemMsgGet_c::getMesgEntry
+  r3 - ?
+  r4 - ?
 
 dComIfG_resLoad(request_of_phase_process_class *, char const *)
   loads a RARC into memory maybe?
@@ -529,10 +572,16 @@ fopAcM_create__FsUlP4cXyziP5csXyzP4cXyzScPFPv_i
   r10 - 0?
 
 fopAcM_createChild__FsUiUlP4cXyziP5csXyzP4cXyzScPFPv_i
+fopAcM_createChild(short, unsigned int, unsigned long, cXyz *, int, csXyz *, cXyz *, signed char, int (*)(void *))
   creates an entity as a child of another entity
   r3 - Actor ID
   r4 - unique ID of the parent entity
   r5 - Params
+  (more args)
+
+fopAcM_createChild(char *, unsigned int, unsigned long, cXyz *, int, csXyz *, cXyz *, int (*)(void *))
+  creates an entity as a child of another entity
+  r3 - Actor name
   (more args)
 
 createAppend__FUlP4cXyziP5csXyzP4cXyzScUi
@@ -640,8 +689,8 @@ JAIZelBasic::seStart(unsigned long, Vec *, unsigned long, signed char, float, fl
     & C0000000 - Some type of special flag?
       0 - Use the sound category specified with the mask 000FF000.
       1 - Maybe invalid?
-      2 - Use sound category 0x10. (For music?)
-      3 - Use sound category 0x11.
+      2 - Use sound category 0x10. (For sequenced music.)
+      3 - Use sound category 0x11. (For streamed music.)
   r5 - 
   r6 - 
   r7 - 
@@ -712,8 +761,43 @@ expandSceneBgmNum
   r4 - Halfword BGM ID read from a BGM info for a spot/island.
   This function returns the BGM ID in a full word format.
   e.g. 0012 -> 80000012
-  If the halfword BGM ID has the highest bit set, it instead returns like this:
+  If the halfword BGM ID has the highest bit set, it instead returns like this (for BGM streams):
   e.g. 8012 -> C0000012
+
+setScene__11JAIZelBasicFllll
+JAIZelBasic::setScene(long, long, long, long)
+  sets the music for the next stage/room the player is about to go into?
+  r3 - 
+  r4 - Spot ID for the stage.
+  r5 - Room number.
+  r6 - 
+  r7 - Override layer number.
+  (more args)
+  This function hardcodes various checks for specific stages based on the spot ID. Here is a list:
+    802AA40C - sea
+    802AA644 - A_mori
+    802AA66C - MajyuE
+    802AA690 - M_DragB
+    802AA724 - kinBOSS
+    802AA7B0 - SirenB
+    802AA83C - kazeB
+    802AA8D0 - M_DaiB
+    802AA964 - Hyroom
+    802AA9AC - Hyrule
+    802AA9F0 - Hyroom
+    802AAA34 - kenroom
+    802AAA98 - Omori
+    802AAADC - Pjavdou
+    802AAB20 - Ekaze
+    802AAB64 - Edaichi
+    802AABA8 - LinkRM
+    802AAC18 - Obombh
+  If the stage is "sea", it also hardcodes a check for a specific island based on the Room number. Here it is:
+    802AA44C - Outset Island
+  Each of these hardcoded checks includes various sub-checks for things like event bits and layer numbers and such to determine if music should be played or not.
+
+checkSeaBgmID
+  returns the expanded BGM ID that should currently be played while sailing
 
 bgmNowBattle
   Starts playing the music for fighting common enemies.
@@ -857,36 +941,6 @@ MtxPosition(cXyz *, cXyz *)
   r4 - vector3 of floats (output)
 
 
-setScene__11JAIZelBasicFllll
-  sets the music for the next stage/room the player is about to go into?
-  r4 - Spot ID for the stage.
-  r5 - Room number.
-  r7 - Override layer number.
-  (more args)
-  This function hardcodes various checks for specific stages based on the spot ID. Here is a list:
-    802AA40C - sea
-    802AA644 - A_mori
-    802AA66C - MajyuE
-    802AA690 - M_DragB
-    802AA724 - kinBOSS
-    802AA7B0 - SirenB
-    802AA83C - kazeB
-    802AA8D0 - M_DaiB
-    802AA964 - Hyroom
-    802AA9AC - Hyrule
-    802AA9F0 - Hyroom
-    802AAA34 - kenroom
-    802AAA98 - Omori
-    802AAADC - Pjavdou
-    802AAB20 - Ekaze
-    802AAB64 - Edaichi
-    802AABA8 - LinkRM
-    802AAC18 - Obombh
-  If the stage is "sea", it also hardcodes a check for a specific island based on the Room number. Here it is:
-    802AA44C - Outset Island
-  Each of these hardcoded checks includes various sub-checks for things like event bits and layer numbers and such to determine if music should be played or not.
-
-
 playerInit__9daPy_lk_cFv
   initializes the player entity and everything related to them
 
@@ -1006,10 +1060,31 @@ createSimpleEmitterID__17JPAEmitterManagerFRCQ29JGeometry8TVec3<f>UsUcUcP34JPACa
   r9 - 
   8025F1EC - this is where the missing particle warning happens. the particle ID in question will be in r21.
 
+daPy_mtxFollowEcallBack_c::makeEmitterColor(unsigned short, float (*)[4], cXyz const *, _GXColor const *, _GXColor const *)
+  Initializes a particle effect that follows the player?
+  r3 - 
+  r4 - The particle ID
+  r5 - 
+  r6 - 
+  r7 - 
+  r8 - 
+
+daPy_mtxPosFollowEcallBack_c::makeEmitterColor(unsigned short, float (*)[4], cXyz const *, csXyz const *, _GXColor const *, _GXColor const *)
+  Initializes a particle effect that follows the player?
+  r3 - 
+  r4 - The particle ID
+  r5 - 
+  r6 - 
+  r7 - 
+  r8 - 
+  r9 - 
+
+
 fopAcM_myRoomSearchEnemy__FSc
 fopAcM_myRoomSearchEnemy(signed char)
-  checks for any enemies in the room and returns a pointer to one of them.
-  this is used by things that want to know if all the enemies in the room are dead.
+  Checks for any enemies in the room and returns a pointer to one of them.
+  This is used by things that want to know if all the enemies in the room are dead.
+  An actor counts as an enemy if its actor type specified in its actor profile is 2 (Enemy).
   r3 - Room number
 
 GetIndex__12cDT_NamePTblCFPCci
@@ -1224,6 +1299,7 @@ daPy_lk_c::execute(void)
   Link's execute function.
   80122760: Copies the transform of Link's head_jnt bone to the katsura.bdl model.
   8012278C: Copies the transform of Link's head_jnt bone to the ??? model.
+  80121B50: Makes Link drop the enemy weapon he's holding when going through a door.
 
 daPy_lk_c::initModel(J3DModel **, int, unsigned long)
   Initializes one of Link's models.
@@ -1249,3 +1325,28 @@ CallbackCreateHeap(fopAc_ac_c *) 	d_a_himo2.o
   800F06B0 - first call to load rope.bti from Always.arc
   800F0774 - second call to load rope.bti from Always.arc
   800F07B8 - third call to load rope.bti from Always.arc
+
+
+dBgS_MoveBgActor::MoveBGCreate(char const *, int, void (*)(dBgW *, void *, cBgS_PolyInfo &, bool, cXyz *, csXyz *, csXyz *), unsigned long)
+  Initializes an actor as having solid DZB collision from a DZB file
+  r3 - Pointer to the actor
+  r4 - Pointer to the arc name containing the DZB collision file
+  r5 - File index of the DZB collision file
+  r6 - MoveBG callback function
+  r7 - Maximum amount of memory that may be needed, or 0 for no maximum.
+
+
+dStage_roomControl_c::getMemoryBlock(int)
+  r3 - Room number?
+  returns a pointer to some MEMA/MECO related heap
+
+
+fopAcM_setStageLayer(void *)
+  Sets an actor as being considered part of the stage, so that it won't unload when Link changes rooms.
+  r3 - Pointer to the actor
+
+
+dStage_roomControl_c::getStatusRoomDt(int)
+  Returns the zone for a given room number.
+  r3 - 
+  r4 - Room number

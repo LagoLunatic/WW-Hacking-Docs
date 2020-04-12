@@ -65,15 +65,22 @@ For entities that have parameters, it also documents their parameters and the co
 
 ### FILI:
   00,4:
+    0x00000001 - Enable fancy dark room lighting?
+    0x00000078 - Index of the dark room lighting type to use in list 803753A4 (dStage_roomControl_c::mDarkStatus)
+      Valid indexes: 0-7
+      Actually used indexes: 0 and 1?
+    0x00007F80 - drawDepth?
     0x000C0000 - Wind type. Affects the strength of wind in this room.
       0 - 0.3 strength.
       1 - 0.6 strength.
       2 - 0.9 strength.
       3 - No wind.
+    0x00100000 - wind related?
     0x1FE00000 - Particle bank ID to load for this stage.
       This is used on the sea, where the stage doesn't specify a particle bank to load (0xFF) and instead each individual room does it.
       The filename of the particle bank to load is:
       "files/res/Particle/Pscene%03d.jpc" % particle_bank_id
+    0x40000000 - Prevent Song of Passing usage (sun and moon are not visible).
 
 ### EVNT:
   13,1: The switch index to check and set.
@@ -1259,25 +1266,57 @@ Cb1: Makar. (d_a_npc_cb1)
         Half Power Master Sword (item 3A) is owned
 
 ### SCOB:
-Salvage: Main salvages that require a chart to see.
-  params & 0xF0000000 - Salvage type. 0 for these chart salvages.
+Salvage, SwSlvg, Salvag2, SalvagN, SalvagE, SalvFM: Salvage points.
+  params & 0xF0000000 - Type.
+    0 - Main salvages that require a chart to see. (Salvage)
+    1 - ??? (Unused)
+    2 - Switch light ring salvage that only appears once a certain switch is set. (For e.g. Big Octos.) (SwSlvg)
+    3 - Normal light ring salvages. (Salvag2)
+    4 - Light ring salvages that only appears at night. (SalvagN)
+    5 - Salvage point where you fish up an old vase that causes a Saltwater Octorok to spawn near you. (SalvagE)
+    6 - Light ring salvages that only appear at night during a full moon. (SalvFM)
   params & 0x00000FF0 - Item ID.
-  params & 0x0FF00000 - Chart index+1 that reveals this salvage.
-  aux_params_2 & 0x00000003 - Duplicate ID of this salvage.
-    On starting a new game, your save file has a random number generated from 0-2 for which set of these salvages you get.
-    On starting new game+, it's always 3.
-SwSlvg: Shipwreck salvages (from Gunboats or Big Octos you defeat).
-  params & 0xF0000000 - Salvage type. 2 for these shipwreck salvages.
-  (maybe SwSlvg is short for SWitch SaLVaGe and it checks the switch set by the enemy when it dies)
-Salvag2: ??? salvages.
-  params & 0xF0000000 - Salvage type. 3 for these ??? salvages.
-SalvagN: Light ring salvages.
-  params & 0xF0000000 - Salvage type. 4 for these light rings.
-SalvagE: ??? salvages.
-  params & 0xF0000000 - Salvage type. 5 for these ??? salvages.
-SalvFM: Light ring salvages that only appear at night.
-  params & 0xF0000000 - Salvage type. 6 for these night-only light rings.
-TagEv: This object acts as a trigger region to cause an event to occur. (d_a_tag_event)
+  params & 0x0000000F - Type of the salvaged object.
+    This is passed as (params & 0x0000FF00) to the STBox on creation.
+    0 - Octorok vase?
+    1 - Chest 1?
+    2 - Chest 2?
+    TODO
+  params & 0x0FF00000 - Varies:
+    For type 0: Chart index+1 that reveals this salvage.
+    For type 1: No effect.
+    For types 2-4: Ocean salvage flag index for having salvaged this chest.
+      If this is 0x1F, it will always appear instead of disappearing after you get it once.
+    For type 5: No effect.
+    For type 6: Which event bit marks this salvage being taken.
+      This event bit will be set after salvaging and is checked to know if it should exist.
+      All of these event bits are cleared once per ingame week, on Friday.
+      0 - 2080
+      1 - 2004
+      2 - 2002
+      3 - 2804
+      4 - 2802
+      5 - 2801
+      6 - 2980
+      7 - 2940
+      8 - 3B01
+      9 - 3C80
+      A - 3C40
+      B - 3C20
+      C - 3C10
+      D - 3C08
+      E - 3C04
+      F - 3C02
+  aux_params_2 & 0x00FF - Varies:
+    For type 0: Duplicate ID of this salvage.
+      On starting a new game, your save file has a random number generated from 0-2 for which set of these salvages you get.
+      On starting new game+, it's always 3.
+      Only has an effect for salvage points that need a chart.
+      Note that the mask for this type is actually (aux_params_2 & 0x0003) instead of (aux_params_2 & 0x00FF).
+    For type 1: No effect.
+    For type 2: Switch to check and not appear until it is set.
+    For types 3-6: No effect.
+TagEv: Trigger region to cause an event to occur. (d_a_tag_event)
   params & 0x000000FF - Type.
     00 - 
     01 - 

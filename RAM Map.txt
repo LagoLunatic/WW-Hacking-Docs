@@ -86,6 +86,15 @@
     This is used by treasure chests and salvage points, passed as argument r7 to drawPointSingle__6dMap_cFUcfffScsUcUcUc
     In the main executable, this value for some unknown entity type is passed as argument r8 to setCollectPoint__6dMap_cFUcUcfffScsUcUcUcUc
 
+803B9218 - List of each REL. (DMC)
+  The actor ID is the index in this list.
+  Each entry is a pointer to the DynamicModuleControl struct for this REL.
+  For actor IDs that are in main.dol and have no REL, the pointer will be 0 instead.
+  Format of each DynamicModuleControl:
+    Each DynamicModuleControl is 0x2C bytes long.
+    0C,4: Pointer to ???
+    1C,4: Pointer to the REL name for this REL (without the .rel extension).
+
 80363120 - List of which files to preload for each stage. (PreLoadInfoT)
   Entry length 0x10.
   00,4: Pointer to the stage name, a string.
@@ -183,7 +192,8 @@ Format of each block of memory in the game heap:
     By pausing the TEV register animation on different keyframes, different rupees have different colors.
   15,1: Padding?
   16,2: Message ID of the item's name.
-    Not sure what this is used for, and not all items have this set.
+    This is used for when you hover over the item on the pause screen.
+    Note that this message ID plus 0xC8/0d200 is the description to be shown when you press A while hovering over it on the pause screen.
   1E,1: ?
   20,2: ?
 803866B0 (3836B0 in main.dol) - List of field item resources. Items that appear freely placed in the world as ACTRs.
@@ -245,8 +255,8 @@ Format of each block of memory in the game heap:
     3 - Down
     4 - Left
 
-8039BC30 - List of message sounds. (JAIZelBasic::charVoiceTable)
-  Entry length 4.
+8039BC30-8039C08F - List of message sounds. (JAIZelBasic::charVoiceTable)
+  Entry length 4. 0x118 entries in total.
   The index in this list is the sound value from a sound command in a message.
   00,2: ?
   02,2: ?
@@ -351,11 +361,12 @@ Format of each block of memory in the game heap:
   The index in this list is the actor ID.
   Each entry is a pointer to something? (e.g. 80ad4e30) Or 0 if it's invalid?
 
-803BDC88-803C2187 - List of "zones"? (mStatus__20dStage_roomControl_c)
+803BDC88-803C2187 - List of zones. (dStage_roomControl_c::mStatus)
   Entry length 0x114.
   The index in this list is the room number.
   There are 0x40 entries in total, the maximum number of rooms a given stage can have.
-  104,1: bitfield relating to room loading??
+  000,4: Pointer to 803754A4 (_15dStage_roomDt_c virtual table)
+  104,1: Bitfield relating to room loading??
     & 01 - Must be 0 before the room will load in?
     & 06 - if nonzero, stop looping over all zones...?
     & 08 - Something checked by treasure chests, in daTbox_c::checkRoomDisp(int)
@@ -363,7 +374,11 @@ Format of each block of memory in the game heap:
     If 08 is not set and 10 is set, the room is considered loaded and treasure chests will be considered active, otherwise not?
   107,1: Zone number? Read by getZoneNo func.
     valid zone numbers are 00-1F
-  10C,4: The entity ID of the room entity for this room.
+  10C,4: The unique entity ID of the room entity for this room. (An instance of fopScnM.)
+
+803754A4,13C - _15dStage_roomDt_c virtual table.
+  This is a list of functions that get or set pointers to each of the DZR/DZS chunk types.
+  e.g. At offset 0xF0 in here is a pointer to dStage_roomDt_c::getFileListInfo, the function that returns a pointer to FILI.
 
 
 =========== 803C4C08: g_dComIfG_gameInfo
@@ -528,6 +543,8 @@ Each inventory slot:
   This can be from 0 to 3. On a new game it's a random number from 0-2, on new game+ it's always 3.
   Each salvage point has four possible locations. Only the location with the duplicate ID corresponding to this value will show up on a given playthrough.
 
+803C4DAC,1 - ???
+
 803C522C - Bitfield of event bits you've seen.
   Byte      Bit 
   803C522C  01  saw tetra fall into the forest of fairies
@@ -585,6 +602,8 @@ bits set during vanilla game in order:
   803C5257  80  TALKED_TO_KORL_AFTER_FH_CUTSCENE
   803C5244  01  WATCHED_DEKU_TREE_CUTSCENE
     this is for killing all chuchus on deku tree's face
+  803C5265  40  TALKED_TO_DEKU_TREE_AFTER_FARORES_PEARL_CUTSCENE
+    this is for having asked the deku tree about the island koroks. it enables the withered trees showing up on the sea chart.
   
   (medli related stuff?)
   803C525A  40
@@ -668,6 +687,7 @@ bits set during vanilla game in order:
   803C523A  08  some flag set by poor mila, and checked by both zunari and her father
   803C5239  04  gave 15 green chu jelly to doc bandam and he now stocks green potions
   803C5239  02  gave 15 blue chu jelly to doc bandam and he now stocks blue potions
+  803C522D  02  watered all the withered trees?
   
   (ganon's tower stuff)
   switch 00 - phantom ganon killed by light arrows
@@ -720,8 +740,8 @@ Stage info format:
     There are 0x80 bits in total.
     These bits are grouped into words.
   14,04: Bitfield of the stage's item pickup flags.
-  18,04: Bitfield of this dungeon's visited rooms. (These might also function as item pickup flags too?)
-  1C - ?
+  18,08: Bitfield of this dungeon's visited rooms.
+    Note that the first 4 bytes of this bitfield can also be used as item pickup flags (flag indexes 20-3F), though this was never done in the vanilla game.
   20,01: Number of small keys you currently have for this dungeon stage.
   21,01: Bitfield of dungeon-specific flags for this dungeon stage.
     0 - Got dungeon map.
@@ -733,14 +753,14 @@ Stage info format:
 
 803C51C8-803C522B - List of bitfields of sunken treasure chest salvaged flags.
   Each sector on the sea has a single short for its bitfield. This means each sector can have a maximum of 16 sunken treasures.
-  There are 0x32 bitfields in total (one for each sector, plus one at the beginning for the unused sector 0).
+  There are 0x32 bitfields in total (one for each sector, plus one at the beginning for room 0).
 
 803C5380-803C53A3 - The currently loaded stage info in the save file.
 803C5380,04 - Bitfield of the current stage's treasure chest open flags.
-803C5384,10 - Bitfield of the current stage's event switches (mem bits).
-803C5394,04 - Bitfield of the current stage's item pickup flags.
-803C5398,04 - Bitfield of the current dungeon's visited rooms. (These might also function as item pickup flags too?)
-803C539C - ?
+803C5384,10 - Bitfield of the current stage's mem bit switches.
+803C5394,04 - Bitfield of the current stage's mem bit item pickup flags.
+803C5398,08 - Bitfield of the current dungeon's visited rooms.
+  Note that the first 4 bytes of this bitfield can also be used as item pickup flags (flag indexes 20-3F), though this was never done in the vanilla game.
 803C53A0,01 - Number of small keys you currently have in the current dungeon.
 803C53A1,01 - Bitfield of dungeon-specific flags for the current dungeon.
   0 - Got dungeon map.
@@ -771,8 +791,9 @@ Stage info format:
     06,2: Bitfield of item pickup flags for this zone.
       This bitfield is zeroed out when you change stages.
     08,2: Padding?
-    0A,40: List of pointers to "zone actors".
-      These are set by the onActor function when an enemy is killed, if its "enemy number" is not FFFF.
+    0A,40: Huge bitfield of "zone actors".
+      The index of a bit in this is the actor's enemy number (officially known as "Set ID").
+      These are set by the onActor function when an enemy is killed, if its enemy number is not FFFF.
       These are temporary enemy death flags. Once this is set, the enemy is dead, even if you go through a door and come back. But it will respawn after a stage transition.
     4A,1: ?
     4B,1: Padding?
@@ -877,22 +898,6 @@ Player's partner's room restart position? ("restart option")
 803CA758,4 - Always has a pointer to the player's partner entity in RAM (e.g. Medli).
 803CA75C,4 - Always has a pointer to the ship entity in RAM (KoRL).
 
-803CA7D7,1 - Related to L-targeting?
-  02 - L-targeting an NPC?
-  04 - ?
-  05 - ?
-  08 - ?
-  0B - ?
-  0C - Holding L and not moving backwards
-  10 - ?
-  12 - Holding L and moving backwards
-  17 - ?
-  1A - L-targeting an enemy? maybe specifically one that can be parried right now?
-  1B - ?
-  1C - ?
-  31 - ?
-  43 - ?
-
 803CA7FF,1 - Affects which place name is shown?
   e.g. if a MESSAGE actor is given a TELOP_ON action with tlpNo=0xD, it will show "Dragon Roost Cavern" on the screen as the place name.
   set by line 80072240
@@ -934,6 +939,32 @@ Player's partner's room restart position? ("restart option")
   3B - Magic staff (from Wizzrobe?)
   3C - Magic staff (from Wizzrobe?)
   (I guess these weapon icons are not used ingame?)
+803CA7D7,1 - What is currently shown on the A button icon.
+  00 - Nothing.
+  02 - "Speak"
+  04 - "Lift"
+  05 - 
+  06 - "Let Go"
+  07 - "Return"
+  08 - "Put Away"
+  0A - "Check"
+  0B - "Open"
+  0C - "Attack"
+  0E - "Throw"
+  10 - 
+  12 - "Jump"
+  17 - "Choose"
+  19 - "Next"
+  1A - Glowing pointy A button icon for Link being able to parry an enemy
+  1B - 
+  1C - "Get In"
+  20 - "Take Photo"
+  21 - "Info"
+  23 - "Fly"
+  27 - "Cancel"
+  2D - Glowing pointy A button icon for Makar planting seeds in soil
+  31 - 
+  43 - 
 803CA7DB,1 - Item equipped on the X button.
 803CA7DC,1 - Item equipped on the Y button.
 803CA7DD,1 - Item equipped on the Z button.
@@ -1034,6 +1065,32 @@ Note: See 80352EA0 for details about the layout of blue fog in a given room of E
 
 803F6A78,1 - Current room number. (mStayNo__20dStage_roomControl_c)
 803F6A79,1 - Previous room number. (mOldStayNo__20dStage_roomControl_c)
+
+803F6B44,4 - Pointer to the data for the current loaded salvage point tags. (daSalvage_c::mTagData_p)
+  Format of that data:
+  01,001: ??? Number of slots in use maybe?
+  04,380(?): List of salvage points.
+    Entry length 0x38. 0x10 entries in total.
+    Note: The code reads from this struct in a slightly strange way, where the 4 bytes from the list header are in the offset for each entry. So if it reads from offset 0x34, that's actually item ID at offset 0x30.
+    00,4: X position.
+    04,4: Y position.
+    08,4: Z position.
+    0C,4: X scale.
+    10,4: Y scale.
+    14,4: Z scale.
+    18,4: "R" (maybe radius?) (float)
+    1C,4: "H" (maybe height?) (float)
+    20,4: "SwitchNo"
+    28,4: "Distance" (float)
+    2C,1: Room number.
+    2D,1: "SaveNo"
+    2E,1: "Type"
+    2F,1: "Kind"
+    30,1: Item ID.
+    31,1: Bitfield of flags.
+      01 - "Used"
+    33,1: "DrawMode" / "Alpha"
+    34,1: "DrawMode"
 
 803F6B5D,1 - Total number of Windfall item pedestals in the current stage.
 803F6B5E,1 - Current number of Windfall item pedestals in the current stage that you've placed an item in.

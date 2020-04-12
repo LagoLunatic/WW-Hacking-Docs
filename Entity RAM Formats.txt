@@ -2,29 +2,48 @@
 Format of entities in RAM:
 
 fopAcM_prm_class (created and returned by f_op_actor_mng::fopAcM_CreateAppend)
-000,4: Parameters.
-010,2: Auxilary parameter.
-012,2: Y rotation.
-014,2: Auxilary parameter 2.
-016,2: "Enemy number" from the ACTR data
-018,1: X scale.
-019,1: Y scale.
-01A,1: Z scale.
-01B,1: Actor GBA type.
-020,1: Actor subtype index.
-021,1: Room number.
-03C,4: Unique ID of this specific entity instance.
+00,4: Parameters.
+04,4: X position.
+08,4: Y position.
+0C,4: Z position.
+10,2: Auxilary parameter.
+12,2: Y rotation.
+14,2: Auxilary parameter 2.
+16,2: "Enemy number" from the ACTR data
+18,1: X scale.
+19,1: Y scale.
+1A,1: Z scale.
+1B,1: Actor GBA type.
+1C,4: ?
+20,1: Actor subtype index.
+21,1: Room number.
+3C,4: Unique ID of this specific entity instance.
   This entity can be found by calling fopAcM_SearchByID__FUiPP10fopAc_ac_c with r3=this ID.
-048,4: Pointer to a callback function?
-04C,4: Pointer to a callback function?
+48,4: Pointer to a callback function?
+4C,4: Pointer to a callback function?
 
 fopAc_ac_c (entity created by f_op_actor_mng::createAppend):
 Size: 0x290 bytes.
 004,4: Unique ID of this specific entity instance.
   This entity can be found by calling fopAcM_SearchByID__FUiPP10fopAc_ac_c with r3=this ID.
 008,2: Actor ID.
+010,4: Pointer to this actor class's actor profile. (f_pc_profile__Profile_Actor)
+0AC,4: Pointer to the fopAcM_prm_class used to create this actor?
 0B0,4: Parameters.
-0EC,4: Pointer to something in the loaded REL file for this entity?
+0C0,4: Entity type?
+  09130005 - Normal actor? Maybe an instance of fopAc_ac_c as opposed to its parent classes?
+0EC,4: Pointer to a list of pointers to methods for this actor class. (profile_method_class)
+  This is copied from the actor class's actor profile+0x24,4.
+  In order:
+    Create
+    Delete
+    Execute
+    IsDelete
+    Draw
+    ???
+    ???
+    ???
+Pointer to something in the loaded REL file for this entity?
   Go to this pointer+8, and read the pointer there. That has a pointer to the execute code for this entity.
 0F0,4: Pointer to the game heap memory allocated for this entity by fopAcM_entrySolidHeap? (instance of JKRHeap)
   This pointer is 0x10 bytes after the start of the free space block that was chosen for this entity.
@@ -33,34 +52,68 @@ Size: 0x290 bytes.
 194,4: Color K0
 198,4: Color K1
 19C,8: Fog color
-1BC,2: "Enemy number" from the ACTR data
+1BC,2: Enemy number from the ACTR data.
+  This is officially known as "Set ID", and the bitfield this is an index in is known as the "zone actors" bitfield.
+1BE,1: Type of actor.
+  This is copied from the actor class's actor profile+0x2C,1.
+  Possible values:
+    0 - Normal actor
+    1 - The player
+    2 - Enemy
+    3 - Wildlife and various miscellaneous objects
+      Morths, crabs, falling stairs, pigs, boko buds, Helmaroc King in cutscenes, wooden platforms in Gohma fight
+    4 - Certain NPCs (not all)
+  Note that only 2 (Enemy) seems to have an effect. The other values never seem to be checked.
+1BF,1: Affects how this actor is culled.
+  This is copied from the actor class's actor profile+0x2D,1.
+  00 - 50x50x50 bounding box (origin at bottom center).
+  00-0D - Standard bounding boxes.
+  0E - Custom bounding box. (Set via fopAcM_setCullSizeBox)
+  0F-16 - Standard bounding spheres.
+  17 - Custom bounding sphere. (Set via fopAcM_setCullSizeSphere)
 1C1,1: Actor subtype index.
 1C2,1: Actor GBA type.
-1C4,4: Bitfield?
-  & 00000020 - should be drawn on minimap
+1C4,4: Bitfield. (fopAcM__Status)
+  This is copied from the actor class's actor profile+0x28,4.
+  & 00000020 - Should be drawn on minimap (?)
   & 00000100 - used by miniblins
+  & 00000400 - Is frozen
+  & 00000800 - (set for actors in events that have staff type 1?)
+  & 00008000 - (set for actors in events?)
+  & 00020000 - Updates even when game is paused.
+    This has a side effect for enemies where they effectively have very few iframes and take damage multiple times per attack.
   & 04000000 - Is a boss or mini-boss (?)
-1D0,4: Desired X pos to gradually move towards...?
-1D4,4: Desired Y pos to gradually move towards...?
-1D8,4: Desired Z pos to gradually move towards...?
-1DC,2: Auxilary parameter.
-1DE,2: Y rotation.
-1E0,2: Auxilary parameter 2.
-1E2,1: Room number.
-1F0,2: Auxilary parameter. (duplicate?)
-1F2,
-1F4,2: Auxilary parameter 2. (duplicate?)
-1F6,1: Room number.
-1F8,4: X pos.
-1FC,4: Y pos.
-200,4: Z pos.
-204,2: Auxilary parameter. (duplicate?)
-206,2: Y rotation. (duplicate?)
-208,2: Auxilary parameter 2. (duplicate?)
-20A,1: Room number.
-20C,2: Auxilary parameter or X rotation??
-20E,2: Y rotation. (duplicate?)
-210,2: Auxilary parameter 2 or Z rotation??
+  & 08000000 - (something set by enemy_ice)
+1D0,14: Previous transform.
+  1D0,4: Previous X pos.
+  1D4,4: Previous Y pos.
+  1D8,4: Previous Z pos.
+  1DC,2: Previous X rotation (auxilary parameter 1).
+  1DE,2: Previous Y rotation.
+  1E0,2: Previous Z rotation (auxilary parameter 2).
+  1E2,1: Previous room number.
+  1E3,1: Previous ? (unused?)
+1E4,14: Current transform.
+  1E4,4: Current X pos.
+  1E8,4: Current Y pos.
+  1EC,4: Current Z pos.
+  1F0,2: Current X rotation (auxilary parameter 1).
+  1F2,2: Current Y rotation.
+  1F4,2: Current Z rotation (auxilary parameter 2).
+  1F6,1: Current room number.
+  1F7,1: Current ? (unused?)
+1F8,14: Next transform.
+  1F8,4: Next X pos.
+  1FC,4: Next Y pos.
+  200,4: Next Z pos.
+  204,2: Next X rotation (auxilary parameter 1).
+  206,2: Next Y rotation.
+  208,2: Next Z rotation (auxilary parameter 2).
+  20A,1: Next room number.
+  20B,1: Next ? (unused?)
+20C,2: X rotation (auxilary parameter 1).
+20E,2: Y rotation.
+210,2: Z rotation (auxilary parameter 1).
 214,4: X scale.
 218,4: Y scale.
 21C,4: Z scale.
@@ -156,6 +209,7 @@ For Link:
 0554,2: The index of the face the player is currently colliding with.
   This is an index in the currently loaded .dzb file's list of faces.
 25BC,4: The player's true speed?
+3484,4: Related to what's on the A button icon...?
 34C8,1: Bitfield of pressed buttons.
   01 - A
   02 - B
@@ -182,8 +236,8 @@ For enemies:
   [Varies] depends on the enemy. To determine what it is for a particular enemy, find where it calls 80242D04 and check r4. That has the varying pointer.
   The [Varies] seems to be an instance of cCcD_Obj
 
-For weapons:
-010,4: Bitfield of damage types this weapon does.
+For cCcD_ObjAt (damaging dealing hitbox):
+010,4: Bitfield of damage types this hitbox does.
   00000002 - Sword.
   00000008 - Enemy weapon wielded by an enemy?
   00000020 - Bombs.
@@ -193,6 +247,7 @@ For weapons:
   00000200 - fire? (checked by warp pots, wooden fences) (on for red bubbles)
   00000400 - Bokoblin scimitar.
   00000800 - ? (winged mothulas do this type of damage)
+  00002000 - ? (peahats do this type of damage?)
   00004000 - Normal arrows.
   00008000 - Hookshot.
   00010000 - Skull hammer. (also Darknut sword, while wielded by a Darknut?)
@@ -207,7 +262,7 @@ For weapons:
   08000000 - Grappling hook.
   10000000 - Moblin spear.
   20000000 - Phantom Ganon sword.
-  These weapon entities seem to be instances of cCcD_Obj as well
+014,1: Amount of damage this hitbox deals.
 
 For the enemy HP bar entity:
 58C,4: Width of the red HP bar? In pixels, maybe?
