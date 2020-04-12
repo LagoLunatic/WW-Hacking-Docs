@@ -1,0 +1,23 @@
+
+Root:
+  The main memory heap.
+  All the other heaps take from this one, so this one should always have 0 bytes free.
+System:
+  (unknown)
+Zelda:
+  Total size: (varies)
+  Used for actor instances (e.g. instances of fopAc_ac_c and its child classes).
+  When taking a picture with the Picto Box, it uses up about 50kb of space on this heap for a frame or two.
+  This generally doesn't have issues being filled up, as actor instances are not that large. If you placed a lot of actors in a single room, you would likely run into issues with Game being filled up before Zelda.
+  Note: Expanding the size of main.dol (e.g. to add custom code to it) will eat into the Zelda heap. This is because the Zelda heap is allocated last, and just takes however much memory is left over that the other heaps didn't use.
+Game:
+  Total size: 0x2CE800
+  Used for instances of other things besides actors.
+  This includes actor models, actor animations, and just general calls to allocate memory (via the new operator or JKRHeap::alloc).
+  This tends to run into issues with free space when there are too many actors placed, or if their models are too complex.
+Archive:
+  Total size: 0xA51400
+  Used to load RARC archives.
+Command:
+  Total size: 0x1000 bytes
+  (unknown)
