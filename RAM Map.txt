@@ -48,8 +48,8 @@
 
 8035C36C-8035C61F - List of Link's texture animations. (daPy_lk_c::mTexAnmIndexTable)
   Entry length 4. 0xAD entries in total.
-  00,2: File ID of the BTP animation from LkAnm.arc to play. (Swaps Link's facial textures out.)
-  02,2: File ID of the BTK animation from LkAnm.arc to play. (Scrolls Link's pupil UVs around.)
+  00,2: File index of the BTP animation from LkAnm.arc to play. (Swaps Link's facial textures out.)
+  02,2: File index of the BTK animation from LkAnm.arc to play. (Scrolls Link's pupil UVs around.)
 
 8035F9B8-8035F9F7 - List of Ballad of Gales warp destinations.
   Entry length 7. There are 9 entries in total.
@@ -180,12 +180,12 @@ Format of each block of memory in the game heap:
   00,4: Pointer to a string, the name of the .arc containing this item's model.
   04,4: Pointer to a string. Filename of the item icon to show in the inventory for this item.
     Item icon textures are stored in: /files/res/Msg/itemicon.arc
-  08,2: File ID within the .arc of this item's 3D model.
-  0A,2: File ID within the .arc of this item's texture animation (BTK).
+  08,2: File index within the .arc of this item's 3D model.
+  0A,2: File index within the .arc of this item's texture animation (BTK).
   0C,2: (equivalent of 08,2 for field items)
-  0E,2: File ID within the .arc of this item's TEV register animation (BRK).
+  0E,2: File index within the .arc of this item's TEV register animation (BRK).
   10,2: (equivalent of 0C,2 for field items)
-  12,2: File ID within the .arc of this item's bone animation (BCK)...? TODO check if this is used
+  12,2: File index within the .arc of this item's bone animation (BCK)...? TODO check if this is used
   14,1: Keyframe index in the TEV register animation to use.
     This is used for rupees to give them a different color.
     All rupees have the same model and texture, and have the same TEV register animation that simply cycles through all the different colors.
@@ -200,12 +200,12 @@ Format of each block of memory in the game heap:
   Entry length 0x1C.
   Format:
   00,4: Pointer to a string, the name of the .arc containing this item's field model.
-  04,2: File ID within the .arc of this item's 3D model.
-  06,2: File ID within the .arc of this item's texture animation (BTK).
+  04,2: File index within the .arc of this item's 3D model.
+  06,2: File index within the .arc of this item's texture animation (BTK).
   08,2: 
-  0A,2: File ID within the .arc of this item's TEV register animation (BRK).
+  0A,2: File index within the .arc of this item's TEV register animation (BRK).
   0C,2: 
-  0E,2: File ID within the .arc of this item's bone animation (BCK).
+  0E,2: File index within the .arc of this item's bone animation (BCK).
   10,1: Keyframe index in the TEV register animation to use.
     This seems unused - the equivalent value in the item resources is instead used even for field items.
   18,2: 
@@ -1008,8 +1008,8 @@ Backup inventory data used by recollection bosses in order to restore the player
   1C,04: Pointer to ???
   20,04: Pointer to a list of files in this archive.
     Each entry in the list is a pointer the file loaded in memory.
-    The index in this list is the file ID from the RARC.
-    You can set a read breakpoint on the pointer for a particular file ID in a particular loaded archive in order to find what is calling getRes to load that file when.
+    The index in this list is the file index from the RARC.
+    You can set a read breakpoint on the pointer for a particular file index in a particular loaded archive in order to find what is calling getRes to load that file when.
 
 =========== 803E1DC7: End of dRes_control_c
 

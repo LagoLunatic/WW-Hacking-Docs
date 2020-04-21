@@ -192,15 +192,18 @@ For Link:
 0330,4: Pointer to Link's katsura.bdl model.
 0334,4: Pointer to Link's yamu.bdl model.
 0954,4: Pointer to Link's hands.bdl model.
+0958,4: Pointer to Link's currently equipped sword model (same as either 095C,4 or 0960,4).
 095C,4: Pointer to Link's swgripa.bdl model.
 0960,4: Pointer to Link's swgripms.bdl model.
 097C,4: Pointer to Link's podms.bdl model.
+0980,4: Pointer to Link's currently equipped shield model (same as either 0984,4 or 0988,4).
 0984,4: Pointer to Link's sha.bdl model.
 0988,4: Pointer to Link's shms.bdl model.
 2E7C,4: Pointer to Link's ymsls00.bdl model.
-2E84,4: Pointer to Link's hboots.bdl model (either left or right foot, not sure which).
-2E88,4: Pointer to Link's hboots.bdl model (either left or right foot, not sure which).
+2E84,4: Pointer to Link's hboots.bdl model (for the right foot).
+2E88,4: Pointer to Link's hboots.bdl model (for the left foot).
 2E8C,4: Pointer to Link's pring.bdl model.
+2E98,4: Pointer to Link's telescope.bdl model.
 2F14,4: Pointer to Link's suimen_munya.bdl model.
 2F1C,4: Pointer to Link's yuchw00.bdl model.
 2F38,4: Pointer to Link's ybafo00.bdl model.

@@ -305,7 +305,7 @@ dKyw_tact_wind_set__Fss
   r3 - ? angle stored to 803E5458. usually 0?
   r4 - wind direction. stored to 803E545A.
 
-setNextStageBySclsNum
+dLib_setNextStageBySclsNum
   r3 - Exit index in the SCLS list
   r4 - Room number for which room to look in the SCLS list for. If this is -1, it will look in the stage's SCLS list instead of the room's.
 
@@ -1298,7 +1298,7 @@ daPy_lk_c::draw(void)
 daPy_lk_c::execute(void)
   Link's execute function.
   80122760: Copies the transform of Link's head_jnt bone to the katsura.bdl model.
-  8012278C: Copies the transform of Link's head_jnt bone to the ??? model.
+  8012278C: Copies the transform of Link's head_jnt bone to the yamu.bdl model.
   80121B50: Makes Link drop the enemy weapon he's holding when going through a door.
 
 daPy_lk_c::initModel(J3DModel **, int, unsigned long)
