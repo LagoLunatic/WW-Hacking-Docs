@@ -361,14 +361,14 @@ Format of each block of memory in the game heap:
   The index in this list is the actor ID.
   Each entry is a pointer to something? (e.g. 80ad4e30) Or 0 if it's invalid?
 
-803BDC88-803C2187 - List of zones. (dStage_roomControl_c::mStatus)
+803BDC88-803C2187 - List of room controls. (related to zones?) (dStage_roomControl_c::mStatus)
   Entry length 0x114.
   The index in this list is the room number.
   There are 0x40 entries in total, the maximum number of rooms a given stage can have.
   000,4: Pointer to 803754A4 (_15dStage_roomDt_c virtual table)
   104,1: Bitfield relating to room loading??
     & 01 - Must be 0 before the room will load in?
-    & 06 - if nonzero, stop looping over all zones...?
+    & 06 - if nonzero, stop looping over all room controls...?
     & 08 - Something checked by treasure chests, in daTbox_c::checkRoomDisp(int)
     & 10 - Something checked by treasure chests, in daTbox_c::checkRoomDisp(int)
     If 08 is not set and 10 is set, the room is considered loaded and treasure chests will be considered active, otherwise not?
@@ -412,7 +412,7 @@ Format of each block of memory in the game heap:
 803C4C1B,1 - Max magic meter/MP.
 803C4C1C,1 - Current magic meter/MP.
 
-803C4C44-803C4C58 - Inventory.
+803C4C44-803C4C58 - Inventory. (dSv_player_item_c)
   Controls which items are in which slots on the inventory screen. Each slot is one byte.
   If the byte is FF it means no item is in the slot.
   Otherwise the byte is the item ID of the item in that slot.
@@ -777,26 +777,24 @@ Stage info format:
   Dan bits are cleared when changing stages to a stage that has a stage info ID that is different from the stage you were in previously.
   So as long as you stay within a single dungeon for example, dan bits will be remembered, even if you change stages (like going to the miniboss room and back).
 
-803C53B0,1 - ??? Something related to zones? Maybe the number of zones that are currently initialized?
-803C53B1,1 - Padding?
-803C53B2 - List of zones.
+803C53B0 - List of zones. (dSv_zone_c)
   These are grouped into halfwords.
   Each zone is 0x4C bytes long.
   The index of the zone in this list is returned by the getZoneNo func.
   Format of each zone:
-    00,6: Bitfield of zone bit switches for this zone.
+    00,1: Room number.
+    01,1: Padding?
+    02,6: Bitfield of zone bit switches for this zone.
       Grouped into 3 halfwords.
       All 3 of these halfwords are zeroed out when you change stages.
       The 3rd halfword is zeroed out when you change rooms as well (the one at 04,2).
-    06,2: Bitfield of item pickup flags for this zone.
+    08,2: Bitfield of item pickup flags for this zone.
       This bitfield is zeroed out when you change stages.
-    08,2: Padding?
-    0A,40: Huge bitfield of "zone actors".
+    0A,2: Padding?
+    0C,40: Huge bitfield of "zone actors".
       The index of a bit in this is the actor's enemy number (officially known as "Set ID").
       These are set by the onActor function when an enemy is killed, if its enemy number is not FFFF.
       These are temporary enemy death flags. Once this is set, the enemy is dead, even if you go through a door and come back. But it will respawn after a stage transition.
-    4A,1: ?
-    4B,1: Padding?
 
 803C53B6 - Bit 0001 is for if you're currently in the Phantom Ganon fight?
 
@@ -869,7 +867,7 @@ Player's partner's room restart position? ("restart option")
 
 803C9EA0,1 - related to events
 803C9EA1,1 - related to events
-803C9EA2,1 - related to events
+803C9EA2,1 - Some state relating to events. (mCheckState of dEvt_control_c)
   0 - not in an event
   1 - in an event, black bars above and below screen, Link cannot move
   2 - in an event, maybe for opening chests?
@@ -889,12 +887,13 @@ Player's partner's room restart position? ("restart option")
   There are 0x2800 spots for flags in total. They take up 0x500 bytes.
   These bits are grouped into words.
 
+===== 803CA410: dAttention_c
 803CA410,4 - Always has a pointer to the player entity in RAM. (for dAttention_c)
   This refers not only to Link, but to Medli/Makar/Tower Servant/seagull when you're controlling them.
 
 803CA74C,4 - Always has a pointer to the player entity in RAM. (for dComIfG_play_c)
   This refers not only to Link, but to Medli/Makar/Tower Servant/seagull when you're controlling them.
-803CA754,4 - Always has a pointer to the Link entity in RAM. (for dComIfG_inf_c)
+803CA754,4 - Always has a pointer to the Link entity in RAM. (for dComIfG_play_c)
 803CA758,4 - Always has a pointer to the player's partner entity in RAM (e.g. Medli).
 803CA75C,4 - Always has a pointer to the ship entity in RAM (KoRL).
 
@@ -929,6 +928,7 @@ Player's partner's room restart position? ("restart option")
 
 803CA7D5,1 - What is currently shown on the R button icon?
 803CA7D6,1 - What is currently shown on the B button icon.
+  06 - "Let Go" (e.g. flying as Makar)
   07 - "Return"
   35 - Player's current sword (based on the bitfield at 803C4CBC)
   36 - "Defend"
@@ -938,6 +938,7 @@ Player's partner's room restart position? ("restart option")
   3A - Magic staff (from Wizzrobe?)
   3B - Magic staff (from Wizzrobe?)
   3C - Magic staff (from Wizzrobe?)
+  3E - Do not display the B button icon at all (e.g. for playing as Makar and standing on the ground)
   (I guess these weapon icons are not used ingame?)
 803CA7D7,1 - What is currently shown on the A button icon.
   00 - Nothing.
@@ -965,6 +966,7 @@ Player's partner's room restart position? ("restart option")
   2D - Glowing pointy A button icon for Makar planting seeds in soil
   31 - 
   43 - 
+803CA7D8,1 - ??
 803CA7DB,1 - Item equipped on the X button.
 803CA7DC,1 - Item equipped on the Y button.
 803CA7DD,1 - Item equipped on the Z button.
@@ -1062,6 +1064,8 @@ Note: See 80352EA0 for details about the layout of blue fog in a given room of E
   These can't be edited easily. This list in RAM isn't copied directly from main.dol. Instead, the unique float values are around 803FAE58, and there is a function (__ct__9dMf_HIO_cFv) which copies the unique float values to their appropriate positions in the actual list.
 
 803F660C,4 - Bitfield of what buttons need to be pressed in order to reset the game (X+B+Start).
+
+803F69D4,4 - Bitfield of which actor status bits should not be allowed to update or draw this frame?
 
 803F6A78,1 - Current room number. (mStayNo__20dStage_roomControl_c)
 803F6A79,1 - Previous room number. (mOldStayNo__20dStage_roomControl_c)

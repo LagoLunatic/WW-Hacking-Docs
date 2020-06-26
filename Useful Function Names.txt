@@ -438,10 +438,14 @@ dRes_control_c::getRes(char const *, long, dRes_info_c *, int)
 getRes__14dRes_control_cFPCclP11dRes_info_ci
   loads a resource from a RARC
   r3 - Pointer to the filename of the arc (without the .arc)
-  r4 - File ID of the file to load.
+  r4 - File index of the file to load.
   r5 - 0x803E0BC8 (Pointer to the string "System")
   r6 - ??? 0x40
   returns a pointer to the loaded resource
+
+dRes_control_c::getIDRes
+  loads a resource from a RARC based on the file ID
+  r4 - File ID
 
 dRes_control_c::getRes(char const *, char const *, dRes_info_c *, int)
 getRes__14dRes_control_cFPCcPCcP11dRes_info_ci
@@ -455,7 +459,7 @@ getRes__14dRes_control_cFPCcPCcP11dRes_info_ci
 JASystem::ResArcLoader::getResSize( (JKRArchive *, unsigned short))
   Returns the filesize of a file in a RARC.
   r3 - 
-  r4 - File ID of the file.
+  r4 - File index of the file.
 
 JKRArchive::readTypeResource(void *, unsigned long, unsigned long, char const *, JKRArchive *)
   r3 - 
@@ -478,7 +482,10 @@ set__19dSv_player_priest_cFUcR4cXyzsSc
   sets the position of the player's partner (e.g. Makar) in the save file.
 
 screenSetTr__13dMenu_Fmap2_cFv
-  something related to drawing triforce shards on the in-credible chart
+dMenu_Fmap2_c::screenSetTr(void)
+  Initializes the IN-credible Chart.
+  This includes setting the visiblity of the triforce shard markers and such.
+  It calls dMenu_Fmap2_c::isOpenCollectMapTriforce at 801C0A60 to check if you have each triforce chart opened and deciphered.
 
 checkMarkCheck1__12dMenu_Fmap_cFv
   handles making the blue quest markers appear on the sea chart (early game)
@@ -530,6 +537,7 @@ dComIfGp_setNextStage(char const *, short, signed char, signed char, float, unsi
   r9 - Wipe type, affects the screen fade out type
     0 - fade whole screen to white
     1 - fade whole screen to black
+    9 - 
     B - fade letterboxed part of the screen to white (not the black borders at the top and bottom)
 
 init__20dSeaFightGame_info_cFii
@@ -942,7 +950,14 @@ MtxPosition(cXyz *, cXyz *)
 
 
 playerInit__9daPy_lk_cFv
-  initializes the player entity and everything related to them
+daPy_lk_c::playerInit
+  Initializes the Link actor.
+  There are several assertions starting at 80124F88:
+    zon_cnt <= 4
+    zon_cnt == 4
+    zoff_none_cnt == 4
+    zoff_blend_cnt == 4
+  These check to be sure a certain number of Link's materials have certain properties set, such as ZCompLoc.
 
 Set__8dCcD_CpsFRC11dCcD_SrcCps
   initializes part of an entity that can deal damage...?
@@ -1102,19 +1117,33 @@ fopAcM_getProcNameString__FP10fopAc_ac_c
   returns r3 - Pointer to the actor name
 
 fopAcM_entrySolidHeap(fopAc_ac_c *, int (*)(fopAc_ac_c *), unsigned long)
-  gets some memory on the GAME heap and initializes an entity.
-  this function stores a pointer to the start of the memory block to [entity+0xF0]
-  in order to know how much memory actually gets used, it first temporarily allocates an amount of memory from a block equal to the amount of memory specified in r5, the maximum that may be needed for this entity.
-  then it runs the callback function so the entity initializes itself, and lets it use as much of the allocated memory as it wants, and then sees how much space that used, and remarks the space in the block that WASN'T used to be free again.
+  Allocates some memory from the Game heap and initializes an entity.
+  This function stores a pointer to the start of the memory block to [entity+0xF0].
+  In order to know how much memory actually gets used, it first temporarily allocates an amount of memory from a block equal to the amount of memory specified in r5, the maximum that may be needed for this entity.
+  Then it runs the callback function so the entity initializes itself, and lets it use as much of the allocated memory as it wants, and then sees how much space that used, and remarks the space in the block that WASN'T used to be free again.
+  If r5 is not 0, it will give the entity the smallest free block of memory available that is large enough for the entity to use (specifically, a chunk has to be at least r5+0x90 bytes large if you don't count the 0x10 byte block header, or r5+0xA0 bytes large if you do).
+  If r5 is 0, it gives the entity the largest contiguous free block of memory to work with - so it doesn't have to worry about hitting some arbitrary maximum, but on the downside this can potentially worsen memory fragmentation if the entity is one that stays loaded even when changing rooms (e.g. background island LoD models).
   if argument r5 is 0, then it seems to just allocate the entirety of the biggest block temporarily.
   r3 - Entity pointer
   r4 - Callback function for this entity to initialize itself
   r5 - Maximum amount of memory that may be needed, or 0 for no maximum.
 
+JKRHeap::alloc(unsigned long, int, JKRHeap *)
+  Allocates some memory out of a heap.
+  r3 - The amount of memory to allocate.
+  r4 - Affects how the memory is allocated?
+    Specifics might depend on the exact class of the heap.
+    For JKRExpHeaps:
+      If negative, allocate from tail. Otherwise, allocate from head.
+      If the absolute value is > 4, it will be passed as argument r5 to the overloaded versions of allocFromHead/allocFromTail.
+      If the absolute value is <= 4, no argument r5 will be passed, it uses the non-overloaded versions.
+  r5 - Pointer to a JKRHeap (or child class)
+    If this pointer is 0, it will use the current heap instead (803F772C - JKRHeap::sCurrentHeap)
+
 daPy_lk_c::loadTextureAnimeResource(unsigned long, int)
   loads a .btp animation (facial texture animation) into memory for Link to use.
   r3 - Pointer to the player entity
-  r4 - File ID of the .btp animation inside LkAnm.arc
+  r4 - File index of the .btp animation inside LkAnm.arc
   r5 - 0?
   returns r3 - Pointer to the loaded .btp animation
 
@@ -1305,15 +1334,25 @@ daPy_lk_c::initModel(J3DModel **, int, unsigned long)
   Initializes one of Link's models.
   r3 - Pointer to the Link entity.
   r4 - Pointer to where in the Link entity the pointer to this model should be stored.
-  r5 - File ID of the model in Link.arc.
+  r5 - File index of the model in Link.arc.
   r6 - 0x37221222 (what is this...?)
+
+daPy_lk_c::setItemModel(void)
+  Handles updating the transformation matrices of Link's item models to follow Link's main model.
+  e.g. 8010660C and 80106628 copy the transformation matrices from cl.bdl's elbow joints to the joints of the pring.bdl model.
 
 daPy_lk_c::setTextureAnime(unsigned short, int)
 
 daPy_lk_c::loadTextureScrollResource(unsigned long, int)
   r3 - Pointer to the Link entity.
-  r4 - File ID of the .btk animation to load from LkAnm.arc.
+  r4 - File index of the .btk animation to load from LkAnm.arc.
   r5 - 0?
+
+daPy_lk_c::entryDLSetLight
+  sets lighting for one of link's models
+  r3 - Pointer to the Link actor.
+  r4 - Pointer to the model.
+  r5 - ?
 
 daPy_matAnm_c::calc( const(J3DMaterial *))
   Updates the positioning of Link's pupils. (May handle other textures as well.)
@@ -1350,3 +1389,34 @@ dStage_roomControl_c::getStatusRoomDt(int)
   Returns the zone for a given room number.
   r3 - 
   r4 - Room number
+
+
+fpcBs_Create(short, unsigned int, void *)
+  Begins creating an actor instance.
+  r3 - Actor ID
+  r4 - 
+  r5 - 
+
+
+mDoMch_Create(void)
+  Initializes the game's memory heaps.
+  8000C844: Hardcodes the size of the Zelda heap as (total_free_space-0xD20C00). In other words, it effectively hardcodes the combined size of the other 3 below heaps. If you change the size of one of the below, change this one as well.
+  8000C9D0: Hardcodes the size of the Command heap (0x1000).
+  8000C9DC: Hardcodes the size of the Archive heap (0xA51400).
+  8000C9EC: Hardcodes the size of the Game heap (0x2CE800).
+
+dEvt_control_c::moveApproval
+  Checks if an actor should be allowed to execute this frame.
+  r3 - 803C9DE0
+  r4 - The actor
+  Returns:
+    0 - It should definitely not execute
+    1 - It should conditionally execute, depending on:
+      fopAc_ac_c::stopStatus
+      Bit 00000080 of the actor+0x1C4,4 bitfield
+    2 - It should definitely execute
+
+BigLittleChange(unsigned long)
+  Swaps a 32-bit integer's endianness between big and little (reverses the order of the 4 bytes).
+  This is used when communicating with the GBA via the link cable, because the GC is big endian while GBA is little endian.
+  r3 - The integer

@@ -455,15 +455,15 @@ c_green, c_red, c_blue, c_black, c_kiiro: ChuChu. (d_a_cc)
      0 - Green
      1 - Red
      2 - Blue
-     3 - Black
+     3 - Dark
      4 - Yellow
      A - Switches itself to 0 (Green), and overrides its range with 60000.0.
      B - Switches itself to 1 (Red), and overrides its range with 60000.0.
      C - Switches itself to 2 (Blue), and overrides its range with 60000.0.
-     D - Switches itself to 3 (Black), and overrides its range with 60000.0.
+     D - Switches itself to 3 (Dark), and overrides its range with 60000.0.
      E - Switches itself to 4 (Yellow), and overrides its range with 60000.0.
      F - Switches itself to 1 (Red), overrides its range with 60000.0, and also makes it vulnerable to dying from things it normally wouldn't like Hookshot, Boomerang, and Grappling Hook.
-     The purpose of the duplicate A-E types is for Wizzrobe spawning - most of the ChuChus spawned by Wizzrobes have their type randomly selected (Green, Red, Yellow, MAYBE Black??), but ones with the A-E type specified will always spawn as that type, with no randomness.
+     The purpose of the duplicate A-E types is for Wizzrobe spawning - most of the ChuChus spawned by Wizzrobes have their type randomly selected (Green, Red, Yellow, MAYBE Dark??), but ones with the A-E type specified will always spawn as that type, with no randomness.
   params & 0x00FF0000 - This number multiplied by 10.0 is used as a range within it notices the player.
     00 or FF:
       If behavior type is 1, these default to a range of 1200.0.
@@ -476,7 +476,7 @@ c_green, c_red, c_blue, c_black, c_kiiro: ChuChu. (d_a_cc)
   FFFF04FF - Yellow ChuChu in first room of TotG.
   C0FF0001 - Green ChuChu in WT.
   FF500101 - Red ChuChu in DRC.
-  FF460300 - Black ChuChu in ET.
+  FF460300 - Dark ChuChu in ET.
   FFFF01FF - Red ChuChu in ChuChu cave.
 Hhbot1N: Heavy switch you must depress with the iron boots. (d_a_obj_swheavy)
   params & 07000000 - Type maybe?
