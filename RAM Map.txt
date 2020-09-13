@@ -270,6 +270,11 @@ Format of each block of memory in the game heap:
     105: Aryll: "Hoyyyy!"
     106: Aryll: "Haiiii~!"
 
+8039C090-8039C21F - List of Link voices. (JAIZelBasic::linkVoiceTable)
+  Entry length 8. 0x32 entries in total.
+  The index in this list is the link voice index (argument r4 to daPy_lk_c::voiceStart).
+  00,1: The SE index of the voice sound effect. (Voices are in category 1.)
+
 8039C280-8039C2E3 - List of 1st dynamic scene waves. (BGM related) (m_dy_wave_set_1st__11JAIZelBasic)
   Entry length 2. 0x32 entries in total.
   1st dynamic scene wave index is an index in this list.
@@ -297,6 +302,19 @@ Format of each block of memory in the game heap:
   Each entry is 4 bytes long. 0x78 entries in total.
   Each entry is a pointer to a string that is a stage name.
   The "spot ID" for a particular stage is the index of that stage's name in this list +1.
+
+803A2F05,1 - The Sea Floor Group Info of the DZB collision group Link is currently located above, used for audio-related purposes. (Officially called "GrpSoundId".)
+  If 0, Link is not above the sea floor. Sea related music will not play. (Except for room 0 of the sea - that's always considered the sea floor.)
+  Otherwise, it's a bitfield as follows:
+  & 3F - The room ID of the sea sector Link is in. This controls
+  & 40 - Link is above the Inner Sea of a sector's sea floor.
+  & 80 - Link is above the Outer Edge of a sector's sea floor.
+  If neither &40 nor &80 are set, Link is instead above the Inner Edge of a sector's sea floor.
+  Definitions of the different types of sea floor are as follows:
+    "Inner Sea": The center of a sector's sea floor, not on the border. (Collision group named "soko".)
+    "Inner Edge": The inner border of a sector's sea floor. (Collision group named "soko_uti".)
+    "Outer Edge": The outer border of a sector's sea floor. (Collision group named "soko_soto".)
+    "Outer Sea": Part of the sea floor that is not specific to any sector, is part of room 0 of the sea and is between sectors.
 
 803A2F10,4 - Might be what the next scene music to play should be?
   If this is 0, music does not get played on Windfall.
@@ -963,6 +981,7 @@ Player's partner's room restart position? ("restart option")
   21 - "Info"
   23 - "Fly"
   27 - "Cancel"
+  2A - "Zoom 1"
   2D - Glowing pointy A button icon for Makar planting seeds in soil
   31 - 
   43 - 

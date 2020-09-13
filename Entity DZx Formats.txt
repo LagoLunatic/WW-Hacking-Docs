@@ -165,7 +165,7 @@ Ebrock, Ekao, Ebrock2: Boulder. (d_a_stone2)
       Subtract 0x20 from this parameter to get the index in the random item table. https://wiki.cloudmodding.com/tww/ItemTable.bin
   params & 0x000000C0 - 
   params & 0x0000FF00 - The switch index for this boulder being destroyed.
-  params & 0x007F0000 - 
+  params & 0x007F0000 - Item pickup flag for the dropped item.
   params & 0x07000000 - Affects the type of stone.
     4 - Big stone head. (Ekao)
   params & 0x70000000 - 
@@ -402,8 +402,8 @@ wiz_r: Wizzrobe. (d_a_wz)
     01 - Spawns enemies and shoots fireballs.
     02 - Mini-boss Wizzrobe.
       Behaves similar to type 1.
-    03 - ?
-      Behaves similar to type 0.
+    03 - Shoots fireballs (has an alternate color scheme).
+      Same behavior as type 0.
     0A - Fireball?
     0C - Spawner orb? white orb that actually spawns the enemies
     0D - Spawner orb? white orb that actually spawns the enemies
@@ -470,7 +470,7 @@ c_green, c_red, c_blue, c_black, c_kiiro: ChuChu. (d_a_cc)
       If behavior type is 4, these do not default to anything, and actually use 0 or 255*10.0 as the range. Though I'm not sure if the range actually affects how type 4s act anyway?
       If behavior type is anything else, these default to a range of 1000.0.
   params & 0xFF000000 - Disable spawn switch.
-    TODO: how does this work for blue chuchus...?
+    TODO: how does this work for blue chuchus...? it gets passed as an item pickup flag for the dropped item?
   Example params:
   0B1E0203 - Blue ChuChu on Eastern Fairy Island.
   FFFF04FF - Yellow ChuChu in first room of TotG.
@@ -766,8 +766,9 @@ Oship: Gunboat/warship. (d_a_oship)
     0-3, this is the same number that salvages use (at 803C4DA9).
     0xF - Means no duplicate ID, this ship just always appears regardless of random salvage placement.
   params & 00FF0000 - 
-  params & FF000000 - 
+  params & FF000000 - Disable spawn on death switch.
   aux_params & 0x00FF - Switch index to check and not have this gunboat appear unless the switch is already set.
+  aux_params & 0xFF00 - 
 VolTag: Ice Ring Isle and Fire Mountain kill triggers. (d_a_tag_volcano)
   params & 0000003F - 
   params & 000000C0 - Type?
@@ -1245,15 +1246,15 @@ ho: Firefly. (d_a_ff)
   params & 0000FF00
     00 for a group of fireflies, 01 for a single one that runs away??
 Pig: Pig. (d_a_kb)
-  params & 0000000F - Maybe color?
-    0 - 
-    1 - 
-    2 - Black?
+  params & 0000000F - Color.
+    0 - Pink
+    1 - Speckled
+    2 - Black
   params & 000000F0
   params & 0000FF00 - Maybe caught vs uncaught on Outset?
     00 - Uncaught?
     01 - Caught?
-  params & 00FF0000
+  params & 00FF0000 - Path.
   aux_params_2 & FFFF
 Cb1: Makar. (d_a_npc_cb1)
   params & FFFFFFFF - Which instance of Makar this is.

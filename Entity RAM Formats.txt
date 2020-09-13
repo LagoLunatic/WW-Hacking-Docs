@@ -128,12 +128,14 @@ Pointer to something in the loaded REL file for this entity?
 220,4: X velocity.
 224,4: Y velocity.
 228,4: Z velocity.
+248,4: Affects draw distance.
 254,4: Forward velocity.
   fopAcM_calcSpeed uses this value and the Y rotation value at 206,2 to calculate what this actor's X and Z velocity should be.
 258,4: Gravity. (Y acceleration.)
 25C,4: Terminal velocity. (Minimum Y velocity.)
 284,1: Max HP.
 285,1: Current HP.
+28C,1: Item pickup flag for the item this enemy drops?
 
 enemyice (passed to enemy_ice(enemyice *) for enemy status effect handling):
 004,2: Total number of frames the enemy should stay frozen.
@@ -222,6 +224,7 @@ For Link:
 25BC,4: The player's true speed?
 318C,4: Unique ID of the actor Link is holding above his head.
 3190,4: Pointer to the actor Link is holding above his head.
+31E4,4: Pointer to the execute function for Link's current state (e.g. daPy_lk_c::procWait).
 3484,4: Related to what's on the A button icon...?
 34C8,1: Bitfield of pressed buttons.
   01 - A
@@ -251,15 +254,19 @@ For enemies:
 
 For cCcD_ObjAt (damaging dealing hitbox):
 010,4: Bitfield of damage types this hitbox does.
+  00000001 - 
   00000002 - Sword.
+  00000004 - 
   00000008 - Enemy weapon wielded by an enemy?
+  00000010 - 
   00000020 - Bombs.
   00000040 - Boomerang.
   00000080 - Boko stick.
-  00000100 - ? (checked by bomb flowers, boko sticks)
-  00000200 - fire? (checked by warp pots, wooden fences) (on for red bubbles)
+  00000100 - Water? (checked by bomb flowers, boko sticks)
+  00000200 - Fire? (checked by warp pots, wooden fences) (on for red bubbles)
   00000400 - Bokoblin scimitar.
   00000800 - ? (winged mothulas do this type of damage)
+  00001000 - 
   00002000 - ? (peahats do this type of damage?)
   00004000 - Normal arrows.
   00008000 - Hookshot.
@@ -270,11 +277,15 @@ For cCcD_ObjAt (damaging dealing hitbox):
   00100000 - Light arrows.
   00200000 - Deku Leaf's wind.
   00400000 - Maybe another type of wind?
+  00800000 - 
   01000000 - Stalfos mace.
+  02000000 - 
   04000000 - Darknut sword.
   08000000 - Grappling hook.
   10000000 - Moblin spear.
   20000000 - Phantom Ganon sword.
+  40000000 - 
+  80000000 - 
 014,1: Amount of damage this hitbox deals.
 
 For the enemy HP bar entity:
