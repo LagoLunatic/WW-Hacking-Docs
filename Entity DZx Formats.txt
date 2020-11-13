@@ -448,6 +448,7 @@ c_green, c_red, c_blue, c_black, c_kiiro: ChuChu. (d_a_cc)
       It's impossible to see or kill, but still counts as alive so it will prevent you from completing the room.
     03 - Does not attack Link, just moves around randomly.
       This behavior type is intended for Blu ChuChus. It causes Grappling Hook to not steal Chu Jelly from them, and Hookshot to not pull them to Link (only makes it stand up if in a puddle).
+      It also causes the "Disable spawn switch" param to be passed as an item pickup flag to the dropped blue chu jelly.
     04 - Hiding in a pot.
     FF - Defaults to 00 instead.
     If the value located at 803E75A8,2 is not 0, this value will be forcibly changed to 03.
@@ -469,8 +470,8 @@ c_green, c_red, c_blue, c_black, c_kiiro: ChuChu. (d_a_cc)
       If behavior type is 1, these default to a range of 1200.0.
       If behavior type is 4, these do not default to anything, and actually use 0 or 255*10.0 as the range. Though I'm not sure if the range actually affects how type 4s act anyway?
       If behavior type is anything else, these default to a range of 1000.0.
-  params & 0xFF000000 - Disable spawn switch.
-    TODO: how does this work for blue chuchus...? it gets passed as an item pickup flag for the dropped item?
+  params & 0xFF000000 - Enable spawn switch.
+    For behavior type 3 (blue chuchus) this works differently. Instead of being an enable spawn switch, this is a switch index in stage save info E to keep track of if this chuchu's blue chu jelly has been picked up yet or not.
   Example params:
   0B1E0203 - Blue ChuChu on Eastern Fairy Island.
   FFFF04FF - Yellow ChuChu in first room of TotG.
