@@ -520,8 +520,9 @@ Each inventory slot:
 803C4CBF,1 - Whether you have the Pirate's Charm or not. Bitfield.
   0 - Pirate's Charm
   1 - Have read the Pirate's Charm description in the pause menu.
-803C4CC0,1 - Whether you have the Hero's Charm or not. Bitfield.
-  0 - Hero's Charm
+803C4CC0,1 - Bitfield relating to the Hero's Charm.
+  0 - Hero's Charm is owned
+  1 - Hero's Charm is currently equipped
 803C4CC5,1 - Bitfield of which songs you've learned.
   0 - Wind's Requiem
   1 - Ballad of Gales

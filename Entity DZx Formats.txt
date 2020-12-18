@@ -163,12 +163,15 @@ Ebrock, Ekao, Ebrock2: Boulder. (d_a_stone2)
       This is the item ID to spawn.
     If in the range 20-3F:
       Subtract 0x20 from this parameter to get the index in the random item table. https://wiki.cloudmodding.com/tww/ItemTable.bin
-  params & 0x000000C0 - 
   params & 0x0000FF00 - The switch index for this boulder being destroyed.
   params & 0x007F0000 - Item pickup flag for the dropped item.
   params & 0x07000000 - Affects the type of stone.
-    4 - Big stone head. (Ekao)
+    2 - Boulder. (Ebrock)
+    3 - Big stone head. (Ekao)
+    4 - Small boulder. (Ebrock2)
   params & 0x70000000 - 
+  params & 0x80000000 - 
+  aux_params_2 & 00FF - The EVNT index to play when destroyed.
   737F6C3F - Outset head
   F37F243F - Headstone head
 Md1: Medli. (d_a_npc_md)

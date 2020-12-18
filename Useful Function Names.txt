@@ -1023,6 +1023,7 @@ setPlayerPosAndAngle__9daPy_lk_cFP4cXyzs
 
 
 isSwitch__10dSv_info_cFii
+dSv_info_c::isSwitch(int, int)
   checks if a switch bit is set.
   r3 - Pointer to 803C4C08 (g_dComIfG_gameInfo)
   r4 - Switch index to check
