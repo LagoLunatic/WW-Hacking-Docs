@@ -386,9 +386,12 @@ Format of each block of memory in the game heap:
   000,4: Pointer to 803754A4 (_15dStage_roomDt_c virtual table)
   104,1: Bitfield relating to room loading??
     & 01 - Must be 0 before the room will load in?
+    & 02 - Room is loading.
     & 06 - if nonzero, stop looping over all room controls...?
-    & 08 - Something checked by treasure chests, in daTbox_c::checkRoomDisp(int)
-    & 10 - Something checked by treasure chests, in daTbox_c::checkRoomDisp(int)
+    & 08 - Room is hidden.
+      Checked by treasure chests, in daTbox_c::checkRoomDisp(int)
+    & 10 - ???
+      Checked by treasure chests, in daTbox_c::checkRoomDisp(int)
     If 08 is not set and 10 is set, the room is considered loaded and treasure chests will be considered active, otherwise not?
   107,1: Zone number? Read by getZoneNo func.
     valid zone numbers are 00-1F
@@ -866,6 +869,8 @@ Player's partner's room restart position? ("restart option")
   00100000 - Player is swimming.
 803CA8D4,4 - Second bitfield of player statuses (PlayerStatus1).
   00000400 - In ship while it is sailing.
+
+803CA91C,4 - Pointer to the item_table.bin file loaded into memory.
 
 803C4C38,8 - Stage name of the player's "return place" (where you will be placed when you reload your save).
   The 8th byte must be 00.

@@ -265,8 +265,13 @@ fopAcM_createItemForKP2__FP4cXyziiP5csXyzP4cXyzfffUs
 fopAcM_createItemFromTable__FP4cXyziiiiP5csXyziP4cXyz
   r3 - Position. Pointer to a vector3 of floats.
   r4 - Affects what item to spawn.
-    00-1F: It spawns this exact item ID.
-    20-3F: Subtract 20 from this value and it's the index in the random item table.
+    00-1F: Spawn this exact item ID.
+    20-3E: Subtract 20 from this value and it's the index in the random item table.
+      For values 2B-34, it will spawn *every* item in the corresponding entry of the table.
+      For values 20-2A and 35-3E, it will randomly pick just one item in the table to spawn.
+    3F: Spawn no item.
+    40-FE: Spawn this exact item ID.
+    FF: Spawn no item.
   r5 - Item pickup flag to set, or -1 for none, or 0x7F for none.
   r6 - Room number.
   r7 - 

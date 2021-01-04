@@ -37,7 +37,7 @@ Stage ID: 00
   1D for  Green Rupee            from  ITat00  in sea/Room45
   1D for  Green Rupee            from  ITat00  in sea/Room45
   1D for  Green Rupee            from  ITat00  in sea/Room45
-  1D for  Random drop type 0x3A  from  ITat00  in sea/Room45
+  1D for  Random drop type 0x1A  from  ITat00  in sea/Room45
   1D for  Green Rupee            from  ITat00  in sea/Room45
   1D for  Blue Rupee             from  ITat00  in sea/Room45
   1D for  Green Rupee            from  ITat00  in sea/Room45
@@ -46,18 +46,18 @@ Stage ID: 00
   1D for  Green Rupee            from  ITat00  in sea/Room45
   1D for  Green Rupee            from  ITat00  in sea/Room45
   1D for  Green Rupee            from  ITat00  in sea/Room45
-  1D for  Random drop type 0x3A  from  ITat00  in sea/Room45
+  1D for  Random drop type 0x1A  from  ITat00  in sea/Room45
   1D for  Green Rupee            from  ITat00  in sea/Room45
   1D for  Green Rupee            from  ITat00  in sea/Room45
   1D for  Green Rupee            from  ITat00  in sea/Room45
   1D for  Green Rupee            from  ITat00  in sea/Room45
-  1D for  Random drop type 0x2B  from  ITat00  in sea/Room45
+  1D for  Random drop type 0x0B  from  ITat00  in sea/Room45
   1D for  Green Rupee            from  ITat00  in sea/Room45
   1D for  Green Rupee            from  ITat00  in sea/Room45
   1D for  Green Rupee            from  ITat00  in sea/Room45
-  1D for  Random drop type 0x3A  from  ITat00  in sea/Room45
+  1D for  Random drop type 0x1A  from  ITat00  in sea/Room45
   1D for  Green Rupee            from  ITat00  in sea/Room45
-  1D for  Random drop type 0x2B  from  ITat00  in sea/Room45
+  1D for  Random drop type 0x0B  from  ITat00  in sea/Room45
   1D for  Green Rupee            from  ITat00  in sea/Room45
   1D for  Blue Rupee             from  ITat00  in sea/Room45
   1D for  Green Rupee            from  ITat00  in sea/Room45
@@ -66,21 +66,21 @@ Stage ID: 00
   1D for  Green Rupee            from  ITat00  in sea/Room45
   1D for  Green Rupee            from  ITat00  in sea/Room45
   1D for  Green Rupee            from  ITat00  in sea/Room45
-  1E for  Random drop type 0x39  from  kotubo  in sea/Room11
+  1E for  Random drop type 0x19  from  kotubo  in sea/Room11
 Stage ID: 02
   00 for  Red Rupee              from    item  in MajyuE/Room0
   01 for  Red Rupee              from    item  in MajyuE/Room0
-  40 for  Random drop type 0x29  from ootubo1  in ma2room/Room0
-  40 for  Random drop type 0x20  from ootubo1  in ma3room/Room0
-  40 for  Random drop type 0x29  from ootubo1  in majroom/Room0
+  40 for  Random drop type 0x09  from ootubo1  in ma2room/Room0
+  40 for  Random drop type 0x00  from ootubo1  in ma3room/Room0
+  40 for  Random drop type 0x09  from ootubo1  in majroom/Room0
   41 for  Blue Rupee             from ootubo1  in ma2room/Room1
-  41 for  Random drop type 0x2B  from ootubo1  in ma2room/Room1
-  41 for  Random drop type 0x3F  from ootubo1  in ma3room/Room1
-  41 for  Random drop type 0x20  from ootubo1  in ma3room/Room1
+  41 for  Random drop type 0x0B  from ootubo1  in ma2room/Room1
+  41 for  Random drop type 0x1F  from ootubo1  in ma3room/Room1
+  41 for  Random drop type 0x00  from ootubo1  in ma3room/Room1
   41 for  Blue Rupee             from ootubo1  in majroom/Room1
-  41 for  Random drop type 0x2B  from ootubo1  in majroom/Room1
-  42 for  Random drop type 0x38  from ootubo1  in ma2room/Room2
-  42 for  Random drop type 0x20  from ootubo1  in ma3room/Room2
+  41 for  Random drop type 0x0B  from ootubo1  in majroom/Room1
+  42 for  Random drop type 0x18  from ootubo1  in ma2room/Room2
+  42 for  Random drop type 0x00  from ootubo1  in ma3room/Room2
   42 for  Heart (Pickup)         from ootubo1  in majroom/Room2
   42 for  Heart (Pickup)         from ootubo1  in majroom/Room2
   43 for  Heart (Pickup)         from ootubo1  in ma2room/Room2
@@ -104,30 +104,30 @@ Stage ID: 03
   03 for  Small Key              from    item  in M_NewD2/Room3
   06 for  Purple Rupee           from    item  in M_NewD2/Room0
   06 for  Joy Pendant            from ootubo1  in M_NewD2/Room10
-  40 for  Random drop type 0x20  from ootubo1  in M_NewD2/Room0
+  40 for  Random drop type 0x00  from ootubo1  in M_NewD2/Room0
   40 for  Blue Rupee             from  kotubo  in M_NewD2/Room3
-  40 for  Random drop type 0x20  from  kotubo  in M_NewD2/Room4
-  40 for  Random drop type 0x20  from ootubo1  in M_NewD2/Room6
+  40 for  Random drop type 0x00  from  kotubo  in M_NewD2/Room4
+  40 for  Random drop type 0x00  from ootubo1  in M_NewD2/Room6
   40 for  Heart (Pickup)         from ootubo1  in M_NewD2/Room11
   41 for  Green Rupee            from  koisi1  in M_NewD2/Room0
   41 for  Heart (Pickup)         from  kotubo  in M_NewD2/Room4
-  41 for  Random drop type 0x20  from ootubo1  in M_NewD2/Room6
+  41 for  Random drop type 0x00  from ootubo1  in M_NewD2/Room6
   41 for  Heart (Pickup)         from ootubo1  in M_NewD2/Room11
   42 for  Green Rupee            from  koisi1  in M_NewD2/Room0
   42 for  Heart (Pickup)         from  koisi1  in M_NewD2/Room3
   42 for  Heart (Pickup)         from  kotubo  in M_NewD2/Room4
   42 for  Heart (Pickup)         from ootubo1  in M_NewD2/Room6
   43 for  Heart (Pickup)         from  kotubo  in M_NewD2/Room0
-  43 for  Random drop type 0x20  from  kotubo  in M_NewD2/Room4
-  43 for  Random drop type 0x20  from ootubo1  in M_NewD2/Room6
+  43 for  Random drop type 0x00  from  kotubo  in M_NewD2/Room4
+  43 for  Random drop type 0x00  from ootubo1  in M_NewD2/Room6
   43 for  Yellow Rupee           from    item  in M_NewD2/Room14
   44 for  Green Rupee            from  koisi1  in M_NewD2/Room0
   44 for  Green Rupee            from  kotubo  in M_NewD2/Room3
-  44 for  Random drop type 0x20  from ootubo1  in M_NewD2/Room6
+  44 for  Random drop type 0x00  from ootubo1  in M_NewD2/Room6
   44 for  Yellow Rupee           from    item  in M_NewD2/Room14
   45 for  Heart (Pickup)         from  kotubo  in M_NewD2/Room0
   45 for  Heart (Pickup)         from  kotubo  in M_NewD2/Room3
-  45 for  Random drop type 0x20  from ootubo1  in M_NewD2/Room6
+  45 for  Random drop type 0x00  from ootubo1  in M_NewD2/Room6
   45 for  Yellow Rupee           from    item  in M_NewD2/Room14
   45 for  Green Rupee            from    item  in M_NewD2/Room14
   45 for  Green Rupee            from    item  in M_NewD2/Room14
@@ -135,16 +135,16 @@ Stage ID: 03
   45 for  Blue Rupee             from    item  in M_NewD2/Room14
   45 for  Blue Rupee             from    item  in M_NewD2/Room14
   45 for  Green Rupee            from    item  in M_NewD2/Room14
-  46 for  Random drop type 0x20  from  kotubo  in M_NewD2/Room0
+  46 for  Random drop type 0x00  from  kotubo  in M_NewD2/Room0
   46 for  Heart (Pickup)         from  koisi1  in M_NewD2/Room3
-  46 for  Random drop type 0x20  from ootubo1  in M_NewD2/Room6
+  46 for  Random drop type 0x00  from ootubo1  in M_NewD2/Room6
   47 for  Heart (Pickup)         from  kotubo  in M_NewD2/Room0
-  47 for  Random drop type 0x20  from ootubo1  in M_NewD2/Room6
-  48 for  Random drop type 0x20  from ootubo1  in M_NewD2/Room6
+  47 for  Random drop type 0x00  from ootubo1  in M_NewD2/Room6
+  48 for  Random drop type 0x00  from ootubo1  in M_NewD2/Room6
   49 for  Heart (Pickup)         from  koisi1  in M_NewD2/Room3
-  49 for  Random drop type 0x20  from ootubo1  in M_NewD2/Room6
+  49 for  Random drop type 0x00  from ootubo1  in M_NewD2/Room6
   4A for  Heart (Pickup)         from  koisi1  in M_NewD2/Room3
-  4A for  Random drop type 0x20  from ootubo1  in M_NewD2/Room6
+  4A for  Random drop type 0x00  from ootubo1  in M_NewD2/Room6
 Stage ID: 04
   00 for  Purple Rupee           from    item  in kindan/Room3
   01 for  Joy Pendant            from ootubo1  in kindan/Room1
@@ -215,16 +215,16 @@ Stage ID: 06
   42 for  Yellow Rupee           from    item  in M_Dai/Room14
   43 for  Blue Rupee             from    item  in M_Dai/Room14
   44 for  Large Magic Jar (Pickup)  from    item  in M_Dai/Room14
-  45 for  Random drop type 0x2C  from ootubo1  in M_Dai/Room16
-  46 for  Random drop type 0x30  from ootubo1  in M_Dai/Room16
-  47 for  Random drop type 0x2C  from ootubo1  in M_Dai/Room16
-  48 for  Random drop type 0x33  from ootubo1  in M_Dai/Room16
+  45 for  Random drop type 0x0C  from ootubo1  in M_Dai/Room16
+  46 for  Random drop type 0x10  from ootubo1  in M_Dai/Room16
+  47 for  Random drop type 0x0C  from ootubo1  in M_Dai/Room16
+  48 for  Random drop type 0x13  from ootubo1  in M_Dai/Room16
   49 for  Blue Rupee             from    item  in M_Dai/Room2
   4A for  Large Magic Jar (Pickup)  from    item  in M_Dai/Room2
   4B for  Large Magic Jar (Pickup)  from    item  in M_Dai/Room5
   4C for  Large Magic Jar (Pickup)  from    item  in M_Dai/Room13
   4D for  Yellow Rupee           from    item  in M_Dai/Room13
-  4E for  Random drop type 0x30  from ootubo1  in M_Dai/Room15
+  4E for  Random drop type 0x10  from ootubo1  in M_Dai/Room15
 Stage ID: 07
   00 for  Joy Pendant            from  Homen2  in kaze/Room1
   00 for  Heart (Pickup)         from   Hbox1  in kaze/Room9
@@ -233,61 +233,61 @@ Stage ID: 07
   00 for  Heart (Pickup)         from   Hbox1  in kaze/Room12
   00 for  Heart (Pickup)         from   Hbox1  in kaze/Room12
   01 for  Joy Pendant            from  Homen2  in kaze/Room7
-  05 for  Random drop type 0x3F  from  Homen2  in kaze/Room10
-  06 for  Random drop type 0x3F  from  Homen2  in kaze/Room10
+  05 for  Random drop type 0x1F  from  Homen2  in kaze/Room10
+  06 for  Random drop type 0x1F  from  Homen2  in kaze/Room10
   0F for  Blue Rupee             from    item  in kaze/Room5
   10 for  Blue Rupee             from    item  in kaze/Room5
   11 for  Blue Rupee             from    item  in kaze/Room5
-  40 for  Random drop type 0x30  from ootubo1  in kaze/Room11
-  41 for  Random drop type 0x34  from ootubo1  in kaze/Room12
-  42 for  Random drop type 0x30  from ootubo1  in kaze/Room12
-  43 for  Random drop type 0x32  from ootubo1  in kaze/Room12
-  44 for  Random drop type 0x2C  from ootubo1  in kaze/Room12
-  45 for  Random drop type 0x2F  from ootubo1  in kaze/Room12
+  40 for  Random drop type 0x10  from ootubo1  in kaze/Room11
+  41 for  Random drop type 0x14  from ootubo1  in kaze/Room12
+  42 for  Random drop type 0x10  from ootubo1  in kaze/Room12
+  43 for  Random drop type 0x12  from ootubo1  in kaze/Room12
+  44 for  Random drop type 0x0C  from ootubo1  in kaze/Room12
+  45 for  Random drop type 0x0F  from ootubo1  in kaze/Room12
 Stage ID: 08
 Stage ID: 09
 Stage ID: 0A
 Stage ID: 0B
   02 for  Deku Leaf              from itemDek  in Omori/Room0/Layer0
   02 for  Deku Leaf              from itemDek  in Omori/Room0/Layer1
-  03 for  Random drop type 0x2B  from  kotubo  in Ocmera/Room0
-  04 for  Random drop type 0x2B  from  kotubo  in Ocmera/Room0
-  05 for  Random drop type 0x2C  from  kotubo  in Ocmera/Room0
-  06 for  Random drop type 0x31  from  kotubo  in Ocmera/Room0
-  07 for  Random drop type 0x2C  from  ITat00  in Ocmera/Room0
-  08 for  Random drop type 0x2C  from  ITat00  in Ocmera/Room0
-  09 for  Random drop type 0x2B  from  ITat00  in Ocmera/Room0
-  0A for  Random drop type 0x39  from   Ktaru  in Obombh/Room0
-  0A for  Random drop type 0x2C  from   Ktaru  in Obombh/Room0
-  0B for  Random drop type 0x2C  from   Ktaru  in Obombh/Room0
-  0C for  Random drop type 0x2C  from   Ktaru  in Obombh/Room0
+  03 for  Random drop type 0x0B  from  kotubo  in Ocmera/Room0
+  04 for  Random drop type 0x0B  from  kotubo  in Ocmera/Room0
+  05 for  Random drop type 0x0C  from  kotubo  in Ocmera/Room0
+  06 for  Random drop type 0x11  from  kotubo  in Ocmera/Room0
+  07 for  Random drop type 0x0C  from  ITat00  in Ocmera/Room0
+  08 for  Random drop type 0x0C  from  ITat00  in Ocmera/Room0
+  09 for  Random drop type 0x0B  from  ITat00  in Ocmera/Room0
+  0A for  Random drop type 0x19  from   Ktaru  in Obombh/Room0
+  0A for  Random drop type 0x0C  from   Ktaru  in Obombh/Room0
+  0B for  Random drop type 0x0C  from   Ktaru  in Obombh/Room0
+  0C for  Random drop type 0x0C  from   Ktaru  in Obombh/Room0
   0D for  Red Rupee              from    item  in A_mori/Room0
   0E for  Blue Rupee             from    item  in Pnezumi/Room0
   0F for  Blue Rupee             from    item  in Pnezumi/Room0
   10 for  Blue Rupee             from    item  in Pnezumi/Room0
   11 for  Blue Rupee             from    item  in Pnezumi/Room0
   12 for  Yellow Rupee           from ootubo1  in Pnezumi/Room0
-  13 for  Random drop type 0x2B  from  kotubo  in Obombh/Room0
-  14 for  Random drop type 0x2B  from  kotubo  in Obombh/Room0
-  15 for  Random drop type 0x39  from  kotubo  in Obombh/Room0
-  15 for  Random drop type 0x2C  from   Ktaru  in Obombh/Room0
-  15 for  Random drop type 0x2C  from   Ktaru  in Obombh/Room0
+  13 for  Random drop type 0x0B  from  kotubo  in Obombh/Room0
+  14 for  Random drop type 0x0B  from  kotubo  in Obombh/Room0
+  15 for  Random drop type 0x19  from  kotubo  in Obombh/Room0
+  15 for  Random drop type 0x0C  from   Ktaru  in Obombh/Room0
+  15 for  Random drop type 0x0C  from   Ktaru  in Obombh/Room0
   16 for  Yellow Rupee           from    item  in Kaisen/Room0
   17 for  Yellow Rupee           from    item  in Kaisen/Room0
   18 for  Yellow Rupee           from    item  in Kaisen/Room0
   1A for  Blue Rupee             from    item  in Pdrgsh/Room0
   1B for  Green Rupee            from    item  in Pdrgsh/Room0
-  1C for  Random drop type 0x30  from   Ptubo  in Abesso/Room0
-  1D for  Random drop type 0x30  from   Ptubo  in Abesso/Room0
-  1E for  Random drop type 0x33  from   Ptubo  in Abesso/Room0
-  1F for  Random drop type 0x30  from   Ptubo  in Abesso/Room0
+  1C for  Random drop type 0x10  from   Ptubo  in Abesso/Room0
+  1D for  Random drop type 0x10  from   Ptubo  in Abesso/Room0
+  1E for  Random drop type 0x13  from   Ptubo  in Abesso/Room0
+  1F for  Random drop type 0x10  from   Ptubo  in Abesso/Room0
 Stage ID: 0C
-  0D for  Random drop type 0x30  from ootubo1  in TF_04/Room0
-  0E for  Random drop type 0x30  from ootubo1  in TF_04/Room0
-  40 for  Random drop type 0x2C  from ootubo1  in TF_01/Room6
-  40 for  Random drop type 0x30  from ootubo1  in TF_02/Room6
-  41 for  Random drop type 0x30  from ootubo1  in TF_01/Room6
-  41 for  Random drop type 0x2C  from ootubo1  in TF_02/Room6
+  0D for  Random drop type 0x10  from ootubo1  in TF_04/Room0
+  0E for  Random drop type 0x10  from ootubo1  in TF_04/Room0
+  40 for  Random drop type 0x0C  from ootubo1  in TF_01/Room6
+  40 for  Random drop type 0x10  from ootubo1  in TF_02/Room6
+  41 for  Random drop type 0x10  from ootubo1  in TF_01/Room6
+  41 for  Random drop type 0x0C  from ootubo1  in TF_02/Room6
 Stage ID: 0D
   00 for  Heart (Pickup)         from   Ecube  in SubD43/Room0
   00 for  Heart (Pickup)         from   Ecube  in SubD43/Room0
@@ -304,7 +304,7 @@ Stage ID: 0D
   42 for  Green Rupee            from  kotubo  in Asoko/Room0/Layer1
   43 for  Green Rupee            from  kotubo  in Asoko/Room0/Layer0
   43 for  Green Rupee            from  kotubo  in Asoko/Room0/Layer1
-  44 for  Random drop type 0x20  from   Ktaru  in Asoko/Room0/Layer0
-  44 for  Random drop type 0x20  from   Ktaru  in Asoko/Room0/Layer1
-  45 for  Random drop type 0x20  from   Ktaru  in Asoko/Room0/Layer0
-  45 for  Random drop type 0x20  from   Ktaru  in Asoko/Room0/Layer1
+  44 for  Random drop type 0x00  from   Ktaru  in Asoko/Room0/Layer0
+  44 for  Random drop type 0x00  from   Ktaru  in Asoko/Room0/Layer1
+  45 for  Random drop type 0x00  from   Ktaru  in Asoko/Room0/Layer0
+  45 for  Random drop type 0x00  from   Ktaru  in Asoko/Room0/Layer1

@@ -118,6 +118,6 @@ Stage ID: 0F
   32 for  Heart (Pickup)         from    item  in K_Test2/Room0/Layer7
   33 for  Piece of Heart         from    item  in K_Test2/Room0/Layer7
   34 for  Heart Container        from    item  in K_Test2/Room0/Layer7
-  35 for  Random drop type 0x2C  from ootubo1  in K_Test2/Room0/Layer7
+  35 for  Random drop type 0x0C  from ootubo1  in K_Test2/Room0/Layer7
   35 for  Blue Rupee             from    item  in K_Test2/Room0/Layer7
   40 for  Blue Rupee             from  ITat00  in K_Testa/Room0

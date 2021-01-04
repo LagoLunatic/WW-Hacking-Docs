@@ -38,14 +38,15 @@ For entities that have parameters, it also documents their parameters and the co
   Sub entry format:
     00,1: Number of rooms in this entry's rooms list.
     01,1: "Reverb amount"
-    02,1: Boolean(?) for whether time should pass here.
-    03,1: ???
+    02,1: Boolean for whether time should pass here.
+      Technically it looks like this value could range from 0-3, but all the code only actually checks if it's zero or nonzero.
+    03,1: Padding.
     04,4: Offset within this dzs file to this entry's rooms list.
   Rooms list:
     Each room takes up 1 byte:
-    & 80 - room should be visible...?
-      If set, both bits & 02 and & 08 in 104,1 bitfield in this room's zone data will be set on. If not set, only bit & 02 will be set there.
-      loadRoom__20dStage_roomControl_cFiPUc is the function that handles setting those bits like this.
+    & 80 - Room should be visible.
+      If not set, bit & 08 (room is hidden) will be set in the room control struct's bitfield at 104,1.
+      That check is done in dStage_roomControl_c::loadRoom(int, unsigned char *)
     & 40 - ?
       all the sea rooms have room 0 constantly loaded, and this bit is set for room 0 being there.
       guess it loads the collision?
