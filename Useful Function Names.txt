@@ -1076,10 +1076,13 @@ fopScnM_ChangeReq__FP11scene_classssUs
   Changes the game state.
   r3 - (scene_class*)
   r4 - The new game state.
+    5 - 
     6 - Debug map select.
     7 - Ingame.
     8 - Title screen.
-    11 - Ending?
+    B - Ending?
+    D - 
+    E - 
   r5 - Wipe type, affects the screen fade out type.
     0 - Fade whole screen to white
     1 - Fade whole screen to black
