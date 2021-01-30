@@ -2,16 +2,23 @@ Switches:
 Stage ID: 00
   01  from    STOLENSISTER  in sea/Stage (Event)
   03  from          Ebrock  in sea/Room13
+  04  from         ky_tag0  in sea/Room46
   08  from        AJ_SPEAK  in sea/Stage (Event)
   09  from           TagEv  in sea/Room44
   0A  from    MEETSHISHIOH  in sea/Stage (Event)
   0B  from     ARRIVAL_DRG  in sea/Stage (Event)
+  0B  from          TagIsl  in sea/Room13
   0C  from          SW_C00  in sea/Room11
   0D  from         Daiocta  in sea/Room6
+  0D  from         ky_tag0  in sea/Room6
   0E  from         Daiocta  in sea/Room17
+  0E  from         ky_tag0  in sea/Room17
   0F  from         Daiocta  in sea/Room20
+  0F  from         ky_tag0  in sea/Room20
   10  from         Daiocta  in sea/Room33
+  10  from         ky_tag0  in sea/Room33
   11  from         Daiocta  in sea/Room36
+  11  from         ky_tag0  in sea/Room36
   12  from         Daiocta  in sea/Room46
   13  from           Oship  in sea/Room16
   14  from           Oship  in sea/Room16
@@ -21,14 +28,27 @@ Stage ID: 00
   18  from          VolTag  in sea/Room20
   18  from         Yboil00  in sea/Room20
   19  from     ARRIVAL_BRK  in sea/Stage (Event)
+  19  from          TagIsl  in sea/Room23
   1A  from     ARRIVAL_FST  in sea/Stage (Event)
+  1A  from          TagIsl  in sea/Room41
   1B  from          VolTag  in sea/Room40
+  1B  from         ky_tag0  in sea/Room40
+  1B  from         kytag00  in sea/Room40
+  1B  from         kytag00  in sea/Room40
+  1C  from            Ajav  in sea/Room44/Layer5
+  1C  from            Auzu  in sea/Room44/Layer5
+  1C  from            Ajav  in sea/Room44/Layer7
+  1C  from            Auzu  in sea/Room44/Layer7
   22  from         Kbota_A  in sea/Room11
   24  from           Ecube  in sea/Room13
   24  from           Ecube  in sea/Room13
+  25  from         MhmrSW0  in sea/Room15
+  25  from            Fire  in sea/Room15
   25  from           Akabe  in sea/Room15
   26  from         AND_SW2  in sea/Room28
   26  from           Akabe  in sea/Room28
+  27  from         SW_HIT0  in sea/Room29
+  27  from            Fire  in sea/Room29
   28  from          Ebrock  in sea/Room2
   29  from           Ashut  in sea/Room35
   29  from         AND_SW2  in sea/Room35
@@ -97,9 +117,13 @@ Stage ID: 00
   2C  from  departure_DEMO  in sea/Stage (Event)
   2D  from            Ekao  in sea/Room45
   2F  from          Ebrock  in sea/Room19
+  30  from              Hr  in sea/Room13
   31  from         AND_SW2  in sea/Room43
   31  from         takara5  in sea/Room43
   32  from         AND_SW0  in sea/Room28
+  32  from         MhmrSW0  in sea/Room28
+  33  from         MhmrSW0  in sea/Room28
+  34  from         MhmrSW0  in sea/Room28
   35  from         AND_SW2  in sea/Room39
   35  from         AND_SW2  in sea/Room39
   35  from           Dsaku  in sea/Room39
@@ -134,11 +158,14 @@ Stage ID: 00
   45  from           Ecube  in sea/Room13
   45  from         Ebrock2  in sea/Room13
   46  from          SW_C00  in sea/Room13
+  47  from         SW_HIT0  in sea/Room41
+  47  from              Mn  in sea/Room41
   48  from    R29LOOK_MORI  in sea/Stage (Event)
   4B  from        warphole  in ADMumi/Stage (Event)
   4C  from           Oship  in sea/Room30
   4D  from           Oship  in sea/Room30
   4E  from           Oship  in sea/Room30
+  4F  from            Fire  in sea/Room38
   4F  from         AND_SW2  in sea/Room38
   50  from        BirdLook  in sea/Stage (Event)
   50  from           TagEv  in sea/Room14
@@ -151,16 +178,23 @@ Stage ID: 00
   55  from          towerf  in ADMumi/Stage (Event)
   55  from          towern  in ADMumi/Stage (Event)
   56  from  runaway_majuto  in ADMumi/Stage (Event)
+  57  from          MjDoor  in sea/Room1
   58  from           TagEv  in sea/Room1
   58  from           TagEv  in sea/Room1
   58  from           TagEv  in sea/Room1
   59  from     ARRIVAL_WND  in sea/Stage (Event)
+  59  from          TagIsl  in sea/Room4
   5A  from     ARRIVAL_GND  in sea/Stage (Event)
+  5A  from          TagIsl  in sea/Room45
   5B  from     ARRIVAL_TWN  in sea/Stage (Event)
+  5B  from          TagIsl  in sea/Room11/Layer2
+  5B  from          TagIsl  in sea/Room11/Layer3
   5C  from           awake  in sea/Stage (Event)
   5D  from          tkrBMs  in sea/Room11/Layer1
   5D  from          tkrBMs  in sea/Room11/Layer3
   5D  from          tkrBMs  in sea/Room11/Layer5
+  5E  from          Mhsg15  in sea/Room41
+  5E  from              Mn  in sea/Room41
   5F  from         AND_SW2  in sea/Room24
   5F  from         takara5  in sea/Room24
   60  from         AND_SW2  in sea/Room22
@@ -173,13 +207,23 @@ Stage ID: 00
   63  from         takara5  in sea/Room37
   64  from         AND_SW2  in sea/Room25
   64  from         takara5  in sea/Room25
+  65  from              Bk  in sea/Room1/Layer1
+  66  from              Bk  in sea/Room1/Layer1
+  67  from              Bk  in sea/Room1/Layer1
   6A  from         takara6  in sea/Room1
+  6B  from             Hr2  in sea/Room9
+  6B  from         ky_tag0  in sea/Room9
+  6B  from             Hr2  in sea/Room18
+  6B  from         ky_tag0  in sea/Room18
+  6B  from             Hr2  in sea/Room38
+  6B  from         ky_tag0  in sea/Room38
   6C  from            Ekao  in sea/Room44
   6C  from            Ekao  in sea_T/Room44
   6D  from       fairy_Jmp  in sea/Stage (Event)
   6D  from           TagEv  in sea/Room9
   6E  from           fairy  in sea/Stage (Event)
   6F  from          Ebrock  in sea/Room13
+  70  from         MhmrSW0  in sea/Room1/Layer1
   70  from          kotubo  in sea/Room13/Layer7
   70  from          kotubo  in sea/Room13/Layer7
   71  from      awake_zola  in sea/Stage (Event)
@@ -188,6 +232,7 @@ Stage ID: 00
   72  from         ootubo1  in sea_T/Room44
   73  from          SW_C00  in sea/Room13
   74  from   PUROLO_RETURN  in sea/Stage (Event)
+  74  from          TagIsl  in sea/Room44
   77  from           TagHt  in sea/Room1/Layer1
   7A  from         ootubo1  in sea/Room44
   7B  from          kotubo  in sea/Room11
@@ -285,6 +330,7 @@ Stage ID: 00
   E1  from              Bk  in sea/Room34
   E1  from           Akabe  in sea/Room35
   E1  from          Ocanon  in sea/Room37
+  E1  from         SW_HIT0  in sea/Room38
   E1  from         AND_SW0  in sea/Room38
   E1  from          Ocanon  in sea/Room39
   E1  from          SW_C00  in sea/Room41
@@ -311,8 +357,10 @@ Stage ID: 00
   E2  from          Ocanon  in sea/Room31
   E2  from         AND_SW2  in sea/Room34
   E2  from          tkrAOs  in sea/Room34
+  E2  from         SW_HIT0  in sea/Room35
   E2  from         AND_SW2  in sea/Room35
   E2  from          Ocanon  in sea/Room37
+  E2  from         MhmrSW0  in sea/Room38
   E2  from          Ocanon  in sea/Room39
   E2  from           Akabe  in sea/Room41
   E2  from           Akabe  in sea/Room41
@@ -341,6 +389,7 @@ Stage ID: 00
   E3  from          Ocanon  in sea/Room28
   E3  from              Bk  in sea/Room30
   E3  from          Ocanon  in sea/Room31
+  E3  from         SW_HIT0  in sea/Room35
   E3  from          Ocanon  in sea/Room37
   E3  from         Kbota_A  in sea/Room38
   E3  from          Ocanon  in sea/Room39
@@ -372,7 +421,9 @@ Stage ID: 00
   E4  from          Ocanon  in sea/Room28
   E4  from              Bk  in sea/Room30
   E4  from          Ocanon  in sea/Room31
+  E4  from         SW_HIT0  in sea/Room35
   E4  from          Ocanon  in sea/Room37
+  E4  from         Hhbot1N  in sea/Room38
   E4  from         AND_SW2  in sea/Room39
   E4  from          Ocanon  in sea/Room39
   E4  from         AND_SW2  in sea/Room43
@@ -406,6 +457,7 @@ Stage ID: 00
   E5  from          tkrAOs  in sea/Room30
   E5  from          Ocanon  in sea/Room31
   E5  from           TagHt  in sea/Room31
+  E5  from         SW_HIT0  in sea/Room35
   E5  from          Ocanon  in sea/Room37
   E5  from         AND_SW2  in sea/Room38
   E5  from         AND_SW2  in sea/Room38
@@ -428,6 +480,7 @@ Stage ID: 00
   E6  from              Bk  in sea/Room28
   E6  from         AND_SW2  in sea/Room28
   E6  from          Ocanon  in sea/Room31
+  E6  from         SW_HIT0  in sea/Room35
   E6  from          Ocanon  in sea/Room37
   E6  from          Ocanon  in sea/Room39
   E6  from         AND_SW2  in sea/Room43
@@ -447,6 +500,7 @@ Stage ID: 00
   E7  from           Oship  in sea/Room25
   E7  from              Bk  in sea/Room28
   E7  from          Ocanon  in sea/Room31
+  E7  from         SW_HIT0  in sea/Room35
   E7  from          Ocanon  in sea/Room37
   E7  from          Ocanon  in sea/Room39
   E7  from         Kbota_A  in sea/Room43
@@ -515,6 +569,9 @@ Stage ID: 02
   08  from           TagEv  in MajyuE/Stage
   08  from           Kkiba  in MajyuE/Room0
   09  from           Kkiba  in MajyuE/Room0
+  0A  from              Bk  in MajyuE/Room0
+  0B  from              Bk  in MajyuE/Room0
+  0C  from              Bk  in MajyuE/Room0
   0D  from           TagEv  in MajyuE/Stage
   0F  from           TagHt  in MajyuE/Stage
   0F  from         AND_SW2  in MajyuE/Room0
@@ -522,6 +579,7 @@ Stage ID: 02
   10  from          SW_C00  in MajyuE/Room0
   10  from          SW_C00  in MajyuE/Room0
   12  from           TagEv  in ma2room/Room0
+  12  from         SW_HIT0  in ma3room/Room0
   14  from           TagHt  in majroom/Room0
   14  from           TagHt  in majroom/Room0
   14  from           TagHt  in majroom/Room0
@@ -609,7 +667,9 @@ Stage ID: 02
   E0  from          SW_C00  in majroom/Room1
   E0  from           TagEv  in majroom/Room3
   E0  from           TagEv  in majroom/Room3
+  E1  from         SW_HIT0  in ma2room/Room0
   E1  from           TagEv  in ma2room/Room0
+  E1  from         SW_HIT0  in majroom/Room0
   E2  from           TagEv  in MajyuE/Room0
   E2  from           TagEv  in MajyuE/Room0
   E2  from           TagEv  in MajyuE/Room0
@@ -653,6 +713,7 @@ Stage ID: 03
   0E  from         takara5  in M_NewD2/Stage
   0F  from           Ksaku  in M_NewD2/Room11
   10  from           Ksaku  in M_NewD2/Room11
+  11  from         Warpts2  in M_NewD2/Room2
   11  from         Ebrock2  in M_NewD2/Room2
   12  from           Ksaku  in M_NewD2/Room11
   13  from           Ksaku  in M_NewD2/Room11
@@ -668,6 +729,7 @@ Stage ID: 03
   1D  from          tkrASw  in M_NewD2/Stage
   1D  from         AND_SW0  in M_NewD2/Room7
   1D  from           TagHt  in M_NewD2/Room7
+  1E  from         Warpts3  in M_NewD2/Room10
   1E  from          Ebrock  in M_NewD2/Room10
   1F  from         osiBLK0  in M_NewD2/Room14
   21  from           TagHt  in M_NewD2/Room14
@@ -681,6 +743,8 @@ Stage ID: 03
   29  from           Dsaku  in M_NewD2/Room14
   29  from         AND_SW0  in M_NewD2/Room16
   2B  from          Ebrock  in M_NewD2/Room10
+  2C  from              Bk  in M_Dra09/Room9
+  2C  from              Bk  in M_Dra09/Room9
   2E  from          SW_C00  in M_Dra09/Room9
   2F  from         osiBLK1  in M_NewD2/Room0
   30  from         osiBLK1  in M_NewD2/Room0
@@ -697,7 +761,9 @@ Stage ID: 03
   3F  from         Zenshut  in M_NewD2/Stage
   3F  from         Zenshut  in M_NewD2/Stage
   40  from          door20  in M_NewD2/Stage
+  41  from            Fire  in M_NewD2/Room12
   41  from         Kbota_B  in M_NewD2/Room12
+  42  from         Warpts1  in M_NewD2/Room0
   46  from           TagEv  in M_NewD2/Stage
   46  from           TagEv  in M_NewD2/Stage
   46  from           TagEv  in M_NewD2/Stage
@@ -768,7 +834,17 @@ Stage ID: 04
   04  from           TagHt  in kindan/Room0
   04  from           TagHt  in kindan/Room0
   05  from         keyshut  in kindan/Stage
+  07  from         SW_HIT0  in kindan/Room13
+  07  from         SW_HIT0  in kindan/Room13
+  07  from         SW_HIT0  in kindan/Room13
+  07  from         SW_HIT0  in kindan/Room13
+  07  from         SW_HIT0  in kindan/Room13
   07  from         AND_SW0  in kindan/Room13
+  08  from         SW_HIT0  in kindan/Room13
+  09  from         SW_HIT0  in kindan/Room13
+  0A  from         SW_HIT0  in kindan/Room13
+  0B  from         SW_HIT0  in kindan/Room13
+  0C  from         SW_HIT0  in kindan/Room13
   0D  from         Zenshut  in kindan/Stage
   0D  from         c_green  in kindan/Room11
   0D  from         c_green  in kindan/Room11
@@ -803,6 +879,7 @@ Stage ID: 04
   2C  from         takara2  in kindan/Stage
   2D  from         takara2  in kindan/Stage
   2F  from           TagEv  in kindan/Stage
+  2F  from         Warpts2  in kindan/Room5
   31  from           TagEv  in kindan/Stage
   32  from           Dsaku  in kindan/Room7
   33  from         AND_SW0  in kindan/Room9
@@ -821,8 +898,12 @@ Stage ID: 04
   A1  from            gmos  in kindan/Room15
   A3  from           Kmi02  in kindan/Room1
   E2  from          door10  in kinMB/Stage
+  E2  from         SW_HIT0  in kinMB/Room10
+  E2  from         SW_HIT0  in kinMB/Room10
   E2  from         AND_SW0  in kinMB/Room10
+  E3  from         SW_HIT0  in kinMB/Room10
   E3  from           Ksaku  in kindan/Room3
+  E4  from         SW_HIT0  in kinMB/Room10
   E4  from           Ksaku  in kindan/Room3
   E9  from         WindTag  in kindan/Room5
 Stage ID: 05
@@ -885,6 +966,7 @@ Stage ID: 05
   1D  from              Tn  in Siren/Room23
   1D  from              Tn  in SirenMB/Room23
   1D  from           TagEv  in SirenMB/Room23
+  1D  from         kytag00  in SirenMB/Room23
   1E  from          door10  in Siren/Stage
   1F  from          tkrASw  in Siren/Stage
   1F  from         c_kiiro  in Siren/Room5
@@ -906,6 +988,7 @@ Stage ID: 05
   27  from           TagHt  in Siren/Room14
   27  from           TagHt  in Siren/Room14
   27  from           TagHt  in Siren/Room14
+  28  from         kytag00  in Siren/Room7
   29  from          door10  in Siren/Stage
   2A  from          door10  in Siren/Stage
   2D  from           TagEv  in Siren/Room18
@@ -955,6 +1038,7 @@ Stage ID: 06
   0B  from         Kbota_B  in M_Dai/Room4
   0D  from           TagEv  in M_Dai/Room3
   0E  from          door12  in M_Dai/Stage
+  0E  from         MhmrSW0  in M_Dai/Room3
   0F  from          keyS12  in M_Dai/Stage
   10  from         AND_SW2  in M_Dai/Room3
   11  from         AND_SW2  in M_Dai/Room3
@@ -983,12 +1067,14 @@ Stage ID: 06
   23  from         takara5  in M_Dai/Stage
   23  from          MkieBB  in M_Dai/Room6
   23  from           DBLK0  in M_Dai/Room6
+  26  from         Warpts2  in M_Dai/Room6
   28  from          door12  in M_Dai/Stage
   28  from         osiBLK0  in M_Dai/Room6
   29  from          MkieBB  in M_Dai/Room6
   2A  from          TagHt2  in M_Dai/Room6
   2D  from          ALLdie  in M_Dai/Room7
   2F  from          keyS12  in M_Dai/Stage
+  34  from          Mhsg4h  in M_Dai/Room8
   34  from         AND_SW2  in M_Dai/Room8
   34  from         AND_SW2  in M_Dai/Room8
   34  from          ALLdie  in M_Dai/Room8
@@ -1019,9 +1105,11 @@ Stage ID: 06
   4A  from          MkieBB  in M_Dai/Room10
   4B  from          keyS12  in M_Dai/Stage
   4F  from         takara2  in M_Dai/Stage
+  54  from         MhmrSW0  in M_Dai/Room13
   54  from         AND_SW2  in M_Dai/Room13
   54  from         AND_SW2  in M_Dai/Room13
   55  from            Mmrr  in M_Dai/Room13
+  5B  from         Warpts3  in M_Dai/Room15
   5B  from         Ebrock2  in M_Dai/Room15
   5F  from         Kbota_A  in M_Dai/Room16
   5F  from         AND_SW2  in M_Dai/Room16
@@ -1097,6 +1185,7 @@ Stage ID: 07
   06  from         AND_SW2  in kaze/Room1
   08  from          door12  in kaze/Stage
   08  from         AND_SW2  in kaze/Room1
+  09  from         Hhbot1N  in kaze/Room2
   09  from         AND_SW2  in kaze/Room2
   0A  from         AND_SW2  in kaze/Room2
   0C  from         AND_SW2  in kaze/Room2
@@ -1123,6 +1212,7 @@ Stage ID: 07
   2B  from         takara2  in kaze/Stage
   31  from         takara5  in kaze/Stage
   31  from         AND_SW2  in kaze/Room9
+  32  from         Hhbot1N  in kaze/Room10
   32  from         AND_SW2  in kaze/Room10
   34  from          door12  in kaze/Stage
   34  from         AND_SW2  in kaze/Room10
@@ -1134,6 +1224,7 @@ Stage ID: 07
   3B  from         takara8  in kazeMB/Stage
   3B  from           wiz_r  in kazeMB/Room6
   3B  from           wiz_r  in kazeMB/Room6
+  3E  from         MhmrSW0  in kazeMB/Room6
   3F  from          door12  in kaze/Stage
   82  from          ZenS12  in kaze/Stage
   82  from           amos2  in kaze/Room4
@@ -1188,6 +1279,8 @@ Stage ID: 08
   06  from           TagEv  in GanonE/Stage
   06  from         Kbota_B  in GanonE/Room0
   06  from          SW_C00  in GanonE/Room0
+  07  from          Warpnt  in GanonK/Room0
+  07  from           Warpt  in GanonK/Room0
   08  from           TagEv  in GanonK/Stage/Layer0
   08  from           TagEv  in GanonK/Stage/Layer0
   08  from           TagEv  in GanonK/Stage/Layer0
@@ -1196,6 +1289,8 @@ Stage ID: 08
   08  from           TagEv  in GanonK/Stage/Layer1
   08  from           TagEv  in GanonK/Stage/Layer1
   08  from           TagEv  in GanonK/Stage/Layer1
+  08  from          Warpnt  in GanonK/Room0
+  08  from           Warpt  in GanonK/Room0
   0A  from          door10  in GanonJ/Stage
   0B  from           TagEv  in GanonE/Stage
   0C  from           TagEv  in GanonE/Stage
@@ -1214,8 +1309,16 @@ Stage ID: 08
   13  from           TagHt  in GanonM/Room1
   13  from           TagHt  in GanonM/Room1
   13  from         AND_SW0  in GanonM/Room2
+  13  from         SW_HIT0  in GanonM/Room2
   13  from         AND_SW0  in GanonM/Room2
   13  from         AND_SW0  in GanonM/Room2
+  14  from         SW_HIT0  in GanonM/Room2
+  15  from         SW_HIT0  in GanonM/Room2
+  15  from         SW_HIT0  in GanonM/Room2
+  16  from         SW_HIT0  in GanonM/Room2
+  16  from         SW_HIT0  in GanonM/Room2
+  17  from         SW_HIT0  in GanonM/Room2
+  17  from         SW_HIT0  in GanonM/Room2
   19  from          ALLdie  in GanonL/Room0
   19  from          SW_C00  in GanonL/Room0
   1A  from          SW_C00  in GanonL/Room0
@@ -1308,19 +1411,27 @@ Stage ID: 08
   E0  from           Akabe  in GanonD/Room0
   E0  from           Akabe  in GanonD/Room0
   E0  from              Bk  in GanonJ/Room3
+  E0  from              Bk  in GanonJ/Room3
   E0  from             mo2  in GanonJ/Room9
   E0  from         AND_SW0  in GanonJ/Room9
   E0  from           TagHt  in GanonM/Room1
   E0  from           TagHt  in GanonM/Room1
   E0  from           TagHt  in GanonM/Room1
   E1  from              Bk  in GanonJ/Room3
+  E1  from              Bk  in GanonJ/Room3
   E1  from             mo2  in GanonJ/Room9
   E1  from         AND_SW0  in GanonM/Room0
   E2  from              Bk  in GanonJ/Room3
+  E2  from              Bk  in GanonJ/Room3
+  E3  from              Bk  in GanonJ/Room3
   E3  from              Bk  in GanonJ/Room3
   E4  from              Bk  in GanonJ/Room3
+  E4  from              Bk  in GanonJ/Room3
+  E5  from              Bk  in GanonJ/Room3
   E5  from              Bk  in GanonJ/Room3
   E6  from              Bk  in GanonJ/Room3
+  E6  from              Bk  in GanonJ/Room3
+  E7  from              Bk  in GanonJ/Room3
   E7  from              Bk  in GanonJ/Room3
 Stage ID: 09
   02  from        warp_out  in Hyrule/Stage (Event)
@@ -1353,6 +1464,7 @@ Stage ID: 0A
   00  from         AND_SW2  in Abship/Room2
   00  from          tkrASw  in Abship/Room2
   01  from         takara5  in Abship/Room3
+  E0  from          Mhsg4h  in Abship/Room0
   E0  from         AND_SW2  in Abship/Room0
   E0  from           TagEv  in Abship/Room0/LayerB
   E0  from             mo2  in Abship/Room1
@@ -1362,6 +1474,8 @@ Stage ID: 0A
   E0  from          SW_C00  in Abship/Room3
   E0  from         AND_SW2  in Abship/Room4
   E0  from             mo2  in Abship/Room4
+  E0  from            Fire  in Abship/Room5
+  E0  from          Mhsg4h  in Abship/Room5
   E0  from          ALLdie  in Abship/Room5
   E0  from         takara5  in Abship/Room5
   E0  from         AND_SW2  in Abship/Room5/LayerB
@@ -1379,12 +1493,15 @@ Stage ID: 0A
   E0  from            Puti  in Abship/Room7
   E0  from            Puti  in Abship/Room7
   E0  from         AND_SW2  in Abship/Room7
+  E0  from          Mhsg4h  in PShip/Room0
   E0  from         AND_SW2  in PShip/Room0
   E0  from         AND_SW2  in PShip/Room0
   E0  from          ALLdie  in PShip/Room0
+  E0  from          Mhsg4h  in PShip/Room1
   E0  from         AND_SW2  in PShip/Room1
   E0  from         AND_SW2  in PShip/Room1
   E0  from          ALLdie  in PShip/Room1
+  E0  from          Mhsg4h  in PShip/Room2
   E0  from         AND_SW2  in PShip/Room2
   E0  from         AND_SW2  in PShip/Room2
   E0  from          ALLdie  in PShip/Room2
@@ -1428,12 +1545,15 @@ Stage ID: 0A
   E4  from             mo2  in Abship/Room1
   E4  from         AND_SW2  in Abship/Room1
   E4  from         AND_SW2  in Abship/Room4
+  E4  from          Mhsg4h  in Abship/Room4/LayerB
   E4  from         AND_SW2  in Abship/Room6
   E4  from           wiz_r  in Abship/Room6
   E4  from         AND_SW2  in Abship/Room7
   E5  from     hasigo_down  in Abship/Stage (Event)
   E5  from           TagEv  in Abship/Room0/LayerB
+  E5  from          Mhsg4h  in Abship/Room1
   E5  from         AND_SW2  in Abship/Room1
+  E5  from          Mhsg4h  in Abship/Room3
   E5  from         takara5  in Abship/Room4
   E5  from          SW_C00  in Abship/Room4
   E5  from           wiz_r  in Abship/Room6
@@ -1449,6 +1569,7 @@ Stage ID: 0A
   E5  from            Puti  in Abship/Room7
   E5  from            Puti  in Abship/Room7
   E5  from            Puti  in Abship/Room7
+  E5  from          Mhsg4h  in Abship/Room7
   E5  from         AND_SW2  in Abship/Room7
   E6  from         takara6  in Abship/Room0
   E6  from          SW_C00  in Abship/Room0
@@ -1468,12 +1589,16 @@ Stage ID: 0A
   E8  from            Puti  in Abship/Room6
   E8  from            Puti  in Abship/Room6
   E9  from         AND_SW2  in Abship/Room6
+  E9  from          Mhsg4h  in Abship/Room6
   EB  from           wiz_r  in PShip/Room0
   EB  from          SW_C00  in PShip/Room0
+  EB  from         ky_tag0  in PShip/Room0
   EB  from           wiz_r  in PShip/Room1
   EB  from          SW_C00  in PShip/Room1
+  EB  from         ky_tag0  in PShip/Room1
   EB  from           wiz_r  in PShip/Room2
   EB  from          SW_C00  in PShip/Room2
+  EB  from         ky_tag0  in PShip/Room2
 Stage ID: 0B
   00  from    AMORI_DEMO_1  in A_mori/Stage (Event)
   00  from           TagEv  in A_mori/Room0
@@ -1495,6 +1620,7 @@ Stage ID: 0B
   09  from           TagEv  in Atorizk/Room0
   0A  from       meet_deku  in Omori/Stage (Event)
   0B  from             Kui  in Abesso/Room0
+  0B  from            Fire  in Abesso/Room0
   0C  from      BOMB_CRASH  in A_mori/Stage (Event)
   0C  from          Ebrock  in A_mori/Room0
   0D  from    getperl_deku  in Omori/Stage (Event)
@@ -1596,6 +1722,7 @@ Stage ID: 0C
   24  from            Ekao  in MiniKaz/Room0
   80  from         magtail  in Cave01/Room0
   80  from         magtail  in Cave01/Room0
+  80  from            Fire  in Cave01/Room1
   80  from         magtail  in Cave01/Room1
   80  from         magtail  in Cave01/Room1
   80  from         AND_SW0  in Cave01/Room1
@@ -1626,25 +1753,60 @@ Stage ID: 0C
   80  from          SW_C00  in WarpD/Room0
   80  from          SW_C00  in WarpD/Room0
   81  from         Kbota_A  in Cave01/Room1
+  81  from            Fire  in Cave01/Room1
   81  from         AND_SW0  in Cave01/Room1
   81  from           Akabe  in Cave01/Room1
   81  from           Akabe  in Cave01/Room1
   81  from           Akabe  in Cave01/Room1
+  81  from          Warpnt  in WarpD/Room0
+  81  from          Warpnt  in WarpD/Room0
+  81  from           Warpt  in WarpD/Room0
+  81  from           Warpt  in WarpD/Room0
+  81  from           Warpt  in WarpD/Room0
+  81  from           Warpt  in WarpD/Room0
+  81  from           Warpt  in WarpD/Room0
   82  from         Kbota_A  in Cave01/Room1
+  82  from            Fire  in Cave01/Room1
+  82  from            Fire  in Cave01/Room1
   82  from           Akabe  in Cave01/Room1
   82  from           Akabe  in Cave01/Room1
   82  from           Akabe  in Cave01/Room1
   82  from              Tn  in TF_01/Room1
   82  from              Tn  in TF_02/Room1
+  82  from          Warpnt  in WarpD/Room0
+  82  from          Warpnt  in WarpD/Room0
   83  from         Kbota_A  in Cave01/Room1
+  83  from            Fire  in Cave01/Room1
+  83  from            Fire  in Cave01/Room1
   83  from              Tn  in TF_01/Room1
   83  from              Tn  in TF_02/Room1
   84  from              Tn  in TF_02/Room1
+  84  from           Warpt  in WarpD/Room0
   85  from              Tn  in TF_02/Room1
+  85  from           Warpt  in WarpD/Room0
+  85  from          Warpnt  in WarpD/Room0
   86  from           wiz_r  in TF_02/Room3
+  86  from           Warpt  in WarpD/Room0
+  86  from          Warpnt  in WarpD/Room0
   87  from           wiz_r  in TF_02/Room3
+  87  from           Warpt  in WarpD/Room0
   88  from            Stal  in TF_02/Room5
   89  from            Stal  in TF_02/Room5
+  89  from          Warpnt  in WarpD/Room0
+  89  from           Warpt  in WarpD/Room0
+  8A  from          Warpnt  in WarpD/Room0
+  8A  from           Warpt  in WarpD/Room0
+  8B  from           Warpt  in WarpD/Room0
+  8C  from           Warpt  in WarpD/Room0
+  8D  from           Warpt  in WarpD/Room0
+  8D  from          Warpnt  in WarpD/Room0
+  8E  from           Warpt  in WarpD/Room0
+  8E  from          Warpnt  in WarpD/Room0
+  90  from           Warpt  in WarpD/Room0
+  91  from           Warpt  in WarpD/Room0
+  91  from          Warpnt  in WarpD/Room0
+  92  from           Warpt  in WarpD/Room0
+  92  from          Warpnt  in WarpD/Room0
   94  from         Zenshut  in TF_01/Stage
   94  from         AND_SW2  in TF_01/Room1
   94  from         AND_SW2  in TF_01/Room1
@@ -1675,6 +1837,7 @@ Stage ID: 0C
   98  from         AND_SW2  in TF_01/Room1
   98  from         AND_SW2  in TF_02/Room1
   98  from         AND_SW0  in TF_03/Room1
+  98  from              Bk  in TF_03/Room1/Layer8
   99  from              Bk  in TF_03/Room1/Layer8
   A3  from         AND_SW2  in TF_01/Room1
   A3  from         AND_SW2  in TF_01/Room1
@@ -1820,6 +1983,7 @@ Stage ID: 0C
   E1  from         AND_SW2  in Cave04/Room0
   E1  from         magtail  in MiniKaz/Room0
   E1  from         AND_SW2  in MiniKaz/Room0
+  E1  from         MhmrSW0  in TF_04/Room0
   E2  from          door10  in Cave01/Stage
   E2  from         Kbota_B  in Cave01/Room0
   E2  from         AND_SW0  in Cave01/Room0
@@ -1856,14 +2020,20 @@ Stage ID: 0C
   E3  from           keeth  in Cave04/Room0
   E3  from           keeth  in Cave04/Room0
   E3  from           keeth  in Cave04/Room0
+  E3  from              Bk  in ITest62/Room0
+  E3  from              Bk  in ITest62/Room0
   E3  from         takara6  in MiniKaz/Stage
   E3  from         AND_SW2  in MiniKaz/Room0
+  E3  from         MhmrSW0  in TF_04/Room0
   E4  from         AND_SW2  in Cave02/Room0
+  E4  from              Bk  in Cave02/Room0
+  E4  from              Bk  in Cave02/Room0
   E4  from         AND_SW2  in Cave02/Room0
   E4  from         AND_SW2  in Cave04/Room0
   E5  from              Bk  in Cave02/Room0
   E5  from         AND_SW2  in Cave02/Room0
   E5  from         AND_SW2  in Cave02/Room0
+  E5  from         MhmrSW0  in TF_04/Room0
   E6  from              Bk  in Cave02/Room0
   E6  from          SW_C00  in ITest62/Room0
   E6  from          SW_C00  in ITest62/Room0
@@ -1874,7 +2044,10 @@ Stage ID: 0C
   E6  from          SW_C00  in ITest62/Room0
   E6  from          SW_C00  in ITest62/Room0
   E7  from         AND_SW2  in Cave02/Room0
+  E7  from              Bk  in Cave02/Room0
+  E7  from              Bk  in Cave02/Room0
   E7  from         AND_SW2  in Cave02/Room0
+  E7  from         MhmrSW0  in TF_04/Room0
   E8  from              Bk  in Cave02/Room0
   E8  from         AND_SW2  in Cave02/Room0
   E8  from         AND_SW2  in Cave02/Room0
@@ -1912,6 +2085,7 @@ Stage ID: 0D
   47  from            Puti  in SubD71/Room0
   48  from         takara5  in SubD71/Stage
   80  from            Puti  in ITest63/Room0
+  80  from              Bk  in ITest63/Room0
   80  from            Puti  in ITest63/Room0
   80  from          SW_C00  in SubD43/Room0
   80  from          SW_C00  in SubD43/Room0
@@ -1926,14 +2100,17 @@ Stage ID: 0D
   80  from          SW_C00  in TF_06/Room0
   80  from          SW_C00  in TF_06/Room1
   81  from            Puti  in ITest63/Room0
+  81  from              Bk  in ITest63/Room0
   81  from         AND_SW2  in TF_06/Room2
   81  from         AND_SW2  in TF_06/Room2
   81  from         AND_SW2  in TF_06/Room3
   81  from         AND_SW2  in TF_06/Room4
   81  from         AND_SW2  in TF_06/Room5
   82  from            Puti  in ITest63/Room0
+  82  from              Bk  in ITest63/Room0
   82  from            Puti  in ITest63/Room0
   82  from         AND_SW2  in TF_06/Room3
+  83  from              Bk  in ITest63/Room0
   83  from              Bk  in ITest63/Room0
   83  from         AND_SW2  in TF_06/Room4
   84  from              Bk  in ITest63/Room0
@@ -1952,15 +2129,19 @@ Stage ID: 0D
   86  from              Bk  in ITest63/Room0
   87  from             mo2  in ITest63/Room0
   87  from            Puti  in ITest63/Room0
+  88  from              Bk  in ITest63/Room0
   88  from            Puti  in ITest63/Room0
   89  from            Puti  in ITest63/Room0
   89  from              Tn  in ITest63/Room0
   8A  from            Puti  in ITest63/Room0
+  8A  from              Bk  in ITest63/Room0
   8B  from              Bk  in ITest63/Room0
   8C  from            Puti  in ITest63/Room0
+  8C  from              Bk  in ITest63/Room0
   8D  from              Bk  in ITest63/Room0
   8E  from            Puti  in ITest63/Room0
   8E  from             mo2  in ITest63/Room0
+  8F  from              Bk  in ITest63/Room0
   8F  from              Bk  in ITest63/Room0
   8F  from           wiz_r  in ITest63/Room0
   90  from             mo2  in ITest63/Room0
@@ -1974,16 +2155,20 @@ Stage ID: 0D
   95  from         AND_SW2  in TF_06/Room2
   95  from          ALLdie  in TF_06/Room2
   96  from            Puti  in ITest63/Room0
+  96  from              Bk  in ITest63/Room0
   96  from         AND_SW2  in TF_06/Room3
   96  from          ALLdie  in TF_06/Room3
   97  from            Puti  in ITest63/Room0
   97  from         AND_SW2  in TF_06/Room4
   97  from          ALLdie  in TF_06/Room4
+  98  from              Bk  in ITest63/Room0
   98  from             mo2  in ITest63/Room0
   98  from         AND_SW2  in TF_06/Room5
   98  from          ALLdie  in TF_06/Room5
   99  from              Bk  in ITest63/Room0
+  99  from              Bk  in ITest63/Room0
   99  from           wiz_r  in ITest63/Room0
+  9A  from              Bk  in ITest63/Room0
   9A  from              Tn  in ITest63/Room0
   9B  from            Puti  in ITest63/Room0
   9B  from              Bk  in ITest63/Room0
@@ -2062,6 +2247,7 @@ Stage ID: 0D
   E0  from           wiz_r  in Cave10/Room8
   E0  from           wiz_r  in Cave10/Room8
   E0  from           wiz_r  in Cave10/Room8
+  E0  from         MhmrSW0  in Cave10/Room8
   E0  from          ALLdie  in Cave10/Room17
   E0  from          SW_C00  in Cave11/Room0
   E0  from          SW_C00  in Cave11/Room0
@@ -2087,9 +2273,11 @@ Stage ID: 0D
   E0  from          SW_C00  in SubD71/Room0
   E0  from          SW_C00  in SubD71/Room0
   E0  from          ALLdie  in SubD71/Room1
+  E0  from          Mhsg4h  in SubD71/Room1
   E0  from         AND_SW2  in SubD71/Room1
   E0  from         AND_SW2  in SubD71/Room1
   E0  from          ALLdie  in SubD71/Room2
+  E0  from          Mhsg4h  in SubD71/Room2
   E0  from         AND_SW2  in SubD71/Room2
   E0  from         AND_SW2  in SubD71/Room2
   E1  from           wiz_r  in Cave07/Room0
@@ -2107,6 +2295,7 @@ Stage ID: 0D
   E1  from          SW_C00  in Cave10/Room7
   E1  from         AND_SW2  in SubD42/Room0
   E1  from         AND_SW0  in SubD71/Room0
+  E1  from         SW_HIT0  in SubD71/Room0
   E1  from            Puti  in SubD71/Room0
   E1  from            Puti  in SubD71/Room0
   E2  from           wiz_r  in Cave07/Room0
@@ -2123,11 +2312,13 @@ Stage ID: 0D
   E2  from         c_kiiro  in Cave10/Room7
   E2  from         c_kiiro  in Cave10/Room7
   E2  from          SW_C00  in Cave10/Room7
+  E2  from         SW_HIT0  in SubD71/Room0
   E2  from            Puti  in SubD71/Room0
   E2  from            Puti  in SubD71/Room0
   E3  from           wiz_r  in Cave07/Room0
   E3  from         AND_SW2  in Cave07/Room0
   E3  from            Puti  in SubD71/Room0
+  E3  from         SW_HIT0  in SubD71/Room0
   E3  from            Puti  in SubD71/Room0
   E4  from           wiz_r  in Cave07/Room0
   E5  from           wiz_r  in Cave07/Room0
@@ -2136,9 +2327,11 @@ Stage ID: 0D
   E5  from         AND_SW2  in Cave07/Room0
   EB  from           wiz_r  in SubD71/Room1
   EB  from          SW_C00  in SubD71/Room1
+  EB  from         ky_tag0  in SubD71/Room1
   EB  from         AND_SW2  in SubD71/Room1/Layer8
   EB  from           wiz_r  in SubD71/Room2
   EB  from          SW_C00  in SubD71/Room2
+  EB  from         ky_tag0  in SubD71/Room2
   EB  from         AND_SW2  in SubD71/Room2/Layer8
   EC  from         AND_SW2  in SubD71/Room1/Layer8
   EC  from         AND_SW2  in SubD71/Room1/Layer8
