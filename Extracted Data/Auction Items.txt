@@ -1,0 +1,19 @@
+
+Format:
+00,2: Item ID.
+02,2: Message ID of the item's name for Zunari to say when introducing it.
+04,2: Starting bid price.
+06,2: Event bit to set when the player obtains this item.
+
+
+; SYMBOL: 4488    l_item_dat
+001F 1D10 0028 0F01
+00E4 1D11 0005 1080
+00ED 1D12 003C 1040
+0007 1D13 0050 1020
+; SYMBOL: 44A8    l_item_dat2
+0096 1D14 001E 1008
+0097 1D15 0028 1004
+
+; SYMBOL: 44B8    l_item_dat22
+00 2A 00 F9
