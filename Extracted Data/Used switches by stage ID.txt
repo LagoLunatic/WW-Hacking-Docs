@@ -1184,134 +1184,73 @@ Stage ID: 06
   15  from         TagMd13  in M_Dai/Room4
   16  from         takaraM  in M_Dai/Stage
   16  from         TagMd13  in M_Dai/Room4
-  16  from         TagMd13  in M_Dai/Room4
   17  from         takaraM  in M_Dai/Stage
-  17  from         TagMd13  in M_Dai/Room4
-  18  from         TagMd13  in M_Dai/Room4
-  19  from         TagMd13  in M_Dai/Room4
-  1A  from         TagMd13  in M_Dai/Room4
   1A  from         Kbota_B  in M_Dai/Room5
   1A  from         AND_SW0  in M_Dai/Room5
   1A  from         AND_SW2  in M_Dai/Room5
-  1B  from         TagMd13  in M_Dai/Room4
   1B  from         Kbota_B  in M_Dai/Room5
   1B  from         AND_SW0  in M_Dai/Room5
   1B  from         AND_SW2  in M_Dai/Room5
-  1C  from         TagMd13  in M_Dai/Room4
   1C  from         AND_SW2  in M_Dai/Room5
   1C  from         AND_SW2  in M_Dai/Room5
   1C  from         AND_SW2  in M_Dai/Room5
-  1D  from         TagMd13  in M_Dai/Room4
   1D  from           MpwrB  in M_Dai/Room5
-  1E  from         TagMd13  in M_Dai/Room4
   1E  from           Msdan  in M_Dai/Room5
   1E  from         AND_SW0  in M_Dai/Room5
-  1F  from         TagMd13  in M_Dai/Room4
   20  from         takara5  in M_Dai/Stage
-  20  from         TagMd13  in M_Dai/Room4
   20  from          TagHt2  in M_Dai/Room6
-  21  from         TagMd13  in M_Dai/Room4
   21  from         osiBLK0  in M_Dai/Room6
   21  from         AND_SW2  in M_Dai/Room6
   21  from         AND_SW2  in M_Dai/Room6
-  22  from         TagMd13  in M_Dai/Room4
   23  from         takara5  in M_Dai/Stage
-  23  from         TagMd13  in M_Dai/Room4
   23  from          MkieBB  in M_Dai/Room6
   23  from           DBLK0  in M_Dai/Room6
-  24  from         TagMd13  in M_Dai/Room4
-  25  from         TagMd13  in M_Dai/Room4
-  26  from         TagMd13  in M_Dai/Room4
   26  from         Warpts2  in M_Dai/Room6
-  27  from         TagMd13  in M_Dai/Room4
   28  from          door12  in M_Dai/Stage
-  28  from         TagMd13  in M_Dai/Room4
   28  from         osiBLK0  in M_Dai/Room6
-  29  from         TagMd13  in M_Dai/Room4
   29  from          MkieBB  in M_Dai/Room6
-  2A  from         TagMd13  in M_Dai/Room4
   2A  from          TagHt2  in M_Dai/Room6
-  2B  from         TagMd13  in M_Dai/Room4
-  2C  from         TagMd13  in M_Dai/Room4
-  2D  from         TagMd13  in M_Dai/Room4
   2D  from           Msdan  in M_Dai/Room7
   2D  from           Msdan  in M_Dai/Room7
   2D  from          ALLdie  in M_Dai/Room7
-  2E  from         TagMd13  in M_Dai/Room4
   2F  from          keyS12  in M_Dai/Stage
-  2F  from         TagMd13  in M_Dai/Room4
-  30  from         TagMd13  in M_Dai/Room4
-  31  from         TagMd13  in M_Dai/Room4
-  32  from         TagMd13  in M_Dai/Room4
-  33  from         TagMd13  in M_Dai/Room4
-  34  from         TagMd13  in M_Dai/Room4
   34  from          Mhsg4h  in M_Dai/Room8
   34  from         AND_SW2  in M_Dai/Room8
   34  from         AND_SW2  in M_Dai/Room8
   34  from          ALLdie  in M_Dai/Room8
-  35  from         TagMd13  in M_Dai/Room4
-  36  from         TagMd13  in M_Dai/Room4
-  37  from         TagMd13  in M_Dai/Room4
-  38  from         TagMd13  in M_Dai/Room4
   38  from           Msdan  in M_DaiMB/Room12
   38  from         AND_SW2  in M_DaiMB/Room12
-  39  from         TagMd13  in M_Dai/Room4
-  3A  from         TagMd13  in M_Dai/Room4
   3A  from         takara3  in M_DaiMB/Stage
   3A  from         AND_SW2  in M_DaiMB/Room12
   3A  from         AND_SW2  in M_DaiMB/Room12
-  3B  from         TagMd13  in M_Dai/Room4
   3B  from         AND_SW2  in M_DaiMB/Room12
   3B  from         AND_SW2  in M_DaiMB/Room12
   3B  from         AND_SW2  in M_DaiMB/Room12
   3B  from          SW_C00  in M_DaiMB/Room12
   3B  from          SW_C00  in M_DaiMB/Room12
   3B  from          SW_C00  in M_DaiMB/Room12
-  3C  from         TagMd13  in M_Dai/Room4
   3C  from         AND_SW2  in M_DaiMB/Room12
-  3D  from         TagMd13  in M_Dai/Room4
   3D  from         AND_SW2  in M_DaiMB/Room12
-  3E  from         TagMd13  in M_Dai/Room4
   3E  from         AND_SW2  in M_DaiMB/Room12
-  3F  from         TagMd13  in M_Dai/Room4
   3F  from            Stal  in M_DaiMB/Room12
   3F  from         AND_SW2  in M_DaiMB/Room12
   3F  from         AND_SW2  in M_DaiMB/Room12
   3F  from         AND_SW2  in M_DaiMB/Room12
   3F  from         AND_SW2  in M_DaiMB/Room12
-  40  from         TagMd13  in M_Dai/Room4
   40  from            Stal  in M_DaiMB/Room12
   40  from         AND_SW2  in M_DaiMB/Room12
-  41  from         TagMd13  in M_Dai/Room4
   41  from            Stal  in M_DaiMB/Room12
   41  from         AND_SW2  in M_DaiMB/Room12
-  42  from         TagMd13  in M_Dai/Room4
   42  from         AND_SW2  in M_DaiMB/Room12
   42  from         AND_SW2  in M_DaiMB/Room12
-  43  from         TagMd13  in M_Dai/Room4
   43  from         ky_tag3  in M_Dai/Room7
   43  from          door12  in M_DaiMB/Stage
   43  from         ky_tag3  in M_DaiMB/Room12
   43  from           MsuSW  in M_DaiMB/Room12
-  44  from         TagMd13  in M_Dai/Room4
-  45  from         TagMd13  in M_Dai/Room4
-  46  from         TagMd13  in M_Dai/Room4
-  47  from         TagMd13  in M_Dai/Room4
-  48  from         TagMd13  in M_Dai/Room4
-  49  from         TagMd13  in M_Dai/Room4
-  4A  from         TagMd13  in M_Dai/Room4
   4A  from          MkieBB  in M_Dai/Room10
   4B  from          keyS12  in M_Dai/Stage
-  4B  from         TagMd13  in M_Dai/Room4
-  4C  from         TagMd13  in M_Dai/Room4
-  4D  from         TagMd13  in M_Dai/Room4
-  4E  from         TagMd13  in M_Dai/Room4
   4F  from         takara2  in M_Dai/Stage
-  4F  from         TagMd13  in M_Dai/Room4
   4F  from         ky_tag3  in M_Dai/Room11
-  50  from         TagMd13  in M_Dai/Room4
-  51  from         TagMd13  in M_Dai/Room4
-  52  from         TagMd13  in M_Dai/Room4
   52  from         TagMd16  in M_Dai/Room13
   52  from         TagMd16  in M_Dai/Room13
   52  from         TagMd16  in M_Dai/Room13
@@ -1319,8 +1258,6 @@ Stage ID: 06
   52  from         TagMd16  in M_Dai/Room13
   52  from         TagMd16  in M_Dai/Room13
   52  from         TagMd16  in M_Dai/Room13
-  53  from         TagMd13  in M_Dai/Room4
-  54  from         TagMd13  in M_Dai/Room4
   54  from         MhmrSW0  in M_Dai/Room13
   54  from         AND_SW2  in M_Dai/Room13
   54  from         AND_SW2  in M_Dai/Room13
@@ -1331,7 +1268,6 @@ Stage ID: 06
   54  from         TagMd16  in M_Dai/Room13
   54  from         TagMd16  in M_Dai/Room13
   54  from         TagMd16  in M_Dai/Room13
-  55  from         TagMd13  in M_Dai/Room4
   55  from            Mmrr  in M_Dai/Room13
   55  from         TagMd16  in M_Dai/Room13
   55  from         TagMd16  in M_Dai/Room13
@@ -1340,168 +1276,51 @@ Stage ID: 06
   55  from         TagMd16  in M_Dai/Room13
   55  from         TagMd16  in M_Dai/Room13
   55  from         TagMd16  in M_Dai/Room13
-  56  from         TagMd13  in M_Dai/Room4
-  57  from         TagMd13  in M_Dai/Room4
-  58  from         TagMd13  in M_Dai/Room4
-  59  from         TagMd13  in M_Dai/Room4
-  5A  from         TagMd13  in M_Dai/Room4
-  5B  from         TagMd13  in M_Dai/Room4
   5B  from         Warpts3  in M_Dai/Room15
   5B  from         Ebrock2  in M_Dai/Room15
-  5C  from         TagMd13  in M_Dai/Room4
-  5D  from         TagMd13  in M_Dai/Room4
-  5E  from         TagMd13  in M_Dai/Room4
-  5F  from         TagMd13  in M_Dai/Room4
   5F  from         Kbota_A  in M_Dai/Room16
   5F  from         AND_SW2  in M_Dai/Room16
   5F  from         AND_SW2  in M_Dai/Room16
-  60  from         TagMd13  in M_Dai/Room4
   60  from         AND_SW2  in M_Dai/Room16
   60  from          MsuSWB  in M_Dai/Room16
   60  from          MsuSWB  in M_Dai/Room16
-  61  from         TagMd13  in M_Dai/Room4
   61  from         AND_SW2  in M_Dai/Room16
   61  from          MsuSWB  in M_Dai/Room16
   61  from          MsuSWB  in M_Dai/Room16
-  62  from         TagMd13  in M_Dai/Room4
   62  from         ky_tag3  in M_Dai/Room16
   62  from         AND_SW2  in M_Dai/Room16
   62  from         AND_SW2  in M_Dai/Room16
   62  from         AND_SW2  in M_Dai/Room16
-  63  from         TagMd13  in M_Dai/Room4
-  64  from         TagMd13  in M_Dai/Room4
   65  from         takaraM  in M_Dai/Stage
-  65  from         TagMd13  in M_Dai/Room4
   65  from         AND_SW2  in M_Dai/Room16
   66  from         takaraM  in M_Dai/Stage
-  66  from         TagMd13  in M_Dai/Room4
   66  from         AND_SW2  in M_Dai/Room16
-  67  from         TagMd13  in M_Dai/Room4
-  68  from         TagMd13  in M_Dai/Room4
-  69  from         TagMd13  in M_Dai/Room4
-  6A  from         TagMd13  in M_Dai/Room4
-  6B  from         TagMd13  in M_Dai/Room4
-  6C  from         TagMd13  in M_Dai/Room4
-  6D  from         TagMd13  in M_Dai/Room4
-  6E  from         TagMd13  in M_Dai/Room4
-  6F  from         TagMd13  in M_Dai/Room4
   6F  from          SW_C00  in M_Dai/Room17
-  70  from         TagMd13  in M_Dai/Room4
   70  from         AND_SW2  in M_Dai/Room16
   70  from            Mmrr  in M_Dai/Room16
-  71  from         TagMd13  in M_Dai/Room4
   71  from         AND_SW2  in M_Dai/Room16
   71  from            Mmrr  in M_Dai/Room16
-  72  from         TagMd13  in M_Dai/Room4
   72  from         AND_SW2  in M_Dai/Room16
   72  from            Mmrr  in M_Dai/Room16
-  73  from         TagMd13  in M_Dai/Room4
   73  from         AND_SW2  in M_Dai/Room16
   73  from            Mmrr  in M_Dai/Room16
-  74  from         TagMd13  in M_Dai/Room4
   74  from         AND_SW2  in M_Dai/Room16
   74  from            Mmrr  in M_Dai/Room16
-  75  from         TagMd13  in M_Dai/Room4
   75  from         AND_SW2  in M_Dai/Room16
   75  from            Mmrr  in M_Dai/Room16
-  76  from         TagMd13  in M_Dai/Room4
   76  from         AND_SW2  in M_Dai/Room16
   76  from         AND_SW2  in M_Dai/Room16
   76  from             Vds  in M_Dai/Room16
-  77  from         TagMd13  in M_Dai/Room4
   77  from         AND_SW2  in M_Dai/Room16
-  78  from         TagMd13  in M_Dai/Room4
   78  from         AND_SW2  in M_Dai/Room16
-  79  from         TagMd13  in M_Dai/Room4
-  7A  from         TagMd13  in M_Dai/Room4
-  7B  from         TagMd13  in M_Dai/Room4
   7B  from         osiBLK0  in M_Dai/Room19
   7C  from         takara6  in M_Dai/Stage
-  7C  from         TagMd13  in M_Dai/Room4
-  7D  from         TagMd13  in M_Dai/Room4
   7E  from          ZenS12  in M_Dai/Stage
-  7E  from         TagMd13  in M_Dai/Room4
   7F  from          door12  in M_Dai/Stage
-  7F  from         TagMd13  in M_Dai/Room4
-  80  from         TagMd13  in M_Dai/Room4
-  81  from         TagMd13  in M_Dai/Room4
-  82  from         TagMd13  in M_Dai/Room4
-  83  from         TagMd13  in M_Dai/Room4
-  84  from         TagMd13  in M_Dai/Room4
-  85  from         TagMd13  in M_Dai/Room4
-  86  from         TagMd13  in M_Dai/Room4
-  87  from         TagMd13  in M_Dai/Room4
-  88  from         TagMd13  in M_Dai/Room4
-  89  from         TagMd13  in M_Dai/Room4
-  8A  from         TagMd13  in M_Dai/Room4
-  8B  from         TagMd13  in M_Dai/Room4
-  8C  from         TagMd13  in M_Dai/Room4
-  8D  from         TagMd13  in M_Dai/Room4
-  8E  from         TagMd13  in M_Dai/Room4
-  8F  from         TagMd13  in M_Dai/Room4
-  90  from         TagMd13  in M_Dai/Room4
-  91  from         TagMd13  in M_Dai/Room4
-  92  from         TagMd13  in M_Dai/Room4
-  93  from         TagMd13  in M_Dai/Room4
-  94  from         TagMd13  in M_Dai/Room4
-  95  from         TagMd13  in M_Dai/Room4
-  96  from         TagMd13  in M_Dai/Room4
   96  from              Tn  in M_Dai/Room17
-  97  from         TagMd13  in M_Dai/Room4
   97  from            Stal  in M_Dai/Room19
-  98  from         TagMd13  in M_Dai/Room4
   98  from            Stal  in M_Dai/Room19
-  99  from         TagMd13  in M_Dai/Room4
   99  from            Stal  in M_Dai/Room19
-  9A  from         TagMd13  in M_Dai/Room4
-  9B  from         TagMd13  in M_Dai/Room4
-  9C  from         TagMd13  in M_Dai/Room4
-  9D  from         TagMd13  in M_Dai/Room4
-  9E  from         TagMd13  in M_Dai/Room4
-  9F  from         TagMd13  in M_Dai/Room4
-  A0  from         TagMd13  in M_Dai/Room4
-  A1  from         TagMd13  in M_Dai/Room4
-  A2  from         TagMd13  in M_Dai/Room4
-  A3  from         TagMd13  in M_Dai/Room4
-  A4  from         TagMd13  in M_Dai/Room4
-  A5  from         TagMd13  in M_Dai/Room4
-  A6  from         TagMd13  in M_Dai/Room4
-  A7  from         TagMd13  in M_Dai/Room4
-  A8  from         TagMd13  in M_Dai/Room4
-  A9  from         TagMd13  in M_Dai/Room4
-  AA  from         TagMd13  in M_Dai/Room4
-  AB  from         TagMd13  in M_Dai/Room4
-  AC  from         TagMd13  in M_Dai/Room4
-  AD  from         TagMd13  in M_Dai/Room4
-  AE  from         TagMd13  in M_Dai/Room4
-  AF  from         TagMd13  in M_Dai/Room4
-  B0  from         TagMd13  in M_Dai/Room4
-  B1  from         TagMd13  in M_Dai/Room4
-  B2  from         TagMd13  in M_Dai/Room4
-  B3  from         TagMd13  in M_Dai/Room4
-  B4  from         TagMd13  in M_Dai/Room4
-  B5  from         TagMd13  in M_Dai/Room4
-  B6  from         TagMd13  in M_Dai/Room4
-  B7  from         TagMd13  in M_Dai/Room4
-  B8  from         TagMd13  in M_Dai/Room4
-  B9  from         TagMd13  in M_Dai/Room4
-  BA  from         TagMd13  in M_Dai/Room4
-  BB  from         TagMd13  in M_Dai/Room4
-  BC  from         TagMd13  in M_Dai/Room4
-  BD  from         TagMd13  in M_Dai/Room4
-  BE  from         TagMd13  in M_Dai/Room4
-  BF  from         TagMd13  in M_Dai/Room4
-  C0  from         TagMd13  in M_Dai/Room4
-  C1  from         TagMd13  in M_Dai/Room4
-  C2  from         TagMd13  in M_Dai/Room4
-  C3  from         TagMd13  in M_Dai/Room4
-  C4  from         TagMd13  in M_Dai/Room4
-  C5  from         TagMd13  in M_Dai/Room4
-  C6  from         TagMd13  in M_Dai/Room4
-  C7  from         TagMd13  in M_Dai/Room4
-  C8  from         TagMd13  in M_Dai/Room4
-  C9  from         TagMd13  in M_Dai/Room4
-  CA  from         TagMd13  in M_Dai/Room4
   CB  from          SW_C00  in M_Dai/Room0
   CB  from          SW_C00  in M_Dai/Room0
   CB  from          SW_C00  in M_Dai/Room0
@@ -1513,84 +1332,11 @@ Stage ID: 06
   CB  from          SW_C00  in M_Dai/Room0
   CB  from          SW_C00  in M_Dai/Room0
   CB  from          SW_C00  in M_Dai/Room1
-  CB  from         TagMd13  in M_Dai/Room4
-  CC  from         TagMd13  in M_Dai/Room4
-  CD  from         TagMd13  in M_Dai/Room4
-  CE  from         TagMd13  in M_Dai/Room4
-  CF  from         TagMd13  in M_Dai/Room4
-  D0  from         TagMd13  in M_Dai/Room4
-  D1  from         TagMd13  in M_Dai/Room4
-  D2  from         TagMd13  in M_Dai/Room4
-  D3  from         TagMd13  in M_Dai/Room4
-  D4  from         TagMd13  in M_Dai/Room4
-  D5  from         TagMd13  in M_Dai/Room4
-  D6  from         TagMd13  in M_Dai/Room4
-  D7  from         TagMd13  in M_Dai/Room4
-  D8  from         TagMd13  in M_Dai/Room4
-  D9  from         TagMd13  in M_Dai/Room4
-  DA  from         TagMd13  in M_Dai/Room4
-  DB  from         TagMd13  in M_Dai/Room4
-  DC  from         TagMd13  in M_Dai/Room4
-  DD  from         TagMd13  in M_Dai/Room4
-  DE  from         TagMd13  in M_Dai/Room4
-  DF  from         TagMd13  in M_Dai/Room4
-  E0  from         TagMd13  in M_Dai/Room4
   E0  from         AND_SW2  in M_Dai/Room5
   E0  from         c_black  in M_Dai/Room5
   E0  from         c_black  in M_Dai/Room5
   E0  from         c_black  in M_Dai/Room5
   E0  from           Akabe  in M_Dai/Room17
-  E1  from         TagMd13  in M_Dai/Room4
-  E2  from         TagMd13  in M_Dai/Room4
-  E3  from         TagMd13  in M_Dai/Room4
-  E4  from         TagMd13  in M_Dai/Room4
-  E5  from         TagMd13  in M_Dai/Room4
-  E6  from         TagMd13  in M_Dai/Room4
-  E7  from         TagMd13  in M_Dai/Room4
-  E8  from         TagMd13  in M_Dai/Room4
-  E9  from         TagMd13  in M_Dai/Room4
-  EA  from         TagMd13  in M_Dai/Room4
-  EB  from         TagMd13  in M_Dai/Room4
-  EC  from         TagMd13  in M_Dai/Room4
-  ED  from         TagMd13  in M_Dai/Room4
-  EE  from         TagMd13  in M_Dai/Room4
-  EF  from         TagMd13  in M_Dai/Room4
-  F0  from         TagMd13  in M_Dai/Room4
-  F1  from         TagMd13  in M_Dai/Room4
-  F2  from         TagMd13  in M_Dai/Room4
-  F3  from         TagMd13  in M_Dai/Room4
-  F4  from         TagMd13  in M_Dai/Room4
-  F5  from         TagMd13  in M_Dai/Room4
-  F6  from         TagMd13  in M_Dai/Room4
-  F7  from         TagMd13  in M_Dai/Room4
-  F8  from         TagMd13  in M_Dai/Room4
-  F9  from         TagMd13  in M_Dai/Room4
-  FA  from         TagMd13  in M_Dai/Room4
-  FB  from         TagMd13  in M_Dai/Room4
-  FC  from         TagMd13  in M_Dai/Room4
-  FD  from         TagMd13  in M_Dai/Room4
-  FE  from         TagMd13  in M_Dai/Room4
-  FF  from         TagMd13  in M_Dai/Room4
-  100  from         TagMd13  in M_Dai/Room4
-  101  from         TagMd13  in M_Dai/Room4
-  102  from         TagMd13  in M_Dai/Room4
-  103  from         TagMd13  in M_Dai/Room4
-  104  from         TagMd13  in M_Dai/Room4
-  105  from         TagMd13  in M_Dai/Room4
-  106  from         TagMd13  in M_Dai/Room4
-  107  from         TagMd13  in M_Dai/Room4
-  108  from         TagMd13  in M_Dai/Room4
-  109  from         TagMd13  in M_Dai/Room4
-  10A  from         TagMd13  in M_Dai/Room4
-  10B  from         TagMd13  in M_Dai/Room4
-  10C  from         TagMd13  in M_Dai/Room4
-  10D  from         TagMd13  in M_Dai/Room4
-  10E  from         TagMd13  in M_Dai/Room4
-  10F  from         TagMd13  in M_Dai/Room4
-  110  from         TagMd13  in M_Dai/Room4
-  111  from         TagMd13  in M_Dai/Room4
-  112  from         TagMd13  in M_Dai/Room4
-  113  from         TagMd13  in M_Dai/Room4
 Stage ID: 07
   00  from          tkrASw  in kaze/Stage
   00  from         AND_SW2  in kaze/Room0
