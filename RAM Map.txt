@@ -220,7 +220,7 @@ Format of each block of memory in the game heap:
     & 01 - This item does not fade out and disappear after a time limit.
     & 02 - Item is permanently deactivated.
       It acts the same as if the item has an activation switch that isn't set yet where it can't be picked up, except it never activates from a switch.
-    & 04 - Set for small and big keys, but seems to never be read by code?
+    & 04 - Set for small keys, big keys, and the telescope, but seems to never be read by code?
     & 10 - Shadow related. Call dComIfGd_setShadow instead of dComIfGd_setSimpleShadow2?
 803886B0 - Item special effect info.
   Entry length 4. Index is an item ID. (Not all items have entries here. It only goes from item 00 to item 80.)
@@ -949,6 +949,8 @@ Player's partner's room restart position? ("restart option")
 
 803C9810,2 - related to heart meter?
 803CA7CC,2 - related to heart meter?
+
+803CA7D2,1 - Current message mode?
 
 803CA7D5,1 - What is currently shown on the R button icon?
 803CA7D6,1 - What is currently shown on the B button icon.

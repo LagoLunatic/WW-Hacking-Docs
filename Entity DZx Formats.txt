@@ -1255,6 +1255,12 @@ Pig: Pig. (d_a_kb)
     0 - Pink
     1 - Speckled
     2 - Black
+    This number is also used as an index into the bitfield at event register 0xBFFF.
+    At runtime, the game seems to add 8 to this number to represent the pig being big (e.g. 0xA would be a big black pig).
+    If it's a big pig, only one color will spawn:
+      If event register 0xBFFF has the black pig's bit set, or no bits set, the black pig will spawn.
+      If it doesn't have the black pig's bit but it does have the pink pig's, the pink pig will spawn.
+      If it doesn't have the black or pink pigs' bits but it does have the speckled pig's, the speckled pig will spawn.
   params & 000000F0
   params & 0000FF00 - Maybe caught vs uncaught on Outset?
     00 - Uncaught?

@@ -716,6 +716,11 @@ reinit__10dSv_info_cFv
 onBeast__25dSv_player_get_bag_item_cFUc
   sets a bit for whether you've ever owned a particular spoil
 
+dSv_player_collect_c::isCollect(int, unsigned char)
+  checks if you own a particular item by checking a bitfield.
+  r3 - Offset of the one-byte bitfield from 803C4CBC.
+  r4 - Index of the bit in the bitfield.
+
 setItemModel__9daPy_lk_cFv
   seems to control which of the player's item accessory models are currently visible.
   8010627C - reads the currently equipped shield ID to know which shield model to show.
@@ -1492,3 +1497,6 @@ dAttention_c::ActionTarget(long)
   (Do not confuse this with the targeted actor, returned by dAttention_c::LockonTarget.)
   r3 - dAttention_c
   r4 - 0? Related to dAttention_c.mActionListNum
+
+dScnPly_Delete(dScnPly_ply_c *)
+  this function is called when leaving a stage to delete it from memory.
