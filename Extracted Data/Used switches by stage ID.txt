@@ -239,9 +239,28 @@ Stage ID: 00
   7A  from         ootubo1  in sea/Room44
   7B  from          kotubo  in sea/Room11
   7C  from          kotubo  in sea/Room11
+Room sea/Room1
   E0  from           TagHt  in sea/Room1/Layer1
   E0  from           Akabe  in sea/Room1/Layer2
   E0  from           Akabe  in sea/Room1/Layer3
+  E1  from            Puti  in sea/Room1/Layer1
+  E1  from            Puti  in sea/Room1/Layer1
+  E1  from            Puti  in sea/Room1/Layer1
+  E1  from            Puti  in sea/Room1/Layer1
+  E1  from          SW_C00  in sea/Room1/Layer1
+  E5  from          Ocanon  in sea/Room1/Layer1
+  E5  from            Puti  in sea/Room1/Layer1
+  E5  from            Puti  in sea/Room1/Layer1
+  E5  from            Puti  in sea/Room1/Layer1
+  E5  from            Puti  in sea/Room1/Layer1
+  E5  from            Puti  in sea/Room1/Layer1
+  E6  from            Puti  in sea/Room1/Layer1
+  E6  from            Puti  in sea/Room1/Layer1
+  E7  from            Puti  in sea/Room1/Layer1
+  E7  from            Puti  in sea/Room1/Layer1
+  E7  from            Puti  in sea/Room1/Layer1
+  E7  from            Puti  in sea/Room1/Layer1
+Room sea/Room2
   E0  from          Ebrock  in sea/Room2
   E0  from         AND_SW2  in sea/Room2
   E0  from            Puti  in sea/Room2
@@ -250,61 +269,6 @@ Stage ID: 00
   E0  from            Puti  in sea/Room2
   E0  from            Puti  in sea/Room2
   E0  from            Puti  in sea/Room2
-  E0  from           wiz_r  in sea/Room6
-  E0  from          SW_C00  in sea/Room6
-  E0  from           Oship  in sea/Room8
-  E0  from         AND_SW2  in sea/Room8
-  E0  from          SW_C00  in sea/Room12
-  E0  from          Ocanon  in sea/Room16
-  E0  from         AND_SW2  in sea/Room16
-  E0  from         AND_SW2  in sea/Room19
-  E0  from          Ocanon  in sea/Room19
-  E0  from          Ocanon  in sea/Room20
-  E0  from         AND_SW2  in sea/Room20
-  E0  from         AND_SW2  in sea/Room21
-  E0  from          Ocanon  in sea/Room21
-  E0  from          Ocanon  in sea/Room22
-  E0  from         AND_SW2  in sea/Room22
-  E0  from          Ocanon  in sea/Room24
-  E0  from         AND_SW2  in sea/Room24
-  E0  from          Ocanon  in sea/Room25
-  E0  from         AND_SW2  in sea/Room25
-  E0  from         AND_SW0  in sea/Room28
-  E0  from         AND_SW2  in sea/Room28
-  E0  from           wiz_r  in sea/Room30
-  E0  from           wiz_r  in sea/Room30
-  E0  from          SW_C00  in sea/Room30
-  E0  from          Ocanon  in sea/Room31
-  E0  from         AND_SW2  in sea/Room31
-  E0  from         AND_SW2  in sea/Room34
-  E0  from              Bk  in sea/Room34
-  E0  from          Ocanon  in sea/Room37
-  E0  from         AND_SW2  in sea/Room37
-  E0  from         AND_SW0  in sea/Room38
-  E0  from         AND_SW2  in sea/Room38
-  E0  from          Ocanon  in sea/Room39
-  E0  from         AND_SW2  in sea/Room39
-  E0  from            item  in sea/Room40
-  E0  from          SW_C00  in sea/Room41
-  E0  from          SW_C00  in sea/Room41/Layer7
-  E0  from           wiz_r  in sea/Room42
-  E0  from          SW_C00  in sea/Room42
-  E0  from         AND_SW2  in sea/Room43
-  E0  from           Akabe  in sea/Room43
-  E0  from           Akabe  in sea/Room43
-  E0  from           Akabe  in sea/Room43
-  E0  from           Akabe  in sea/Room43
-  E0  from          SW_C00  in sea/Room44
-  E0  from           Akabe  in sea/Room45
-  E0  from          Ocanon  in sea/Room46
-  E0  from         AND_SW2  in sea/Room46
-  E0  from          Ocanon  in sea/Room49
-  E0  from         AND_SW2  in sea/Room49
-  E1  from            Puti  in sea/Room1/Layer1
-  E1  from            Puti  in sea/Room1/Layer1
-  E1  from            Puti  in sea/Room1/Layer1
-  E1  from            Puti  in sea/Room1/Layer1
-  E1  from          SW_C00  in sea/Room1/Layer1
   E1  from         AND_SW2  in sea/Room2
   E1  from            Puti  in sea/Room2
   E1  from            Puti  in sea/Room2
@@ -312,347 +276,412 @@ Stage ID: 00
   E1  from            Puti  in sea/Room2
   E1  from            Puti  in sea/Room2
   E1  from            Puti  in sea/Room2
+Room sea/Room6
+  E0  from           wiz_r  in sea/Room6
+  E0  from          SW_C00  in sea/Room6
   E1  from           wiz_r  in sea/Room6
   E1  from         AND_SW2  in sea/Room6
   E1  from          tkrAOs  in sea/Room6
-  E1  from           Oship  in sea/Room8
-  E1  from         AND_SW2  in sea/Room8
-  E1  from          SW_C00  in sea/Room12
-  E1  from          Ocanon  in sea/Room16
-  E1  from         AND_SW2  in sea/Room16
-  E1  from         AND_SW2  in sea/Room19
-  E1  from          Ocanon  in sea/Room19
-  E1  from          Ocanon  in sea/Room20
-  E1  from         AND_SW2  in sea/Room20
-  E1  from         AND_SW2  in sea/Room21
-  E1  from          Ocanon  in sea/Room21
-  E1  from          Ocanon  in sea/Room22
-  E1  from         AND_SW2  in sea/Room22
-  E1  from          Ocanon  in sea/Room24
-  E1  from         AND_SW2  in sea/Room24
-  E1  from          Ocanon  in sea/Room25
-  E1  from         AND_SW2  in sea/Room25
-  E1  from          Ocanon  in sea/Room28
-  E1  from         AND_SW2  in sea/Room28
-  E1  from         AND_SW2  in sea/Room30
-  E1  from           wiz_r  in sea/Room30
-  E1  from          Ocanon  in sea/Room31
-  E1  from         AND_SW2  in sea/Room31
-  E1  from         AND_SW2  in sea/Room34
-  E1  from              Bk  in sea/Room34
-  E1  from           Akabe  in sea/Room35
-  E1  from          Ocanon  in sea/Room37
-  E1  from         AND_SW2  in sea/Room37
-  E1  from         SW_HIT0  in sea/Room38
-  E1  from         AND_SW0  in sea/Room38
-  E1  from          Ocanon  in sea/Room39
-  E1  from         AND_SW2  in sea/Room39
-  E1  from          SW_C00  in sea/Room41
-  E1  from         AND_SW2  in sea/Room43
-  E1  from           Akabe  in sea/Room43
-  E1  from           Akabe  in sea/Room43
-  E1  from          Ocanon  in sea/Room46
-  E1  from         AND_SW2  in sea/Room46
-  E1  from          Ocanon  in sea/Room49
-  E1  from         AND_SW2  in sea/Room49
   E2  from           wiz_r  in sea/Room6
   E2  from         AND_SW2  in sea/Room6
   E2  from          tkrAOs  in sea/Room6
-  E2  from          Ocanon  in sea/Room8
-  E2  from         AND_SW2  in sea/Room8
-  E2  from         AND_SW2  in sea/Room12
-  E2  from              Bk  in sea/Room12
-  E2  from          Ocanon  in sea/Room16
-  E2  from         AND_SW2  in sea/Room16
-  E2  from         AND_SW2  in sea/Room19
-  E2  from          Ocanon  in sea/Room19
-  E2  from          Ocanon  in sea/Room20
-  E2  from         AND_SW2  in sea/Room20
-  E2  from         AND_SW2  in sea/Room21
-  E2  from          Ocanon  in sea/Room21
-  E2  from          Ocanon  in sea/Room22
-  E2  from         AND_SW2  in sea/Room22
-  E2  from          Ocanon  in sea/Room24
-  E2  from         AND_SW2  in sea/Room24
-  E2  from          Ocanon  in sea/Room25
-  E2  from         AND_SW2  in sea/Room25
-  E2  from          Ocanon  in sea/Room28
-  E2  from         AND_SW2  in sea/Room28
-  E2  from         AND_SW2  in sea/Room30
-  E2  from           wiz_r  in sea/Room30
-  E2  from          Ocanon  in sea/Room31
-  E2  from         AND_SW2  in sea/Room31
-  E2  from         AND_SW2  in sea/Room34
-  E2  from          tkrAOs  in sea/Room34
-  E2  from         SW_HIT0  in sea/Room35
-  E2  from         AND_SW2  in sea/Room35
-  E2  from          Ocanon  in sea/Room37
-  E2  from         AND_SW2  in sea/Room37
-  E2  from         MhmrSW0  in sea/Room38
-  E2  from         AND_SW0  in sea/Room38
-  E2  from          Ocanon  in sea/Room39
-  E2  from         AND_SW2  in sea/Room39
-  E2  from           Akabe  in sea/Room41
-  E2  from           Akabe  in sea/Room41
-  E2  from           Akabe  in sea/Room41
-  E2  from           Akabe  in sea/Room41/Layer7
-  E2  from           Akabe  in sea/Room41/Layer7
-  E2  from           Akabe  in sea/Room41/Layer7
-  E2  from         AND_SW2  in sea/Room43
-  E2  from         AND_SW2  in sea/Room43
-  E2  from           Akabe  in sea/Room43
-  E2  from           Akabe  in sea/Room43
-  E2  from           Akabe  in sea/Room43
-  E2  from          Ocanon  in sea/Room46
-  E2  from         AND_SW2  in sea/Room46
-  E2  from          Ocanon  in sea/Room49
-  E2  from         AND_SW2  in sea/Room49
   E3  from           wiz_r  in sea/Room6
   E3  from         AND_SW2  in sea/Room6
+  E4  from           wiz_r  in sea/Room6
+  E4  from         AND_SW2  in sea/Room6
+  E4  from           wiz_r  in sea/Room6
+  E5  from           wiz_r  in sea/Room6
+  E5  from         AND_SW2  in sea/Room6
+  E6  from           wiz_r  in sea/Room6
+  E6  from         AND_SW2  in sea/Room6
+  E7  from         AND_SW2  in sea/Room6
+  E7  from         takara5  in sea/Room6
+Room sea/Room8
+  E0  from           Oship  in sea/Room8
+  E0  from         AND_SW2  in sea/Room8
+  E1  from           Oship  in sea/Room8
+  E1  from         AND_SW2  in sea/Room8
+  E2  from          Ocanon  in sea/Room8
+  E2  from         AND_SW2  in sea/Room8
   E3  from          Ocanon  in sea/Room8
   E3  from         AND_SW2  in sea/Room8
+  E4  from          Ocanon  in sea/Room8
+  E4  from         AND_SW2  in sea/Room8
+  E5  from          Ocanon  in sea/Room8
+  E5  from         AND_SW2  in sea/Room8
+Room sea/Room12
+  E0  from          SW_C00  in sea/Room12
+  E1  from          SW_C00  in sea/Room12
+  E2  from         AND_SW2  in sea/Room12
+  E2  from              Bk  in sea/Room12
   E3  from         AND_SW2  in sea/Room12
   E3  from              Bk  in sea/Room12
+  E4  from         AND_SW2  in sea/Room12
+  E4  from          tkrAOs  in sea/Room12
+Room sea/Room13
+  E5  from          SW_C00  in sea/Room13
+  E6  from          SW_C00  in sea/Room13
+Room sea/Room16
+  E0  from          Ocanon  in sea/Room16
+  E0  from         AND_SW2  in sea/Room16
+  E1  from          Ocanon  in sea/Room16
+  E1  from         AND_SW2  in sea/Room16
+  E2  from          Ocanon  in sea/Room16
+  E2  from         AND_SW2  in sea/Room16
   E3  from          Ocanon  in sea/Room16
   E3  from         AND_SW2  in sea/Room16
+  E4  from          Ocanon  in sea/Room16
+  E4  from         AND_SW2  in sea/Room16
+  E5  from          Ocanon  in sea/Room16
+  E5  from         AND_SW2  in sea/Room16
+  E6  from          Ocanon  in sea/Room16
+  E6  from         AND_SW2  in sea/Room16
+  E7  from          Ocanon  in sea/Room16
+  E7  from         AND_SW2  in sea/Room16
+  E8  from         AND_SW2  in sea/Room16
+  E8  from          tkrAOs  in sea/Room16
+  E9  from         AND_SW2  in sea/Room16
+  E9  from          tkrAOs  in sea/Room16
+Room sea/Room19
+  E0  from         AND_SW2  in sea/Room19
+  E0  from          Ocanon  in sea/Room19
+  E1  from         AND_SW2  in sea/Room19
+  E1  from          Ocanon  in sea/Room19
+  E2  from         AND_SW2  in sea/Room19
+  E2  from          Ocanon  in sea/Room19
   E3  from         AND_SW2  in sea/Room19
   E3  from          Ocanon  in sea/Room19
+  E4  from         AND_SW2  in sea/Room19
+  E4  from              Bk  in sea/Room19
+  E5  from         AND_SW2  in sea/Room19
+  E5  from              Bk  in sea/Room19
+  E6  from         AND_SW2  in sea/Room19
+  E6  from              Bk  in sea/Room19
+  E7  from         AND_SW2  in sea/Room19
+  E7  from          tkrAOs  in sea/Room19
+Room sea/Room20
+  E0  from          Ocanon  in sea/Room20
+  E0  from         AND_SW2  in sea/Room20
+  E1  from          Ocanon  in sea/Room20
+  E1  from         AND_SW2  in sea/Room20
+  E2  from          Ocanon  in sea/Room20
+  E2  from         AND_SW2  in sea/Room20
   E3  from          Ocanon  in sea/Room20
   E3  from         AND_SW2  in sea/Room20
+  E4  from         AND_SW2  in sea/Room20
+  E4  from          tkrAOs  in sea/Room20
+Room sea/Room21
+  E0  from         AND_SW2  in sea/Room21
+  E0  from          Ocanon  in sea/Room21
+  E1  from         AND_SW2  in sea/Room21
+  E1  from          Ocanon  in sea/Room21
+  E2  from         AND_SW2  in sea/Room21
+  E2  from          Ocanon  in sea/Room21
   E3  from         AND_SW2  in sea/Room21
   E3  from          Ocanon  in sea/Room21
+  E4  from         AND_SW2  in sea/Room21
+Room sea/Room22
+  E0  from          Ocanon  in sea/Room22
+  E0  from         AND_SW2  in sea/Room22
+  E1  from          Ocanon  in sea/Room22
+  E1  from         AND_SW2  in sea/Room22
+  E2  from          Ocanon  in sea/Room22
+  E2  from         AND_SW2  in sea/Room22
   E3  from          Ocanon  in sea/Room22
   E3  from         AND_SW2  in sea/Room22
+  E4  from          Ocanon  in sea/Room22
+  E4  from         AND_SW2  in sea/Room22
+  E5  from          Ocanon  in sea/Room22
+  E5  from         AND_SW2  in sea/Room22
+  E6  from           Oship  in sea/Room22
+  E6  from         AND_SW2  in sea/Room22
+Room sea/Room24
+  E0  from          Ocanon  in sea/Room24
+  E0  from         AND_SW2  in sea/Room24
+  E1  from          Ocanon  in sea/Room24
+  E1  from         AND_SW2  in sea/Room24
+  E2  from          Ocanon  in sea/Room24
+  E2  from         AND_SW2  in sea/Room24
   E3  from          Ocanon  in sea/Room24
   E3  from         AND_SW2  in sea/Room24
+  E4  from          Ocanon  in sea/Room24
+  E4  from         AND_SW2  in sea/Room24
+  E5  from          Ocanon  in sea/Room24
+  E5  from         AND_SW2  in sea/Room24
+  E6  from          Ocanon  in sea/Room24
+  E6  from         AND_SW2  in sea/Room24
+  E7  from          Ocanon  in sea/Room24
+  E7  from         AND_SW2  in sea/Room24
+  E8  from           Oship  in sea/Room24
+  E8  from         AND_SW2  in sea/Room24
+  E9  from              Bk  in sea/Room24
+  E9  from         AND_SW2  in sea/Room24
+  EA  from              Bk  in sea/Room24
+  EA  from         AND_SW2  in sea/Room24
+  EB  from              Bk  in sea/Room24
+  EB  from         AND_SW2  in sea/Room24
+  EC  from              Bk  in sea/Room24
+  EC  from         AND_SW2  in sea/Room24
+  ED  from         AND_SW2  in sea/Room24
+  ED  from          tkrAOs  in sea/Room24
+Room sea/Room25
+  E0  from          Ocanon  in sea/Room25
+  E0  from         AND_SW2  in sea/Room25
+  E1  from          Ocanon  in sea/Room25
+  E1  from         AND_SW2  in sea/Room25
+  E2  from          Ocanon  in sea/Room25
+  E2  from         AND_SW2  in sea/Room25
   E3  from          Ocanon  in sea/Room25
   E3  from         AND_SW2  in sea/Room25
+  E4  from          Ocanon  in sea/Room25
+  E4  from         AND_SW2  in sea/Room25
+  E5  from          Ocanon  in sea/Room25
+  E5  from         AND_SW2  in sea/Room25
+  E6  from           Oship  in sea/Room25
+  E6  from         AND_SW2  in sea/Room25
+  E7  from           Oship  in sea/Room25
+  E7  from         AND_SW2  in sea/Room25
+  E8  from          Ocanon  in sea/Room25
+  E8  from         AND_SW2  in sea/Room25
+  E9  from          Ocanon  in sea/Room25
+  E9  from         AND_SW2  in sea/Room25
+  EA  from          Ocanon  in sea/Room25
+  EA  from         AND_SW2  in sea/Room25
+  EB  from          Ocanon  in sea/Room25
+  EB  from         AND_SW2  in sea/Room25
+  EC  from         AND_SW2  in sea/Room25
+  EC  from          tkrAOs  in sea/Room25
+Room sea/Room28
+  E0  from         AND_SW0  in sea/Room28
+  E0  from         AND_SW2  in sea/Room28
+  E1  from          Ocanon  in sea/Room28
+  E1  from         AND_SW2  in sea/Room28
+  E2  from          Ocanon  in sea/Room28
+  E2  from         AND_SW2  in sea/Room28
   E3  from          Ocanon  in sea/Room28
   E3  from         AND_SW2  in sea/Room28
+  E4  from          Ocanon  in sea/Room28
+  E4  from         AND_SW2  in sea/Room28
+  E5  from         AND_SW2  in sea/Room28
+  E5  from          tkrAOs  in sea/Room28
+  E6  from              Bk  in sea/Room28
+  E6  from         AND_SW2  in sea/Room28
+  E7  from              Bk  in sea/Room28
+  E7  from         AND_SW2  in sea/Room28
+  E8  from              Bk  in sea/Room28
+  E8  from         AND_SW2  in sea/Room28
+  E9  from              Bk  in sea/Room28
+  E9  from         AND_SW2  in sea/Room28
+  EA  from         AND_SW2  in sea/Room28
+  EA  from          tkrAOs  in sea/Room28
+Room sea/Room30
+  E0  from           wiz_r  in sea/Room30
+  E0  from           wiz_r  in sea/Room30
+  E0  from          SW_C00  in sea/Room30
+  E1  from         AND_SW2  in sea/Room30
+  E1  from           wiz_r  in sea/Room30
+  E2  from         AND_SW2  in sea/Room30
+  E2  from           wiz_r  in sea/Room30
   E3  from         AND_SW2  in sea/Room30
   E3  from              Bk  in sea/Room30
+  E4  from         AND_SW2  in sea/Room30
+  E4  from              Bk  in sea/Room30
+  E5  from         AND_SW2  in sea/Room30
+  E5  from          tkrAOs  in sea/Room30
+Room sea/Room31
+  E0  from          Ocanon  in sea/Room31
+  E0  from         AND_SW2  in sea/Room31
+  E1  from          Ocanon  in sea/Room31
+  E1  from         AND_SW2  in sea/Room31
+  E2  from          Ocanon  in sea/Room31
+  E2  from         AND_SW2  in sea/Room31
   E3  from          Ocanon  in sea/Room31
   E3  from         AND_SW2  in sea/Room31
+  E4  from         AND_SW2  in sea/Room31
+  E4  from          Ocanon  in sea/Room31
+  E5  from         AND_SW2  in sea/Room31
+  E5  from          Ocanon  in sea/Room31
+  E5  from           TagHt  in sea/Room31
+  E6  from         AND_SW2  in sea/Room31
+  E6  from          Ocanon  in sea/Room31
+  E7  from         AND_SW2  in sea/Room31
+  E7  from          Ocanon  in sea/Room31
+  E8  from         AND_SW2  in sea/Room31
+  E8  from         takara6  in sea/Room31
+Room sea/Room34
+  E0  from         AND_SW2  in sea/Room34
+  E0  from              Bk  in sea/Room34
+  E1  from         AND_SW2  in sea/Room34
+  E1  from              Bk  in sea/Room34
+  E2  from         AND_SW2  in sea/Room34
+  E2  from          tkrAOs  in sea/Room34
+Room sea/Room35
+  E1  from           Akabe  in sea/Room35
+  E2  from         SW_HIT0  in sea/Room35
+  E2  from         AND_SW2  in sea/Room35
   E3  from         AND_SW2  in sea/Room35
   E3  from         SW_HIT0  in sea/Room35
+  E4  from         AND_SW2  in sea/Room35
+  E4  from         SW_HIT0  in sea/Room35
+  E5  from         AND_SW2  in sea/Room35
+  E5  from         SW_HIT0  in sea/Room35
+  E6  from         AND_SW2  in sea/Room35
+  E6  from         SW_HIT0  in sea/Room35
+  E7  from         AND_SW2  in sea/Room35
+  E7  from         SW_HIT0  in sea/Room35
+Room sea/Room37
+  E0  from          Ocanon  in sea/Room37
+  E0  from         AND_SW2  in sea/Room37
+  E1  from          Ocanon  in sea/Room37
+  E1  from         AND_SW2  in sea/Room37
+  E2  from          Ocanon  in sea/Room37
+  E2  from         AND_SW2  in sea/Room37
   E3  from          Ocanon  in sea/Room37
   E3  from         AND_SW2  in sea/Room37
+  E4  from          Ocanon  in sea/Room37
+  E4  from         AND_SW2  in sea/Room37
+  E5  from          Ocanon  in sea/Room37
+  E5  from         AND_SW2  in sea/Room37
+  E6  from          Ocanon  in sea/Room37
+  E6  from         AND_SW2  in sea/Room37
+  E7  from          Ocanon  in sea/Room37
+  E7  from         AND_SW2  in sea/Room37
+  E8  from          Ocanon  in sea/Room37
+  E8  from         AND_SW2  in sea/Room37
+  E9  from          Ocanon  in sea/Room37
+  E9  from         AND_SW2  in sea/Room37
+  EA  from         AND_SW2  in sea/Room37
+  EB  from         AND_SW2  in sea/Room37
+  EC  from         AND_SW2  in sea/Room37
+Room sea/Room38
+  E0  from         AND_SW0  in sea/Room38
+  E0  from         AND_SW2  in sea/Room38
+  E1  from         SW_HIT0  in sea/Room38
+  E1  from         AND_SW0  in sea/Room38
+  E2  from         MhmrSW0  in sea/Room38
+  E2  from         AND_SW0  in sea/Room38
   E3  from         Kbota_A  in sea/Room38
   E3  from         AND_SW0  in sea/Room38
+  E4  from         Hhbot1N  in sea/Room38
+  E4  from         AND_SW0  in sea/Room38
+  E5  from         AND_SW2  in sea/Room38
+  E5  from         AND_SW2  in sea/Room38
+  E5  from         WindTag  in sea/Room38
+Room sea/Room39
+  E0  from          Ocanon  in sea/Room39
+  E0  from         AND_SW2  in sea/Room39
+  E1  from          Ocanon  in sea/Room39
+  E1  from         AND_SW2  in sea/Room39
+  E2  from          Ocanon  in sea/Room39
+  E2  from         AND_SW2  in sea/Room39
   E3  from          Ocanon  in sea/Room39
   E3  from         AND_SW2  in sea/Room39
+  E4  from         AND_SW2  in sea/Room39
+  E4  from          Ocanon  in sea/Room39
+  E5  from         AND_SW2  in sea/Room39
+  E5  from          Ocanon  in sea/Room39
+  E6  from         AND_SW2  in sea/Room39
+  E6  from          Ocanon  in sea/Room39
+  E7  from         AND_SW2  in sea/Room39
+  E7  from          Ocanon  in sea/Room39
+  E8  from         AND_SW2  in sea/Room39
+  E8  from         takara5  in sea/Room39
+  E9  from         AND_SW2  in sea/Room39
+  E9  from          tkrAOs  in sea/Room39
+Room sea/Room40
+  E0  from            item  in sea/Room40
+Room sea/Room41
+  E0  from          SW_C00  in sea/Room41
+  E0  from          SW_C00  in sea/Room41/Layer7
+  E1  from          SW_C00  in sea/Room41
+  E2  from           Akabe  in sea/Room41
+  E2  from           Akabe  in sea/Room41
+  E2  from           Akabe  in sea/Room41
+  E2  from           Akabe  in sea/Room41/Layer7
+  E2  from           Akabe  in sea/Room41/Layer7
+  E2  from           Akabe  in sea/Room41/Layer7
+  ED  from         Odokuro  in sea/Room41/Layer7
+  EE  from         Odokuro  in sea/Room41
+Room sea/Room42
+  E0  from           wiz_r  in sea/Room42
+  E0  from          SW_C00  in sea/Room42
+Room sea/Room43
+  E0  from         AND_SW2  in sea/Room43
+  E0  from           Akabe  in sea/Room43
+  E0  from           Akabe  in sea/Room43
+  E0  from           Akabe  in sea/Room43
+  E0  from           Akabe  in sea/Room43
+  E1  from         AND_SW2  in sea/Room43
+  E1  from           Akabe  in sea/Room43
+  E1  from           Akabe  in sea/Room43
+  E2  from         AND_SW2  in sea/Room43
+  E2  from         AND_SW2  in sea/Room43
+  E2  from           Akabe  in sea/Room43
+  E2  from           Akabe  in sea/Room43
+  E2  from           Akabe  in sea/Room43
   E3  from         Kbota_A  in sea/Room43
   E3  from         AND_SW2  in sea/Room43
+  E4  from         AND_SW2  in sea/Room43
+  E4  from         AND_SW2  in sea/Room43
+  E5  from         Kbota_A  in sea/Room43
+  E5  from         AND_SW2  in sea/Room43
+  E6  from         AND_SW2  in sea/Room43
+  E6  from         AND_SW2  in sea/Room43
+  E7  from         Kbota_A  in sea/Room43
+  E7  from         AND_SW2  in sea/Room43
+  E8  from         AND_SW2  in sea/Room43
+  E8  from         AND_SW2  in sea/Room43
+  E9  from         Kbota_A  in sea/Room43
+  E9  from          tkrAOs  in sea/Room43
+  EA  from         Kbota_A  in sea/Room43
+  EA  from          tkrAOs  in sea/Room43
+Room sea/Room44
+  E0  from          SW_C00  in sea/Room44
   E3  from         AND_SW2  in sea/Room44
   E3  from          SW_C00  in sea/Room44
   E3  from            Puti  in sea/Room44/Layer5
   E3  from            Puti  in sea/Room44/Layer5
   E3  from            Puti  in sea/Room44/Layer5
   E3  from            Puti  in sea/Room44/Layer5
-  E3  from          Ocanon  in sea/Room46
-  E3  from         AND_SW2  in sea/Room46
-  E3  from          Ocanon  in sea/Room49
-  E3  from         AND_SW2  in sea/Room49
-  E4  from           wiz_r  in sea/Room6
-  E4  from         AND_SW2  in sea/Room6
-  E4  from           wiz_r  in sea/Room6
-  E4  from          Ocanon  in sea/Room8
-  E4  from         AND_SW2  in sea/Room8
-  E4  from         AND_SW2  in sea/Room12
-  E4  from          tkrAOs  in sea/Room12
-  E4  from          Ocanon  in sea/Room16
-  E4  from         AND_SW2  in sea/Room16
-  E4  from         AND_SW2  in sea/Room19
-  E4  from              Bk  in sea/Room19
-  E4  from         AND_SW2  in sea/Room20
-  E4  from          tkrAOs  in sea/Room20
-  E4  from         AND_SW2  in sea/Room21
-  E4  from          Ocanon  in sea/Room22
-  E4  from         AND_SW2  in sea/Room22
-  E4  from          Ocanon  in sea/Room24
-  E4  from         AND_SW2  in sea/Room24
-  E4  from          Ocanon  in sea/Room25
-  E4  from         AND_SW2  in sea/Room25
-  E4  from          Ocanon  in sea/Room28
-  E4  from         AND_SW2  in sea/Room28
-  E4  from         AND_SW2  in sea/Room30
-  E4  from              Bk  in sea/Room30
-  E4  from         AND_SW2  in sea/Room31
-  E4  from          Ocanon  in sea/Room31
-  E4  from         AND_SW2  in sea/Room35
-  E4  from         SW_HIT0  in sea/Room35
-  E4  from          Ocanon  in sea/Room37
-  E4  from         AND_SW2  in sea/Room37
-  E4  from         Hhbot1N  in sea/Room38
-  E4  from         AND_SW0  in sea/Room38
-  E4  from         AND_SW2  in sea/Room39
-  E4  from          Ocanon  in sea/Room39
-  E4  from         AND_SW2  in sea/Room43
-  E4  from         AND_SW2  in sea/Room43
   E4  from         AND_SW2  in sea/Room44
   E4  from            Puti  in sea/Room44/Layer5
   E4  from            Puti  in sea/Room44/Layer5
   E4  from            Puti  in sea/Room44/Layer5
   E4  from            Puti  in sea/Room44/Layer5
-  E4  from           Oship  in sea/Room46
-  E4  from         AND_SW2  in sea/Room46
-  E4  from         AND_SW2  in sea/Room49
-  E4  from          tkrAOs  in sea/Room49
-  E5  from          Ocanon  in sea/Room1/Layer1
-  E5  from            Puti  in sea/Room1/Layer1
-  E5  from            Puti  in sea/Room1/Layer1
-  E5  from            Puti  in sea/Room1/Layer1
-  E5  from            Puti  in sea/Room1/Layer1
-  E5  from            Puti  in sea/Room1/Layer1
-  E5  from           wiz_r  in sea/Room6
-  E5  from         AND_SW2  in sea/Room6
-  E5  from          Ocanon  in sea/Room8
-  E5  from         AND_SW2  in sea/Room8
-  E5  from          SW_C00  in sea/Room13
-  E5  from          Ocanon  in sea/Room16
-  E5  from         AND_SW2  in sea/Room16
-  E5  from         AND_SW2  in sea/Room19
-  E5  from              Bk  in sea/Room19
-  E5  from          Ocanon  in sea/Room22
-  E5  from         AND_SW2  in sea/Room22
-  E5  from          Ocanon  in sea/Room24
-  E5  from         AND_SW2  in sea/Room24
-  E5  from          Ocanon  in sea/Room25
-  E5  from         AND_SW2  in sea/Room25
-  E5  from         AND_SW2  in sea/Room28
-  E5  from          tkrAOs  in sea/Room28
-  E5  from         AND_SW2  in sea/Room30
-  E5  from          tkrAOs  in sea/Room30
-  E5  from         AND_SW2  in sea/Room31
-  E5  from          Ocanon  in sea/Room31
-  E5  from           TagHt  in sea/Room31
-  E5  from         AND_SW2  in sea/Room35
-  E5  from         SW_HIT0  in sea/Room35
-  E5  from          Ocanon  in sea/Room37
-  E5  from         AND_SW2  in sea/Room37
-  E5  from         AND_SW2  in sea/Room38
-  E5  from         AND_SW2  in sea/Room38
-  E5  from         WindTag  in sea/Room38
-  E5  from         AND_SW2  in sea/Room39
-  E5  from          Ocanon  in sea/Room39
-  E5  from         Kbota_A  in sea/Room43
-  E5  from         AND_SW2  in sea/Room43
   E5  from          SW_C00  in sea/Room44/Layer4
   E5  from          SW_C00  in sea/Room44/Layer5
+  E7  from           TagHt  in sea/Room44
+Room sea/Room45
+  E0  from           Akabe  in sea/Room45
+  E6  from           TagHt  in sea/Room45
+Room sea/Room46
+  E0  from          Ocanon  in sea/Room46
+  E0  from         AND_SW2  in sea/Room46
+  E1  from          Ocanon  in sea/Room46
+  E1  from         AND_SW2  in sea/Room46
+  E2  from          Ocanon  in sea/Room46
+  E2  from         AND_SW2  in sea/Room46
+  E3  from          Ocanon  in sea/Room46
+  E3  from         AND_SW2  in sea/Room46
+  E4  from           Oship  in sea/Room46
+  E4  from         AND_SW2  in sea/Room46
   E5  from           Oship  in sea/Room46
   E5  from         AND_SW2  in sea/Room46
-  E6  from            Puti  in sea/Room1/Layer1
-  E6  from            Puti  in sea/Room1/Layer1
-  E6  from           wiz_r  in sea/Room6
-  E6  from         AND_SW2  in sea/Room6
-  E6  from          SW_C00  in sea/Room13
-  E6  from          Ocanon  in sea/Room16
-  E6  from         AND_SW2  in sea/Room16
-  E6  from         AND_SW2  in sea/Room19
-  E6  from              Bk  in sea/Room19
-  E6  from           Oship  in sea/Room22
-  E6  from         AND_SW2  in sea/Room22
-  E6  from          Ocanon  in sea/Room24
-  E6  from         AND_SW2  in sea/Room24
-  E6  from           Oship  in sea/Room25
-  E6  from         AND_SW2  in sea/Room25
-  E6  from              Bk  in sea/Room28
-  E6  from         AND_SW2  in sea/Room28
-  E6  from         AND_SW2  in sea/Room31
-  E6  from          Ocanon  in sea/Room31
-  E6  from         AND_SW2  in sea/Room35
-  E6  from         SW_HIT0  in sea/Room35
-  E6  from          Ocanon  in sea/Room37
-  E6  from         AND_SW2  in sea/Room37
-  E6  from         AND_SW2  in sea/Room39
-  E6  from          Ocanon  in sea/Room39
-  E6  from         AND_SW2  in sea/Room43
-  E6  from         AND_SW2  in sea/Room43
-  E6  from           TagHt  in sea/Room45
   E6  from         ootubo1  in sea/Room46
-  E7  from            Puti  in sea/Room1/Layer1
-  E7  from            Puti  in sea/Room1/Layer1
-  E7  from            Puti  in sea/Room1/Layer1
-  E7  from            Puti  in sea/Room1/Layer1
-  E7  from         AND_SW2  in sea/Room6
-  E7  from         takara5  in sea/Room6
-  E7  from          Ocanon  in sea/Room16
-  E7  from         AND_SW2  in sea/Room16
-  E7  from         AND_SW2  in sea/Room19
-  E7  from          tkrAOs  in sea/Room19
-  E7  from          Ocanon  in sea/Room24
-  E7  from         AND_SW2  in sea/Room24
-  E7  from           Oship  in sea/Room25
-  E7  from         AND_SW2  in sea/Room25
-  E7  from              Bk  in sea/Room28
-  E7  from         AND_SW2  in sea/Room28
-  E7  from         AND_SW2  in sea/Room31
-  E7  from          Ocanon  in sea/Room31
-  E7  from         AND_SW2  in sea/Room35
-  E7  from         SW_HIT0  in sea/Room35
-  E7  from          Ocanon  in sea/Room37
-  E7  from         AND_SW2  in sea/Room37
-  E7  from         AND_SW2  in sea/Room39
-  E7  from          Ocanon  in sea/Room39
-  E7  from         Kbota_A  in sea/Room43
-  E7  from         AND_SW2  in sea/Room43
-  E7  from           TagHt  in sea/Room44
   E7  from         ootubo1  in sea/Room46
-  E8  from         AND_SW2  in sea/Room16
-  E8  from          tkrAOs  in sea/Room16
-  E8  from           Oship  in sea/Room24
-  E8  from         AND_SW2  in sea/Room24
-  E8  from          Ocanon  in sea/Room25
-  E8  from         AND_SW2  in sea/Room25
-  E8  from              Bk  in sea/Room28
-  E8  from         AND_SW2  in sea/Room28
-  E8  from         AND_SW2  in sea/Room31
-  E8  from         takara6  in sea/Room31
-  E8  from          Ocanon  in sea/Room37
-  E8  from         AND_SW2  in sea/Room37
-  E8  from         AND_SW2  in sea/Room39
-  E8  from         takara5  in sea/Room39
-  E8  from         AND_SW2  in sea/Room43
-  E8  from         AND_SW2  in sea/Room43
   E8  from         ootubo1  in sea/Room46
-  E9  from         AND_SW2  in sea/Room16
-  E9  from          tkrAOs  in sea/Room16
-  E9  from              Bk  in sea/Room24
-  E9  from         AND_SW2  in sea/Room24
-  E9  from          Ocanon  in sea/Room25
-  E9  from         AND_SW2  in sea/Room25
-  E9  from              Bk  in sea/Room28
-  E9  from         AND_SW2  in sea/Room28
-  E9  from          Ocanon  in sea/Room37
-  E9  from         AND_SW2  in sea/Room37
-  E9  from         AND_SW2  in sea/Room39
-  E9  from          tkrAOs  in sea/Room39
-  E9  from         Kbota_A  in sea/Room43
-  E9  from          tkrAOs  in sea/Room43
   E9  from         ootubo1  in sea/Room46
-  EA  from              Bk  in sea/Room24
-  EA  from         AND_SW2  in sea/Room24
-  EA  from          Ocanon  in sea/Room25
-  EA  from         AND_SW2  in sea/Room25
-  EA  from         AND_SW2  in sea/Room28
-  EA  from          tkrAOs  in sea/Room28
-  EA  from         AND_SW2  in sea/Room37
-  EA  from         Kbota_A  in sea/Room43
-  EA  from          tkrAOs  in sea/Room43
-  EB  from              Bk  in sea/Room24
-  EB  from         AND_SW2  in sea/Room24
-  EB  from          Ocanon  in sea/Room25
-  EB  from         AND_SW2  in sea/Room25
-  EB  from         AND_SW2  in sea/Room37
-  EC  from              Bk  in sea/Room24
-  EC  from         AND_SW2  in sea/Room24
-  EC  from         AND_SW2  in sea/Room25
-  EC  from          tkrAOs  in sea/Room25
-  EC  from         AND_SW2  in sea/Room37
-  ED  from         AND_SW2  in sea/Room24
-  ED  from          tkrAOs  in sea/Room24
-  ED  from         Odokuro  in sea/Room41/Layer7
-  EE  from         Odokuro  in sea/Room41
+Room sea/Room49
+  E0  from          Ocanon  in sea/Room49
+  E0  from         AND_SW2  in sea/Room49
+  E1  from          Ocanon  in sea/Room49
+  E1  from         AND_SW2  in sea/Room49
+  E2  from          Ocanon  in sea/Room49
+  E2  from         AND_SW2  in sea/Room49
+  E3  from          Ocanon  in sea/Room49
+  E3  from         AND_SW2  in sea/Room49
+  E4  from         AND_SW2  in sea/Room49
+  E4  from          tkrAOs  in sea/Room49
 Stage ID: 02
   00  from         Kbota_A  in majroom/Room4/LayerB
   01  from           TagEv  in MajyuE/Stage
@@ -762,17 +791,7 @@ Stage ID: 02
   3B  from            Goal  in MajyuE/Stage (Event)
   3C  from     StartCamera  in MajyuE/Stage (Event)
   3D  from    attack_ganon  in M2ganon/Stage (Event)
-  E0  from            Puti  in majroom/Room1
-  E0  from            Puti  in majroom/Room1
-  E0  from            Puti  in majroom/Room1
-  E0  from            Puti  in majroom/Room1
-  E0  from            Puti  in majroom/Room1
-  E0  from          SW_C00  in majroom/Room1
-  E0  from           TagEv  in majroom/Room3
-  E0  from           TagEv  in majroom/Room3
-  E1  from         SW_HIT0  in ma2room/Room0
-  E1  from           TagEv  in ma2room/Room0
-  E1  from         SW_HIT0  in majroom/Room0
+Room MajyuE/Room0
   E2  from           TagEv  in MajyuE/Room0
   E2  from           TagEv  in MajyuE/Room0
   E2  from           TagEv  in MajyuE/Room0
@@ -784,6 +803,10 @@ Stage ID: 02
   E4  from           TagEv  in MajyuE/Room0
   E4  from          SW_C00  in MajyuE/Room0
   E4  from          SW_C00  in MajyuE/Room0
+Room ma2room/Room0
+  E1  from         SW_HIT0  in ma2room/Room0
+  E1  from           TagEv  in ma2room/Room0
+Room ma2room/Room1
   E4  from            Puti  in ma2room/Room1
   E4  from            Puti  in ma2room/Room1
   E4  from            Puti  in ma2room/Room1
@@ -792,6 +815,18 @@ Stage ID: 02
   E4  from            Puti  in ma2room/Room1
   E4  from            Puti  in ma2room/Room1
   E4  from          SW_C00  in ma2room/Room1
+Room majroom/Room0
+  E1  from         SW_HIT0  in majroom/Room0
+Room majroom/Room1
+  E0  from            Puti  in majroom/Room1
+  E0  from            Puti  in majroom/Room1
+  E0  from            Puti  in majroom/Room1
+  E0  from            Puti  in majroom/Room1
+  E0  from            Puti  in majroom/Room1
+  E0  from          SW_C00  in majroom/Room1
+Room majroom/Room3
+  E0  from           TagEv  in majroom/Room3
+  E0  from           TagEv  in majroom/Room3
 Stage ID: 03
   00  from          tkrASw  in M_NewD2/Stage
   00  from         AND_SW0  in M_NewD2/Room0
@@ -859,6 +894,7 @@ Stage ID: 03
   36  from         keyshut  in M_NewD2/Stage
   37  from         AND_SW0  in M_NewD2/Room4
   38  from         AND_SW0  in M_NewD2/Room4
+  3B  from          door10  in M_NewD2/Stage
   3B  from         AND_SW0  in M_NewD2/Room4
   3C  from         keyshut  in M_NewD2/Stage
   3D  from         keyshut  in M_NewD2/Stage
@@ -917,22 +953,28 @@ Stage ID: 03
   80  from          Fkeeth  in M_NewD2/Room15
   80  from          Fkeeth  in M_NewD2/Room15
   80  from         magtail  in M_NewD2/Room16
+Room M_Dra09/Room9
   E0  from         AND_SW0  in M_Dra09/Room9
   E0  from           TagEv  in M_Dra09/Room9
-  E0  from          SW_C00  in M_NewD2/Room0
-  E0  from           Akabe  in M_NewD2/Room3
-  E0  from           Akabe  in M_NewD2/Room6
-  E0  from              Bk  in M_NewD2/Room7
-  E0  from         AND_SW0  in M_NewD2/Room7
-  E0  from         Kbota_B  in M_NewD2/Room16
-  E0  from         AND_SW0  in M_NewD2/Room16
   E1  from              Bk  in M_Dra09/Room9
-  E1  from              Bk  in M_NewD2/Room7
-  E1  from         AND_SW0  in M_NewD2/Room7
-  E1  from         Kbota_B  in M_NewD2/Room16
-  E1  from         AND_SW0  in M_NewD2/Room16
   E2  from              Bk  in M_Dra09/Room9
   E3  from           TagEv  in M_Dra09/Room9
+Room M_NewD2/Room0
+  E0  from          SW_C00  in M_NewD2/Room0
+Room M_NewD2/Room3
+  E0  from           Akabe  in M_NewD2/Room3
+Room M_NewD2/Room6
+  E0  from           Akabe  in M_NewD2/Room6
+Room M_NewD2/Room7
+  E0  from              Bk  in M_NewD2/Room7
+  E0  from         AND_SW0  in M_NewD2/Room7
+  E1  from              Bk  in M_NewD2/Room7
+  E1  from         AND_SW0  in M_NewD2/Room7
+Room M_NewD2/Room16
+  E0  from         Kbota_B  in M_NewD2/Room16
+  E0  from         AND_SW0  in M_NewD2/Room16
+  E1  from         Kbota_B  in M_NewD2/Room16
+  E1  from         AND_SW0  in M_NewD2/Room16
   E3  from          SW_C00  in M_NewD2/Room16
 Stage ID: 04
   01  from          tkrAKd  in kindan/Stage
@@ -1006,14 +1048,17 @@ Stage ID: 04
   A1  from            gmos  in kindan/Room15
   A1  from         AND_SW0  in kindan/Room15
   A3  from           Kmi02  in kindan/Room1
+Room kinMB/Room10
   E2  from          door10  in kinMB/Stage
   E2  from         SW_HIT0  in kinMB/Room10
   E2  from         SW_HIT0  in kinMB/Room10
   E2  from         AND_SW0  in kinMB/Room10
   E3  from         SW_HIT0  in kinMB/Room10
-  E3  from           Ksaku  in kindan/Room3
   E4  from         SW_HIT0  in kinMB/Room10
+Room kindan/Room3
+  E3  from           Ksaku  in kindan/Room3
   E4  from           Ksaku  in kindan/Room3
+Room kindan/Room5
   E9  from         WindTag  in kindan/Room5
 Stage ID: 05
   00  from          door10  in Siren/Stage
@@ -1126,19 +1171,25 @@ Stage ID: 05
   80  from           amos2  in Siren/Room11
   80  from           amos2  in Siren/Room11
   80  from           amos2  in Siren/Room14
-  E0  from         AND_SW0  in Siren/Room5
-  E0  from         AND_SW0  in Siren/Room6
-  E0  from           TagEv  in SirenMB/Room23
-  E1  from         AND_SW0  in Siren/Room5
-  E1  from         AND_SW0  in Siren/Room6
-  E1  from         AND_SW0  in Siren/Room17
-  E2  from         AND_SW0  in Siren/Room6
-  E2  from         AND_SW0  in Siren/Room17
-  E3  from         AND_SW0  in Siren/Room17
+Room Siren/Room1
   E5  from          takara  in Siren/Stage
   E5  from           amos2  in Siren/Room1
   E5  from           amos2  in Siren/Room1
+Room Siren/Room5
+  E0  from         AND_SW0  in Siren/Room5
+  E1  from         AND_SW0  in Siren/Room5
+Room Siren/Room6
+  E0  from         AND_SW0  in Siren/Room6
+  E1  from         AND_SW0  in Siren/Room6
+  E2  from         AND_SW0  in Siren/Room6
+Room Siren/Room17
+  E1  from         AND_SW0  in Siren/Room17
+  E2  from         AND_SW0  in Siren/Room17
+  E3  from         AND_SW0  in Siren/Room17
+Room SirenMB/Room23
+  E0  from           TagEv  in SirenMB/Room23
 Stage ID: 06
+  00  from          ZenS12  in M_Dai/Stage
   00  from         AND_SW2  in M_Dai/Room1
   00  from         TagMd12  in M_Dai/Room1
   01  from         Kbota_B  in M_Dai/Room1
@@ -1194,6 +1245,7 @@ Stage ID: 06
   1C  from         AND_SW2  in M_Dai/Room5
   1C  from         AND_SW2  in M_Dai/Room5
   1C  from         AND_SW2  in M_Dai/Room5
+  1D  from          door12  in M_Dai/Stage
   1D  from           MpwrB  in M_Dai/Room5
   1E  from           Msdan  in M_Dai/Room5
   1E  from         AND_SW0  in M_Dai/Room5
@@ -1332,10 +1384,12 @@ Stage ID: 06
   CB  from          SW_C00  in M_Dai/Room0
   CB  from          SW_C00  in M_Dai/Room0
   CB  from          SW_C00  in M_Dai/Room1
+Room M_Dai/Room5
   E0  from         AND_SW2  in M_Dai/Room5
   E0  from         c_black  in M_Dai/Room5
   E0  from         c_black  in M_Dai/Room5
   E0  from         c_black  in M_Dai/Room5
+Room M_Dai/Room17
   E0  from           Akabe  in M_Dai/Room17
 Stage ID: 07
   00  from          tkrASw  in kaze/Stage
@@ -1411,6 +1465,7 @@ Stage ID: 07
   3B  from         takara8  in kazeMB/Stage
   3B  from           wiz_r  in kazeMB/Room6
   3B  from           wiz_r  in kazeMB/Room6
+  3E  from          door12  in kazeMB/Stage
   3E  from         MhmrSW0  in kazeMB/Room6
   3F  from          door12  in kaze/Stage
   82  from          ZenS12  in kaze/Stage
@@ -1454,10 +1509,13 @@ Stage ID: 07
   CB  from          SW_C00  in kaze/Room15
   CB  from          SW_C00  in kaze/Room15
   CB  from          SW_C00  in kaze/Room15
+Room kaze/Room0
   E0  from           wiz_r  in kaze/Room0
   E0  from          SW_C00  in kaze/Room0
+Room kaze/Room1
   E0  from         Kbota_A  in kaze/Room1
   E0  from          KbotaC  in kaze/Room1
+Room kaze/Room2
   E0  from         Kbota_B  in kaze/Room2
 Stage ID: 08
   01  from         takara8  in GanonJ/Stage
@@ -1590,6 +1648,7 @@ Stage ID: 08
   D3  from         c_black  in GanonE/Room0
   D7  from           Kmi02  in GanonE/Room0
   DB  from           Kmi02  in GanonE/Room0
+Room GTower/Room0
   E0  from           Akabe  in GTower/Room0/Layer8
   E0  from           Akabe  in GTower/Room0/Layer8
   E0  from           Akabe  in GTower/Room0/Layer8
@@ -1599,6 +1658,7 @@ Stage ID: 08
   E0  from           Akabe  in GTower/Room0/Layer8
   E0  from           Akabe  in GTower/Room0/Layer8
   E0  from           Akabe  in GTower/Room0/Layer8
+Room GanonD/Room0
   E0  from           Akabe  in GanonD/Room0
   E0  from           Akabe  in GanonD/Room0
   E0  from           Akabe  in GanonD/Room0
@@ -1608,30 +1668,34 @@ Stage ID: 08
   E0  from           Akabe  in GanonD/Room0
   E0  from           Akabe  in GanonD/Room0
   E0  from           Akabe  in GanonD/Room0
+Room GanonJ/Room3
   E0  from              Bk  in GanonJ/Room3
   E0  from              Bk  in GanonJ/Room3
+  E1  from              Bk  in GanonJ/Room3
+  E1  from              Bk  in GanonJ/Room3
+  E2  from              Bk  in GanonJ/Room3
+  E2  from              Bk  in GanonJ/Room3
+  E3  from              Bk  in GanonJ/Room3
+  E3  from              Bk  in GanonJ/Room3
+  E4  from              Bk  in GanonJ/Room3
+  E4  from              Bk  in GanonJ/Room3
+  E5  from              Bk  in GanonJ/Room3
+  E5  from              Bk  in GanonJ/Room3
+  E6  from              Bk  in GanonJ/Room3
+  E6  from              Bk  in GanonJ/Room3
+  E7  from              Bk  in GanonJ/Room3
+  E7  from              Bk  in GanonJ/Room3
+Room GanonJ/Room9
   E0  from             mo2  in GanonJ/Room9
   E0  from         AND_SW0  in GanonJ/Room9
-  E0  from           TagHt  in GanonM/Room1
-  E0  from           TagHt  in GanonM/Room1
-  E0  from           TagHt  in GanonM/Room1
-  E1  from              Bk  in GanonJ/Room3
-  E1  from              Bk  in GanonJ/Room3
   E1  from             mo2  in GanonJ/Room9
   E1  from         AND_SW0  in GanonJ/Room9
+Room GanonM/Room0
   E1  from         AND_SW0  in GanonM/Room0
-  E2  from              Bk  in GanonJ/Room3
-  E2  from              Bk  in GanonJ/Room3
-  E3  from              Bk  in GanonJ/Room3
-  E3  from              Bk  in GanonJ/Room3
-  E4  from              Bk  in GanonJ/Room3
-  E4  from              Bk  in GanonJ/Room3
-  E5  from              Bk  in GanonJ/Room3
-  E5  from              Bk  in GanonJ/Room3
-  E6  from              Bk  in GanonJ/Room3
-  E6  from              Bk  in GanonJ/Room3
-  E7  from              Bk  in GanonJ/Room3
-  E7  from              Bk  in GanonJ/Room3
+Room GanonM/Room1
+  E0  from           TagHt  in GanonM/Room1
+  E0  from           TagHt  in GanonM/Room1
+  E0  from           TagHt  in GanonM/Room1
 Stage ID: 09
   02  from        warp_out  in Hyrule/Stage (Event)
   03  from   btl_of_swroom  in kenroom/Stage (Event)
@@ -1663,23 +1727,105 @@ Stage ID: 0A
   00  from         AND_SW2  in Abship/Room2
   00  from          tkrASw  in Abship/Room2
   01  from         takara5  in Abship/Room3
+Room Abship/Room0
   E0  from          Mhsg4h  in Abship/Room0
   E0  from         AND_SW2  in Abship/Room0
   E0  from           TagEv  in Abship/Room0/LayerB
+  E1  from              Bk  in Abship/Room0
+  E1  from         AND_SW2  in Abship/Room0
+  E2  from              Bk  in Abship/Room0
+  E2  from         AND_SW2  in Abship/Room0
+  E3  from              Bk  in Abship/Room0
+  E3  from         AND_SW2  in Abship/Room0
+  E4  from              Bk  in Abship/Room0
+  E4  from         AND_SW2  in Abship/Room0
+  E5  from     hasigo_down  in Abship/Stage (Event)
+  E5  from           TagEv  in Abship/Room0/LayerB
+  E6  from         takara6  in Abship/Room0
+  E6  from          SW_C00  in Abship/Room0
+Room Abship/Room1
   E0  from             mo2  in Abship/Room1
   E0  from         AND_SW2  in Abship/Room1
+  E1  from         AND_SW2  in Abship/Room1
+  E2  from             mo2  in Abship/Room1
+  E2  from         AND_SW2  in Abship/Room1
+  E3  from         AND_SW2  in Abship/Room1
+  E4  from             mo2  in Abship/Room1
+  E4  from         AND_SW2  in Abship/Room1
+  E5  from          Mhsg4h  in Abship/Room1
+  E5  from         AND_SW2  in Abship/Room1
+Room Abship/Room2
   E0  from              Bk  in Abship/Room2
   E0  from         AND_SW2  in Abship/Room2
+  E1  from              Bk  in Abship/Room2
+  E1  from         AND_SW2  in Abship/Room2
+  E2  from              Bk  in Abship/Room2
+  E2  from         AND_SW2  in Abship/Room2
+Room Abship/Room3
   E0  from          SW_C00  in Abship/Room3
+  E5  from          Mhsg4h  in Abship/Room3
+Room Abship/Room4
   E0  from         AND_SW2  in Abship/Room4
   E0  from             mo2  in Abship/Room4
+  E1  from         AND_SW2  in Abship/Room4
+  E1  from             mo2  in Abship/Room4
+  E2  from         AND_SW2  in Abship/Room4
+  E2  from             mo2  in Abship/Room4
+  E3  from         AND_SW2  in Abship/Room4
+  E3  from             mo2  in Abship/Room4
+  E4  from         AND_SW2  in Abship/Room4
+  E4  from          Mhsg4h  in Abship/Room4/LayerB
+  E5  from         takara5  in Abship/Room4
+  E5  from          SW_C00  in Abship/Room4
+Room Abship/Room5
   E0  from            Fire  in Abship/Room5
   E0  from          Mhsg4h  in Abship/Room5
   E0  from          ALLdie  in Abship/Room5
   E0  from         takara5  in Abship/Room5
   E0  from         AND_SW2  in Abship/Room5/LayerB
+  E1  from         AND_SW2  in Abship/Room5/LayerB
+  E1  from         AND_SW2  in Abship/Room5/LayerB
+  E2  from         AND_SW2  in Abship/Room5/LayerB
+  E3  from         AND_SW2  in Abship/Room5/LayerB
+Room Abship/Room6
   E0  from         AND_SW2  in Abship/Room6
   E0  from         Kbota_A  in Abship/Room6
+  E1  from           wiz_r  in Abship/Room6
+  E1  from         AND_SW2  in Abship/Room6
+  E2  from         AND_SW2  in Abship/Room6
+  E2  from         AND_SW2  in Abship/Room6
+  E2  from         takara5  in Abship/Room6
+  E2  from          SW_C00  in Abship/Room6
+  E3  from           wiz_r  in Abship/Room6
+  E3  from         AND_SW2  in Abship/Room6
+  E3  from         c_green  in Abship/Room6
+  E3  from           c_red  in Abship/Room6
+  E3  from         c_green  in Abship/Room6
+  E3  from         c_green  in Abship/Room6
+  E3  from           c_red  in Abship/Room6
+  E3  from           c_red  in Abship/Room6
+  E4  from         AND_SW2  in Abship/Room6
+  E4  from           wiz_r  in Abship/Room6
+  E5  from           wiz_r  in Abship/Room6
+  E5  from         AND_SW2  in Abship/Room6
+  E6  from         AND_SW2  in Abship/Room6
+  E6  from           wiz_r  in Abship/Room6
+  E6  from           wiz_r  in Abship/Room6
+  E6  from            Puti  in Abship/Room6
+  E6  from            Puti  in Abship/Room6
+  E6  from            Puti  in Abship/Room6
+  E6  from            Puti  in Abship/Room6
+  E7  from           wiz_r  in Abship/Room6
+  E7  from         AND_SW2  in Abship/Room6
+  E7  from            Puti  in Abship/Room6
+  E7  from            Puti  in Abship/Room6
+  E8  from           wiz_r  in Abship/Room6
+  E8  from         AND_SW2  in Abship/Room6
+  E8  from            Puti  in Abship/Room6
+  E8  from            Puti  in Abship/Room6
+  E9  from         AND_SW2  in Abship/Room6
+  E9  from          Mhsg4h  in Abship/Room6
+Room Abship/Room7
   E0  from            Puti  in Abship/Room7
   E0  from            Puti  in Abship/Room7
   E0  from            Puti  in Abship/Room7
@@ -1692,42 +1838,6 @@ Stage ID: 0A
   E0  from            Puti  in Abship/Room7
   E0  from            Puti  in Abship/Room7
   E0  from         AND_SW2  in Abship/Room7
-  E0  from          Mhsg4h  in PShip/Room0
-  E0  from         AND_SW2  in PShip/Room0
-  E0  from         AND_SW2  in PShip/Room0
-  E0  from          ALLdie  in PShip/Room0
-  E0  from          Mhsg4h  in PShip/Room1
-  E0  from         AND_SW2  in PShip/Room1
-  E0  from         AND_SW2  in PShip/Room1
-  E0  from          ALLdie  in PShip/Room1
-  E0  from          Mhsg4h  in PShip/Room2
-  E0  from         AND_SW2  in PShip/Room2
-  E0  from         AND_SW2  in PShip/Room2
-  E0  from          ALLdie  in PShip/Room2
-  E1  from              Bk  in Abship/Room0
-  E1  from         AND_SW2  in Abship/Room0
-  E1  from         AND_SW2  in Abship/Room1
-  E1  from              Bk  in Abship/Room2
-  E1  from         AND_SW2  in Abship/Room2
-  E1  from         AND_SW2  in Abship/Room4
-  E1  from             mo2  in Abship/Room4
-  E1  from         AND_SW2  in Abship/Room5/LayerB
-  E1  from         AND_SW2  in Abship/Room5/LayerB
-  E1  from           wiz_r  in Abship/Room6
-  E1  from         AND_SW2  in Abship/Room6
-  E2  from              Bk  in Abship/Room0
-  E2  from         AND_SW2  in Abship/Room0
-  E2  from             mo2  in Abship/Room1
-  E2  from         AND_SW2  in Abship/Room1
-  E2  from              Bk  in Abship/Room2
-  E2  from         AND_SW2  in Abship/Room2
-  E2  from         AND_SW2  in Abship/Room4
-  E2  from             mo2  in Abship/Room4
-  E2  from         AND_SW2  in Abship/Room5/LayerB
-  E2  from         AND_SW2  in Abship/Room6
-  E2  from         AND_SW2  in Abship/Room6
-  E2  from         takara5  in Abship/Room6
-  E2  from          SW_C00  in Abship/Room6
   E2  from         AND_SW2  in Abship/Room7
   E2  from         AND_SW2  in Abship/Room7
   E2  from         AND_SW2  in Abship/Room7
@@ -1735,39 +1845,8 @@ Stage ID: 0A
   E2  from         AND_SW2  in Abship/Room7
   E2  from            Puti  in Abship/Room7
   E2  from          SW_C00  in Abship/Room7/LayerB
-  E3  from              Bk  in Abship/Room0
-  E3  from         AND_SW2  in Abship/Room0
-  E3  from         AND_SW2  in Abship/Room1
-  E3  from         AND_SW2  in Abship/Room4
-  E3  from             mo2  in Abship/Room4
-  E3  from         AND_SW2  in Abship/Room5/LayerB
-  E3  from           wiz_r  in Abship/Room6
-  E3  from         AND_SW2  in Abship/Room6
-  E3  from         c_green  in Abship/Room6
-  E3  from           c_red  in Abship/Room6
-  E3  from         c_green  in Abship/Room6
-  E3  from         c_green  in Abship/Room6
-  E3  from           c_red  in Abship/Room6
-  E3  from           c_red  in Abship/Room6
   E3  from         AND_SW2  in Abship/Room7
-  E4  from              Bk  in Abship/Room0
-  E4  from         AND_SW2  in Abship/Room0
-  E4  from             mo2  in Abship/Room1
-  E4  from         AND_SW2  in Abship/Room1
-  E4  from         AND_SW2  in Abship/Room4
-  E4  from          Mhsg4h  in Abship/Room4/LayerB
-  E4  from         AND_SW2  in Abship/Room6
-  E4  from           wiz_r  in Abship/Room6
   E4  from         AND_SW2  in Abship/Room7
-  E5  from     hasigo_down  in Abship/Stage (Event)
-  E5  from           TagEv  in Abship/Room0/LayerB
-  E5  from          Mhsg4h  in Abship/Room1
-  E5  from         AND_SW2  in Abship/Room1
-  E5  from          Mhsg4h  in Abship/Room3
-  E5  from         takara5  in Abship/Room4
-  E5  from          SW_C00  in Abship/Room4
-  E5  from           wiz_r  in Abship/Room6
-  E5  from         AND_SW2  in Abship/Room6
   E5  from            Puti  in Abship/Room7
   E5  from            Puti  in Abship/Room7
   E5  from            Puti  in Abship/Room7
@@ -1781,32 +1860,28 @@ Stage ID: 0A
   E5  from            Puti  in Abship/Room7
   E5  from          Mhsg4h  in Abship/Room7
   E5  from         AND_SW2  in Abship/Room7
-  E6  from         takara6  in Abship/Room0
-  E6  from          SW_C00  in Abship/Room0
-  E6  from         AND_SW2  in Abship/Room6
-  E6  from           wiz_r  in Abship/Room6
-  E6  from           wiz_r  in Abship/Room6
-  E6  from            Puti  in Abship/Room6
-  E6  from            Puti  in Abship/Room6
-  E6  from            Puti  in Abship/Room6
-  E6  from            Puti  in Abship/Room6
   E6  from         AND_SW2  in Abship/Room7
-  E7  from           wiz_r  in Abship/Room6
-  E7  from         AND_SW2  in Abship/Room6
-  E7  from            Puti  in Abship/Room6
-  E7  from            Puti  in Abship/Room6
-  E8  from           wiz_r  in Abship/Room6
-  E8  from         AND_SW2  in Abship/Room6
-  E8  from            Puti  in Abship/Room6
-  E8  from            Puti  in Abship/Room6
-  E9  from         AND_SW2  in Abship/Room6
-  E9  from          Mhsg4h  in Abship/Room6
+Room PShip/Room0
+  E0  from          Mhsg4h  in PShip/Room0
+  E0  from         AND_SW2  in PShip/Room0
+  E0  from         AND_SW2  in PShip/Room0
+  E0  from          ALLdie  in PShip/Room0
   EB  from           wiz_r  in PShip/Room0
   EB  from          SW_C00  in PShip/Room0
   EB  from         ky_tag0  in PShip/Room0
+Room PShip/Room1
+  E0  from          Mhsg4h  in PShip/Room1
+  E0  from         AND_SW2  in PShip/Room1
+  E0  from         AND_SW2  in PShip/Room1
+  E0  from          ALLdie  in PShip/Room1
   EB  from           wiz_r  in PShip/Room1
   EB  from          SW_C00  in PShip/Room1
   EB  from         ky_tag0  in PShip/Room1
+Room PShip/Room2
+  E0  from          Mhsg4h  in PShip/Room2
+  E0  from         AND_SW2  in PShip/Room2
+  E0  from         AND_SW2  in PShip/Room2
+  E0  from          ALLdie  in PShip/Room2
   EB  from           wiz_r  in PShip/Room2
   EB  from          SW_C00  in PShip/Room2
   EB  from         ky_tag0  in PShip/Room2
@@ -1855,20 +1930,24 @@ Stage ID: 0B
   1E  from     MORI_INSIDE  in Omori/Stage (Event)
   40  from      dance_zola  in Edaichi/Stage (Event)
   41  from    dance_kokiri  in Ekaze/Stage (Event)
+Room LinkRM/Room0
   E0  from      START_TEST  in LinkRM/Stage (Event)
+Room Ocrogh/Room0
   E0  from      WALK_START  in Ocrogh/Stage (Event)
   E0  from   MapToolCamera  in Ocrogh/Stage (Event)
-  E1  from          SW_C00  in Onobuta/Room0
-  E1  from          SW_C00  in Pfigure/Room0
-  E1  from          SW_C00  in Pfigure/Room0
-  E1  from          SW_C00  in Pfigure/Room0
-  E1  from          SW_C00  in Pfigure/Room0
-  E1  from          SW_C00  in Pfigure/Room0
-  E1  from          SW_C00  in Pfigure/Room0
-  E1  from          SW_C00  in Pfigure/Room0
-  E1  from          SW_C00  in Pfigure/Room0
-  E1  from          SW_C00  in Pfigure/Room0
   EF  from           Akabe  in Ocrogh/Room0/Layer7
+Room Onobuta/Room0
+  E1  from          SW_C00  in Onobuta/Room0
+Room Pfigure/Room0
+  E1  from          SW_C00  in Pfigure/Room0
+  E1  from          SW_C00  in Pfigure/Room0
+  E1  from          SW_C00  in Pfigure/Room0
+  E1  from          SW_C00  in Pfigure/Room0
+  E1  from          SW_C00  in Pfigure/Room0
+  E1  from          SW_C00  in Pfigure/Room0
+  E1  from          SW_C00  in Pfigure/Room0
+  E1  from          SW_C00  in Pfigure/Room0
+  E1  from          SW_C00  in Pfigure/Room0
 Stage ID: 0C
   00  from         takara6  in MiniKaz/Stage
   00  from          Fkeeth  in MiniKaz/Room0
@@ -2093,6 +2172,7 @@ Stage ID: 0C
   B5  from              Bk  in TF_02/Room2
   B6  from              Bk  in TF_02/Room2
   B7  from              Bk  in TF_02/Room2
+Room Cave01/Room0
   E0  from          SW_C00  in Cave01/Room0
   E0  from          SW_C00  in Cave01/Room0
   E0  from          SW_C00  in Cave01/Room0
@@ -2102,10 +2182,49 @@ Stage ID: 0C
   E0  from          SW_C00  in Cave01/Room0
   E0  from          SW_C00  in Cave01/Room0
   E0  from          SW_C00  in Cave01/Room0
+  E1  from         AND_SW0  in Cave01/Room0
+  E2  from          door10  in Cave01/Stage
+  E2  from         Kbota_B  in Cave01/Room0
+  E2  from         AND_SW0  in Cave01/Room0
+  E3  from         AND_SW0  in Cave01/Room0
+  E3  from         Kbota_B  in Cave01/Room0/Layer8
+Room Cave02/Room0
   E0  from          SW_C00  in Cave02/Room0
   E0  from          SW_C00  in Cave02/Room0
   E0  from          SW_C00  in Cave02/Room0
   E0  from          SW_C00  in Cave02/Room0
+  E1  from         magtail  in Cave02/Room0
+  E1  from         AND_SW2  in Cave02/Room0
+  E1  from         AND_SW2  in Cave02/Room0
+  E2  from         magtail  in Cave02/Room0
+  E2  from         AND_SW2  in Cave02/Room0
+  E2  from         AND_SW2  in Cave02/Room0
+  E3  from         magtail  in Cave02/Room0
+  E3  from         AND_SW2  in Cave02/Room0
+  E3  from         AND_SW2  in Cave02/Room0
+  E4  from         AND_SW2  in Cave02/Room0
+  E4  from              Bk  in Cave02/Room0
+  E4  from              Bk  in Cave02/Room0
+  E4  from         AND_SW2  in Cave02/Room0
+  E5  from              Bk  in Cave02/Room0
+  E5  from         AND_SW2  in Cave02/Room0
+  E5  from         AND_SW2  in Cave02/Room0
+  E6  from              Bk  in Cave02/Room0
+  E6  from         AND_SW2  in Cave02/Room0
+  E6  from         AND_SW2  in Cave02/Room0
+  E7  from         AND_SW2  in Cave02/Room0
+  E7  from              Bk  in Cave02/Room0
+  E7  from              Bk  in Cave02/Room0
+  E7  from         AND_SW2  in Cave02/Room0
+  E8  from              Bk  in Cave02/Room0
+  E8  from         AND_SW2  in Cave02/Room0
+  E8  from         AND_SW2  in Cave02/Room0
+  E9  from              Bk  in Cave02/Room0
+  E9  from         AND_SW2  in Cave02/Room0
+  E9  from         AND_SW2  in Cave02/Room0
+  EA  from         AND_SW2  in Cave02/Room0
+  EA  from         AND_SW2  in Cave02/Room0
+Room Cave03/Room0
   E0  from          SW_C00  in Cave03/Room0
   E0  from          SW_C00  in Cave03/Room0
   E0  from          SW_C00  in Cave03/Room0
@@ -2115,6 +2234,7 @@ Stage ID: 0C
   E0  from          SW_C00  in Cave03/Room0
   E0  from          SW_C00  in Cave03/Room0
   E0  from          SW_C00  in Cave03/Room0
+Room Cave04/Room0
   E0  from          SW_C00  in Cave04/Room0
   E0  from          SW_C00  in Cave04/Room0
   E0  from          SW_C00  in Cave04/Room0
@@ -2124,36 +2244,88 @@ Stage ID: 0C
   E0  from          SW_C00  in Cave04/Room0
   E0  from          SW_C00  in Cave04/Room0
   E0  from          SW_C00  in Cave04/Room0
+  E1  from         AND_SW2  in Cave04/Room0
+  E2  from         AND_SW2  in Cave04/Room0
+  E3  from         AND_SW2  in Cave04/Room0
+  E3  from         AND_SW2  in Cave04/Room0
+  E3  from           keeth  in Cave04/Room0
+  E3  from           keeth  in Cave04/Room0
+  E3  from           keeth  in Cave04/Room0
+  E3  from           keeth  in Cave04/Room0
+  E3  from           keeth  in Cave04/Room0
+  E3  from           keeth  in Cave04/Room0
+  E3  from           keeth  in Cave04/Room0
+  E3  from           keeth  in Cave04/Room0
+  E3  from           keeth  in Cave04/Room0
+  E3  from           keeth  in Cave04/Room0
+  E3  from           keeth  in Cave04/Room0
+  E3  from           keeth  in Cave04/Room0
+  E3  from           keeth  in Cave04/Room0
+  E3  from           keeth  in Cave04/Room0
+  E3  from           keeth  in Cave04/Room0
+  E3  from           keeth  in Cave04/Room0
+  E3  from           keeth  in Cave04/Room0
+  E3  from           keeth  in Cave04/Room0
+  E3  from           keeth  in Cave04/Room0
+  E3  from           keeth  in Cave04/Room0
+  E3  from           keeth  in Cave04/Room0
+  E3  from           keeth  in Cave04/Room0
+  E3  from           keeth  in Cave04/Room0
+  E3  from           keeth  in Cave04/Room0
+  E3  from           keeth  in Cave04/Room0
+  E3  from           keeth  in Cave04/Room0
+  E3  from           keeth  in Cave04/Room0
+  E4  from         AND_SW2  in Cave04/Room0
+Room Fairy01/Room0
   E0  from          SW_C00  in Fairy01/Room0
   E0  from          SW_C00  in Fairy01/Room0
   E0  from          SW_C00  in Fairy01/Room0
   E0  from          SW_C00  in Fairy01/Room0
   E0  from          SW_C00  in Fairy01/Room0
+Room Fairy02/Room0
   E0  from          SW_C00  in Fairy02/Room0
   E0  from          SW_C00  in Fairy02/Room0
   E0  from          SW_C00  in Fairy02/Room0
   E0  from          SW_C00  in Fairy02/Room0
   E0  from          SW_C00  in Fairy02/Room0
+Room Fairy03/Room0
   E0  from          SW_C00  in Fairy03/Room0
   E0  from          SW_C00  in Fairy03/Room0
   E0  from          SW_C00  in Fairy03/Room0
   E0  from          SW_C00  in Fairy03/Room0
   E0  from          SW_C00  in Fairy03/Room0
+Room Fairy04/Room0
   E0  from          SW_C00  in Fairy04/Room0
   E0  from          SW_C00  in Fairy04/Room0
   E0  from          SW_C00  in Fairy04/Room0
   E0  from          SW_C00  in Fairy04/Room0
   E0  from          SW_C00  in Fairy04/Room0
+Room Fairy05/Room0
   E0  from          SW_C00  in Fairy05/Room0
   E0  from          SW_C00  in Fairy05/Room0
   E0  from          SW_C00  in Fairy05/Room0
   E0  from          SW_C00  in Fairy05/Room0
   E0  from          SW_C00  in Fairy05/Room0
+Room Fairy06/Room0
   E0  from          SW_C00  in Fairy06/Room0
   E0  from          SW_C00  in Fairy06/Room0
   E0  from          SW_C00  in Fairy06/Room0
   E0  from          SW_C00  in Fairy06/Room0
   E0  from          SW_C00  in Fairy06/Room0
+Room ITest62/Room0
+  E3  from              Bk  in ITest62/Room0
+  E3  from              Bk  in ITest62/Room0
+  E6  from          SW_C00  in ITest62/Room0
+  E6  from          SW_C00  in ITest62/Room0
+  E6  from          SW_C00  in ITest62/Room0
+  E6  from          SW_C00  in ITest62/Room0
+  E6  from          SW_C00  in ITest62/Room0
+  E6  from          SW_C00  in ITest62/Room0
+  E6  from          SW_C00  in ITest62/Room0
+  E6  from          SW_C00  in ITest62/Room0
+  E9  from         ootubo1  in ITest62/Room0
+  EA  from         ootubo1  in ITest62/Room0
+Room MiniHyo/Room0
   E0  from          SW_C00  in MiniHyo/Room0
   E0  from          SW_C00  in MiniHyo/Room0
   E0  from          SW_C00  in MiniHyo/Room0
@@ -2164,6 +2336,8 @@ Stage ID: 0C
   E0  from          SW_C00  in MiniHyo/Room0
   E0  from          SW_C00  in MiniHyo/Room0
   E0  from          SW_C00  in MiniHyo/Room0
+  EC  from         ootubo1  in MiniHyo/Room0
+Room MiniKaz/Room0
   E0  from          SW_C00  in MiniKaz/Room0
   E0  from          SW_C00  in MiniKaz/Room0
   E0  from          SW_C00  in MiniKaz/Room0
@@ -2174,125 +2348,37 @@ Stage ID: 0C
   E0  from          SW_C00  in MiniKaz/Room0
   E0  from          SW_C00  in MiniKaz/Room0
   E0  from           TagHt  in MiniKaz/Room0
-  E0  from          SW_C00  in TF_01/Room1/Layer8
-  E0  from          SW_C00  in TF_03/Room0
-  E0  from          SW_C00  in TF_03/Room0
-  E0  from          SW_C00  in TF_03/Room0
-  E0  from          SW_C00  in TF_03/Room0
-  E0  from          SW_C00  in TF_03/Room0
-  E0  from          SW_C00  in TF_03/Room0
-  E0  from          SW_C00  in TF_03/Room0
-  E0  from          SW_C00  in TF_04/Room0
-  E0  from          SW_C00  in TF_04/Room0
-  E0  from          SW_C00  in TF_04/Room0
-  E0  from          SW_C00  in TF_04/Room0
-  E0  from          SW_C00  in TF_04/Room0
-  E0  from          SW_C00  in TF_04/Room0
-  E0  from          SW_C00  in TF_04/Room0
-  E0  from          SW_C00  in TF_04/Room0
-  E0  from          SW_C00  in TyuTyu/Room0
-  E0  from          SW_C00  in TyuTyu/Room0
-  E0  from          SW_C00  in TyuTyu/Room0
-  E0  from          SW_C00  in TyuTyu/Room0
-  E0  from          SW_C00  in TyuTyu/Room0
-  E0  from          SW_C00  in TyuTyu/Room0
-  E0  from          SW_C00  in TyuTyu/Room0
-  E0  from          SW_C00  in TyuTyu/Room0
-  E0  from          SW_C00  in TyuTyu/Room0
-  E1  from         AND_SW0  in Cave01/Room0
-  E1  from         magtail  in Cave02/Room0
-  E1  from         AND_SW2  in Cave02/Room0
-  E1  from         AND_SW2  in Cave02/Room0
-  E1  from         AND_SW2  in Cave04/Room0
   E1  from         magtail  in MiniKaz/Room0
   E1  from         AND_SW2  in MiniKaz/Room0
-  E1  from         MhmrSW0  in TF_04/Room0
-  E2  from          door10  in Cave01/Stage
-  E2  from         Kbota_B  in Cave01/Room0
-  E2  from         AND_SW0  in Cave01/Room0
-  E2  from         magtail  in Cave02/Room0
-  E2  from         AND_SW2  in Cave02/Room0
-  E2  from         AND_SW2  in Cave02/Room0
-  E2  from         AND_SW2  in Cave04/Room0
   E2  from         magtail  in MiniKaz/Room0
   E2  from         AND_SW2  in MiniKaz/Room0
-  E3  from         AND_SW0  in Cave01/Room0
-  E3  from         Kbota_B  in Cave01/Room0/Layer8
-  E3  from         magtail  in Cave02/Room0
-  E3  from         AND_SW2  in Cave02/Room0
-  E3  from         AND_SW2  in Cave02/Room0
-  E3  from         AND_SW2  in Cave04/Room0
-  E3  from         AND_SW2  in Cave04/Room0
-  E3  from           keeth  in Cave04/Room0
-  E3  from           keeth  in Cave04/Room0
-  E3  from           keeth  in Cave04/Room0
-  E3  from           keeth  in Cave04/Room0
-  E3  from           keeth  in Cave04/Room0
-  E3  from           keeth  in Cave04/Room0
-  E3  from           keeth  in Cave04/Room0
-  E3  from           keeth  in Cave04/Room0
-  E3  from           keeth  in Cave04/Room0
-  E3  from           keeth  in Cave04/Room0
-  E3  from           keeth  in Cave04/Room0
-  E3  from           keeth  in Cave04/Room0
-  E3  from           keeth  in Cave04/Room0
-  E3  from           keeth  in Cave04/Room0
-  E3  from           keeth  in Cave04/Room0
-  E3  from           keeth  in Cave04/Room0
-  E3  from           keeth  in Cave04/Room0
-  E3  from           keeth  in Cave04/Room0
-  E3  from           keeth  in Cave04/Room0
-  E3  from           keeth  in Cave04/Room0
-  E3  from           keeth  in Cave04/Room0
-  E3  from           keeth  in Cave04/Room0
-  E3  from           keeth  in Cave04/Room0
-  E3  from           keeth  in Cave04/Room0
-  E3  from           keeth  in Cave04/Room0
-  E3  from           keeth  in Cave04/Room0
-  E3  from           keeth  in Cave04/Room0
-  E3  from              Bk  in ITest62/Room0
-  E3  from              Bk  in ITest62/Room0
   E3  from         takara6  in MiniKaz/Stage
   E3  from         AND_SW2  in MiniKaz/Room0
+Room TF_01/Room1
+  E0  from          SW_C00  in TF_01/Room1/Layer8
+Room TF_03/Room0
+  E0  from          SW_C00  in TF_03/Room0
+  E0  from          SW_C00  in TF_03/Room0
+  E0  from          SW_C00  in TF_03/Room0
+  E0  from          SW_C00  in TF_03/Room0
+  E0  from          SW_C00  in TF_03/Room0
+  E0  from          SW_C00  in TF_03/Room0
+  E0  from          SW_C00  in TF_03/Room0
+Room TF_04/Room0
+  E0  from          SW_C00  in TF_04/Room0
+  E0  from          SW_C00  in TF_04/Room0
+  E0  from          SW_C00  in TF_04/Room0
+  E0  from          SW_C00  in TF_04/Room0
+  E0  from          SW_C00  in TF_04/Room0
+  E0  from          SW_C00  in TF_04/Room0
+  E0  from          SW_C00  in TF_04/Room0
+  E0  from          SW_C00  in TF_04/Room0
+  E1  from         MhmrSW0  in TF_04/Room0
   E3  from         MhmrSW0  in TF_04/Room0
-  E4  from         AND_SW2  in Cave02/Room0
-  E4  from              Bk  in Cave02/Room0
-  E4  from              Bk  in Cave02/Room0
-  E4  from         AND_SW2  in Cave02/Room0
-  E4  from         AND_SW2  in Cave04/Room0
-  E5  from              Bk  in Cave02/Room0
-  E5  from         AND_SW2  in Cave02/Room0
-  E5  from         AND_SW2  in Cave02/Room0
   E5  from         MhmrSW0  in TF_04/Room0
-  E6  from              Bk  in Cave02/Room0
-  E6  from         AND_SW2  in Cave02/Room0
-  E6  from         AND_SW2  in Cave02/Room0
-  E6  from          SW_C00  in ITest62/Room0
-  E6  from          SW_C00  in ITest62/Room0
-  E6  from          SW_C00  in ITest62/Room0
-  E6  from          SW_C00  in ITest62/Room0
-  E6  from          SW_C00  in ITest62/Room0
-  E6  from          SW_C00  in ITest62/Room0
-  E6  from          SW_C00  in ITest62/Room0
-  E6  from          SW_C00  in ITest62/Room0
-  E7  from         AND_SW2  in Cave02/Room0
-  E7  from              Bk  in Cave02/Room0
-  E7  from              Bk  in Cave02/Room0
-  E7  from         AND_SW2  in Cave02/Room0
   E7  from         MhmrSW0  in TF_04/Room0
-  E8  from              Bk  in Cave02/Room0
-  E8  from         AND_SW2  in Cave02/Room0
-  E8  from         AND_SW2  in Cave02/Room0
-  E9  from              Bk  in Cave02/Room0
-  E9  from         AND_SW2  in Cave02/Room0
-  E9  from         AND_SW2  in Cave02/Room0
-  E9  from         ootubo1  in ITest62/Room0
-  EA  from         AND_SW2  in Cave02/Room0
-  EA  from         AND_SW2  in Cave02/Room0
-  EA  from         ootubo1  in ITest62/Room0
   EB  from         AND_SW0  in TF_04/Room0
   EB  from          SW_C00  in TF_04/Room0
-  EC  from         ootubo1  in MiniHyo/Room0
   EC  from         AND_SW0  in TF_04/Room0
   EC  from          SW_C00  in TF_04/Room0
   ED  from         AND_SW0  in TF_04/Room0
@@ -2300,6 +2386,16 @@ Stage ID: 0C
   EE  from         AND_SW0  in TF_04/Room0
   EE  from         AND_SW0  in TF_04/Room0
   EE  from         AND_SW0  in TF_04/Room0
+Room TyuTyu/Room0
+  E0  from          SW_C00  in TyuTyu/Room0
+  E0  from          SW_C00  in TyuTyu/Room0
+  E0  from          SW_C00  in TyuTyu/Room0
+  E0  from          SW_C00  in TyuTyu/Room0
+  E0  from          SW_C00  in TyuTyu/Room0
+  E0  from          SW_C00  in TyuTyu/Room0
+  E0  from          SW_C00  in TyuTyu/Room0
+  E0  from          SW_C00  in TyuTyu/Room0
+  E0  from          SW_C00  in TyuTyu/Room0
 Stage ID: 0D
   01  from         takara7  in Cave05/Stage
   02  from          tkrAGc  in Cave07/Stage
@@ -2447,6 +2543,7 @@ Stage ID: 0D
   C0  from           Ashut  in Asoko/Room0/Layer3
   C0  from         Kbota_A  in Asoko/Room0/Layer3
   C0  from          KbotaC  in Asoko/Room0/Layer3
+Room Cave05/Room0
   E0  from          SW_C00  in Cave05/Room0
   E0  from          SW_C00  in Cave05/Room0
   E0  from          SW_C00  in Cave05/Room0
@@ -2455,10 +2552,25 @@ Stage ID: 0D
   E0  from          SW_C00  in Cave05/Room0
   E0  from          SW_C00  in Cave05/Room0
   E0  from          SW_C00  in Cave05/Room0
+Room Cave07/Room0
   E0  from          SW_C00  in Cave07/Room0
   E0  from          SW_C00  in Cave07/Room0
   E0  from          SW_C00  in Cave07/Room0
   E0  from          SW_C00  in Cave07/Room0/Layer8
+  E1  from           wiz_r  in Cave07/Room0
+  E1  from          SW_C00  in Cave07/Room0
+  E2  from           wiz_r  in Cave07/Room0
+  E2  from           wiz_r  in Cave07/Room0
+  E2  from           wiz_r  in Cave07/Room0
+  E3  from           wiz_r  in Cave07/Room0
+  E3  from         AND_SW2  in Cave07/Room0
+  E4  from           wiz_r  in Cave07/Room0
+  E4  from         AND_SW2  in Cave07/Room0
+  E5  from           wiz_r  in Cave07/Room0
+  E5  from           wiz_r  in Cave07/Room0
+  E5  from           wiz_r  in Cave07/Room0
+  E5  from         AND_SW2  in Cave07/Room0
+Room Cave09/Room0
   E0  from          SW_C00  in Cave09/Room0
   E0  from          SW_C00  in Cave09/Room0
   E0  from          SW_C00  in Cave09/Room0
@@ -2468,12 +2580,15 @@ Stage ID: 0D
   E0  from          SW_C00  in Cave09/Room0
   E0  from          SW_C00  in Cave09/Room0
   E0  from          SW_C00  in Cave09/Room0
+Room Cave09/Room6
   E0  from           wiz_r  in Cave09/Room6
   E0  from           wiz_r  in Cave09/Room6
   E0  from           wiz_r  in Cave09/Room6
   E0  from          SW_C00  in Cave09/Room6
+Room Cave09/Room17
   E0  from           wiz_r  in Cave09/Room17
   E0  from          SW_C00  in Cave09/Room17
+Room Cave10/Room0
   E0  from          SW_C00  in Cave10/Room0
   E0  from          SW_C00  in Cave10/Room0
   E0  from          SW_C00  in Cave10/Room0
@@ -2483,6 +2598,7 @@ Stage ID: 0D
   E0  from          SW_C00  in Cave10/Room0
   E0  from          SW_C00  in Cave10/Room0
   E0  from          SW_C00  in Cave10/Room0
+Room Cave10/Room7
   E0  from         c_green  in Cave10/Room7
   E0  from         c_green  in Cave10/Room7
   E0  from         c_green  in Cave10/Room7
@@ -2494,46 +2610,6 @@ Stage ID: 0D
   E0  from         c_green  in Cave10/Room7
   E0  from         c_green  in Cave10/Room7
   E0  from          SW_C00  in Cave10/Room7
-  E0  from           wiz_r  in Cave10/Room8
-  E0  from           wiz_r  in Cave10/Room8
-  E0  from           wiz_r  in Cave10/Room8
-  E0  from           wiz_r  in Cave10/Room8
-  E0  from           wiz_r  in Cave10/Room8
-  E0  from         MhmrSW0  in Cave10/Room8
-  E0  from          ALLdie  in Cave10/Room17
-  E0  from          SW_C00  in Cave11/Room0
-  E0  from          SW_C00  in Cave11/Room0
-  E0  from          SW_C00  in Cave11/Room0
-  E0  from          SW_C00  in Cave11/Room0
-  E0  from          SW_C00  in Cave11/Room0
-  E0  from          SW_C00  in Cave11/Room0
-  E0  from          SW_C00  in Cave11/Room0
-  E0  from          SW_C00  in Cave11/Room0
-  E0  from          SW_C00  in Cave11/Room0
-  E0  from          SW_C00  in ITest63/Room0
-  E0  from          SW_C00  in ITest63/Room0
-  E0  from          SW_C00  in ITest63/Room0
-  E0  from          SW_C00  in SubD42/Room0
-  E0  from          SW_C00  in SubD42/Room0
-  E0  from          SW_C00  in SubD42/Room0
-  E0  from          SW_C00  in SubD42/Room0
-  E0  from          SW_C00  in SubD42/Room0
-  E0  from          SW_C00  in SubD42/Room0
-  E0  from          SW_C00  in SubD42/Room0
-  E0  from          SW_C00  in SubD42/Room0
-  E0  from          SW_C00  in SubD71/Room0
-  E0  from          SW_C00  in SubD71/Room0
-  E0  from          SW_C00  in SubD71/Room0
-  E0  from          ALLdie  in SubD71/Room1
-  E0  from          Mhsg4h  in SubD71/Room1
-  E0  from         AND_SW2  in SubD71/Room1
-  E0  from         AND_SW2  in SubD71/Room1
-  E0  from          ALLdie  in SubD71/Room2
-  E0  from          Mhsg4h  in SubD71/Room2
-  E0  from         AND_SW2  in SubD71/Room2
-  E0  from         AND_SW2  in SubD71/Room2
-  E1  from           wiz_r  in Cave07/Room0
-  E1  from          SW_C00  in Cave07/Room0
   E1  from           c_red  in Cave10/Room7
   E1  from           c_red  in Cave10/Room7
   E1  from           c_red  in Cave10/Room7
@@ -2545,14 +2621,6 @@ Stage ID: 0D
   E1  from           c_red  in Cave10/Room7
   E1  from           c_red  in Cave10/Room7
   E1  from          SW_C00  in Cave10/Room7
-  E1  from         AND_SW2  in SubD42/Room0
-  E1  from         AND_SW0  in SubD71/Room0
-  E1  from         SW_HIT0  in SubD71/Room0
-  E1  from            Puti  in SubD71/Room0
-  E1  from            Puti  in SubD71/Room0
-  E2  from           wiz_r  in Cave07/Room0
-  E2  from           wiz_r  in Cave07/Room0
-  E2  from           wiz_r  in Cave07/Room0
   E2  from         c_kiiro  in Cave10/Room7
   E2  from         c_kiiro  in Cave10/Room7
   E2  from         c_kiiro  in Cave10/Room7
@@ -2564,48 +2632,91 @@ Stage ID: 0D
   E2  from         c_kiiro  in Cave10/Room7
   E2  from         c_kiiro  in Cave10/Room7
   E2  from          SW_C00  in Cave10/Room7
+Room Cave10/Room8
+  E0  from           wiz_r  in Cave10/Room8
+  E0  from           wiz_r  in Cave10/Room8
+  E0  from           wiz_r  in Cave10/Room8
+  E0  from           wiz_r  in Cave10/Room8
+  E0  from           wiz_r  in Cave10/Room8
+  E0  from         MhmrSW0  in Cave10/Room8
+Room Cave10/Room17
+  E0  from          ALLdie  in Cave10/Room17
+Room Cave11/Room0
+  E0  from          SW_C00  in Cave11/Room0
+  E0  from          SW_C00  in Cave11/Room0
+  E0  from          SW_C00  in Cave11/Room0
+  E0  from          SW_C00  in Cave11/Room0
+  E0  from          SW_C00  in Cave11/Room0
+  E0  from          SW_C00  in Cave11/Room0
+  E0  from          SW_C00  in Cave11/Room0
+  E0  from          SW_C00  in Cave11/Room0
+  E0  from          SW_C00  in Cave11/Room0
+Room ITest63/Room0
+  E0  from          SW_C00  in ITest63/Room0
+  E0  from          SW_C00  in ITest63/Room0
+  E0  from          SW_C00  in ITest63/Room0
+Room SubD42/Room0
+  E0  from          SW_C00  in SubD42/Room0
+  E0  from          SW_C00  in SubD42/Room0
+  E0  from          SW_C00  in SubD42/Room0
+  E0  from          SW_C00  in SubD42/Room0
+  E0  from          SW_C00  in SubD42/Room0
+  E0  from          SW_C00  in SubD42/Room0
+  E0  from          SW_C00  in SubD42/Room0
+  E0  from          SW_C00  in SubD42/Room0
+  E1  from         AND_SW2  in SubD42/Room0
   E2  from         AND_SW2  in SubD42/Room0
+  E3  from         AND_SW2  in SubD42/Room0
+  E4  from         AND_SW2  in SubD42/Room0
+  E5  from         AND_SW2  in SubD42/Room0
+  E6  from         AND_SW2  in SubD42/Room0
+Room SubD71/Room0
+  E0  from          SW_C00  in SubD71/Room0
+  E0  from          SW_C00  in SubD71/Room0
+  E0  from          SW_C00  in SubD71/Room0
+  E1  from         AND_SW0  in SubD71/Room0
+  E1  from         SW_HIT0  in SubD71/Room0
+  E1  from            Puti  in SubD71/Room0
+  E1  from            Puti  in SubD71/Room0
   E2  from         AND_SW0  in SubD71/Room0
   E2  from         SW_HIT0  in SubD71/Room0
   E2  from            Puti  in SubD71/Room0
   E2  from            Puti  in SubD71/Room0
-  E3  from           wiz_r  in Cave07/Room0
-  E3  from         AND_SW2  in Cave07/Room0
-  E3  from         AND_SW2  in SubD42/Room0
   E3  from         AND_SW0  in SubD71/Room0
   E3  from            Puti  in SubD71/Room0
   E3  from         SW_HIT0  in SubD71/Room0
   E3  from            Puti  in SubD71/Room0
-  E4  from           wiz_r  in Cave07/Room0
-  E4  from         AND_SW2  in Cave07/Room0
-  E4  from         AND_SW2  in SubD42/Room0
-  E5  from           wiz_r  in Cave07/Room0
-  E5  from           wiz_r  in Cave07/Room0
-  E5  from           wiz_r  in Cave07/Room0
-  E5  from         AND_SW2  in Cave07/Room0
-  E5  from         AND_SW2  in SubD42/Room0
-  E6  from         AND_SW2  in SubD42/Room0
+Room SubD71/Room1
+  E0  from          ALLdie  in SubD71/Room1
+  E0  from          Mhsg4h  in SubD71/Room1
+  E0  from         AND_SW2  in SubD71/Room1
+  E0  from         AND_SW2  in SubD71/Room1
   EB  from           wiz_r  in SubD71/Room1
   EB  from          SW_C00  in SubD71/Room1
   EB  from         ky_tag0  in SubD71/Room1
   EB  from         AND_SW2  in SubD71/Room1/Layer8
+  EC  from         AND_SW2  in SubD71/Room1/Layer8
+  EC  from         AND_SW2  in SubD71/Room1/Layer8
+  ED  from         AND_SW2  in SubD71/Room1/Layer8
+  ED  from         AND_SW2  in SubD71/Room1/Layer8
+  EE  from         AND_SW2  in SubD71/Room1/Layer8
+  EE  from         AND_SW2  in SubD71/Room1/Layer8
+  EF  from         AND_SW2  in SubD71/Room1/Layer8
+Room SubD71/Room2
+  E0  from          ALLdie  in SubD71/Room2
+  E0  from          Mhsg4h  in SubD71/Room2
+  E0  from         AND_SW2  in SubD71/Room2
+  E0  from         AND_SW2  in SubD71/Room2
   EB  from           wiz_r  in SubD71/Room2
   EB  from          SW_C00  in SubD71/Room2
   EB  from         ky_tag0  in SubD71/Room2
   EB  from         AND_SW2  in SubD71/Room2/Layer8
-  EC  from         AND_SW2  in SubD71/Room1/Layer8
-  EC  from         AND_SW2  in SubD71/Room1/Layer8
   EC  from         AND_SW2  in SubD71/Room2/Layer8
   EC  from         AND_SW2  in SubD71/Room2/Layer8
-  ED  from         AND_SW2  in SubD71/Room1/Layer8
-  ED  from         AND_SW2  in SubD71/Room1/Layer8
   ED  from         AND_SW2  in SubD71/Room2/Layer8
   ED  from         AND_SW2  in SubD71/Room2/Layer8
-  EE  from         AND_SW2  in SubD71/Room1/Layer8
-  EE  from         AND_SW2  in SubD71/Room1/Layer8
   EE  from         AND_SW2  in SubD71/Room2/Layer8
   EE  from         AND_SW2  in SubD71/Room2/Layer8
-  EF  from         AND_SW2  in SubD71/Room1/Layer8
   EF  from         AND_SW2  in SubD71/Room2/Layer8
 Stage ID: 0E
   01  from          c_blue  in sea/Room3
