@@ -119,12 +119,12 @@ g_fopAcTg_Queue:
   08,4: Prerequisite item ID you need before you can buy this item.
     -1 for no prerequisite? Or -1 might be an invalid prerequisite?
   0C,1: Bitfield affecting what can prevent you from buying the item.
-    0 - This item has a prerequisite item. This bit must be set for the prerequisite item ID above to do anything.
-    1 - This item has a negative prerequisite item. This bit must be set for the negative prerequisite item ID above to do anything.
-    2 - This item has a maximum number of it you can carry. (Bombs, bait, etc.)
-    3 - This item requires you to own a bottle. Doesn't need to be empty.
-    4 - This item requires an empty bottle.
-    5 - This item costs rupees to buy.
+    & 01 - This item has a prerequisite item. This bit must be set for the prerequisite item ID above to do anything.
+    & 02 - This item has a negative prerequisite item. This bit must be set for the negative prerequisite item ID above to do anything.
+    & 04 - This item has a maximum number of it you can carry. (Bombs, bait, etc.)
+    & 08 - This item requires you to own a bottle. Doesn't need to be empty.
+    & 10 - This item requires an empty bottle.
+    & 20 - This item costs rupees to buy.
   0D,3: Padding.
 80375FBC-80376263 (372FBC in main.dol) - Shop item set data.
   Entry length 0x14.
@@ -991,12 +991,20 @@ Player's partner's room restart position? ("restart option")
   27 - "Cancel"
   2A - "Zoom 1"
   2D - Glowing pointy A button icon for Makar planting seeds in soil
-  31 - 
+  31 - Glowing pointy A button icon for Pirate's Charm hints
   43 - 
 803CA7D8,1 - ??
 803CA7DB,1 - Item equipped on the X button.
 803CA7DC,1 - Item equipped on the Y button.
 803CA7DD,1 - Item equipped on the Z button.
+
+80360F38 List of A/B button action icons.
+  00,01: The action ID.
+  04,04: Pointer to the filename of the BTI for this button icon.
+    This filename is in one of the following (which archive to look in is hardcoded based on the action ID):
+    files/res/Msg/acticon.arc
+    files/res/Msg/itemicon.arc
+    files/res/Msg/menuicon.arc
 
 Backup inventory data used by recollection bosses in order to restore the player's proper inventory when the boss is dead:
 803CA858-803CA86F - Backup player status.

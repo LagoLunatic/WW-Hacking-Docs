@@ -1104,8 +1104,9 @@ card_to_memory__10dSv_info_cFPci
   r4 - the current scene entity pointer.
   r5 - save file index
 
-makeItemType__9daPy_lk_cFv
-  handles creating an item when the player uses it, such as taking out a bomb
+daPy_lk_c::makeItemType(void)
+  Handles creating an item when the player uses it, such as taking out a bomb or the hookshot.
+  r3 - Pointer to the Link entity.
 
 set__13dPa_control_cFUcUsPC4cXyzPC5csXyzPC4cXyzUcP18dPa_levelEcallBackScPC8_GXColorPC8_GXColorPC4cXyz
 dPa_control_c::set(unsigned char, unsigned short, cXyz const *, csXyz const *, cXyz const *, unsigned char, dPa_levelEcallBack *, signed char, _GXColor const *, _GXColor const *, cXyz const *)

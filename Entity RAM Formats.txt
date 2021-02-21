@@ -133,6 +133,7 @@ Pointer to something in the loaded REL file for this entity?
   fopAcM_calcSpeed uses this value and the Y rotation value at 206,2 to calculate what this actor's X and Z velocity should be.
 258,4: Gravity. (Y acceleration.)
 25C,4: Terminal velocity. (Minimum Y velocity.)
+280,4: Interact flags.
 284,1: Max HP.
 285,1: Current HP.
 28C,1: Item pickup flag for the item this enemy drops?
