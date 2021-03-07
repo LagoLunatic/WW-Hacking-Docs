@@ -425,7 +425,6 @@ d_a_obj_gnndemotakis: 2
            d_a_shand: 0
            d_a_sitem: 0
       d_a_stand_item: 0
-       d_a_switch_op: 0
          d_a_tag_ba1: 0
          d_a_tag_kf1: 0
          d_a_tag_kk1: 0
