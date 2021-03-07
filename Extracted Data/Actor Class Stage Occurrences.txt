@@ -18,349 +18,422 @@
      d_a_obj_movebox: 20
               d_a_tn: 19
               d_a_cc: 18
-       d_a_tag_light: 18
        d_a_obj_paper: 18
-             d_a_kui: 17
-              d_a_ki: 17
-              d_a_wz: 17
+       d_a_tag_light: 18
               d_a_bl: 17
+              d_a_ki: 17
+             d_a_kui: 17
+              d_a_wz: 17
          d_a_kytag01: 16
        d_a_obj_akabe: 16
         d_a_tag_hint: 15
          d_a_npc_zl1: 14
             d_a_ship: 14
           d_a_kamome: 13
-          d_a_swtact: 13
               d_a_st: 13
           d_a_swhit0: 13
-         d_a_kytag02: 12
-           d_a_stone: 12
-       d_a_obj_mtest: 12
+          d_a_swtact: 13
          d_a_bflower: 12
           d_a_door12: 12
-          d_a_stone2: 11
+         d_a_kytag02: 12
+       d_a_obj_mtest: 12
+           d_a_stone: 12
+          d_a_agbsw0: 11
+              d_a_am: 11
             d_a_fire: 11
-     d_a_obj_mshokki: 11
             d_a_lamp: 11
+         d_a_npc_cb1: 11
+     d_a_obj_mshokki: 11
        d_a_obj_otble: 11
               d_a_pt: 11
-         d_a_npc_cb1: 11
-              d_a_am: 11
-          d_a_agbsw0: 11
-      d_a_obj_ladder: 10
+          d_a_stone2: 11
           d_a_alldie: 10
            d_a_magma: 10
-         d_a_tag_msg: 10
-              d_a_rd: 10
-      d_a_obj_kanoke: 10
           d_a_npc_mn: 10
-             d_a_sea: 9
-              d_a_bb: 9
-              d_a_ks: 9
-          d_a_npc_md: 9
-            d_a_ykgr: 9
+      d_a_obj_kanoke: 10
+      d_a_obj_ladder: 10
+              d_a_rd: 10
+         d_a_tag_msg: 10
              d_a_am2: 9
-              d_a_mt: 9
-              d_a_ph: 9
-       d_a_obj_warpt: 9
-        d_a_wind_tag: 9
-    d_a_obj_swhammer: 9
+              d_a_bb: 9
              d_a_dai: 9
-           d_a_lwood: 8
-          d_a_npc_p1: 8
+              d_a_ks: 9
+              d_a_mt: 9
+          d_a_npc_md: 9
+    d_a_obj_swhammer: 9
+       d_a_obj_warpt: 9
+              d_a_ph: 9
+             d_a_sea: 9
+        d_a_wind_tag: 9
+            d_a_ykgr: 9
               d_a_gm: 8
+           d_a_lwood: 8
+          d_a_mbdoor: 8
+            d_a_mozo: 8
+          d_a_npc_p1: 8
+      d_a_obj_figure: 8
        d_a_obj_shelf: 8
             d_a_saku: 8
-            d_a_mozo: 8
-          d_a_mbdoor: 8
-      d_a_obj_figure: 8
-        d_a_obj_wood: 7
-          d_a_kanban: 7
-             d_a_nzg: 7
-         d_a_npc_bm1: 7
-     d_a_obj_ygush00: 7
-              d_a_bo: 7
-      d_a_obj_hfuck1: 7
-              d_a_fm: 7
-        d_a_obj_hole: 7
-        d_a_obj_hcbh: 7
-              d_a_pw: 7
           d_a_bigelf: 7
-          d_a_bridge: 7
+              d_a_bo: 7
        d_a_boss_item: 7
-  d_a_obj_pirateship: 6
-      d_a_obj_ospbox: 6
-         d_a_npc_ls1: 6
-      d_a_majuu_flag: 6
-           d_a_hmlif: 6
-        d_a_tag_evsw: 6
-         d_a_npc_ym1: 6
-           d_a_mdoor: 6
+          d_a_bridge: 7
+              d_a_fm: 7
+          d_a_kanban: 7
+         d_a_npc_bm1: 7
+             d_a_nzg: 7
+        d_a_obj_hcbh: 7
+      d_a_obj_hfuck1: 7
+        d_a_obj_hole: 7
+        d_a_obj_wood: 7
+     d_a_obj_ygush00: 7
+              d_a_pw: 7
           d_a_atdoor: 6
-              d_a_nz: 5
-           d_a_himo3: 5
-      d_a_obj_rcloud: 5
-     d_a_swpropeller: 5
-       d_a_tag_md_cb: 5
-     d_a_obj_swheavy: 5
-        d_a_obj_jump: 5
-       d_a_obj_mknjd: 5
+           d_a_hmlif: 6
+      d_a_majuu_flag: 6
+           d_a_mdoor: 6
+         d_a_npc_ls1: 6
+         d_a_npc_ym1: 6
+      d_a_obj_ospbox: 6
+  d_a_obj_pirateship: 6
+        d_a_tag_evsw: 6
           d_a_fganon: 5
+           d_a_himo3: 5
+           d_a_ikari: 5
              d_a_jbo: 5
       d_a_npc_people: 5
+              d_a_nz: 5
+        d_a_obj_jump: 5
+       d_a_obj_mknjd: 5
+      d_a_obj_rcloud: 5
       d_a_obj_search: 5
-           d_a_ikari: 5
+     d_a_obj_swheavy: 5
+     d_a_swpropeller: 5
+       d_a_tag_md_cb: 5
            d_a_warpf: 5
               d_a_ff: 4
-         d_a_obj_vmc: 4
-        d_a_obj_mkie: 4
-      d_a_obj_tntrap: 4
-       d_a_obj_ikada: 4
-       d_a_obj_flame: 4
-         d_a_obj_ice: 4
-         d_a_obj_try: 4
              d_a_hys: 4
          d_a_npc_aj1: 4
          d_a_npc_bj1: 4
-       d_a_obj_plant: 4
-          d_a_switem: 4
+       d_a_obj_flame: 4
+         d_a_obj_ice: 4
+       d_a_obj_ikada: 4
        d_a_obj_lpalm: 4
-       d_a_obj_quake: 3
-       d_a_steam_tag: 3
-              d_a_dr: 3
-       d_a_obj_timer: 3
-          d_a_npc_p2: 3
-             d_a_ssk: 3
-         d_a_amiprop: 3
-        d_a_obj_trap: 3
-       d_a_obj_homen: 3
-           d_a_floor: 3
-        d_a_windmill: 3
-       d_a_obj_hbrf1: 3
-       d_a_obj_hami4: 3
-             d_a_sss: 3
-              d_a_pz: 3
-           d_a_ygcwp: 3
-             d_a_fan: 3
-       d_a_shop_item: 3
-       d_a_obj_msdan: 3
-             d_a_msw: 3
-      d_a_obj_swflat: 3
-         d_a_npc_ko1: 3
-         d_a_npc_yw1: 3
-         d_a_npc_ji1: 3
-         d_a_npc_ba1: 3
-        d_a_obj_nest: 3
-         d_a_npc_gk1: 3
-       d_a_npc_roten: 3
-     d_a_obj_swlight: 3
-     d_a_obj_correct: 3
-     d_a_obj_cafelmp: 3
-         d_a_shutter: 3
-        d_a_swattack: 3
-      d_a_obj_leaves: 3
+        d_a_obj_mkie: 4
+       d_a_obj_plant: 4
+      d_a_obj_tntrap: 4
+         d_a_obj_try: 4
+         d_a_obj_vmc: 4
+          d_a_switem: 4
       d_a_acorn_leaf: 3
+         d_a_amiprop: 3
+              d_a_dk: 3
+              d_a_dr: 3
+             d_a_fan: 3
+           d_a_floor: 3
+              d_a_kn: 3
+             d_a_msw: 3
+         d_a_npc_ba1: 3
+         d_a_npc_gk1: 3
+         d_a_npc_ji1: 3
+         d_a_npc_ko1: 3
+          d_a_npc_p2: 3
+       d_a_npc_roten: 3
+         d_a_npc_yw1: 3
+     d_a_obj_cafelmp: 3
+     d_a_obj_correct: 3
+       d_a_obj_hami4: 3
+       d_a_obj_hbrf1: 3
+       d_a_obj_homen: 3
+      d_a_obj_leaves: 3
+       d_a_obj_msdan: 3
+        d_a_obj_nest: 3
+       d_a_obj_quake: 3
       d_a_obj_rforce: 3
      d_a_obj_shmrgrd: 3
-        d_a_spc_item: 3
-              d_a_dk: 3
-     d_a_tag_volcano: 3
-   d_a_tag_ghostship: 3
-              d_a_oq: 3
+      d_a_obj_swflat: 3
+     d_a_obj_swlight: 3
+       d_a_obj_timer: 3
     d_a_obj_toripost: 3
-              d_a_kn: 3
-       d_a_obj_tower: 2
-       d_a_obj_doguu: 2
-        d_a_warpdm20: 2
-        d_a_obj_apzl: 2
-         d_a_kytag04: 2
-      d_a_obj_ebomzo: 2
-       d_a_tori_flag: 2
-       d_a_obj_ashut: 2
-         d_a_npc_zk1: 2
-       d_a_obj_drift: 2
-         d_a_machine: 2
-       d_a_obj_hami2: 2
-       d_a_obj_hami3: 2
-         d_a_npc_co1: 2
+        d_a_obj_trap: 3
+              d_a_oq: 3
+              d_a_pz: 3
+       d_a_shop_item: 3
+         d_a_shutter: 3
+        d_a_spc_item: 3
+             d_a_ssk: 3
+             d_a_sss: 3
+       d_a_steam_tag: 3
+        d_a_swattack: 3
+   d_a_tag_ghostship: 3
+     d_a_tag_volcano: 3
+        d_a_windmill: 3
+           d_a_ygcwp: 3
+          d_a_bdkobj: 2
+            d_a_bita: 2
+             d_a_bmd: 2
+             d_a_bpw: 2
+             d_a_btd: 2
+             d_a_bwd: 2
            d_a_canon: 2
-             d_a_gnd: 2
-       d_a_obj_gtaki: 2
-  d_a_obj_gnnbtltaki: 2
-         d_a_kytag07: 2
-d_a_obj_gnndemotakis: 2
-d_a_obj_gnndemotakie: 2
-     d_a_obj_barrier: 2
-       d_a_obj_vgnfd: 2
-   d_a_obj_magmarock: 2
-            d_a_toge: 2
-            d_a_klft: 2
-             d_a_sk2: 2
-              d_a_sk: 2
-       d_a_obj_vteng: 2
-      d_a_obj_tribox: 2
-          d_a_warphr: 2
-            d_a_kita: 2
-        d_a_obj_zouk: 2
        d_a_deku_item: 2
-              d_a_ss: 2
+             d_a_dr2: 2
     d_a_fallrock_tag: 2
- d_a_obj_balancelift: 2
-            d_a_wall: 2
-       d_a_obj_bemos: 2
-         d_a_npc_pf1: 2
+             d_a_gnd: 2
+       d_a_goal_flag: 2
+         d_a_icelift: 2
+              d_a_kb: 2
+            d_a_kita: 2
+            d_a_klft: 2
+          d_a_komore: 2
+         d_a_kytag03: 2
+         d_a_kytag04: 2
+         d_a_kytag07: 2
+        d_a_leaflift: 2
+          d_a_lstair: 2
+         d_a_machine: 2
+          d_a_mmusic: 2
+              d_a_nh: 2
+          d_a_npc_ah: 2
+         d_a_npc_co1: 2
+         d_a_npc_fa1: 2
          d_a_npc_gp1: 2
+          d_a_npc_ho: 2
+          d_a_npc_hr: 2
+      d_a_npc_kamome: 2
          d_a_npc_kf1: 2
          d_a_npc_kk1: 2
          d_a_npc_kp1: 2
           d_a_npc_mk: 2
-          d_a_npc_hr: 2
-          d_a_npc_ho: 2
-        d_a_leaflift: 2
-         d_a_icelift: 2
-         d_a_npc_fa1: 2
-       d_a_obj_mkiek: 2
-       d_a_obj_table: 2
-        d_a_obj_rflw: 2
-          d_a_lstair: 2
-        d_a_pedestal: 2
-        d_a_obj_gong: 2
-    d_a_obj_monument: 2
           d_a_npc_mt: 2
-          d_a_npc_ah: 2
-      d_a_obj_msdan2: 2
-              d_a_nh: 2
+         d_a_npc_ob1: 2
           d_a_npc_os: 2
-       d_a_obj_kanat: 2
-        d_a_obj_pbka: 2
-    d_a_obj_tapestry: 2
-       d_a_obj_ekskz: 2
-          d_a_mmusic: 2
-       d_a_obj_ftree: 2
+         d_a_npc_pf1: 2
+      d_a_npc_sarace: 2
+          d_a_npc_tc: 2
+         d_a_npc_zk1: 2
+        d_a_obj_apzl: 2
+       d_a_obj_ashut: 2
+ d_a_obj_balancelift: 2
+      d_a_obj_barrel: 2
+     d_a_obj_barrel2: 2
+     d_a_obj_barrier: 2
+       d_a_obj_bemos: 2
        d_a_obj_canon: 2
-          d_a_komore: 2
-      d_a_obj_ohatch: 2
+     d_a_obj_dmgroom: 2
+       d_a_obj_doguu: 2
+       d_a_obj_drift: 2
+      d_a_obj_ebomzo: 2
+       d_a_obj_ekskz: 2
+       d_a_obj_ftree: 2
       d_a_obj_gaship: 2
      d_a_obj_gaship2: 2
-     d_a_obj_dmgroom: 2
-      d_a_npc_kamome: 2
-        d_a_obj_tide: 2
-          d_a_bdkobj: 2
-         d_a_kytag03: 2
-     d_a_obj_tenmado: 2
-             d_a_bpw: 2
-          d_a_tag_mk: 2
-             d_a_dr2: 2
-             d_a_btd: 2
-            d_a_bita: 2
-      d_a_obj_barrel: 2
+  d_a_obj_gnnbtltaki: 2
+d_a_obj_gnndemotakie: 2
+d_a_obj_gnndemotakis: 2
+        d_a_obj_gong: 2
+       d_a_obj_gtaki: 2
+       d_a_obj_hami2: 2
+       d_a_obj_hami3: 2
+       d_a_obj_kanat: 2
+   d_a_obj_magmarock: 2
  d_a_obj_majyuu_door: 2
-       d_a_goal_flag: 2
-     d_a_obj_barrel2: 2
-      d_a_npc_sarace: 2
+       d_a_obj_mkiek: 2
+    d_a_obj_monument: 2
+      d_a_obj_msdan2: 2
+      d_a_obj_ohatch: 2
+        d_a_obj_pbka: 2
+        d_a_obj_rflw: 2
+       d_a_obj_table: 2
+    d_a_obj_tapestry: 2
+     d_a_obj_tenmado: 2
+        d_a_obj_tide: 2
+       d_a_obj_tower: 2
+      d_a_obj_tribox: 2
+       d_a_obj_vgnfd: 2
+       d_a_obj_vteng: 2
+        d_a_obj_zouk: 2
+        d_a_pedestal: 2
+              d_a_sk: 2
+             d_a_sk2: 2
+              d_a_ss: 2
+          d_a_tag_mk: 2
+            d_a_toge: 2
+       d_a_tori_flag: 2
+            d_a_wall: 2
+        d_a_warpdm20: 2
         d_a_warpfout: 2
-         d_a_npc_ob1: 2
-          d_a_npc_tc: 2
-             d_a_bmd: 2
-             d_a_bwd: 2
-              d_a_kb: 2
-  d_a_obj_doguu_demo: 1
-          d_a_branch: 1
-         d_a_kytag05: 1
-      d_a_obj_eskban: 1
-      d_a_obj_gryw00: 1
-      d_a_obj_eayogn: 1
-         d_a_tag_etc: 1
-       d_a_obj_hlift: 1
-        d_a_npc_bmsw: 1
-       d_a_obj_xfuta: 1
-           d_a_dummy: 1
-             d_a_bgn: 1
-    d_a_obj_ganonbed: 1
-        d_a_obj_vfan: 1
-          d_a_warpgn: 1
-       d_a_obj_ylzou: 1
-            d_a_syan: 1
-              d_a_kt: 1
-         d_a_npc_km1: 1
-         d_a_npc_pm1: 1
-          d_a_npc_sv: 1
-      d_a_obj_usovmc: 1
-      d_a_mgameboard: 1
-         d_a_npc_kg1: 1
-             d_a_bdk: 1
-         d_a_swtdoor: 1
-         d_a_obj_vds: 1
-       d_a_obj_stair: 1
-           d_a_mflft: 1
-         d_a_spotbox: 1
- d_a_obj_demo_barrel: 1
-         d_a_demo_dk: 1
-           d_a_mtoge: 1
-        d_a_npc_bms1: 1
-        d_a_obj_pbco: 1
-         d_a_npc_bs1: 1
-   d_a_obj_bscurtain: 1
-       d_a_npc_photo: 1
-       d_a_tag_photo: 1
-      d_a_obj_ojtree: 1
-         d_a_npc_de1: 1
-     d_a_npc_auction: 1
+          d_a_warphr: 2
          d_a_auction: 1
-           d_a_tpota: 1
-         d_a_npc_ds1: 1
-       d_a_obj_ajavw: 1
-         d_a_npc_jb1: 1
-       d_a_obj_pfall: 1
-  d_a_tag_waterlevel: 1
-      d_a_obj_htetu1: 1
-         d_a_obj_hha: 1
-         d_a_lbridge: 1
-      d_a_obj_hsehi1: 1
+             d_a_bdk: 1
+             d_a_bgn: 1
+          d_a_branch: 1
              d_a_bst: 1
-        d_a_shutter2: 1
-       d_a_obj_vmsms: 1
-       d_a_obj_vmsdz: 1
-         d_a_npc_hi1: 1
-    d_a_obj_firewall: 1
-          d_a_kddoor: 1
-          d_a_kokiie: 1
-          d_a_lod_bg: 1
-          d_a_npc_so: 1
-          d_a_tag_so: 1
-          d_a_warpmj: 1
-         d_a_salvage: 1
-      d_a_obj_coming: 1
-        d_a_obj_aygr: 1
-           d_a_oship: 1
-       d_a_obj_vyasi: 1
-      d_a_tag_island: 1
-         d_a_gy_ctrl: 1
-       d_a_ghostship: 1
          d_a_coming3: 1
          d_a_daiocta: 1
-        d_a_sie_flag: 1
-         d_a_tornado: 1
-         d_a_npc_kg2: 1
-       d_a_obj_roten: 1
-        d_a_npc_rsh1: 1
-          d_a_npc_uk: 1
-          d_a_npc_tt: 1
+         d_a_demo_dk: 1
         d_a_demo_kmm: 1
-       d_a_obj_light: 1
-      d_a_obj_ferris: 1
-         d_a_npc_ac1: 1
-       d_a_npc_btsw2: 1
-      d_a_npc_bmcon1: 1
-      d_a_obj_smplbg: 1
-        d_a_obj_vtil: 1
-     d_a_obj_volcano: 1
-       d_a_obj_yboil: 1
+           d_a_dummy: 1
+       d_a_ghostship: 1
+         d_a_gy_ctrl: 1
+          d_a_kddoor: 1
+          d_a_kokiie: 1
+              d_a_kt: 1
+         d_a_kytag05: 1
          d_a_kytag06: 1
-   d_a_obj_iceisland: 1
-  d_a_obj_dragonhead: 1
-         d_a_tag_ret: 1
-        d_throwstone: 1
+         d_a_lbridge: 1
+          d_a_lod_bg: 1
+           d_a_mflft: 1
+      d_a_mgameboard: 1
+           d_a_mtoge: 1
+         d_a_npc_ac1: 1
+     d_a_npc_auction: 1
+      d_a_npc_bmcon1: 1
+        d_a_npc_bms1: 1
+        d_a_npc_bmsw: 1
+         d_a_npc_bs1: 1
+       d_a_npc_btsw2: 1
+         d_a_npc_de1: 1
+         d_a_npc_ds1: 1
+         d_a_npc_hi1: 1
+         d_a_npc_jb1: 1
+         d_a_npc_kg1: 1
+         d_a_npc_kg2: 1
+         d_a_npc_km1: 1
+       d_a_npc_photo: 1
+         d_a_npc_pm1: 1
+        d_a_npc_rsh1: 1
+          d_a_npc_so: 1
+          d_a_npc_sv: 1
+          d_a_npc_tt: 1
+          d_a_npc_uk: 1
         d_a_obj_ajav: 1
+       d_a_obj_ajavw: 1
         d_a_obj_auzu: 1
+        d_a_obj_aygr: 1
+   d_a_obj_bscurtain: 1
+      d_a_obj_coming: 1
+ d_a_obj_demo_barrel: 1
+  d_a_obj_doguu_demo: 1
+  d_a_obj_dragonhead: 1
+      d_a_obj_eayogn: 1
+      d_a_obj_eskban: 1
+      d_a_obj_ferris: 1
+    d_a_obj_firewall: 1
+    d_a_obj_ganonbed: 1
+      d_a_obj_gryw00: 1
+         d_a_obj_hha: 1
+       d_a_obj_hlift: 1
+      d_a_obj_hsehi1: 1
+      d_a_obj_htetu1: 1
+   d_a_obj_iceisland: 1
+       d_a_obj_light: 1
+      d_a_obj_ojtree: 1
+        d_a_obj_pbco: 1
+       d_a_obj_pfall: 1
+       d_a_obj_roten: 1
+      d_a_obj_smplbg: 1
+       d_a_obj_stair: 1
+      d_a_obj_usovmc: 1
+         d_a_obj_vds: 1
+        d_a_obj_vfan: 1
+       d_a_obj_vmsdz: 1
+       d_a_obj_vmsms: 1
+     d_a_obj_volcano: 1
+        d_a_obj_vtil: 1
+       d_a_obj_vyasi: 1
+       d_a_obj_xfuta: 1
+       d_a_obj_yboil: 1
+       d_a_obj_ylzou: 1
+           d_a_oship: 1
+         d_a_salvage: 1
+        d_a_shutter2: 1
+        d_a_sie_flag: 1
+         d_a_spotbox: 1
+         d_a_swtdoor: 1
+            d_a_syan: 1
+         d_a_tag_etc: 1
+      d_a_tag_island: 1
      d_a_tag_kb_item: 1
+       d_a_tag_photo: 1
+         d_a_tag_ret: 1
+          d_a_tag_so: 1
+  d_a_tag_waterlevel: 1
+         d_a_tornado: 1
+           d_a_tpota: 1
+          d_a_warpgn: 1
+          d_a_warpmj: 1
+        d_throwstone: 1
+             d_a_agb: 0
+           d_a_arrow: 0
+    d_a_arrow_iceeff: 0
+  d_a_arrow_lighteff: 0
+             d_a_att: 0
+            d_a_beam: 0
+              d_a_bg: 0
+            d_a_bgn2: 0
+            d_a_bgn3: 0
+         d_a_bmdfoot: 0
+         d_a_bmdhand: 0
+            d_a_boko: 0
+            d_a_bomb: 0
+           d_a_bomb2: 0
+       d_a_boomerang: 0
+            d_a_bwdg: 0
+            d_a_bwds: 0
+         d_a_coming2: 0
+     d_a_daiocta_eye: 0
+          d_a_demo00: 0
+       d_a_demo_item: 0
+             d_a_esa: 0
+        d_a_fallrock: 0
+         d_a_fgmahou: 0
+            d_a_grid: 0
+              d_a_gy: 0
+           d_a_himo2: 0
+          d_a_hitobj: 0
+        d_a_hookshot: 0
+       d_a_hot_floor: 0
+           d_a_iball: 0
+            d_a_kaji: 0
+         d_a_kantera: 0
+            d_a_kmon: 0
+            d_a_mant: 0
+    d_a_movie_player: 0
+        d_a_npc_btsw: 0
+          d_a_npc_nz: 0
+       d_a_obj_adnno: 0
+    d_a_obj_buoyflag: 0
+    d_a_obj_buoyrace: 0
+         d_a_obj_eff: 0
+         d_a_obj_hat: 0
+  d_a_obj_homensmoke: 0
+       d_a_obj_itnak: 0
+        d_a_obj_mmrr: 0
+   d_a_obj_msdan_sub: 0
+  d_a_obj_msdan_sub2: 0
+   d_a_obj_tousekiki: 0
+     d_a_pirate_flag: 0
+           d_a_py_lk: 0
+       d_a_race_item: 0
+       d_a_rectangle: 0
+            d_a_sail: 0
+    d_a_salvage_tbox: 0
+            d_a_sbox: 0
+    d_a_scene_change: 0
+          d_a_seatag: 0
+           d_a_shand: 0
+           d_a_sitem: 0
+      d_a_stand_item: 0
+       d_a_switch_op: 0
+         d_a_tag_ba1: 0
+         d_a_tag_kf1: 0
+         d_a_tag_kk1: 0
+            d_a_tama: 0
+           d_a_title: 0
+           d_a_vrbox: 0
+          d_a_vrbox2: 0
+       d_a_waterfall: 0
+           d_a_wbird: 0
+          d_a_yougan: 0
+    f_pc_profile_lst: 0
