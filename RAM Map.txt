@@ -61,10 +61,21 @@
   05,1: Warp index of the warp above this one.
   06,1: Warp index of the warp below this one.
 
-8035BD34 - List of item IDs given from certain story-important cutscenes.
+8035BD34 - List of item IDs given from certain story-important cutscenes (STB cutscenes).
   master sword, pearls, etc.
   (this is equivalent to offset 358D34 in main.dol)
   this list is read from by 800e7420, execute__10daDemo00
+  All the entries in the list:
+    39 Master Sword (Powerless)
+    3A Master Sword (Half Power)
+    3E Master Sword (Full Power)
+    6A Din's Pearl
+    6B Farore's Pearl
+    69 Nayru's Pearl
+    30 Delivery Bag
+    3B Hero's Shield
+    35 Fire and Ice Arrows
+    FF (No item)
 
 803398D8-8033A647 - Mapping of actor IDs to rel filenames. (DynamicNameTable)
   Entry length 8.
@@ -135,10 +146,17 @@ g_fopAcTg_Queue:
   10,4: Number of the item given...?
 
 803764DC-803764FF - List of pointers to the shop item positions for each shop.
-  Each pointer points to a list of 9 floats, which are the X,Y,Z positions of each of the 3 items in the shop.
-  However Item_set_pos_data_rshop_0 has 36 floats (probably Zunari's shop).
-  80376398 - Beedle's shop on Outset.
-  80376404 - Beedle's shop on Rock Spire.
+  Each pointer points to a list of X,Y,Z positions of each of the items in the shop.
+  Entries 00-07 each have 3 items, or 9 floats. Entry 08 has 12 items, or 36 floats.
+  00 8037632C Item_set_pos_data_dshop   - ?
+  01 80376350 Item_set_pos_data_bmshop1 - ?
+  02 80376374 Item_set_pos_data_bmshop2 - ?
+  03 80376398 Item_set_pos_data_bshop_3 - Beedle's shop with the Bait Bag (on Outset and probably other islands).
+  04 803763bc Item_set_pos_data_bshop_4 - Beedle's shop with ?
+  05 803763e0 Item_set_pos_data_bshop_5 - Beedle's shop with ?
+  06 80376404 Item_set_pos_data_bshop_6 - Beedle's special shop ship on Rock Spire.
+  07 80376428 Item_set_pos_data_bshop_7 - ?
+  08 8037644c Item_set_pos_data_rshop_0 - Zunari's shop on Windfall.
 
 80377018-8037705F - List of position offsets(???) for carryable weapons (Boko).
   Entry length 0xC.
@@ -472,7 +490,34 @@ Each inventory slot:
 803C4C57,1 - Hookshot (2F)
 803C4C58,1 - Skull Hammer (33)
 
-803C4C59 - Start of list of bitfields of items you own?
+803C4C59 - Start of list of bitfields of items you own.
+803C4C59,1 - First bitfield of what bottle contents you have ever owned at an point.
+  01 - ?
+  02 - Unused bottle contents item 4F
+  04 - Empty Bottle
+  08 - Red Potion
+  10 - Green Potion
+  20 - Blue Potion
+  40 - Elixir Soup (1/2)
+  80 - Elixir Soup
+803C4C5A,1 - Second bitfield of what bottle contents you have ever owned at an point.
+  01 - ?
+  02 - Bottled Water
+  04 - Fairy in Bottle
+  08 - Forest Firefly
+  10 - Forest Water
+  20 - Unused bottle contents item 5A
+  40 - Unused bottle contents item 5B
+  80 - Unused bottle contents item 5C
+803C4C5B,1 - Third bitfield of what bottle contents you have ever owned at an point.
+  01 - ?
+  02 - Unused bottle contents item 5D
+  04 - Unused bottle contents item 5E
+  08 - Unused bottle contents item 5F
+  10 - Unused bottle contents item 60
+  20 - 
+  40 - 
+  80 - 
 803C4C60,1 - ? related to bottles?
 803C4C61,1 - Bitfield of what picto boxes you own.
   0 - Picto Box
@@ -1034,8 +1079,8 @@ Backup inventory data used by recollection bosses in order to restore the player
 
 =========== 803E0BC8-803E1DC7: dRes_control_c
 
-803E0BC8-803E14C7 - List of currently loaded resource archives from the res/Object folder.
-803E14C8-803E1DC7 - List of currently loaded resource archives from the res/Stage folder.
+803E0BC8-803E14C7 - List of currently loaded resource archives from the res/Object folder. (mObjectInfo)
+803E14C8-803E1DC7 - List of currently loaded resource archives from the res/Stage folder. (mStageInfo)
   Entry length 0x24.
   00,0E: Name of the RARC loaded in this slot (without the .arc extension).
   0E,02: Number of actors that currently exist that need this arc to still be loaded (ref count).

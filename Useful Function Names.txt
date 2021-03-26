@@ -1058,6 +1058,7 @@ isSwitch__13dSv_zoneBit_cFi
   r3 - pointer to the zone (within the zone list, 803C53B2)
   r4 - zone bit index (should be within the range 00-2F)
 
+
 dPath_GetRoomPath__Fii
   returns a pointer to the requested path
   r3 - Path index
@@ -1066,6 +1067,13 @@ dPath_GetRoomPath__Fii
 dPath_GetNextRoomPath(dPath *, int)
   r3 - Pointer to a path
   r4 - Room number
+
+dNpc_PathRun_c::setInf(unsigned char, signed char, unsigned char)
+  r3 - Pointer to the dNpc_PathRun_c struct
+  r4 - Path index (or FF for none)
+  r5 - Room number
+  r6 - Boolean for movement direction being forwards
+
 
 fopAcM_setCarryNow__FP10fopAc_ac_ci
   sets a weapon as being carried by an enemy?
@@ -1189,6 +1197,9 @@ fopAcM_entrySolidHeap(fopAc_ac_c *, int (*)(fopAc_ac_c *), unsigned long)
   r3 - Entity pointer
   r4 - Callback function for this entity to initialize itself
   r5 - Maximum amount of memory that may be needed, or 0 for no maximum.
+
+createSolidHeapFromGameToCurrent
+  creates a new heap off the game heap, and makes that new heap the current heap?
 
 JKRHeap::alloc(unsigned long, int, JKRHeap *)
   Allocates some memory out of a heap.

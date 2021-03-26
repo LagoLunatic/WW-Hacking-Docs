@@ -92,6 +92,7 @@ Pointer to something in the loaded REL file for this entity?
 1C8,4: Bitfield of ?
   & 00000002 - Actor did not execute this frame.
   & 00000004 - Actor did not draw this frame.
+  & 00000008 - ? (Set by the certain actors like the sea, or d_a_dummy)
 1D0,14: Previous transform.
   1D0,4: Previous X pos.
   1D4,4: Previous Y pos.
