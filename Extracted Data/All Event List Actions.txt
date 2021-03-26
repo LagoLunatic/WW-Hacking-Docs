@@ -162,6 +162,22 @@ Bm1:
   WAIT:
     Timer
   dummy:
+Bm2:
+  CLR_TRN:
+  DUMMY:
+  MES_DRW:
+  MES_END:
+  MES_SET:
+    MsgNo
+  SETANM_TALK01:
+  SET_TRN:
+  TALK:
+    MsgNo
+  TURN_TO_ACTOR:
+    ActorName
+    OffsetPos
+    Timer
+  WAIT:
 Bm3:
   WAIT:
 Bm4:
@@ -1090,14 +1106,21 @@ Link:
 Ls1:
   ANM_CHG:
     AnmNo
+  DUMMY:
   LOK_PLYER:
     prm_0
   PLYER_MOV:
+  START:
+  TALK:
   TALK_MSG:
     msg_num
+  TIMING01:
+  TIMING02:
+  TIMING03:
   WAI:
   WAIT:
     Timer
+  WAITKEEP:
 MBDOOR:
   ADJUSTMENT:
     Timer
@@ -1323,6 +1346,9 @@ Nzfall:
   WAIT:
     Timer
 Ob1:
+  DUMMY:
+  START:
+  TALK:
   WAIT:
 Ohatch:
   OPEN:
@@ -1411,6 +1437,7 @@ P1a:
   WAIT:
     Timer
 P2b:
+  DUMMY:
   JUMP:
     Gravity
     Pos
@@ -2016,6 +2043,7 @@ Zenfire:
 Zl1:
   CHG_ANM_ATR:
     AtrNo
+  CLR_TRN:
   CONTINUE_TALK:
     end_num
   DRW_ONOFF:
@@ -2037,10 +2065,23 @@ Zl1:
     OnOff
   PLYER_TRN_PARTNER:
   PLYER_TRN_TETRA:
+  SET_ANM_ATR:
+    AtrNo
+  SET_TRN:
   SURPRISED:
+  TALK:
+    MsgNo
+  TALK3202_a:
+  TALK3202_c:
+  TALK3203_c:
+  TALK3210_a:
   TALK_MSG:
     end_msg
     msg_num
+  TURN_TO_ACTOR:
+    ActorName
+    OffsetPos
+    Timer
   WAIT:
     Timer
 dragon:

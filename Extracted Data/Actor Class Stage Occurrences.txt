@@ -1,15 +1,15 @@
-           d_a_tsubo: 79
+           d_a_tsubo: 81
               d_a_ep: 65
             d_a_tbox: 62
            d_a_swc00: 55
          d_a_kytag00: 40
           d_a_warpls: 39
           d_a_door10: 35
-           d_a_grass: 33
+           d_a_grass: 34
           d_a_knob00: 33
-       d_a_tag_event: 30
+       d_a_tag_event: 31
               d_a_bk: 29
-            d_a_item: 27
+            d_a_item: 28
    d_a_tag_attention: 27
           d_a_andsw2: 26
              d_a_mo2: 22
@@ -23,21 +23,21 @@
               d_a_bl: 17
               d_a_ki: 17
              d_a_kui: 17
+         d_a_kytag01: 17
               d_a_wz: 17
-         d_a_kytag01: 16
        d_a_obj_akabe: 16
+         d_a_npc_zl1: 15
         d_a_tag_hint: 15
-         d_a_npc_zl1: 14
+          d_a_kamome: 14
             d_a_ship: 14
-          d_a_kamome: 13
               d_a_st: 13
+           d_a_stone: 13
           d_a_swhit0: 13
           d_a_swtact: 13
          d_a_bflower: 12
           d_a_door12: 12
          d_a_kytag02: 12
        d_a_obj_mtest: 12
-           d_a_stone: 12
           d_a_agbsw0: 11
               d_a_am: 11
             d_a_fire: 11
@@ -48,6 +48,7 @@
               d_a_pt: 11
           d_a_stone2: 11
           d_a_alldie: 10
+           d_a_lwood: 10
            d_a_magma: 10
           d_a_npc_mn: 10
       d_a_obj_kanoke: 10
@@ -60,31 +61,34 @@
               d_a_ks: 9
               d_a_mt: 9
           d_a_npc_md: 9
+          d_a_npc_p1: 9
     d_a_obj_swhammer: 9
        d_a_obj_warpt: 9
               d_a_ph: 9
+            d_a_saku: 9
              d_a_sea: 9
         d_a_wind_tag: 9
             d_a_ykgr: 9
+          d_a_bridge: 8
               d_a_gm: 8
-           d_a_lwood: 8
+          d_a_kanban: 8
           d_a_mbdoor: 8
             d_a_mozo: 8
-          d_a_npc_p1: 8
+         d_a_npc_bm1: 8
       d_a_obj_figure: 8
        d_a_obj_shelf: 8
-            d_a_saku: 8
           d_a_bigelf: 7
               d_a_bo: 7
        d_a_boss_item: 7
-          d_a_bridge: 7
               d_a_fm: 7
-          d_a_kanban: 7
-         d_a_npc_bm1: 7
+         d_a_npc_ls1: 7
+         d_a_npc_ym1: 7
              d_a_nzg: 7
         d_a_obj_hcbh: 7
       d_a_obj_hfuck1: 7
         d_a_obj_hole: 7
+      d_a_obj_ospbox: 7
+  d_a_obj_pirateship: 7
         d_a_obj_wood: 7
      d_a_obj_ygush00: 7
               d_a_pw: 7
@@ -92,18 +96,16 @@
            d_a_hmlif: 6
       d_a_majuu_flag: 6
            d_a_mdoor: 6
-         d_a_npc_ls1: 6
-         d_a_npc_ym1: 6
-      d_a_obj_ospbox: 6
-  d_a_obj_pirateship: 6
         d_a_tag_evsw: 6
           d_a_fganon: 5
            d_a_himo3: 5
            d_a_ikari: 5
              d_a_jbo: 5
+         d_a_npc_aj1: 5
       d_a_npc_people: 5
               d_a_nz: 5
         d_a_obj_jump: 5
+       d_a_obj_lpalm: 5
        d_a_obj_mknjd: 5
       d_a_obj_rcloud: 5
       d_a_obj_search: 5
@@ -113,15 +115,20 @@
            d_a_warpf: 5
               d_a_ff: 4
              d_a_hys: 4
-         d_a_npc_aj1: 4
+              d_a_kb: 4
+              d_a_kn: 4
+             d_a_msw: 4
          d_a_npc_bj1: 4
+         d_a_npc_ko1: 4
+          d_a_npc_p2: 4
+         d_a_npc_yw1: 4
        d_a_obj_flame: 4
          d_a_obj_ice: 4
        d_a_obj_ikada: 4
-       d_a_obj_lpalm: 4
         d_a_obj_mkie: 4
        d_a_obj_plant: 4
       d_a_obj_tntrap: 4
+    d_a_obj_toripost: 4
          d_a_obj_try: 4
          d_a_obj_vmc: 4
           d_a_switem: 4
@@ -131,15 +138,11 @@
               d_a_dr: 3
              d_a_fan: 3
            d_a_floor: 3
-              d_a_kn: 3
-             d_a_msw: 3
          d_a_npc_ba1: 3
          d_a_npc_gk1: 3
          d_a_npc_ji1: 3
-         d_a_npc_ko1: 3
-          d_a_npc_p2: 3
+         d_a_npc_ob1: 3
        d_a_npc_roten: 3
-         d_a_npc_yw1: 3
      d_a_obj_cafelmp: 3
      d_a_obj_correct: 3
        d_a_obj_hami4: 3
@@ -154,7 +157,6 @@
       d_a_obj_swflat: 3
      d_a_obj_swlight: 3
        d_a_obj_timer: 3
-    d_a_obj_toripost: 3
         d_a_obj_trap: 3
               d_a_oq: 3
               d_a_pz: 3
@@ -182,7 +184,6 @@
              d_a_gnd: 2
        d_a_goal_flag: 2
          d_a_icelift: 2
-              d_a_kb: 2
             d_a_kita: 2
             d_a_klft: 2
           d_a_komore: 2
@@ -206,7 +207,6 @@
          d_a_npc_kp1: 2
           d_a_npc_mk: 2
           d_a_npc_mt: 2
-         d_a_npc_ob1: 2
           d_a_npc_os: 2
          d_a_npc_pf1: 2
       d_a_npc_sarace: 2

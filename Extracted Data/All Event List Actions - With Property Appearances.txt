@@ -318,6 +318,31 @@ Bm1:
       20 # Appears in: sea:Skn_Islnd, sea_E:Skn_Islnd, sea_T:Skn_Islnd
       6  # Appears in: sea:Skn_Islnd, sea_E:Skn_Islnd, sea_T:Skn_Islnd
   dummy:
+Bm2:
+  CLR_TRN:
+  DUMMY:
+  MES_DRW:
+  MES_END:
+  MES_SET:
+    MsgNo:
+      3203 # Appears in: DmSpot0:YUUKAIGO
+  SETANM_TALK01:
+  SET_TRN:
+  TALK:
+    MsgNo:
+      3205 # Appears in: DmSpot0:YUUKAIGO
+      3207 # Appears in: DmSpot0:YUUKAIGO
+      3209 # Appears in: DmSpot0:YUUKAIGO
+      3211 # Appears in: DmSpot0:YUUKAIGO
+      3213 # Appears in: DmSpot0:YUUKAIGO
+  TURN_TO_ACTOR:
+    ActorName:
+      'Zl1' # Appears in: DmSpot0:YUUKAIGO
+    OffsetPos:
+      (0.0, 102.0, 0.0) # Appears in: DmSpot0:YUUKAIGO
+    Timer:
+      0 # Appears in: DmSpot0:YUUKAIGO
+  WAIT:
 Bm3:
   WAIT:
 Bm4:
@@ -431,7 +456,7 @@ CAMERA:
     BSpCurve:
       0 # Appears in: Opub:FirstCamera
     Bank:
-      0.0   # Appears in: Asoko:P2B_ARRIVE_MAJYU, Asoko:P2B_GOAL, Asoko:P2B_GOAL_WAIT_TALK, Asoko:P2B_TEST_SWITCH, Asoko:P2B_INTRO, Asoko:P2B_TO_GOAL, Asoko:P2B_GOAL_2, Asoko:P2B_INTRO_2, MajyuE:ooi, Ojhous2:angry, Ojhous:Angry, Omori:CyuCyu_RET, Omori:CyuCyu_STR, Omori:LIFT_ ...
+      0.0   # Appears in: Asoko:P2B_ARRIVE_MAJYU, Asoko:P2B_GOAL, Asoko:P2B_GOAL_WAIT_TALK, Asoko:P2B_TEST_SWITCH, Asoko:P2B_INTRO, Asoko:P2B_TO_GOAL, Asoko:P2B_GOAL_2, Asoko:P2B_INTRO_2, DmSpot0:YUUKAIGO, MajyuE:ooi, Ojhous2:angry, Ojhous:Angry, Omori:CyuCyu_RET, Omori:CyuCy ...
       90.0  # Appears in: Edaichi:HoleCam
       9.0   # Appears in: kindan:TELOP_FOREST
       -8.0  # Appears in: sea:BEAST_GATE, sea:BEAST_GATE2, sea_E:BEAST_GATE, sea_T:BEAST_GATE
@@ -487,6 +512,16 @@ CAMERA:
       (0.0, 493.0, -223.0)                                           # Appears in: Cave08:MKNJD_K_TALK
       (-307.0, 124.0, -151.0)                                        # Appears in: Comori:Prl_Flw
       (-243.0, 124.0, -179.0)                                        # Appears in: Comori:Red_Ltr
+      (-195528.0, 1707.0, 293777.0)                                  # Appears in: DmSpot0:PRESENT1
+      (-195370.0, 1711.0, 293734.0)                                  # Appears in: DmSpot0:PRESENT1
+      (-195586.0, 1692.0, 293843.0)                                  # Appears in: DmSpot0:PRESENT1
+      (-195618.0, 1680.0, 293884.0)                                  # Appears in: DmSpot0:PRESENT3
+      (-201115.0, 135.0, 294128.0)                                   # Appears in: DmSpot0:YUUKAIGO
+      (-201342.0, 224.0, 294261.0)                                   # Appears in: DmSpot0:YUUKAIGO
+      (-201301.0, 220.0, 294252.0)                                   # Appears in: DmSpot0:YUUKAIGO
+      (-201113.0, 132.0, 294136.0)                                   # Appears in: DmSpot0:YUUKAIGO
+      (-201144.0, 230.0, 294291.0)                                   # Appears in: DmSpot0:YUUKAIGO
+      (-201041.0, 126.0, 294208.0)                                   # Appears in: DmSpot0:YUUKAIGO
       (97.0, 76.0, -133.0)                                           # Appears in: Ebesso:Ji1_EndSpeak, Msmoke:Ji1_EndSpeak, Ojhous2:Ji1_EndSpeak, Ojhous2:Ji1_ItemGetEnd, Ojhous2:Ji1_ItemGetTalkEnd, Ojhous2:Ji1_SwordGetTalkEnd, Ojhous:Ji1_EndSpeak, Ojhous:Ji1_ItemGetEnd, Ojhous:Ji1_ItemGetTalkEnd, Ojhous:Ji1_SwordGetTalkEnd, tincle ...
       (0.0, 83.4219970703125, -51.13100051879883)                    # Appears in: Ebesso:Ji1_EndSpeak, Msmoke:Ji1_EndSpeak, Ojhous2:Ji1_EndSpeak, Ojhous2:Ji1_ItemGetEnd, Ojhous2:Ji1_ItemGetTalkEnd, Ojhous2:Ji1_SwordGetTalkEnd, Ojhous2:Ji1_pl_backroom, Ojhous2:Ji1_TeachSpRollCut, Ojhous:Ji1_EndSpeak, Ojhous:Ji1_ItemGetEnd, Ojhous:J ...
       (800.0, 286.0, 434.0)                                          # Appears in: Ebesso:Ji1_kaiten
@@ -716,7 +751,7 @@ CAMERA:
       (-120.0, 0.0, 50.0)                                            # Appears in: SubD44:DEFAULT_FM_SW_APEEAR
       (0.0, -50.0, 100.0)                                            # Appears in: SubD44:DEFAULT_NPC_NZ_ESA
       (0.7639999985694885, -14.079999923706055, 6.513999938964844)   # Appears in: TEST:TIMEWARP_COMEBACK
-      (0.0, 100.0, 0.0)                                              # Appears in: Xboss0:WARP_WIND, Xboss0:WARP_WIND_AFTER, Xboss1:WARP_WIND, Xboss1:WARP_WIND_AFTER, Xboss2:WARP_WIND, Xboss2:WARP_WIND_AFTER, Xboss3:WARP_WIND, Xboss3:WARP_WIND_AFTER, sea:FROM_HYRULE_1
+      (0.0, 100.0, 0.0)                                              # Appears in: Xboss0:WARP_WIND, Xboss0:WARP_WIND_AFTER, Xboss1:WARP_WIND, Xboss1:WARP_WIND_AFTER, Xboss2:WARP_WIND, Xboss2:WARP_WIND_AFTER, Xboss3:WARP_WIND, Xboss3:WARP_WIND_AFTER, morocam:moro_scam, sea:FROM_HYRULE_1
       (-76.0, -60.0, 168.0)                                          # Appears in: Xboss1:cb_rescue
       (-120.0, -3500.0, -5400.0)                                     # Appears in: kenroom:btl_of_swroom
       (-120.0, -3140.0, -7500.0)                                     # Appears in: kenroom:btl_of_swroom
@@ -910,6 +945,16 @@ CAMERA:
       (0.0, 6.0, 649.0)                                               # Appears in: Cave08:MKNJD_K_TALK
       (-63.0, 79.0, -170.0)                                           # Appears in: Comori:Prl_Flw
       (-58.0, 65.0, -108.0)                                           # Appears in: Comori:Red_Ltr
+      (-195424.0, 1686.0, 293793.0)                                   # Appears in: DmSpot0:PRESENT1
+      (-195635.0, 1717.0, 293858.0)                                   # Appears in: DmSpot0:PRESENT1
+      (-195310.0, 1752.0, 293790.0)                                   # Appears in: DmSpot0:PRESENT1
+      (-195324.0, 1738.0, 293748.0)                                   # Appears in: DmSpot0:PRESENT3
+      (-201105.0, 144.0, 294213.0)                                    # Appears in: DmSpot0:YUUKAIGO
+      (-201215.0, 224.0, 294192.0)                                    # Appears in: DmSpot0:YUUKAIGO
+      (-201189.0, 186.0, 294242.0)                                    # Appears in: DmSpot0:YUUKAIGO
+      (-201186.0, 119.0, 294227.0)                                    # Appears in: DmSpot0:YUUKAIGO
+      (-201071.0, 303.0, 294516.0)                                    # Appears in: DmSpot0:YUUKAIGO
+      (-201192.0, 204.0, 294391.0)                                    # Appears in: DmSpot0:YUUKAIGO
       (484.0, 7.0, -59.0)                                             # Appears in: Ebesso:Ji1_EndSpeak, Msmoke:Ji1_EndSpeak, Ojhous2:Ji1_EndSpeak, Ojhous2:Ji1_ItemGetEnd, Ojhous2:Ji1_ItemGetTalkEnd, Ojhous2:Ji1_SwordGetTalkEnd, Ojhous:Ji1_EndSpeak, Ojhous:Ji1_ItemGetEnd, Ojhous:Ji1_ItemGetTalkEnd, Ojhous:Ji1_SwordGetTalkEnd, tincle ...
       (0.0, 190.91600036621094, 339.197998046875)                     # Appears in: Ebesso:Ji1_EndSpeak, Msmoke:Ji1_EndSpeak, Ojhous2:Ji1_EndSpeak, Ojhous2:Ji1_ItemGetEnd, Ojhous2:Ji1_ItemGetTalkEnd, Ojhous2:Ji1_SwordGetTalkEnd, Ojhous2:Ji1_pl_backroom, Ojhous2:Ji1_TeachSpRollCut, Ojhous:Ji1_EndSpeak, Ojhous:Ji1_ItemGetEnd, Ojhous:J ...
       (406.0, 127.0, 180.0)                                           # Appears in: Ebesso:Ji1_kaiten
@@ -1177,6 +1222,9 @@ CAMERA:
       (-15.383000373840332, 1891.6529541015625, -6222.2138671875)     # Appears in: majroom:DoorLook2
       (2472.0, 2536.0, -8887.0)                                       # Appears in: majroom:DoorLook2
       (-1945.073974609375, 1077.8890380859375, 3743.90087890625)      # Appears in: majroom:moro_cam
+      (400.0, 10.0, -2500.0)                                          # Appears in: morocam:moro_scam
+      (-200.0, -50.0, 200.0)                                          # Appears in: morocam:moro_proll, morocam:moro_proll2
+      (200.0, -50.0, 200.0)                                           # Appears in: morocam:moro_proll2
       (-116250.3984375, 1173.199951171875, -183205.5)                 # Appears in: sea:KG2_START_DEMO, sea:KG2_CLEAR_DEMO
       (211743.0, 1764.0, 191656.0)                                    # Appears in: sea:FIGURE_HATCH_OPEN
       (563.0, 1089.0, 864.0)                                          # Appears in: sea:FIGURE_HATCH_OPEN
@@ -1315,6 +1363,7 @@ CAMERA:
       70.0              # Appears in: Adanmae:Eskban, kindan:TELOP_FOREST, sea:BEAST_GATE, sea:BEAST_GATE2, sea:MELT_ICE, sea:ARRIVAL_DRG, sea:ARRIVAL_DRG2, sea:ARRIVAL_GND2, sea:ARRIVAL_BRK2, sea:ARRIVAL_FST, sea:ARRIVAL_FST2, sea:ARRIVAL_TWN, sea:ARRIVAL_TWN2, sea:ARRIVAL_WND, sea:ARRI ...
       45.0              # Appears in: Adanmae:MD_FLY, Fairy01:BIGELF_ARRIVAL, Fairy02:BIGELF_ARRIVAL, Fairy03:BIGELF_ARRIVAL, Fairy04:BIGELF_ARRIVAL, Fairy05:BIGELF_ARRIVAL, Fairy06:BIGELF_ARRIVAL, LinkRM:Use_Fairy, MajyuE:ooi, SubD44:DEFAULT_FM_SW_APEEAR, VrTest:DEFAULT_TREASURE, sea:KG ...
       58.0              # Appears in: Atorizk:BTSW_TALK_SUGOI, Atorizk:demo10, Cave08:AMI2_OPEN, Cave08:AMI2_CLOSE, Edaichi:MKNJD_D_DEMO, Ekaze:MKNJD_K_DEMO, GanonA:4_door_kz, GanonA:4_door_mr, GanonA:4_door_dn, GanonA:4_door_dc, GanonA:4_door_fin, GanonA:rtn_warp, GanonA:Gintro2, GanonM ...
+      34.0              # Appears in: DmSpot0:PRESENT1
       33.0              # Appears in: Ebesso:Ji1_EndSpeak, Msmoke:Ji1_EndSpeak, Ojhous2:Ji1_EndSpeak, Ojhous2:Ji1_ItemGetEnd, Ojhous2:Ji1_ItemGetTalkEnd, Ojhous2:Ji1_SwordGetTalkEnd, Ojhous:Ji1_EndSpeak, Ojhous:Ji1_ItemGetEnd, Ojhous:Ji1_ItemGetTalkEnd, Ojhous:Ji1_SwordGetTalkEnd, tincle ...
       35.0              # Appears in: Ebesso:Ji1_kaiten, M_Dra09:Md_RopeGet, Msmoke:Ji1_kaiten, Ojhous2:Ji1_kaiten, Ojhous:Ji1_kaiten, tincle:Ji1_kaiten
       57.0              # Appears in: Edaichi:MKNJD_D_DEMO, K_Testa:moro_bomb, M_Dai:MKNJD_D_DEMO, M_NewD2:moro_bomb, Siren:STAIRAPPEAR
@@ -1396,7 +1445,7 @@ CAMERA:
       1   # Appears in: Fairy01:BIGELF_ARRIVAL, Fairy02:BIGELF_ARRIVAL, Fairy03:BIGELF_ARRIVAL, Fairy04:BIGELF_ARRIVAL, Fairy05:BIGELF_ARRIVAL, Fairy06:BIGELF_ARRIVAL, GanonK:StartCam, GanonK:StartCam2, Hyroom:go_up_stairs, Hyroom:hy_intro, Orichh:AUCTION_GET_ITEM, Orichh:A ...
       100 # Appears in: GanonA:4_door_fin, GanonE:SwitchCam1, GanonE:SwitchCam2
       15  # Appears in: GanonM:Look, GanonM:Look0, GanonM:Look2, Hyroom:hy_intro, I_TestM:DAI_ITEM, Kaisen:DAI_ITEM, M_Dra09:MORI1_EVENT, M_Dra09:moro_R09, Nitiyou:DAI_ITEM, Ocmera:DAI_ITEM, Orichh:DAI_ITEM, Pdrgsh:DAI_ITEM, TEST:DAI_ITEM, kindan:StartCam, kindan:KagoCam, s ...
-      5   # Appears in: Hyroom:hy_intro, M_Dai:StartCam, M_NewD2:Cliff, M_NewD2:Cliff2, Siren:moro_scam, sea:light_start
+      5   # Appears in: Hyroom:hy_intro, M_Dai:StartCam, M_NewD2:Cliff, M_NewD2:Cliff2, Siren:moro_scam, morocam:moro_proll2, sea:light_start
       120 # Appears in: Hyroom:move_YLzou, M_Dai:TENMADO_OPEN, Siren:GATECLOSE, sea:ajav_destroy0, sea:ajav_destroy1, sea_E:ajav_destroy0, sea_E:ajav_destroy1, sea_T:ajav_destroy0, sea_T:ajav_destroy1
       190 # Appears in: Hyroom:move_YLzou
       240 # Appears in: M_Dai:Msdan2
@@ -1419,10 +1468,10 @@ CAMERA:
     TransType:
       1 # Appears in: sea:DAIOCTA_DEAD_ELF, sea:DAIOCTA_DEAD, sea:DAIOCTA_SUIKOMI
     Trim:
-      'VISTA'    # Appears in: Asoko:P2B_ARRIVE_MAJYU, Asoko:P2B_GOAL, Asoko:P2B_GOAL_WAIT_TALK, Asoko:P2B_TEST_SWITCH, Asoko:P2B_INTRO, Asoko:P2B_TO_GOAL, Asoko:P2B_GOAL_2, Asoko:P2B_INTRO_2, Comori:Prl_Flw, Comori:Red_Ltr, Hyrule:nakaniwa, K_Test6:ROTEN_EXCHANGE_2ND, K_Testb:ROT ...
+      'VISTA'    # Appears in: Asoko:P2B_ARRIVE_MAJYU, Asoko:P2B_GOAL, Asoko:P2B_GOAL_WAIT_TALK, Asoko:P2B_TEST_SWITCH, Asoko:P2B_INTRO, Asoko:P2B_TO_GOAL, Asoko:P2B_GOAL_2, Asoko:P2B_INTRO_2, Comori:Prl_Flw, Comori:Red_Ltr, DmSpot0:YUUKAIGO, Hyrule:nakaniwa, K_Test6:ROTEN_EXCHANG ...
       'STANDARD' # Appears in: Kaisen:MINIGAME_START
     WaitAnyKey:
-      0 # Appears in: Asoko:P2B_ARRIVE_MAJYU, Asoko:P2B_GOAL, Asoko:P2B_GOAL_WAIT_TALK, Asoko:P2B_TEST_SWITCH, Asoko:P2B_INTRO, Asoko:P2B_TO_GOAL, Asoko:P2B_GOAL_2, Asoko:P2B_INTRO_2, Ebesso:Ji1_EndSpeak, Msmoke:Ji1_EndSpeak, Ojhous2:Ji1_EndSpeak, Ojhous2:Ji1_ItemGetEnd,  ...
+      0 # Appears in: Asoko:P2B_ARRIVE_MAJYU, Asoko:P2B_GOAL, Asoko:P2B_GOAL_WAIT_TALK, Asoko:P2B_TEST_SWITCH, Asoko:P2B_INTRO, Asoko:P2B_TO_GOAL, Asoko:P2B_GOAL_2, Asoko:P2B_INTRO_2, DmSpot0:YUUKAIGO, Ebesso:Ji1_EndSpeak, Msmoke:Ji1_EndSpeak, Ojhous2:Ji1_EndSpeak, Ojhous ...
       1 # Appears in: Atorizk:demo10
     fovy:
       55.0 # Appears in: Comori:Red_Ltr
@@ -1486,12 +1535,15 @@ CAMERA:
       (4186.0, 5200.0, -2544.0)                                     # Appears in: A_mori:AMORI_DEMO_1
       (10559.0, 2577.0, -2851.0)                                    # Appears in: A_mori:AMORI_DEMO_1
       (5826.0, 3646.0, -2613.0)                                     # Appears in: A_mori:AMORI_DEMO_1
-      (50.0, 0.0, -680.0)                                           # Appears in: A_mori:barrel2_brk, A_nami:barrel2_brk, A_umikz:barrel2_brk, Adanmae:barrel2_brk, Amos_T:barrel2_brk, E3ROOP:barrel2_brk, I_TestM:barrel2_brk, I_TestR:barrel2_brk, KATA_HB:barrel2_brk, K_Test2:barrel2_brk, K_Test3:barrel2_brk, K_Test4:barrel2_brk, K_ ...
+      (50.0, 0.0, -680.0)                                           # Appears in: A_mori:barrel2_brk, A_nami:barrel2_brk, A_umikz:barrel2_brk, Adanmae:barrel2_brk, Amos_T:barrel2_brk, DmSpot0:barrel2_brk, E3ROOP:barrel2_brk, I_TestM:barrel2_brk, I_TestR:barrel2_brk, KATA_HB:barrel2_brk, K_Test2:barrel2_brk, K_Test3:barrel2_brk, K_ ...
       (0.0, 0.0, 0.0)                                               # Appears in: Amos_T:StartCamera, Asoko:StartCamera, Hyroom:StartCamera, I_TestM:StartCamera, I_TestR:StartCamera, KATA_HB:StartCamera, KATA_RM:StartCamera, K_Test2:StartCamera, K_Test3:StartCamera, K_Test4:StartCamera, K_Test5:StartCamera, K_Test6:StartCamera, K_ ...
       (480.0, 400.0, -1500.0)                                       # Appears in: Amos_T:Ji1_linkmove, I_TestM:Ji1_linkmove, K_Test3:Ji1_linkmove, K_Test4:Ji1_linkmove, K_Test5:Ji1_linkmove, K_Test6:Ji1_linkmove, K_Test8:Ji1_linkmove
       (0.0, 1200.0, -300.0)                                         # Appears in: Asoko:Wlift_up
       (45.0, -40.0, 190.0)                                          # Appears in: Cave08:MKNJD_K_LESSON, Edaichi:MKNJD_D_LESSON, Ekaze:MKNJD_K_LESSON, M_Dai:MKNJD_D_LESSON, kaze:MKNJD_K_LESSON, sea:TACT_TEARCH0, sea:TACT_TEARCH1, sea:TACT_TEARCH4, sea:TACT_TEARCH2, sea:TACT_HT, sea:TACT1_RT, sea:TACT_TT10, sea:TACT_TT11
       (0.0, 40.0, 500.0)                                            # Appears in: Cave09:MkieB_die, M_Dai:MkieB_die, M_DaiMB:MkieB_die
+      (-205081.0, 900.0, 298629.0)                                  # Appears in: DmSpot0:StartCamera0
+      (-201727.0, 813.0, 298925.0)                                  # Appears in: DmSpot0:StartCamera1
+      (-199458.0, 4297.0, 302418.0)                                 # Appears in: DmSpot0:StartCamera2
       (-7.599999904632568, 149.0, 529.0)                            # Appears in: Ebesso:StartCamera, Msmoke:StartCamera, Ojhous2:StartCamera, Ojhous:StartCamera, tincle:StartCamera
       (0.0, -50.0, -400.0)                                          # Appears in: Ebesso:Ji1_BadSpeak, Msmoke:Ji1_BadSpeak, Msmoke:Ji1_kaiten, Ojhous2:Ji1_BadSpeak, Ojhous:Ji1_BadSpeak, tincle:Ji1_BadSpeak, tincle:Ji1_kaiten
       (-25.011999130249023, 166.3260040283203, -1236.9110107421875) # Appears in: Fairy01:BIGELF_ARRIVAL, Fairy02:BIGELF_ARRIVAL, Fairy03:BIGELF_ARRIVAL, Fairy04:BIGELF_ARRIVAL, Fairy05:BIGELF_ARRIVAL, Fairy06:BIGELF_ARRIVAL
@@ -1556,7 +1608,7 @@ CAMERA:
       (101200.0, 600.0, 800.0)                                      # Appears in: sea:TO_HYRULE_WARP, sea:FROM_HYRULE_1, sea:FROM_HYRULE_2
     Fovy:
       55.0 # Appears in: ADMumi:FALL_START, A_mori:look_tetra, A_mori:FALL_START, A_nami:FALL_START, A_umikz:FALL_START, Abesso:FALL_START, Abship:FALL_START, Adanmae:FALL_START, Asoko:FALL_START, Atorizk:FALL_START, Cave01:FALL_START, Cave02:FALL_START, Cave03:FALL_START, C ...
-      60.0 # Appears in: A_mori:look_tetra, A_mori:AMORI_DEMO_1, A_mori:barrel2_brk, A_nami:barrel2_brk, A_umikz:barrel2_brk, Adanmae:barrel2_brk, Amos_T:StartCamera, Amos_T:barrel2_brk, Asoko:StartCamera, Asoko:Wlift_up, Cave09:MkieB_die, E3ROOP:barrel2_brk, Ebesso:StartCam ...
+      60.0 # Appears in: A_mori:look_tetra, A_mori:AMORI_DEMO_1, A_mori:barrel2_brk, A_nami:barrel2_brk, A_umikz:barrel2_brk, Adanmae:barrel2_brk, Amos_T:StartCamera, Amos_T:barrel2_brk, Asoko:StartCamera, Asoko:Wlift_up, Cave09:MkieB_die, DmSpot0:StartCamera0, DmSpot0:Start ...
       50.0 # Appears in: A_mori:AMORI_DEMO_1
       45.0 # Appears in: A_mori:AMORI_DEMO_1
       40.0 # Appears in: Fairy01:BIGELF_ARRIVAL, Fairy02:BIGELF_ARRIVAL, Fairy03:BIGELF_ARRIVAL, Fairy04:BIGELF_ARRIVAL, Fairy05:BIGELF_ARRIVAL, Fairy06:BIGELF_ARRIVAL, sea:run_start, sea:run_start_2
@@ -1602,13 +1654,14 @@ CAMERA:
       50  # Appears in: A_mori:AMORI_DEMO_1, GanonM:APPEAR_WARP
       55  # Appears in: A_mori:AMORI_DEMO_1
       120 # Appears in: A_mori:AMORI_DEMO_1, sea:TO_GANON_WARP, sea:FROM_GANON
-      6   # Appears in: A_mori:barrel2_brk, A_nami:barrel2_brk, A_umikz:barrel2_brk, Adanmae:barrel2_brk, Amos_T:barrel2_brk, E3ROOP:barrel2_brk, I_TestM:barrel2_brk, I_TestR:barrel2_brk, KATA_HB:barrel2_brk, K_Test2:barrel2_brk, K_Test3:barrel2_brk, K_Test4:barrel2_brk, K_ ...
+      6   # Appears in: A_mori:barrel2_brk, A_nami:barrel2_brk, A_umikz:barrel2_brk, Adanmae:barrel2_brk, Amos_T:barrel2_brk, DmSpot0:barrel2_brk, E3ROOP:barrel2_brk, I_TestM:barrel2_brk, I_TestR:barrel2_brk, KATA_HB:barrel2_brk, K_Test2:barrel2_brk, K_Test3:barrel2_brk, K_ ...
       15  # Appears in: Amos_T:StartCamera, Asoko:StartCamera, Hyroom:StartCamera, I_TestM:StartCamera, I_TestR:StartCamera, KATA_HB:StartCamera, KATA_RM:StartCamera, K_Test2:StartCamera, K_Test3:StartCamera, K_Test4:StartCamera, K_Test5:StartCamera, K_Test6:StartCamera, K_ ...
       30  # Appears in: Asoko:Wlift_up, Cave08:MKNJD_K_LESSON, Edaichi:MKNJD_D_LESSON, Ekaze:MKNJD_K_LESSON, Fairy01:BIGELF_ARRIVAL, Fairy02:BIGELF_ARRIVAL, Fairy03:BIGELF_ARRIVAL, Fairy04:BIGELF_ARRIVAL, Fairy05:BIGELF_ARRIVAL, Fairy06:BIGELF_ARRIVAL, M_Dai:MKNJD_D_LESSON, ...
       20  # Appears in: Cave08:cb_sow, MajyuE:Go_00, Siren:SirenR11, Siren:SirenR07, kaze:cb_sow, sea:ARRIVAL_TWN, sea:ARRIVAL_TWN2, sea:R29WATERFALL, sea_E:ARRIVAL_TWN, sea_T:ARRIVAL_TWN
+      0   # Appears in: DmSpot0:StartCamera0, DmSpot0:StartCamera2, GanonM:BirdStart, M_Dra09:Outside, M_NewD2:StartCam00, M_NewD2:Cliff, M_NewD2:Cliff2, M_NewD2:MagmaDemo, M_NewD2:Outside, sea:BirdStart, sea:light_start
+      18  # Appears in: DmSpot0:StartCamera1, Siren:TOWER_WARP_D
       40  # Appears in: Ebesso:StartCamera, Msmoke:StartCamera, Ojhous2:StartCamera, Ojhous:StartCamera, tincle:StartCamera
       73  # Appears in: Fairy01:BIGELF_ARRIVAL, Fairy02:BIGELF_ARRIVAL, Fairy03:BIGELF_ARRIVAL, Fairy04:BIGELF_ARRIVAL, Fairy05:BIGELF_ARRIVAL, Fairy06:BIGELF_ARRIVAL, sea:BIGELF_ARRIVAL2
-      0   # Appears in: GanonM:BirdStart, M_Dra09:Outside, M_NewD2:StartCam00, M_NewD2:Cliff, M_NewD2:Cliff2, M_NewD2:MagmaDemo, M_NewD2:Outside, sea:BirdStart, sea:light_start
       70  # Appears in: GanonM:APPEAR_WARP
       150 # Appears in: GanonM:GANON_ARRIVE, sea:VOLCANO_FAILED
       60  # Appears in: GanonM:TO_MAJYUU_WARP, M_Dai:MkieK_die, M_DaiMB:MkieB_die, M_DaiMB:MkieK_die, Siren:CrTrM1_put, Siren:CrTrM2_put, sea:TACT_TEARCH0, sea:UkB_FOUND, sea:UkC_FOUND, sea:UkD_FOUND, sea:UkD_FOUND2
@@ -1618,7 +1671,6 @@ CAMERA:
       5   # Appears in: M_NewD2:Bridge00
       1   # Appears in: MajyuE:enemy_appear
       22  # Appears in: Ocrogh:WALK_START
-      18  # Appears in: Siren:TOWER_WARP_D
       25  # Appears in: ma2room:Go_00, ma2room:Go_01, ma3room:Go_00, ma3room:Go_01, majroom:Go_00, majroom:Go_01
       45  # Appears in: sea:R29LOOK_MORI
       110 # Appears in: sea:HIT_RT, sea:FROM_HYRULE_2
@@ -1658,7 +1710,7 @@ CAMERA:
       15  # Appears in: ADMumi:TIMEWARP, A_mori:TIMEWARP, A_nami:TIMEWARP, A_umikz:TIMEWARP, Abesso:TIMEWARP, Abship:TIMEWARP, Adanmae:TIMEWARP, Amos_T:StartCamera, Asoko:StartCamera, Asoko:TIMEWARP, Atorizk:TIMEWARP, Cave01:TIMEWARP, Cave02:TIMEWARP, Cave03:TIMEWARP, Cave0 ...
       40  # Appears in: ADMumi:TIMEWARP, A_mori:TIMEWARP, A_nami:TIMEWARP, A_umikz:TIMEWARP, Abesso:TIMEWARP, Abship:TIMEWARP, Adanmae:TIMEWARP, Asoko:TIMEWARP, Atorizk:TIMEWARP, Cave01:TIMEWARP, Cave02:TIMEWARP, Cave03:TIMEWARP, Cave04:TIMEWARP, Cave05:TIMEWARP, Cave06:TIM ...
       20  # Appears in: ADMumi:TIMEWARP, ADMumi:TIMEWARP_COMEBACK, A_mori:TIMEWARP, A_mori:TIMEWARP_COMEBACK, A_nami:TIMEWARP, A_nami:TIMEWARP_COMEBACK, A_umikz:TIMEWARP, A_umikz:TIMEWARP_COMEBACK, Abesso:TIMEWARP, Abesso:TIMEWARP_COMEBACK, Abship:TIMEWARP, Abship:TIMEWARP_ ...
-      44  # Appears in: A_mori:barrel2_brk, A_nami:barrel2_brk, A_umikz:barrel2_brk, Adanmae:barrel2_brk, Amos_T:barrel2_brk, E3ROOP:barrel2_brk, I_TestM:barrel2_brk, I_TestR:barrel2_brk, KATA_HB:barrel2_brk, K_Test2:barrel2_brk, K_Test3:barrel2_brk, K_Test4:barrel2_brk, K_ ...
+      44  # Appears in: A_mori:barrel2_brk, A_nami:barrel2_brk, A_umikz:barrel2_brk, Adanmae:barrel2_brk, Amos_T:barrel2_brk, DmSpot0:barrel2_brk, E3ROOP:barrel2_brk, I_TestM:barrel2_brk, I_TestR:barrel2_brk, KATA_HB:barrel2_brk, K_Test2:barrel2_brk, K_Test3:barrel2_brk, K_ ...
       150 # Appears in: Cave08:LiftMove, kaze:LiftMove
       90  # Appears in: Cave08:md_tag_message_fm, Cave08:cb_tag_message_fm, M_Dai:md_tag_message_fm, M_Dai:cb_tag_message_fm, kaze:md_tag_message_fm, kaze:cb_tag_message_fm
       70  # Appears in: Edaichi:MKNJD_D_DEMO, Ekaze:MKNJD_K_DEMO
@@ -1675,7 +1727,7 @@ CAMERA:
       32  # Appears in: Pnezumi:TC_JUMP_DEMO
       50  # Appears in: sea:R29LOOK_TAKARA, sea:R29LOOK_MANTEN
     Trim:
-      'VISTA'    # Appears in: Amos_T:DEFAULT_GETITEM, Amos_T:DEFAULT_TREASURE, Ebesso:DEFAULT_GETITEM, Ebesso:DEFAULT_TREASURE, MajyuE:ooi, Msmoke:DEFAULT_GETITEM, Msmoke:DEFAULT_TREASURE, Ocmera:PHOTO_GALLERY, Omori:Calling, Orichh:AUCTION_START, Orichh:AUCTION_START2, Orichh:be ...
+      'VISTA'    # Appears in: Amos_T:DEFAULT_GETITEM, Amos_T:DEFAULT_TREASURE, DmSpot0:GET_RUPY20, DmSpot0:PRESENT2, Ebesso:DEFAULT_GETITEM, Ebesso:DEFAULT_TREASURE, MajyuE:ooi, Msmoke:DEFAULT_GETITEM, Msmoke:DEFAULT_TREASURE, Ocmera:PHOTO_GALLERY, Omori:Calling, Orichh:AUCTION_S ...
       'STANDARD' # Appears in: sea_E:epilogue, sea_T:title
     WaitAnyKey:
       1 # Appears in: ADMumi:NORMAL_COMEBACK, ADMumi:SHORT_COMEBACK, ADMumi:MAGMA_COMEBACK, ADMumi:DEFAULT_SHUTTER_DOOR_12, ADMumi:DEFAULT_SHUTTER_DOOR_10, ADMumi:DEFAULT_SHUTTER_DOOR_F, ADMumi:DEFAULT_BS_SHUTTER_F, ADMumi:DEFAULT_SHUTTER_DOOR_F_STOP, ADMumi:SHUTTER_START ...
@@ -1741,6 +1793,7 @@ CAMERA:
       (0.0, 0.0, 50.0)                          # Appears in: K_Test6:ROTEN_CHANGE_ITEM, K_Testb:ROTEN_CHANGE_ITEM, sea:ROTEN_CHANGE_ITEM
       (-120.0, -3220.0, -7500.0)                # Appears in: kenroom:btl_of_swroom
       (-120.0, -3140.0, -7500.0)                # Appears in: kenroom:btl_of_swroom, kenroom:btl_of_swroom2
+      (-450.0, 50.0, 1600.0)                    # Appears in: morocam:moro_rcam
       (219286.0, 1440.0999755859375, 208123.0)  # Appears in: sea:R29LOOK_TAKARA
       (211650.0, 1723.199951171875, 192282.0)   # Appears in: sea:R29LOOK_MANTEN
       (212653.34375, 1767.7900390625, 198427.5) # Appears in: sea:R29LOOK_MORI
@@ -1753,6 +1806,7 @@ CAMERA:
       (0.0, 250.0, -400.0)                         # Appears in: K_Test6:ROTEN_CHANGE_ITEM, K_Testb:ROTEN_CHANGE_ITEM, sea:ROTEN_CHANGE_ITEM
       (-270.0, -2400.0, -7350.0)                   # Appears in: kenroom:btl_of_swroom
       (-260.0, -3100.0, -6800.0)                   # Appears in: kenroom:btl_of_swroom, kenroom:btl_of_swroom2
+      (-200.0, 50.0, 1600.0)                       # Appears in: morocam:moro_rcam
       (217685.0, 2333.239990234375, 208010.0)      # Appears in: sea:R29LOOK_TAKARA
       (211636.0, 2174.699951171875, 193679.0)      # Appears in: sea:R29LOOK_MANTEN
       (211263.6875, 2386.1201171875, 197325.53125) # Appears in: sea:R29LOOK_MORI
@@ -1773,6 +1827,8 @@ CAMERA:
       1.0                 # Appears in: K_Test6:ROTEN_CHANGE_ITEM, K_Testb:ROTEN_CHANGE_ITEM, sea:ROTEN_CHANGE_ITEM
       -1.2999999523162842 # Appears in: M_NewD2:moro_R02
       0.30000001192092896 # Appears in: kenroom:btl_of_swroom, kenroom:btl_of_swroom2, sea:SO_ESA_XY
+      -4.0                # Appears in: morocam:moro_scam, morocam:moro_proll2
+      4.0                 # Appears in: morocam:moro_rcam, morocam:moro_proll, morocam:moro_proll2
       0.125               # Appears in: sea:R29LOOK_TAKARA
       0.20800000429153442 # Appears in: sea:R29LOOK_MANTEN
       0.10000000149011612 # Appears in: sea:R29LOOK_MORI
@@ -1781,6 +1837,8 @@ CAMERA:
       80  # Appears in: GanonM:BirdLook, sea:BirdLook
       120 # Appears in: M_NewD2:moro_R02, sea:R29LOOK_TAKARA, sea:R29LOOK_MANTEN
       85  # Appears in: Siren:TOWER_WARP_U, SubD44:DUNGEON_WARP, SubD45:DUNGEON_WARP
+      20  # Appears in: morocam:moro_scam
+      40  # Appears in: morocam:moro_proll2
     TransType:
       1 # Appears in: ADMumi:DUNGEON_WARP, A_mori:DUNGEON_WARP, A_nami:DUNGEON_WARP, A_umikz:DUNGEON_WARP, Abesso:DUNGEON_WARP, Abship:DUNGEON_WARP, Adanmae:DUNGEON_WARP, Asoko:DUNGEON_WARP, Atorizk:DUNGEON_WARP, Cave01:DUNGEON_WARP, Cave02:DUNGEON_WARP, Cave03:DUNGEON_WA ...
   SAVE:
@@ -2104,7 +2162,7 @@ CAMERA:
       0 # Appears in: A_mori:AMORI_DEMO_1, GanonA:Gintro2, GanonE:SwitchCam1, GanonM:BirdStart, Ojhous:Ji1_linkmove, Ojhous:Ji1_TeachSpRollCut, Ojhous:Ji1_NormAngFin, Omori:DE_CHUCHU, Opub:FirstCamera, Pdrgsh:CREATE_DRUG, Pdrgsh:PUT_ITEM, Pdrgsh:PUT_ITEM_FAIL, sea:BIGELF_ ...
       1 # Appears in: sea:ARRIVAL_WND, sea:ARRIVAL_WND2
     Bank:
-      0.0  # Appears in: Asoko:P2B_TO_GOAL, Asoko:P2B_INTRO_2, Pnezumi:TC_JUMP_DEMO
+      0.0  # Appears in: Asoko:P2B_TO_GOAL, Asoko:P2B_INTRO_2, DmSpot0:YUUKAIGO, Pnezumi:TC_JUMP_DEMO
       -5.0 # Appears in: kindan:TELOP_FOREST
       -2.0 # Appears in: sea:BEAST_GATE, sea:BEAST_GATE2, sea_E:BEAST_GATE, sea_T:BEAST_GATE
       6.0  # Appears in: sea:ARRIVAL_DRG, sea:ARRIVAL_DRG2, sea_E:ARRIVAL_DRG, sea_T:ARRIVAL_DRG
@@ -2131,7 +2189,7 @@ CAMERA:
       (5736.0, 3900.0, -2694.0)                                      # Appears in: A_mori:AMORI_DEMO_1
       (0.0, 100.0, 735.0)                                            # Appears in: Abesso:PUZZLE_RUPEE
       (-582.0, 397.0, 406.0)                                         # Appears in: Adanmae:md_cliff
-      (0.0, 9.75, -33.27000045776367)                                # Appears in: Amos_T:DEFAULT_GETITEM, Amos_T:DEFAULT_TREASURE, Ebesso:DEFAULT_GETITEM, Ebesso:DEFAULT_TREASURE, Msmoke:DEFAULT_GETITEM, Msmoke:DEFAULT_TREASURE, kazan:DEFAULT_GETITEM, kazan:DEFAULT_TREASURE, tincle:DEFAULT_GETITEM, tincle:DEFAULT_TREASURE
+      (0.0, 9.75, -33.27000045776367)                                # Appears in: Amos_T:DEFAULT_GETITEM, Amos_T:DEFAULT_TREASURE, DmSpot0:GET_RUPY20, DmSpot0:PRESENT2, Ebesso:DEFAULT_GETITEM, Ebesso:DEFAULT_TREASURE, Msmoke:DEFAULT_GETITEM, Msmoke:DEFAULT_TREASURE, kazan:DEFAULT_GETITEM, kazan:DEFAULT_TREASURE, tincle:DEFAULT_GET ...
       (0.0, 160.0, 0.0)                                              # Appears in: Amos_T:DEFAULT_WARP, K_Teste:DEFAULT_WARP, TEST:DEFAULT_WARP
       (591.0, -447.0, -497.0)                                        # Appears in: Asoko:P2B_TO_GOAL
       (205.0, -260.0, -675.0)                                        # Appears in: Asoko:P2B_TO_GOAL
@@ -2146,6 +2204,10 @@ CAMERA:
       (7.551000118255615, -7.192999839782715, 65.34500122070312)     # Appears in: Cave08:cb_tag_message_fm, Cave08:cb_tag_message_sekizo, M_Dai:cb_tag_message_fm, M_Dai:cb_tag_message_sekizo, kaze:cb_tag_message_fm, kaze:cb_tag_message_sekizo
       (-3.0, 175.0, 6.0)                                             # Appears in: Cave08:R04DOOROPEN, K_Testa:R04DOOROPEN, M_Dai:R04DOOROPEN, kaze:R04DOOROPEN
       (-185.0, 84.0, -166.0)                                         # Appears in: Comori:Contact
+      (-201525.0, 1263.0, 298650.0)                                  # Appears in: DmSpot0:StartCamera0
+      (-200621.0, 201.0, 294117.0)                                   # Appears in: DmSpot0:StartCamera0
+      (-201041.0, 126.0, 294208.0)                                   # Appears in: DmSpot0:YUUKAIGO
+      (-201144.0, 230.0, 294291.0)                                   # Appears in: DmSpot0:YUUKAIGO
       (-245.0, -29.0, -38.0)                                         # Appears in: Ebesso:Ji1_linkmove, Msmoke:Ji1_linkmove, Ojhous2:Ji1_linkmove, Ojhous:Ji1_linkmove, tincle:Ji1_linkmove
       (0.0, 110.0, 387.0)                                            # Appears in: Ebesso:Ji1_linkmove, Msmoke:Ji1_linkmove, Ojhous2:Ji1_linkmove, Ojhous:Ji1_linkmove, tincle:Ji1_linkmove
       (-5.0, 333.0, -215.0)                                          # Appears in: Ebesso:Ji1_kaiten
@@ -2298,6 +2360,11 @@ CAMERA:
       (2593.0, 1967.0, -7899.0)                                      # Appears in: majroom:DoorLook1
       (232.0, 1877.0, -6304.0)                                       # Appears in: majroom:DoorLook2
       (2191.0, 2468.0, -8841.0)                                      # Appears in: majroom:DoorLook2
+      (0.0, 100.0, 0.0)                                              # Appears in: morocam:moro_scam
+      (-1700.0, 2200.0, -1200.0)                                     # Appears in: morocam:moro_warp
+      (-1700.0, -300.0, -1200.0)                                     # Appears in: morocam:moro_warp
+      (-1568.0, 40.0, 889.0)                                         # Appears in: morocam:moro_high
+      (-1782.0, 205.0, 437.0)                                        # Appears in: morocam:moro_high
       (-66.0, -55.0, -7.0)                                           # Appears in: sea:BMCON_END, sea_E:BMCON_END, sea_T:BMCON_END
       (-116184.0, 1201.9000244140625, -183424.5)                     # Appears in: sea:KG2_CLEAR_DEMO
       (211746.890625, 1674.281005859375, 192230.40625)               # Appears in: sea:FIGURE_HATCH_OPEN
@@ -2395,7 +2462,7 @@ CAMERA:
       (0.0, 100.0, 135.0)                                            # Appears in: Abesso:PUZZLE_RUPEE
       (0.0, 0.0, 300.0)                                              # Appears in: Abesso:PUZZLE_RUPEE
       (-590.0, 336.0, 677.0)                                         # Appears in: Adanmae:md_cliff
-      (0.6299999952316284, 115.69999694824219, -120.5)               # Appears in: Amos_T:DEFAULT_GETITEM, Amos_T:DEFAULT_TREASURE, Ebesso:DEFAULT_GETITEM, Ebesso:DEFAULT_TREASURE, Msmoke:DEFAULT_GETITEM, Msmoke:DEFAULT_TREASURE, kazan:DEFAULT_GETITEM, kazan:DEFAULT_TREASURE, tincle:DEFAULT_GETITEM, tincle:DEFAULT_TREASURE
+      (0.6299999952316284, 115.69999694824219, -120.5)               # Appears in: Amos_T:DEFAULT_GETITEM, Amos_T:DEFAULT_TREASURE, DmSpot0:GET_RUPY20, DmSpot0:PRESENT2, Ebesso:DEFAULT_GETITEM, Ebesso:DEFAULT_TREASURE, Msmoke:DEFAULT_GETITEM, Msmoke:DEFAULT_TREASURE, kazan:DEFAULT_GETITEM, kazan:DEFAULT_TREASURE, tincle:DEFAULT_GET ...
       (100.0, -10.0, 300.0)                                          # Appears in: Amos_T:DEFAULT_KNOB_TALK, K_Teste:DEFAULT_KNOB_TALK, TEST:DEFAULT_KNOB_TALK
       (0.0, 400.0, -300.0)                                           # Appears in: Amos_T:DEFAULT_WARP, K_Teste:DEFAULT_WARP, TEST:DEFAULT_WARP
       (912.0, -380.0, -540.0)                                        # Appears in: Asoko:P2B_TO_GOAL
@@ -2411,6 +2478,10 @@ CAMERA:
       (9.633000373840332, -3.4690001010894775, 88.33200073242188)    # Appears in: Cave08:cb_tag_message_fm, Cave08:cb_tag_message_sekizo, M_Dai:cb_tag_message_fm, M_Dai:cb_tag_message_sekizo, kaze:cb_tag_message_fm, kaze:cb_tag_message_sekizo
       (133.0, 180.0, 550.0)                                          # Appears in: Cave08:R04DOOROPEN, K_Testa:R04DOOROPEN, M_Dai:R04DOOROPEN, kaze:R04DOOROPEN
       (20.0, 110.0, -218.0)                                          # Appears in: Comori:Contact
+      (-202411.0, 1419.0, 298755.0)                                  # Appears in: DmSpot0:StartCamera0
+      (-200176.0, 223.0, 293758.0)                                   # Appears in: DmSpot0:StartCamera0
+      (-201192.0, 204.0, 294391.0)                                   # Appears in: DmSpot0:YUUKAIGO
+      (-201071.0, 303.0, 294516.0)                                   # Appears in: DmSpot0:YUUKAIGO
       (411.0, 369.0, -428.0)                                         # Appears in: Ebesso:Ji1_linkmove, Msmoke:Ji1_linkmove, Ojhous2:Ji1_linkmove, Ojhous:Ji1_linkmove, tincle:Ji1_linkmove
       (0.0, 140.0, 585.0)                                            # Appears in: Ebesso:Ji1_linkmove, Msmoke:Ji1_linkmove, Ojhous2:Ji1_linkmove, Ojhous:Ji1_linkmove, tincle:Ji1_linkmove
       (-279.0, -51.0, -17.0)                                         # Appears in: Ebesso:Ji1_kaiten
@@ -2578,6 +2649,11 @@ CAMERA:
       (2649.0, 1949.0, -7858.0)                                      # Appears in: majroom:DoorLook1
       (251.0, 1891.0, -6012.0)                                       # Appears in: majroom:DoorLook2
       (2472.0, 2536.0, -8887.0)                                      # Appears in: majroom:DoorLook2
+      (400.0, 10.0, 0.0)                                             # Appears in: morocam:moro_scam
+      (-1600.0, 2500.0, -1200.0)                                     # Appears in: morocam:moro_warp
+      (-1700.0, 40.0, -1200.0)                                       # Appears in: morocam:moro_warp
+      (-1422.0, 59.0, 1196.0)                                        # Appears in: morocam:moro_high
+      (-1657.0, 30.0, 701.0)                                         # Appears in: morocam:moro_high
       (0.0, 1000.0, -100.0)                                          # Appears in: sea:BMCON_END, sea:BMCON_END2, sea_E:BMCON_END, sea_E:BMCON_END2, sea_T:BMCON_END, sea_T:BMCON_END2
       (-117.0, 4.0, -295.0)                                          # Appears in: sea:BMCON_END, sea_E:BMCON_END, sea_T:BMCON_END
       (-116245.0, 1193.5, -183255.5)                                 # Appears in: sea:KG2_CLEAR_DEMO
@@ -2640,8 +2716,10 @@ CAMERA:
       62.0               # Appears in: ADMumi:JMP_DEMO, sea:BEAST_GATE, sea:BEAST_GATE2, sea:ARRIVAL_GND, sea:ARRIVAL_GND2, sea:TELOP_PULOLO, sea_E:BEAST_GATE, sea_T:BEAST_GATE
       9.0                # Appears in: A_mori:look_tetra
       40.0               # Appears in: Adanmae:md_cliff, Comori:Contact, Ocean:StartCamera, Omori:DE_CHUCHU, Pdrgsh:CREATE_DRUG, sea:R29LOOK_KINDAN, sea:R29LOOK_MORI, sea:SO_ESA_XY
-      63.356998443603516 # Appears in: Amos_T:DEFAULT_GETITEM, Amos_T:DEFAULT_TREASURE, Ebesso:DEFAULT_GETITEM, Ebesso:DEFAULT_TREASURE, Msmoke:DEFAULT_GETITEM, Msmoke:DEFAULT_TREASURE, kazan:DEFAULT_GETITEM, kazan:DEFAULT_TREASURE, tincle:DEFAULT_GETITEM, tincle:DEFAULT_TREASURE
+      63.356998443603516 # Appears in: Amos_T:DEFAULT_GETITEM, Amos_T:DEFAULT_TREASURE, DmSpot0:GET_RUPY20, DmSpot0:PRESENT2, Ebesso:DEFAULT_GETITEM, Ebesso:DEFAULT_TREASURE, Msmoke:DEFAULT_GETITEM, Msmoke:DEFAULT_TREASURE, kazan:DEFAULT_GETITEM, kazan:DEFAULT_TREASURE, tincle:DEFAULT_GET ...
       75.0               # Appears in: Cave08:cb_sow, GanonM:Look0, Orichh:Kaere_Kaere, Siren:Os_Finish, Siren:Os1_Finish, kaze:cb_sow
+      63.0               # Appears in: DmSpot0:StartCamera0
+      64.0               # Appears in: DmSpot0:StartCamera0, M_Dra09:Md_RopeGet, sea:ARRIVAL_TWN, sea:ARRIVAL_TWN2, sea_E:ARRIVAL_TWN, sea_T:ARRIVAL_TWN
       51.0               # Appears in: Ebesso:Ji1_linkmove, Msmoke:Ji1_linkmove, Ojhous2:Ji1_linkmove, Ojhous:Ji1_linkmove, tincle:Ji1_linkmove
       35.0               # Appears in: Ebesso:Ji1_linkmove, Msmoke:Ji1_linkmove, Ojhous2:Ji1_linkmove, Ojhous:Ji1_linkmove, tincle:Ji1_linkmove
       58.0               # Appears in: Edaichi:MKNJD_D_DEMO, Ekaze:MKNJD_K_DEMO, GanonA:4_door_kz, GanonA:4_door_mr, GanonA:4_door_dn, GanonA:4_door_dc, GanonA:4_door_fin, GanonA:rtn_warp, GanonM:Look, GanonM:Look2, GanonM:fg_warp0, GanonM:fg_warp1, Ojhous2:Ji1_kaiten, Ojhous:Ji1_kaiten
@@ -2651,7 +2729,6 @@ CAMERA:
       57.0               # Appears in: GanonM:BirdStart, M_NewD2:moro_bomb, sea:BirdStart, sea:TELOP_PULOLO
       70.0               # Appears in: K_Teste:cb_sow, MajyuE:enemy_appear, MajyuE:push, TEST:cb_sow, sea:FIGURE_HATCH_OPEN, sea:R29LOOK_MORI
       20.0               # Appears in: LinkRM:LOOK_SHIELD
-      64.0               # Appears in: M_Dra09:Md_RopeGet, sea:ARRIVAL_TWN, sea:ARRIVAL_TWN2, sea_E:ARRIVAL_TWN, sea_T:ARRIVAL_TWN
       90.0               # Appears in: MajyuE:Search_Light_Up, sea:Search_Light_Up
       54.0               # Appears in: Obshop:PUT_PRAICE_TICKET
       30.0               # Appears in: Ojhous2:Ji1_TeachSpRollCut, Ojhous:Ji1_TeachSpRollCut, Pnezumi:TC_JUMP_DEMO
@@ -2699,6 +2776,8 @@ CAMERA:
       (-298.0, 30799.0, -6854.0)                                     # Appears in: ADMumi:JMP_DEMO
       (1853.0, 3629.0, -2100.0)                                      # Appears in: A_mori:look_tetra
       (1850.0, 3777.0, -2099.0)                                      # Appears in: A_mori:look_tetra
+      (-201559.0, 1263.0, 298445.0)                                  # Appears in: DmSpot0:StartCamera0
+      (-200692.0, 101.0, 293973.0)                                   # Appears in: DmSpot0:StartCamera0
       (-245.0, 16.0, -38.0)                                          # Appears in: Ebesso:Ji1_linkmove, Msmoke:Ji1_linkmove, Ojhous2:Ji1_linkmove, Ojhous:Ji1_linkmove, tincle:Ji1_linkmove
       (0.0, 296.0, 340.0)                                            # Appears in: Ebesso:Ji1_linkmove, Msmoke:Ji1_linkmove, Ojhous2:Ji1_linkmove, Ojhous:Ji1_linkmove, tincle:Ji1_linkmove
       (-5.0, 250.0, -215.0)                                          # Appears in: Ebesso:Ji1_kaiten
@@ -2753,6 +2832,7 @@ CAMERA:
       (2801.0, 1894.0, -6288.0)                                      # Appears in: majroom:DoorLook1
       (-128.29200744628906, 1801.8740234375, -5967.56103515625)      # Appears in: majroom:DoorLook2
       (232.0, 1877.0, -6304.0)                                       # Appears in: majroom:DoorLook2
+      (-137.0, 226.0, 3900.0)                                        # Appears in: morocam:moro_high
       (212056.03125, 1601.4090576171875, 192428.5625)                # Appears in: sea:FIGURE_HATCH_OPEN
       (318.5, 191.0, 962.0)                                          # Appears in: sea:ajav_uzu, sea_E:ajav_uzu, sea_T:ajav_uzu
       (211770.0, 1437.0, 190650.0)                                   # Appears in: sea:camera
@@ -2766,6 +2846,8 @@ CAMERA:
       (-441.0, 30969.0, -6518.0)                                   # Appears in: ADMumi:JMP_DEMO
       (1575.0, 3657.0, -2083.0)                                    # Appears in: A_mori:look_tetra
       (1575.0, 3734.0, -2083.0)                                    # Appears in: A_mori:look_tetra
+      (-202411.0, 1419.0, 298755.0)                                # Appears in: DmSpot0:StartCamera0
+      (-200176.0, 223.0, 293758.0)                                 # Appears in: DmSpot0:StartCamera0
       (411.0, 414.0, -428.0)                                       # Appears in: Ebesso:Ji1_linkmove, Msmoke:Ji1_linkmove, Ojhous2:Ji1_linkmove, Ojhous:Ji1_linkmove, tincle:Ji1_linkmove
       (0.0, 364.0, 500.0)                                          # Appears in: Ebesso:Ji1_linkmove, Msmoke:Ji1_linkmove, Ojhous2:Ji1_linkmove, Ojhous:Ji1_linkmove, tincle:Ji1_linkmove
       (-279.0, -51.0, -17.0)                                       # Appears in: Ebesso:Ji1_kaiten
@@ -2823,6 +2905,7 @@ CAMERA:
       (2757.0, 1963.0, -6009.0)                                    # Appears in: majroom:DoorLook1
       (-15.383000373840332, 1891.6529541015625, -6222.2138671875)  # Appears in: majroom:DoorLook2
       (251.0, 1891.0, -6012.0)                                     # Appears in: majroom:DoorLook2
+      (0.0, 245.0, 4215.0)                                         # Appears in: morocam:moro_high
       (211957.0625, 1649.9100341796875, 192023.21875)              # Appears in: sea:FIGURE_HATCH_OPEN
       (816.0, 561.0, 1429.0)                                       # Appears in: sea:ajav_uzu, sea_E:ajav_uzu, sea_T:ajav_uzu
       (211775.0, 1377.0, 190391.0)                                 # Appears in: sea:camera
@@ -2834,7 +2917,7 @@ CAMERA:
       (150.0, -20.0, 250.0)                                        # Appears in: sea:TACT_TT10, sea:TACT_TT11, sea:TACT_TT12, sea:TACT_TT13
     StartFovy:
       58.0              # Appears in: ADMumi:JMP_DEMO, GanonA:4_door_kz, GanonA:4_door_mr, GanonA:4_door_dn, GanonA:4_door_dc, GanonA:4_door_fin, GanonA:rtn_warp, Obshop:PUT_PRAICE_TICKET
-      60.0              # Appears in: A_mori:look_tetra, GanonM:BirdStart, M_DaiB:WARP_WIND_AFTER, M_DragB:WARP_WIND, M_DragB:WARP_WIND_AFTER, M_NewD2:Cliff, M_NewD2:MagmaDemo, MajyuE:StartCamera, MajyuE:Goal, MajyuE:TowerLook6, Omori:BOSS_WARPOUT, Omori:MORI_INSIDE, Pdrgsh:CREATE_DRUG,  ...
+      60.0              # Appears in: A_mori:look_tetra, DmSpot0:StartCamera0, GanonM:BirdStart, M_DaiB:WARP_WIND_AFTER, M_DragB:WARP_WIND, M_DragB:WARP_WIND_AFTER, M_NewD2:Cliff, M_NewD2:MagmaDemo, MajyuE:StartCamera, MajyuE:Goal, MajyuE:TowerLook6, Omori:BOSS_WARPOUT, Omori:MORI_INSIDE ...
       50.0              # Appears in: A_mori:look_tetra, Ebesso:Ji1_linkmove, Msmoke:Ji1_linkmove, Ojhous2:Ji1_linkmove, Ojhous:Ji1_linkmove, tincle:Ji1_linkmove
       51.0              # Appears in: Ebesso:Ji1_linkmove, Ebesso:Ji1_kaiten, Msmoke:Ji1_linkmove, Ojhous2:Ji1_linkmove, Ojhous:Ji1_linkmove, tincle:Ji1_linkmove
       85.0              # Appears in: GanonM:BirdStart, sea:BirdStart
@@ -2860,7 +2943,7 @@ CAMERA:
       25  # Appears in: ADMumi:DEFAULT_SHUTTER_DOOR_F, ADMumi:DEFAULT_BS_SHUTTER_F, ADMumi:DEFAULT_SHUTTER_DOOR_F_STOP, ADMumi:SHUTTER_START, ADMumi:SHUTTER_START_STOP, ADMumi:BS_SHUTTER_START, A_mori:DEFAULT_SHUTTER_DOOR_F, A_mori:DEFAULT_BS_SHUTTER_F, A_mori:DEFAULT_SHUTT ...
       15  # Appears in: ADMumi:TACT_WINDOW, A_mori:TACT_WINDOW, A_nami:TACT_WINDOW, A_umikz:TACT_WINDOW, Abesso:TACT_WINDOW, Abship:TACT_WINDOW, Adanmae:TACT_WINDOW, Adanmae:md_cliff, Amos_T:TACT_WINDOW, Asoko:TACT_WINDOW, Atorizk:TACT_WINDOW, Cave01:TACT_WINDOW, Cave02:TAC ...
       120 # Appears in: ADMumi:DEFAULT_TREASURE, ADMumi:DEFAULT_TREASURE2, A_mori:DEFAULT_TREASURE, A_mori:DEFAULT_TREASURE2, A_nami:DEFAULT_TREASURE, A_nami:DEFAULT_TREASURE2, A_umikz:DEFAULT_TREASURE, A_umikz:DEFAULT_TREASURE2, Abesso:DEFAULT_TREASURE, Abesso:DEFAULT_TREA ...
-      60  # Appears in: ADMumi:JMP_DEMO, Ebesso:Ji1_linkmove, GanonA:4_door_kz, GanonA:4_door_mr, GanonA:4_door_dn, GanonA:4_door_dc, GanonM:Look, GanonM:Look0, GanonM:Look2, Msmoke:Ji1_linkmove, Ojhous2:Ji1_linkmove, Ojhous:Ji1_linkmove, Omori:Calling, Opub:FirstCamera, Or ...
+      60  # Appears in: ADMumi:JMP_DEMO, DmSpot0:StartCamera0, Ebesso:Ji1_linkmove, GanonA:4_door_kz, GanonA:4_door_mr, GanonA:4_door_dn, GanonA:4_door_dc, GanonM:Look, GanonM:Look0, GanonM:Look2, Msmoke:Ji1_linkmove, Ojhous2:Ji1_linkmove, Ojhous:Ji1_linkmove, Omori:Calling ...
       100 # Appears in: ADMumi:JMP_DEMO, GanonM:APPEAR_WARP, MajyuE:StartCamera, Omori:BOSS_WARPOUT, Siren:hha_close, majroom:DoorLook1, majroom:DoorLook2, sea:BOSS_WARPOUT, sea:TOWER_WARPOUT, sea:R29LOOK_KINDAN, sea:R29LOOK_SHIP
       70  # Appears in: A_mori:look_tetra, M_NewD2:MagmaDemo, Pdrgsh:CREATE_DRUG
       40  # Appears in: A_mori:AMORI_DEMO_1, Cave08:cb_sow, Fairy01:BIGELF_ARRIVAL, Fairy02:BIGELF_ARRIVAL, Fairy03:BIGELF_ARRIVAL, Fairy04:BIGELF_ARRIVAL, Fairy05:BIGELF_ARRIVAL, Fairy06:BIGELF_ARRIVAL, GanonM:BirdStart, M_NewD2:StartCam00, Opub:FirstCamera, Orichh:bensyou ...
@@ -2868,12 +2951,12 @@ CAMERA:
       80  # Appears in: Asoko:P2B_TO_GOAL, Fairy01:BIGELF_ARRIVAL, Fairy02:BIGELF_ARRIVAL, Fairy03:BIGELF_ARRIVAL, Fairy04:BIGELF_ARRIVAL, Fairy05:BIGELF_ARRIVAL, Fairy06:BIGELF_ARRIVAL, GanonA:Gintro2, M_Dra09:Outside, M_NewD2:MagmaDemo, M_NewD2:Outside, MajyuE:StartCamera ...
       90  # Appears in: Comori:Contact, Kaisen:MINIGAME_END, M_NewD2:Cliff, MajyuE:Search_Light_Find, MajyuE:Search_Light_Find_With_Barrel, MajyuE:Search_Light_Find_Wall, Ocean:race_start_cam, Omori:DE_CHUCHU, Orichh:AUCTION_START, Orichh:AUCTION_START2, Siren:HYSDOOROPEN,  ...
       600 # Appears in: Comori:Prl_Flw
+      55  # Appears in: DmSpot0:StartCamera0, GanonA:rtn_warp
       75  # Appears in: Ebesso:Ji1_kaiten_exp, Edaichi:MKNJD_D_DEMO, MajyuE:enemy_appear
       140 # Appears in: Edaichi:MKNJD_D_DEMO, Ekaze:MKNJD_K_DEMO, M_DaiB:WARP_WIND_AFTER, M_DragB:WARP_WIND, M_DragB:WARP_WIND_AFTER, M_NewD2:Cliff2, SirenB:WARP_WIND, SirenB:WARP_WIND_AFTER, kazeB:WARP_WIND_AFTER, kinBOSS:WARP_WIND, kinBOSS:WARP_WIND_AFTER, sea:ARRIVAL_GND ...
       50  # Appears in: Edaichi:MKNJD_D_DEMO, Ekaze:MKNJD_K_DEMO, Hyroom:hy_intro, M_NewD2:StartCam00, MajyuE:push, MajyuE:TowerLook6, MajyuE:Search_Light_Up, Opub:FirstCamera, SirenMB:SIREN_MD, kenroom:btl_of_swroom, kenroom:btl_of_swroom2, sea:BIGELF_ARRIVAL2, sea:R29LOOK ...
       65  # Appears in: Fairy01:BIGELF_ARRIVAL, Fairy02:BIGELF_ARRIVAL, Fairy03:BIGELF_ARRIVAL, Fairy04:BIGELF_ARRIVAL, Fairy05:BIGELF_ARRIVAL, Fairy06:BIGELF_ARRIVAL, GanonM:fg_warp0, GanonM:fg_warp1
       98  # Appears in: GanonA:4_door_fin
-      55  # Appears in: GanonA:rtn_warp
       13  # Appears in: GanonE:SwitchCam1
       35  # Appears in: GanonM:BirdStart, Ojhous2:angry, sea:BirdStart
       0   # Appears in: I_TestM:DAI_ITEM, Kaisen:DAI_ITEM, Nitiyou:DAI_ITEM, Ocmera:DAI_ITEM, Orichh:DAI_ITEM, Pdrgsh:DAI_ITEM, sea:DAI_ITEM
@@ -2904,10 +2987,10 @@ CAMERA:
       0 # Appears in: Abesso:PUZZLE_RUPEE, GanonE:StalCam, GanonE:SwitchCam1, GanonM:APPEAR_WARP, Hyroom:hy_intro, K_Testb:SV_TALK_P1_1ST, K_Testb:SV_TALK_P1_2ND, K_Testb:SV_TALK_P4_1ST, Kaisen:MINIGAME_END, Ocmera:PHOTO_GALLERY, Ocmera:PHOTO_DATE_UB4, Omori:BOSS_WARPOUT, ...
       2 # Appears in: Ebesso:DEFAULT_WARP, Msmoke:DEFAULT_WARP, kazan:DEFAULT_WARP, tincle:DEFAULT_WARP
     Trim:
-      'VISTA'   # Appears in: Asoko:P2B_TO_GOAL, Asoko:P2B_INTRO_2, Omori:DE_CHUCHU
+      'VISTA'   # Appears in: Asoko:P2B_TO_GOAL, Asoko:P2B_INTRO_2, DmSpot0:YUUKAIGO, Omori:DE_CHUCHU
       'CINESCO' # Appears in: Comori:Contact, Ojhous2:angry
     WaitAnyKey:
-      0 # Appears in: Asoko:P2B_TO_GOAL, Asoko:P2B_INTRO_2, Ojhous2:angry, Omori:DE_CHUCHU
+      0 # Appears in: Asoko:P2B_TO_GOAL, Asoko:P2B_INTRO_2, DmSpot0:YUUKAIGO, Ojhous2:angry, Omori:DE_CHUCHU
   USEITEM0:
     Timer:
       30 # Appears in: sea:kamome_call
@@ -4055,6 +4138,7 @@ Link:
       32768  # Appears in: Adanmae:MD_FLY, Asoko:P2B_INTRO, Asoko:P2B_GOAL_2, Asoko:P2B_INTRO_2, Ebesso:Ji1_kaiten, Ebesso:Ji1_kaiten_exp, Msmoke:Ji1_kaiten_exp, Ojhous2:Ji1_kaiten, Ojhous2:Ji1_kaiten_exp, Ojhous:Ji1_kaiten, Ojhous:Ji1_kaiten_exp, Pnezumi:TC_JUMP_DEMO, kenroom ...
       16384  # Appears in: Asoko:P2B_INTRO, Asoko:P2B_INTRO_2, Pnezumi:TC_RESCUE, Siren:Os1_Finit1, ma2room:FIRST_HINT3, ma3room:FIRST_HINT3, majroom:FIRST_HINT3
       0      # Appears in: Atorizk:SHIWAKEGAME, Atorizk:SHIWAKEGAME2, GanonM:APPEAR_WARP, Hyroom:go_up_stairs2, MajyuE:FIRST_HINT, Pjavdou:APPEAR, Siren:Os2_Finit1, Siren:TOWER_WARP_D, SirenMB:SIREN_MD, sea:SO_TRIFORCE_CHECK, sea:TACT_HT
+      -16875 # Appears in: DmSpot0:PRESENT1
       32767  # Appears in: Ebesso:Ji1_linkmove, Ebesso:Ji1_EndSpeak, Msmoke:Ji1_linkmove, Msmoke:Ji1_EndSpeak, Obshop:PUT_PRAICE_TICKET, Ojhous2:Ji1_linkmove, Ojhous2:Ji1_EndSpeak, Ojhous2:Ji1_ItemGetEnd, Ojhous2:Ji1_ItemGetTalkEnd, Ojhous2:Ji1_SwordGetTalkEnd, Ojhous2:Ji1_Tea ...
       32178  # Appears in: Fairy01:BIGELF_ARRIVAL, Fairy02:BIGELF_ARRIVAL, Fairy03:BIGELF_ARRIVAL, Fairy04:BIGELF_ARRIVAL, Fairy05:BIGELF_ARRIVAL, Fairy06:BIGELF_ARRIVAL
       28672  # Appears in: Hyroom:go_up_stairs
@@ -4108,6 +4192,7 @@ Link:
       (-60.0, -550.0, -3500.0)                                   # Appears in: Asoko:P2B_GOAL_2
       (-155.0, 700.0, 530.0)                                     # Appears in: Atorizk:SHIWAKEGAME, Atorizk:SHIWAKEGAME2
       (0.0, 700.0, 530.0)                                        # Appears in: Atorizk:SHIWAKEGAME2
+      (-195273.0, 1650.0, 293813.0)                              # Appears in: DmSpot0:PRESENT1
       (0.0, 0.0, -50.0)                                          # Appears in: Ebesso:Ji1_linkmove, Ebesso:Ji1_EndSpeak, Msmoke:Ji1_linkmove, Msmoke:Ji1_EndSpeak, Ojhous2:Ji1_linkmove, Ojhous2:Ji1_EndSpeak, Ojhous2:Ji1_ItemGetEnd, Ojhous2:Ji1_ItemGetTalkEnd, Ojhous2:Ji1_SwordGetTalkEnd, Ojhous2:Ji1_TeachSpRollCut, Ojhous:Ji1_li ...
       (0.0, 0.0, -600.0)                                         # Appears in: Ebesso:Ji1_kaiten, Ebesso:Ji1_kaiten_exp, Ojhous2:Ji1_kaiten, Ojhous2:Ji1_kaiten_exp, Ojhous:Ji1_kaiten, Ojhous:Ji1_kaiten_exp
       (-65.19999694824219, 75.0, -1400.0)                        # Appears in: Fairy01:BIGELF_ARRIVAL, Fairy02:BIGELF_ARRIVAL, Fairy03:BIGELF_ARRIVAL, Fairy04:BIGELF_ARRIVAL, Fairy05:BIGELF_ARRIVAL, Fairy06:BIGELF_ARRIVAL
@@ -4185,6 +4270,7 @@ Link:
   005wait_turn:
     angle:
       -26239 # Appears in: Adanmae:Eskban
+      -491   # Appears in: DmSpot0:PRESENT3
       49152  # Appears in: Edaichi:MKNJD_D_DEMO, Ekaze:MKNJD_K_DEMO
       53248  # Appears in: Hyroom:go_up_stairs
       0      # Appears in: kenroom:btl_of_swroom, kenroom:btl_of_swroom2
@@ -4349,14 +4435,20 @@ Ls1:
   ANM_CHG:
     AnmNo:
       5 # Appears in: sea:omedeto
+  DUMMY:
   LOK_PLYER:
     prm_0:
       3 # Appears in: sea:omedeto
       8 # Appears in: sea:omedeto
   PLYER_MOV:
+  START:
+  TALK:
   TALK_MSG:
     msg_num:
       3001 # Appears in: sea:omedeto
+  TIMING01:
+  TIMING02:
+  TIMING03:
   WAI:
   WAIT:
     Timer:
@@ -4364,6 +4456,7 @@ Ls1:
       10 # Appears in: sea:omedeto
       20 # Appears in: sea:omedeto
       30 # Appears in: sea:omedeto
+  WAITKEEP:
 MBDOOR:
   ADJUSTMENT:
     Timer:
@@ -4828,6 +4921,9 @@ Nzfall:
       60 # Appears in: Pnezumi:NZFALL
       30 # Appears in: Pnezumi:NZFALL
 Ob1:
+  DUMMY:
+  START:
+  TALK:
   WAIT:
 Ohatch:
   OPEN:
@@ -4940,28 +5036,30 @@ Oship:
 P1a:
   HEADSWING:
     Count:
-      2 # Appears in: sea:yuukaigo
+      2 # Appears in: DmSpot0:YUUKAIGO, sea:yuukaigo
   SETANM:
     idx:
-      3 # Appears in: sea:yuukaigo
-      2 # Appears in: sea:yuukaigo
-      0 # Appears in: sea:yuukaigo
+      3 # Appears in: DmSpot0:YUUKAIGO, sea:yuukaigo
+      2 # Appears in: DmSpot0:YUUKAIGO, sea:yuukaigo
+      0 # Appears in: DmSpot0:YUUKAIGO, sea:yuukaigo
   TALKMSG:
     MsgNo:
-      3204 # Appears in: sea:yuukaigo
+      3204 # Appears in: DmSpot0:YUUKAIGO, sea:yuukaigo
   TURN_TO_ACTOR:
     ActorName:
+      'Bm2' # Appears in: DmSpot0:YUUKAIGO
       'Bm1' # Appears in: sea:yuukaigo
     OffsetPos:
-      (0.0, 80.0, 0.0) # Appears in: sea:yuukaigo
+      (0.0, 80.0, 0.0) # Appears in: DmSpot0:YUUKAIGO, sea:yuukaigo
     Timer:
-      0 # Appears in: sea:yuukaigo
+      0 # Appears in: DmSpot0:YUUKAIGO, sea:yuukaigo
     TurnType:
-      2 # Appears in: sea:yuukaigo
+      2 # Appears in: DmSpot0:YUUKAIGO, sea:yuukaigo
   WAIT:
     Timer:
-      8 # Appears in: sea:yuukaigo
+      8 # Appears in: DmSpot0:YUUKAIGO, sea:yuukaigo
 P2b:
+  DUMMY:
   JUMP:
     Gravity:
       -1.5 # Appears in: Asoko:P2B_INTRO_2
@@ -5145,6 +5243,7 @@ PACKAGE:
       'counter.stb'           # Appears in: A_nami:COUNTER_DEMO, E3ROOP:COUNTER_DEMO, Ocean:COUNTER_DEMO, VrTest:COUNTER_DEMO
       'howling.stb'           # Appears in: Adanmae:demo41
       'dragontale.stb'        # Appears in: Atorizk:demo10
+      'kaizoku_zelda_fly.stb' # Appears in: DmSpot0:SARAWARE, sea:zelda_fly, sea_T:fly_demo
       'voyage.stb'            # Appears in: E3ROOP:VOYAGE
       'ending.stb'            # Appears in: ENDumi:ending
       'dance_zola.stb'        # Appears in: Edaichi:dance_zola
@@ -5181,7 +5280,6 @@ PACKAGE:
       'getperl_komori.stb'    # Appears in: sea:getperl_komori
       'meetshishioh.stb'      # Appears in: sea:MEETSHISHIOH
       'stolensister.stb'      # Appears in: sea:STOLENSISTER
-      'kaizoku_zelda_fly.stb' # Appears in: sea:zelda_fly, sea_T:fly_demo
       'epilogue.stb'          # Appears in: sea_E:epilogue
       'title.stb'             # Appears in: sea_T:title
     Layer:
@@ -6231,6 +6329,7 @@ Zl1:
     AtrNo:
       7 # Appears in: sea:yuukaigo
       0 # Appears in: sea:yuukaigo
+  CLR_TRN:
   CONTINUE_TALK:
     end_num:
       5604 # Appears in: Hyrule:nakaniwa
@@ -6263,7 +6362,26 @@ Zl1:
       1 # Appears in: Hyrule:nakaniwa
   PLYER_TRN_PARTNER:
   PLYER_TRN_TETRA:
+  SET_ANM_ATR:
+    AtrNo:
+      7 # Appears in: DmSpot0:YUUKAIGO
+      8 # Appears in: DmSpot0:YUUKAIGO
+  SET_TRN:
   SURPRISED:
+  TALK:
+    MsgNo:
+      3201 # Appears in: DmSpot0:YUUKAIGO
+      3202 # Appears in: DmSpot0:YUUKAIGO
+      3206 # Appears in: DmSpot0:YUUKAIGO
+      3208 # Appears in: DmSpot0:YUUKAIGO
+      3210 # Appears in: DmSpot0:YUUKAIGO
+      3212 # Appears in: DmSpot0:YUUKAIGO
+      3214 # Appears in: DmSpot0:YUUKAIGO
+      3215 # Appears in: DmSpot0:YUUKAIGO
+  TALK3202_a:
+  TALK3202_c:
+  TALK3203_c:
+  TALK3210_a:
   TALK_MSG:
     end_msg:
       5603 # Appears in: Hyrule:nakaniwa
@@ -6283,9 +6401,16 @@ Zl1:
       3212 # Appears in: sea:yuukaigo
       3214 # Appears in: sea:yuukaigo
       3215 # Appears in: sea:yuukaigo
+  TURN_TO_ACTOR:
+    ActorName:
+      'Bm2' # Appears in: DmSpot0:YUUKAIGO
+    OffsetPos:
+      (0.0, 180.0, 0.0) # Appears in: DmSpot0:YUUKAIGO
+    Timer:
+      0 # Appears in: DmSpot0:YUUKAIGO
   WAIT:
     Timer:
-      30 # Appears in: Hyrule:nakaniwa, MajyuE:ooi, sea:yuukaigo
+      30 # Appears in: DmSpot0:YUUKAIGO, Hyrule:nakaniwa, MajyuE:ooi, sea:yuukaigo
       10 # Appears in: Hyrule:nakaniwa, sea:yuukaigo
       20 # Appears in: Hyrule:nakaniwa
       15 # Appears in: sea:yuukaigo
