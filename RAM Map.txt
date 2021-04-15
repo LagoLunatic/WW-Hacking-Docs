@@ -37,6 +37,10 @@
   0x86 entries in total.
   10,1: Which figurine room number is this figurine in???
 
+8035CEEC,4 - Link's maximum forward movement speed. (17.0)
+  Seems to be used for both running forward and autojumping forward.
+8035D4B8,4 - Link's minimum forward movement speed when doing an autojump. (9.0)
+
 8035C764 - List of Link's animations?
   Entry length 8.
   Argument r4 to setSingleMoveAnime is an example of an index in this list.
@@ -213,7 +217,8 @@ Format of each block of memory in the game heap:
     This is used for when you hover over the item on the pause screen.
     Note that this message ID plus 0xC8/0d200 is the description to be shown when you press A while hovering over it on the pause screen.
   1E,1: ?
-  20,2: ?
+  20,2: Maximum amount of memory that may be needed to instantiate this item's assets, or 0 for no max.
+    Argument r5 to entrySolidHeap.
 803866B0 (3836B0 in main.dol) - List of field item resources. Items that appear freely placed in the world as ACTRs.
   Entry length 0x1C.
   Format:
@@ -977,6 +982,9 @@ Player's partner's room restart position? ("restart option")
 803CA764,4 - Number of quarter hearts to add to the player's HP this frame.
   This is a float.
   Can be negative to damage the player.
+803CA768,4 - Number of rupees to add to the player's wallet this frame.
+  This is an int.
+  Can be negative to take rupees away.
 
 803CA77C,2 - Number of small keys to gradually add to the player's current number of small keys in this dungeon.
 803CA77E,2 - Number of heart pieces to gradually add to the player's current life meter.
@@ -1302,3 +1310,5 @@ Entity deletion queue (g_fpcDtTg_Queue):
 803F6A68 - Has a pointer to a table of pointers to "profiles" for each actor type. (g_fpcPf_ProfileList_p)
   The index in the list is the actor ID.
   Profiles located inside a REL not currently loaded in will simply have null pointers in this list until the REL is loaded.
+
+803F9810,4 - Floating point radius of the bomb actor's correction hitbox (size of the wall that prevents actors from walking inside the bomb).

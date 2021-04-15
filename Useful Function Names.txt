@@ -554,6 +554,10 @@ execute__9daPy_lk_cFv
   link's update code
   8012204C - where it calls the proc for whatever state is currently in. breakpoint here to find the function for link's current state.
 
+daPy_lk_c::checkNextActionFromButton(void)
+  function for taking button input and changing Link's state
+  8010E3BC - where it calls daPy_lk_c::procFrontRoll_init(float) to trigger a manual front roll. can replace this with a call to daPy_lk_c::procAutoJump_init(void) to make Link jump instead of rolling when forward+A is press.
+
 procFanGlide_init
 procFanGlide
   update functions for when link is flying with deku leaf

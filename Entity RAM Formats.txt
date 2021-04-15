@@ -134,7 +134,7 @@ Pointer to something in the loaded REL file for this entity?
   fopAcM_calcSpeed uses this value and the Y rotation value at 206,2 to calculate what this actor's X and Z velocity should be.
 258,4: Gravity. (Y acceleration.)
 25C,4: Terminal velocity. (Minimum Y velocity.)
-280,4: Interact flags.
+280,4: Attention flags.
 284,1: Max HP.
 285,1: Current HP.
 28C,1: Item pickup flag for the item this enemy drops?
@@ -203,6 +203,9 @@ For Link:
 032C,4: Pointer to Link's main cl.bdl model.
 0330,4: Pointer to Link's katsura.bdl model.
 0334,4: Pointer to Link's yamu.bdl model.
+0338,4: Pointer to ???
+0554,2: The index of the face the player is currently colliding with.
+  This is an index in the currently loaded .dzb file's list of faces.
 0954,4: Pointer to Link's hands.bdl model.
 0958,4: Pointer to Link's currently equipped sword model (same as either 095C,4 or 0960,4).
 095C,4: Pointer to Link's swgripa.bdl model.
@@ -211,19 +214,26 @@ For Link:
 0980,4: Pointer to Link's currently equipped shield model (same as either 0984,4 or 0988,4).
 0984,4: Pointer to Link's sha.bdl model.
 0988,4: Pointer to Link's shms.bdl model.
+25BC,4: The player's true speed?
 2E7C,4: Pointer to Link's ymsls00.bdl model.
+2E80,4: Pointer to Link's ymsls00.btk animation.
 2E84,4: Pointer to Link's hboots.bdl model (for the right foot).
 2E88,4: Pointer to Link's hboots.bdl model (for the left foot).
 2E8C,4: Pointer to Link's pring.bdl model.
-2E98,4: Pointer to Link's telescope.bdl model.
+2E98,4: Pointer to Link's held item model.
+  This is the model for whatever item is currently in Link's left hand.
+  For example, the sword, the hammer, the hookshot, a bottle, a hyoi pear, etc.
+2EE0,4: Pointer to Link's bottle contents model.
+  This model can be multiple different things depending on what is contained in the bottle Link currently has in his hands.
+2EE4,4: Pointer to Link's bottlecap.bdl model.
+2EE8,4: Pointer to Link's sword glow model.
+  Can be yhsls00.bdl or ymsli00.bdl.
+2EEC,4: Pointer to Link's sword tip stabbing effect model.
+  Can be cutfh.bdl or cutfm.bdl.
 2F14,4: Pointer to Link's suimen_munya.bdl model.
 2F1C,4: Pointer to Link's yuchw00.bdl model.
 2F38,4: Pointer to Link's ybafo00.bdl model.
 2F8C,4: Pointer to Link's ymgcs00.bdl model.
-0338,4: Pointer to ???
-0554,2: The index of the face the player is currently colliding with.
-  This is an index in the currently loaded .dzb file's list of faces.
-25BC,4: The player's true speed?
 318C,4: Unique ID of the actor Link is holding above his head.
 3190,4: Pointer to the actor Link is holding above his head.
 31E4,4: Pointer to the execute function for Link's current state (e.g. daPy_lk_c::procWait).

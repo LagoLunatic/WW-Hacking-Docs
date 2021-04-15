@@ -71,6 +71,10 @@ Stage ID: 07
   17  from         TagCb14  in Cave08/Room2
   1B  from          keyS12  in Cave08/Stage
   20  from         AND_SW2  in Cave08/Room3
+  20  from         Fmastr2  in Cave08/Room3
+  20  from         Fmastr2  in Cave08/Room3
+  20  from         Fmastr2  in Cave08/Room3
+  20  from         Fmastr2  in Cave08/Room3
   21  from          door12  in Cave08/Stage
   21  from          door12  in Cave08/Stage
   21  from         AND_SW2  in Cave08/Room3
@@ -82,6 +86,10 @@ Stage ID: 07
   31  from         takara5  in Cave08/Stage
   32  from          door12  in Cave08/Stage
   3E  from           wiz_r  in Cave08/Room3
+  3E  from         Fmastr2  in Cave08/Room3
+  3E  from         Fmastr2  in Cave08/Room3
+  3E  from         Fmastr2  in Cave08/Room3
+  3E  from         Fmastr2  in Cave08/Room3
   3F  from          door12  in Cave08/Stage
   82  from          ZenS12  in Cave08/Stage
   85  from          ZenS12  in Cave08/Stage
@@ -92,6 +100,10 @@ Room SubD45/Room0
   E0  from          Mhsg4h  in SubD45/Room0
   E0  from         AND_SW2  in SubD45/Room0
   E0  from         AND_SW2  in SubD45/Room0
+  E1  from          Rdead1  in SubD45/Room0
+  E2  from          Rdead1  in SubD45/Room0
+  E3  from            Stal  in SubD45/Room0/Layer8
+  E4  from            Stal  in SubD45/Room0/Layer8
   EB  from           wiz_r  in SubD45/Room0
   EB  from          SW_C00  in SubD45/Room0
   EB  from         ky_tag0  in SubD45/Room0
@@ -100,14 +112,20 @@ Room SubD45/Room0
   EC  from         AND_SW2  in SubD45/Room0/Layer8
   ED  from         AND_SW2  in SubD45/Room0/Layer8
   ED  from         AND_SW2  in SubD45/Room0/Layer8
+  EE  from            Stal  in SubD45/Room0/Layer8
   EE  from         AND_SW2  in SubD45/Room0/Layer8
   EE  from         AND_SW2  in SubD45/Room0/Layer8
+  EF  from            Stal  in SubD45/Room0/Layer8
   EF  from         AND_SW2  in SubD45/Room0/Layer8
 Room SubD45/Room1
   E0  from          ALLdie  in SubD45/Room1
   E0  from          Mhsg4h  in SubD45/Room1
   E0  from         AND_SW2  in SubD45/Room1
   E0  from         AND_SW2  in SubD45/Room1
+  E1  from            Stal  in SubD45/Room1/Layer8
+  E2  from            Stal  in SubD45/Room1/Layer8
+  E3  from            Stal  in SubD45/Room1/Layer8
+  E4  from            Stal  in SubD45/Room1/Layer8
   EB  from           wiz_r  in SubD45/Room1
   EB  from          SW_C00  in SubD45/Room1
   EB  from         ky_tag0  in SubD45/Room1
@@ -116,14 +134,22 @@ Room SubD45/Room1
   EC  from         AND_SW2  in SubD45/Room1/Layer8
   ED  from         AND_SW2  in SubD45/Room1/Layer8
   ED  from         AND_SW2  in SubD45/Room1/Layer8
+  EE  from            Stal  in SubD45/Room1/Layer8
   EE  from         AND_SW2  in SubD45/Room1/Layer8
   EE  from         AND_SW2  in SubD45/Room1/Layer8
+  EF  from            Stal  in SubD45/Room1/Layer8
   EF  from         AND_SW2  in SubD45/Room1/Layer8
 Room SubD45/Room2
   E0  from          ALLdie  in SubD45/Room2
   E0  from          Mhsg4h  in SubD45/Room2
   E0  from         AND_SW2  in SubD45/Room2
   E0  from         AND_SW2  in SubD45/Room2
+  E1  from          Rdead1  in SubD45/Room2/Layer8
+  E1  from            Stal  in SubD45/Room2/Layer8
+  E2  from          Rdead1  in SubD45/Room2/Layer8
+  E2  from            Stal  in SubD45/Room2/Layer8
+  E3  from            Stal  in SubD45/Room2/Layer8
+  E4  from            Stal  in SubD45/Room2/Layer8
   EB  from           wiz_r  in SubD45/Room2
   EB  from          SW_C00  in SubD45/Room2
   EB  from         ky_tag0  in SubD45/Room2
@@ -132,8 +158,10 @@ Room SubD45/Room2
   EC  from         AND_SW2  in SubD45/Room2/Layer8
   ED  from         AND_SW2  in SubD45/Room2/Layer8
   ED  from         AND_SW2  in SubD45/Room2/Layer8
+  EE  from            Stal  in SubD45/Room2
   EE  from         AND_SW2  in SubD45/Room2/Layer8
   EE  from         AND_SW2  in SubD45/Room2/Layer8
+  EF  from            Stal  in SubD45/Room2
   EF  from         AND_SW2  in SubD45/Room2/Layer8
 Stage ID: 0C
   00  from         ky_tag0  in I_SubAN/Room2
@@ -163,12 +191,14 @@ Stage ID: 0C
   00  from         Kbota_B  in I_SubAN/Room11
   00  from         Kbota_A  in I_SubAN/Room11
   00  from         ootubo1  in I_SubAN/Room13
-  00  from           amos2  in SubD44/Room2
-  00  from           amos2  in SubD44/Room2
-  00  from           amos2  in SubD44/Room2
-  00  from           amos2  in SubD44/Room4
-  00  from           amos2  in SubD44/Room4
-  00  from           amos2  in SubD44/Room4
+  00  from           bable  in PShip2/Room0
+  00  from           bable  in PShip2/Room0
+  00  from           bable  in PShip2/Room0
+  00  from           bable  in PShip2/Room0
+  00  from           bable  in PShip3/Room0
+  00  from           bable  in PShip3/Room0
+  00  from           bable  in PShip3/Room0
+  00  from           bable  in PShip3/Room0
   0A  from          tkrCTf  in SubD44/Stage
   0A  from          SW_C00  in SubD44/Room0
   0A  from          SW_C00  in SubD44/Room0
@@ -196,11 +226,15 @@ Stage ID: 0C
   94  from           amos2  in SubD44/Room2
   94  from           amos2  in SubD44/Room2
   95  from         Zenshut  in SubD44/Stage
+  95  from            amos  in SubD44/Room3
+  95  from            amos  in SubD44/Room3
   96  from         Zenshut  in SubD44/Stage
   96  from           amos2  in SubD44/Room4
   96  from           amos2  in SubD44/Room4
   96  from           amos2  in SubD44/Room4
   97  from         Zenshut  in SubD44/Stage
+  97  from            amos  in SubD44/Room5
+  97  from            amos  in SubD44/Room5
   CC  from         AND_SW0  in I_SubAN/Room11
 Room Cave06/Room0
   E0  from          SW_C00  in Cave06/Room0
@@ -247,24 +281,36 @@ Room I_SubAN/Room11
   EF  from         AND_SW0  in I_SubAN/Room11
   EF  from         bonbori  in I_SubAN/Room11
 Room PShip2/Room0
+  E1  from            Stal  in PShip2/Room0/Layer8
+  E2  from            Stal  in PShip2/Room0/Layer8
+  E3  from            Stal  in PShip2/Room0/Layer8
+  E4  from            Stal  in PShip2/Room0/Layer8
   EB  from         AND_SW2  in PShip2/Room0
   EB  from          SW_C00  in PShip2/Room0
   EC  from         AND_SW2  in PShip2/Room0
   EC  from         AND_SW2  in PShip2/Room0
   ED  from         AND_SW2  in PShip2/Room0
   ED  from         AND_SW2  in PShip2/Room0
+  EE  from            Stal  in PShip2/Room0
   EE  from         AND_SW2  in PShip2/Room0
   EE  from         AND_SW2  in PShip2/Room0
+  EF  from            Stal  in PShip2/Room0
   EF  from         AND_SW2  in PShip2/Room0
 Room PShip3/Room0
+  E1  from            Stal  in PShip3/Room0/Layer8
+  E2  from            Stal  in PShip3/Room0/Layer8
+  E3  from            Stal  in PShip3/Room0/Layer8
+  E4  from            Stal  in PShip3/Room0/Layer8
   EB  from         AND_SW2  in PShip3/Room0
   EB  from          SW_C00  in PShip3/Room0
   EC  from         AND_SW2  in PShip3/Room0
   EC  from         AND_SW2  in PShip3/Room0
   ED  from         AND_SW2  in PShip3/Room0
   ED  from         AND_SW2  in PShip3/Room0
+  EE  from            Stal  in PShip3/Room0
   EE  from         AND_SW2  in PShip3/Room0
   EE  from         AND_SW2  in PShip3/Room0
+  EF  from            Stal  in PShip3/Room0
   EF  from         AND_SW2  in PShip3/Room0
 Stage ID: 0D
   00  from          tkrASw  in ITest61/Stage
@@ -385,6 +431,7 @@ Stage ID: 0D
   97  from         bonbori  in TF_05/Room3
   97  from         Zenshut  in TF_07/Stage
   98  from              Bk  in TF_05/Room1/Layer8
+  98  from            amos  in TF_05/Room1/Layer8
   99  from              Bk  in TF_05/Room1/Layer8
   9F  from         AND_SW2  in TF_05/Room1
   9F  from         AND_SW2  in TF_05/Room1
@@ -418,11 +465,14 @@ Room TF_07/Room1
   E0  from         AND_SW2  in TF_07/Room1
   E0  from         AND_SW2  in TF_07/Room1
   E1  from              Tn  in TF_07/Room1
+  E1  from              Tn  in TF_07/Room1
   E1  from         AND_SW2  in TF_07/Room1
   E1  from         AND_SW2  in TF_07/Room1
   E2  from              Tn  in TF_07/Room1
+  E2  from              Tn  in TF_07/Room1
   E2  from         AND_SW2  in TF_07/Room1
   E2  from         AND_SW2  in TF_07/Room1
+  E3  from              Tn  in TF_07/Room1
   E3  from              Tn  in TF_07/Room1
   E3  from         AND_SW2  in TF_07/Room1
   E3  from         AND_SW2  in TF_07/Room1
@@ -435,9 +485,12 @@ Stage ID: 0F
   00  from         SW_HIT0  in KATA_RM/Room1
   00  from            item  in KATA_RM/Room11
   00  from          DKkiba  in KATA_RM/Room16
+  00  from              Tn  in KATA_RM/Room17
   00  from         Kbota_A  in KATA_RM/Room17
   00  from         SW_HIT0  in KATA_RM/Room17
+  00  from         Fmaster  in KATA_RM/Room21
   00  from         Kbota_A  in KATA_RM/Room21
+  00  from         Fmaster  in KATA_RM/Room23
   00  from         Kbota_A  in KATA_RM/Room23
   00  from         Kbota_A  in KATA_RM/Room23
   00  from         Kbota_A  in KATA_RM/Room23
@@ -519,13 +572,13 @@ Stage ID: 0F
   00  from          kotubo  in morocam/Room0
   00  from          kotubo  in morocam/Room0
   00  from          kotubo  in morocam/Room0
-  01  from           amos2  in Amos_T/Room0
-  01  from           amos2  in Amos_T/Room0
   01  from              Bb  in KATA_RM/Room2
   01  from         SW_HIT0  in KATA_RM/Room2
+  01  from              Tn  in KATA_RM/Room17
   01  from         Kbota_A  in KATA_RM/Room17
+  01  from         Fmaster  in KATA_RM/Room21
   01  from         Kbota_A  in KATA_RM/Room21
-  01  from           amos2  in KATA_RM/Room22
+  01  from         Fmaster  in KATA_RM/Room23
   01  from         Kbota_A  in KATA_RM/Room23
   01  from         Kbota_A  in K_Test2/Room0/Layer7
   01  from         SW_HIT0  in K_Test2/Room0/Layer7
@@ -551,8 +604,12 @@ Stage ID: 0F
   01  from             Kui  in K_Testa/Room0
   01  from         bonbori  in K_Testa/Room0
   01  from         Kbota_B  in K_Testc/Room0
+  02  from         Fmastr2  in KATA_RM/Room21
   02  from         Kbota_A  in KATA_RM/Room21
+  02  from         Fmastr2  in KATA_RM/Room21
+  02  from         Fmastr2  in KATA_RM/Room21
   02  from         AND_SW2  in KATA_RM/Room21
+  02  from         Fmaster  in KATA_RM/Room23
   02  from         Kbota_A  in KATA_RM/Room23
   02  from         takara5  in K_Test2/Stage
   02  from            Evsw  in K_Test2/Room0
@@ -560,14 +617,17 @@ Stage ID: 0F
   02  from          KbotaC  in K_Test2/Room0/Layer7
   02  from          Mhsg12  in K_Test5/Room0
   02  from         Kbota_A  in K_Test5/Room0
+  02  from          Rdead1  in K_Test8/Room0
   02  from           MsuSW  in K_Test9/Room0
   02  from           Hyuf1  in K_Testa/Room0
   02  from         Kbota_B  in K_Testa/Room0
   02  from         Kbota_A  in K_Testc/Room0
   02  from          AttTag  in K_Testc/Room0
+  03  from         Fmastr2  in KATA_RM/Room21
   03  from         AND_SW2  in KATA_RM/Room21
   03  from          Mhsg15  in K_Test5/Room0
   03  from         Kbota_A  in K_Test5/Room0
+  03  from           bable  in K_Test8/Room0
   03  from           Hyuf1  in K_Testa/Room0
   03  from         bonbori  in K_Testa/Room0
   03  from         AND_SW2  in K_Testc/Room0
@@ -649,6 +709,8 @@ Stage ID: 0F
   62  from         MhmrSW0  in K_Test2/Room0/Layer7
   63  from         takaraM  in K_Test2/Stage
   63  from          kotubo  in K_Testd/Room0
+  64  from              Tn  in K_Testd/Room0
+  65  from             mo2  in K_Testd/Room0
   66  from              Bk  in K_Testd/Room0
   80  from         AND_SW2  in I_TestM/Room0
   80  from         bonbori  in I_TestM/Room0
@@ -666,6 +728,9 @@ Room I_TestM/Room0
   E6  from         AND_SW2  in I_TestM/Room0
   E7  from         SW_HIT0  in I_TestM/Room0
   E7  from         AND_SW2  in I_TestM/Room0
+Room KATA_RM/Room11
+  E1  from            Stal  in KATA_RM/Room11
+  E2  from            Stal  in KATA_RM/Room11
 Room KATA_RM/Room22
   E0  from           amos2  in KATA_RM/Room22
   E0  from         Hfbot1A  in KATA_RM/Room22
