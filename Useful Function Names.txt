@@ -518,6 +518,11 @@ dBgWSv::Set(cBgD_t *, unsigned long)
   r4 - Pointer to the .dzb file resource (return value from getRes)
   r5 - 0?
 
+dBgW::ChangeAttributeCodeByPathPntNo(int, unsigned long)
+  r3 - dBgW collision struct
+  r4 - ?
+  r5 - The new value to set for the attribute code direct value (mask 001F0000 in the second bitfield of the collision properties)
+
 
 set__19dStage_startStage_cFPCcScsSc
   changes the game to a different stage
@@ -1516,3 +1521,18 @@ dAttention_c::ActionTarget(long)
 
 dScnPly_Delete(dScnPly_ply_c *)
   this function is called when leaving a stage to delete it from memory.
+
+dMenu_Item_c::subWindowInit(void)
+  on the pause screen / item screen, this function initializes a sub-window, in order to select an item from inside the spoils bag, bait bag, or delivery bag.
+
+dKy_plight_set(LIGHT_INFLUENCE *)
+  registers a light source struct that can light up actors.
+
+fopAcM_rollPlayerCrash(fopAc_ac_c *, float, unsigned long)
+  Checks if the player has bonked into an actor when doing a forward roll.
+  Other than checking a custom radius, it also checks that the player is less than 200 units above the actor and more than -100 units below it, and that the player's roll direction is within a certain angle range.
+  r3 - Pointer to the actor to check.
+  f1 - This number plus 40.0 is the radius (on the XZ plane) the player must be within from the other actor.
+  r4 - Something that affects the sound effect played?
+    This is argmuent r4 that gets passed to daPy_lk_c::onFrollCrashFlg, which stores it to the Link entity + 0x3620.
+    That variable then gets passed as argument r6 to JAIZelBasic::seStart.

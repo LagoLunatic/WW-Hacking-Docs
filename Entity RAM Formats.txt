@@ -191,6 +191,7 @@ For Link:
   8 - Spin attacking
   A - Jump attacking
 029C,4: Bitfield
+  00000008 - Player has just bonked into something when doing a forward roll.
   02000000 - Player is currently wearing the iron boots.
 02A0,4: Bitfield
   00000008 - Player is in their casual clothes.

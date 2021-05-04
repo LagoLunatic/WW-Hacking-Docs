@@ -177,6 +177,47 @@ g_fopAcTg_Queue:
   1 - 80000012 - Meet Tetra
   2 - 80000017 - Fairy Woods
 
+8037ED40-8037EDCF - List of "cam move BG" types. (dCamera_c::mvBGTypes(void))
+  0x24 entries in total.
+  Each entry in this list is a pointer to a string. That string is the name of the camera movement type.
+  These are all the entries:
+    00 80359A60 ????
+    01 80359A65 Field
+    02 80359A6B Dungeon
+    03 80359A73 Plain
+    04 80359A79 DungeonDown
+    05 80359A85 DungeonUp
+    06 80359A8F DungeonCorner
+    07 80359A9D Jump
+    08 80359AA2 DungeonWide
+    09 80359AAE Room
+    0A 80359AB3 FieldCushion
+    0B 80359AC0 OverLook
+    0C 80359AC9 Corridor
+    0D 80359AD2 Subject
+    0E 80359ADA DungeonPassage
+    0F 80359AE9 Cliff
+    10 80359AEF Cliff2
+    11 80359AF6 MajTower
+    12 80359AFF Boss01
+    13 80359B06 Boss02
+    14 80359B0D Gamoss
+    15 80359B14 MiniIsland
+    16 80359B1F Amoss
+    17 80359B25 Cafe
+    18 80359B2A P_Ganon1
+    19 80359B33 P_Ganon2
+    1A 80359B3C WindBoss
+    1B 80359B45 P_Ganon3
+    1C 80359B4E G_BedRoom
+    1D 80359B58 G_Roof
+    1E 80359B5F G_BedRoom2
+    1F 80359B6A Boss04
+    20 80359B71 WindHall
+    21 80359B7A BigBird
+    22 80359B82 DStairs
+    23 00000000 [empty string]
+
 80371618,24 - Data related to the game heap. (GameHeapCheck)
 80371618,4 - Pointer to the string "Game".
 8037161C,4 - Pointer to the game heap.
