@@ -742,7 +742,6 @@ setLinkShieldType__11JAIZelBasicFll
     1 - hero's shield
     2 - mirror shield
 
-seStart
 JAIZelBasic::seStart(unsigned long, Vec *, unsigned long, signed char, float, float, float, float, unsigned char)
   Plays a sound effect. The puzzle complete jingle counts as a sound effect.
   r3 - Pointer to 803A2CE8, which is read from 803F7710 (JAIZelBasic::zel_basic(void))
@@ -765,6 +764,29 @@ JAIZelBasic::seStart(unsigned long, Vec *, unsigned long, signed char, float, fl
   f3 - 
   f4 - 
   r8 - 0?
+
+JAIBasic::startSoundVec(unsigned long, JAISound **, Vec *, unsigned long, unsigned long, unsigned char)
+  Generic sound (sfx or music) playing function, called by all others.
+  r3 - 
+  r4 - The sound ID. See seStart for details.
+  r5 - 
+  r6 - 
+  r7 - 0?
+  r8 - 0?
+  r9 - 4?
+
+JAIZelBasic::charVoicePlay(long, long, Vec *, signed char)
+  Plays a character voice sound effect.
+  r3 - 
+  r4 - 
+  r5 - 
+  r6 - 
+
+JAISound::setPortData(unsigned char, unsigned short)
+  ???
+  r3 - 
+  r4 - port number...?
+  r5 - data to set...?
 
 mDoAud_messageSePlay(unsigned short, Vec *, signed char)
   Plays a sound from a message text command.
@@ -885,9 +907,6 @@ start__Q28JASystem8TSeqCtrlFPvUl
 
 adaptor_do_SOUND__Q214JStudio_JAudio14TAdaptor_soundFQ37JStudio4data15TEOperationDataPCvUl
   handles playing sounds (sfx or music) during stb cutscenes
-
-startSoundVec__8JAIBasicFUlPP8JAISoundP3VecUlUlUc
-  generic sound (sfx or music) playing function, called by all others
 
 JAIZelBasic::setScene(long, long, long, long)
   loads necessary audio stuff for a particular stage?
@@ -1121,6 +1140,11 @@ card_to_memory__10dSv_info_cFPci
   r4 - the current scene entity pointer.
   r5 - save file index
 
+daPy_lk_c::checkNewItemChange(unsigned char)
+  checks if the player should use an item assigned to X/Y/Z
+  r3 - Pointer to the Link entity.
+  r4 - ?
+
 daPy_lk_c::makeItemType(void)
   Handles creating an item when the player uses it, such as taking out a bomb or the hookshot.
   r3 - Pointer to the Link entity.
@@ -1141,7 +1165,7 @@ dPa_control_c::setSimple(unsigned short, cXyz const *, unsigned char, _GXColor c
   r3 - this word is read from from 803CA6CC
   r4 - The particle ID
   (more args)
-  8007DC64 - breakpoint here to find if there's a missing particle created with setSimple. the particle ID will be inr3.
+  8007DC64 - breakpoint here to find if there's a missing particle created with setSimple. the particle ID will be in r3.
 
 createSimpleEmitterID__17JPAEmitterManagerFRCQ29JGeometry8TVec3<f>UsUcUcP34JPACallBackBase<P14JPABaseEmitter>P54JPACallBackBase2<P14JPABaseEmitter,P15JPABaseParticle>
   part of initializing a particle effect

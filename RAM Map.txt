@@ -319,11 +319,14 @@ Format of each block of memory in the game heap:
     3 - Down
     4 - Left
 
-8039BC30-8039C08F - List of message sounds. (JAIZelBasic::charVoiceTable)
+8039BC30-8039C08F - List of NPC voices/message sounds. (JAIZelBasic::charVoiceTable)
   Entry length 4. 0x118 entries in total.
   The index in this list is the sound value from a sound command in a message.
-  00,2: ?
-  02,2: ?
+  00,2: Unknown 1?
+  02,2: Unknown 2?
+  How NPC voices/message sounds work:
+    Sound ID 481F (JA_SE_CV_COMMON_PEOPLE) is used for all NPC voices/message sounds.
+    The contents of the sound is changed by calling JAISound::setPortData with r4 = 8 and r5 = (unknown_1 << 8 | unknown_2).
   What each sound index in this list is:
       0: N/A. Don't play any sound.
       1: Aryll: "Ah!"
@@ -987,6 +990,7 @@ Player's partner's room restart position? ("restart option")
   1 - in an event, black bars above and below screen, Link cannot move
   2 - in an event, maybe for opening chests?
 
+803C9EB0,4 - Unique ID of the item actor for the current cutscene.
 803C9EB4,1 - Item ID to give in an upcoming cutscene.
   The function dProcGetItem__init will usually have the item ID to give specified by a parameter. But if that parameter is 0x100, it will instead read the item ID from this address.
 
@@ -1201,9 +1205,9 @@ Note: See 80352EA0 for details about the layout of blue fog in a given room of E
 
 803F6B44,4 - Pointer to the data for the current loaded salvage point tags. (daSalvage_c::mTagData_p)
   Format of that data:
-  01,001: ??? Number of slots in use maybe?
-  04,380(?): List of salvage points.
-    Entry length 0x38. 0x10 entries in total.
+  01,0001: ??? Number of slots in use maybe?
+  04,2300: List of salvage points.
+    Entry length 0x38. 0xA0 entries in total.
     Note: The code reads from this struct in a slightly strange way, where the 4 bytes from the list header are in the offset for each entry. So if it reads from offset 0x34, that's actually item ID at offset 0x30.
     00,4: X position.
     04,4: Y position.
@@ -1224,6 +1228,8 @@ Note: See 80352EA0 for details about the layout of blue fog in a given room of E
       01 - "Used"
     33,1: "DrawMode" / "Alpha"
     34,1: "DrawMode"
+803F6B4C,4 - The index in daSalvage_c::mTagData_p of the salvage point tag currently being salvaged? (daSalvage_c::mSalvageId)
+  daSalvage_c::checkDistance(void) returns the index of the currently active salvage point tag.
 
 803F6B5D,1 - Total number of Windfall item pedestals in the current stage.
 803F6B5E,1 - Current number of Windfall item pedestals in the current stage that you've placed an item in.

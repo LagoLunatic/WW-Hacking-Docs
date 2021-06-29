@@ -17,10 +17,10 @@ fopAcM_prm_class (created and returned by f_op_actor_mng::fopAcM_CreateAppend)
 1C,4: Unique ID of this entity's parent.
 20,1: Actor subtype index.
 21,1: Room number.
+
+create_request (created and returned by f_pc_create_req::fpcCtRq_Create)
 3C,4: Unique ID of this specific entity instance.
-  This entity can be found by calling fopAcM_SearchByID__FUiPP10fopAc_ac_c with r3=this ID.
-48,4: Pointer to a callback function?
-4C,4: Pointer to a callback function?
+  This entity can be found by calling f_op_actor_mng::fopAcM_SearchByID with r3=this ID.
 
 fopAc_ac_c (entity created by f_op_actor_mng::createAppend):
 Size: 0x290 bytes.
@@ -28,7 +28,7 @@ Size: 0x290 bytes.
   This entity can be found by calling fopAcM_SearchByID__FUiPP10fopAc_ac_c with r3=this ID.
 008,2: Actor ID.
 010,4: Pointer to this actor class's actor profile. (f_pc_profile__Profile_Actor)
-0AC,4: Pointer to the fopAcM_prm_class used to create this actor?
+0AC,4: Pointer to the fopAcM_prm_class used to create this actor...???
 0B0,4: Parameters.
 0C0,4: Entity type?
   09130005 - Normal actor? Maybe an instance of fopAc_ac_c as opposed to its parent classes?
