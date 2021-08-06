@@ -469,7 +469,7 @@ Format of each block of memory in the game heap:
   e.g. At offset 0xF0 in here is a pointer to dStage_roomDt_c::getFileListInfo, the function that returns a pointer to FILI.
 
 
-=========== 803C4C08: g_dComIfG_gameInfo
+=========== 803C4C08: g_dComIfG_gameInfo (instance of dComIfG_inf_c struct)
 
 
 803C4C08-803C4C1F - Current player status.
@@ -499,6 +499,9 @@ Format of each block of memory in the game heap:
   2 - 5000 Rupee Wallet
 803C4C1B,1 - Max magic meter/MP.
 803C4C1C,1 - Current magic meter/MP.
+
+803C4C2C,4 - Current time in the day. (Float.)
+  Ranges from 0.0 to 360.0.
 
 803C4C44-803C4C58 - Inventory. (dSv_player_item_c)
   Controls which items are in which slots on the inventory screen. Each slot is one byte.
@@ -539,46 +542,69 @@ Each inventory slot:
 803C4C57,1 - Hookshot (2F)
 803C4C58,1 - Skull Hammer (33)
 
-803C4C59 - Start of list of bitfields of items you own.
-803C4C59,1 - First bitfield of what bottle contents you have ever owned at an point.
-  01 - ?
-  02 - Unused bottle contents item 4F
-  04 - Empty Bottle
-  08 - Red Potion
-  10 - Green Potion
-  20 - Blue Potion
-  40 - Elixir Soup (1/2)
-  80 - Elixir Soup
-803C4C5A,1 - Second bitfield of what bottle contents you have ever owned at an point.
-  01 - ?
-  02 - Bottled Water
-  04 - Fairy in Bottle
-  08 - Forest Firefly
-  10 - Forest Water
-  20 - Unused bottle contents item 5A
-  40 - Unused bottle contents item 5B
-  80 - Unused bottle contents item 5C
-803C4C5B,1 - Third bitfield of what bottle contents you have ever owned at an point.
-  01 - ?
-  02 - Unused bottle contents item 5D
-  04 - Unused bottle contents item 5E
-  08 - Unused bottle contents item 5F
-  10 - Unused bottle contents item 60
-  20 - 
-  40 - 
-  80 - 
-803C4C60,1 - ? related to bottles?
+803C4C59-803C4C6D - List of bitfields of which items you own.
+803C4C59,1 - Bitfield of whether you own the telescope + what bottle contents you have ever owned at an point.
+  0 - Telescope
+  1 - Unused bottle contents item 4F
+  2 - Empty Bottle
+  3 - Red Potion
+  4 - Green Potion
+  5 - Blue Potion
+  6 - Elixir Soup (1/2)
+  7 - Elixir Soup
+803C4C5A,1 - Bitfield of whether you own the sail + what bottle contents you have ever owned at an point.
+  0 - Boat's Sail
+  1 - Bottled Water
+  2 - Fairy in Bottle
+  3 - Forest Firefly
+  4 - Forest Water
+  5 - Unused bottle contents item 5A
+  6 - Unused bottle contents item 5B
+  7 - Unused bottle contents item 5C
+803C4C5B,1 - Bitfield of whether you own the wind waker + what bottle contents you have ever owned at an point.
+  0 - Wind Waker
+  1 - Unused bottle contents item 5D
+  2 - Unused bottle contents item 5E
+  3 - Unused bottle contents item 5F
+  4 - Unused bottle contents item 60
+  5 - 
+  6 - 
+  7 - 
+803C4C5C,1 - Bitfield of whether you own the grappling hook.
+  0 - Grappling Hook
+803C4C5D,1 - Bitfield of whether you own the spoils bag.
+  0 - Spoils Bag
+803C4C5E,1 - Bitfield of whether you own the boomerang.
+  0 - Boomerang
+803C4C5F,1 - Bitfield of whether you own the deku leaf.
+  0 - Deku Leaf
+803C4C60,1 - Bitfield of whether you own the tingle tuner.
+  0 - Tingle Tuner
 803C4C61,1 - Bitfield of what picto boxes you own.
   0 - Picto Box
   1 - Deluxe Picto Box
+803C4C62,1 - Bitfield of whether you own the iron boots.
+  0 - Iron Boots
+803C4C63,1 - Bitfield of whether you own magic armor.
+  0 - Magic Armor
+803C4C64,1 - Bitfield of whether you own the bait bag.
+  0 - Bait Bag
 803C4C65,1 - Bitfield of which types of arrows you own.
   0 - Regular arrows (Hero's Bow)
   1 - Fire and Ice Arrows
   2 - Light Arrow
-803C4C66,1 - Bitfield of whether you own bombs or not.
+803C4C66,1 - Bitfield of whether you own bombs.
   0 - Bombs
-803C4C6B,1 - Bitfield of which delivery bags you own.
+803C4C67,1 - ?
+803C4C68,1 - ?
+803C4C69,1 - ?
+803C4C6A,1 - ?
+803C4C6B,1 - Bitfield of whether you own the delivery bag.
   0 - Delivery Bag
+803C4C6C,1 - Bitfield of whether you own the hookshot.
+  0 - Hookshot
+803C4C6D,1 - Bitfield of whether you own the skull hammer.
+  0 - Skull Hammer
 
 803C4C6E,2 - Timer for how long you have left before your Forest Water reverts to regular water?
 
