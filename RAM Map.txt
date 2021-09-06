@@ -2,6 +2,12 @@
 800589AA,2 - Player's HP when starting a new game, in quarters of hearts.
   (This is hardcoded as part of function init__21dSv_player_status_a_cFv)
 
+8022DDBA,2 - X position of the Nintendo logo during bootup.
+8022DDBE,2 - Y position of the Nintendo logo during bootup.
+8022DEEA,2 - X position of the Dolby logo during bootup.
+8022DEEE,2 - Y position of the Dolby logo during bootup.
+  (These four values are hardcoded as part of function phase_2(dScnLogo_c *))
+
 8034FCC0-8034FD0F Item data. m_data__12daItemBase_c
   00,4 - Field item gravity. (Float)
   08,4 - ? (Float)
@@ -32,23 +38,36 @@
   Or the number can be -1 if no blue fog appears in this room.
   The actual behavior of the blue fog depending on the number 0-4 is hardcoded in the function poison_move.
 
-8035ABE4-8035B54F - List of figurines.
+8035ABE4-8035B54F - List of figurines. (l_CharaData)
   Entry length 0x12.
   0x86 entries in total.
-  10,1: Which figurine room number is this figurine in???
+  00,2: X ???
+  02,2: Y ???
+  04,2: Z ???
+  06,2: X pos? "Geo"
+    stored to the struct dSnap_Obj+0x0C,4 after converting to float and multiplying by something
+  08,2: Z pos? "Geo"
+    stored to the struct dSnap_Obj+0x10,4 after converting to float and multiplying by something
+  0A,2: (this / 1000.0) = ? (for comparison)
+  0C,2: arg r8 to "SetInf"
+    stored to the struct dSnap_Obj+0x1C,2
+  0E,2: ? (for comparison)
+  10,1: "FigRoomId"?
+  11,1: ???
 
 8035CEEC,4 - Link's maximum forward movement speed. (17.0)
   Seems to be used for both running forward and autojumping forward.
 8035D4B8,4 - Link's minimum forward movement speed when doing an autojump. (9.0)
 
-8035C764 - List of Link's animations?
+8035C764 - List of Link's animations. (daPy_lk_c::mAnmDataTable)
   Entry length 8.
   Argument r4 to setSingleMoveAnime is an example of an index in this list.
   00,2: ? "under" or "upper" anim?
   02,2: ? "under" or "upper" anim?
-  04,1: hand model? maybe left or right
-  05,1: hand model? maybe left or right
-  06,2: texture anim?
+  04,1: Left hand model index?
+  05,1: Right hand model index?
+  06,2: Texture animation index.
+    This number is an index in list 8035C36C.
 
 8035C36C-8035C61F - List of Link's texture animations. (daPy_lk_c::mTexAnmIndexTable)
   Entry length 4. 0xAD entries in total.
@@ -1221,6 +1240,11 @@ Note: See 80352EA0 for details about the layout of blue fog in a given room of E
 803E60EC-803E6133 - List of visual X/Y positions for Ballad of Gales warps on the sea chart UI. Floats.
   First the 9 X positions are listed. Then the 9 Y positions are listed.
   These can't be edited easily. This list in RAM isn't copied directly from main.dol. Instead, the unique float values are around 803FAE58, and there is a function (__ct__9dMf_HIO_cFv) which copies the unique float values to their appropriate positions in the actual list.
+
+803F6268,4 - Boomerang trail color. (RGBA)
+803F62AC,4 - Normal sword slash trail color. (RGBA)
+803F62B0,4 - Elixir soup sword slash trail color. (RGBA)
+803F62B4,4 - Parrying sword slash trail color. (RGBA)
 
 803F660C,4 - Bitfield of what buttons need to be pressed in order to reset the game (X+B+Start).
 

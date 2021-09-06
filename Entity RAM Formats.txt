@@ -205,6 +205,8 @@ For Link:
 0330,4: Pointer to Link's katsura.bdl model.
 0334,4: Pointer to Link's yamu.bdl model.
 0338,4: Pointer to ???
+03A4,4: hands related?
+03A8,4: hands related?
 0554,2: The index of the face the player is currently colliding with.
   This is an index in the currently loaded .dzb file's list of faces.
 0954,4: Pointer to Link's hands.bdl model.

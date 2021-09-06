@@ -18,9 +18,10 @@ For entities that have parameters, it also documents their parameters and the co
     0x07F8 - Particle bank ID to load for this stage.
       The filename of the particle bank to load is:
       "files/res/Particle/Pscene%03d.jpc" % particle_bank_id
-    0xF800 - ???
+    0xF800 - ??? maybe lighting related? todo
   0C,4:
     0x000000FF - ? Read in func SetSchBit
+    0x0000FF00 - Default time of day for this stage, in hours (0-24).
     0x00070000 - Stage type? Read in funcs drawSun, setGameStartStage, and checkRoofRestart
       1 - Dungeon
       3 - Boss

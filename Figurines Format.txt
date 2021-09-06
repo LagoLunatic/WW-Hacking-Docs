@@ -1,0 +1,159 @@
+Figurine ARC name for each ARC index (l_arcname_tbl in d_a_obj_figure.rel):
+  00 Figure
+  01 Figure2
+  02 Figure1
+  03 Figure0
+  04 Figure6
+  05 Figure5
+  06 Figure3
+  07 Figure4
+  08 Figure2a
+  09 Figure2b
+  0A Figure6a
+  0B Figure6b
+  0C Figure6c
+
+Figurine data list entry format (l_figure_dat_tbl in d_a_obj_figure.rel):
+  Entry length 0xC.
+  00,4: File ID of this figurine's model in the corresponding ARC file.
+    daObjFigure_c::getFigureBmd also has some hardcoded stuff to return a different file ID than the one listed here, depending on some conditions.
+  04,?
+  08,4: ARC index to use in the above list.
+    If this is -1, use the figurine's "FigRoomId" as the index. (From the l_CharaData list in main.dol.)
+
+Figurine description is message ID 14301 + the figurine index.
+List of each figurine's name:
+  00 Aryll
+  01 Link's Grandma
+  02 Sue-Belle
+  03 Sturgeon
+  04 Orca
+  05 Abe
+  06 Rose
+  07 Mesa
+  08 Joel
+  09 Zill
+  0A Jabun
+  0B Wild Pig
+  0C Seagull
+  0D Crab
+  0E Tott
+  0F Mila
+  10 Mila's Father
+  11 Maggie
+  12 Maggie's Father
+  13 Bomb-Master Cannon
+  14 The Potion Master, Doc Bandam
+  15 The Pictographer, Lenzo
+  16 The Shop Guru, Zunari
+  17 The Joyful Teacher, Mrs. Marie
+  18 Windfall's Gang of Boys, The Killer Bees
+  19 Potova & Joanna
+  1A Anton
+  1B Kreeb
+  1C Kamo
+  1D Gillian
+  1E Linda
+  1F Sam
+  20 Gossack
+  21 Garrickson
+  22 Pompie & Vera
+  23 Missy
+  24 Minenco
+  25 Gummy the Sailor
+  26 Kane the Sailor
+  27 Dampa the Sailor
+  28 Candy the Sailor
+  29 Tetra
+  2A Gonzo
+  2B Senza
+  2C Nudge
+  2D Zuko
+  2E Niko
+  2F Mako
+  30 Tingle
+  31 Ankle
+  32 Knuckle
+  33 David, Jr.
+  34 Fishman
+  35 Traveling Merchants
+  36 Old Man Ho Ho
+  37 Beedle
+  38 Salvatore
+  39 Loot the Sailor
+  3A Salvage Corp.
+  3B Fairy
+  3C Great Fairy
+  3D Queen of Fairies
+  3E Princess Zelda
+  3F King of Hyrule
+  40 Link & the King of Red Lions
+  41 Medli
+  42 Komali
+  43 The Rito Chieftain
+  44 Quill the Postman
+  45 Skett & Akoot
+  46 Kogoli
+  47 Ilari
+  48 Hoskit
+  49 Namali
+  4A Basht & Bisht
+  4B Obli
+  4C Willi
+  4D Koboli
+  4E Pashli
+  4F Baito
+  50 Valoo
+  51 Zephos & Cyclos
+  52 Laruto
+  53 Makar
+  54 Olivio
+  55 Aldo
+  56 Oakin
+  57 Drona
+  58 Irch
+  59 Rown
+  5A Hollo
+  5B Elma
+  5C Linder
+  5D Deku Tree
+  5E Carlov the Sculptor
+  5F Manny
+  60 Fado
+  61 Bokoblin
+  62 Miniblin
+  63 ChuChu
+  64 Rat
+  65 Keese & Fire Keese
+  66 Magtail
+  67 Kargaroc
+  68 Peahat
+  69 Boko Baba
+  6A Morth
+  6B Red Bubble & Blue Bubble
+  6C Floor Master
+  6D Armos
+  6E Armos Knight
+  6F Poe
+  70 ReDead
+  71 Octorok
+  72 Seahat
+  73 Gyorg
+  74 Moblin
+  75 Mothula
+  76 Darknut
+  77 Darknut
+  78 Mighty Darknut
+  79 Phantom Ganon
+  7A Stalfos
+  7B Wizzrobe
+  7C Wizzrobe
+  7D Big Octo
+  7E Gohma
+  7F Kalle Demos
+  80 Gohdan, The Great Arbiter
+  81 The Monstrous Helmaroc King
+  82 Jalhalla, Protector of the Seal
+  83 Molgera, Protector of the Seal
+  84 Puppet Ganon
+  85 Ganondorf
