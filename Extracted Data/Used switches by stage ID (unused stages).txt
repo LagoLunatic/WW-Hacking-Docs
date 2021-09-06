@@ -95,6 +95,7 @@ Stage ID: 07
   2B  from         takara2  in Cave08/Stage
   31  from         takara5  in Cave08/Stage
   32  from          door12  in Cave08/Stage
+  33  from         takara7  in Cave08/Stage
   3E  from           wiz_r  in Cave08/Room3
   3E  from         Fmastr2  in Cave08/Room3
   3E  from         Fmastr2  in Cave08/Room3
@@ -236,6 +237,7 @@ Stage ID: 0C
   00  from         MKanok2  in PShip3/Room0/Layer8
   00  from         MKanok2  in PShip3/Room0/Layer8
   00  from         MKanok2  in PShip3/Room0/Layer8
+  01  from         takara8  in I_SubAN/Stage
   0A  from          tkrCTf  in SubD44/Stage
   0A  from          SW_C00  in SubD44/Room0
   0A  from          SW_C00  in SubD44/Room0
@@ -527,6 +529,13 @@ Room TF_07/Room1
 Stage ID: 0E
   00  from          c_blue  in KATA_RM/Room13
 Stage ID: 0F
+  00  from         BFlower  in I_TestR/Room0
+  00  from         BFlower  in I_TestR/Room0
+  00  from         BFlower  in I_TestR/Room0
+  00  from         BFlower  in I_TestR/Room0
+  00  from         BFlower  in I_TestR/Room0
+  00  from         BFlower  in I_TestR/Room0
+  00  from         BFlower  in I_TestR/Room0
   00  from              Bb  in KATA_RM/Room1
   00  from         SW_HIT0  in KATA_RM/Room1
   00  from         MKanoke  in KATA_RM/Room11
@@ -557,6 +566,8 @@ Stage ID: 0F
   00  from         Kbota_A  in K_Test5/Room0
   00  from         Kbota_A  in K_Test5/Room0
   00  from         Kbota_A  in K_Test5/Room0
+  00  from         BFlower  in K_Test5/Room0
+  00  from         BFlower  in K_Test5/Room0
   00  from            item  in K_Test5/Room0
   00  from         Kbota_B  in K_Test5/Room0
   00  from          Fkeeth  in K_Test8/Room0
@@ -580,6 +591,8 @@ Stage ID: 0F
   00  from            item  in K_Test8/Room0
   00  from            item  in K_Test8/Room0
   00  from          Hhbot1  in K_Test9/Room0
+  00  from         BFlower  in K_Test9/Room0
+  00  from         BFlower  in K_Test9/Room0
   00  from         MKanoke  in K_Test9/Room0
   00  from         MKanok2  in K_Test9/Room0
   00  from         Kbota_A  in K_Test9/Room0
@@ -793,6 +806,7 @@ Stage ID: 0F
   80  from         bonbori  in I_TestM/Room0
   A0  from           amos2  in Amos_T/Room0
   A0  from           amos2  in Amos_T/Room0
+  CA  from          CmTrap  in K_Test2/Room0
   CA  from         Kbota_A  in K_Test2/Room0
 Room I_TestM/Room0
   E0  from         SW_HIT0  in I_TestM/Room0

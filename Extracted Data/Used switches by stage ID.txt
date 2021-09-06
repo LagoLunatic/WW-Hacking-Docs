@@ -62,6 +62,8 @@ Stage ID: 00
   2A  from          Ocanon  in sea/Room1/Layer1
   2A  from          Ocanon  in sea/Room1/Layer1
   2A  from          Ocanon  in sea/Room1/Layer1
+  2A  from          FgTrap  in sea/Room1/Layer1
+  2A  from          FgTrap  in sea/Room1/Layer1
   2A  from           Oship  in sea/Room4
   2A  from           Oship  in sea/Room7
   2A  from           Oship  in sea/Room7
@@ -253,6 +255,8 @@ Stage ID: 00
   7B  from          kotubo  in sea/Room11
   7C  from          kotubo  in sea/Room11
 Room sea/Room1
+  E0  from          FgTrap  in sea/Room1/Layer1
+  E0  from          FgTrap  in sea/Room1/Layer1
   E0  from           TagHt  in sea/Room1/Layer1
   E0  from           Akabe  in sea/Room1/Layer2
   E0  from           Akabe  in sea/Room1/Layer3
@@ -1265,6 +1269,7 @@ Stage ID: 05
   08  from          AttTag  in Siren/Room16
   08  from          AttTag  in Siren/Room16
   08  from           TagEv  in Siren/Room16
+  09  from          tkrAGc  in Siren/Stage
   0A  from           TagEv  in Siren/Room14
   0B  from         takara8  in Siren/Stage
   0B  from           wiz_r  in Siren/Room11
@@ -1303,6 +1308,8 @@ Stage ID: 05
   14  from         Zenshut  in SirenMB/Stage
   15  from          tkrASw  in Siren/Stage
   15  from         AND_SW0  in Siren/Room5
+  16  from         takara8  in Siren/Stage
+  16  from         takara8  in SirenMB/Stage
   17  from          tkrCTf  in Siren/Stage
   18  from           Hmlif  in Siren/Room14
   18  from           Hmlif  in Siren/Room14
@@ -1897,6 +1904,7 @@ Stage ID: 07
   31  from         AND_SW2  in kaze/Room9
   32  from         Hhbot1N  in kaze/Room10
   32  from         AND_SW2  in kaze/Room10
+  33  from         takara7  in kaze/Stage
   34  from          door12  in kaze/Stage
   34  from         AND_SW2  in kaze/Room10
   36  from           VmcBS  in kaze/Room11
@@ -2053,6 +2061,7 @@ Stage ID: 08
   16  from         SW_HIT0  in GanonM/Room2
   17  from         SW_HIT0  in GanonM/Room2
   17  from         SW_HIT0  in GanonM/Room2
+  18  from            Vfan  in GanonM/Room0
   19  from          ALLdie  in GanonL/Room0
   19  from          SW_C00  in GanonL/Room0
   1A  from             mo2  in GanonL/Room0
@@ -2222,6 +2231,8 @@ Room GanonJ/Room9
   E0  from         AND_SW0  in GanonJ/Room9
   E1  from             mo2  in GanonJ/Room9
   E1  from         AND_SW0  in GanonJ/Room9
+Room GanonJ/Room13
+  E8  from         takara8  in GanonJ/Stage
 Room GanonM/Room0
   E1  from         AND_SW0  in GanonM/Room0
 Room GanonM/Room1
@@ -2234,9 +2245,13 @@ Stage ID: 09
   03  from           TagEv  in kenroom/Room0/Layer4
   03  from           TagEv  in kenroom/Room0/Layer5
   04  from          ALLdie  in Hyroom/Room0
+  04  from          TnTrap  in Hyroom/Room0
+  04  from          TnTrap  in Hyroom/Room0
   05  from          ALLdie  in kenroom/Room0/Layer4
   05  from          ALLdie  in kenroom/Room0/Layer5
   06  from           TagHt  in Hyroom/Room0
+  08  from          TnTrap  in Hyroom/Room0
+  09  from          TnTrap  in Hyroom/Room0
   0B  from    master_sword  in kenroom/Stage (Event)
   0B  from           TagEv  in kenroom/Room0/Layer0
   0B  from           TagEv  in kenroom/Room0/Layer1
@@ -2486,7 +2501,9 @@ Stage ID: 0B
   0C  from      BOMB_CRASH  in A_mori/Stage (Event)
   0C  from          Ebrock  in A_mori/Room0
   0D  from    getperl_deku  in Omori/Stage (Event)
+  0E  from          Ebomzo  in Adanmae/Room0
   0F  from           TagEv  in Adanmae/Stage
+  0F  from          Ebomzo  in Adanmae/Room0
   10  from        bombshop  in Obombh/Stage (Event)
   10  from           TagEv  in Obombh/Room0
   11  from     LOOK_SHIELD  in LinkRM/Stage (Event)
@@ -2501,7 +2518,12 @@ Stage ID: 0B
   14  from           TagEv  in Opub/Room0/Layer1
   15  from      get_shield  in LinkRM/Stage (Event)
   18  from           TagEv  in Adanmae/Stage
+  1A  from           VbakH  in Adanmae/Room0
+  1B  from           VbakH  in Adanmae/Room0
+  1C  from           VbakH  in Adanmae/Room0
+  1D  from           VbakH  in Adanmae/Room0
   1E  from     MORI_INSIDE  in Omori/Stage (Event)
+  1F  from           VbakH  in Adanmae/Room0
   3E  from           MknjD  in Edaichi/Room0
   3F  from           MknjD  in Ekaze/Room0
   40  from      dance_zola  in Edaichi/Stage (Event)
@@ -3316,7 +3338,13 @@ Room Cave10/Room10
   E0  from          Rdead1  in Cave10/Room10
   E0  from          Rdead1  in Cave10/Room10
 Room Cave10/Room17
+  E0  from          CmTrap  in Cave10/Room17
+  E0  from          CmTrap  in Cave10/Room17
   E0  from          ALLdie  in Cave10/Room17
+  E0  from          CmTrap  in Cave10/Room17
+  E0  from          CmTrap  in Cave10/Room17
+  E0  from          CmTrap  in Cave10/Room17
+  E0  from          CmTrap  in Cave10/Room17
 Room Cave11/Room0
   E0  from          SW_C00  in Cave11/Room0
   E0  from          SW_C00  in Cave11/Room0
