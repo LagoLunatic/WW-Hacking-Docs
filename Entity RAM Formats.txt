@@ -292,7 +292,7 @@ For cCcD_ObjAt (damaging dealing hitbox):
   00100000 - Light arrows.
   00200000 - Deku Leaf's wind.
   00400000 - Maybe another type of wind?
-  00800000 - 
+  00800000 - (related to light beams somehow?)
   01000000 - Stalfos mace.
   02000000 - 
   04000000 - Darknut sword.

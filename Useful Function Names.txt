@@ -577,6 +577,7 @@ init__18dDlst_mirrorPacketFP7ResTIMG
   initializes the static image reflection when the mirror shield/harp reflect light onto a wall.
   r4 - 0 for link, or a pointer to the raw data of the md_spot.bti file for medli
 
+
 dComIfGp_setNextStage__FPCcsScScfUliSc
 dComIfGp_setNextStage(char const *, short, signed char, signed char, float, unsigned long, int, signed char)
   changes the current stage
@@ -592,6 +593,18 @@ dComIfGp_setNextStage(char const *, short, signed char, signed char, float, unsi
     1 - fade whole screen to black
     9 - 
     B - fade letterboxed part of the screen to white (not the black borders at the top and bottom)
+
+dStage_changeSceneExitId(cBgS_PolyInfo &, float, unsigned long, signed char)
+  Handles a stage transition specified by the Exit ID property set in the DZB collision geometry.
+  There are some special exit IDs for DZB collision:
+    3B - Goes into a submarine.
+      Only works if this is actor collision belonging to an instance of obj_ikada, since the game reads that actor's parameters to determine which room of Beedle's shop to go to.
+    3C - Goes into the Pirate Ship...?
+      depends on some event bits
+    3D - Returns to the sea via the last submarine or Beedle's Shop Ship exit.
+      Specifically, it returns you to the room number stored to 803CA90E, and sets the spawn ID to -2.
+    3E - Goes into Beedle's Shop Ship.
+      Only works if this is actor collision belonging to an instance of obj_ikada, since the game reads that actor's parameters to determine which room of Beedle's shop to go to.
 
 init__20dSeaFightGame_info_cFii
 put_ship__20dSeaFightGame_info_cFUcUc

@@ -1009,6 +1009,9 @@ Player's partner's room restart position? ("restart option")
 803CA8D4,4 - Second bitfield of player statuses (PlayerStatus1).
   00000400 - In ship while it is sailing.
 
+803CA90E,1 - The room/island number on the sea stage the player was in when they last entered a submarine or Beedle's Shop Ship.
+  This is used to return the player to the same room they were in before entering.
+
 803CA91C,4 - Pointer to the item_table.bin file loaded into memory.
 
 803C4C38,8 - Stage name of the player's "return place" (where you will be placed when you reload your save).
