@@ -19,6 +19,11 @@ Stage ID: 00
   08  from        AJ_SPEAK  in sea_E/Stage (Event)
   0A  from    MEETSHISHIOH  in sea_E/Stage (Event)
   0B  from     ARRIVAL_DRG  in sea_E/Stage (Event)
+  0F  from            item  in DmSpot0/Room0
+  0F  from            item  in DmSpot0/Room0
+  0F  from            item  in DmSpot0/Room0
+  0F  from            item  in DmSpot0/Room0
+  0F  from            item  in DmSpot0/Room0
   19  from     ARRIVAL_BRK  in sea_E/Stage (Event)
   1A  from     ARRIVAL_FST  in sea_E/Stage (Event)
   2C  from  departure_DEMO  in sea_E/Stage (Event)
@@ -247,6 +252,11 @@ Stage ID: 0C
   0A  from          SW_C00  in SubD44/Room0
   0A  from          SW_C00  in SubD44/Room0
   0A  from          SW_C00  in SubD44/Room0
+  0F  from            item  in I_SubAN/Room7
+  0F  from            item  in I_SubAN/Room7
+  0F  from            item  in I_SubAN/Room7
+  0F  from            item  in I_SubAN/Room7
+  0F  from            item  in I_SubAN/Room7
   12  from         takara6  in Cave06/Stage
   12  from         takara8  in PShip2/Stage
   12  from         takara8  in PShip3/Stage
@@ -710,6 +720,9 @@ Stage ID: 0F
   03  from           TagEv  in morocam/Stage
   04  from            Wall  in K_Test5/Room0
   04  from         SW_HIT0  in K_Test8/Room0
+  04  from            item  in K_Test8/Room0
+  04  from            item  in K_Test8/Room0
+  04  from            item  in K_Test8/Room0
   04  from         Kbota_B  in K_Testc/Room0
   04  from           TagEv  in morocam/Stage
   05  from         SW_HIT0  in K_Test2/Room0/Layer7
@@ -762,7 +775,10 @@ Stage ID: 0F
   0E  from         Kbota_B  in K_Testa/Room0
   0E  from          Htobi2  in K_Testa/Room0
   0E  from          Htobi2  in K_Testa/Room0
+  0F  from            item  in KATA_RM/Room11
+  0F  from            item  in K_Test5/Room0
   0F  from         Hfbot1C  in K_Test9/Room0
+  0F  from            item  in K_Test9/Room0
   10  from           MkieK  in K_Test9/Room0
   10  from           MkieK  in K_Test9/Room0
   10  from           MkieK  in K_Test9/Room0
