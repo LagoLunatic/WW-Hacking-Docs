@@ -62,6 +62,7 @@ Stage ID: 00
   2A  from          Ocanon  in sea/Room1/Layer1
   2A  from          Ocanon  in sea/Room1/Layer1
   2A  from          Ocanon  in sea/Room1/Layer1
+  2A  from          Fganon  in sea/Room1/Layer1
   2A  from          FgTrap  in sea/Room1/Layer1
   2A  from          FgTrap  in sea/Room1/Layer1
   2A  from           Oship  in sea/Room4
@@ -255,6 +256,7 @@ Stage ID: 00
   7B  from          kotubo  in sea/Room11
   7C  from          kotubo  in sea/Room11
 Room sea/Room1
+  E0  from          Fganon  in sea/Room1/Layer1
   E0  from          FgTrap  in sea/Room1/Layer1
   E0  from          FgTrap  in sea/Room1/Layer1
   E0  from           TagHt  in sea/Room1/Layer1
@@ -2005,6 +2007,17 @@ Room kaze/Room1
 Room kaze/Room2
   E0  from         Kbota_B  in kaze/Room2
 Stage ID: 08
+  00  from          Fganon  in GanonC/Room1
+  00  from          Fganon  in GanonC/Room1
+  00  from          Fganon  in GanonC/Room2
+  00  from          Fganon  in GanonC/Room2
+  00  from          Fganon  in GanonC/Room3
+  00  from          Fganon  in GanonC/Room3
+  00  from          Fganon  in GanonC/Room4
+  00  from          Fganon  in GanonC/Room4
+  00  from          Fganon  in GanonC/Room5
+  00  from          Fganon  in GanonC/Room5
+  00  from          Fganon  in GanonM/Room0
   01  from         takara8  in GanonJ/Stage
   01  from          door10  in GanonJ/Stage
   02  from           TagEv  in GanonE/Stage

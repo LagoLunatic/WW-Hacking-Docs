@@ -552,6 +552,10 @@ Stage ID: 0F
   00  from         Kbota_A  in KATA_RM/Room23
   00  from         Kbota_A  in KATA_RM/Room23
   00  from         Kbota_A  in KATA_RM/Room23
+  00  from          Fganon  in KATA_RM/Room24
+  00  from          Fganon  in KATA_RM/Room24
+  00  from          Fganon  in KATA_RM/Room26
+  00  from          Fganon  in KATA_RM/Room26
   00  from            Puti  in KATA_RM/Room31
   00  from         Kbota_A  in KATA_RM/Room31
   00  from            item  in K_Test2/Room0/Layer7
