@@ -14,11 +14,11 @@ import glob
 with open(ACTOR_INFO_TEXT_FILE_PATH, "r") as f:
   actor_info_str = f.read()
 actor_info_matches = re.findall(
-  r" *(\S+):   ID ([0-9a-f]+),   Subtype ([0-9a-f]+),   Unknown ([0-9a-f]+),   REL (\S+)",
+  r" *(\S+):   ID ([0-9a-f]+),   Subtype ([0-9a-f]+),   GBAName ([0-9a-f]+),   REL (\S+)",
   actor_info_str, re.IGNORECASE
 )
 actor_names_by_rel_name = {}
-for actor_name, rel_id, subtype, unknown, rel_name in actor_info_matches:
+for actor_name, rel_id, subtype, gbaname, rel_name in actor_info_matches:
   if rel_name not in actor_names_by_rel_name:
     actor_names_by_rel_name[rel_name] = []
   actor_names_by_rel_name[rel_name].append(actor_name)
@@ -137,7 +137,7 @@ for asm_file in all_asm_files:
       # for example, bokoblins have some functions for their sword, which read the sword parameters from "this" instead of bokoblin parameters.
       curr_bit_masks_list = all_bit_masks_for_subclass
     
-    prmabstract_match = re.search(r" 	bl      0x[0-9a-f]+      ; PrmAbstract<", line, re.IGNORECASE)
+    prmabstract_match = re.search(r" 	bl      0x[0-9a-f]+ +; PrmAbstract<", line, re.IGNORECASE)
     
     lwz_match = re.search(r" 	lwz     (r\d+),(\d+)\((r\d+)\)", line, re.IGNORECASE)
     lha_match = re.search(r" 	lha     (r\d+),(\d+)\((r\d+)\)", line, re.IGNORECASE)
