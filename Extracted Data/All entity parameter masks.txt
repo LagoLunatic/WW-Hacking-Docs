@@ -108,6 +108,7 @@ d_a_bflower:
   Actor names: BFlower, VbakH
   params & 000000F0
   params & 0000FF00
+  aux_params_1 & FFFF
 
 d_a_bgn:
   Actor names: Bgn
@@ -118,6 +119,7 @@ d_a_bgn2:
 
 d_a_bgn3:
   Actor names: 
+  aux_params_1 & FFFF
 
 d_a_bigelf:
   Actor names: BigElf
@@ -167,12 +169,14 @@ d_a_bo:
   Actor names: bbaba
   params & 000000FF
   params & 0000FF00
+  aux_params_2 & FFFF
 
 d_a_boko:
   Actor names: Boko, Boko
   params & 3FFFFFFF (WARNING: overlaps)
   params & FFFFFFFF (WARNING: overlaps)
   aux_params_1 & FFFF
+  aux_params_2 & FFFF
 
 d_a_boss_item:
   Actor names: Bitem
@@ -453,6 +457,7 @@ d_a_kb:
   params & 000000F0
   params & 0000FF00
   params & 00FF0000
+  aux_params_1 & FFFF
   aux_params_2 & FFFF
 
 d_a_kddoor:
@@ -488,6 +493,7 @@ d_a_kn:
 d_a_knob00:
   Actor names: KNOB00, KNOB01, KNOB02, KNOB03, KNOB00D, KNOB01D, KNOB02D, KNOB03D
   params & F0000000
+  aux_params_2 & FFFF
 
 d_a_kokiie:
   Actor names: Kokiie
@@ -502,6 +508,8 @@ d_a_ks:
   params & 000000FF
   params & 0000FF00
   params & 00FF0000
+  aux_params_1 & FFFF
+  aux_params_2 & FFFF
 
 d_a_kt:
   Actor names: kt
@@ -565,6 +573,7 @@ d_a_leaflift:
 
 d_a_lod_bg:
   Actor names: LOD01, LOD02, LOD03, LOD04, LOD05, LOD06, LOD07, LOD08, LOD09, LOD10, LOD11, LOD12, LOD13, LOD14, LOD15, LOD16, LOD17, LOD18, LOD19, LOD20, LOD21, LOD22, LOD23, LOD24, LOD25, LOD26, LOD27, LOD28, LOD29, LOD30, LOD31, LOD32, LOD33, LOD34, LOD35, LOD36, LOD37, LOD38, LOD39, LOD40, LOD41, LOD42, LOD43, LOD44, LOD45, LOD46, LOD47, LOD48, LOD49
+  params & FFFFFFFF
 
 d_a_lstair:
   Actor names: Gkai00
@@ -962,6 +971,7 @@ d_a_obj_balancelift:
 d_a_obj_barrel:
   Actor names: Ktarux
   params & 70000000
+  aux_params_1 & FFFF
   aux_params_2 & FFFF
 
 d_a_obj_barrel2:
@@ -1056,6 +1066,7 @@ d_a_obj_eayogn:
 d_a_obj_ebomzo:
   Actor names: Ebomzo
   params & 000000FF
+  aux_params_1 & FFFF
 
 d_a_obj_eff:
   Actor names: 
@@ -1180,6 +1191,7 @@ d_a_obj_homen:
   params & 0003F000
   params & 003C0000
   params & FF000000
+  aux_params_1 & FFFF
 
 d_a_obj_homensmoke:
   Actor names: Omensmk
@@ -1607,6 +1619,7 @@ d_a_pt:
   params & 0000FF00
   params & 00FF0000
   params & FF000000
+  aux_params_1 & FFFF
 
 d_a_pw:
   Actor names: pow
@@ -1729,6 +1742,7 @@ d_a_sss:
   params & 000000FF
   params & 0000FF00
   params & 00FF0000
+  aux_params_1 & FFFF
 
 d_a_st:
   Actor names: Stal
@@ -1741,6 +1755,7 @@ d_a_st:
 d_a_steam_tag:
   Actor names: Ystm0, Ystm1
   params & 000003FC
+  aux_params_1 & FFFF
 
 d_a_stone:
   Actor names: koisi1, koisi2
@@ -2032,6 +2047,7 @@ d_a_wind_tag:
   params & 00600000
   params & 00800000
   params & FF000000
+  aux_params_1 & FFFF
   aux_params_2 & 000F
   aux_params_2 & 00F0
 

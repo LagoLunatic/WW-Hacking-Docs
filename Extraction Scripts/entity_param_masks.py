@@ -96,7 +96,7 @@ for asm_file in all_asm_files:
   rel_name = os.path.splitext(os.path.basename(asm_file))[0]
   if rel_name == "main":
     continue
-  #if rel_name != "d_a_obj_swpush":
+  #if rel_name != "d_a_lod_bg":
   #  continue
   
   print("%s:" % rel_name)
@@ -169,8 +169,8 @@ for asm_file in all_asm_files:
     clrlwi_match = re.search(r" 	clrlwi\.?\s+(r\d+),(r\d+),(\d+)", line, re.IGNORECASE)
     stb_match = re.search(r" 	stb     (r\d+),\d+\(r\d+\)", line, re.IGNORECASE)
     #sth_match = re.search(r" 	sth     (r\d+),\d+\(r\d+\)", line, re.IGNORECASE)
-    cmplwi_match = re.search(r" 	cmplwi  (r\d+),\d+", line, re.IGNORECASE)
-    cmpw_match = re.search(r" 	cmpw    (r\d+),(r\d+)", line, re.IGNORECASE)
+    cmpwi_match = re.search(r" 	cmpl?wi +(r\d+),\d+", line, re.IGNORECASE)
+    cmpw_match = re.search(r" 	cmpl?w +(r\d+),(r\d+)", line, re.IGNORECASE)
     
     curr_mask_attribute_name = None
     if rlwinm_match and all_registers[rlwinm_match.group(2)] in ["params", "aux_params_1", "aux_params_2"]:
@@ -189,10 +189,10 @@ for asm_file in all_asm_files:
     #  curr_mask_attribute_name = all_registers[sth_match.group(1)]
     #else:
     #  sth_match = None
-    if cmplwi_match and all_registers[cmplwi_match.group(1)] in ["params", "aux_params_1", "aux_params_2"]:
-      curr_mask_attribute_name = all_registers[cmplwi_match.group(1)]
+    if cmpwi_match and all_registers[cmpwi_match.group(1)] in ["params", "aux_params_1", "aux_params_2"]:
+      curr_mask_attribute_name = all_registers[cmpwi_match.group(1)]
     else:
-      cmplwi_match = None
+      cmpwi_match = None
     if cmpw_match and all_registers[cmpw_match.group(1)] in ["params", "aux_params_1", "aux_params_2"]:
       curr_mask_attribute_name = all_registers[cmpw_match.group(1)]
     elif cmpw_match and all_registers[cmpw_match.group(2)] in ["params", "aux_params_1", "aux_params_2"]:
@@ -328,7 +328,7 @@ for asm_file in all_asm_files:
     #  bit_mask = 0x0000FFFF
     #  #curr_bit_masks_list[curr_mask_attribute_name].append(bit_mask)
     #  add_mask_to_list(curr_bit_masks_list[curr_mask_attribute_name], bit_mask, line, last_seen_symbol_name)
-    elif cmplwi_match or cmpw_match:
+    elif cmpwi_match or cmpw_match:
       if curr_mask_attribute_name == "params":
         bit_mask = 0xFFFFFFFF
       else:
