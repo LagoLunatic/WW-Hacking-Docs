@@ -8,6 +8,12 @@
 8022DEEE,2 - Y position of the Dolby logo during bootup.
   (These four values are hardcoded as part of function phase_2(dScnLogo_c *))
 
+8034F69D,1 - Empty string "".
+
+8034F7D8,4 (34C7D8,4 in main.dol) - Stage name the player starts a new game in ("sea").
+80058BA7,1 (055AE7,1 in main.dol) - Room number the player starts a new game in (0d44, Outset Island).
+80058BAF,1 (055AEF,1 in main.dol) - Spawn ID the player starts the game at (0d206, on Aryll's Lookout).
+
 8034FCC0-8034FD0F Item data. m_data__12daItemBase_c
   00,4 - Field item gravity. (Float)
   08,4 - ? (Float)
@@ -522,6 +528,11 @@ Format of each block of memory in the game heap:
 803C4C2C,4 - Current time in the day. (Float.)
   Ranges from 0.0 to 360.0.
 
+803C4C38,8 - Stage name of the player's "return place" (where you will be placed when you reload your save).
+  The 8th byte must be 00.
+803C4C40,1 - Room number of the player's "return place" (where you will be placed when you reload your save).
+803C4C41,1 - Spawn ID of the player's "return place" (where you will be placed when you reload your save).
+
 803C4C44-803C4C58 - Inventory. (dSv_player_item_c)
   Controls which items are in which slots on the inventory screen. Each slot is one byte.
   If the byte is FF it means no item is in the slot.
@@ -998,34 +1009,9 @@ Player's partner's room restart position? ("restart option")
   Note that spawn on KoRL can freeze the game if KoRL does not exist in the destination stage.
   However, spawn on KoRL is ignored if spawn type is anything other than 5.
 
-803CA778,4 - Current item ID up for bidding at the auction.
-803CA7C0,2 - Message ID for the name of the item currently up for bidding at the auction.
-
-803CA7F8,1 - Song index of the song to display in the message box for the interactive tutorial.
-
-803CA8D0,4 - First bitfield of player statuses (PlayerStatus0).
-  00010000 - Player is riding the ship. (Checked at 80120484)
-  00100000 - Player is swimming.
-803CA8D4,4 - Second bitfield of player statuses (PlayerStatus1).
-  00000400 - In ship while it is sailing.
-
-803CA90E,1 - The room/island number on the sea stage the player was in when they last entered a submarine or Beedle's Shop Ship.
-  This is used to return the player to the same room they were in before entering.
-
-803CA91C,4 - Pointer to the item_table.bin file loaded into memory.
-
-803C4C38,8 - Stage name of the player's "return place" (where you will be placed when you reload your save).
-  The 8th byte must be 00.
-803C4C40,1 - Room number of the player's "return place" (where you will be placed when you reload your save).
-803C4C41,1 - Spawn ID of the player's "return place" (where you will be placed when you reload your save).
-
-8034F69D,1 - Empty string "".
-
-8034F7D8,4 (34C7D8,4 in main.dol) - Stage name the player starts a new game in ("sea").
-80058BA7,1 (055AE7,1 in main.dol) - Room number the player starts a new game in (0d44, Outset Island).
-80058BAF,1 (055AEF,1 in main.dol) - Spawn ID the player starts the game at (0d206, on Aryll's Lookout).
-
 803C9DA0,4 - Has a pointer to the current stage info from the DZx file (the STAG chunk's only entry).
+
+803C9DE0,F4 - Instance of dEvt_control_c
 
 803C9DF0,2 - Has the event index of the next event about to be started.
 
@@ -1033,10 +1019,11 @@ Player's partner's room restart position? ("restart option")
 
 803C9EA0,1 - related to events
 803C9EA1,1 - related to events
-803C9EA2,1 - Some state relating to events. (mCheckState of dEvt_control_c)
-  0 - not in an event
-  1 - in an event, black bars above and below screen, Link cannot move
-  2 - in an event, maybe for opening chests?
+803C9EA2,1 - Some state relating to events. (mMode of dEvt_control_c)
+  0 - Not in an event.
+  1 - in an event, black bars above and below screen, Link cannot move (Talk event?)
+  2 - in an event, maybe for opening chests? (Demo event?)
+  3 - ?? ("Compulsory" event?)
 
 803C9EB0,4 - Unique ID of the item actor for the current cutscene.
 803C9EB4,1 - Item ID to give in an upcoming cutscene.
@@ -1058,6 +1045,76 @@ Player's partner's room restart position? ("restart option")
 803CA410,4 - Always has a pointer to the player entity in RAM. (for dAttention_c)
   This refers not only to Link, but to Medli/Makar/Tower Servant/seagull when you're controlling them.
 
+803CA57C,4 - Distance between Link and the nearest enemy he can lock on to. (Float.)
+  This will be 10000.0 if there aren't any enemies within lock on range.
+
+===== 803CA5A0
+
+803CA718,4 - Pointer to the camera (instance of camera_class).
+
+803CA778,4 - Current item ID up for bidding at the auction.
+803CA7C0,2 - Message ID for the name of the item currently up for bidding at the auction.
+
+803CA7F8,1 - Song index of the song to display in the message box for the interactive tutorial.
+
+803CA8D0,4 - First bitfield of player statuses (PlayerStatus0).
+  00000001 - 
+  00000002 - 
+  00000004 - 
+  00000008 - 
+  00000010 - 
+  00000020 - 
+  00000040 - 
+  00000080 - 
+  00000100 - 
+  00000200 - 
+  00000400 - 
+  00000800 - 
+  00001000 - Aiming the bow.
+  00002000 - 
+  00004000 - 
+  00008000 - Swinging the sword.
+  00010000 - Player is riding the ship. (Checked at 80120484)
+  00020000 - 
+  00040000 - Shooting the grappling hook or hookshot while in first person.
+  00080000 - Aiming the boomerang.
+  00100000 - Player is swimming.
+  00200000 - Looking through the telescope.
+  00400000 - Waiting for the boomerang to come back.
+  00800000 - 
+  01000000 - 
+  02000000 - 
+  04000000 - 
+  08000000 - Player is crawling.
+  10000000 - 
+  20000000 - 
+  40000000 - Charging a spin attack or hurricane spin, or performing the hurricane spin.
+  80000000 - 
+803CA8D4,4 - Second bitfield of player statuses (PlayerStatus1).
+  00000001 - Conducting the Wind Waker.
+  00000002 - 
+  00000004 - 
+  00000008 - Aiming the Picto Box.
+  00000010 - 
+  00000020 - Flying with the Deku Leaf.
+  00000040 - Blowing air with the Deku Leaf.
+  00000080 - 
+  00000100 - 
+  00000200 - 
+  00000400 - In ship while it is sailing.
+  00000800 - 
+  00001000 - 
+  00002000 - 
+  00004000 - 
+  00008000 - 
+  00010000 - 
+  00020000 - 
+  00040000 - 
+  00080000 - 
+
+803CA90E,1 - The room/island number on the sea stage the player was in when they last entered a submarine or Beedle's Shop Ship.
+  This is used to return the player to the same room they were in before entering.
+
 803CA74C,4 - Always has a pointer to the player entity in RAM. (for dComIfG_play_c)
   This refers not only to Link, but to Medli/Makar/Tower Servant/seagull when you're controlling them.
 803CA754,4 - Always has a pointer to the Link entity in RAM. (for dComIfG_play_c)
@@ -1069,6 +1126,8 @@ Player's partner's room restart position? ("restart option")
   set by line 80072240
 803CA800,1 - Somehow related to place names shown on the screen like above.
   set to 2 by line 80072248
+
+803CA91C,4 - Pointer to the item_table.bin file loaded into memory.
 
 80390960-803909AB - List of pointers to the filepaths of the .bti image files for each place name.
 

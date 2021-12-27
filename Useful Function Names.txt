@@ -606,6 +606,13 @@ dStage_changeSceneExitId(cBgS_PolyInfo &, float, unsigned long, signed char)
     3E - Goes into Beedle's Shop Ship.
       Only works if this is actor collision belonging to an instance of obj_ikada, since the game reads that actor's parameters to determine which room of Beedle's shop to go to.
 
+dStage_playerInit(dStage_dt_c *, void *, int, void *)
+  r3 - 
+  r4 - 
+  r5 - 
+  r6 - 
+
+
 init__20dSeaFightGame_info_cFii
 put_ship__20dSeaFightGame_info_cFUcUc
 checkPutShip__20dSeaFightGame_info_cFiiii
@@ -1404,6 +1411,10 @@ fopAcM_SearchByID(unsigned int, fopAc_ac_c **)
   If fopAcIt_Judge can't find the actor, it will just return 0.
   If fopAcM_SearchByID can't find the actor, it will put 0 at where r4 points to, but if the actor is in the process of being asynchronously created and simply doesn't exist YET, it will still return true, not false.
   This is very useful when you need to know if the actor hasn't spawned in yet, or if it used to exist but was deleted.
+
+fpcM_IsCreating(unsigned int)
+  This function checks if an actor with a given unique ID is in the process of being asynchronously created, but doesn't exist yet. It returns true if it is being spawned, or false otherwise.
+  r3 - The unique ID to check for.
 
 d_s_play::phase_0
   This handles loading LkD00.arc or LkD01.arc depending on whether event bit 0x2D01 is set or not (for animation set 1 vs 2).

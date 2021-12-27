@@ -192,6 +192,8 @@ For Link:
   A - Jump attacking
 029C,4: Bitfield
   00000008 - Player has just bonked into something when doing a forward roll.
+  00000080 - ?
+  00020000 - Player is autojumping after running off a ledge.
   02000000 - Player is currently wearing the iron boots.
 02A0,4: Bitfield
   00000008 - Player is in their casual clothes.
@@ -200,13 +202,15 @@ For Link:
 02A4,4: Bitfield
   00000080 - ?? maybe about to use an equipped item?
   00200000 - Player's mirror shield is currently reflecting light.
-0314,4: The current action index. e.g. 11 (0xB) for 011get_item.
+0314,4: The current event action index. e.g. 11 (0xB) for 011get_item.
 032C,4: Pointer to Link's main cl.bdl model.
 0330,4: Pointer to Link's katsura.bdl model.
 0334,4: Pointer to Link's yamu.bdl model.
 0338,4: Pointer to ???
 03A4,4: hands related?
 03A8,4: hands related?
+0494,4: Bitfield of flags for Link's dBgS_Acch.
+  00000020 - Is on the ground.
 0554,2: The index of the face the player is currently colliding with.
   This is an index in the currently loaded .dzb file's list of faces.
 0954,4: Pointer to Link's hands.bdl model.
@@ -239,6 +243,7 @@ For Link:
 2F8C,4: Pointer to Link's ymgcs00.bdl model.
 318C,4: Unique ID of the actor Link is holding above his head.
 3190,4: Pointer to the actor Link is holding above his head.
+31DC,C: Link's PTMF (pointer to member functions) struct.
 31E4,4: Pointer to the execute function for Link's current state (e.g. daPy_lk_c::procWait).
 3484,4: Related to what's on the A button icon...?
 34C8,1: Bitfield of pressed buttons.

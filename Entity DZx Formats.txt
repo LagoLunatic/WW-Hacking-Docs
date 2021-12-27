@@ -765,16 +765,16 @@ Tn: Darknut. (d_a_tn)
     6+ - Defaults to 5.
   aux_params_2 & 00FF - Disable spawn on death switch.
 Oship: Gunboat/warship. (d_a_oship)
-  params & 000000FF - 
+  params & 000000FF - "mSubMode". Valid values are 0, 1 and 2. Effectively determines at which distance ranges the ship will attack.
   params & 00000F00 - Index of a triforce chart. The gunboat will only appear after the player has gotten this triforce chart deciphered.
     0xF - Means don't check any triforce chart. Appear regardless.
   params & 0000F000 - Random duplicate ID of this ship.
     0-3, this is the same number that salvages use (at 803C4DA9).
     0xF - Means no duplicate ID, this ship just always appears regardless of random salvage placement.
-  params & 00FF0000 - 
+  params & 00FF0000 - The Path ID to follow.
   params & FF000000 - Disable spawn on death switch.
   aux_params & 0x00FF - Switch index to check and not have this gunboat appear unless the switch is already set.
-  aux_params & 0xFF00 - 
+  aux_params & 0xFF00 - mModelType. Valid values seem to be 0x00 and 0xFF. Determines which of the two models the ship uses. 0x00 = vbtst.bdl, 0xFF = vbtsp.bdl
 VolTag: Ice Ring Isle and Fire Mountain kill triggers. (d_a_tag_volcano)
   params & 0000003F - 
   params & 000000C0 - Type?

@@ -6,6 +6,7 @@ Format of each chart:
   Entry length 0x26.
   Each entry has a 6 byte header followed by 4 0x8 byte subentries. The 4 subentries are the possible random positions for the salvage to be at depending on the save file.
   00,1: The ID of the texture image filename for this chart. Used to determine which texture filename to load.
+    The textures can be found in this ARC folder: /files/res/Fmap/Fmap.arc/cm/
     For example, if this value is 0x2C, then the four texture images (for four different random possible salvage positions) will be named:
       r2c_col_0.bti
       r2c_col_1.bti
