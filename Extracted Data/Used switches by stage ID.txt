@@ -50,6 +50,9 @@ Stage ID: 00
   25  from         MhmrSW0  in sea/Room15
   25  from            Fire  in sea/Room15
   25  from           Akabe  in sea/Room15
+  26  from          s_turu  in sea/Room28
+  26  from          s_turu  in sea/Room28
+  26  from          s_turu  in sea/Room28
   26  from         AND_SW2  in sea/Room28
   26  from           Akabe  in sea/Room28
   27  from         SW_HIT0  in sea/Room29
@@ -243,8 +246,10 @@ Stage ID: 00
   70  from          AttTag  in sea/Room1/Layer1
   70  from          kotubo  in sea/Room13/Layer7
   70  from          kotubo  in sea/Room13/Layer7
+  70  from         agbTBOX  in sea/Room13/Layer7
   71  from      awake_zola  in sea/Stage (Event)
   71  from         ootubo1  in sea/Room41/Layer7
+  71  from         agbTBOX  in sea/Room41/Layer7
   72  from          ending  in ENDumi/Stage (Event)
   72  from         ootubo1  in sea_T/Room44
   73  from          AttTag  in sea/Room13
@@ -253,8 +258,11 @@ Stage ID: 00
   74  from          TagIsl  in sea/Room44
   77  from           TagHt  in sea/Room1/Layer1
   7A  from         ootubo1  in sea/Room44
+  7A  from         agbTBOX  in sea/Room44
   7B  from          kotubo  in sea/Room11
+  7B  from         agbTBOX  in sea/Room11
   7C  from          kotubo  in sea/Room11
+  7C  from         agbTBOX  in sea/Room11
 Room sea/Room1
   E0  from          Fganon  in sea/Room1/Layer1
   E0  from          FgTrap  in sea/Room1/Layer1
@@ -635,21 +643,38 @@ Room sea/Room41
   E3  from         bonbori  in sea/Room41/Layer0
   E4  from         bonbori  in sea/Room41/Layer0
   ED  from         Odokuro  in sea/Room41/Layer7
+  ED  from         agbTBOX  in sea/Room41/Layer7
   EE  from         Odokuro  in sea/Room41
+  EE  from         agbTBOX  in sea/Room41
 Room sea/Room42
   E0  from           wiz_r  in sea/Room42
   E0  from          SW_C00  in sea/Room42
 Room sea/Room43
+  E0  from          s_turu  in sea/Room43
+  E0  from          s_turu  in sea/Room43
+  E0  from          s_turu  in sea/Room43
+  E0  from          s_turu  in sea/Room43
+  E0  from          s_turu  in sea/Room43
   E0  from         AND_SW2  in sea/Room43
+  E0  from          s_turu  in sea/Room43
   E0  from           Akabe  in sea/Room43
   E0  from           Akabe  in sea/Room43
   E0  from           Akabe  in sea/Room43
   E0  from           Akabe  in sea/Room43
+  E1  from          s_turu  in sea/Room43
+  E1  from          s_turu  in sea/Room43
   E1  from         AND_SW2  in sea/Room43
+  E1  from          s_turu  in sea/Room43
   E1  from           Akabe  in sea/Room43
   E1  from           Akabe  in sea/Room43
+  E2  from          s_turu  in sea/Room43
+  E2  from          s_turu  in sea/Room43
+  E2  from          s_turu  in sea/Room43
+  E2  from          s_turu  in sea/Room43
   E2  from         AND_SW2  in sea/Room43
   E2  from         AND_SW2  in sea/Room43
+  E2  from          s_turu  in sea/Room43
+  E2  from          s_turu  in sea/Room43
   E2  from           Akabe  in sea/Room43
   E2  from           Akabe  in sea/Room43
   E2  from           Akabe  in sea/Room43
@@ -1046,6 +1071,7 @@ Stage ID: 03
   46  from           TagEv  in M_NewD2/Stage
   46  from           TagEv  in M_NewD2/Stage
   50  from            item  in M_NewD2/Room0
+  50  from         agbTBOX  in M_NewD2/Room0
   6A  from          tkrASw  in M_NewD2/Stage
   6A  from           TagHt  in M_NewD2/Room7
   6A  from          SW_C00  in M_NewD2/Room7
@@ -1080,8 +1106,11 @@ Stage ID: 03
   6B  from           TagHt  in M_DragB/Room0
   6B  from           TagHt  in M_DragB/Room0
   6F  from         takara6  in M_NewD2/Stage
+  6F  from         agbTBOX  in M_NewD2/Room15
   78  from          kotubo  in M_Dra09/Room9
+  78  from         agbTBOX  in M_Dra09/Room9
   7E  from          tkrASw  in M_NewD2/Stage
+  7E  from         agbTBOX  in M_NewD2/Room2
   80  from         takara4  in M_NewD2/Stage
   80  from          Fkeeth  in M_NewD2/Room2
   80  from          Fkeeth  in M_NewD2/Room2
@@ -1180,6 +1209,7 @@ Stage ID: 04
   20  from          tkrASw  in kindan/Stage
   20  from         AND_SW0  in kindan/Room15
   21  from            item  in kindan/Room3
+  21  from         agbTBOX  in kindan/Room3
   24  from         takara4  in kindan/Stage
   24  from           TagEv  in kindan/Stage
   24  from         AttTagB  in kindan/Room13
@@ -1226,6 +1256,7 @@ Stage ID: 04
   39  from              Bb  in kindan/Room13
   39  from              Bb  in kindan/Room13
   78  from         takara6  in kindan/Stage
+  78  from         agbTBOX  in kindan/Room14
   A0  from            gmos  in kindan/Room15
   A0  from         AND_SW0  in kindan/Room15
   A1  from            gmos  in kindan/Room15
@@ -1377,6 +1408,7 @@ Stage ID: 05
   27  from           TagHt  in Siren/Room14
   27  from           TagHt  in Siren/Room14
   27  from           TagHt  in Siren/Room14
+  28  from         Ywarp00  in Siren/Room7
   28  from          AttTag  in Siren/Room7
   28  from          AttTag  in Siren/Room7
   28  from         kytag00  in Siren/Room7
@@ -1411,7 +1443,9 @@ Stage ID: 05
   47  from          kotubo  in Siren/Room0
   63  from       moro_scam  in Siren/Stage (Event)
   74  from         takara6  in Siren/Stage
+  74  from         agbTBOX  in Siren/Room6
   75  from            item  in Siren/Room7
+  75  from         agbTBOX  in Siren/Room7
   80  from           amos2  in Siren/Room0
   80  from           amos2  in Siren/Room0
   80  from           amos2  in Siren/Room0
@@ -1736,6 +1770,8 @@ Stage ID: 06
   78  from         AND_SW2  in M_Dai/Room16
   7B  from         osiBLK0  in M_Dai/Room19
   7C  from         takara6  in M_Dai/Stage
+  7C  from         agbTBOX  in M_Dai/Room7
+  7C  from         agbTBOX  in M_Dai/Room9
   7E  from          ZenS12  in M_Dai/Stage
   7F  from          door12  in M_Dai/Stage
   80  from            item  in M_Dai/Room2
@@ -1772,6 +1808,7 @@ Stage ID: 06
   C0  from           bable  in M_Dai/Room4
   C1  from         MKanoke  in M_Dai/Room4
   C1  from           bable  in M_Dai/Room4
+  CB  from         Ysdls00  in M_Dai/Room0
   CB  from          SW_C00  in M_Dai/Room0
   CB  from          SW_C00  in M_Dai/Room0
   CB  from          SW_C00  in M_Dai/Room0
@@ -1872,6 +1909,7 @@ Stage ID: 07
   1B  from          keyS12  in kaze/Stage
   1E  from           MknjD  in kaze/Room5
   1F  from         takara6  in kaze/Stage
+  1F  from         agbTBOX  in kaze/Room3
   20  from         AND_SW2  in kaze/Room3
   20  from         Fmastr2  in kaze/Room3
   20  from         Fmastr2  in kaze/Room3
@@ -2011,6 +2049,7 @@ Stage ID: 07
   C4  from           c_red  in kaze/Room9
   C4  from           c_red  in kaze/Room9
   CB  from          SW_C00  in kaze/Room0
+  CB  from         Ysdls00  in kaze/Room15
   CB  from          SW_C00  in kaze/Room15
   CB  from          SW_C00  in kaze/Room15
   CB  from          SW_C00  in kaze/Room15
@@ -2583,6 +2622,7 @@ Room Onobuta/Room0
   E1  from          SW_C00  in Onobuta/Room0
   E1  from          AttTag  in Onobuta/Room0/Layer7
 Room Pfigure/Room0
+  E1  from         Ysdls00  in Pfigure/Room0
   E1  from          SW_C00  in Pfigure/Room0
   E1  from          SW_C00  in Pfigure/Room0
   E1  from          SW_C00  in Pfigure/Room0
@@ -2629,6 +2669,23 @@ Stage ID: 0C
   05  from         takara3  in Cave01/Stage
   06  from         takara8  in Cave02/Stage
   07  from         takara2  in Cave03/Stage
+  07  from          s_turu  in Cave03/Room0
+  07  from          s_turu  in Cave03/Room0
+  07  from          s_turu  in Cave03/Room0
+  07  from          s_turu  in Cave03/Room0
+  07  from          s_turu  in Cave03/Room0
+  07  from          s_turu  in Cave03/Room0
+  07  from          s_turu  in Cave03/Room0
+  07  from          s_turu  in Cave03/Room0
+  07  from          s_turu  in Cave03/Room0
+  07  from          s_turu  in Cave03/Room0
+  07  from          s_turu  in Cave03/Room0
+  07  from          s_turu  in Cave03/Room0
+  07  from          s_turu  in Cave03/Room0
+  07  from          s_turu  in Cave03/Room0
+  07  from          s_turu  in Cave03/Room0
+  07  from          s_turu  in Cave03/Room0
+  07  from          s_turu  in Cave03/Room0
   08  from         takara7  in Cave04/Stage
   0A  from          tkrCTf  in TF_01/Stage
   0B  from          tkrCTf  in TF_02/Stage
@@ -2640,6 +2697,10 @@ Stage ID: 0C
   19  from         c_green  in TyuTyu/Room0
   19  from         c_green  in TyuTyu/Room0
   19  from         c_green  in TyuTyu/Room0
+  20  from          s_turu  in Cave03/Room0
+  20  from          s_turu  in Cave03/Room0
+  20  from          s_turu  in Cave03/Room0
+  20  from          s_turu  in Cave03/Room0
   20  from           Dsaku  in Cave03/Room0
   21  from           Dsaku  in Cave03/Room0
   22  from         Zenshut  in TF_01/Stage
@@ -2667,6 +2728,8 @@ Stage ID: 0C
   80  from          SW_C00  in TF_01/Room0
   80  from          SW_C00  in TF_01/Room0
   80  from          SW_C00  in TF_01/Room0
+  80  from         Ysdls00  in TF_01/Room0
+  80  from         Ysdls00  in TF_02/Room0
   80  from          SW_C00  in TF_02/Room0
   80  from          SW_C00  in TF_02/Room0
   80  from          SW_C00  in TF_02/Room0
@@ -2685,6 +2748,7 @@ Stage ID: 0C
   80  from          SW_C00  in WarpD/Room0
   80  from          SW_C00  in WarpD/Room0
   80  from          SW_C00  in WarpD/Room0
+  80  from         Ysdls00  in WarpD/Room0
   81  from         Kbota_A  in Cave01/Room1
   81  from            Fire  in Cave01/Room1
   81  from         AND_SW0  in Cave01/Room1
@@ -2838,6 +2902,7 @@ Stage ID: 0C
   B6  from              Bk  in TF_02/Room2
   B7  from              Bk  in TF_02/Room2
 Room Cave01/Room0
+  E0  from         Ysdls00  in Cave01/Room0
   E0  from          SW_C00  in Cave01/Room0
   E0  from          SW_C00  in Cave01/Room0
   E0  from          SW_C00  in Cave01/Room0
@@ -2858,6 +2923,7 @@ Room Cave02/Room0
   E0  from          SW_C00  in Cave02/Room0
   E0  from          SW_C00  in Cave02/Room0
   E0  from          SW_C00  in Cave02/Room0
+  E0  from         Ysdls00  in Cave02/Room0
   E1  from         magtail  in Cave02/Room0
   E1  from         AND_SW2  in Cave02/Room0
   E1  from         AND_SW2  in Cave02/Room0
@@ -2892,6 +2958,7 @@ Room Cave02/Room0
   EA  from             mo2  in Cave02/Room0
   EA  from         AND_SW2  in Cave02/Room0
 Room Cave03/Room0
+  E0  from         Ysdls00  in Cave03/Room0
   E0  from          SW_C00  in Cave03/Room0
   E0  from          SW_C00  in Cave03/Room0
   E0  from          SW_C00  in Cave03/Room0
@@ -2900,8 +2967,10 @@ Room Cave03/Room0
   E0  from          SW_C00  in Cave03/Room0
   E0  from          SW_C00  in Cave03/Room0
   E0  from          SW_C00  in Cave03/Room0
+  E0  from         Ysdls00  in Cave03/Room0
   E0  from          SW_C00  in Cave03/Room0
 Room Cave04/Room0
+  E0  from         Ysdls00  in Cave04/Room0
   E0  from          SW_C00  in Cave04/Room0
   E0  from          SW_C00  in Cave04/Room0
   E0  from          SW_C00  in Cave04/Room0
@@ -2946,36 +3015,42 @@ Room Cave04/Room0
   E3  from           keeth  in Cave04/Room0
   E4  from         AND_SW2  in Cave04/Room0
 Room Fairy01/Room0
+  E0  from         Ysdls00  in Fairy01/Room0
   E0  from          SW_C00  in Fairy01/Room0
   E0  from          SW_C00  in Fairy01/Room0
   E0  from          SW_C00  in Fairy01/Room0
   E0  from          SW_C00  in Fairy01/Room0
   E0  from          SW_C00  in Fairy01/Room0
 Room Fairy02/Room0
+  E0  from         Ysdls00  in Fairy02/Room0
   E0  from          SW_C00  in Fairy02/Room0
   E0  from          SW_C00  in Fairy02/Room0
   E0  from          SW_C00  in Fairy02/Room0
   E0  from          SW_C00  in Fairy02/Room0
   E0  from          SW_C00  in Fairy02/Room0
 Room Fairy03/Room0
+  E0  from         Ysdls00  in Fairy03/Room0
   E0  from          SW_C00  in Fairy03/Room0
   E0  from          SW_C00  in Fairy03/Room0
   E0  from          SW_C00  in Fairy03/Room0
   E0  from          SW_C00  in Fairy03/Room0
   E0  from          SW_C00  in Fairy03/Room0
 Room Fairy04/Room0
+  E0  from         Ysdls00  in Fairy04/Room0
   E0  from          SW_C00  in Fairy04/Room0
   E0  from          SW_C00  in Fairy04/Room0
   E0  from          SW_C00  in Fairy04/Room0
   E0  from          SW_C00  in Fairy04/Room0
   E0  from          SW_C00  in Fairy04/Room0
 Room Fairy05/Room0
+  E0  from         Ysdls00  in Fairy05/Room0
   E0  from          SW_C00  in Fairy05/Room0
   E0  from          SW_C00  in Fairy05/Room0
   E0  from          SW_C00  in Fairy05/Room0
   E0  from          SW_C00  in Fairy05/Room0
   E0  from          SW_C00  in Fairy05/Room0
 Room Fairy06/Room0
+  E0  from         Ysdls00  in Fairy06/Room0
   E0  from          SW_C00  in Fairy06/Room0
   E0  from          SW_C00  in Fairy06/Room0
   E0  from          SW_C00  in Fairy06/Room0
@@ -2986,6 +3061,7 @@ Room ITest62/Room0
   E3  from              Bk  in ITest62/Room0
   E4  from             mo2  in ITest62/Room0
   E5  from              Tn  in ITest62/Room0
+  E6  from         Ysdls00  in ITest62/Room0
   E6  from          SW_C00  in ITest62/Room0
   E6  from          SW_C00  in ITest62/Room0
   E6  from          SW_C00  in ITest62/Room0
@@ -3007,6 +3083,7 @@ Room MiniHyo/Room0
   E0  from          SW_C00  in MiniHyo/Room0
   E0  from          SW_C00  in MiniHyo/Room0
   E0  from          SW_C00  in MiniHyo/Room0
+  E0  from         Ysdls00  in MiniHyo/Room0
   E0  from          SW_C00  in MiniHyo/Room0
   EC  from         ootubo1  in MiniHyo/Room0
 Room MiniKaz/Room0
@@ -3018,6 +3095,7 @@ Room MiniKaz/Room0
   E0  from          SW_C00  in MiniKaz/Room0
   E0  from          SW_C00  in MiniKaz/Room0
   E0  from          SW_C00  in MiniKaz/Room0
+  E0  from         Ysdls00  in MiniKaz/Room0
   E0  from          SW_C00  in MiniKaz/Room0
   E0  from           TagHt  in MiniKaz/Room0
   E1  from         magtail  in MiniKaz/Room0
@@ -3029,6 +3107,7 @@ Room MiniKaz/Room0
 Room TF_01/Room1
   E0  from          SW_C00  in TF_01/Room1/Layer8
 Room TF_03/Room0
+  E0  from         Ysdls00  in TF_03/Room0
   E0  from          SW_C00  in TF_03/Room0
   E0  from          SW_C00  in TF_03/Room0
   E0  from          SW_C00  in TF_03/Room0
@@ -3045,6 +3124,7 @@ Room TF_04/Room0
   E0  from          SW_C00  in TF_04/Room0
   E0  from          SW_C00  in TF_04/Room0
   E0  from          SW_C00  in TF_04/Room0
+  E0  from         Ysdls00  in TF_04/Room0
   E1  from         MhmrSW0  in TF_04/Room0
   E3  from         MhmrSW0  in TF_04/Room0
   E5  from         MhmrSW0  in TF_04/Room0
@@ -3068,6 +3148,7 @@ Room TyuTyu/Room0
   E0  from          SW_C00  in TyuTyu/Room0
   E0  from          SW_C00  in TyuTyu/Room0
   E0  from          SW_C00  in TyuTyu/Room0
+  E0  from         Ysdls00  in TyuTyu/Room0
 Stage ID: 0D
   01  from         takara7  in Cave05/Stage
   02  from          tkrAGc  in Cave07/Stage
@@ -3106,12 +3187,14 @@ Stage ID: 0D
   06  from         AND_SW2  in SubD42/Room0
   0B  from          tkrCTf  in Cave09/Room20
   0C  from          tkrCTf  in Cave09/Room20
+  0C  from         Ysdls00  in Cave09/Room20
   0C  from           LTag1  in Cave09/Room20
   0C  from           LTag1  in Cave09/Room20
   0C  from           LTag1  in Cave09/Room20
   0C  from           LTag1  in Cave09/Room20
   0D  from         MkieBAB  in Cave09/Room20
   0E  from         takara3  in Cave10/Room20
+  0E  from         Ysdls00  in Cave10/Room20
   47  from         takara5  in SubD71/Stage
   47  from         AND_SW0  in SubD71/Room0
   47  from            Puti  in SubD71/Room0
@@ -3127,6 +3210,8 @@ Stage ID: 0D
   80  from          SW_C00  in SubD43/Room0
   80  from          SW_C00  in SubD43/Room0
   80  from          SW_C00  in SubD43/Room0
+  80  from         Ysdls00  in SubD43/Room0
+  80  from         Ysdls00  in TF_06/Room0
   80  from          SW_C00  in TF_06/Room0
   80  from          SW_C00  in TF_06/Room0
   80  from          SW_C00  in TF_06/Room0
@@ -3283,6 +3368,7 @@ Stage ID: 0D
   C0  from         Kbota_A  in Asoko/Room0/Layer3
   C0  from          KbotaC  in Asoko/Room0/Layer3
 Room Cave05/Room0
+  E0  from         Ysdls00  in Cave05/Room0
   E0  from          SW_C00  in Cave05/Room0
   E0  from          SW_C00  in Cave05/Room0
   E0  from          SW_C00  in Cave05/Room0
@@ -3295,6 +3381,7 @@ Room Cave07/Room0
   E0  from          SW_C00  in Cave07/Room0
   E0  from          SW_C00  in Cave07/Room0
   E0  from          SW_C00  in Cave07/Room0
+  E0  from         Ysdls00  in Cave07/Room0
   E0  from          SW_C00  in Cave07/Room0/Layer8
   E1  from           wiz_r  in Cave07/Room0
   E1  from          SW_C00  in Cave07/Room0
@@ -3310,6 +3397,7 @@ Room Cave07/Room0
   E5  from           wiz_r  in Cave07/Room0
   E5  from         AND_SW2  in Cave07/Room0
 Room Cave09/Room0
+  E0  from         Ysdls00  in Cave09/Room0
   E0  from          SW_C00  in Cave09/Room0
   E0  from          SW_C00  in Cave09/Room0
   E0  from          SW_C00  in Cave09/Room0
@@ -3328,6 +3416,7 @@ Room Cave09/Room17
   E0  from           wiz_r  in Cave09/Room17
   E0  from          SW_C00  in Cave09/Room17
 Room Cave10/Room0
+  E0  from         Ysdls00  in Cave10/Room0
   E0  from          SW_C00  in Cave10/Room0
   E0  from          SW_C00  in Cave10/Room0
   E0  from          SW_C00  in Cave10/Room0
@@ -3391,6 +3480,7 @@ Room Cave10/Room17
   E0  from          CmTrap  in Cave10/Room17
   E0  from          CmTrap  in Cave10/Room17
 Room Cave11/Room0
+  E0  from         Ysdls00  in Cave11/Room0
   E0  from          SW_C00  in Cave11/Room0
   E0  from          SW_C00  in Cave11/Room0
   E0  from          SW_C00  in Cave11/Room0
@@ -3404,6 +3494,7 @@ Room ITest63/Room0
   E0  from          SW_C00  in ITest63/Room0
   E0  from          SW_C00  in ITest63/Room0
   E0  from          SW_C00  in ITest63/Room0
+  E0  from         Ysdls00  in ITest63/Room0
 Room SubD42/Room0
   E0  from          SW_C00  in SubD42/Room0
   E0  from          SW_C00  in SubD42/Room0
@@ -3413,6 +3504,7 @@ Room SubD42/Room0
   E0  from          SW_C00  in SubD42/Room0
   E0  from          SW_C00  in SubD42/Room0
   E0  from          SW_C00  in SubD42/Room0
+  E0  from         Ysdls00  in SubD42/Room0
   E1  from         AND_SW2  in SubD42/Room0
   E1  from         bonbori  in SubD42/Room0
   E2  from         AND_SW2  in SubD42/Room0
@@ -3429,6 +3521,7 @@ Room SubD71/Room0
   E0  from          SW_C00  in SubD71/Room0
   E0  from          SW_C00  in SubD71/Room0
   E0  from          SW_C00  in SubD71/Room0
+  E0  from         Ysdls00  in SubD71/Room0
   E1  from         AND_SW0  in SubD71/Room0
   E1  from         SW_HIT0  in SubD71/Room0
   E1  from            Puti  in SubD71/Room0

@@ -269,6 +269,7 @@ Stage ID: 0C
   80  from          SW_C00  in SubD44/Room0
   80  from          SW_C00  in SubD44/Room0
   80  from          SW_C00  in SubD44/Room0
+  80  from         Ysdls00  in SubD44/Room0
   81  from         Zenshut  in SubD44/Stage
   94  from         Zenshut  in SubD44/Stage
   94  from           amos2  in SubD44/Room2
@@ -286,6 +287,7 @@ Stage ID: 0C
   97  from            amos  in SubD44/Room5
   CC  from         AND_SW0  in I_SubAN/Room11
 Room Cave06/Room0
+  E0  from         Ysdls00  in Cave06/Room0
   E0  from          SW_C00  in Cave06/Room0
   E0  from          SW_C00  in Cave06/Room0
   E0  from          SW_C00  in Cave06/Room0
@@ -407,7 +409,9 @@ Stage ID: 0D
   80  from          SW_C00  in TF_05/Room0
   80  from          SW_C00  in TF_05/Room0
   80  from          SW_C00  in TF_05/Room0
+  80  from         Ysdls00  in TF_05/Room0
   80  from          SW_C00  in TF_05/Room0
+  80  from         Ywarp00  in TF_05/Room0/Layer8
   81  from          door10  in TF_05/Stage
   81  from         AND_SW2  in TF_05/Room1
   81  from         bonbori  in TF_05/Room1
@@ -504,6 +508,7 @@ Stage ID: 0D
   BF  from         Zenshut  in TF_07/Stage
   BF  from          door12  in TF_07/Stage
 Room SubD51/Room0
+  E0  from         Ysdls00  in SubD51/Room0
   E0  from          SW_C00  in SubD51/Room0
   E0  from          SW_C00  in SubD51/Room0
   E0  from          SW_C00  in SubD51/Room0
@@ -522,6 +527,7 @@ Room SubD51/Room0
 Room TF_07/Room1
   E0  from         AND_SW2  in TF_07/Room1
   E0  from         AND_SW2  in TF_07/Room1
+  E0  from         Ysdls00  in TF_07/Room1
   E1  from              Tn  in TF_07/Room1
   E1  from              Tn  in TF_07/Room1
   E1  from         AND_SW2  in TF_07/Room1
