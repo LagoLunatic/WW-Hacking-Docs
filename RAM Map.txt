@@ -1012,8 +1012,47 @@ Player's partner's room restart position? ("restart option")
 803C9DA0,4 - Has a pointer to the current stage info from the DZx file (the STAG chunk's only entry).
 
 803C9DE0,F4 - Instance of dEvt_control_c
-
-803C9DF0,2 - Has the event index of the next event about to be started.
+  00,C0 - List of dEvt_order_c
+    Entry Length 0x18
+    8 entries in total.
+    00,2 - dEvt_EventType 0 Talk, 1/A Door/Treasure, 2 Demo, 3 Compulsory, 4 Potential, 5 Item, 6/7/8 Presenting Items?, B Photo, 9 Catch
+    02,2 - dEvt_OrderFlag
+    04,2 - ? (Referenced in dEvt_control_c::setParam)
+    06,2 - ?
+    08,4 - fopAc_ac_c* for Actor 1
+    0C,4 - fopAc_ac_c* for Actor 2
+    10,2 - mEventId, index of the event for this dEvt_order_c instance
+    12,2 - mPriority
+    14,1 - Next dEvt_order_c index to go to in event sequence?
+    15,1 - mEventInfoIdx
+    16,2 - Padding?
+ C0,1 - 
+ C1,1 - Index of the first dEvt_order_c to use
+ C2,1 - mMode (0, 1, 2, 3?)
+ C3,1 - Flag to end an event?
+ C4,4 - dEvt_control_c::setParam uses these to hold Base Processing Class Ids
+ C8,4 - ^
+ CC,4 - ^ (mPtTalk)
+ D0,4 - ^ (mPtItem)
+ D4,1 - mCurStaffId (Used in dEvt_control_c::giveItemCut())
+ D5,1 - ?
+ D6,2 -
+ D8,2 - mEventId (Used in dEvt_control_c::catchCheck())
+ DA,1 - mEventEndSound (Used in dEvt_control_c::demoCheck())
+ DB,1 -
+ DC,1 -
+ DD,1 - ?
+ DE,1 -
+ DF,1 -
+ E0,1 - X/Y/Z Button pressed when presenting an Item?
+ E1,1 - Item ID of the Button Pressed for E0?
+ E2,1 - mbInPhoto (Used in dEvt_control_c::photoCheck())
+ E3,1 - ?
+ E4,4 - Float for adjusting the Culling Distance?
+ E8,2 - Flags for State during Events
+ EA,4 - ?
+ EE,4 - ?
+ F2,2 - Padding? 
 
 803C9ED4 - Event manager start.
 
