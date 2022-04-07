@@ -1312,9 +1312,20 @@ loadRoom__20dStage_roomControl_cFiPUc
 createRoomScene__Fi
   handles actually loading a room
 
-ChkGrpInf__4dBgSFR13cBgS_PolyInfoUl
+
+dBgS::ChkGrpInf(cBgS_PolyInfo &, unsigned long)
   gets group info for a group from a dzb file
   802472ec
+
+cBgS::ChkPolySafe(cBgS_PolyInfo &)
+  ???
+
+dBgS::GetGroundCode(cBgS_PolyInfo &)
+  Returns the ground code of the DZB collision triangle below an actor.
+  e.g. This might return 4 for the ground type that causes the player to respawn.
+
+dBgS::GetAttributeCode(cBgS_PolyInfo &)
+  Returns to attribute code of the DZB collision triangle below an actor.
 
 
 GFSetArray(_GXAttr, void *, unsigned char)
@@ -1390,7 +1401,7 @@ fopAcIt_Judge(void *(*)(void *, void *), void *)
   An example of a function that can be passed as r3 is fpcSch_JudgeByID(void *, void *) - refer to that for an example.
 
 fpcSch_JudgeByID(void *, void *)
-  A callback function that can be passed to fopAcIt_Judge for checking if an actor has a certain unique ID.
+  A callback function that can be passed to fopAcIt_Judge for finding an actor that has a certain unique ID.
   r3 - The actor that is currently being checked by fopAcIt_Judge.
   r4 - A pointer to the unique ID to check for.
   For example you can do this:
@@ -1415,6 +1426,18 @@ fopAcM_SearchByID(unsigned int, fopAc_ac_c **)
 fpcM_IsCreating(unsigned int)
   This function checks if an actor with a given unique ID is in the process of being asynchronously created, but doesn't exist yet. It returns true if it is being spawned, or false otherwise.
   r3 - The unique ID to check for.
+
+fpcSch_JudgeForPName(void *, void *)
+  A callback function that can be passed to fopAcIt_Judge for finding an actor that has a actor ID ("process name").
+  r3 - The actor that is currently being checked by fopAcIt_Judge.
+  r4 - A pointer to the actor ID to check for.
+
+fopAcM_SearchByName(short, fopAc_ac_c **)
+  This function checks if an actor with a given actor ID ("process name") currently exists or not.
+  r3 - The actor ID to check for.
+  r4 - A pointer to where to store the pointer to the actor.
+  This function returns r3 - a boolean for whether the actor exists or not.
+
 
 d_s_play::phase_0
   This handles loading LkD00.arc or LkD01.arc depending on whether event bit 0x2D01 is set or not (for animation set 1 vs 2).
@@ -1584,3 +1607,9 @@ fopAcM_rollPlayerCrash(fopAc_ac_c *, float, unsigned long)
   r4 - Something that affects the sound effect played?
     This is argmuent r4 that gets passed to daPy_lk_c::onFrollCrashFlg, which stores it to the Link entity + 0x3620.
     That variable then gets passed as argument r6 to JAIZelBasic::seStart.
+
+fopAcM_getWaterY(cXyz const *, float *)
+  Checks if an actor is above water, and if so, returns the water's Y position.
+  r3 - Pointer the the actor's position struct.
+  r4 - Pointer on the stack. If there is water, a float containing the water's Y position will be stored to [r4].
+  Returns r3 - A boolean for whether there is water below the position.

@@ -133,6 +133,7 @@
   Format of each DynamicModuleControl:
     Each DynamicModuleControl is 0x2C bytes long.
     0C,4: Pointer to ???
+    10,4: Pointer to where the REL is loaded in RAM.
     1C,4: Pointer to the REL name for this REL (without the .rel extension).
 
 80363120 - List of which files to preload for each stage. (PreLoadInfoT)
