@@ -58,27 +58,40 @@
   0C,2: arg r8 to "SetInf"
     stored to the struct dSnap_Obj+0x1C,2
   0E,2: ? (for comparison)
-  10,1: "FigRoomId"?
+  10,1: Affects which archive to load the figurine's model from. ("FigRoomId")
+		00 - Figure.arc
+		01 - Figure2.arc
+		02 - Figure1.arc
+		03 - Figure0.arc
+		04 - Figure6.arc
+		05 - Figure5.arc
+		06 - Figure3.arc
+		07 - Figure4.arc
+		08 - Figure2a.arc
+		09 - Figure2b.arc
+		0A - Figure6a.arc
+		0B - Figure6b.arc
+		0C - Figure6c.arc
   11,1: ???
-
-8035CEEC,4 - Link's maximum forward movement speed. (17.0)
-  Seems to be used for both running forward and autojumping forward.
-8035D4B8,4 - Link's minimum forward movement speed when doing an autojump. (9.0)
-
-8035C764 - List of Link's animations. (daPy_lk_c::mAnmDataTable)
-  Entry length 8.
-  Argument r4 to setSingleMoveAnime is an example of an index in this list.
-  00,2: ? "under" or "upper" anim?
-  02,2: ? "under" or "upper" anim?
-  04,1: Left hand model index?
-  05,1: Right hand model index?
-  06,2: Texture animation index.
-    This number is an index in list 8035C36C.
 
 8035C36C-8035C61F - List of Link's texture animations. (daPy_lk_c::mTexAnmIndexTable)
   Entry length 4. 0xAD entries in total.
   00,2: File index of the BTP animation from LkAnm.arc to play. (Swaps Link's facial textures out.)
   02,2: File index of the BTK animation from LkAnm.arc to play. (Scrolls Link's pupil UVs around.)
+
+8035C764 - List of Link's animations. (daPy_lk_c::mAnmDataTable)
+  Entry length 8. There are 0xEA entries in total.
+  Argument r4 to setSingleMoveAnime is an example of an index in this list.
+  00,2: Upper body anim. File index of the BCK animation from LkAnm.arc to play.
+  02,2: Lower body anim. File index of the BCK animation from LkAnm.arc to play.
+  04,1: Left hand model index.
+  05,1: Right hand model index.
+  06,2: Texture animation index.
+    This number is an index in list 8035C36C.
+
+8035CEEC,4 - Link's maximum forward movement speed. (17.0)
+  Seems to be used for both running forward and autojumping forward.
+8035D4B8,4 - Link's minimum forward movement speed when doing an autojump. (9.0)
 
 8035F9B8-8035F9F7 - List of Ballad of Gales warp destinations.
   Entry length 7. There are 9 entries in total.
@@ -966,7 +979,8 @@ Stage info format:
     0A,2: Padding?
     0C,40: Huge bitfield of "zone actors".
       The index of a bit in this is the actor's enemy number (officially known as "Set ID").
-      These are set by the onActor function when an enemy is killed, if its enemy number is not FFFF.
+      These are set by the onActor function when an enemy is killed, if its enemy number is not 0xFFFF.
+      Valid values are 0x000 to 0x1FF. Values between 0x200 and 0xFFFE will cause an error.
       These are temporary enemy death flags. Once this is set, the enemy is dead, even if you go through a door and come back. But it will respawn after a stage transition.
 
 803C53B6 - Bit 0001 is for if you're currently in the Phantom Ganon fight?
