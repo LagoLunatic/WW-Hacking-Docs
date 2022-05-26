@@ -16,10 +16,12 @@ Stage ID: 00
   0F  from         Daiocta  in sea/Room20
   0F  from         ky_tag0  in sea/Room20
   10  from         Daiocta  in sea/Room33
+  10  from              Ah  in sea/Room33
   10  from         ky_tag0  in sea/Room33
   11  from         Daiocta  in sea/Room36
   11  from         ky_tag0  in sea/Room36
   12  from         Daiocta  in sea/Room46
+  12  from              Ah  in sea/Room46
   13  from           Oship  in sea/Room16
   14  from           Oship  in sea/Room16
   15  from           Oship  in sea/Room29
@@ -237,6 +239,10 @@ Stage ID: 00
   6B  from             Hr2  in sea/Room38
   6B  from         ky_tag0  in sea/Room38
   6C  from            Ekao  in sea/Room44
+  6C  from              Ah  in sea/Room44/Layer4
+  6C  from              Ah  in sea/Room44/Layer5
+  6C  from              Ah  in sea/Room44/Layer6
+  6C  from              Ah  in sea/Room44/Layer7
   6C  from            Ekao  in sea_T/Room44
   6D  from       fairy_Jmp  in sea/Stage (Event)
   6D  from           TagEv  in sea/Room9

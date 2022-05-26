@@ -794,6 +794,7 @@ Stage ID: 0F
   10  from           MkieK  in K_Test9/Room0
   10  from           MkieK  in K_Test9/Room0
   10  from           MkieK  in K_Test9/Room0
+  10  from              Ah  in K_Testb/Room0
   11  from           MknjD  in K_Test9/Room0
   11  from         Kbota_A  in K_Test9/Room0
   12  from            Ekao  in K_Test9/Room0
@@ -828,6 +829,7 @@ Stage ID: 0F
   64  from              Tn  in K_Testd/Room0
   65  from             mo2  in K_Testd/Room0
   66  from              Bk  in K_Testd/Room0
+  6C  from              Ah  in K_Testb/Room0
   80  from         AND_SW2  in I_TestM/Room0
   80  from         bonbori  in I_TestM/Room0
   A0  from           amos2  in Amos_T/Room0
