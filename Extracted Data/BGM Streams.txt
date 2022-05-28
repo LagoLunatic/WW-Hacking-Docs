@@ -1,0 +1,77 @@
+BGM ID, BGM name, description of what the BGM is used for
+8000   e3title.afc    Unused E3 Trailer Music
+8001   demo01.afc     Tetra gets dropped into the Outset Island Forest Cutscene Audio
+8002   btdstart.afc   Gohma Intro Theme
+8003   b_clear.afc    Boss Defeated Jingle
+8004   d_07_01.afc    Failing to Rescue your Sister Cutscene Audio
+8005   go_maju.afc    Cutscene audio for being chucked into the Forsaken Fortress by Tetra
+8006   mj_demo1.afc   Cutscene overlooking the Forsaken Fortress with Tetra Cutscene Music
+8007   kindan_s.afc   Kalle Demos Intro Theme
+8008   bird_s.afc     Start of Helmaroc King Phase Two
+8009   dea_st.afc     Gohdan Introduction Cutscene Audio
+800A   m_14_01.afc    Meeting the Deku Tree and Link looks surprised as he speaks Hylian Jingle
+800B   m_14_02.afc    Deku Tree Cutscene Music
+800C   m_14_03.afc    Koroks Appear Cutscene Audio
+800D   m_14_04.afc    Finding out Makar is Kidnapped Cutscene Music
+800E   m_14_05.afc    Still distressed Deku Tree Music that plays after Deku Tree Spawns the Leaf
+800F   rane_s.afc     Molgera Intro Cutscene Audio
+8010   m_15_01.afc    Returning Makar to the Deku Tree Cutscene Audio
+8011   m_15_02.afc    Returning Makar to the Deku Tree Cutscene Music
+8012   m_15_03.afc    Korok Ceremony Cutscene Audio
+8013   m_15_04.afc    Koroks Soaring to the skies Cutscene Music
+8014   d_04_01.afc    Aryll gets taken by the Helmaroc King Cutscene Audio
+8015   d_04_02.afc    Looping Song for when you watch Link's Sad face as his Sister gets taken away
+8016   d_08_01.afc    King of Red Lions Intro Music 1
+8017   d_08_02.afc    King of Red Lions Intro Music 2
+8018   d_08_03.afc    King of Red Lions Intro Music 3
+8019   bstclear.afc   Boss Gohdan Defeated Jingle
+801A   dk_clear.afc   Boss Helmaroc King Defeated Jingle
+801B   bwdclear.afc   Boss Molgera Defeated Jingle
+801C   d_05_01.afc    Sailing Away from Outset Island with the Pirates Cutscene Audio
+801D   m_24_01.afc    Ganondorf turns around in his hut on Forsaken Fortress Cutscene Music
+801E   m_24_02.afc    Dramatic Cutscene Audio for when Link tries to stab Ganondorf in his hut
+801F   m_24_03.afc    Ganondorf slaps Link, making him fly across the room Cutscene Music
+8020   m_24_04.afc    Tetra's Sneak Attack on Ganondorf Cutscene Music
+8021   m_24_05.afc    Ganondorf finds out Tetra is Zelda Cutscene Music
+8022   m_24_06.afc    Valoo and Ritos saves them and burns down Ganon's hut Cutscene Audio
+8023   m_33_01.afc    Opening the Portal to Hyrule with the Full Triforce Cutscene Music
+8024   1tale.afc      Legendary Hero (Intro)
+8025   demo19.afc     Cutscene Audio for raising the Tower of Gods
+8026   d_25_01.afc    Hyrule Castle King Daphnes and Zelda Reveal Music 1
+8027   d_25_02.afc    Hyrule Castle King Daphnes and Zelda Reveal Music 2
+8028   d_25_03.afc    Hyrule Castle Tetra to Zelda Cutscene Audio
+8029   d_25_04.afc    Zelda's Lullaby
+802A   d_18_01.afc    Jabun's Cutscene Music
+802B   d_26_01.afc    Fairy Queen Intro Jingle
+802C   d_26_02.afc    Fairy Queen Cutscene Music
+802D   rescue_1.afc   Rescuing your sister from the Forsaken Fortress Cutscene Music 1
+802E   rescue_2.afc   Triumphant Fanfare when the Pirates arrive
+802F   rescue_3.afc   Tetra noticing the Master Sword on Link's back Cutscene Music 2
+8030   rescue_4.afc   Aryll Freed, Tetra telling you to beat the Helmaroc King Cutscene Music 3
+8031   rescue_5.afc   Door closes, water starts raising and Helmaroc comes down Cutscene Audio
+8032   m_44_01.afc    Descending down into Hyrule for the first time Cutscene Audio
+8033   43sono2.afc    Farewell Hyrule King
+8034   bp_start.afc   Jalhalla Intro Theme
+8035   m_27_01.afc    Laruto's Cutscene Music
+8036   m_28_01.afc    Medli awakens as a sage dream Cutscene Audio
+8037   m_28_02.afc    Medli wakes up and talks about Komali Cutscene Music
+8038   m_29_01.afc    Medli Reawakens the power of the Master Sword Cutscene Audio
+8039   m_36_01.afc    Cutscene after the Puppet Ganon fight Cutscene Music
+803A   d_34_01.afc    Destroying the Hyrule Castle Barrier Cutscene Audio
+803B   m_30_01.afc    Fado's Cutscene Music
+803C   d_31_01.afc    Makar Playing his Violin and getting Applause
+803D   m_32_01.afc    Makar Reawakens the power of the Master Sword Cutscene Audio
+803E   title.afc      Title Screen Music (No Loops)
+803F   m_42_01.afc    Short Jingle that plays when camera pans to Link's Triforce during the final battle
+8040   m_42_02.afc    Ganondorf slapping Link's sword out of his hands Cutscene Audio/Music
+8041   m_42_03.afc    Ganondorf Gathering the Full Triforce and approaching it Cutscene Music
+8042   m_42_04.afc    King Daphnes Touching the Triforce before Ganondorf Cutscene Jingle
+8043   m_42_05.afc    Angry Ganondorf getting swords Cutscene Jingle
+8044   m_42_06.afc    Ganondorf turns around to look at you Cutscene Jingle
+8045   m_35_01.afc    Short Ganondorf cutscene before Puppet Ganon Cutscene Audio
+8046   d_35_02.afc    Puppet Ganon Reveal Cutscene Audio
+8047   m_35_03.afc    Short Cutscene where you look at Zelda in Ganondorf's bed Cutscene Audio
+8048   m_35_04.afc    Some Dramatic Drums, also part of the Cutscene before Puppet Ganon
+8049   m_42_07.afc    King Daphnes Wish to the Triforce Cutscene Music
+804A   m_42_08.afc    Ganondorf's laugh when Daphnes gets to the triforce before him
+N/A    m_31_01.afc    Unused Early version of Makar awakening as a sage
