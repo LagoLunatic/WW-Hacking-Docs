@@ -1613,3 +1613,8 @@ fopAcM_getWaterY(cXyz const *, float *)
   r3 - Pointer the the actor's position struct.
   r4 - Pointer on the stack. If there is water, a float containing the water's Y position will be stored to [r4].
   Returns r3 - A boolean for whether there is water below the position.
+
+
+OSExceptionInit
+  Initializes exception handling.
+  80301CFC - nop this line out to disable the default exception handler.

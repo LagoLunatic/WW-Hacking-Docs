@@ -241,6 +241,11 @@ For Link:
 2F1C,4: Pointer to Link's yuchw00.bdl model.
 2F38,4: Pointer to Link's ybafo00.bdl model.
 2F8C,4: Pointer to Link's ymgcs00.bdl model.
+2FDC,2: File index in LkAnm.arc of Link's current upper body animation.
+2FEC,2: File index in LkAnm.arc of Link's current lower body animation.
+2FFC,2: File index in LkAnm.arc of Link's current ??? animation. (ActAnime?)
+300C,2: File index in LkAnm.arc of Link's current ??? animation. (ActAnime?)
+301C,2: File index in LkAnm.arc of Link's current ??? animation. (ActAnime?)
 318C,4: Unique ID of the actor Link is holding above his head.
 3190,4: Pointer to the actor Link is holding above his head.
 31DC,C: Link's PTMF (pointer to member functions) struct.
