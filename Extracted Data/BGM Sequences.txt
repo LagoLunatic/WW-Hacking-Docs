@@ -1,6 +1,6 @@
 BGM ID, BGM name, description of what the BGM is used for
 0000   defaultse.bms      Silence
-0001   i_link.bms         Outset
+0001   i_link.bms         Outset, used after watching the intro but before Tetra falls into the forest
 0002   get.bms            Good item get jingle
 0003   goma_a.bms         Gohma phase 1
 0004   enemy2.bms         Fight with a common land enemy
@@ -13,7 +13,7 @@ BGM ID, BGM name, description of what the BGM is used for
 000B   sea_game.bms       Boating course minigame
 000C   sea_goal.bms       Won the boating course minigame
 000D   sea_fail.bms       Lost the boating course minigame
-000E   i_link2.bms        Outset (exact duplicate)
+000E   i_link2.bms        Outset, used after Tetra falls but before Aryll is kidnapped (exact duplicate of i_link.bms)
 000F   i_maju_j.bms       Got thrown in Forsaken Fortress jail
 0010   goma_b.bms         Gohma phase 2
 0011   house_t.bms        Training with Orca
@@ -84,7 +84,7 @@ BGM ID, BGM name, description of what the BGM is used for
 0052   sea_fail.bms       Lost the bird-man contest minigame (same as boating course)
 0053   elf.bms            Fairy Fountain
 0054   p_goma_b.bms       Rematch Gohma phase 2
-0055   i_link3.bms        Outset alternate
+0055   i_link3.bms        Outset alternate, used after Aryll is kidnapped
 0056   death_vl.bms       Hyrule (very quiet and slow)
 0057   jaboo.bms          Jabun's cave, and the entrance room of Earth/Wind Temples
 0058   subdun.bms         Secret caves
@@ -92,7 +92,7 @@ BGM ID, BGM name, description of what the BGM is used for
 005A   kugutu2.bms        Puppet Ganon phase 2
 005B   kugutu3.bms        Puppet Ganon phase 3
 005C   taraba_intro.bms   Puppet Ganon fake victory fanfare
-005D   get_box.bms        Salvage get jingle
+005D   get_box.bms        Salvage get jingle, also used when the Fishman maps out a sector on your sea chart
 005E   i_maju.bms         Inside Forsaken Fortress 2/3 (same as FF1)
 005F   tak8_mcl.bms       Wind God's Aria by Makar, played when returning to Molgera's room after defeating it
 0060   tak8_mdr.bms       Earth God's Lyric by Medli, played when returning to Jalhalla's room after defeating it
