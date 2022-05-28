@@ -1,5 +1,5 @@
 BGM ID, BGM name, description of what the BGM is used for
-8000   e3title.afc    Unused E3 Trailer Music
+8000   [N/A]          Silence
 8001   demo01.afc     Tetra gets dropped into the Outset Island Forest Cutscene Audio
 8002   btdstart.afc   Gohma Intro Theme
 8003   b_clear.afc    Boss Defeated Jingle
@@ -74,4 +74,5 @@ BGM ID, BGM name, description of what the BGM is used for
 8048   m_35_04.afc    Some Dramatic Drums, also part of the Cutscene before Puppet Ganon
 8049   m_42_07.afc    King Daphnes Wish to the Triforce Cutscene Music
 804A   m_42_08.afc    Ganondorf's laugh when Daphnes gets to the triforce before him
-N/A    m_31_01.afc    Unused Early version of Makar awakening as a sage
+[N/A]  e3title.afc    Unused E3 Trailer Music
+[N/A]  m_31_01.afc    Unused Early version of Makar awakening as a sage
