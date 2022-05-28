@@ -1,4 +1,4 @@
-BGM index, BGM name, description of what the BGM is used for
+BGM ID, BGM name, description of what the BGM is used for
 0000   defaultse.bms      Silence
 0001   i_link.bms         Outset
 0002   get.bms            Good item get jingle
