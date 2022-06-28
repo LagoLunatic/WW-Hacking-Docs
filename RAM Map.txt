@@ -93,6 +93,10 @@
   Seems to be used for both running forward and autojumping forward.
 8035D4B8,4 - Link's minimum forward movement speed when doing an autojump. (9.0)
 
+8035D72C,4 - Link's maximum ? ledge grab height. (110.0)
+8035D730,4 - Link's maximum ? ledge grab height. (130.0)
+8035D734,4 - Link's maximum tall ledge grab height. (170.0)
+
 8035F9B8-8035F9F7 - List of Ballad of Gales warp destinations.
   Entry length 7. There are 9 entries in total.
   00,1: X pos of the sector on the sea chart (-3 to 3).
@@ -195,11 +199,11 @@ g_fopAcTg_Queue:
   01 80376350 Item_set_pos_data_bmshop1 - ?
   02 80376374 Item_set_pos_data_bmshop2 - ?
   03 80376398 Item_set_pos_data_bshop_3 - Beedle's shop with the Bait Bag (on Outset and probably other islands).
-  04 803763bc Item_set_pos_data_bshop_4 - Beedle's shop with ?
-  05 803763e0 Item_set_pos_data_bshop_5 - Beedle's shop with ?
+  04 803763BC Item_set_pos_data_bshop_4 - Beedle's shop with ?
+  05 803763E0 Item_set_pos_data_bshop_5 - Beedle's shop with ?
   06 80376404 Item_set_pos_data_bshop_6 - Beedle's special shop ship on Rock Spire.
   07 80376428 Item_set_pos_data_bshop_7 - ?
-  08 8037644c Item_set_pos_data_rshop_0 - Zunari's shop on Windfall.
+  08 8037644C Item_set_pos_data_rshop_0 - Zunari's shop on Windfall.
 
 80377018-8037705F - List of position offsets(???) for carryable weapons (Boko).
   Entry length 0xC.
@@ -330,6 +334,9 @@ Format of each block of memory in the game heap:
   00,2: Which special effect?
   02,2: 0x8466 here means no special effect.
 803888C8 (3858C8 in main.dol) - List of item get function pointers.
+
+803769E0,200 - Chain texture. (l_chainS3TCTEX)
+8038BD40,200 - Hookshot chain texture. (l_chainS3TCTEX)
 
 8038F8E4,??? - List of Link event actions.
   Entry length 0xC.
@@ -1030,7 +1037,16 @@ Player's partner's room restart position? ("restart option")
   00,C0 - List of dEvt_order_c
     Entry Length 0x18
     8 entries in total.
-    00,2 - dEvt_EventType 0 Talk, 1/A Door/Treasure, 2 Demo, 3 Compulsory, 4 Potential, 5 Item, 6/7/8 Presenting Items?, B Photo, 9 Catch
+    00,2 - dEvt_EventType
+      0 Talk
+      1/A Door/Treasure
+      2 Demo
+      3 Compulsory
+      4 Potential
+      5 Item
+      6/7/8 Presenting Items?
+      9 Catch (for filling a bottle with some contents, such as water or a fairy)
+      B Photo
     02,2 - dEvt_OrderFlag
     04,2 - ? (Referenced in dEvt_control_c::setParam)
     06,2 - ?
@@ -1200,7 +1216,7 @@ Player's partner's room restart position? ("restart option")
 
 803CA7C4,2 - Number of rupees the currently selected shop item costs.
 
-803CA7CE - current displayed num rupees
+803CA7CE,2 - Current displayed num rupees.
 
 803CA7E3,1 - Somehow related to instruction notes displayed on screen when learning a new song? Maybe?
 
@@ -1339,6 +1355,8 @@ Player's true position (this gets copied to the player entity's position every f
   If 803E5461 is not 0, the wind is updated using vars 803E545C,2 and 803E545E,2.
   If 803E5461 is 0 and 803E5460 is not 0, the wind is updated using vars 803E5458,2 and 803E545A,2.
   Otherwise the wind is not updated.
+
+803E5480,4 - Something related to the snow weather effect?
 
 803E5498,1 - Current blue fog state.
   0 - Not initialized yet.

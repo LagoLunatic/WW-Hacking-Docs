@@ -105,7 +105,7 @@ itemGetExecute
 
 dComIfGs_isStageBossEnemy__Fi
   Checks if the boss for a given dungeon stage is dead.
-  Argument r3 is the stage ID/2 of the stage to check.
+  Argument r3 is the stage ID of the stage to check.
 
 check_itemno
   This takes a consumable item ID as an argument, and returns what consumable ID should actually be created.
@@ -1364,6 +1364,17 @@ GXCallDisplayList
 
 GXInitTexObj
   initializes a compiled texture
+  r3 - ?
+  r4 - Pointer to the texture data
+  r5 - Width
+  r6 - Height
+  r7 - Image format
+  r8 - U texture wrap mode
+  r9 - V texture wrap mode
+  r10 - 0?
+
+GXInitTexObjCI
+  initializes a compiled texture that uses a palette
   r3 - ?
   r4 - Pointer to the texture data
   r5 - Width

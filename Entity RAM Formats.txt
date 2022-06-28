@@ -192,7 +192,7 @@ For Link:
   A - Jump attacking
 029C,4: Bitfield
   00000008 - Player has just bonked into something when doing a forward roll.
-  00000080 - ?
+  00000080 - ? (prevents transitioning to the swimming state?)
   00020000 - Player is autojumping after running off a ledge.
   02000000 - Player is currently wearing the iron boots.
 02A0,4: Bitfield
