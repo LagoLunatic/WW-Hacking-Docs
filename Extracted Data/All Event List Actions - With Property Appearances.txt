@@ -1,73 +1,121 @@
 AGB_SW0:
   WAIT:
+    [none]: # Appears in: ADMumi:DEFAULT_AGB_LOOK_ATTENTION, A_mori:DEFAULT_AGB_LOOK_ATTENTION, A_nami:DEFAULT_AGB_LOOK_ATTENTION, A_umikz:DEFAULT_AGB_LOOK_ATTENTION, Abesso:DEFAULT_AGB_LOOK_ATTENTION, Abship:DEFAULT_AGB_LOOK_ATTENTION, Adanmae:DEFAULT_AGB_LOOK_ATTENTION, Amo ...
 ALL:
   DUMMY:
+    [none]: # Appears in: sea:kanran_start
   WAIT:
+    [none]: # Appears in: sea:MELT_ICE, sea:FREEZE_ICE
   dummy:
+    [none]: # Appears in: ADMumi:NORMAL_COMEBACK, ADMumi:SHORT_COMEBACK, ADMumi:MAGMA_COMEBACK, ADMumi:FMASTER_START, ADMumi:DEFAULT_RD_ATTACK, ADMumi:DEFAULT_RD_CRY, ADMumi:DEFAULT_START, ADMumi:WARPT_OPEN, ADMumi:JMP_DEMO, ADMumi:RiddleSound0, ADMumi:RiddleSound30, ADMumi:M ...
 Aj1:
   AJ1_TLK:
+    [none]: # Appears in: Ojhous2:angry, Ojhous:Angry
   DAN:
+    [none]: # Appears in: Ojhous2:angry, Ojhous:Angry
   DUMMY:
+    [none]: # Appears in: Ebesso:ANGRY, K_Test3:ANGRY, K_Test4:ANGRY, K_Test5:ANGRY, K_Test6:ANGRY, K_Test8:ANGRY
   INI_ANGRY:
+    [none]: # Appears in: Ojhous2:angry, Ojhous:Angry
   INVITE:
+    [none]: # Appears in: Ojhous2:angry, Ojhous:Angry
   JMP:
+    [none]: # Appears in: Ojhous2:angry, Ojhous:Angry
   LOK:
+    [none]: # Appears in: Ojhous2:angry, Ojhous:Angry
   SPPRISE:
+    [none]: # Appears in: Ojhous2:angry, Ojhous:Angry
   TALK_MSG:
     msg_num:
       2509 # Appears in: Ojhous2:angry, Ojhous:Angry
   VIVRATE:
+    [none]: # Appears in: Ojhous2:angry, Ojhous:Angry
   WAIT:
+    [none]: # Appears in: Ojhous2:angry, Ojhous:Angry
   dummy:
+    [none]: # Appears in: sea:AJ_SPEAK, sea_E:AJ_SPEAK, sea_T:AJ_SPEAK
 Ajav:
   dummy0:
+    [none]: # Appears in: sea:ajav_uzu, sea_E:ajav_uzu, sea_T:ajav_uzu
   dummy1:
+    [none]: # Appears in: sea:ajav_uzu, sea_E:ajav_uzu, sea_T:ajav_uzu
 Apzl:
   EVENT_END:
+    [none]: # Appears in: Abesso:PUZZLE_RUPEE
   GAME:
+    [none]: # Appears in: Abesso:PUZZLE_GAME
   GETITEM:
+    [none]: # Appears in: Abesso:PUZZLE_RUPEE
   PUSH_A:
+    [none]: # Appears in: Abesso:PUZZLE_RUPEE
   SOUND:
+    [none]: # Appears in: Abesso:PUZZLE_RUPEE
   STOP:
+    [none]: # Appears in: Abesso:PUZZLE_GAME
   TALK:
+    [none]: # Appears in: Abesso:PUZZLE_TALK, Abesso:PUZZLE_RUPEE, Abesso:PUZZLE_RUPEE
   WAIT:
+    [none]: # Appears in: Abesso:PUZZLE_TALK, Abesso:PUZZLE_TALK, Abesso:PUZZLE_GAME, Abesso:PUZZLE_GAME, Abesso:PUZZLE_RUPEE, Abesso:PUZZLE_RUPEE, Abesso:PUZZLE_RUPEE, Abesso:PUZZLE_RUPEE, Abesso:PUZZLE_RUPEE, Abesso:PUZZLE_RUPEE
 Ashut:
   WAIT:
+    [none]: # Appears in: Asoko:P2B_INTRO_2
 Auc1:
   MAIN:
+    [none]: # Appears in: Orichh:AUCTION_START, Orichh:AUCTION_GET_ITEM, Orichh:AUCTION_NO_ITEM, Orichh:AUCTION_START2, Orichh:AUCTION_END2
   WAIT:
+    [none]: # Appears in: Orichh:AUCTION_START, Orichh:AUCTION_GET_ITEM, Orichh:AUCTION_NO_ITEM, Orichh:AUCTION_START2, Orichh:AUCTION_END2
 Auc2:
   MAIN:
+    [none]: # Appears in: Orichh:AUCTION_START, Orichh:AUCTION_GET_ITEM, Orichh:AUCTION_NO_ITEM, Orichh:AUCTION_START2, Orichh:AUCTION_END2
   WAIT:
+    [none]: # Appears in: Orichh:AUCTION_START, Orichh:AUCTION_GET_ITEM, Orichh:AUCTION_NO_ITEM, Orichh:AUCTION_START2, Orichh:AUCTION_END2
 Auc3:
   MAIN:
+    [none]: # Appears in: Orichh:AUCTION_START, Orichh:AUCTION_GET_ITEM, Orichh:AUCTION_NO_ITEM, Orichh:AUCTION_START2, Orichh:AUCTION_END2
   WAIT:
+    [none]: # Appears in: Orichh:AUCTION_START, Orichh:AUCTION_GET_ITEM, Orichh:AUCTION_NO_ITEM, Orichh:AUCTION_START2, Orichh:AUCTION_END2
 Auc4:
   MAIN:
+    [none]: # Appears in: Orichh:AUCTION_START, Orichh:AUCTION_GET_ITEM, Orichh:AUCTION_NO_ITEM, Orichh:AUCTION_START2, Orichh:AUCTION_END2
   WAIT:
+    [none]: # Appears in: Orichh:AUCTION_START, Orichh:AUCTION_GET_ITEM, Orichh:AUCTION_NO_ITEM, Orichh:AUCTION_START2, Orichh:AUCTION_END2
 Auc5:
   MAIN:
+    [none]: # Appears in: Orichh:AUCTION_START, Orichh:AUCTION_GET_ITEM, Orichh:AUCTION_NO_ITEM, Orichh:AUCTION_START2, Orichh:AUCTION_END2
   WAIT:
+    [none]: # Appears in: Orichh:AUCTION_START, Orichh:AUCTION_GET_ITEM, Orichh:AUCTION_NO_ITEM, Orichh:AUCTION_START2, Orichh:AUCTION_END2
 Auc6:
   MAIN:
+    [none]: # Appears in: Orichh:AUCTION_START, Orichh:AUCTION_GET_ITEM, Orichh:AUCTION_NO_ITEM, Orichh:AUCTION_START2, Orichh:AUCTION_END2
   WAIT:
+    [none]: # Appears in: Orichh:AUCTION_START, Orichh:AUCTION_GET_ITEM, Orichh:AUCTION_NO_ITEM, Orichh:AUCTION_START2, Orichh:AUCTION_END2
 Auc7:
   MES_SET:
+    [none]: # Appears in: Orichh:AUCTION_TALK_XY
     MsgNo:
       10220 # Appears in: Orichh:AUCTION_TALK_XY
   WAIT:
+    [none]: # Appears in: Orichh:AUCTION_TALK_XY
 Auction:
   CAMERA_OFF:
+    [none]: # Appears in: Orichh:AUCTION_GET_ITEM, Orichh:AUCTION_END2
   CAMERA_OFF_NPC:
+    [none]: # Appears in: Orichh:AUCTION_NO_ITEM
   CAMERA_TEST:
+    [none]: # Appears in: Orichh:AUCTION_START2
   END:
+    [none]: # Appears in: Orichh:AUCTION_GET_ITEM, Orichh:AUCTION_NO_ITEM, Orichh:AUCTION_END2
   GET_ITEM:
+    [none]: # Appears in: Orichh:AUCTION_GET_ITEM, Orichh:AUCTION_END2
   GET_ITEM_MES:
+    [none]: # Appears in: Orichh:AUCTION_NO_ITEM
   GET_ITEM_NPC:
     Timer:
       60 # Appears in: Orichh:AUCTION_NO_ITEM
   MAIN:
+    [none]: # Appears in: Orichh:AUCTION_START, Orichh:AUCTION_START2
   MES_END:
+    [none]: # Appears in: Orichh:AUCTION_START, Orichh:AUCTION_START, Orichh:AUCTION_START, Orichh:AUCTION_START, Orichh:AUCTION_START, Orichh:AUCTION_GET_ITEM, Orichh:AUCTION_NO_ITEM, Orichh:AUCTION_START2, Orichh:AUCTION_START2, Orichh:AUCTION_START2, Orichh:AUCTION_START2, ...
   MES_SET:
     MsgNo:
       7410 # Appears in: Orichh:AUCTION_START, Orichh:AUCTION_START2
@@ -79,11 +127,15 @@ Auction:
       7432 # Appears in: Orichh:AUCTION_NO_ITEM
       7453 # Appears in: Orichh:AUCTION_END2
   START:
+    [none]: # Appears in: Orichh:AUCTION_START, Orichh:AUCTION_START2
   WAIT:
+    [none]: # Appears in: Orichh:AUCTION_START, Orichh:AUCTION_GET_ITEM, Orichh:AUCTION_START2, Orichh:AUCTION_END2
 Auzu:
   dummy:
+    [none]: # Appears in: sea:ajav_destroy0, sea:ajav_destroy1, sea:ajav_uzu, sea_E:ajav_destroy0, sea_E:ajav_destroy1, sea_E:ajav_uzu, sea_T:ajav_destroy0, sea_T:ajav_destroy1, sea_T:ajav_uzu
 BOMB:
   dummy:
+    [none]: # Appears in: E3ROOP:CANON_TEST, sea:CANON_GAME
 Ba1:
   ACTION:
     ActNo:
@@ -110,6 +162,7 @@ Ba1:
       2 # Appears in: LinkRM:Ganbaru
       3 # Appears in: LinkRM:Ganbaru
   CONTINUE_TALK:
+    [none]: # Appears in: LinkRM:Use_Fairy
   START_TALE1:
     Timer:
       10 # Appears in: LinkRM:tale_1
@@ -123,19 +176,28 @@ Ba1:
       2052 # Appears in: LinkRM:Use_Fairy
       2035 # Appears in: LinkRM:Use_Fairy
   WAIT:
+    [none]: # Appears in: LinkRM:Ba1_Get_Itm, LinkRM:tale_1
     Timer:
       30 # Appears in: LinkRM:Ganbaru
       90 # Appears in: LinkRM:Use_Fairy
 Bb:
   dummy:
+    [none]: # Appears in: A_mori:AMORI_DEMO_1
 BigElf:
   APPEAR:
+    [none]: # Appears in: Fairy01:BIGELF_ARRIVAL, Fairy02:BIGELF_ARRIVAL, Fairy03:BIGELF_ARRIVAL, Fairy04:BIGELF_ARRIVAL, Fairy05:BIGELF_ARRIVAL, Fairy06:BIGELF_ARRIVAL, sea:BIGELF_ARRIVAL2
   EXIT:
+    [none]: # Appears in: Fairy01:BIGELF_ARRIVAL, Fairy02:BIGELF_ARRIVAL, Fairy03:BIGELF_ARRIVAL, Fairy04:BIGELF_ARRIVAL, Fairy05:BIGELF_ARRIVAL, Fairy06:BIGELF_ARRIVAL, sea:BIGELF_ARRIVAL2
   FA1:
+    [none]: # Appears in: Fairy01:BIGELF_ARRIVAL, Fairy02:BIGELF_ARRIVAL, Fairy03:BIGELF_ARRIVAL, Fairy04:BIGELF_ARRIVAL, Fairy05:BIGELF_ARRIVAL, Fairy06:BIGELF_ARRIVAL
   FL_DELETE:
+    [none]: # Appears in: Fairy01:BIGELF_ARRIVAL, Fairy02:BIGELF_ARRIVAL, Fairy03:BIGELF_ARRIVAL, Fairy04:BIGELF_ARRIVAL, Fairy05:BIGELF_ARRIVAL, Fairy06:BIGELF_ARRIVAL, sea:BIGELF_ARRIVAL2
   FL_DM_AF:
+    [none]: # Appears in: Fairy01:BIGELF_ARRIVAL, Fairy02:BIGELF_ARRIVAL, Fairy03:BIGELF_ARRIVAL, Fairy04:BIGELF_ARRIVAL, Fairy05:BIGELF_ARRIVAL, Fairy06:BIGELF_ARRIVAL, sea:BIGELF_ARRIVAL2
   FL_DM_BF:
+    [none]: # Appears in: Fairy01:BIGELF_ARRIVAL, Fairy02:BIGELF_ARRIVAL, Fairy03:BIGELF_ARRIVAL, Fairy04:BIGELF_ARRIVAL, Fairy05:BIGELF_ARRIVAL, Fairy06:BIGELF_ARRIVAL, sea:BIGELF_ARRIVAL2
   FL_DM_MD:
+    [none]: # Appears in: Fairy01:BIGELF_ARRIVAL, Fairy02:BIGELF_ARRIVAL, Fairy03:BIGELF_ARRIVAL, Fairy04:BIGELF_ARRIVAL, Fairy05:BIGELF_ARRIVAL, Fairy06:BIGELF_ARRIVAL, sea:BIGELF_ARRIVAL2
   FL_LINK:
     Timer:
       120 # Appears in: Fairy01:BIGELF_ARRIVAL, Fairy02:BIGELF_ARRIVAL, Fairy03:BIGELF_ARRIVAL, Fairy04:BIGELF_ARRIVAL, Fairy05:BIGELF_ARRIVAL, Fairy06:BIGELF_ARRIVAL, sea:BIGELF_ARRIVAL2
@@ -153,6 +215,7 @@ BigElf:
     Timer:
       30 # Appears in: sea:BIGELF_ARRIVAL2
   WAIT_0:
+    [none]: # Appears in: Fairy01:BIGELF_ARRIVAL, Fairy02:BIGELF_ARRIVAL, Fairy03:BIGELF_ARRIVAL, Fairy04:BIGELF_ARRIVAL, Fairy05:BIGELF_ARRIVAL, Fairy06:BIGELF_ARRIVAL
 Bj6:
   ACTION:
     ActNo:
@@ -168,6 +231,7 @@ Bj6:
       5172 # Appears in: Omori:Calling
       5173 # Appears in: Omori:Calling
   WAIT:
+    [none]: # Appears in: Omori:Calling, Omori:Calling
     Timer:
       30 # Appears in: Omori:Calling
 Bj7:
@@ -218,14 +282,18 @@ Bj7:
     msg_num:
       5162 # Appears in: Ocrogh:Mak_Drg
   WAIT:
+    [none]: # Appears in: Ocrogh:Get_Blu_Btl, Ocrogh:Mak_Drg
 Bk:
   Dummy:
+    [none]: # Appears in: MajyuE:Search_Light_Up, sea:Search_Light_Up
   dummy:
+    [none]: # Appears in: A_mori:AMORI_DEMO_2, M_Dra09:MORI1_EVENT
     DEV_PRM_MASK:
       [15, 5] # Appears in: A_mori:AMORI_DEMO_1
       [15, 7] # Appears in: A_mori:AMORI_DEMO_1
 Bm1:
   360_TRN:
+    [none]: # Appears in: sea:Skn_Islnd
   ACTION:
     Acc_y:
       0.800000011920929  # Appears in: sea:Met_Ryu_Islnd, sea_E:Met_Ryu_Islnd, sea_T:Met_Ryu_Islnd
@@ -287,6 +355,7 @@ Bm1:
     prm_2:
       1 # Appears in: sea:Met_Ryu_Islnd, sea_E:Met_Ryu_Islnd, sea_T:Met_Ryu_Islnd
   CONTINUE_TALK:
+    [none]: # Appears in: sea:Met_Ryu_Islnd, sea:Skn_Islnd, sea:Skn_Islnd, sea_E:Met_Ryu_Islnd, sea_E:Skn_Islnd, sea_E:Skn_Islnd, sea_T:Met_Ryu_Islnd, sea_T:Skn_Islnd, sea_T:Skn_Islnd
     end_num:
       1539 # Appears in: sea:Skn_Islnd, sea_E:Skn_Islnd, sea_T:Skn_Islnd
       1540 # Appears in: sea:Skn_Islnd, sea_E:Skn_Islnd, sea_T:Skn_Islnd
@@ -311,6 +380,7 @@ Bm1:
       3211 # Appears in: sea:yuukaigo
       3213 # Appears in: sea:yuukaigo
   WAIT:
+    [none]: # Appears in: sea:Met_Ryu_Islnd, sea:Met_Ryu_Islnd, sea:Met_Ryu_Islnd, sea:Skn_Islnd, sea:Skn_Islnd, sea:yuukaigo, sea:yuukaigo, sea:yuukaigo, sea:yuukaigo, sea:yuukaigo, sea:yuukaigo, sea:yuukaigo, sea:yuukaigo, sea_E:Met_Ryu_Islnd, sea_E:Met_Ryu_Islnd, sea_E:Met ...
     Timer:
       10 # Appears in: sea:Met_Ryu_Islnd, sea:Skn_Islnd, sea_E:Met_Ryu_Islnd, sea_E:Skn_Islnd, sea_T:Met_Ryu_Islnd, sea_T:Skn_Islnd
       45 # Appears in: sea:Met_Ryu_Islnd, sea_E:Met_Ryu_Islnd, sea_T:Met_Ryu_Islnd
@@ -318,16 +388,23 @@ Bm1:
       20 # Appears in: sea:Skn_Islnd, sea_E:Skn_Islnd, sea_T:Skn_Islnd
       6  # Appears in: sea:Skn_Islnd, sea_E:Skn_Islnd, sea_T:Skn_Islnd
   dummy:
+    [none]: # Appears in: sea:ARRIVAL_TWN, sea:ARRIVAL_TWN2, sea_E:ARRIVAL_TWN, sea_T:ARRIVAL_TWN
 Bm2:
   CLR_TRN:
+    [none]: # Appears in: DmSpot0:YUUKAIGO
   DUMMY:
+    [none]: # Appears in: DmSpot0:YUUKAIGO
   MES_DRW:
+    [none]: # Appears in: DmSpot0:YUUKAIGO
   MES_END:
+    [none]: # Appears in: DmSpot0:YUUKAIGO
   MES_SET:
     MsgNo:
       3203 # Appears in: DmSpot0:YUUKAIGO
   SETANM_TALK01:
+    [none]: # Appears in: DmSpot0:YUUKAIGO
   SET_TRN:
+    [none]: # Appears in: DmSpot0:YUUKAIGO
   TALK:
     MsgNo:
       3205 # Appears in: DmSpot0:YUUKAIGO
@@ -343,8 +420,10 @@ Bm2:
     Timer:
       0 # Appears in: DmSpot0:YUUKAIGO
   WAIT:
+    [none]: # Appears in: DmSpot0:YUUKAIGO
 Bm3:
   WAIT:
+    [none]: # Appears in: Atorizk:Get_Rupee
 Bm4:
   ACTION:
     Accel:
@@ -368,43 +447,63 @@ Bm4:
       7907 # Appears in: Orichh:Kaere_Kaere
       7909 # Appears in: Orichh:Kaere_Kaere
   WAIT:
+    [none]: # Appears in: Opub:Get_Mo3_Ltr, Orichh:Kaere_Kaere, Orichh:Kaere_Kaere, Orichh:Kaere_Kaere, Orichh:Kaere_Kaere, Orichh:Kaere_Kaere, Orichh:Kaere_Kaere, Orichh:Kaere_Kaere, Orichh:Kaere_Kaere
 Bmcon1:
   GET_ITEM:
+    [none]: # Appears in: sea:BMCON_GET_ITEM, sea_E:BMCON_GET_ITEM, sea_T:BMCON_GET_ITEM
   MES_SET:
+    [none]: # Appears in: sea:BMCON_GET_ITEM, sea_E:BMCON_GET_ITEM, sea_T:BMCON_GET_ITEM
     MsgNo:
       10 # Appears in: sea:BMCON_RESULT, sea_E:BMCON_RESULT, sea_T:BMCON_RESULT
   WAIT:
+    [none]: # Appears in: sea:BMCON_RESULT, sea_E:BMCON_RESULT, sea_T:BMCON_RESULT
 Bmcon2:
   MES_SET:
     MsgNo:
       1 # Appears in: sea:BMCON_END, sea:BMCON_END2, sea_E:BMCON_END, sea_E:BMCON_END2, sea_T:BMCON_END, sea_T:BMCON_END2
       2 # Appears in: sea:BMCON_END, sea_E:BMCON_END, sea_T:BMCON_END
   WAIT:
+    [none]: # Appears in: sea:BMCON_END, sea:BMCON_END, sea:BMCON_END, sea:BMCON_END2, sea:BMCON_END2, sea_E:BMCON_END, sea_E:BMCON_END, sea_E:BMCON_END, sea_E:BMCON_END2, sea_E:BMCON_END2, sea_T:BMCON_END, sea_T:BMCON_END, sea_T:BMCON_END, sea_T:BMCON_END2, sea_T:BMCON_END2
 Bms1:
   HEADSWING:
+    [none]: # Appears in: Obombh:BMS_LAND_DEMO
   TALKMSG:
     MsgNo:
       10129 # Appears in: Obombh:BMS_LAND_DEMO
   VIBLATE:
+    [none]: # Appears in: Obombh:BMS_LAND_DEMO
   dummy:
+    [none]: # Appears in: Obombh:BMS_LAND_DEMO, Obombh:BMS_LAND_DEMO
   dummy1:
+    [none]: # Appears in: Obombh:BMS_GET_DEMO
   dummy2:
+    [none]: # Appears in: Obombh:BMS_GET_DEMO
 Bmsw:
   BMSW_GAME:
+    [none]: # Appears in: Atorizk:SHIWAKEGAME, Atorizk:SHIWAKEGAME2
   dummy:
+    [none]: # Appears in: Atorizk:SHIWAKEGAME2
 Bomb:
   dummy:
+    [none]: # Appears in: sea:ajav_destroy0, sea:ajav_destroy1, sea:ajav_uzu, sea_E:ajav_destroy0, sea_E:ajav_destroy1, sea_E:ajav_uzu, sea_T:ajav_destroy0, sea_T:ajav_destroy1, sea_T:ajav_uzu
 Bomb2:
   WAIT:
+    [none]: # Appears in: Adanmae:Eskban
 Bs1:
   CONTINUE_TALK:
+    [none]: # Appears in: Obshop:PUT_FULL_TICKET, Obshop:PUT_PRAICE_TICKET
   GETTICKET:
+    [none]: # Appears in: Obshop:PUT_FULL_TICKET, Obshop:PUT_PRAICE_TICKET
   JNTLOCK:
+    [none]: # Appears in: Obshop:PUT_FULL_TICKET
     prm:
       3 # Appears in: Obshop:PUT_FULL_TICKET
   MANTAN:
+    [none]: # Appears in: Obshop:PUT_FULL_TICKET
   PRAISE:
+    [none]: # Appears in: Obshop:PUT_PRAICE_TICKET
   SETANM:
+    [none]: # Appears in: Obshop:PUT_FULL_TICKET, Obshop:PUT_PRAICE_TICKET, Obshop:PUT_PRAICE_TICKET
   TALKMSG:
     EndMsgNo:
       3956 # Appears in: Obshop:PUT_FULL_TICKET
@@ -417,19 +516,26 @@ Bs1:
     Timer:
       45 # Appears in: Obshop:PUT_PRAICE_TICKET
   dummy:
+    [none]: # Appears in: Obshop:PUT_FULL_TICKET, Obshop:PUT_FULL_TICKET, Obshop:PUT_PRAICE_TICKET, Obshop:PUT_PRAICE_TICKET
   dummy1:
+    [none]: # Appears in: Obshop:BS1_GETDEMO
   dummy2:
+    [none]: # Appears in: Obshop:BS1_GETDEMO
 Bs2:
   dummy1:
+    [none]: # Appears in: Obshop:BS2_GETDEMO
   dummy2:
+    [none]: # Appears in: Obshop:BS2_GETDEMO
 Btsw:
   CONTINUE_TALK:
+    [none]: # Appears in: Atorizk:BTSW_TALK_SUGOI
   TALK_MSG:
     end_msg:
       6810 # Appears in: Atorizk:BTSW_TALK_SUGOI
     msg_num:
       6808 # Appears in: Atorizk:BTSW_TALK_SUGOI
   dummy:
+    [none]: # Appears in: Atorizk:BTSW_TALK_SUGOI, Atorizk:BTSW_TALK_SUGOI
 Buoyr:
   dummy:
     CAST_IN:
@@ -448,6 +554,7 @@ CAMERA:
     BGCheck:
       1 # Appears in: Ebesso:StartCamera, Msmoke:StartCamera, Ojhous2:StartCamera, Ojhous:StartCamera, tincle:StartCamera
   FIXEDFRM:
+    [none]: # Appears in: ADMumi:FMASTER_START, ADMumi:DEFAULT_FM_NPC_GRAB, ADMumi:DEFAULT_FM_GRAB, ADMumi:DEFAULT_FM_SUIKOMI_NPC, ADMumi:DEFAULT_FM_GRAB_FOOT, ADMumi:DEFAULT_FM_GRAB_FOOT, ADMumi:DEFAULT_FM_SW_APEEAR, ADMumi:DEFAULT_PITFALL, ADMumi:DEFAULT_WARP, ADMumi:DEFAUL ...
     AutoForcus:
       0 # Appears in: sea:ARRIVAL_DRG, sea:ARRIVAL_DRG2, sea:ARRIVAL_BRK, sea:ARRIVAL_BRK2
     BGCheck:
@@ -1487,6 +1594,7 @@ CAMERA:
     RelActor:
       'Mk' # Appears in: sea:TELOP_TAURA
   FIXEDPOS:
+    [none]: # Appears in: Cave08:cb_sow, K_Teste:cb_sow, TEST:cb_sow, kaze:cb_sow
     AutoForcus:
       0 # Appears in: A_mori:AMORI_DEMO_1, sea:Met_Ryu_Islnd
     BGCheck:
@@ -1680,6 +1788,7 @@ CAMERA:
     WaitAnyKey:
       1 # Appears in: Pnezumi:TC_JUMP_DEMO
   GETITEM:
+    [none]: # Appears in: ADMumi:DEFAULT_GETITEM, ADMumi:DEFAULT_GIVEITEM, ADMumi:DEFAULT_NPC_NZ_GETITEM, ADMumi:DEFAULT_POST, ADMumi:DEFAULT_TREASURE, ADMumi:DEFAULT_TREASURE2, A_mori:DEFAULT_GETITEM, A_mori:DEFAULT_GIVEITEM, A_mori:DEFAULT_NPC_NZ_GETITEM, A_mori:DEFAULT_POS ...
     Timer1:
       22 # Appears in: ADMumi:DEFAULT_TREASURE_A, A_mori:DEFAULT_TREASURE_A, A_nami:DEFAULT_TREASURE_A, A_umikz:DEFAULT_TREASURE_A, Abesso:DEFAULT_TREASURE_A, Abship:DEFAULT_TREASURE_A, Adanmae:DEFAULT_TREASURE_A, Asoko:DEFAULT_TREASURE_A, Atorizk:DEFAULT_TREASURE_A, Cave0 ...
   ITEM0:
@@ -1687,6 +1796,7 @@ CAMERA:
       1 # Appears in: Ojhous:Ji1_TeachSpRollCut
       5 # Appears in: sea:SO_TEST5
   LOAD:
+    [none]: # Appears in: ADMumi:DEFAULT_POST, ADMumi:DEFAULT_POST, A_mori:DEFAULT_POST, A_mori:DEFAULT_POST, A_nami:DEFAULT_POST, A_nami:DEFAULT_POST, A_umikz:DEFAULT_POST, A_umikz:DEFAULT_POST, Abesso:DEFAULT_POST, Abesso:DEFAULT_POST, Abship:DEFAULT_POST, Abship:DEFAULT_PO ...
     Slot:
       0 # Appears in: Adanmae:MD_FLY, Adanmae:md_cliff, M_Dra09:Md_RopeGet, Orichh:angry, Orichh:bensyou, Orichh:rupee_age, Siren:hha_close, Siren:hsehi1_tact, sea:Met_Ryu_Islnd, sea:Skn_Islnd, sea:bye, sea:runaway, sea_E:Met_Ryu_Islnd, sea_E:Skn_Islnd, sea_T:Met_Ryu_Isln ...
       1 # Appears in: Orichh:bensyou, Pdrgsh:CREATE_DRUG, sea:Skn_Islnd, sea_E:Skn_Islnd, sea_T:Skn_Islnd
@@ -1694,6 +1804,7 @@ CAMERA:
     WaitAnyKey:
       1 # Appears in: ADMumi:MapToolCamera, A_mori:MapToolCamera, A_nami:MapToolCamera, A_umikz:MapToolCamera, Abesso:MapToolCamera, Abship:MapToolCamera, Adanmae:MapToolCamera, Amos_T:MapToolCamera, Asoko:MapToolCamera, Atorizk:MapToolCamera, Cave01:MapToolCamera, Cave02 ...
   PAUSE:
+    [none]: # Appears in: ADMumi:DEFAULT_HINT, ADMumi:DEFAULT_HINT, ADMumi:DEFAULT_HINT2, ADMumi:DEFAULT_HINT2, ADMumi:DEFAULT_GETITEM, ADMumi:DEFAULT_GIVEITEM, ADMumi:DEFAULT_GIVEITEM, ADMumi:DEFAULT_NPC_NZ_ESA, ADMumi:DEFAULT_NPC_NZ_ESA, ADMumi:DEFAULT_NPC_NZ_GETITEM, ADMum ...
     BGCheck:
       3 # Appears in: ADMumi:DEFAULT_SHUTTER_DOOR_12, ADMumi:DEFAULT_SHUTTER_DOOR_10, A_mori:DEFAULT_SHUTTER_DOOR_12, A_mori:DEFAULT_SHUTTER_DOOR_10, A_nami:DEFAULT_SHUTTER_DOOR_12, A_nami:DEFAULT_SHUTTER_DOOR_10, A_umikz:DEFAULT_SHUTTER_DOOR_12, A_umikz:DEFAULT_SHUTTER_D ...
       0 # Appears in: Ebesso:Ji1_linkmove, Ebesso:Ji1_kaiten_exp, Msmoke:Ji1_linkmove, Msmoke:Ji1_kaiten_exp, Ojhous2:Ji1_linkmove, Ojhous:Ji1_linkmove, tincle:Ji1_linkmove, tincle:Ji1_kaiten_exp
@@ -1744,6 +1855,7 @@ CAMERA:
     Type:
       0 # Appears in: ADMumi:OPTION_CHAR_START, A_mori:OPTION_CHAR_START, A_nami:OPTION_CHAR_START, A_umikz:OPTION_CHAR_START, Abesso:OPTION_CHAR_START, Abship:OPTION_CHAR_START, Adanmae:OPTION_CHAR_START, Asoko:OPTION_CHAR_START, Atorizk:OPTION_CHAR_START, Cave01:OPTION_ ...
   RESTOREPOS:
+    [none]: # Appears in: ADMumi:TACT_WINDOW2_SHIP, A_mori:AMORI_DEMO_2, A_mori:TACT_WINDOW2_SHIP, A_nami:TACT_WINDOW2_SHIP, A_umikz:TACT_WINDOW2_SHIP, Abesso:TACT_WINDOW2_SHIP, Abship:TACT_WINDOW2_SHIP, Adanmae:TACT_WINDOW2_SHIP, Adanmae:MD_FLY, Asoko:P2B_ARRIVE_MAJYU, Asoko ...
     BGCheck:
       3 # Appears in: Asoko:RopeGame2Shut, Cave08:LiftMove, kaze:LiftMove
     CtrGap:
@@ -1842,6 +1954,7 @@ CAMERA:
     TransType:
       1 # Appears in: ADMumi:DUNGEON_WARP, A_mori:DUNGEON_WARP, A_nami:DUNGEON_WARP, A_umikz:DUNGEON_WARP, Abesso:DUNGEON_WARP, Abship:DUNGEON_WARP, Adanmae:DUNGEON_WARP, Asoko:DUNGEON_WARP, Atorizk:DUNGEON_WARP, Cave01:DUNGEON_WARP, Cave02:DUNGEON_WARP, Cave03:DUNGEON_WA ...
   SAVE:
+    [none]: # Appears in: ADMumi:DEFAULT_POST, A_mori:DEFAULT_POST, A_nami:DEFAULT_POST, A_umikz:DEFAULT_POST, Abesso:DEFAULT_POST, Abship:DEFAULT_POST, Adanmae:DEFAULT_POST, Asoko:DEFAULT_POST, Atorizk:DEFAULT_POST, Cave01:DEFAULT_POST, Cave02:DEFAULT_POST, Cave03:DEFAULT_PO ...
     Slot:
       0 # Appears in: Adanmae:MD_FLY, Adanmae:md_cliff, M_Dra09:Md_RopeGet, Orichh:angry, Orichh:bensyou, Orichh:rupee_age, Siren:hha_close, Siren:hsehi1_tact, sea:Met_Ryu_Islnd, sea:Skn_Islnd, sea:bye, sea:runaway, sea_E:Met_Ryu_Islnd, sea_E:Skn_Islnd, sea_T:Met_Ryu_Isln ...
       1 # Appears in: Orichh:bensyou, Pdrgsh:CREATE_DRUG, sea:Skn_Islnd, sea_E:Skn_Islnd, sea_T:Skn_Islnd
@@ -1853,6 +1966,7 @@ CAMERA:
     Stoker:
       '@TALKPARTNER' # Appears in: sea:kamome_call
   STYLE:
+    [none]: # Appears in: sea:tagwp3
     Name:
       'FN11' # Appears in: Ojhous2:Ji1_TeachSpRollCut, Ojhous:Ji1_TeachSpRollCut
       'ZZ00' # Appears in: sea:CANON_GAME
@@ -1862,7 +1976,9 @@ CAMERA:
     came:
       'FN02' # Appears in: kenroom:btl_of_swroom2
   TACT:
+    [none]: # Appears in: Otkura:cb_tact, Otkura:cb_tact, Siren:hsehi1_tact, Siren:hsehi1_tact, sea:Md_Tact, sea:Md_Tact
   TALK:
+    [none]: # Appears in: ADMumi:DEFAULT_NPC_NZ_ESA, ADMumi:DEFAULT_NPC_NZ_GETITEM, A_mori:DEFAULT_NPC_NZ_ESA, A_mori:DEFAULT_NPC_NZ_GETITEM, A_nami:DEFAULT_NPC_NZ_ESA, A_nami:DEFAULT_NPC_NZ_GETITEM, A_umikz:DEFAULT_NPC_NZ_ESA, A_umikz:DEFAULT_NPC_NZ_GETITEM, Abesso:DEFAULT_N ...
     Listener:
       '@PLAYER' # Appears in: Adanmae:MD_FLY, Amos_T:Ji1_Speak, Atorizk:BTSW_TALK_SUGOI, Atorizk:Md_ItemGet, Comori:Prl_Flw, Ebesso:Ji1_Speak, Ebesso:Ji1_BadSpeak, Ebesso:Ji1_EndSpeak, I_TestM:Ji1_Speak, I_TestR:Ji1_Speak, I_TestR:Ji1_BadSpeak, K_Test3:Ji1_Speak, K_Test4:Ji1_Spea ...
     Speaker:
@@ -1875,6 +1991,7 @@ CAMERA:
     Timer:
       40 # Appears in: ADMumi:DEFAULT_AGB_LOOK_ATTENTION, A_mori:DEFAULT_AGB_LOOK_ATTENTION, A_nami:DEFAULT_AGB_LOOK_ATTENTION, A_umikz:DEFAULT_AGB_LOOK_ATTENTION, Abesso:DEFAULT_AGB_LOOK_ATTENTION, Abship:DEFAULT_AGB_LOOK_ATTENTION, Adanmae:DEFAULT_AGB_LOOK_ATTENTION, Amo ...
   TWOACTOR0:
+    [none]: # Appears in: Hyrule:nakaniwa
     CtrCus:
       0.05000000074505806 # Appears in: ADMumi:DEFAULT_RD_CRY, A_mori:DEFAULT_RD_CRY, A_nami:DEFAULT_RD_CRY, A_umikz:DEFAULT_RD_CRY, Abesso:DEFAULT_RD_CRY, Abship:DEFAULT_RD_CRY, Adanmae:DEFAULT_RD_CRY, Asoko:DEFAULT_RD_CRY, Atorizk:DEFAULT_RD_CRY, Cave01:DEFAULT_RD_CRY, Cave02:DEFAULT_RD_ ...
     CtrGap:
@@ -2146,6 +2263,7 @@ CAMERA:
       1 # Appears in: Adanmae:Eskban, GanonA:4_door_fin, Hyroom:MtryB_sink, sea:ARRIVAL_BRK, sea:ARRIVAL_BRK2, sea:SALVAGE_GETITEM, sea:SLVG_GETITEM_LEFT, sea:SALVAGE_HAZURE, sea:SLVG_HAZURE_LEFT
       0 # Appears in: Hyroom:MtryB_sink, Hyroom:hy_intro
   UNITRANS:
+    [none]: # Appears in: Pnezumi:NZFALL
     AcceleTimer:
       120 # Appears in: M_DaiB:WARP_WIND_AFTER, M_DragB:WARP_WIND, M_DragB:WARP_WIND_AFTER, SirenB:WARP_WIND, SirenB:WARP_WIND_AFTER, kazeB:WARP_WIND_AFTER, kinBOSS:WARP_WIND, kinBOSS:WARP_WIND_AFTER
     AcceleType:
@@ -3001,11 +3119,13 @@ CAMERA:
       3 # Appears in: LinkRM:Use_Fairy
       6 # Appears in: sea:SO_ESA_XY
   WAIT:
+    [none]: # Appears in: ADMumi:DUNGEON_WARP, A_mori:DUNGEON_WARP, A_nami:DUNGEON_WARP, A_umikz:DUNGEON_WARP, Abesso:DUNGEON_WARP, Abesso:PUZZLE_TALK, Abesso:PUZZLE_TALK, Abesso:PUZZLE_GAME, Abesso:PUZZLE_GAME, Abesso:PUZZLE_RUPEE, Abesso:PUZZLE_RUPEE, Abship:DUNGEON_WARP, A ...
     Timer:
       20 # Appears in: ADMumi:OPTION_CHAR_END, A_mori:OPTION_CHAR_END, A_nami:OPTION_CHAR_END, A_umikz:OPTION_CHAR_END, Abesso:OPTION_CHAR_END, Abship:OPTION_CHAR_END, Adanmae:OPTION_CHAR_END, Amos_T:player_change, Asoko:OPTION_CHAR_END, Atorizk:OPTION_CHAR_END, Cave01:OPT ...
       10 # Appears in: Ojhous2:angry, Pnezumi:NZFALL
       45 # Appears in: Ojhous:Angry
   WATCHACTOR:
+    [none]: # Appears in: ADMumi:DEFAULT_STOP_OPEN, ADMumi:DEFAULT_SWITCH, ADMumi:DEFAULT_SWITCH_NOSOUND, ADMumi:SHOKUDAI_SWITCH, A_mori:DEFAULT_STOP_OPEN, A_mori:DEFAULT_SWITCH, A_mori:DEFAULT_SWITCH_NOSOUND, A_nami:DEFAULT_STOP_OPEN, A_nami:DEFAULT_SWITCH, A_nami:DEFAULT_SW ...
     CtrGap:
       (0.0, 50.0, 0.0) # Appears in: M_Dra09:magma_cam, M_NewD2:magma_cam, Siren:hmos3cam
       (0.0, 80.0, 0.0) # Appears in: ma2room:MOZO_CAM, ma3room:MOZO_CAM, majroom:MOZO_CAM
@@ -3054,17 +3174,24 @@ CREATER:
       'tkrSlv' # Appears in: I_TestM:MAKE_TAG
 Canon:
   Canon_dummy0:
+    [none]: # Appears in: E3ROOP:CANON_TEST
   Canon_game:
+    [none]: # Appears in: sea:CANON_GAME
   dummy:
+    [none]: # Appears in: sea:CANON_GAME
 Cb1:
   CELLOPLAY:
+    [none]: # Appears in: Otkura:cb_tact
   END:
+    [none]: # Appears in: Cave08:MKNJD_K_DEMO, kaze:MKNJD_K_DEMO
     EndMode:
       -2 # Appears in: Otkura:cb_tact
   MSG_END:
+    [none]: # Appears in: Otkura:cb_tact, Otkura:cb_tact, Xboss1:cb_rescue, kinBOSS:cb_rescue
     EndMode:
       1 # Appears in: Otkura:cb_tactCancel, Xboss1:cb_rescue, kinBOSS:cb_rescue
   MSG_SET:
+    [none]: # Appears in: Otkura:cb_tact, Otkura:cb_tactCancel
     MsgNo:
       5408 # Appears in: Otkura:cb_tact
       1452 # Appears in: Otkura:cb_tact
@@ -3121,11 +3248,13 @@ Cb1:
       3.0                # Appears in: Xboss1:cb_rescue, kinBOSS:cb_rescue
       3.5999999046325684 # Appears in: kinBOSS:WARP_WIND
   TURN:
+    [none]: # Appears in: Cave08:cb_sow, K_Teste:cb_sow, TEST:cb_sow, kaze:cb_sow
     Angle:
       180.0 # Appears in: Ekaze:MKNJD_K_DEMO
     Target:
       0 # Appears in: Cave08:cb_tag_message, Ekaze:MKNJD_K_DEMO, M_Dai:cb_tag_message, kaze:cb_tag_message
   WAIT:
+    [none]: # Appears in: Cave08:cb_tag_message, Cave08:cb_tag_message_fm, Cave08:cb_tag_message_sekizo, Cave08:MKNJD_K_DEMO, M_Dai:cb_tag_message, M_Dai:cb_tag_message_fm, M_Dai:cb_tag_message_sekizo, Otkura:cb_tact, Otkura:cb_tact, Otkura:cb_tact, kaze:cb_tag_message, kaze: ...
     Disp:
       0 # Appears in: Ekaze:MKNJD_K_DEMO, Otkura:cb_tact, kaze:MKNJD_K_DEMO
       1 # Appears in: Otkura:cb_tact
@@ -3152,13 +3281,16 @@ Cb1:
       6.0               # Appears in: Xboss1:WARP_WIND
       4.5               # Appears in: sea:ARRIVAL_WND, sea:ARRIVAL_WND2, sea_E:ARRIVAL_WND, sea_T:ARRIVAL_WND
   WARP:
+    [none]: # Appears in: kinBOSS:WARP_WIND
   dummy:
+    [none]: # Appears in: ADMumi:DEFAULT_FM_NPC_GRAB, ADMumi:DEFAULT_FM_GRAB, ADMumi:DEFAULT_FM_GRAB_FOOT, ADMumi:DUNGEON_WARP, A_mori:DEFAULT_FM_NPC_GRAB, A_mori:DEFAULT_FM_GRAB, A_mori:DEFAULT_FM_GRAB_FOOT, A_mori:DUNGEON_WARP, A_nami:DEFAULT_FM_NPC_GRAB, A_nami:DEFAULT_FM_ ...
 Co1:
   ACTION:
     ActNo:
       0 # Appears in: Comori:Prl_Flw
       1 # Appears in: Comori:Red_Ltr
   CONTINUE_TALK:
+    [none]: # Appears in: Comori:Prl_Flw
     end_num:
       6211 # Appears in: Comori:Prl_Flw
       6216 # Appears in: Comori:Prl_Flw
@@ -3169,12 +3301,15 @@ Co1:
       6209 # Appears in: Comori:Prl_Flw
       6205 # Appears in: Comori:Red_Ltr
   WAIT:
+    [none]: # Appears in: Comori:Contact, Comori:Prl_Flw, Comori:Red_Ltr
     Timer:
       30 # Appears in: Comori:Contact
       10 # Appears in: Comori:Prl_Flw
 CyuCyu:
   NEXT_RET:
+    [none]: # Appears in: Omori:CyuCyu_RET, Omori:CyuCyu_STR
   START_RET:
+    [none]: # Appears in: Omori:CyuCyu_RET, Omori:CyuCyu_STR
 DIRECTOR:
   BGM_START:
     BGM_ID:
@@ -3271,7 +3406,9 @@ DIRECTOR:
     Wipe:
       7 # Appears in: M_DaiB:WARP_WIND, M_DaiB:WARP_WIND_AFTER, M_DragB:WARP_WIND, M_DragB:WARP_WIND_AFTER, SirenB:WARP_WIND, SirenB:WARP_WIND_AFTER, kazeB:WARP_WIND, kazeB:WARP_WIND_AFTER, kinBOSS:WARP_WIND, kinBOSS:WARP_WIND_AFTER
   PLAYER_DRAW:
+    [none]: # Appears in: Omori:BOSS_WARPOUT, sea:BOSS_WARPOUT, sea:TOWER_WARPOUT
   PLAYER_NODRAW:
+    [none]: # Appears in: Omori:BOSS_WARPOUT, sea:BOSS_WARPOUT, sea:TOWER_WARPOUT
   SE_START:
     SENUM:
       0 # Appears in: A_mori:MEET_TETORA
@@ -3283,6 +3420,7 @@ DIRECTOR:
     Type:
       1 # Appears in: MajyuE:FIRST_HINT, ma2room:FIRST_HINT2, ma2room:FIRST_HINT3, ma3room:FIRST_HINT2, ma3room:FIRST_HINT3, majroom:FIRST_HINT2, majroom:FIRST_HINT3
   WAIT:
+    [none]: # Appears in: ADMumi:DEFAULT_FM_GRAB, ADMumi:DEFAULT_FM_GRAB_FOOT, ADMumi:DEFAULT_NPC_NZ_ESA, ADMumi:DEFAULT_NPC_NZ_ESA, ADMumi:JMP_DEMO, ADMumi:TIMEWARP, ADMumi:TIMEWARP, ADMumi:TIMEWARP_COMEBACK, ADMumi:TIMEWARP_COMEBACK, A_mori:look_tetra, A_mori:DEFAULT_FM_GRA ...
     Timer:
       118 # Appears in: A_mori:MEET_TETORA
   WIPE:
@@ -3297,11 +3435,17 @@ DIRECTOR:
       0 # Appears in: ADMumi:TIMEWARP, A_mori:TIMEWARP, A_nami:TIMEWARP, A_umikz:TIMEWARP, Abesso:TIMEWARP, Abship:TIMEWARP, Adanmae:TIMEWARP, Asoko:TIMEWARP, Atorizk:TIMEWARP, Cave01:TIMEWARP, Cave02:TIMEWARP, Cave03:TIMEWARP, Cave04:TIMEWARP, Cave05:TIMEWARP, Cave06:TIM ...
 Daiocta:
   DEATH1:
+    [none]: # Appears in: sea:DAIOCTA_DEAD_ELF, sea:DAIOCTA_DEAD
   DEATH2:
+    [none]: # Appears in: sea:DAIOCTA_DEAD_ELF, sea:DAIOCTA_DEAD
   HAKIDASU:
+    [none]: # Appears in: sea:DAIOCTA_SUIKOMI
   SUIKOMI1:
+    [none]: # Appears in: sea:DAIOCTA_SUIKOMI
   SUIKOMI2:
+    [none]: # Appears in: sea:DAIOCTA_SUIKOMI
   WAIT:
+    [none]: # Appears in: sea:DAIOCTA_SUIKOMI
 De1:
   ACTION:
     ActNo:
@@ -3326,6 +3470,7 @@ De1:
       30 # Appears in: Omori:DE_CHUCHU
       6  # Appears in: Omori:DE_CHUCHU
   WAIT:
+    [none]: # Appears in: Omori:contact, Omori:contact, Omori:CyuCyu_RET, Omori:CyuCyu_RET, Omori:CyuCyu_STR, Omori:CyuCyu_STR, Omori:DE_CHUCHU, Omori:DE_CHUCHU, Omori:DE_CHUCHU
     Timer:
       45 # Appears in: Omori:CyuCyu_RET
       30 # Appears in: Omori:DE_CHUCHU, Omori:LIFT_UP
@@ -3334,32 +3479,43 @@ De1:
       35 # Appears in: Omori:DE_CHUCHU
 Doguu:
   DUMMY:
+    [none]: # Appears in: sea:DOGUU_DEMO1, sea:DOGUU_DEMO3, sea:DOGUU_DEMO3, sea:DOGUU_DEMO3, sea:DOGUU_DEMO3, sea:MEGAMI_DEMO, sea:MEGAMI_DEMO
   EYEFLASH:
+    [none]: # Appears in: sea:DOGUU_DEMO1
   JDEMO:
+    [none]: # Appears in: sea:MEGAMI_DEMO
   MESSAGE_KOKOE:
+    [none]: # Appears in: sea:DOGUU_DEMO3
   MESSAGE_OITA:
+    [none]: # Appears in: sea:DOGUU_DEMO3
   SETANGLE:
     angle:
       32768 # Appears in: sea:DOGUU_DEMO1, sea:DOGUU_DEMO3
   SETBALL:
+    [none]: # Appears in: sea:DOGUU_DEMO3
   SETGOAL:
     Posion:
       (0.0, 0.0, 200.0) # Appears in: sea:DOGUU_DEMO1, sea:DOGUU_DEMO3
       (0.0, 0.0, 70.0)  # Appears in: sea:DOGUU_DEMO3
   SETLIGHT:
+    [none]: # Appears in: sea:DOGUU_DEMO3
 Ds1:
   CONTINUE_TALK:
+    [none]: # Appears in: Pdrgsh:PUT_ITEM, Pdrgsh:PUT_ITEM_FAIL
     EndMsgNo:
       7626 # Appears in: Pdrgsh:PUT_ITEM
       7631 # Appears in: Pdrgsh:PUT_ITEM_FAIL
   INITPOS:
+    [none]: # Appears in: Pdrgsh:CREATE_DRUG
   JNTLOCK:
+    [none]: # Appears in: Pdrgsh:CREATE_DRUG, Pdrgsh:CREATE_DRUG
     prm:
       3 # Appears in: Pdrgsh:CREATE_DRUG
   MOVEPOS:
     pos:
       (-60.0, 0.0, -490.0) # Appears in: Pdrgsh:CREATE_DRUG
   PLAYER_HIDE:
+    [none]: # Appears in: Pdrgsh:PUT_ITEM, Pdrgsh:PUT_ITEM_FAIL
     prm:
       1 # Appears in: Pdrgsh:PUT_ITEM, Pdrgsh:PUT_ITEM_FAIL
   SETANM:
@@ -3376,6 +3532,7 @@ Ds1:
       16.0 # Appears in: Pdrgsh:CREATE_DRUG
       0.0  # Appears in: Pdrgsh:CREATE_DRUG
   SHOWITEM:
+    [none]: # Appears in: Pdrgsh:CREATE_DRUG
   TALKMSG:
     EndMsgNo:
       7625 # Appears in: Pdrgsh:PUT_ITEM
@@ -3383,55 +3540,91 @@ Ds1:
     MsgNo:
       7619 # Appears in: Pdrgsh:PUT_ITEM, Pdrgsh:PUT_ITEM_FAIL
   dummy:
+    [none]: # Appears in: Pdrgsh:CREATE_DRUG, Pdrgsh:CREATE_DRUG, Pdrgsh:PUT_ITEM, Pdrgsh:PUT_ITEM, Pdrgsh:PUT_ITEM_FAIL, Pdrgsh:PUT_ITEM_FAIL
   dummy1:
+    [none]: # Appears in: Pdrgsh:GET_DRUG
   dummy2:
+    [none]: # Appears in: Pdrgsh:GET_DRUG
 EXTRA:
   dummy:
+    [none]: # Appears in: K_Testb:SA5_TALK_XY, Opub:SA5_TALK_XY, sea:SA5_TALK_XY
 Eskban:
   AFTER_EXPLOTION:
+    [none]: # Appears in: Adanmae:Eskban
   BEFORE_EXPLOTION:
+    [none]: # Appears in: Adanmae:Eskban
 Figure:
   MES_SET:
     MsgNo:
       0 # Appears in: Pfigure:FIGURE_CHECK, figureA:FIGURE_CHECK, figureB:FIGURE_CHECK, figureC:FIGURE_CHECK, figureD:FIGURE_CHECK, figureE:FIGURE_CHECK, figureF:FIGURE_CHECK, figureG:FIGURE_CHECK
   OFF_PLR:
+    [none]: # Appears in: Pfigure:FIGURE_CHECK, figureA:FIGURE_CHECK, figureB:FIGURE_CHECK, figureC:FIGURE_CHECK, figureD:FIGURE_CHECK, figureE:FIGURE_CHECK, figureF:FIGURE_CHECK, figureG:FIGURE_CHECK
   ON_PLR:
+    [none]: # Appears in: Pfigure:FIGURE_CHECK, figureA:FIGURE_CHECK, figureB:FIGURE_CHECK, figureC:FIGURE_CHECK, figureD:FIGURE_CHECK, figureE:FIGURE_CHECK, figureF:FIGURE_CHECK, figureG:FIGURE_CHECK
 Fire:
   OFF:
+    [none]: # Appears in: ADMumi:fire_off_cam, ADMumi:fire_off_cam_ws, A_mori:fire_off_cam, A_mori:fire_off_cam_ws, A_nami:fire_off_cam, A_nami:fire_off_cam_ws, A_umikz:fire_off_cam, A_umikz:fire_off_cam_ws, Abesso:fire_off_cam, Abesso:fire_off_cam_ws, Abship:fire_off_cam, Ab ...
   ON:
+    [none]: # Appears in: ADMumi:fire_on_cam, A_mori:fire_on_cam, A_nami:fire_on_cam, A_umikz:fire_on_cam, Abesso:fire_on_cam, Abship:fire_on_cam, Adanmae:fire_on_cam, Asoko:fire_on_cam, Atorizk:fire_on_cam, Cave01:fire_on_cam, Cave02:fire_on_cam, Cave03:fire_on_cam, Cave04:f ...
   WAIT:
+    [none]: # Appears in: ADMumi:fire_off_cam, ADMumi:fire_off_cam, ADMumi:fire_off_cam_ws, ADMumi:fire_off_cam_ws, ADMumi:fire_on_cam, ADMumi:fire_on_cam, A_mori:fire_off_cam, A_mori:fire_off_cam, A_mori:fire_off_cam_ws, A_mori:fire_off_cam_ws, A_mori:fire_on_cam, A_mori:fir ...
 Fmaster:
   CLOSE:
+    [none]: # Appears in: ADMumi:FMASTER_START, A_mori:FMASTER_START, A_nami:FMASTER_START, A_umikz:FMASTER_START, Abesso:FMASTER_START, Abship:FMASTER_START, Adanmae:FMASTER_START, Asoko:FMASTER_START, Atorizk:FMASTER_START, Cave01:FMASTER_START, Cave02:FMASTER_START, Cave03 ...
   DELETE:
+    [none]: # Appears in: ADMumi:FMASTER_START, A_mori:FMASTER_START, A_nami:FMASTER_START, A_umikz:FMASTER_START, Abesso:FMASTER_START, Abship:FMASTER_START, Adanmae:FMASTER_START, Asoko:FMASTER_START, Atorizk:FMASTER_START, Cave01:FMASTER_START, Cave02:FMASTER_START, Cave03 ...
   Dummy:
+    [none]: # Appears in: ADMumi:FMASTER_START, ADMumi:DEFAULT_FM_NPC_GRAB, ADMumi:DEFAULT_FM_GRAB, ADMumi:DEFAULT_FM_SUIKOMI_NPC, ADMumi:DEFAULT_FM_GRAB_FOOT, ADMumi:DEFAULT_FM_GRAB_FOOT, ADMumi:DEFAULT_FM_SW_APEEAR, A_mori:FMASTER_START, A_mori:DEFAULT_FM_NPC_GRAB, A_mori:D ...
   GRAB_FOOT:
+    [none]: # Appears in: ADMumi:DEFAULT_FM_GRAB_FOOT, A_mori:DEFAULT_FM_GRAB_FOOT, A_nami:DEFAULT_FM_GRAB_FOOT, A_umikz:DEFAULT_FM_GRAB_FOOT, Abesso:DEFAULT_FM_GRAB_FOOT, Abship:DEFAULT_FM_GRAB_FOOT, Adanmae:DEFAULT_FM_GRAB_FOOT, Asoko:DEFAULT_FM_GRAB_FOOT, Atorizk:DEFAULT_F ...
   OPEN:
+    [none]: # Appears in: ADMumi:FMASTER_START, A_mori:FMASTER_START, A_nami:FMASTER_START, A_umikz:FMASTER_START, Abesso:FMASTER_START, Abship:FMASTER_START, Adanmae:FMASTER_START, Asoko:FMASTER_START, Atorizk:FMASTER_START, Cave01:FMASTER_START, Cave02:FMASTER_START, Cave03 ...
   PL_OUT:
+    [none]: # Appears in: ADMumi:FMASTER_START, A_mori:FMASTER_START, A_nami:FMASTER_START, A_umikz:FMASTER_START, Abesso:FMASTER_START, Abship:FMASTER_START, Adanmae:FMASTER_START, Asoko:FMASTER_START, Atorizk:FMASTER_START, Cave01:FMASTER_START, Cave02:FMASTER_START, Cave03 ...
   YAYU:
+    [none]: # Appears in: ADMumi:DEFAULT_FM_NPC_GRAB, A_mori:DEFAULT_FM_NPC_GRAB, A_nami:DEFAULT_FM_NPC_GRAB, A_umikz:DEFAULT_FM_NPC_GRAB, Abesso:DEFAULT_FM_NPC_GRAB, Abship:DEFAULT_FM_NPC_GRAB, Adanmae:DEFAULT_FM_NPC_GRAB, Amos_T:DEFAULT_FM_NPC_GRAB, Asoko:DEFAULT_FM_NPC_GRA ...
 GBoard:
   START_CAMERA:
+    [none]: # Appears in: Kaisen:MINIGAME_START
 GIVEMAN:
   SETITEM:
+    [none]: # Appears in: ADMumi:DEFAULT_GIVEITEM, A_mori:DEFAULT_GIVEITEM, A_nami:DEFAULT_GIVEITEM, A_umikz:DEFAULT_GIVEITEM, Abesso:DEFAULT_GIVEITEM, Abship:DEFAULT_GIVEITEM, Adanmae:DEFAULT_GIVEITEM, Asoko:DEFAULT_GIVEITEM, Atorizk:DEFAULT_GIVEITEM, Cave01:DEFAULT_GIVEITEM ...
   WAIT:
+    [none]: # Appears in: ADMumi:DEFAULT_GIVEITEM, A_mori:DEFAULT_GIVEITEM, A_nami:DEFAULT_GIVEITEM, A_umikz:DEFAULT_GIVEITEM, Abesso:DEFAULT_GIVEITEM, Abship:DEFAULT_GIVEITEM, Adanmae:DEFAULT_GIVEITEM, Asoko:DEFAULT_GIVEITEM, Atorizk:DEFAULT_GIVEITEM, Cave01:DEFAULT_GIVEITEM ...
 Gbrg00:
   dummy:
+    [none]: # Appears in: Siren:Kami_R10
 Gdemo20:
   DEAD:
+    [none]: # Appears in: sea:FROM_HYRULE_1
   RETURN_WAIT:
+    [none]: # Appears in: sea:FROM_HYRULE_2
   WAIT2:
+    [none]: # Appears in: sea:TO_HYRULE_WARP
   WAIT_DEAD:
+    [none]: # Appears in: sea:FROM_HYRULE_1
   WARP:
+    [none]: # Appears in: sea:TO_HYRULE_WARP
 Gflag:
   00_dummy:
+    [none]: # Appears in: Ocean:race_start_cam
   01_dummy:
+    [none]: # Appears in: Ocean:race_start_cam
   02_dummy:
+    [none]: # Appears in: Ocean:race_start_cam
   end:
+    [none]: # Appears in: Ocean:race_goal_cam, Ocean:race_fail_cam
   wait:
+    [none]: # Appears in: Ocean:race_goal_cam, Ocean:race_fail_cam
 Ghrwp:
   START_WARP:
+    [none]: # Appears in: Hyrule:TO_SEA_WARP_1, Hyrule:TO_SEA_WARP_2
   WARP:
+    [none]: # Appears in: Hyrule:TO_SEA_WARP_1, Hyrule:TO_SEA_WARP_2
   WARP_ARRIVE:
+    [none]: # Appears in: Hyrule:WARP_ARRIVE
   WARP_ARRIVE_END:
+    [none]: # Appears in: Hyrule:WARP_ARRIVE
 Gp1:
   ACTION:
     ActNo:
@@ -3446,17 +3639,23 @@ Gp1:
       7910 # Appears in: Orichh:Kaere_Kaere
       7726 # Appears in: Orichh:Giv_Rupee
   WAIT:
+    [none]: # Appears in: Orichh:Kaere_Kaere, Orichh:Kaere_Kaere, Orichh:Kaere_Kaere, Orichh:Kaere_Kaere, Orichh:Kaere_Kaere, Orichh:Kaere_Kaere, Orichh:Gp1_Get_Itm
     Timer:
       10 # Appears in: Orichh:Kaere_Kaere
 Grid:
   dummy:
+    [none]: # Appears in: Ocean:race_goal_cam, Ocean:race_fail_cam, sea:ARRIVAL_BRK, sea:ARRIVAL_BRK2, sea:ARRIVAL_TWN, sea:ARRIVAL_TWN2, sea_E:ARRIVAL_BRK, sea_E:ARRIVAL_TWN, sea_T:ARRIVAL_BRK, sea_T:ARRIVAL_TWN
 Gryw00:
   WAIT:
+    [none]: # Appears in: Adanmae:Eskban
 Gtaki:
   dummy:
+    [none]: # Appears in: GTower:PZ_TALK
 Hdai1:
   EFFEND:
+    [none]: # Appears in: Siren:Os_Wakeup, Siren:Os_Finish
   EFFSET:
+    [none]: # Appears in: Siren:Os_Wakeup, Siren:Os_Finish
   MOVE:
     Dist:
       -240.0 # Appears in: Siren:Os_Wakeup
@@ -3465,9 +3664,12 @@ Hdai1:
       -2.5 # Appears in: Siren:Os_Wakeup
       2.5  # Appears in: Siren:Os_Finish
   WAIT:
+    [none]: # Appears in: Siren:Os_Wakeup, Siren:Os_Wakeup, Siren:Os_Finish, Siren:Os_Finish
 Hdai2:
   EFFEND:
+    [none]: # Appears in: Siren:Os1_Wakeup, Siren:Os1_Finish
   EFFSET:
+    [none]: # Appears in: Siren:Os1_Wakeup, Siren:Os1_Finish
   MOVE:
     Dist:
       -240.0 # Appears in: Siren:Os1_Wakeup
@@ -3476,9 +3678,12 @@ Hdai2:
       -2.5 # Appears in: Siren:Os1_Wakeup
       2.5  # Appears in: Siren:Os1_Finish
   WAIT:
+    [none]: # Appears in: Siren:Os1_Wakeup, Siren:Os1_Wakeup, Siren:Os1_Finish, Siren:Os1_Finish
 Hdai3:
   EFFEND:
+    [none]: # Appears in: Siren:Os2_Wakeup, Siren:Os2_Finish
   EFFSET:
+    [none]: # Appears in: Siren:Os2_Wakeup, Siren:Os2_Finish
   MOVE:
     Dist:
       -240.0 # Appears in: Siren:Os2_Wakeup
@@ -3487,16 +3692,22 @@ Hdai3:
       -2.5 # Appears in: Siren:Os2_Wakeup
       2.5  # Appears in: Siren:Os2_Finish
   WAIT:
+    [none]: # Appears in: Siren:Os2_Wakeup, Siren:Os2_Wakeup, Siren:Os2_Finish, Siren:Os2_Finish
 Hha:
   dummy:
+    [none]: # Appears in: Siren:hha_close
 Hlift:
   DUMMY:
+    [none]: # Appears in: Asoko:P2B_TO_GOAL
 Hliftb:
   DUMMY:
+    [none]: # Appears in: Asoko:P2B_TO_GOAL
 Hmos3:
   dummy:
+    [none]: # Appears in: Siren:hmos3cam
 Hr:
   DISP_LINK:
+    [none]: # Appears in: sea:TACT_HT
   DISP_MY:
     AngleY:
       0 # Appears in: sea:TACT_HT
@@ -3509,6 +3720,7 @@ Hr:
     Wind:
       0 # Appears in: sea:TACT_HT
   HIDE_LINK:
+    [none]: # Appears in: sea:TACT_HT
   LOOK:
     Timer:
       25 # Appears in: sea:TACT_HT
@@ -3604,7 +3816,9 @@ Hr:
     MsgNo:
       6409 # Appears in: sea:TACT_HT
   TACT0:
+    [none]: # Appears in: sea:TACT_HT
   TACT1:
+    [none]: # Appears in: sea:TACT_HT
   TURN_LINK:
     Timer:
       15 # Appears in: sea:TACT_HT
@@ -3614,7 +3828,9 @@ Hr:
     TURN_PL:
       0 # Appears in: sea:TACT_HT
   WAIT_1:
+    [none]: # Appears in: sea:TACT_HT
   WAIT_2:
+    [none]: # Appears in: sea:TACT_HT
   WAIT_E:
     Wind:
       0 # Appears in: sea:TACT_HT
@@ -3624,6 +3840,7 @@ Hr:
     WindPrm:
       [-50.0, -60.0, 40.0, 80.0, -120.0] # Appears in: sea:TACT_HT
   WIND1:
+    [none]: # Appears in: sea:TACT_HT
 Hr2:
   CHANGE_0:
     prm0:
@@ -3632,6 +3849,7 @@ Hr2:
     prm0:
       1 # Appears in: sea:PATTEN_RT
   INTRO:
+    [none]: # Appears in: sea:INTRO_RT_F, sea:INTRO_RT
   MOVE_1:
     AngleY:
       16384 # Appears in: sea:TACT0_RT
@@ -3726,6 +3944,7 @@ Hr2:
     WindPrm:
       [0.0, -50.0, 150.0, 0.0, 300.0] # Appears in: sea:TACT1_RT
   SMALL:
+    [none]: # Appears in: sea:TACT0_RT
   SPEAK_1:
     MsgNo:
       6450 # Appears in: sea:TACT0_RT
@@ -3750,6 +3969,7 @@ Hr2:
     StartPos3:
       (0.0, 1780.0, 1500.0) # Appears in: sea:TACT1_RT
   TACT3:
+    [none]: # Appears in: sea:TACT1_RT
   WAIT:
     ANM:
       11 # Appears in: sea:HIT_RT
@@ -3802,12 +4022,15 @@ Hr2:
     Timer:
       120 # Appears in: sea:TACT0_RT
   WAIT_20:
+    [none]: # Appears in: sea:TACT1_RT
   WAIT_21:
     Wind:
       0 # Appears in: sea:TACT1_RT
 Hsh:
   Appear:
+    [none]: # Appears in: Siren:Os_Finish
   Delete:
+    [none]: # Appears in: Siren:Os_Message
   Disp:
     disp:
       'off' # Appears in: Siren:Os_Finish, Siren:Os_Message, Siren:hsehi1_tact
@@ -3815,6 +4038,7 @@ Hsh:
     target:
       '@PLAYER' # Appears in: Siren:Os_Finish, Siren:Os_Message, Siren:hsehi1_tact
   Judge:
+    [none]: # Appears in: Siren:hsehi1_tact
   MsgSet:
     MsgNo:
       1459 # Appears in: Siren:hsehi1_tact
@@ -3825,41 +4049,69 @@ Hsh:
     prm0:
       2 # Appears in: Siren:hsehi1_tact
   WAIT:
+    [none]: # Appears in: Siren:Os_Finish, Siren:Os_Finish, Siren:Os_Finish, Siren:Os_Message, Siren:Os_Message, Siren:hsehi1_tact, Siren:hsehi1_tact, Siren:hsehi1_tact, Siren:hsehi1_tact, Siren:hsehi1_tact, Siren:hsehi1_tact, Siren:hsehi1_tact
 Htobi1:
   OPEN:
+    [none]: # Appears in: Siren:HYSDOOROPEN
   WAIT:
+    [none]: # Appears in: Siren:HYSDOOROPEN, Siren:HYSDOOROPEN
 Htobi2:
   CLOSE:
+    [none]: # Appears in: Cave08:R03DOORCLOSE, K_Testa:R03DOORCLOSE, M_Dai:R03DOORCLOSE, kaze:R03DOORCLOSE
   OPEN:
+    [none]: # Appears in: Cave08:R03DOOROPEN, K_Testa:R03DOOROPEN, M_Dai:R03DOOROPEN, kaze:R03DOOROPEN
   WAIT:
+    [none]: # Appears in: Cave08:R03DOOROPEN, Cave08:R03DOOROPEN, Cave08:R03DOORCLOSE, Cave08:R03DOORCLOSE, K_Testa:R03DOOROPEN, K_Testa:R03DOOROPEN, K_Testa:R03DOORCLOSE, K_Testa:R03DOORCLOSE, M_Dai:R03DOOROPEN, M_Dai:R03DOOROPEN, M_Dai:R03DOORCLOSE, M_Dai:R03DOORCLOSE, kaze ...
   WAIT02:
+    [none]: # Appears in: Cave08:R03DOOROPEN, Cave08:R03DOORCLOSE, kaze:R03DOOROPEN, kaze:R03DOORCLOSE
 Htobi3:
   OPEN:
+    [none]: # Appears in: Cave08:R04DOOROPEN, K_Testa:R04DOOROPEN, M_Dai:R04DOOROPEN, kaze:R04DOOROPEN
   OPEN_INIT:
+    [none]: # Appears in: Cave08:R04DOOROPEN, kaze:R04DOOROPEN
   WAIT:
+    [none]: # Appears in: Cave08:R04DOOROPEN, Cave08:R04DOOROPEN, K_Testa:R04DOOROPEN, K_Testa:R04DOOROPEN, M_Dai:R04DOOROPEN, M_Dai:R04DOOROPEN, kaze:R04DOOROPEN, kaze:R04DOOROPEN
 HyoiKam:
   change:
+    [none]: # Appears in: sea:kamome_call
   descend:
+    [none]: # Appears in: sea:kamome_call
   out_turn:
+    [none]: # Appears in: sea:kamome_out_turn
   wait:
+    [none]: # Appears in: sea:kamome_call, sea:kamome_call
     timer:
       30 # Appears in: sea:kamome_call
 Jb1:
   APPEAR:
+    [none]: # Appears in: Pjavdou:APPEAR
   GRUGRU:
+    [none]: # Appears in: Pjavdou:APPEAR
 Ji1:
   00_control:
+    [none]: # Appears in: Amos_T:Ji1_linkmove, I_TestM:Ji1_linkmove, I_TestR:Ji1_linkmove, I_TestR:Ji1_linkmove2, K_Test3:Ji1_linkmove, K_Test4:Ji1_linkmove, K_Test5:Ji1_linkmove, K_Test6:Ji1_linkmove, K_Test8:Ji1_linkmove
   00_dummy:
+    [none]: # Appears in: Ebesso:Ji1_linkmove, Ebesso:Ji1_Speak, Ebesso:Ji1_StartSpeak, Ebesso:Ji1_BadSpeak, Ebesso:Ji1_EndSpeak, Ebesso:Ji1_kaiten, Ebesso:Ji1_kaiten_exp, Msmoke:Ji1_linkmove, Msmoke:Ji1_Speak, Msmoke:Ji1_StartSpeak, Msmoke:Ji1_BadSpeak, Msmoke:Ji1_EndSpeak,  ...
   01_dummy:
+    [none]: # Appears in: Ebesso:Ji1_linkmove, Ebesso:Ji1_Speak, Ebesso:Ji1_StartSpeak, Ebesso:Ji1_BadSpeak, Ebesso:Ji1_EndSpeak, Ebesso:Ji1_kaiten, Ebesso:Ji1_kaiten_exp, Msmoke:Ji1_linkmove, Msmoke:Ji1_Speak, Msmoke:Ji1_StartSpeak, Msmoke:Ji1_BadSpeak, Msmoke:Ji1_EndSpeak,  ...
   01_speak:
+    [none]: # Appears in: Amos_T:Ji1_Speak, I_TestM:Ji1_Speak, I_TestR:Ji1_Speak, I_TestR:Ji1_BadSpeak, K_Test3:Ji1_Speak, K_Test4:Ji1_Speak, K_Test5:Ji1_Speak, K_Test6:Ji1_Speak, K_Test8:Ji1_Speak
   02_dummy:
+    [none]: # Appears in: Ebesso:Ji1_linkmove, Ebesso:Ji1_StartSpeak, Ebesso:Ji1_BadSpeak, Ebesso:Ji1_EndSpeak, Ebesso:Ji1_kaiten, Msmoke:Ji1_linkmove, Msmoke:Ji1_StartSpeak, Msmoke:Ji1_BadSpeak, Msmoke:Ji1_EndSpeak, Msmoke:Ji1_kaiten, Ojhous2:Ji1_linkmove, Ojhous2:Ji1_StartS ...
   02_speak:
+    [none]: # Appears in: I_TestR:Ji1_Speak, I_TestR:Ji1_BadSpeak
   03_dummy:
+    [none]: # Appears in: Ebesso:Ji1_linkmove, Ebesso:Ji1_EndSpeak, Ebesso:Ji1_kaiten, Msmoke:Ji1_linkmove, Msmoke:Ji1_EndSpeak, Msmoke:Ji1_kaiten, Ojhous2:Ji1_linkmove, Ojhous2:Ji1_EndSpeak, Ojhous2:Ji1_kaiten, Ojhous:Ji1_linkmove, Ojhous:Ji1_EndSpeak, Ojhous:Ji1_kaiten, tin ...
   03_speak:
+    [none]: # Appears in: I_TestR:Ji1_BadSpeak
   04_dummy:
+    [none]: # Appears in: Ebesso:Ji1_EndSpeak, Msmoke:Ji1_EndSpeak, Ojhous2:Ji1_EndSpeak, Ojhous2:Ji1_kaiten, Ojhous:Ji1_EndSpeak, Ojhous:Ji1_kaiten, tincle:Ji1_EndSpeak
   05_dummy:
+    [none]: # Appears in: Ebesso:Ji1_EndSpeak, Msmoke:Ji1_EndSpeak, Ojhous2:Ji1_EndSpeak, Ojhous2:Ji1_ItemGetEnd, Ojhous2:Ji1_ItemGetTalkEnd, Ojhous2:Ji1_SwordGetTalkEnd, Ojhous:Ji1_EndSpeak, Ojhous:Ji1_ItemGetEnd, Ojhous:Ji1_ItemGetTalkEnd, Ojhous:Ji1_SwordGetTalkEnd, tincle ...
   CONTINUETALK:
+    [none]: # Appears in: Ojhous:Ji1_KmonTalk
   CREATEITEM:
+    [none]: # Appears in: Ojhous2:Ji1_ItemGetEnd, Ojhous2:Ji1_ItemGetTalkEnd, Ojhous2:Ji1_SwordGetTalkEnd, Ojhous2:Ji1_TeachSpRollCut, Ojhous:Ji1_ItemGetEnd, Ojhous:Ji1_ItemGetTalkEnd, Ojhous:Ji1_SwordGetTalkEnd
   GAME_MODE:
     prm:
       0 # Appears in: Ojhous2:Ji1_ItemGetEnd, Ojhous2:Ji1_ItemGetTalkEnd, Ojhous:Ji1_ItemGetEnd, Ojhous:Ji1_ItemGetTalkEnd
@@ -3877,9 +4129,11 @@ Ji1:
       0 # Appears in: Ojhous2:Ji1_NormAngFin, Ojhous:Ji1_NormAngFin
       2 # Appears in: Ojhous:Ji1_NormAngFin
   INITPOS:
+    [none]: # Appears in: Ojhous2:Ji1_ItemGetEnd, Ojhous2:Ji1_ItemGetTalkEnd, Ojhous2:Ji1_SwordGetTalkEnd, Ojhous2:Ji1_TeachSpRollCut, Ojhous:Ji1_ItemGetEnd, Ojhous:Ji1_ItemGetTalkEnd, Ojhous:Ji1_SwordGetTalkEnd, Ojhous:Ji1_TeachSpRollCut
     AnmNo:
       -1 # Appears in: Ojhous2:Ji1_pl_backroom, Ojhous:Ji1_pl_backroom
   ROLLAT_CNT:
+    [none]: # Appears in: Ojhous2:Ji1_TeachSpRollCut, Ojhous:Ji1_TeachSpRollCut
   SETANGLE:
     angle:
       0 # Appears in: Ojhous:Ji1_KmonTalk
@@ -3919,30 +4173,43 @@ Ji1:
       2495 # Appears in: Ojhous2:Ji1_NormAngFin, Ojhous:Ji1_NormAngFin
       2399 # Appears in: Ojhous2:Ji1_KmonTalk, Ojhous:Ji1_KmonTalk
   TURN_TO_PLAYER:
+    [none]: # Appears in: Ojhous2:Ji1_KmonTalk, Ojhous:Ji1_KmonTalk
   dummy:
+    [none]: # Appears in: Ojhous2:Ji1_ItemGetEnd, Ojhous2:Ji1_ItemGetEnd, Ojhous2:Ji1_ItemGetEnd, Ojhous2:Ji1_ItemGetTalkEnd, Ojhous2:Ji1_ItemGetTalkEnd, Ojhous2:Ji1_ItemGetTalkEnd, Ojhous2:Ji1_ItemGetTalkEnd, Ojhous2:Ji1_SwordGetTalkEnd, Ojhous2:Ji1_SwordGetTalkEnd, Ojhous2: ...
   dummy0:
+    [none]: # Appears in: Ojhous:Ji1_NormAngFin
 Kamome:
   DUMMY:
+    [none]: # Appears in: DmSpot0:YUUKAIGO, sea:yuukaigo
   Dummy:
+    [none]: # Appears in: DmSpot0:PRESENT1, DmSpot0:PRESENT2, DmSpot0:PRESENT3, sea:Met_Ryu_Islnd, sea:get_telescope, sea:omedeto, sea_E:Met_Ryu_Islnd, sea_T:Met_Ryu_Islnd
   dummy:
+    [none]: # Appears in: sea:BIGELF_ARRIVAL2, sea:eTalk, sea:TACT_HT, sea:TACT0_RT, sea:PATTEN_RT, sea:TACT1_RT, sea:TACTM_RT
 Kbota_A:
   WAIT:
+    [none]: # Appears in: Asoko:P2B_TEST_SWITCH, Asoko:P2B_INTRO
 Kf1:
   ANGRY_START:
     Pos:
       (0.0, 900.0, -620.0) # Appears in: Orichh:angry
   BENSYOU:
+    [none]: # Appears in: Orichh:bensyou
   BENSYOU_START:
     Pos:
       (0.0, 900.0, -620.0) # Appears in: Orichh:bensyou
   CONTNUE_TLK:
+    [none]: # Appears in: Orichh:bensyou, Orichh:bensyou
   GET_OUT:
     Timer:
       20 # Appears in: Orichh:bensyou
   PLYER_MOV:
+    [none]: # Appears in: Orichh:rupee_age
   RUPEE_CNT_END:
+    [none]: # Appears in: Orichh:bensyou
   RUPEE_SET:
+    [none]: # Appears in: Orichh:rupee_age
   START_AGE:
+    [none]: # Appears in: Orichh:rupee_age
   TLK_MSG:
     EndMsg:
       7223 # Appears in: Orichh:bensyou
@@ -3962,11 +4229,14 @@ Kf1:
     Timer:
       35 # Appears in: Orichh:rupee_age
   TSUBO_CNT:
+    [none]: # Appears in: Orichh:bensyou
   WAIT:
+    [none]: # Appears in: Orichh:angry, Orichh:angry, Orichh:angry, Orichh:bensyou, Orichh:bensyou, Orichh:bensyou, Orichh:rupee_age
     Timer:
       20 # Appears in: Orichh:bensyou
 Kg2:
   CREATEITEM:
+    [none]: # Appears in: sea:KG2_GETDEMO
   KGTALK:
     msg_num:
       12613 # Appears in: sea:KG2_START_DEMO
@@ -3984,6 +4254,7 @@ Kg2:
       6.0 # Appears in: sea:CANON_GAME, sea:KG2_CLEAR_DEMO
       8.0 # Appears in: sea:KG2_CLEAR_DEMO, sea:KG2_GETDEMO
   WAIT:
+    [none]: # Appears in: sea:CANON_GAME, sea:CANON_GAME, sea:KG2_START_DEMO, sea:KG2_CLEAR_DEMO, sea:KG2_GETDEMO, sea:KG2_GETDEMO
 Kk1:
   ACTION:
     ActNo:
@@ -4000,17 +4271,26 @@ Kk1:
     Timer:
       30 # Appears in: sea:runaway
   BYE_END:
+    [none]: # Appears in: sea:bye
   BYE_START:
+    [none]: # Appears in: sea:bye, sea:runaway
   CATCH_END:
+    [none]: # Appears in: sea:catch
   CATCH_START:
+    [none]: # Appears in: sea:catch
   OTOBOKE:
+    [none]: # Appears in: sea:otoboke
   PLYER_MOV:
+    [none]: # Appears in: sea:bye, sea:bye_2
   RUN:
     Timer:
       30 # Appears in: sea:run_start, sea:run_start_2
   RUNAWAY_END:
+    [none]: # Appears in: sea:runaway
   RUNAWAY_START:
+    [none]: # Appears in: sea:runaway
   RUN_START:
+    [none]: # Appears in: sea:run_start, sea:run_start_2
   TALK:
     MsgNo:
       7342 # Appears in: sea:TOBOKERU, sea_E:TOBOKERU, sea_T:TOBOKERU
@@ -4020,7 +4300,9 @@ Kk1:
       7342 # Appears in: sea:otoboke
       7341 # Appears in: sea:runaway
   TRN:
+    [none]: # Appears in: sea:bye, sea:runaway
   WAIT:
+    [none]: # Appears in: sea:bye, sea:catch, sea:get_empty_btl, sea:runaway, sea:runaway
     Timer:
       10 # Appears in: sea:bye, sea:otoboke, sea:run_start, sea:run_start_2
       60 # Appears in: sea:otoboke
@@ -4032,8 +4314,10 @@ Kp1:
       1 # Appears in: Orichh:GET_KAKERA_HRT
       0 # Appears in: Orichh:GET_MAGYS_LTTR
   WAIT:
+    [none]: # Appears in: Orichh:GET_KAKERA_HRT, Orichh:GET_MAGYS_LTTR
 Ktarur:
   dummy:
+    [none]: # Appears in: Ocean:race_start_cam, Ocean:race_goal_cam, Ocean:race_fail_cam, sea:SARACE_EXPCAM
 LIGHT:
   ADD_TIME:
     Hour:
@@ -4044,11 +4328,16 @@ LIGHT:
     Weather:
       0 # Appears in: sea:ARRIVAL_BRK, sea:ARRIVAL_BRK2, sea_E:ARRIVAL_BRK, sea_T:ARRIVAL_BRK
   WAIT:
+    [none]: # Appears in: Nitiyou:HO_PREACH, Nitiyou:HO_PREACH, sea:ARRIVAL_BRK, sea:ARRIVAL_BRK2, sea_E:ARRIVAL_BRK, sea_T:ARRIVAL_BRK
 Link:
   0014keep:
+    [none]: # Appears in: ADMumi:DEFAULT_WARP_OPEN, A_mori:DEFAULT_WARP_OPEN, A_nami:DEFAULT_WARP_OPEN, A_umikz:DEFAULT_WARP_OPEN, Abesso:DEFAULT_WARP_OPEN, Abship:DEFAULT_WARP_OPEN, Adanmae:DEFAULT_WARP_OPEN, Amos_T:DEFAULT_WARP_OPEN, Asoko:DEFAULT_WARP_OPEN, Atorizk:DEFAULT ...
   001b_wait:
+    [none]: # Appears in: Ojhous2:Ji1_SpRollFail, Ojhous:Ji1_SpRollFail
   001n_talk:
+    [none]: # Appears in: Ocmera:PHOTO_GET_ITEM2, sea:BMCON_RESULT, sea_E:BMCON_RESULT, sea_T:BMCON_RESULT
   001n_wait:
+    [none]: # Appears in: ADMumi:DEFAULT_HINT, ADMumi:DEFAULT_GETITEM, ADMumi:DEFAULT_GETITEM, ADMumi:DEFAULT_GIVEITEM, ADMumi:DEFAULT_GIVEITEM, ADMumi:DEFAULT_KNOB_DOOR_F_OPEN, ADMumi:DEFAULT_KNOB_DOOR_F_OPEN, ADMumi:DEFAULT_KNOB_DOOR_F_OPEN, ADMumi:DEFAULT_KNOB_DOOR_B_OPEN, ...
     face:
       1 # Appears in: LinkRM:Ganbaru, LinkRM:Use_Fairy, kenroom:btl_of_swroom, sea:omedeto
       0 # Appears in: sea:omedeto
@@ -4056,7 +4345,9 @@ Link:
       3 # Appears in: A_mori:AMORI_DEMO_1, LinkRM:Use_Fairy, M_Dra09:MORI1_EVENT2, sea:TACT_HT, sea:yuukaigo
       1 # Appears in: Comori:Contact, Comori:Prl_Flw, Fairy01:BIGELF_ARRIVAL, Fairy02:BIGELF_ARRIVAL, Fairy03:BIGELF_ARRIVAL, Fairy04:BIGELF_ARRIVAL, Fairy05:BIGELF_ARRIVAL, Fairy06:BIGELF_ARRIVAL, LinkRM:Ganbaru, Ojhous2:angry, Ojhous:Angry, Omori:DE_CHUCHU, Pdrgsh:CREAT ...
   001wait:
+    [none]: # Appears in: ADMumi:FMASTER_START, ADMumi:DEFAULT_FM_NPC_GRAB, ADMumi:DEFAULT_FM_GRAB, ADMumi:DEFAULT_FM_SUIKOMI_NPC, ADMumi:DEFAULT_FM_GRAB_FOOT, A_mori:FMASTER_START, A_mori:DEFAULT_FM_NPC_GRAB, A_mori:DEFAULT_FM_GRAB, A_mori:DEFAULT_FM_SUIKOMI_NPC, A_mori:DEFA ...
   002n_walk:
+    [none]: # Appears in: DmSpot0:PRESENT1, Orichh:rupee_age, Siren:TOWER_WARP_U, SubD44:DUNGEON_WARP, SubD45:DUNGEON_WARP, sea:bye, sea:DOGUU_DEMO3, sea:DOGUU_DEMO3, sea:omedeto
     pos:
       (1746.0, 3573.0, -2093.0)                                  # Appears in: A_mori:look_tetra
       (365.47064208984375, 597.6458129882812, 885.8486938476562) # Appears in: Adanmae:Eskban
@@ -4094,6 +4385,7 @@ Link:
       3 # Appears in: LinkRM:Use_Fairy
       1 # Appears in: Ocmera:PHOTO_GALLERY, Ocrogh:Mak_Drg, Ojhous2:angry, Ojhous:Angry, Orichh:bensyou, Xboss0:WARP_WIND, Xboss0:WARP_WIND_AFTER, Xboss1:WARP_WIND, Xboss1:WARP_WIND_AFTER, Xboss2:WARP_WIND, Xboss2:WARP_WIND_AFTER, Xboss3:WARP_WIND, Xboss3:WARP_WIND_AFTER
   003n_dash:
+    [none]: # Appears in: ADMumi:DEFAULT_SHUTTER_DOOR_12, ADMumi:DEFAULT_SHUTTER_DOOR_10, ADMumi:DEFAULT_SHUTTER_DOOR_F, ADMumi:DEFAULT_BS_SHUTTER_F, ADMumi:DEFAULT_SHUTTER_DOOR_F_STOP, ADMumi:SHUTTER_START, ADMumi:SHUTTER_START_STOP, ADMumi:BS_SHUTTER_START, ADMumi:SHUTTER_D ...
     face:
       1 # Appears in: Hyroom:go_up_stairs, Hyroom:go_up_stairs2, kenroom:btl_of_swroom
     fall:
@@ -4133,6 +4425,7 @@ Link:
     pos:
       (-116117.0, 1057.0, -183219.0) # Appears in: sea:KG2_START_DEMO, sea:KG2_CLEAR_DEMO
   004init_wait:
+    [none]: # Appears in: ADMumi:SHUTTER_START, ADMumi:SHUTTER_START_STOP, ADMumi:BS_SHUTTER_START, ADMumi:DUNGEON_WARP, A_mori:SHUTTER_START, A_mori:SHUTTER_START_STOP, A_mori:BS_SHUTTER_START, A_mori:DUNGEON_WARP, A_nami:SHUTTER_START, A_nami:SHUTTER_START_STOP, A_nami:BS_S ...
     angle:
       49152  # Appears in: A_mori:AMORI_DEMO_1
       32768  # Appears in: Adanmae:MD_FLY, Asoko:P2B_INTRO, Asoko:P2B_GOAL_2, Asoko:P2B_INTRO_2, Ebesso:Ji1_kaiten, Ebesso:Ji1_kaiten_exp, Msmoke:Ji1_kaiten_exp, Ojhous2:Ji1_kaiten, Ojhous2:Ji1_kaiten_exp, Ojhous:Ji1_kaiten, Ojhous:Ji1_kaiten_exp, Pnezumi:TC_JUMP_DEMO, kenroom ...
@@ -4268,6 +4561,7 @@ Link:
       1 # Appears in: Ebesso:Ji1_linkmove, Ebesso:Ji1_EndSpeak, Ebesso:Ji1_kaiten, Msmoke:Ji1_linkmove, Msmoke:Ji1_EndSpeak, Msmoke:Ji1_kaiten_exp, Ojhous2:Ji1_linkmove, Ojhous2:Ji1_EndSpeak, Ojhous2:Ji1_ItemGetEnd, Ojhous2:Ji1_ItemGetTalkEnd, Ojhous2:Ji1_SwordGetTalkEnd, ...
       3 # Appears in: sea:FIGURE_HATCH_OPEN, sea:BEAST_GATE, sea:BEAST_GATE2, sea:ARRIVAL_DRG, sea:ARRIVAL_DRG2, sea:ARRIVAL_GND, sea:ARRIVAL_GND2, sea:ARRIVAL_BRK, sea:ARRIVAL_BRK2, sea:ARRIVAL_FST, sea:ARRIVAL_FST2, sea:ARRIVAL_TWN, sea:ARRIVAL_TWN2, sea:ARRIVAL_WND, se ...
   005wait_turn:
+    [none]: # Appears in: ADMumi:DEFAULT_HINT, ADMumi:DEFAULT_HINT2, ADMumi:DEFAULT_KNOB_DOOR_F_OPEN, ADMumi:DEFAULT_KNOB_DOOR_B_OPEN, ADMumi:SHUTTER_DROP_CARRY, ADMumi:SHUTTER_DROP_CARRY, ADMumi:TACT_WINDOW2, A_mori:DEFAULT_HINT, A_mori:DEFAULT_HINT2, A_mori:DEFAULT_KNOB_DOO ...
     angle:
       -26239 # Appears in: Adanmae:Eskban
       -491   # Appears in: DmSpot0:PRESENT3
@@ -4276,24 +4570,30 @@ Link:
       0      # Appears in: kenroom:btl_of_swroom, kenroom:btl_of_swroom2
       13408  # Appears in: sea:ARRIVAL_GND, sea:ARRIVAL_GND2, sea_E:ARRIVAL_GND, sea_T:ARRIVAL_GND
   006n_talk:
+    [none]: # Appears in: ADMumi:DEFAULT_AGB_LOOK_ATTENTION, ADMumi:DEFAULT_KNOB_TALK, ADMumi:DEFAULT_NPC_NZ_ESA, ADMumi:DEFAULT_NPC_NZ_GETITEM, ADMumi:DEFAULT_TALK, ADMumi:DEFAULT_TALK_XY, A_mori:DEFAULT_AGB_LOOK_ATTENTION, A_mori:DEFAULT_KNOB_TALK, A_mori:DEFAULT_NPC_NZ_ESA ...
     prm0:
       1 # Appears in: ADMumi:DEFAULT_POST, A_mori:DEFAULT_POST, A_nami:DEFAULT_POST, A_umikz:DEFAULT_POST, Abesso:DEFAULT_POST, Abship:DEFAULT_POST, Adanmae:DEFAULT_POST, Asoko:DEFAULT_POST, Atorizk:DEFAULT_POST, Cave01:DEFAULT_POST, Cave02:DEFAULT_POST, Cave03:DEFAULT_PO ...
   007dam_action:
+    [none]: # Appears in: I_TestR:Ji1_BadSpeak
   008e_talk:
+    [none]: # Appears in: Amos_T:Ji1_Speak, Ebesso:Ji1_linkmove, Ebesso:Ji1_Speak, Ebesso:Ji1_StartSpeak, Ebesso:Ji1_BadSpeak, Ebesso:Ji1_EndSpeak, Ebesso:Ji1_EndSpeak, GTower:PZ_TALK, I_TestM:Ji1_Speak, I_TestR:Ji1_Speak, I_TestR:Ji1_BadSpeak, K_Test3:Ji1_Speak, K_Test4:Ji1_ ...
     prm0:
       1 # Appears in: Hyrule:nakaniwa, LinkRM:tale_1, Ocrogh:Mak_Drg, Ojhous2:Ji1_linkmove, Ojhous2:Ji1_EndSpeak, Ojhous:Ji1_linkmove, Ojhous:Ji1_EndSpeak, Omori:Calling, Orichh:angry, Orichh:bensyou, Orichh:Giv_Rupee, Orichh:rupee_age, sea:Met_Ryu_Islnd, sea:Skn_Islnd, s ...
     prm1:
       1 # Appears in: sea:Met_Ryu_Islnd, sea_E:Met_Ryu_Islnd, sea_T:Met_Ryu_Islnd
   009ldam:
+    [none]: # Appears in: sea:ICE_FAILED
     prm0:
       1 # Appears in: Ebesso:Ji1_BadSpeak, Msmoke:Ji1_BadSpeak, Ojhous2:Ji1_BadSpeak, Ojhous2:Ji1_NormAngFin, Ojhous:Ji1_BadSpeak, Ojhous:Ji1_NormAngFin, tincle:Ji1_BadSpeak
   010open_treasure:
+    [none]: # Appears in: ADMumi:DEFAULT_TREASURE, ADMumi:DEFAULT_TREASURE2, A_mori:DEFAULT_TREASURE, A_mori:DEFAULT_TREASURE2, A_nami:DEFAULT_TREASURE, A_nami:DEFAULT_TREASURE2, A_umikz:DEFAULT_TREASURE, A_umikz:DEFAULT_TREASURE2, Abesso:DEFAULT_TREASURE, Abesso:DEFAULT_TREA ...
     prm0:
       1 # Appears in: ADMumi:DEFAULT_TREASURE_A, A_mori:DEFAULT_TREASURE_A, A_nami:DEFAULT_TREASURE_A, A_umikz:DEFAULT_TREASURE_A, Abesso:DEFAULT_TREASURE_A, Abship:DEFAULT_TREASURE_A, Adanmae:DEFAULT_TREASURE_A, Asoko:DEFAULT_TREASURE_A, Atorizk:DEFAULT_TREASURE_A, Cave0 ...
   011_get_item:
     prm0:
       153 # Appears in: Atorizk:GETMOTHERLETTER
   011get_item:
+    [none]: # Appears in: ADMumi:DEFAULT_GETITEM, ADMumi:DEFAULT_POST, ADMumi:DEFAULT_TREASURE, ADMumi:DEFAULT_TREASURE_A, ADMumi:DEFAULT_TREASURE2, A_mori:DEFAULT_GETITEM, A_mori:DEFAULT_POST, A_mori:DEFAULT_TREASURE, A_mori:DEFAULT_TREASURE_A, A_mori:DEFAULT_TREASURE2, A_na ...
     prm0:
       256 # Appears in: ADMumi:DEFAULT_GIVEITEM, ADMumi:DEFAULT_NPC_NZ_GETITEM, A_mori:DEFAULT_GIVEITEM, A_mori:DEFAULT_NPC_NZ_GETITEM, A_nami:DEFAULT_GIVEITEM, A_nami:DEFAULT_NPC_NZ_GETITEM, A_umikz:DEFAULT_GIVEITEM, A_umikz:DEFAULT_NPC_NZ_GETITEM, Abesso:DEFAULT_GIVEITEM, ...
       6   # Appears in: Atorizk:Get_Rupee
@@ -4309,36 +4609,54 @@ Link:
       4   # Appears in: sea:Get_Rupee
       15  # Appears in: sea:SO_GET_RUPEE
   012unequip:
+    [none]: # Appears in: ADMumi:DEFAULT_HINT, ADMumi:DEFAULT_HINT2, ADMumi:DEFAULT_KNOB_DOOR_F_OPEN, ADMumi:DEFAULT_KNOB_DOOR_B_OPEN, ADMumi:DEFAULT_TALK_XY, A_mori:DEFAULT_HINT, A_mori:DEFAULT_HINT2, A_mori:DEFAULT_KNOB_DOOR_F_OPEN, A_mori:DEFAULT_KNOB_DOOR_B_OPEN, A_mori:D ...
   013holdup:
+    [none]: # Appears in: MajyuE:Search_Light_Find, MajyuE:Search_Light_Find_Wall
   014keep:
+    [none]: # Appears in: Ebesso:Ji1_Speak, Ebesso:Ji1_BadSpeak, Ebesso:Ji1_EndSpeak, Ebesso:Ji1_kaiten, Ebesso:DEFAULT_TREASURE_APPEAR, I_TestR:Ji1_Speak, I_TestR:Ji1_BadSpeak, Msmoke:Ji1_Speak, Msmoke:Ji1_BadSpeak, Msmoke:Ji1_EndSpeak, Msmoke:Ji1_kaiten, Msmoke:DEFAULT_TREA ...
   015around:
+    [none]: # Appears in: kenroom:btl_of_swroom, kenroom:btl_of_swroom2
   015laround:
+    [none]: # Appears in: M_NewD2:MORI1_EVENT, MajyuE:Search_Light_Find, PShip:PSHIP_CLEAR, SubD45:PSHIP_CLEAR, kenroom:btl_of_swroom, sea:PUROLO_RETURN, sea:PUROLO_RETURN2
   016bjump:
+    [none]: # Appears in: Ebesso:Ji1_linkmove, Msmoke:Ji1_linkmove, Ojhous2:Ji1_linkmove, Ojhous:Ji1_linkmove, tincle:Ji1_linkmove
     face:
       2 # Appears in: kenroom:btl_of_swroom, kenroom:btl_of_swroom2
   017pfall:
+    [none]: # Appears in: ADMumi:DEFAULT_PITFALL, A_mori:DEFAULT_PITFALL, A_nami:DEFAULT_PITFALL, A_umikz:DEFAULT_PITFALL, Abesso:DEFAULT_PITFALL, Abship:DEFAULT_PITFALL, Adanmae:DEFAULT_PITFALL, Amos_T:DEFAULT_PITFALL, Amos_T:DEFAULT_WARP, Asoko:DEFAULT_PITFALL, Atorizk:DEFA ...
   019salute:
+    [none]: # Appears in: Ebesso:Ji1_linkmove, Ebesso:Ji1_EndSpeak, Msmoke:Ji1_linkmove, Msmoke:Ji1_EndSpeak, Ojhous2:Ji1_linkmove, Ojhous2:Ji1_EndSpeak, Ojhous2:Ji1_ItemGetEnd, Ojhous2:Ji1_ItemGetTalkEnd, Ojhous2:Ji1_SwordGetTalkEnd, Ojhous:Ji1_linkmove, Ojhous:Ji1_EndSpeak, ...
   019salutet:
+    [none]: # Appears in: sea:ARRIVAL_GND, sea:ARRIVAL_GND2, sea_E:ARRIVAL_GND, sea_T:ARRIVAL_GND
   020l_around2:
+    [none]: # Appears in: ADMumi:DEFAULT_SWITCH, ADMumi:DEFAULT_SWITCH_NOSOUND, A_mori:DEFAULT_SWITCH, A_mori:DEFAULT_SWITCH_NOSOUND, A_nami:DEFAULT_SWITCH, A_nami:DEFAULT_SWITCH_NOSOUND, A_umikz:DEFAULT_SWITCH, A_umikz:DEFAULT_SWITCH_NOSOUND, Abesso:DEFAULT_SWITCH, Abesso:DE ...
   021t_pickup:
+    [none]: # Appears in: ADMumi:DEFAULT_HINT, ADMumi:DEFAULT_HINT2, A_mori:DEFAULT_HINT, A_mori:DEFAULT_HINT2, A_nami:DEFAULT_HINT, A_nami:DEFAULT_HINT2, A_umikz:DEFAULT_HINT, A_umikz:DEFAULT_HINT2, Abesso:DEFAULT_HINT, Abesso:DEFAULT_HINT2, Abship:DEFAULT_HINT, Abship:DEFAU ...
   022t_wait:
+    [none]: # Appears in: ADMumi:DEFAULT_HINT, ADMumi:DEFAULT_HINT2, A_mori:DEFAULT_HINT, A_mori:DEFAULT_HINT2, A_nami:DEFAULT_HINT, A_nami:DEFAULT_HINT2, A_umikz:DEFAULT_HINT, A_umikz:DEFAULT_HINT2, Abesso:DEFAULT_HINT, Abesso:DEFAULT_HINT2, Abship:DEFAULT_HINT, Abship:DEFAU ...
     prm0:
       1 # Appears in: Hyrule:nakaniwa
   023a_wait:
+    [none]: # Appears in: A_mori:AMORI_DEMO_1, M_Dra09:MORI1_EVENT2
   024surprised:
+    [none]: # Appears in: ADMumi:DEFAULT_POST, ADMumi:DEFAULT_RD_CRY, A_mori:AMORI_DEMO_1, A_mori:DEFAULT_POST, A_mori:DEFAULT_RD_CRY, A_nami:DEFAULT_POST, A_nami:DEFAULT_RD_CRY, A_umikz:DEFAULT_POST, A_umikz:DEFAULT_RD_CRY, Abesso:DEFAULT_POST, Abesso:DEFAULT_RD_CRY, Abship: ...
     face:
       0 # Appears in: Hyrule:nakaniwa
     prm0:
       1 # Appears in: GanonM:APPEAR_WARP, Hyrule:nakaniwa
   025tback:
+    [none]: # Appears in: ADMumi:DEFAULT_SHUTTER_DOOR_F_STOP, ADMumi:SHUTTER_START_STOP, ADMumi:BS_SHUTTER_START, A_mori:DEFAULT_SHUTTER_DOOR_F_STOP, A_mori:SHUTTER_START_STOP, A_mori:BS_SHUTTER_START, A_nami:DEFAULT_SHUTTER_DOOR_F_STOP, A_nami:SHUTTER_START_STOP, A_nami:BS_S ...
   026lookup:
+    [none]: # Appears in: Omori:CyuCyu_RET, Omori:CyuCyu_STR, sea:morinoki_camera2
   031lwait:
     prm0:
       1 # Appears in: ADMumi:DEFAULT_STOP_OPEN, ADMumi:DEFAULT_TREASURE_APPEAR, ADMumi:SHOKUDAI_SWITCH, A_mori:DEFAULT_STOP_OPEN, A_mori:DEFAULT_TREASURE_APPEAR, A_nami:DEFAULT_STOP_OPEN, A_nami:DEFAULT_TREASURE_APPEAR, A_umikz:DEFAULT_STOP_OPEN, A_umikz:DEFAULT_TREASURE_ ...
       0 # Appears in: Ebesso:DEFAULT_STOP_OPEN, Ebesso:DEFAULT_TREASURE_APPEAR, Msmoke:DEFAULT_STOP_OPEN, Msmoke:DEFAULT_TREASURE_APPEAR, tincle:DEFAULT_STOP_OPEN, tincle:DEFAULT_TREASURE_APPEAR
       2 # Appears in: sea:TACT_HT
   032pwait:
+    [none]: # Appears in: GanonK:MBDOOR_OPEN, GanonL:MBDOOR_OPEN, M2tower:MBDOOR_OPEN, MajyuE:MBDOOR_OPEN, Mjtower:MBDOOR_OPEN, ma2room:MBDOOR_OPEN, ma3room:MBDOOR_OPEN, majroom:MBDOOR_OPEN, sea:MBDOOR_OPEN
   033push:
+    [none]: # Appears in: GanonK:MBDOOR_OPEN, GanonL:MBDOOR_OPEN, M2tower:MBDOOR_OPEN, MajyuE:MBDOOR_OPEN, Mjtower:MBDOOR_OPEN, ma2room:MBDOOR_OPEN, ma3room:MBDOOR_OPEN, majroom:MBDOOR_OPEN, sea:MBDOOR_OPEN
   034tact:
     prm0:
       -4 # Appears in: Cave08:MKNJD_K_LESSON, Edaichi:MKNJD_D_LESSON, Ekaze:MKNJD_K_LESSON, M_Dai:MKNJD_D_LESSON, Otkura:cb_tact, Siren:hsehi1_tact, kaze:MKNJD_K_LESSON, sea:TACT_TEARCH0, sea:TACT_TEARCH1, sea:TACT_TEARCH4, sea:TACT_TEARCH2, sea:Md_Tact, sea:TACT_HT, sea:T ...
@@ -4359,12 +4677,19 @@ Link:
       2 # Appears in: ADMumi:KNOB_START, ADMumi:KNOB_S_FR, ADMumi:KNOB_S_FL, A_mori:KNOB_START, A_mori:KNOB_S_FR, A_mori:KNOB_S_FL, A_nami:KNOB_START, A_nami:KNOB_S_FR, A_nami:KNOB_S_FL, A_umikz:KNOB_START, A_umikz:KNOB_S_FR, A_umikz:KNOB_S_FL, Abesso:KNOB_START, Abesso:K ...
       3 # Appears in: ADMumi:KNOB_START_B, ADMumi:KNOB_S_BR, ADMumi:KNOB_S_BL, A_mori:KNOB_START_B, A_mori:KNOB_S_BR, A_mori:KNOB_S_BL, A_nami:KNOB_START_B, A_nami:KNOB_S_BR, A_nami:KNOB_S_BL, A_umikz:KNOB_START_B, A_umikz:KNOB_S_BR, A_umikz:KNOB_S_BL, Abesso:KNOB_START_B ...
   036nod:
+    [none]: # Appears in: GTower:PZ_TALK, LinkRM:Ganbaru, sea:ARRIVAL_GND, sea:ARRIVAL_GND2, sea:ARRIVAL_TWN, sea:ARRIVAL_TWN2, sea:SO_TRIFORCE_CHECK, sea:yuukaigo, sea_E:ARRIVAL_TWN, sea_E:ARRIVAL_GND, sea_T:ARRIVAL_TWN, sea_T:ARRIVAL_GND
   037present:
+    [none]: # Appears in: ADMumi:DEFAULT_TALK_XY, A_mori:DEFAULT_TALK_XY, A_nami:DEFAULT_TALK_XY, A_umikz:DEFAULT_TALK_XY, Abesso:DEFAULT_TALK_XY, Abship:DEFAULT_TALK_XY, Adanmae:DEFAULT_TALK_XY, Amos_T:DEFAULT_TALK_XY, Asoko:DEFAULT_TALK_XY, Atorizk:DEFAULT_TALK_XY, Cave01:D ...
   038wchange:
+    [none]: # Appears in: ADMumi:TACT_WINDOW2, ADMumi:TACT_WINDOW2_SHIP, A_mori:TACT_WINDOW2, A_mori:TACT_WINDOW2_SHIP, A_nami:TACT_WINDOW2, A_nami:TACT_WINDOW2_SHIP, A_umikz:TACT_WINDOW2, A_umikz:TACT_WINDOW2_SHIP, Abesso:TACT_WINDOW2, Abesso:TACT_WINDOW2_SHIP, Abship:TACT_W ...
   039ship:
+    [none]: # Appears in: sea:ARRIVAL_DRG2, sea:ARRIVAL_GND2, sea:ARRIVAL_BRK2, sea:ARRIVAL_FST2, sea:ARRIVAL_TWN2, sea:ARRIVAL_WND2, sea:PUROLO_RETURN2
   040siput:
+    [none]: # Appears in: I_TestM:DAI_ITEM, Kaisen:DAI_ITEM, Nitiyou:DAI_ITEM, Ocmera:DAI_ITEM, Orichh:DAI_ITEM, Pdrgsh:DAI_ITEM, TEST:DAI_ITEM, sea:DAI_ITEM
   042km_wait:
+    [none]: # Appears in: sea:otoboke, sea:TOBOKERU, sea_E:TOBOKERU, sea_T:TOBOKERU
   043cut_roll:
+    [none]: # Appears in: Ojhous2:Ji1_TeachSpRollCut, Ojhous:Ji1_TeachSpRollCut
   044pos_init:
     angle:
       32768 # Appears in: Edaichi:MKNJD_D_DEMO, Ekaze:MKNJD_K_DEMO, GanonA:Gintro2
@@ -4384,26 +4709,37 @@ Link:
       170 # Appears in: Ojhous:Ji1_TeachSpRollCut
       178 # Appears in: sea:BIGELF_ARRIVAL2
   047volcano:
+    [none]: # Appears in: sea:VOLCANO_FAILED
   048warp:
+    [none]: # Appears in: M_DaiB:WARP_WIND_AFTER, M_DragB:WARP_WIND, M_DragB:WARP_WIND_AFTER, SirenB:WARP_WIND, SirenB:WARP_WIND_AFTER, Xboss0:WARP_WIND, Xboss0:WARP_WIND_AFTER, Xboss1:WARP_WIND, Xboss1:WARP_WIND_AFTER, Xboss2:WARP_WIND, Xboss2:WARP_WIND_AFTER, Xboss3:WARP_WI ...
     prm0:
       1 # Appears in: Omori:BOSS_WARPOUT, sea:BOSS_WARPOUT
       2 # Appears in: sea:TOWER_WARPOUT
   049s_surp:
+    [none]: # Appears in: Fairy01:BIGELF_ARRIVAL, Fairy02:BIGELF_ARRIVAL, Fairy03:BIGELF_ARRIVAL, Fairy04:BIGELF_ARRIVAL, Fairy05:BIGELF_ARRIVAL, Fairy06:BIGELF_ARRIVAL, Hyroom:go_up_stairs, Ojhous2:Ji1_NormAngFin, Ojhous:Ji1_NormAngFin, SirenMB:SIREN_MD, kenroom:btl_of_swroo ...
     face:
       0 # Appears in: kenroom:btl_of_swroom
     prm0:
       3 # Appears in: sea:Skn_Islnd
       2 # Appears in: sea:DOGUU_DEMO2
   050smile:
+    [none]: # Appears in: Adanmae:Eskban, kenroom:btl_of_swroom, sea:morinoki_camera2
   052agb:
+    [none]: # Appears in: ADMumi:DEFAULT_AGB_USE, A_mori:DEFAULT_AGB_USE, A_nami:DEFAULT_AGB_USE, A_umikz:DEFAULT_AGB_USE, Abesso:DEFAULT_AGB_USE, Abship:DEFAULT_AGB_USE, Adanmae:DEFAULT_AGB_USE, Asoko:DEFAULT_AGB_USE, Atorizk:DEFAULT_AGB_USE, Cave01:DEFAULT_AGB_USE, Cave02:D ...
   053lturn:
+    [none]: # Appears in: sea:ARRIVAL_DRG, sea:ARRIVAL_DRG2, sea:morinoki_camera2, sea_E:ARRIVAL_DRG, sea_T:ARRIVAL_DRG
     prm0:
       0 # Appears in: sea:ARRIVAL_GND, sea:ARRIVAL_GND2, sea:TACT_HT, sea_E:ARRIVAL_GND, sea_T:ARRIVAL_GND
   054let_open:
+    [none]: # Appears in: ADMumi:DEFAULT_POST, A_mori:DEFAULT_POST, A_nami:DEFAULT_POST, A_umikz:DEFAULT_POST, Abesso:DEFAULT_POST, Abship:DEFAULT_POST, Adanmae:DEFAULT_POST, Asoko:DEFAULT_POST, Atorizk:DEFAULT_POST, Cave01:DEFAULT_POST, Cave02:DEFAULT_POST, Cave03:DEFAULT_PO ...
   055let_read:
+    [none]: # Appears in: ADMumi:DEFAULT_POST, A_mori:DEFAULT_POST, A_nami:DEFAULT_POST, A_umikz:DEFAULT_POST, Abesso:DEFAULT_POST, Abship:DEFAULT_POST, Adanmae:DEFAULT_POST, Asoko:DEFAULT_POST, Atorizk:DEFAULT_POST, Cave01:DEFAULT_POST, Cave02:DEFAULT_POST, Cave03:DEFAULT_PO ...
   056grab_put:
+    [none]: # Appears in: ADMumi:DEFAULT_HINT2, ADMumi:SHUTTER_DROP_CARRY, A_mori:DEFAULT_HINT2, A_mori:SHUTTER_DROP_CARRY, A_nami:DEFAULT_HINT2, A_nami:SHUTTER_DROP_CARRY, A_umikz:DEFAULT_HINT2, A_umikz:SHUTTER_DROP_CARRY, Abesso:DEFAULT_HINT2, Abesso:SHUTTER_DROP_CARRY, Abs ...
   057rd_stop:
+    [none]: # Appears in: ADMumi:DEFAULT_RD_CRY, A_mori:DEFAULT_RD_CRY, A_nami:DEFAULT_RD_CRY, A_umikz:DEFAULT_RD_CRY, Abesso:DEFAULT_RD_CRY, Abship:DEFAULT_RD_CRY, Adanmae:DEFAULT_RD_CRY, Asoko:DEFAULT_RD_CRY, Atorizk:DEFAULT_RD_CRY, Cave01:DEFAULT_RD_CRY, Cave02:DEFAULT_RD_ ...
   058rd_catch:
+    [none]: # Appears in: ADMumi:DEFAULT_RD_ATTACK, A_mori:DEFAULT_RD_ATTACK, A_nami:DEFAULT_RD_ATTACK, A_umikz:DEFAULT_RD_ATTACK, Abesso:DEFAULT_RD_ATTACK, Abship:DEFAULT_RD_ATTACK, Adanmae:DEFAULT_RD_ATTACK, Asoko:DEFAULT_RD_ATTACK, Atorizk:DEFAULT_RD_ATTACK, Cave01:DEFAULT ...
   059get_dance:
     prm0:
       4 # Appears in: Cave08:MKNJD_K_LESSON, Ekaze:MKNJD_K_LESSON, kaze:MKNJD_K_LESSON
@@ -4413,70 +4749,104 @@ Link:
       1 # Appears in: sea:TACT1_RT
       5 # Appears in: sea:TACT_TT11
   060bo_fairy:
+    [none]: # Appears in: LinkRM:Use_Fairy
   061bo_open:
+    [none]: # Appears in: sea:morinoki_camera0, sea:morinoki_camera1, sea:morinoki_camera2
   062s_warp:
+    [none]: # Appears in: ADMumi:DUNGEON_WARP, A_mori:DUNGEON_WARP, A_nami:DUNGEON_WARP, A_umikz:DUNGEON_WARP, Abesso:DUNGEON_WARP, Abship:DUNGEON_WARP, Adanmae:DUNGEON_WARP, Asoko:DUNGEON_WARP, Atorizk:DUNGEON_WARP, Cave01:DUNGEON_WARP, Cave02:DUNGEON_WARP, Cave03:DUNGEON_WA ...
   063open_sbox:
+    [none]: # Appears in: I_TestM:SBOX, sea:SALVAGE_GETITEM, sea:SLVG_GETITEM_LEFT
   064sfall:
+    [none]: # Appears in: ADMumi:FALL_START, A_mori:FALL_START, A_nami:FALL_START, A_umikz:FALL_START, Abesso:FALL_START, Abship:FALL_START, Adanmae:FALL_START, Asoko:FALL_START, Atorizk:FALL_START, Cave01:FALL_START, Cave02:FALL_START, Cave03:FALL_START, Cave04:FALL_START, C ...
   065foodset:
     prm0:
       0 # Appears in: sea:kamome_call
       1 # Appears in: sea:kamome_call
   066swait:
+    [none]: # Appears in: A_mori:AMORI_DEMO_1
   067pwait:
+    [none]: # Appears in: Fairy01:BIGELF_ARRIVAL, Fairy02:BIGELF_ARRIVAL, Fairy03:BIGELF_ARRIVAL, Fairy04:BIGELF_ARRIVAL, Fairy05:BIGELF_ARRIVAL, Fairy06:BIGELF_ARRIVAL, sea:BIGELF_ARRIVAL2
   069shipsit:
+    [none]: # Appears in: Hyrule:nakaniwa
     face:
       1 # Appears in: Hyrule:nakaniwa
     prm0:
       1 # Appears in: Hyrule:nakaniwa
   071shipoff:
+    [none]: # Appears in: Hyrule:nakaniwa
   073foodthrow:
+    [none]: # Appears in: ADMumi:DEFAULT_NPC_NZ_ESA, A_mori:DEFAULT_NPC_NZ_ESA, A_nami:DEFAULT_NPC_NZ_ESA, A_umikz:DEFAULT_NPC_NZ_ESA, Abesso:DEFAULT_NPC_NZ_ESA, Abship:DEFAULT_NPC_NZ_ESA, Adanmae:DEFAULT_NPC_NZ_ESA, Asoko:DEFAULT_NPC_NZ_ESA, Atorizk:DEFAULT_NPC_NZ_ESA, Cave0 ...
   DUMMY:
+    [none]: # Appears in: DmSpot0:YUUKAIGO, Ebesso:ANGRY, K_Test3:ANGRY, K_Test4:ANGRY, K_Test5:ANGRY, K_Test6:ANGRY, K_Test8:ANGRY
 Ls1:
   ANM_CHG:
     AnmNo:
       5 # Appears in: sea:omedeto
   DUMMY:
+    [none]: # Appears in: DmSpot0:PRESENT2
   LOK_PLYER:
     prm_0:
       3 # Appears in: sea:omedeto
       8 # Appears in: sea:omedeto
   PLYER_MOV:
+    [none]: # Appears in: sea:omedeto
   START:
+    [none]: # Appears in: DmSpot0:PRESENT2
   TALK:
+    [none]: # Appears in: DmSpot0:PRESENT3
   TALK_MSG:
     msg_num:
       3001 # Appears in: sea:omedeto
   TIMING01:
+    [none]: # Appears in: DmSpot0:PRESENT1
   TIMING02:
+    [none]: # Appears in: DmSpot0:PRESENT1
   TIMING03:
+    [none]: # Appears in: DmSpot0:PRESENT1
   WAI:
+    [none]: # Appears in: sea:omedeto
   WAIT:
+    [none]: # Appears in: sea:get_telescope, sea:omedeto
     Timer:
       40 # Appears in: sea:omedeto
       10 # Appears in: sea:omedeto
       20 # Appears in: sea:omedeto
       30 # Appears in: sea:omedeto
   WAITKEEP:
+    [none]: # Appears in: DmSpot0:PRESENT1
 MBDOOR:
   ADJUSTMENT:
+    [none]: # Appears in: GanonK:MBDOOR_OPEN, GanonL:MBDOOR_OPEN, M2tower:MBDOOR_OPEN, MajyuE:MBDOOR_OPEN, Mjtower:MBDOOR_OPEN, ma2room:MBDOOR_OPEN, ma3room:MBDOOR_OPEN, majroom:MBDOOR_OPEN, sea:MBDOOR_OPEN
     Timer:
       20 # Appears in: GanonK:MBDOOR_OPEN, GanonL:MBDOOR_OPEN, M2tower:MBDOOR_OPEN, MajyuE:MBDOOR_OPEN, Mjtower:MBDOOR_OPEN, ma2room:MBDOOR_OPEN, ma3room:MBDOOR_OPEN, majroom:MBDOOR_OPEN, sea:MBDOOR_OPEN
   END:
+    [none]: # Appears in: GanonK:MBDOOR_OPEN, GanonL:MBDOOR_OPEN, M2tower:MBDOOR_OPEN, MajyuE:MBDOOR_OPEN, Mjtower:MBDOOR_OPEN, ma2room:MBDOOR_OPEN, ma3room:MBDOOR_OPEN, majroom:MBDOOR_OPEN, sea:MBDOOR_OPEN
   OPEN:
+    [none]: # Appears in: GanonK:MBDOOR_OPEN, GanonL:MBDOOR_OPEN, M2tower:MBDOOR_OPEN, MajyuE:MBDOOR_OPEN, Mjtower:MBDOOR_OPEN, ma2room:MBDOOR_OPEN, ma3room:MBDOOR_OPEN, majroom:MBDOOR_OPEN, sea:MBDOOR_OPEN
   SET_GOAL:
+    [none]: # Appears in: GanonK:MBDOOR_OPEN, GanonL:MBDOOR_OPEN, M2tower:MBDOOR_OPEN, MajyuE:MBDOOR_OPEN, Mjtower:MBDOOR_OPEN, ma2room:MBDOOR_OPEN, ma3room:MBDOOR_OPEN, majroom:MBDOOR_OPEN, sea:MBDOOR_OPEN
   SET_GOAL2:
+    [none]: # Appears in: GanonK:MBDOOR_OPEN, GanonL:MBDOOR_OPEN, M2tower:MBDOOR_OPEN, MajyuE:MBDOOR_OPEN, Mjtower:MBDOOR_OPEN, ma2room:MBDOOR_OPEN, ma3room:MBDOOR_OPEN, majroom:MBDOOR_OPEN, sea:MBDOOR_OPEN
   STOP_OPEN:
+    [none]: # Appears in: GanonK:MBDOOR_STOP_OPEN, GanonL:MBDOOR_STOP_OPEN, M2tower:MBDOOR_STOP_OPEN, MajyuE:MBDOOR_STOP_OPEN, Mjtower:MBDOOR_STOP_OPEN, ma2room:MBDOOR_STOP_OPEN, ma3room:MBDOOR_STOP_OPEN, majroom:MBDOOR_STOP_OPEN, sea:MBDOOR_STOP_OPEN
   WAIT:
+    [none]: # Appears in: GanonK:MBDOOR_STOP_OPEN, GanonK:MBDOOR_STOP_OPEN, GanonL:MBDOOR_STOP_OPEN, GanonL:MBDOOR_STOP_OPEN, M2tower:MBDOOR_STOP_OPEN, M2tower:MBDOOR_STOP_OPEN, MajyuE:MBDOOR_STOP_OPEN, MajyuE:MBDOOR_STOP_OPEN, Mjtower:MBDOOR_STOP_OPEN, Mjtower:MBDOOR_STOP_OP ...
 MD_MESSAGE_TAG:
   init:
+    [none]: # Appears in: Cave08:md_tag_message, Cave08:md_tag_message_carry, Cave08:md_tag_message_fm, Cave08:cb_tag_message, Cave08:cb_tag_message_carry, Cave08:cb_tag_message_fm, Cave08:cb_tag_message_sekizo, M_Dai:md_tag_message, M_Dai:md_tag_message_carry, M_Dai:md_tag_m ...
   message:
+    [none]: # Appears in: Cave08:md_tag_message, Cave08:md_tag_message_carry, Cave08:md_tag_message_fm, Cave08:cb_tag_message, Cave08:cb_tag_message_carry, Cave08:cb_tag_message_fm, Cave08:cb_tag_message_sekizo, Cave08:cb_tag_message_sekizo, M_Dai:md_tag_message, M_Dai:md_tag ...
   msg_init:
+    [none]: # Appears in: Cave08:md_tag_message, Cave08:md_tag_message_carry, Cave08:md_tag_message_fm, Cave08:cb_tag_message, Cave08:cb_tag_message_carry, Cave08:cb_tag_message_fm, M_Dai:md_tag_message, M_Dai:md_tag_message_carry, M_Dai:md_tag_message_fm, M_Dai:cb_tag_messag ...
     msg_number:
       5426 # Appears in: Cave08:cb_tag_message_sekizo, M_Dai:cb_tag_message_sekizo, kaze:cb_tag_message_sekizo
       5427 # Appears in: Cave08:cb_tag_message_sekizo, M_Dai:cb_tag_message_sekizo, kaze:cb_tag_message_sekizo
   player_off:
+    [none]: # Appears in: Cave08:md_tag_message, Cave08:cb_tag_message, M_Dai:md_tag_message, M_Dai:cb_tag_message, kaze:md_tag_message, kaze:cb_tag_message
   player_on:
+    [none]: # Appears in: Cave08:md_tag_message, Cave08:cb_tag_message, M_Dai:md_tag_message, M_Dai:cb_tag_message, kaze:md_tag_message, kaze:cb_tag_message
   wait:
+    [none]: # Appears in: Cave08:md_tag_message, Cave08:md_tag_message, Cave08:md_tag_message_carry, Cave08:md_tag_message_carry, Cave08:md_tag_message_fm, Cave08:md_tag_message_fm, Cave08:cb_tag_message, Cave08:cb_tag_message, Cave08:cb_tag_message_carry, Cave08:cb_tag_messa ...
 MESSAGE:
   CONTINUE:
     msgNo:
@@ -4540,10 +4910,15 @@ MESSAGE:
       1852  # Appears in: sea_E:ARRIVAL_WND, sea_T:ARRIVAL_WND
       4349  # Appears in: sea_E:BEAST_GATE, sea_T:BEAST_GATE
   DELETE:
+    [none]: # Appears in: GanonM:APPEAR_WARP, Hyrule:nakaniwa, Hyrule:nakaniwa
   END:
+    [none]: # Appears in: GanonM:APPEAR_WARP, Hyrule:nakaniwa, Hyrule:nakaniwa
   FINISH:
+    [none]: # Appears in: Asoko:P2B_BOMB_GET, Asoko:P2B_BOMB_GET, Cave08:MKNJD_K_ERROR, Edaichi:MKNJD_D_ERROR, Ekaze:MKNJD_K_ERROR, M_Dai:MKNJD_D_ERROR, kaze:MKNJD_K_ERROR, kenroom:btl_of_swroom, sea:BEAST_GATE, sea:BEAST_GATE2, sea:ARRIVAL_DRG, sea:ARRIVAL_DRG, sea:ARRIVAL_D ...
   PUSHBUTTON:
+    [none]: # Appears in: Asoko:P2B_BOMB_GET, Asoko:P2B_BOMB_GET, Asoko:P2B_BOMB_GET, Asoko:P2B_BOMB_GET, Asoko:P2B_BOMB_GET, Asoko:P2B_BOMB_GET, Cave08:MKNJD_K_ERROR, Edaichi:MKNJD_D_ERROR, Ekaze:MKNJD_K_ERROR, GanonM:APPEAR_WARP, Hyrule:nakaniwa, Hyrule:nakaniwa, Hyrule:nak ...
   TELOP_OFF:
+    [none]: # Appears in: Edaichi:MKNJD_D_DEMO, Ekaze:MKNJD_K_DEMO, GanonA:Gintro2, M_NewD2:TELOP_DORAGON, Siren:moro_scam, kindan:TELOP_FOREST, sea:ARRIVAL_DRG, sea:ARRIVAL_DRG2, sea:ARRIVAL_BRK, sea:ARRIVAL_BRK2, sea:ARRIVAL_FST, sea:ARRIVAL_FST2, sea:TELOP_PULOLO, sea:TELO ...
   TELOP_ON:
     Timer:
       170 # Appears in: Edaichi:MKNJD_D_DEMO, Ekaze:MKNJD_K_DEMO
@@ -4562,10 +4937,13 @@ MESSAGE:
       0  # Appears in: sea:TELOP_PULOLO
       5  # Appears in: sea:TELOP_TAURA
   WAIT:
+    [none]: # Appears in: Asoko:P2B_BOMB_GET, Asoko:P2B_BOMB_GET, Cave08:MKNJD_K_ERROR, Edaichi:MKNJD_D_DEMO, Edaichi:MKNJD_D_ERROR, Ekaze:MKNJD_K_DEMO, Ekaze:MKNJD_K_ERROR, GanonA:Gintro2, GanonM:APPEAR_WARP, Hyrule:nakaniwa, Hyrule:nakaniwa, Hyrule:nakaniwa, M_Dai:MKNJD_D_E ...
 Magrock:
   wait:
+    [none]: # Appears in: M_Dra09:magma_cam, M_NewD2:magma_cam
 Md1:
   CREATEITEM:
+    [none]: # Appears in: Adanmae:MD_FLY, Atorizk:Md_ItemGet, M_Dra09:Md_RopeGet
   DASH:
     Pos:
       (-549.0, 650.0, -944.0)  # Appears in: Adanmae:MD_FLY
@@ -4575,6 +4953,7 @@ Md1:
     Speed:
       5.0 # Appears in: Adanmae:MD_FLY
   END:
+    [none]: # Appears in: Cave08:md_tag_message, M_Dai:md_tag_message, M_Dai:md_tag_message_fm, M_Dai:MKNJD_D_DEMO, M_Dra09:Md_RopeGet, kaze:md_tag_message, kaze:md_tag_message_fm
     EndMode:
       3  # Appears in: M_Dra09:Md_Fly2
       -2 # Appears in: sea:Md_Tact
@@ -4584,15 +4963,22 @@ Md1:
       14268.0 # Appears in: M_Dra09:Md_RopeGet
       15268.0 # Appears in: M_Dra09:Md_Fly2
   GLIDING:
+    [none]: # Appears in: Adanmae:MD_FLY
   HARPPLAY:
+    [none]: # Appears in: sea:Md_Tact
   LANDING:
+    [none]: # Appears in: Adanmae:MD_FLY
   LOOK_DOWN:
+    [none]: # Appears in: Cave08:md_tag_message_carry, M_Dai:md_tag_message_carry, kaze:md_tag_message_carry
   LOOK_UP:
+    [none]: # Appears in: M_Dai:md_tag_message_carry, kaze:md_tag_message_carry
   MSG_END:
+    [none]: # Appears in: Atorizk:Md_ItemGet, M_Dra09:Md_RopeGet, sea:Md_Tact, sea:Md_Tact, sea:Md_TactTrue, sea:Md_HarpTalk
     EndMode:
       1 # Appears in: Adanmae:MD_FLY, Adanmae:md_cliff, M_Dra09:Md_RopeGet
       2 # Appears in: Adanmae:md_cliff
   MSG_SET:
+    [none]: # Appears in: sea:Md_Tact, sea:Md_TactTrue
     MsgNo:
       6137 # Appears in: Adanmae:MD_FLY
       6138 # Appears in: Adanmae:MD_FLY
@@ -4656,6 +5042,7 @@ Md1:
     prm0:
       3 # Appears in: sea:Md_Tact
   TAKEOFF:
+    [none]: # Appears in: M_Dra09:Md_RopeGet, M_Dra09:Md_Fly2
   TURN:
     Timer:
       5  # Appears in: Cave08:md_tag_message, M_Dai:md_tag_message, kaze:md_tag_message, sea:Md_HarpTalk
@@ -4666,6 +5053,7 @@ Md1:
       1 # Appears in: Cave08:md_tag_message, M_Dai:md_tag_message, kaze:md_tag_message, sea:Md_HarpTalk
       2 # Appears in: Cave08:md_tag_message, Edaichi:MKNJD_D_DEMO, M_Dai:md_tag_message, kaze:md_tag_message, sea:ARRIVAL_GND, sea:ARRIVAL_GND2
   WAIT:
+    [none]: # Appears in: Adanmae:MD_FLY, Adanmae:MD_FLY, Adanmae:md_cliff, Atorizk:Md_ItemGet, Cave08:md_tag_message_fm, Edaichi:MKNJD_D_DEMO, Edaichi:MKNJD_D_DEMO, M_Dai:md_tag_message, M_Dai:md_tag_message_fm, M_Dai:MKNJD_D_DEMO, M_Dai:MKNJD_D_DEMO, M_Dra09:Md_RopeGet, M_D ...
     Disp:
       0 # Appears in: Edaichi:MKNJD_D_DEMO, M_Dai:MKNJD_D_DEMO, sea:Md_Tact
       1 # Appears in: sea:Md_Tact
@@ -4687,18 +5075,27 @@ Md1:
       1.7999999523162842 # Appears in: sea:ARRIVAL_GND, sea:ARRIVAL_GND2, sea_E:ARRIVAL_GND, sea_T:ARRIVAL_GND
       5.0                # Appears in: sea:ARRIVAL_GND, sea:ARRIVAL_GND2, sea_E:ARRIVAL_GND, sea_T:ARRIVAL_GND
   dummy:
+    [none]: # Appears in: ADMumi:DEFAULT_FM_NPC_GRAB, ADMumi:DEFAULT_FM_GRAB, ADMumi:DEFAULT_FM_GRAB_FOOT, ADMumi:DUNGEON_WARP, A_mori:DEFAULT_FM_NPC_GRAB, A_mori:DEFAULT_FM_GRAB, A_mori:DEFAULT_FM_GRAB_FOOT, A_mori:DUNGEON_WARP, A_nami:DEFAULT_FM_NPC_GRAB, A_nami:DEFAULT_FM_ ...
 Mhsg15:
   WAIT:
+    [none]: # Appears in: sea:FIGURE_HATCH_OPEN
 Mk:
   DISP:
+    [none]: # Appears in: sea:MK_GAMESET
   HOME:
+    [none]: # Appears in: sea:MK_PENDANT
     RM_Um2:
       0 # Appears in: sea:MK_GAMESTART, sea:MK_GAMESET
   JITABATA:
+    [none]: # Appears in: sea:MK_GAMESET
   JUMP2:
+    [none]: # Appears in: sea:MK_PENDANT
   LOOK_P:
+    [none]: # Appears in: sea:MK_TALK2, sea:MK_TALK3, sea:MK_TALK3, sea:MK_TALK3, sea:MK_TALK4, sea:MK_TALK4, sea:MK_TALK4
   MAKEITEM:
+    [none]: # Appears in: sea:MK_GAMESET
   PARTNER:
+    [none]: # Appears in: sea:MK_GAMESTART, sea:MK_GAMESET
   RUN:
     Pos:
       (-815.0, 1039.0, -201272.0)  # Appears in: sea:MK_GAMESTART
@@ -4722,10 +5119,12 @@ Mk:
       9958 # Appears in: sea:MK_PENDANT
       9961 # Appears in: sea:MK_PENDANT
   TALK:
+    [none]: # Appears in: sea:MK_TALK, sea:MK_GAMESTART, sea:MK_GAMESTART, sea:MK_GAMESET, sea:MK_GAMESET, sea:MK_PENDANT, sea:MK_PENDANT, sea:MK_PENDANT
   TURN:
     Angle:
       12826 # Appears in: sea:MK_PENDANT
   WAIT:
+    [none]: # Appears in: sea:MK_GAMESTART, sea:MK_GAMESTART, sea:MK_PENDANT
   WARP:
     Angle:
       -7281  # Appears in: sea:MK_TALK4
@@ -4735,8 +5134,11 @@ Mk:
       (-2665.0, 516.0, -198193.0)                            # Appears in: sea:MK_PENDANT
 Mk2:
   GAMESET:
+    [none]: # Appears in: sea:MK_GAMESET
   HIND:
+    [none]: # Appears in: sea:MK_GAMESET
   JITABATA:
+    [none]: # Appears in: sea:MK_GAMESET
   JUMP:
     SOUND:
       2 # Appears in: sea:MK_DROP
@@ -4749,15 +5151,21 @@ Mk2:
     Timer:
       100 # Appears in: sea:MK_DROP
   WAIT:
+    [none]: # Appears in: sea:MK_DROP, sea:MK_GAMESET
 MknjD:
   BREAK:
+    [none]: # Appears in: Cave08:MKNJD_K_DEMO, Edaichi:MKNJD_D_DEMO, Ekaze:MKNJD_K_DEMO, M_Dai:MKNJD_D_DEMO, kaze:MKNJD_K_DEMO
   DISP_LINK:
+    [none]: # Appears in: Cave08:MKNJD_K_LESSON, Edaichi:MKNJD_D_LESSON, Ekaze:MKNJD_K_LESSON, M_Dai:MKNJD_D_LESSON, kaze:MKNJD_K_LESSON
   HIDE_LINK:
+    [none]: # Appears in: Cave08:MKNJD_K_LESSON, Edaichi:MKNJD_D_LESSON, Ekaze:MKNJD_K_LESSON, M_Dai:MKNJD_D_LESSON, kaze:MKNJD_K_LESSON
   INPUT:
+    [none]: # Appears in: Cave08:MKNJD_K_LESSON, Edaichi:MKNJD_D_LESSON, Ekaze:MKNJD_K_LESSON, M_Dai:MKNJD_D_LESSON, kaze:MKNJD_K_LESSON
   LESSON:
     MsgNo:
       1459 # Appears in: Cave08:MKNJD_K_LESSON, Edaichi:MKNJD_D_LESSON, Ekaze:MKNJD_K_LESSON, M_Dai:MKNJD_D_LESSON, kaze:MKNJD_K_LESSON
   SELECT_ZEV:
+    [none]: # Appears in: Cave08:MKNJD_K_CHECK, Ekaze:MKNJD_K_CHECK, kaze:MKNJD_K_CHECK
   SETANGLE:
     angle:
       49152 # Appears in: Cave08:MKNJD_K_DEMO, Edaichi:MKNJD_D_DEMO, Ekaze:MKNJD_K_DEMO, M_Dai:MKNJD_D_DEMO, kaze:MKNJD_K_DEMO
@@ -4767,13 +5175,17 @@ MknjD:
       (200.0, 0.0, 500.0) # Appears in: Cave08:MKNJD_K_DEMO, Edaichi:MKNJD_D_DEMO, Ekaze:MKNJD_K_DEMO, M_Dai:MKNJD_D_DEMO, kaze:MKNJD_K_DEMO
       (0.0, 0.0, 500.0)   # Appears in: Cave08:MKNJD_K_LESSON, Edaichi:MKNJD_D_LESSON, Ekaze:MKNJD_K_LESSON, M_Dai:MKNJD_D_LESSON, kaze:MKNJD_K_LESSON
   TACT:
+    [none]: # Appears in: Cave08:MKNJD_K_LESSON, Edaichi:MKNJD_D_LESSON, Ekaze:MKNJD_K_LESSON, M_Dai:MKNJD_D_LESSON, kaze:MKNJD_K_LESSON
   WAIT:
+    [none]: # Appears in: Cave08:MKNJD_K_DEMO, Cave08:MKNJD_K_DEMO, Cave08:MKNJD_K_DEMO, Cave08:MKNJD_K_LESSON, Cave08:MKNJD_K_LESSON, Cave08:MKNJD_K_LESSON, Cave08:MKNJD_K_LESSON, Edaichi:MKNJD_D_CHECK, Edaichi:MKNJD_D_DEMO, Edaichi:MKNJD_D_DEMO, Edaichi:MKNJD_D_DEMO, Edaich ...
 Mn:
   BIKKURI:
     Timer:
       10 # Appears in: sea:FIGURE_HATCH_OPEN
   END:
+    [none]: # Appears in: sea:FIGURE_HATCH_OPEN
   HATCH:
+    [none]: # Appears in: sea:FIGURE_HATCH_OPEN
   JUMP:
     Gravity:
       -1.0 # Appears in: sea:FIGURE_HATCH_OPEN
@@ -4790,26 +5202,40 @@ Mn:
     Timer:
       0 # Appears in: sea:FIGURE_HATCH_OPEN
   TURN:
+    [none]: # Appears in: sea:FIGURE_HATCH_OPEN
     TurnMode:
       1 # Appears in: sea:FIGURE_HATCH_OPEN
   WAIT:
+    [none]: # Appears in: sea:FIGURE_HATCH_OPEN, sea:FIGURE_HATCH_OPEN
   WALK:
+    [none]: # Appears in: sea:FIGURE_HATCH_OPEN
 Mori1:
   CLOSE:
+    [none]: # Appears in: M_Dra09:MORI1_EVENT, M_NewD2:MORI1_EVENT
   WAIT:
+    [none]: # Appears in: M_Dra09:MORI1_EVENT, M_Dra09:MORI1_EVENT, M_NewD2:MORI1_EVENT, M_NewD2:MORI1_EVENT
 MsdanS2:
   dummy:
+    [none]: # Appears in: M_Dai:Msdan2
 MsdanSb:
   dummy:
+    [none]: # Appears in: M_Dai:Msdan
 MtryB:
   Wait:
+    [none]: # Appears in: Hyroom:MtryB_sink, Hyroom:move_YLzou
 NpcNz:
   CHKGETITEM:
+    [none]: # Appears in: ADMumi:DEFAULT_NPC_NZ_ESA, A_mori:DEFAULT_NPC_NZ_ESA, A_nami:DEFAULT_NPC_NZ_ESA, A_umikz:DEFAULT_NPC_NZ_ESA, Abesso:DEFAULT_NPC_NZ_ESA, Abship:DEFAULT_NPC_NZ_ESA, Adanmae:DEFAULT_NPC_NZ_ESA, Asoko:DEFAULT_NPC_NZ_ESA, Atorizk:DEFAULT_NPC_NZ_ESA, Cave0 ...
   CONTINUE_TALK:
+    [none]: # Appears in: ADMumi:DEFAULT_NPC_NZ_ESA, A_mori:DEFAULT_NPC_NZ_ESA, A_nami:DEFAULT_NPC_NZ_ESA, A_umikz:DEFAULT_NPC_NZ_ESA, Abesso:DEFAULT_NPC_NZ_ESA, Abship:DEFAULT_NPC_NZ_ESA, Adanmae:DEFAULT_NPC_NZ_ESA, Asoko:DEFAULT_NPC_NZ_ESA, Atorizk:DEFAULT_NPC_NZ_ESA, Cave0 ...
   EATESA:
+    [none]: # Appears in: ADMumi:DEFAULT_NPC_NZ_ESA, A_mori:DEFAULT_NPC_NZ_ESA, A_nami:DEFAULT_NPC_NZ_ESA, A_umikz:DEFAULT_NPC_NZ_ESA, Abesso:DEFAULT_NPC_NZ_ESA, Abship:DEFAULT_NPC_NZ_ESA, Adanmae:DEFAULT_NPC_NZ_ESA, Asoko:DEFAULT_NPC_NZ_ESA, Atorizk:DEFAULT_NPC_NZ_ESA, Cave0 ...
   EATESA1ST:
+    [none]: # Appears in: ADMumi:DEFAULT_NPC_NZ_ESA, A_mori:DEFAULT_NPC_NZ_ESA, A_nami:DEFAULT_NPC_NZ_ESA, A_umikz:DEFAULT_NPC_NZ_ESA, Abesso:DEFAULT_NPC_NZ_ESA, Abship:DEFAULT_NPC_NZ_ESA, Adanmae:DEFAULT_NPC_NZ_ESA, Asoko:DEFAULT_NPC_NZ_ESA, Atorizk:DEFAULT_NPC_NZ_ESA, Cave0 ...
   GOHOME:
+    [none]: # Appears in: ADMumi:DEFAULT_NPC_NZ_ESA, ADMumi:DEFAULT_NPC_NZ_GETITEM, A_mori:DEFAULT_NPC_NZ_ESA, A_mori:DEFAULT_NPC_NZ_GETITEM, A_nami:DEFAULT_NPC_NZ_ESA, A_nami:DEFAULT_NPC_NZ_GETITEM, A_umikz:DEFAULT_NPC_NZ_ESA, A_umikz:DEFAULT_NPC_NZ_GETITEM, Abesso:DEFAULT_N ...
   KILLALL:
+    [none]: # Appears in: ADMumi:DEFAULT_NPC_NZ_ESA, A_mori:DEFAULT_NPC_NZ_ESA, A_nami:DEFAULT_NPC_NZ_ESA, A_umikz:DEFAULT_NPC_NZ_ESA, Abesso:DEFAULT_NPC_NZ_ESA, Abship:DEFAULT_NPC_NZ_ESA, Adanmae:DEFAULT_NPC_NZ_ESA, Asoko:DEFAULT_NPC_NZ_ESA, Atorizk:DEFAULT_NPC_NZ_ESA, Cave0 ...
   SETANM:
     anm_no:
       8 # Appears in: ADMumi:DEFAULT_NPC_NZ_ESA, A_mori:DEFAULT_NPC_NZ_ESA, A_nami:DEFAULT_NPC_NZ_ESA, A_umikz:DEFAULT_NPC_NZ_ESA, Abesso:DEFAULT_NPC_NZ_ESA, Abship:DEFAULT_NPC_NZ_ESA, Adanmae:DEFAULT_NPC_NZ_ESA, Asoko:DEFAULT_NPC_NZ_ESA, Atorizk:DEFAULT_NPC_NZ_ESA, Cave0 ...
@@ -4817,6 +5243,7 @@ NpcNz:
     loop_count:
       1 # Appears in: ADMumi:DEFAULT_NPC_NZ_ESA, A_mori:DEFAULT_NPC_NZ_ESA, A_nami:DEFAULT_NPC_NZ_ESA, A_umikz:DEFAULT_NPC_NZ_ESA, Abesso:DEFAULT_NPC_NZ_ESA, Abship:DEFAULT_NPC_NZ_ESA, Adanmae:DEFAULT_NPC_NZ_ESA, Asoko:DEFAULT_NPC_NZ_ESA, Atorizk:DEFAULT_NPC_NZ_ESA, Cave0 ...
   SHOW:
+    [none]: # Appears in: ADMumi:DEFAULT_NPC_NZ_ESA, A_mori:DEFAULT_NPC_NZ_ESA, A_nami:DEFAULT_NPC_NZ_ESA, A_umikz:DEFAULT_NPC_NZ_ESA, Abesso:DEFAULT_NPC_NZ_ESA, Abship:DEFAULT_NPC_NZ_ESA, Adanmae:DEFAULT_NPC_NZ_ESA, Asoko:DEFAULT_NPC_NZ_ESA, Atorizk:DEFAULT_NPC_NZ_ESA, Cave0 ...
   TALK_MSG:
     end_msg:
       13302 # Appears in: ADMumi:DEFAULT_NPC_NZ_ESA, A_mori:DEFAULT_NPC_NZ_ESA, A_nami:DEFAULT_NPC_NZ_ESA, A_umikz:DEFAULT_NPC_NZ_ESA, Abesso:DEFAULT_NPC_NZ_ESA, Abship:DEFAULT_NPC_NZ_ESA, Adanmae:DEFAULT_NPC_NZ_ESA, Asoko:DEFAULT_NPC_NZ_ESA, Atorizk:DEFAULT_NPC_NZ_ESA, Cave0 ...
@@ -4824,14 +5251,22 @@ NpcNz:
       13301 # Appears in: ADMumi:DEFAULT_NPC_NZ_ESA, A_mori:DEFAULT_NPC_NZ_ESA, A_nami:DEFAULT_NPC_NZ_ESA, A_umikz:DEFAULT_NPC_NZ_ESA, Abesso:DEFAULT_NPC_NZ_ESA, Abship:DEFAULT_NPC_NZ_ESA, Adanmae:DEFAULT_NPC_NZ_ESA, Asoko:DEFAULT_NPC_NZ_ESA, Atorizk:DEFAULT_NPC_NZ_ESA, Cave0 ...
       13315 # Appears in: ADMumi:DEFAULT_NPC_NZ_GETITEM, A_mori:DEFAULT_NPC_NZ_GETITEM, A_nami:DEFAULT_NPC_NZ_GETITEM, A_umikz:DEFAULT_NPC_NZ_GETITEM, Abesso:DEFAULT_NPC_NZ_GETITEM, Abship:DEFAULT_NPC_NZ_GETITEM, Adanmae:DEFAULT_NPC_NZ_GETITEM, Asoko:DEFAULT_NPC_NZ_GETITEM, A ...
   dummy:
+    [none]: # Appears in: ADMumi:DEFAULT_NPC_NZ_ESA, ADMumi:DEFAULT_NPC_NZ_GETITEM, A_mori:DEFAULT_NPC_NZ_ESA, A_mori:DEFAULT_NPC_NZ_GETITEM, A_nami:DEFAULT_NPC_NZ_ESA, A_nami:DEFAULT_NPC_NZ_GETITEM, A_umikz:DEFAULT_NPC_NZ_ESA, A_umikz:DEFAULT_NPC_NZ_GETITEM, Abesso:DEFAULT_N ...
 NpcSo:
   APPEAR:
+    [none]: # Appears in: sea:SO_BOW, sea:SO_1ST_MEET, sea:SO_ESA_XY, sea:SO_MAPOPEN, sea:SO_MAPOPEN
   DISAPPEAR:
+    [none]: # Appears in: sea:SO_TRIFORCE_CHECK, sea:SO_MAPOPEN
   DIVE:
+    [none]: # Appears in: sea:SO_1ST_MEET
   DUMMY:
+    [none]: # Appears in: sea:SO_GET_RUPEE
   EATESA:
+    [none]: # Appears in: sea:SO_ESA_XY
   EATESA1ST:
+    [none]: # Appears in: sea:SO_ESA_XY
   EQUIP:
+    [none]: # Appears in: sea:SO_MAPOPEN
   JUMP:
     SpeedF:
       24.0 # Appears in: sea:SO_1ST_MEET
@@ -4845,12 +5280,19 @@ NpcSo:
     Speed_y:
       18.0 # Appears in: sea:SO_MAPOPEN
   MINIGAME:
+    [none]: # Appears in: sea:SO_BOW
   MINIGAME_END:
+    [none]: # Appears in: sea:SO_BOW
   MINIGAME_PL_TURN:
+    [none]: # Appears in: sea:SO_BOW
   MINIGAME_PL_UP:
+    [none]: # Appears in: sea:SO_BOW
   MINIGAME_RETURN:
+    [none]: # Appears in: sea:SO_BOW
   MINIGAME_WAIT:
+    [none]: # Appears in: sea:SO_BOW
   MINIGAME_WARP:
+    [none]: # Appears in: sea:SO_BOW
   MOVE_TO_ACTOR:
     ActorName:
       'Ship' # Appears in: sea:SO_TRIFORCE_CHECK, sea:SO_1ST_MEET, sea:SO_ESA_XY
@@ -4874,6 +5316,7 @@ NpcSo:
     Speed:
       0.0 # Appears in: sea:SO_TRIFORCE_CHECK
   PARTNER_SHIP:
+    [none]: # Appears in: sea:SO_TRIFORCE_CHECK
   SET_ANM:
     Name:
       'TALK' # Appears in: sea:SO_TRIFORCE_CHECK
@@ -4891,6 +5334,7 @@ NpcSo:
       13007 # Appears in: sea:SO_1ST_MEET_END
       13001 # Appears in: sea:SO_1ST_MEET
   TURN:
+    [none]: # Appears in: sea:SO_ESA_XY
   TURN_TO_ACTOR:
     ActorName:
       'Ship' # Appears in: sea:SO_TRIFORCE_CHECK, sea:SO_1ST_MEET_END, sea:SO_1ST_MEET
@@ -4907,14 +5351,18 @@ NpcSo:
     TurnSpeed:
       6000 # Appears in: sea:SO_BOW, sea:SO_1ST_MEET, sea:SO_ESA_XY, sea:SO_MAPOPEN
   UNEQUIP:
+    [none]: # Appears in: sea:SO_MAPOPEN
   WAIT:
+    [none]: # Appears in: sea:SO_ESA_XY
     Timer:
       1  # Appears in: sea:SO_BOW
       30 # Appears in: sea:SO_MAPOPEN
       10 # Appears in: sea:SO_MAPOPEN
 Nzfall:
   HIKU:
+    [none]: # Appears in: Pnezumi:NZFALL
   OPEN:
+    [none]: # Appears in: Pnezumi:NZFALL
   WAIT:
     Timer:
       1  # Appears in: Pnezumi:NZFALL
@@ -4922,16 +5370,24 @@ Nzfall:
       30 # Appears in: Pnezumi:NZFALL
 Ob1:
   DUMMY:
+    [none]: # Appears in: DmSpot0:GET_RUPY20
   START:
+    [none]: # Appears in: DmSpot0:GET_RUPY20
   TALK:
+    [none]: # Appears in: DmSpot0:ATO_SPEACH
   WAIT:
+    [none]: # Appears in: sea:Get_Rupee
 Ohatch:
   OPEN:
+    [none]: # Appears in: sea:FIGURE_HATCH_OPEN
   WAIT:
+    [none]: # Appears in: sea:FIGURE_HATCH_OPEN, sea:FIGURE_HATCH_OPEN
 Olift:
   dummy:
+    [none]: # Appears in: Omori:LIFT_UP
 Os:
   END:
+    [none]: # Appears in: Siren:Os_Finish, Siren:Os2_Finish
   FINISH:
     Type:
       0 # Appears in: Siren:Os_Finish, Siren:Os_Message
@@ -4944,17 +5400,21 @@ Os:
     Daiza:
       0 # Appears in: Siren:Os_Finish
   MSGEND:
+    [none]: # Appears in: Siren:Os_Message
   MSGSET:
     MsgNo:
       3828 # Appears in: Siren:Os_Message
   NEXT:
+    [none]: # Appears in: Siren:Os_Finit0
     SE:
       0 # Appears in: Siren:Os_Finit1
   SAVE:
+    [none]: # Appears in: Siren:Os_Wakeup
   TURN:
     Angle:
       -16384 # Appears in: Siren:Os_Finish
   WAIT:
+    [none]: # Appears in: Siren:Os_Wakeup, Siren:Os_Wakeup, Siren:Os_Wakeup, Siren:Os_Finit0, Siren:Os_Finit1, Siren:Os_Finish, Siren:Os_Finish, Siren:Os_Finish, Siren:Os_Finish, Siren:Os_Message, Siren:Os_Message, Siren:Os_Message, Siren:Os2_Finish
     angle:
       -16384 # Appears in: Siren:Os_Finit0
     gravity:
@@ -4966,8 +5426,10 @@ Os:
     timer:
       10 # Appears in: Siren:Os_Wakeup
   WAKEUP:
+    [none]: # Appears in: Siren:Os_Wakeup
 Os1:
   END:
+    [none]: # Appears in: Siren:Os1_Finish, Siren:Os2_Finish
   FINISH:
     Type:
       0 # Appears in: Siren:Os1_Finish, Siren:Os1_Message
@@ -4980,14 +5442,18 @@ Os1:
     Daiza:
       0 # Appears in: Siren:Os1_Finish
   NEXT:
+    [none]: # Appears in: Siren:Os1_Finit0
     SE:
       0 # Appears in: Siren:Os1_Finit1
   SAVE:
+    [none]: # Appears in: Siren:Os1_Wakeup
   SW_ON:
+    [none]: # Appears in: Siren:Os1_Finish
   TURN:
     Angle:
       16384 # Appears in: Siren:Os1_Finish
   WAIT:
+    [none]: # Appears in: Siren:Os1_Wakeup, Siren:Os1_Wakeup, Siren:Os1_Wakeup, Siren:Os1_Finit0, Siren:Os1_Finit1, Siren:Os1_Finish, Siren:Os1_Finish, Siren:Os1_Finish, Siren:Os1_Finish, Siren:Os1_Message, Siren:Os1_Message, Siren:Os1_Message, Siren:Os2_Finish
     angle:
       16384 # Appears in: Siren:Os1_Finit0
     gravity:
@@ -4999,8 +5465,10 @@ Os1:
     timer:
       10 # Appears in: Siren:Os1_Wakeup
   WAKEUP:
+    [none]: # Appears in: Siren:Os1_Wakeup
 Os2:
   END:
+    [none]: # Appears in: Siren:Os2_Finish
   FINISH:
     Type:
       0 # Appears in: Siren:Os2_Finish
@@ -5012,14 +5480,18 @@ Os2:
     Daiza:
       0 # Appears in: Siren:Os2_Finish
   NEXT:
+    [none]: # Appears in: Siren:Os2_Finit0
     SE:
       0 # Appears in: Siren:Os2_Finit1
   SAVE:
+    [none]: # Appears in: Siren:Os2_Wakeup
   SW_ON:
+    [none]: # Appears in: Siren:Os2_Finish
   TURN:
     Angle:
       0 # Appears in: Siren:Os2_Finish
   WAIT:
+    [none]: # Appears in: Siren:Os2_Wakeup, Siren:Os2_Wakeup, Siren:Os2_Wakeup, Siren:Os2_Finit0, Siren:Os2_Finit1, Siren:Os2_Finish, Siren:Os2_Finish, Siren:Os2_Finish, Siren:Os2_Message
     angle:
       0 # Appears in: Siren:Os2_Finit0
     gravity:
@@ -5031,8 +5503,10 @@ Os2:
     timer:
       10 # Appears in: Siren:Os2_Wakeup
   WAKEUP:
+    [none]: # Appears in: Siren:Os2_Wakeup
 Oship:
   dummy:
+    [none]: # Appears in: sea:GOLD_SHIP_DELETE
 P1a:
   HEADSWING:
     Count:
@@ -5056,10 +5530,12 @@ P1a:
     TurnType:
       2 # Appears in: DmSpot0:YUUKAIGO, sea:yuukaigo
   WAIT:
+    [none]: # Appears in: DmSpot0:YUUKAIGO, sea:yuukaigo, sea:yuukaigo
     Timer:
       8 # Appears in: DmSpot0:YUUKAIGO, sea:yuukaigo
 P2b:
   DUMMY:
+    [none]: # Appears in: DmSpot0:YUUKAIGO
   JUMP:
     Gravity:
       -1.5 # Appears in: Asoko:P2B_INTRO_2
@@ -5124,7 +5600,9 @@ P2b:
       4.0 # Appears in: Asoko:P2B_GOAL, Asoko:P2B_TO_GOAL, Asoko:P2B_GOAL_2
       0.0 # Appears in: Asoko:P2B_TO_GOAL, Asoko:P2B_BOMB_GET, Asoko:P2B_GOAL_2, Asoko:P2B_INTRO_2
   OMAMORI_END:
+    [none]: # Appears in: Asoko:P2B_BOMB_GET
   OMAMORI_INIT:
+    [none]: # Appears in: Asoko:P2B_BOMB_GET
   RIDE_SWITCH:
     Gravity:
       -2.5 # Appears in: Asoko:P2B_INTRO
@@ -5151,8 +5629,11 @@ P2b:
       'NOD'      # Appears in: Asoko:P2B_BOMB_GET
       'THINK'    # Appears in: Asoko:P2B_BOMB_GET
   SURPRISE:
+    [none]: # Appears in: Asoko:P2B_BOMB_GET
   SW_OFF:
+    [none]: # Appears in: Asoko:P2B_INTRO_2
   SW_ON:
+    [none]: # Appears in: Asoko:P2B_INTRO_2
   TALK:
     Attention:
       1 # Appears in: Asoko:P2B_ARRIVE_MAJYU, Asoko:P2B_GOAL, Asoko:P2B_GOAL_WAIT_TALK, Asoko:P2B_INTRO, Asoko:P2B_TO_GOAL, Asoko:P2B_GOAL_2, Asoko:P2B_INTRO_2
@@ -5199,6 +5680,7 @@ P2b:
       (0.0, -555.0, -3020.0)    # Appears in: Asoko:P2B_TO_GOAL
       (0.0, -550.0, -3190.0)    # Appears in: Asoko:P2B_GOAL_2
   WAIT:
+    [none]: # Appears in: sea:yuukaigo
     Timer:
       20 # Appears in: Asoko:P2B_TEST_SWITCH, Asoko:P2B_TO_GOAL, Asoko:P2B_BOMB_GET, Asoko:P2B_GOAL_2, Asoko:P2B_INTRO_2
       5  # Appears in: Asoko:P2B_INTRO
@@ -5360,15 +5842,23 @@ PACKAGE:
       227 # Appears in: sea:awake_zola
       128 # Appears in: sea:MEETSHISHIOH
   WAIT:
+    [none]: # Appears in: ADMumi:warp_in, ADMumi:warphole, ADMumi:runaway_majuto, ADMumi:towerd, ADMumi:towerf, ADMumi:towern, A_mori:MEET_TETORA, Adanmae:demo41, Atorizk:demo10, ENDumi:ending, Edaichi:dance_zola, Ekaze:dance_kokiri, GTower:g2before, GTower:endhr, GanonK:kugu ...
 PScnChg:
   WAIT:
+    [none]: # Appears in: PShip:PSHIP_CLEAR, SubD45:PSHIP_CLEAR
   WARAIGOE:
+    [none]: # Appears in: PShip:PSHIP_CLEAR, SubD45:PSHIP_CLEAR
 Po:
   CLR_HANME:
+    [none]: # Appears in: Ocmera:PHOTO_TALK
   GET_ITEM:
+    [none]: # Appears in: Ocmera:PHOTO_GET_ITEM, Ocmera:PHOTO_GET_ITEM2, Ocmera:PHOTO_GET_PHOTO
   GET_PHOTO:
+    [none]: # Appears in: Ocmera:PHOTO_GET_PHOTO
   LOOK_UB:
+    [none]: # Appears in: Ocmera:PHOTO_DATE_UB4
   MES_SET:
+    [none]: # Appears in: Ocmera:PHOTO_GET_ITEM2, Ocmera:PHOTO_GET_ITEM2, Ocmera:PHOTO_GET_PHOTO, Ocmera:PHOTO_GET_PHOTO
     MsgNo:
       1     # Appears in: Ocmera:PHOTO_COUNTER_TALK0, Ocmera:PHOTO_COUNTER_TALK1, Ocmera:PHOTO_GET_ITEM2, Ocmera:PHOTO_GET_PHOTO
       10853 # Appears in: Ocmera:PHOTO_GET_ITEM
@@ -5381,26 +5871,38 @@ Po:
     MsgNo:
       11614 # Appears in: Ocmera:PHOTO_DATE_UB4
   POS_SET:
+    [none]: # Appears in: Ocmera:PHOTO_GALLERY, Ocmera:PHOTO_TALK
   SET_ANGLE:
+    [none]: # Appears in: Ocmera:PHOTO_LINK_BACK, Ocmera:PHOTO_DATE_UB4
   SET_EYE:
+    [none]: # Appears in: Ocmera:PHOTO_GALLERY
   SE_SET:
     SeNo:
       0 # Appears in: Ocmera:PHOTO_GET_ITEM2
   TURN_TO_PLAYER:
+    [none]: # Appears in: Ocmera:PHOTO_DATE_UB4
   WAIT:
+    [none]: # Appears in: Ocmera:PHOTO_LINK_BACK, Ocmera:PHOTO_GET_ITEM2, Ocmera:PHOTO_GET_ITEM2, Ocmera:PHOTO_GET_ITEM2, Ocmera:PHOTO_GET_PHOTO, Ocmera:PHOTO_GET_PHOTO, Ocmera:PHOTO_GALLERY, Ocmera:PHOTO_GALLERY, Ocmera:PHOTO_TALK, Ocmera:PHOTO_DATE_UB4, Ocmera:PHOTO_DATE_UB ...
 Qdghd:
   WAIT:
+    [none]: # Appears in: sea:ICE_FAILED, sea:ICE_FAILED
 Rdead1:
   Dummy:
+    [none]: # Appears in: ADMumi:DEFAULT_RD_ATTACK, ADMumi:DEFAULT_RD_CRY, A_mori:DEFAULT_RD_ATTACK, A_mori:DEFAULT_RD_CRY, A_nami:DEFAULT_RD_ATTACK, A_nami:DEFAULT_RD_CRY, A_umikz:DEFAULT_RD_ATTACK, A_umikz:DEFAULT_RD_CRY, Abesso:DEFAULT_RD_ATTACK, Abesso:DEFAULT_RD_CRY, Abs ...
 Rdead2:
   Dummy:
+    [none]: # Appears in: ADMumi:DEFAULT_RD_ATTACK, ADMumi:DEFAULT_RD_CRY, A_mori:DEFAULT_RD_ATTACK, A_mori:DEFAULT_RD_CRY, A_nami:DEFAULT_RD_ATTACK, A_nami:DEFAULT_RD_CRY, A_umikz:DEFAULT_RD_ATTACK, A_umikz:DEFAULT_RD_CRY, Abesso:DEFAULT_RD_ATTACK, Abesso:DEFAULT_RD_CRY, Abs ...
 Roten:
   CLR_ITEM:
+    [none]: # Appears in: K_Test6:ROTEN_EXCHANGE_1ST, K_Testb:ROTEN_EXCHANGE_1ST, sea:ROTEN_EXCHANGE_1ST
   GET_ITEM:
+    [none]: # Appears in: K_Test6:ROTEN_CHANGE_ITEM, K_Testb:ROTEN_CHANGE_ITEM, sea:ROTEN_CHANGE_ITEM
     ItemNo:
       0 # Appears in: K_Testb:ROTEN_GET_MAP, sea:ROTEN_GET_MAP
   INIT:
+    [none]: # Appears in: K_Test6:ROTEN_EXCHANGE_1ST, K_Testb:ROTEN_EXCHANGE_1ST, sea:ROTEN_EXCHANGE_1ST
   MES_SET:
+    [none]: # Appears in: K_Testb:ROTEN_GET_MAP, sea:ROTEN_GET_MAP
     MsgNo:
       0  # Appears in: K_Test6:ROTEN_EXCHANGE_1ST, K_Testb:ROTEN_EXCHANGE_1ST, sea:ROTEN_EXCHANGE_1ST
       1  # Appears in: K_Test6:ROTEN_EXCHANGE_1ST, K_Testb:ROTEN_EXCHANGE_1ST, sea:ROTEN_EXCHANGE_1ST
@@ -5409,43 +5911,75 @@ Roten:
       21 # Appears in: K_Test6:ROTEN_CHANGE_ITEM, K_Testb:ROTEN_CHANGE_ITEM, sea:ROTEN_CHANGE_ITEM
       99 # Appears in: K_Testb:ROTEN_GET_MAP, sea:ROTEN_GET_MAP
   OFF_PLR:
+    [none]: # Appears in: K_Test6:ROTEN_EXCHANGE_1ST, K_Testb:ROTEN_EXCHANGE_1ST, sea:ROTEN_EXCHANGE_1ST
   ON_PLR:
+    [none]: # Appears in: K_Test6:ROTEN_CHANGE_ITEM, K_Testb:ROTEN_CHANGE_ITEM, sea:ROTEN_CHANGE_ITEM
   SET_ANGLE:
+    [none]: # Appears in: K_Test6:ROTEN_CHANGE_ITEM, K_Testb:ROTEN_CHANGE_ITEM, sea:ROTEN_CHANGE_ITEM
   SET_ITEM:
+    [none]: # Appears in: K_Test6:ROTEN_EXCHANGE_1ST, K_Testb:ROTEN_EXCHANGE_1ST, sea:ROTEN_EXCHANGE_1ST
   WAIT:
+    [none]: # Appears in: K_Test6:ROTEN_EXCHANGE_2ND, K_Testb:ROTEN_EXCHANGE_2ND, K_Testb:ROTEN_GET_MAP, sea:ROTEN_EXCHANGE_2ND, sea:ROTEN_GET_MAP
 Rsh1:
   TALKMSG:
     MsgNo:
       10385 # Appears in: sea:RSH_SHOP_OUT
   TURN:
+    [none]: # Appears in: sea:RSH_SHOP_OUT, sea:RSH_SHOP_OUT
   dummy:
+    [none]: # Appears in: sea:RSH_SHOP_OUT, sea:RSH_SHOP_OUT, sea:RSH_SHOP_OUT
   dummy1:
+    [none]: # Appears in: sea:RSH_GET_DEMO
   dummy2:
+    [none]: # Appears in: sea:RSH_GET_DEMO
 SHOKUDAI:
   FIRE:
+    [none]: # Appears in: ADMumi:SHOKUDAI_SWITCH, Cave08:SHOKUDAI_SWITCH, ENDumi:SHOKUDAI_SWITCH, Edaichi:SHOKUDAI_SWITCH, Ekaze:SHOKUDAI_SWITCH, GanonA:SHOKUDAI_SWITCH, GanonB:SHOKUDAI_SWITCH, GanonC:SHOKUDAI_SWITCH, GanonD:SHOKUDAI_SWITCH, GanonE:SHOKUDAI_SWITCH, GanonJ:SHO ...
   WAIT:
+    [none]: # Appears in: ADMumi:SHOKUDAI_SWITCH, Cave08:SHOKUDAI_SWITCH, ENDumi:SHOKUDAI_SWITCH, Edaichi:SHOKUDAI_SWITCH, Ekaze:SHOKUDAI_SWITCH, GanonA:SHOKUDAI_SWITCH, GanonB:SHOKUDAI_SWITCH, GanonC:SHOKUDAI_SWITCH, GanonD:SHOKUDAI_SWITCH, GanonE:SHOKUDAI_SWITCH, GanonJ:SHO ...
 SHUTTER_DOOR:
   ADJUSTMENT:
+    [none]: # Appears in: ADMumi:DEFAULT_KNOB_DOOR_F_OPEN, ADMumi:DEFAULT_KNOB_DOOR_B_OPEN, A_mori:DEFAULT_KNOB_DOOR_F_OPEN, A_mori:DEFAULT_KNOB_DOOR_B_OPEN, A_nami:DEFAULT_KNOB_DOOR_F_OPEN, A_nami:DEFAULT_KNOB_DOOR_B_OPEN, A_umikz:DEFAULT_KNOB_DOOR_F_OPEN, A_umikz:DEFAULT_KN ...
   CLOSE:
+    [none]: # Appears in: ADMumi:DEFAULT_SHUTTER_DOOR_12, ADMumi:DEFAULT_SHUTTER_DOOR_10, ADMumi:DEFAULT_SHUTTER_DOOR_F, ADMumi:DEFAULT_BS_SHUTTER_F, ADMumi:DEFAULT_SHUTTER_DOOR_F_STOP, ADMumi:SHUTTER_START, ADMumi:SHUTTER_START_STOP, ADMumi:BS_SHUTTER_START, ADMumi:SHUTTER_D ...
   DROP_AF:
+    [none]: # Appears in: ADMumi:SHUTTER_DROP_CARRY, A_mori:SHUTTER_DROP_CARRY, A_nami:SHUTTER_DROP_CARRY, A_umikz:SHUTTER_DROP_CARRY, Abesso:SHUTTER_DROP_CARRY, Abship:SHUTTER_DROP_CARRY, Adanmae:SHUTTER_DROP_CARRY, Asoko:SHUTTER_DROP_CARRY, Atorizk:SHUTTER_DROP_CARRY, Cave0 ...
   DROP_BF:
+    [none]: # Appears in: ADMumi:SHUTTER_DROP_CARRY, A_mori:SHUTTER_DROP_CARRY, A_nami:SHUTTER_DROP_CARRY, A_umikz:SHUTTER_DROP_CARRY, Abesso:SHUTTER_DROP_CARRY, Abship:SHUTTER_DROP_CARRY, Adanmae:SHUTTER_DROP_CARRY, Asoko:SHUTTER_DROP_CARRY, Atorizk:SHUTTER_DROP_CARRY, Cave0 ...
   END_CHECK:
+    [none]: # Appears in: ADMumi:DEFAULT_SHUTTER_DOOR_F, ADMumi:DEFAULT_BS_SHUTTER_F, ADMumi:DEFAULT_SHUTTER_DOOR_F_STOP, ADMumi:SHUTTER_START, ADMumi:SHUTTER_START_STOP, ADMumi:BS_SHUTTER_START, A_mori:DEFAULT_SHUTTER_DOOR_F, A_mori:DEFAULT_BS_SHUTTER_F, A_mori:DEFAULT_SHUTT ...
   OPEN:
+    [none]: # Appears in: ADMumi:DEFAULT_SHUTTER_DOOR_12, ADMumi:DEFAULT_SHUTTER_DOOR_10, ADMumi:DEFAULT_SHUTTER_DOOR_F, ADMumi:DEFAULT_BS_SHUTTER_F, ADMumi:DEFAULT_SHUTTER_DOOR_F_STOP, ADMumi:SHUTTER_START, ADMumi:SHUTTER_START_STOP, ADMumi:BS_SHUTTER_START, ADMumi:SHUTTER_D ...
   OPEN_PULL:
+    [none]: # Appears in: ADMumi:DEFAULT_KNOB_DOOR_F_OPEN, A_mori:DEFAULT_KNOB_DOOR_F_OPEN, A_nami:DEFAULT_KNOB_DOOR_F_OPEN, A_umikz:DEFAULT_KNOB_DOOR_F_OPEN, Abesso:DEFAULT_KNOB_DOOR_F_OPEN, Abship:DEFAULT_KNOB_DOOR_F_OPEN, Adanmae:DEFAULT_KNOB_DOOR_F_OPEN, Amos_T:DEFAULT_KN ...
   OPEN_PULL2:
+    [none]: # Appears in: ADMumi:KNOB_START_B, ADMumi:KNOB_S_BR, ADMumi:KNOB_S_BL, A_mori:KNOB_START_B, A_mori:KNOB_S_BR, A_mori:KNOB_S_BL, A_nami:KNOB_START_B, A_nami:KNOB_S_BR, A_nami:KNOB_S_BL, A_umikz:KNOB_START_B, A_umikz:KNOB_S_BR, A_umikz:KNOB_S_BL, Abesso:KNOB_START_B ...
   OPEN_PUSH:
+    [none]: # Appears in: ADMumi:DEFAULT_KNOB_DOOR_B_OPEN, A_mori:DEFAULT_KNOB_DOOR_B_OPEN, A_nami:DEFAULT_KNOB_DOOR_B_OPEN, A_umikz:DEFAULT_KNOB_DOOR_B_OPEN, Abesso:DEFAULT_KNOB_DOOR_B_OPEN, Abship:DEFAULT_KNOB_DOOR_B_OPEN, Adanmae:DEFAULT_KNOB_DOOR_B_OPEN, Amos_T:DEFAULT_KN ...
   OPEN_PUSH2:
+    [none]: # Appears in: ADMumi:KNOB_START, ADMumi:KNOB_S_FR, ADMumi:KNOB_S_FL, A_mori:KNOB_START, A_mori:KNOB_S_FR, A_mori:KNOB_S_FL, A_nami:KNOB_START, A_nami:KNOB_S_FR, A_nami:KNOB_S_FL, A_umikz:KNOB_START, A_umikz:KNOB_S_FR, A_umikz:KNOB_S_FL, Abesso:KNOB_START, Abesso:K ...
   SETANGLE:
+    [none]: # Appears in: ADMumi:DEFAULT_KNOB_DOOR_F_OPEN, ADMumi:DEFAULT_KNOB_DOOR_B_OPEN, A_mori:DEFAULT_KNOB_DOOR_F_OPEN, A_mori:DEFAULT_KNOB_DOOR_B_OPEN, A_nami:DEFAULT_KNOB_DOOR_F_OPEN, A_nami:DEFAULT_KNOB_DOOR_B_OPEN, A_umikz:DEFAULT_KNOB_DOOR_F_OPEN, A_umikz:DEFAULT_KN ...
   SETGOAL:
+    [none]: # Appears in: ADMumi:DEFAULT_SHUTTER_DOOR_12, ADMumi:DEFAULT_SHUTTER_DOOR_10, ADMumi:DEFAULT_SHUTTER_DOOR_F, ADMumi:DEFAULT_BS_SHUTTER_F, ADMumi:DEFAULT_SHUTTER_DOOR_F_STOP, ADMumi:SHUTTER_START, ADMumi:SHUTTER_START_STOP, ADMumi:BS_SHUTTER_START, ADMumi:SHUTTER_D ...
   SETSTART_PULL:
+    [none]: # Appears in: ADMumi:KNOB_START_B, ADMumi:KNOB_S_BR, ADMumi:KNOB_S_BL, A_mori:KNOB_START_B, A_mori:KNOB_S_BR, A_mori:KNOB_S_BL, A_nami:KNOB_START_B, A_nami:KNOB_S_BR, A_nami:KNOB_S_BL, A_umikz:KNOB_START_B, A_umikz:KNOB_S_BR, A_umikz:KNOB_S_BL, Abesso:KNOB_START_B ...
   SETSTART_PUSH:
+    [none]: # Appears in: ADMumi:KNOB_START, ADMumi:KNOB_S_FR, ADMumi:KNOB_S_FL, A_mori:KNOB_START, A_mori:KNOB_S_FR, A_mori:KNOB_S_FL, A_nami:KNOB_START, A_nami:KNOB_S_FR, A_nami:KNOB_S_FL, A_umikz:KNOB_START, A_umikz:KNOB_S_FR, A_umikz:KNOB_S_FL, Abesso:KNOB_START, Abesso:K ...
   SMOKE:
+    [none]: # Appears in: ADMumi:DEFAULT_SHUTTER_DOOR_10, ADMumi:DEFAULT_SHUTTER_DOOR_F, ADMumi:DEFAULT_BS_SHUTTER_F, ADMumi:DEFAULT_SHUTTER_DOOR_F_STOP, ADMumi:SHUTTER_START, ADMumi:SHUTTER_START_STOP, ADMumi:BS_SHUTTER_START, A_mori:DEFAULT_SHUTTER_DOOR_10, A_mori:DEFAULT_S ...
   SMOKE_END:
+    [none]: # Appears in: ADMumi:DEFAULT_SHUTTER_DOOR_10, ADMumi:DEFAULT_SHUTTER_DOOR_F, ADMumi:DEFAULT_BS_SHUTTER_F, ADMumi:DEFAULT_SHUTTER_DOOR_F_STOP, ADMumi:SHUTTER_START, ADMumi:SHUTTER_START_STOP, ADMumi:BS_SHUTTER_START, A_mori:DEFAULT_SHUTTER_DOOR_10, A_mori:DEFAULT_S ...
   STOP_CLOSE:
+    [none]: # Appears in: ADMumi:DEFAULT_SHUTTER_DOOR_12, ADMumi:DEFAULT_SHUTTER_DOOR_10, ADMumi:DEFAULT_SHUTTER_DOOR_F_STOP, ADMumi:SHUTTER_START_STOP, A_mori:DEFAULT_SHUTTER_DOOR_12, A_mori:DEFAULT_SHUTTER_DOOR_10, A_mori:DEFAULT_SHUTTER_DOOR_F_STOP, A_mori:SHUTTER_START_ST ...
   STOP_OPEN:
+    [none]: # Appears in: ADMumi:DEFAULT_STOP_OPEN, A_mori:DEFAULT_STOP_OPEN, A_nami:DEFAULT_STOP_OPEN, A_umikz:DEFAULT_STOP_OPEN, Abesso:DEFAULT_STOP_OPEN, Abship:DEFAULT_STOP_OPEN, Adanmae:DEFAULT_STOP_OPEN, Asoko:DEFAULT_STOP_OPEN, Atorizk:DEFAULT_STOP_OPEN, Cave01:DEFAULT ...
   TALK:
+    [none]: # Appears in: ADMumi:DEFAULT_KNOB_TALK, A_mori:DEFAULT_KNOB_TALK, A_nami:DEFAULT_KNOB_TALK, A_umikz:DEFAULT_KNOB_TALK, Abesso:DEFAULT_KNOB_TALK, Abship:DEFAULT_KNOB_TALK, Adanmae:DEFAULT_KNOB_TALK, Amos_T:DEFAULT_KNOB_TALK, Asoko:DEFAULT_KNOB_TALK, Atorizk:DEFAULT ...
   UNLOCK:
+    [none]: # Appears in: ADMumi:DEFAULT_SHUTTER_DOOR_12, ADMumi:DEFAULT_SHUTTER_DOOR_10, ADMumi:DEFAULT_SHUTTER_DOOR_F, ADMumi:DEFAULT_BS_SHUTTER_F, ADMumi:DEFAULT_SHUTTER_DOOR_F_STOP, ADMumi:SHUTTER_DROP_CARRY, A_mori:DEFAULT_SHUTTER_DOOR_12, A_mori:DEFAULT_SHUTTER_DOOR_10, ...
   WAIT:
+    [none]: # Appears in: ADMumi:DEFAULT_KNOB_DOOR_F_OPEN, ADMumi:DEFAULT_KNOB_DOOR_B_OPEN, ADMumi:KNOB_START, ADMumi:KNOB_START, ADMumi:KNOB_START_B, ADMumi:KNOB_START_B, ADMumi:KNOB_S_BR, ADMumi:KNOB_S_BR, ADMumi:KNOB_S_BL, ADMumi:KNOB_S_BL, ADMumi:KNOB_S_FR, ADMumi:KNOB_S_ ...
 SOUND:
   BGMSTOP:
     Timer:
@@ -5476,60 +6010,90 @@ SOUND:
       4 # Appears in: sea:ARRIVAL_WND, sea:ARRIVAL_WND2
       6 # Appears in: sea:PUROLO_RETURN, sea:PUROLO_RETURN2
   RIDDLE:
+    [none]: # Appears in: ADMumi:RiddleSound0, ADMumi:RiddleSound30, A_mori:RiddleSound0, A_mori:RiddleSound30, A_nami:RiddleSound0, A_nami:RiddleSound30, A_umikz:RiddleSound0, A_umikz:RiddleSound30, Abesso:RiddleSound0, Abesso:RiddleSound30, Abship:RiddleSound0, Abship:Riddl ...
   STRM_DEMO_MJ_SISTER:
+    [none]: # Appears in: Mjtower:FIND_SISTER
   STRM_PLAY:
+    [none]: # Appears in: Mjtower:FIND_SISTER
   WAIT:
+    [none]: # Appears in: GanonM:APPEAR_WARP, LinkRM:get_shield, Mjtower:FIND_SISTER, sea:TACT_TEARCH3, sea:TACT_TEARCH3, sea:ARRIVAL_DRG, sea:ARRIVAL_DRG, sea:ARRIVAL_DRG2, sea:ARRIVAL_DRG2, sea:ARRIVAL_GND, sea:ARRIVAL_GND2, sea:ARRIVAL_BRK, sea:ARRIVAL_BRK2, sea:ARRIVAL_FS ...
     Timer:
       30  # Appears in: ADMumi:RiddleSound30, A_mori:RiddleSound30, A_nami:RiddleSound30, A_umikz:RiddleSound30, Abesso:RiddleSound30, Abship:RiddleSound30, Adanmae:RiddleSound30, Asoko:RiddleSound30, Atorizk:RiddleSound30, Cave01:RiddleSound30, Cave02:RiddleSound30, Cave03 ...
       212 # Appears in: Mjtower:FIND_SISTER
 STBox:
   DROP:
+    [none]: # Appears in: sea:SALVAGE_HAZURE, sea:SLVG_HAZURE_LEFT
   WAIT:
+    [none]: # Appears in: sea:SALVAGE_GETITEM, sea:SLVG_GETITEM_LEFT, sea:SALVAGE_HAZURE, sea:SLVG_HAZURE_LEFT
   WAIT02:
+    [none]: # Appears in: sea:SALVAGE_GETITEM, sea:SLVG_GETITEM_LEFT
   WAIT_DUMMY:
+    [none]: # Appears in: sea:SALVAGE_GETITEM, sea:SLVG_GETITEM_LEFT
   WAIT_GETITEM:
+    [none]: # Appears in: sea:SALVAGE_GETITEM, sea:SLVG_GETITEM_LEFT
 SWITCH:
   CHANGE:
+    [none]: # Appears in: ADMumi:DEFAULT_SWITCH, ADMumi:DEFAULT_SWITCH_NOSOUND, A_mori:DEFAULT_SWITCH, A_mori:DEFAULT_SWITCH_NOSOUND, A_nami:DEFAULT_SWITCH, A_nami:DEFAULT_SWITCH_NOSOUND, A_umikz:DEFAULT_SWITCH, A_umikz:DEFAULT_SWITCH_NOSOUND, Abesso:DEFAULT_SWITCH, Abesso:DE ...
   WAIT:
+    [none]: # Appears in: ADMumi:DEFAULT_SWITCH, ADMumi:DEFAULT_SWITCH_NOSOUND, A_mori:DEFAULT_SWITCH, A_mori:DEFAULT_SWITCH_NOSOUND, A_nami:DEFAULT_SWITCH, A_nami:DEFAULT_SWITCH_NOSOUND, A_umikz:DEFAULT_SWITCH, A_umikz:DEFAULT_SWITCH_NOSOUND, Abesso:DEFAULT_SWITCH, Abesso:DE ...
 Sa3:
   GET_ITEM:
+    [none]: # Appears in: K_Testb:SA3_GET_ITEM, Opub:SA3_GET_ITEM, sea:SA3_GET_ITEM
   MES_SET:
+    [none]: # Appears in: K_Testb:SA3_GET_ITEM, Opub:SA3_GET_ITEM, sea:SA3_GET_ITEM
 Sa5:
   GET_ITEM:
+    [none]: # Appears in: K_Testb:SA5_GET_ITEM, Opub:SA5_GET_ITEM, sea:SA5_GET_ITEM
   MES_SET:
+    [none]: # Appears in: K_Testb:SA5_TALK_XY, K_Testb:SA5_GET_ITEM, Opub:SA5_TALK_XY, Opub:SA5_GET_ITEM, sea:SA5_TALK_XY, sea:SA5_GET_ITEM
     MsgNo:
       1 # Appears in: K_Testb:SA5_TALK_XY, Opub:SA5_TALK_XY, sea:SA5_TALK_XY
   WAIT:
+    [none]: # Appears in: K_Testb:SA5_TALK_XY, Opub:SA5_TALK_XY, sea:SA5_TALK_XY
 SalvFM:
   dummy:
+    [none]: # Appears in: sea:GOLD_SHIP_DELETE
 Salvag2:
   dummy:
+    [none]: # Appears in: sea:GOLD_SHIP_DELETE
 SalvagE:
   dummy:
+    [none]: # Appears in: sea:GOLD_SHIP_DELETE
 SalvagN:
   dummy:
+    [none]: # Appears in: sea:GOLD_SHIP_DELETE
 Salvage:
   dummy:
+    [none]: # Appears in: sea:GOLD_SHIP_DELETE
 Sarace:
   CONTINUE_TALK:
+    [none]: # Appears in: sea:SARACE_EXPCAM
   TALK_MSG:
     end_msg:
       4006 # Appears in: sea:SARACE_EXPCAM
     msg_num:
       4005 # Appears in: sea:SARACE_EXPCAM
   WAIT:
+    [none]: # Appears in: sea:SARACE_EXPCAM
     Timer:
       5 # Appears in: sea:SARACE_EXPCAM
 Search:
   BK_FIND:
+    [none]: # Appears in: MajyuE:Search_Light_Up, sea:Search_Light_Up
   DUMMY:
+    [none]: # Appears in: MajyuE:Search_Light_Up, sea:Search_Light_Up
   Find:
+    [none]: # Appears in: MajyuE:Search_Light_Find, MajyuE:Search_Light_Find_With_Barrel, MajyuE:Search_Light_Find_Wall
   LIGHT_UP:
+    [none]: # Appears in: MajyuE:Search_Light_Up, sea:Search_Light_Up
   LIGHT_UP_SOUND:
+    [none]: # Appears in: MajyuE:Search_Light_Up, sea:Search_Light_Up
 Sfairy:
   dummy:
+    [none]: # Appears in: Fairy01:BIGELF_ARRIVAL, Fairy02:BIGELF_ARRIVAL, Fairy03:BIGELF_ARRIVAL, Fairy04:BIGELF_ARRIVAL, Fairy05:BIGELF_ARRIVAL, Fairy06:BIGELF_ARRIVAL
 Ship:
   00init:
+    [none]: # Appears in: Ocean:race_start_cam, sea_E:ARRIVAL_DRG, sea_T:ARRIVAL_DRG
     angle:
       16384  # Appears in: GanonM:APPEAR_WARP
       49152  # Appears in: GanonM:GANON_ARRIVE
@@ -5681,8 +6245,11 @@ Ship:
       0 # Appears in: sea:BEAST_GATE2, sea:ARRIVAL_DRG, sea:ARRIVAL_DRG2, sea_E:ARRIVAL_DRG, sea_T:ARRIVAL_DRG
       1 # Appears in: sea:ARRIVAL_DRG, sea:ARRIVAL_DRG2, sea:ARRIVAL_BRK, sea:ARRIVAL_BRK2, sea:ARRIVAL_FST, sea:ARRIVAL_FST2, sea:ARRIVAL_TWN, sea:ARRIVAL_TWN2, sea_E:ARRIVAL_DRG, sea_E:ARRIVAL_FST, sea_E:ARRIVAL_BRK, sea_E:ARRIVAL_TWN, sea_T:ARRIVAL_DRG, sea_T:ARRIVAL_F ...
   02salvage:
+    [none]: # Appears in: sea:SALVAGE_GETITEM, sea:SLVG_GETITEM_LEFT, sea:SALVAGE_HAZURE, sea:SLVG_HAZURE_LEFT
   04racefail:
+    [none]: # Appears in: Ocean:race_fail_cam
   05keep:
+    [none]: # Appears in: Ocean:race_goal_cam, sea:SO_BOW
     atn_actor:
       0 # Appears in: sea:SO_TRIFORCE_CHECK, sea:SO_1ST_MEET_END
     part:
@@ -5707,49 +6274,80 @@ Ship:
     speed_y:
       30.0 # Appears in: sea:DAIOCTA_SUIKOMI
   08open:
+    [none]: # Appears in: I_TestM:SBOX, sea:SALVAGE_GETITEM, sea:SLVG_GETITEM_LEFT
   09tornado_s:
+    [none]: # Appears in: A_mori:TORNADO_COMEBACK, A_nami:TORNADO_COMEBACK, A_umikz:TORNADO_COMEBACK, Adanmae:TORNADO_COMEBACK, DmSpot0:TORNADO_COMEBACK, E3ROOP:TORNADO_COMEBACK, I_TestM:TORNADO_COMEBACK, I_TestR:TORNADO_COMEBACK, KATA_HB:TORNADO_COMEBACK, K_Test2:TORNADO_COM ...
   10hwarpup:
+    [none]: # Appears in: GanonM:TO_MAJYUU_WARP, Hyrule:TO_SEA_WARP_1, Hyrule:TO_SEA_WARP_2
   11hwarpdown:
+    [none]: # Appears in: GanonM:GANON_ARRIVE, Hyrule:WARP_ARRIVE
   dummy:
+    [none]: # Appears in: A_mori:barrel2_brk, A_nami:barrel2_brk, A_umikz:barrel2_brk, Adanmae:barrel2_brk, Amos_T:barrel2_brk, DmSpot0:barrel2_brk, E3ROOP:barrel2_brk, I_TestM:barrel2_brk, I_TestR:barrel2_brk, KATA_HB:barrel2_brk, K_Test2:barrel2_brk, K_Test3:barrel2_brk, K_ ...
 Sv0:
   GET_ITEM:
     ItemNo:
       0 # Appears in: K_Testb:SV_TALK_P1_1ST, sea:SV_TALK_P1_1ST
   MES_SET:
+    [none]: # Appears in: K_Testb:SV_TALK_P1_1ST, K_Testb:SV_TALK_P1_1ST, K_Testb:SV_TALK_P1_1ST, K_Testb:SV_TALK_P1_2ND, sea:SV_TALK_P1_1ST, sea:SV_TALK_P1_1ST, sea:SV_TALK_P1_1ST, sea:SV_TALK_P1_2ND
     MsgNo:
       0 # Appears in: K_Testb:SV_TALK_P1_1ST, K_Testb:SV_TALK_P1_2ND, K_Testb:SV_TALK_P4_1ST, sea:SV_TALK_P1_1ST, sea:SV_TALK_P1_2ND, sea:SV_TALK_P4_1ST
   WAIT:
+    [none]: # Appears in: K_Testb:SV_TALK_P1_1ST, K_Testb:SV_TALK_P1_1ST, K_Testb:SV_TALK_P1_1ST, K_Testb:SV_TALK_P1_2ND, K_Testb:SV_TALK_P1_2ND, K_Testb:SV_TALK_P4_1ST, sea:SV_TALK_P1_1ST, sea:SV_TALK_P1_1ST, sea:SV_TALK_P1_1ST, sea:SV_TALK_P1_2ND, sea:SV_TALK_P1_2ND, sea:SV ...
 Sv1:
   ATTENTION:
+    [none]: # Appears in: K_Testb:SV_TALK_P1_1ST, K_Testb:SV_TALK_P1_1ST, K_Testb:SV_TALK_P1_1ST, K_Testb:SV_TALK_P1_2ND, K_Testb:SV_TALK_P1_2ND, K_Testb:SV_TALK_P4_1ST, sea:SV_TALK_P1_1ST, sea:SV_TALK_P1_1ST, sea:SV_TALK_P1_1ST, sea:SV_TALK_P1_2ND, sea:SV_TALK_P1_2ND, sea:SV ...
   SET_ANGLE:
+    [none]: # Appears in: K_Testb:SV_TALK_P1_1ST, K_Testb:SV_TALK_P1_2ND, K_Testb:SV_TALK_P4_1ST, sea:SV_TALK_P1_1ST, sea:SV_TALK_P1_2ND, sea:SV_TALK_P4_1ST
   TURN_OK:
+    [none]: # Appears in: K_Testb:SV_TALK_P1_1ST, K_Testb:SV_TALK_P1_2ND, K_Testb:SV_TALK_P4_1ST, sea:SV_TALK_P1_1ST, sea:SV_TALK_P1_2ND, sea:SV_TALK_P4_1ST
   WAIT:
+    [none]: # Appears in: K_Testb:SV_TALK_P1_1ST, K_Testb:SV_TALK_P1_1ST, K_Testb:SV_TALK_P1_2ND, sea:SV_TALK_P1_1ST, sea:SV_TALK_P1_1ST, sea:SV_TALK_P1_2ND
 Sv2:
   ATTENTION:
+    [none]: # Appears in: K_Testb:SV_TALK_P1_1ST, K_Testb:SV_TALK_P1_1ST, K_Testb:SV_TALK_P1_1ST, K_Testb:SV_TALK_P1_2ND, K_Testb:SV_TALK_P1_2ND, K_Testb:SV_TALK_P4_1ST, sea:SV_TALK_P1_1ST, sea:SV_TALK_P1_1ST, sea:SV_TALK_P1_1ST, sea:SV_TALK_P1_2ND, sea:SV_TALK_P1_2ND, sea:SV ...
   SET_ANGLE:
+    [none]: # Appears in: K_Testb:SV_TALK_P1_1ST, K_Testb:SV_TALK_P1_2ND, K_Testb:SV_TALK_P4_1ST, sea:SV_TALK_P1_1ST, sea:SV_TALK_P1_2ND, sea:SV_TALK_P4_1ST
   TURN_OK:
+    [none]: # Appears in: K_Testb:SV_TALK_P1_1ST, K_Testb:SV_TALK_P1_2ND, K_Testb:SV_TALK_P4_1ST, sea:SV_TALK_P1_1ST, sea:SV_TALK_P1_2ND, sea:SV_TALK_P4_1ST
   WAIT:
+    [none]: # Appears in: K_Testb:SV_TALK_P1_1ST, K_Testb:SV_TALK_P1_1ST, K_Testb:SV_TALK_P1_2ND, sea:SV_TALK_P1_1ST, sea:SV_TALK_P1_1ST, sea:SV_TALK_P1_2ND
 Sv3:
   ATTENTION:
+    [none]: # Appears in: K_Testb:SV_TALK_P1_1ST, K_Testb:SV_TALK_P1_1ST, K_Testb:SV_TALK_P1_1ST, K_Testb:SV_TALK_P1_2ND, K_Testb:SV_TALK_P1_2ND, K_Testb:SV_TALK_P4_1ST, sea:SV_TALK_P1_1ST, sea:SV_TALK_P1_1ST, sea:SV_TALK_P1_1ST, sea:SV_TALK_P1_2ND, sea:SV_TALK_P1_2ND, sea:SV ...
   SET_ANGLE:
+    [none]: # Appears in: K_Testb:SV_TALK_P1_1ST, K_Testb:SV_TALK_P1_2ND, K_Testb:SV_TALK_P4_1ST, sea:SV_TALK_P1_1ST, sea:SV_TALK_P1_2ND, sea:SV_TALK_P4_1ST
   TURN_OK:
+    [none]: # Appears in: K_Testb:SV_TALK_P1_1ST, K_Testb:SV_TALK_P1_2ND, K_Testb:SV_TALK_P4_1ST, sea:SV_TALK_P1_1ST, sea:SV_TALK_P1_2ND, sea:SV_TALK_P4_1ST
   WAIT:
+    [none]: # Appears in: K_Testb:SV_TALK_P1_1ST, K_Testb:SV_TALK_P1_1ST, K_Testb:SV_TALK_P1_2ND, sea:SV_TALK_P1_1ST, sea:SV_TALK_P1_1ST, sea:SV_TALK_P1_2ND
 Svsp:
   WAIT:
+    [none]: # Appears in: sea:SV_TALK_P1_1ST, sea:SV_TALK_P1_2ND, sea:SV_TALK_P4_1ST
 TAGHINT:
   MESSAGE:
+    [none]: # Appears in: ADMumi:DEFAULT_HINT, ADMumi:DEFAULT_HINT2, A_mori:DEFAULT_HINT, A_mori:DEFAULT_HINT2, A_nami:DEFAULT_HINT, A_nami:DEFAULT_HINT2, A_umikz:DEFAULT_HINT, A_umikz:DEFAULT_HINT2, Abesso:DEFAULT_HINT, Abesso:DEFAULT_HINT2, Abship:DEFAULT_HINT, Abship:DEFAU ...
   MESSAGE2:
+    [none]: # Appears in: MajyuE:FIRST_HINT, ma2room:FIRST_HINT2, ma2room:FIRST_HINT3, ma3room:FIRST_HINT2, ma3room:FIRST_HINT3, majroom:FIRST_HINT2, majroom:FIRST_HINT3
   MESSAGE3:
+    [none]: # Appears in: Hyroom:HIRL_HINT, kenroom:HIRL_HINT
   SURPRIS:
+    [none]: # Appears in: MajyuE:FIRST_HINT, ma2room:FIRST_HINT2, ma2room:FIRST_HINT3, ma3room:FIRST_HINT2, ma3room:FIRST_HINT3, majroom:FIRST_HINT2, majroom:FIRST_HINT3
   WAIT:
+    [none]: # Appears in: ADMumi:DEFAULT_HINT, ADMumi:DEFAULT_HINT, ADMumi:DEFAULT_HINT2, ADMumi:DEFAULT_HINT2, A_mori:DEFAULT_HINT, A_mori:DEFAULT_HINT, A_mori:DEFAULT_HINT2, A_mori:DEFAULT_HINT2, A_nami:DEFAULT_HINT, A_nami:DEFAULT_HINT, A_nami:DEFAULT_HINT2, A_nami:DEFAULT ...
 TAG_ETC_D:
   dummyA:
+    [none]: # Appears in: Adanmae:MD_FLY, Xboss1:cb_rescue, kinBOSS:cb_rescue
   dummyB:
+    [none]: # Appears in: Adanmae:MD_FLY, Xboss1:cb_rescue, kinBOSS:cb_rescue
 TALKMAN:
   TALK:
+    [none]: # Appears in: ADMumi:DEFAULT_AGB_USE, ADMumi:DEFAULT_TALK, A_mori:DEFAULT_AGB_USE, A_mori:DEFAULT_TALK, A_nami:DEFAULT_AGB_USE, A_nami:DEFAULT_TALK, A_umikz:DEFAULT_AGB_USE, A_umikz:DEFAULT_TALK, Abesso:DEFAULT_AGB_USE, Abesso:DEFAULT_TALK, Abship:DEFAULT_AGB_USE, ...
   TALK0:
+    [none]: # Appears in: ADMumi:DEFAULT_TALK_XY, A_mori:DEFAULT_TALK_XY, A_nami:DEFAULT_TALK_XY, A_umikz:DEFAULT_TALK_XY, Abesso:DEFAULT_TALK_XY, Abship:DEFAULT_TALK_XY, Adanmae:DEFAULT_TALK_XY, Amos_T:DEFAULT_TALK_XY, Asoko:DEFAULT_TALK_XY, Atorizk:DEFAULT_TALK_XY, Cave01:D ...
   TALK1:
+    [none]: # Appears in: ADMumi:DEFAULT_TALK_XY, A_mori:DEFAULT_TALK_XY, A_nami:DEFAULT_TALK_XY, A_umikz:DEFAULT_TALK_XY, Abesso:DEFAULT_TALK_XY, Abship:DEFAULT_TALK_XY, Adanmae:DEFAULT_TALK_XY, Amos_T:DEFAULT_TALK_XY, Asoko:DEFAULT_TALK_XY, Atorizk:DEFAULT_TALK_XY, Cave01:D ...
   WAIT:
+    [none]: # Appears in: ADMumi:DEFAULT_TALK_XY, A_mori:DEFAULT_TALK_XY, A_nami:DEFAULT_TALK_XY, A_umikz:DEFAULT_TALK_XY, Abesso:DEFAULT_TALK_XY, Abship:DEFAULT_TALK_XY, Adanmae:DEFAULT_TALK_XY, Amos_T:DEFAULT_TALK_XY, Asoko:DEFAULT_TALK_XY, Atorizk:DEFAULT_TALK_XY, Cave01:D ...
 TIMEKEEPER:
   COUNTDOWN:
     Timer:
@@ -5804,11 +6402,16 @@ TIMEKEEPER:
       75    # Appears in: sea:ARRIVAL_WND2, sea:light_start
       300   # Appears in: sea:TELOP_PULOLO
   WAIT:
+    [none]: # Appears in: ADMumi:fire_off_cam, ADMumi:fire_off_cam_ws, ADMumi:fire_on_cam, ADMumi:zenfire_cam, ADMumi:zenfire_cam_ws, ADMumi:DEFAULT_SHUTTER_DOOR_12, ADMumi:DEFAULT_SHUTTER_DOOR_12, ADMumi:DEFAULT_SHUTTER_DOOR_10, ADMumi:DEFAULT_SHUTTER_DOOR_10, ADMumi:DEFAULT ...
 TREASURE:
   APPEAR:
+    [none]: # Appears in: ADMumi:DEFAULT_TREASURE_APPEAR, A_mori:DEFAULT_TREASURE_APPEAR, A_nami:DEFAULT_TREASURE_APPEAR, A_umikz:DEFAULT_TREASURE_APPEAR, Abesso:DEFAULT_TREASURE_APPEAR, Abship:DEFAULT_TREASURE_APPEAR, Adanmae:DEFAULT_TREASURE_APPEAR, Amos_T:DEFAULT_TREASURE_ ...
   OPEN:
+    [none]: # Appears in: ADMumi:DEFAULT_TREASURE, ADMumi:DEFAULT_TREASURE2, A_mori:DEFAULT_TREASURE, A_mori:DEFAULT_TREASURE2, A_nami:DEFAULT_TREASURE, A_nami:DEFAULT_TREASURE2, A_umikz:DEFAULT_TREASURE, A_umikz:DEFAULT_TREASURE2, Abesso:DEFAULT_TREASURE, Abesso:DEFAULT_TREA ...
   OPEN_SHORT:
+    [none]: # Appears in: ADMumi:DEFAULT_TREASURE_A, A_mori:DEFAULT_TREASURE_A, A_nami:DEFAULT_TREASURE_A, A_umikz:DEFAULT_TREASURE_A, Abesso:DEFAULT_TREASURE_A, Abship:DEFAULT_TREASURE_A, Adanmae:DEFAULT_TREASURE_A, Asoko:DEFAULT_TREASURE_A, Atorizk:DEFAULT_TREASURE_A, Cave0 ...
   WAIT:
+    [none]: # Appears in: ADMumi:DEFAULT_TREASURE, ADMumi:DEFAULT_TREASURE, ADMumi:DEFAULT_TREASURE_A, ADMumi:DEFAULT_TREASURE2, ADMumi:DEFAULT_TREASURE2, ADMumi:DEFAULT_TREASURE_APPEAR, ADMumi:DEFAULT_TREASURE_APPEAR, A_mori:DEFAULT_TREASURE, A_mori:DEFAULT_TREASURE, A_mori: ...
 TagIsl:
   SPEAK_0:
     MsgNo:
@@ -5823,34 +6426,50 @@ TagIsl:
     MsgNo:
       1595 # Appears in: sea:TACT_TEARCH3
   TACT_AF:
+    [none]: # Appears in: sea:TACT_TEARCH0, sea:TACT_TEARCH1, sea:TACT_TEARCH4, sea:TACT_TEARCH2
   TACT_BF:
     prm0:
       6 # Appears in: sea:TACT_TEARCH0, sea:TACT_TEARCH1
       7 # Appears in: sea:TACT_TEARCH4, sea:TACT_TEARCH2
   TACT_MD:
+    [none]: # Appears in: sea:TACT_TEARCH0, sea:TACT_TEARCH1, sea:TACT_TEARCH4, sea:TACT_TEARCH2
   WAIT:
+    [none]: # Appears in: sea:TACT_TEARCH0, sea:TACT_TEARCH1, sea:TACT_TEARCH4, sea:TACT_TEARCH2, sea:TACT_TEARCH3, sea:TACT_TEARCH3
 TagMk:
   DELETE:
+    [none]: # Appears in: sea:MK_PENDANT
   MAKE:
+    [none]: # Appears in: sea:MK_PENDANT
   SETGOAL:
+    [none]: # Appears in: sea:MK_PENDANT
   WAIT_1:
     Timer:
       60 # Appears in: sea:MK_PENDANT
   WAIT_2:
+    [none]: # Appears in: sea:MK_PENDANT, sea:MK_PENDANT
 TagPo:
   MES_SET:
     MsgNo:
       0 # Appears in: Ocmera:PHOTO_TALK, Ocmera:PHOTO_TALK2
   OFF_PLR:
+    [none]: # Appears in: Ocmera:PHOTO_TALK2
   ON_PLR:
+    [none]: # Appears in: Ocmera:PHOTO_TALK2
   TAG_SET:
+    [none]: # Appears in: Ocmera:PHOTO_TALK
 Tc:
   BACKJUMP:
+    [none]: # Appears in: Pnezumi:TC_TALK_NEAR_JAIL, Pnezumi:TC_TALK_NEAR_JAIL_S, Pnezumi:TC_TALK_NEAR_JAIL2
   DOOR_CLOSE:
+    [none]: # Appears in: Pnezumi:TC_RESCUE
   DOOR_CLOSE2:
+    [none]: # Appears in: Pnezumi:TC_RESCUE
   DOOR_OPEN:
+    [none]: # Appears in: Pnezumi:TC_RESCUE
   DUMMY:
+    [none]: # Appears in: Pnezumi:TC_JUMP_DEMO, sea:TC_GET_RUPEE, sea:TC_PAY_RUPEE, sea_E:TC_GET_RUPEE, sea_E:TC_PAY_RUPEE, sea_T:TC_GET_RUPEE, sea_T:TC_PAY_RUPEE
   EFFECT:
+    [none]: # Appears in: Pnezumi:TC_RESCUE
   MOVE_TO_ACTOR:
     ActorName:
       'Player' # Appears in: Pnezumi:TC_JUMP_DEMO, Pnezumi:TC_RESCUE
@@ -5880,6 +6499,7 @@ Tc:
     Speed:
       8.0 # Appears in: Pnezumi:TC_RESCUE
   PAY:
+    [none]: # Appears in: sea:TC_PAY_RUPEE, sea_E:TC_PAY_RUPEE, sea_T:TC_PAY_RUPEE
   PRESENT:
     ItemType:
       0 # Appears in: Pnezumi:TC_RESCUE
@@ -5889,6 +6509,7 @@ Tc:
     Name:
       'GET' # Appears in: Pnezumi:TC_RESCUE, sea:TC_PAY_RUPEE, sea_E:TC_PAY_RUPEE, sea_T:TC_PAY_RUPEE
   SIT_TO_JUMP:
+    [none]: # Appears in: Pnezumi:TC_JUMP_DEMO
   TALK_MSG:
     msg_num:
       4314 # Appears in: Pnezumi:TC_RESCUE
@@ -5927,19 +6548,28 @@ Tc:
       1  # Appears in: sea:TC_PAY_RUPEE, sea_E:TC_PAY_RUPEE, sea_T:TC_PAY_RUPEE
 Tn:
   Appear:
+    [none]: # Appears in: kenroom:btl_of_swroom, kenroom:btl_of_swroom2
   Appear2:
+    [none]: # Appears in: kenroom:btl_of_swroom, kenroom:btl_of_swroom2
   Wait:
+    [none]: # Appears in: kenroom:btl_of_swroom, kenroom:btl_of_swroom, kenroom:btl_of_swroom2, kenroom:btl_of_swroom2
 TnTrap:
   Delete:
+    [none]: # Appears in: Hyroom:break_tntrap, Hyroom:break_tntrap2
   Delete2:
+    [none]: # Appears in: Hyroom:break_tntrap
   Wait:
+    [none]: # Appears in: Hyroom:break_tntrap, Hyroom:break_tntrap2
 Tpost:
   DISP_LETTER:
+    [none]: # Appears in: ADMumi:DEFAULT_POST, A_mori:DEFAULT_POST, A_nami:DEFAULT_POST, A_umikz:DEFAULT_POST, Abesso:DEFAULT_POST, Abship:DEFAULT_POST, Adanmae:DEFAULT_POST, Asoko:DEFAULT_POST, Atorizk:DEFAULT_POST, Cave01:DEFAULT_POST, Cave02:DEFAULT_POST, Cave03:DEFAULT_PO ...
   PRESENT:
+    [none]: # Appears in: ADMumi:DEFAULT_POST, A_mori:DEFAULT_POST, A_nami:DEFAULT_POST, A_umikz:DEFAULT_POST, Abesso:DEFAULT_POST, Abship:DEFAULT_POST, Adanmae:DEFAULT_POST, Asoko:DEFAULT_POST, Atorizk:DEFAULT_POST, Cave01:DEFAULT_POST, Cave02:DEFAULT_POST, Cave03:DEFAULT_PO ...
   SET_ANM:
     Name:
       'HAKIDASU' # Appears in: ADMumi:DEFAULT_POST, A_mori:DEFAULT_POST, A_nami:DEFAULT_POST, A_umikz:DEFAULT_POST, Abesso:DEFAULT_POST, Abship:DEFAULT_POST, Adanmae:DEFAULT_POST, Asoko:DEFAULT_POST, Atorizk:DEFAULT_POST, Cave01:DEFAULT_POST, Cave02:DEFAULT_POST, Cave03:DEFAULT_PO ...
   WAIT:
+    [none]: # Appears in: ADMumi:DEFAULT_POST, A_mori:DEFAULT_POST, A_nami:DEFAULT_POST, A_umikz:DEFAULT_POST, Abesso:DEFAULT_POST, Abship:DEFAULT_POST, Adanmae:DEFAULT_POST, Asoko:DEFAULT_POST, Atorizk:DEFAULT_POST, Cave01:DEFAULT_POST, Cave02:DEFAULT_POST, Cave03:DEFAULT_PO ...
 Tt:
   CHANGE:
     prm0:
@@ -5976,26 +6606,35 @@ Tt:
     DISP:
       0 # Appears in: sea:TACT_TT10
   WAIT_00:
+    [none]: # Appears in: sea:TACT_TT11
 Ub1:
   GET_ITEM:
     ItemNo:
       1 # Appears in: K_Testb:UB1_TALK_PHOTO_GET_ITEM, Opub:UB1_TALK_XY_GET_ITEM, sea:UB1_TALK_PHOTO_GET_ITEM
   UB1_TALK:
+    [none]: # Appears in: K_Testb:UB1_TALK, Opub:UB1_TALK, sea:UB1_TALK
   UB1_TALK_XY:
+    [none]: # Appears in: K_Testb:UB1_TALK_XY, K_Testb:UB1_TALK_PHOTO, K_Testb:UB1_TALK_PHOTO_GET_ITEM, Opub:UB1_TALK_XY, Opub:UB1_TALK_XY_GET_ITEM, sea:UB1_TALK_XY, sea:UB1_TALK_PHOTO, sea:UB1_TALK_PHOTO_GET_ITEM
     MsgNo:
       0 # Appears in: K_Testb:UB1_TALK_PHOTO_GET_ITEM, Opub:UB1_TALK_XY_GET_ITEM, sea:UB1_TALK_PHOTO_GET_ITEM
       1 # Appears in: K_Testb:UB1_TALK_PHOTO_GET_ITEM, Opub:UB1_TALK_XY_GET_ITEM, sea:UB1_TALK_PHOTO_GET_ITEM
   UB_SET_ANM:
+    [none]: # Appears in: sea:TELOP_TAURA
   WAIT:
+    [none]: # Appears in: K_Testb:UB1_TALK_XY, K_Testb:UB1_TALK_PHOTO_GET_ITEM, Opub:UB1_TALK_XY, Opub:UB1_TALK_XY_GET_ITEM, Opub:UB1_TALK_XY_GET_ITEM, sea:UB1_TALK_XY, sea:UB1_TALK_PHOTO_GET_ITEM
 Ub2:
   UB2_TALK:
+    [none]: # Appears in: K_Testb:UB1_TALK, K_Testb:UB1_TALK_XY, K_Testb:UB1_TALK_PHOTO, K_Testb:UB1_TALK_PHOTO_GET_ITEM, Opub:UB1_TALK, Opub:UB1_TALK_XY, Opub:UB1_TALK_XY_GET_ITEM, sea:UB1_TALK, sea:UB1_TALK_XY, sea:UB1_TALK_PHOTO, sea:UB1_TALK_PHOTO_GET_ITEM
   UB_SET_ANM:
+    [none]: # Appears in: sea:TELOP_TAURA
   WAIT:
+    [none]: # Appears in: K_Testb:UB1_TALK, K_Testb:UB1_TALK_XY, K_Testb:UB1_TALK_PHOTO, K_Testb:UB1_TALK_PHOTO_GET_ITEM, Opub:UB1_TALK, Opub:UB1_TALK_XY, Opub:UB1_TALK_XY_GET_ITEM, sea:UB1_TALK, sea:UB1_TALK_XY, sea:UB1_TALK_PHOTO, sea:UB1_TALK_PHOTO_GET_ITEM
 Ub4:
   GET_ITEM:
     ItemNo:
       2 # Appears in: K_Testb:UB4_GET_ITEM, Opub:UB4_GET_ITEM, sea:UB4_GET_ITEM
   LOOK_PO:
+    [none]: # Appears in: Ocmera:PHOTO_DATE_UB4, Ocmera:PHOTO_DATE_UB4
   MES_SET:
     MsgNo:
       11606 # Appears in: K_Testb:UB4_GET_ITEM, Opub:UB4_GET_ITEM, sea:UB4_GET_ITEM
@@ -6003,17 +6642,22 @@ Ub4:
     MsgNo:
       11615 # Appears in: Ocmera:PHOTO_DATE_UB4
   TURN_TO_PLAYER:
+    [none]: # Appears in: Ocmera:PHOTO_DATE_UB4
   WAIT:
+    [none]: # Appears in: Ocmera:PHOTO_DATE_UB4
 Ug1:
   AREA_MAX:
+    [none]: # Appears in: K_Testb:UG1_TALK, Nitiyou:UG1_TALK, sea:UG1_TALK
   MES_SET_TP:
     MsgNo:
       13706 # Appears in: K_Testb:UG1_TALK, Nitiyou:UG1_TALK, sea:UG1_TALK
       13708 # Appears in: K_Testb:UG1_TALK, Nitiyou:UG1_TALK, sea:UG1_TALK
       13716 # Appears in: K_Testb:UG1_TALK, Nitiyou:UG1_TALK, sea:UG1_TALK
   WAIT:
+    [none]: # Appears in: K_Testb:UG1_TALK, K_Testb:UG1_TALK, K_Testb:UG1_TALK, Nitiyou:UG1_TALK, Nitiyou:UG1_TALK, Nitiyou:UG1_TALK, sea:UG1_TALK, sea:UG1_TALK, sea:UG1_TALK
 Ug2:
   AREA_MAX:
+    [none]: # Appears in: K_Testb:UG1_TALK, Nitiyou:UG1_TALK, sea:UG1_TALK
   MES_SET_TP:
     MsgNo:
       13705 # Appears in: K_Testb:UG1_TALK, Nitiyou:UG1_TALK, sea:UG1_TALK
@@ -6021,12 +6665,18 @@ Ug2:
       13710 # Appears in: K_Testb:UG1_TALK, Nitiyou:UG1_TALK, sea:UG1_TALK
       13722 # Appears in: K_Testb:UG1_TALK, Nitiyou:UG1_TALK, sea:UG1_TALK
   WAIT:
+    [none]: # Appears in: K_Testb:UG1_TALK, K_Testb:UG1_TALK, K_Testb:UG1_TALK, Nitiyou:UG1_TALK, Nitiyou:UG1_TALK, Nitiyou:UG1_TALK, sea:UG1_TALK, sea:UG1_TALK, sea:UG1_TALK
 UkB:
   DISP:
+    [none]: # Appears in: sea:MK_GAMESET
   HIND:
+    [none]: # Appears in: sea:MK_GAMESTART
   HOME:
+    [none]: # Appears in: sea:MK_GAMESTART, sea:MK_GAMESET, sea:MK_PENDANT
   JITABATA:
+    [none]: # Appears in: sea:MK_GAMESET
   LOOK_P:
+    [none]: # Appears in: sea:MK_TALK2, sea:MK_TALK2, sea:MK_TALK3, sea:MK_TALK3, sea:MK_TALK4, sea:MK_TALK4
   RUN:
     Pos:
       (-222.0, 1039.0, -202524.0) # Appears in: sea:MK_GAMESTART
@@ -6042,7 +6692,9 @@ UkB:
       9952 # Appears in: sea:MK_TALK3, sea:MK_TALK4
       9959 # Appears in: sea:MK_PENDANT
   TALK:
+    [none]: # Appears in: sea:MK_TALK, sea:MK_GAMESTART, sea:MK_GAMESTART, sea:MK_GAMESET, sea:MK_PENDANT, sea:MK_PENDANT
   WAIT:
+    [none]: # Appears in: sea:MK_GAMESTART, sea:MK_PENDANT
   WARP:
     Angle:
       1820   # Appears in: sea:MK_TALK4
@@ -6052,8 +6704,11 @@ UkB:
       (-2648.0, 409.0, -198316.0)                               # Appears in: sea:MK_PENDANT
 UkB2:
   HIND:
+    [none]: # Appears in: sea:MK_GAMESET
   JITABATA:
+    [none]: # Appears in: sea:MK_GAMESET
   JUMP:
+    [none]: # Appears in: sea:UkB_FOUND
   RUN:
     Pos:
       (-4389.0, 710.0, -198572.0) # Appears in: sea:UkB_FOUND
@@ -6075,13 +6730,20 @@ UkB2:
     SOUND:
       2 # Appears in: sea:UkB_FOUND
   WAIT:
+    [none]: # Appears in: sea:MK_GAMESET
   WARNING:
+    [none]: # Appears in: sea:UkB_FOUND
 UkC:
   DISP:
+    [none]: # Appears in: sea:MK_GAMESET
   HIND:
+    [none]: # Appears in: sea:MK_GAMESTART
   HOME:
+    [none]: # Appears in: sea:MK_GAMESTART, sea:MK_GAMESET, sea:MK_PENDANT
   JITABATA:
+    [none]: # Appears in: sea:MK_GAMESET
   LOOK_P:
+    [none]: # Appears in: sea:MK_TALK2, sea:MK_TALK2, sea:MK_TALK3, sea:MK_TALK3, sea:MK_TALK3, sea:MK_TALK4, sea:MK_TALK4, sea:MK_TALK4
   RUN:
     Pos:
       (886.0, 1033.0, -201138.0)  # Appears in: sea:MK_GAMESTART
@@ -6100,10 +6762,12 @@ UkC:
       9953 # Appears in: sea:MK_TALK3, sea:MK_TALK4
       9960 # Appears in: sea:MK_PENDANT
   TALK:
+    [none]: # Appears in: sea:MK_TALK, sea:MK_GAMESTART, sea:MK_GAMESTART, sea:MK_GAMESET, sea:MK_PENDANT, sea:MK_PENDANT
   TURN:
     Pos:
       (-2538.0, 405.0, -198061.0) # Appears in: sea:MK_PENDANT
   WAIT:
+    [none]: # Appears in: sea:MK_GAMESTART, sea:MK_GAMESTART, sea:MK_PENDANT
   WARP:
     Angle:
       -6007  # Appears in: sea:MK_TALK4
@@ -6113,8 +6777,11 @@ UkC:
       (-2788.0, 428.0, -198070.0)                          # Appears in: sea:MK_PENDANT
 UkC2:
   HIND:
+    [none]: # Appears in: sea:MK_GAMESET
   JITABATA:
+    [none]: # Appears in: sea:MK_GAMESET
   JUMP:
+    [none]: # Appears in: sea:UkC_FOUND
   RUN:
     Pos:
       (1482.0, 1044.0, -200372.0) # Appears in: sea:UkC_FOUND
@@ -6126,13 +6793,20 @@ UkC2:
     SOUND:
       2 # Appears in: sea:UkC_FOUND
   WAIT:
+    [none]: # Appears in: sea:MK_GAMESET
   WARNING:
+    [none]: # Appears in: sea:UkC_FOUND
 UkD:
   DISP:
+    [none]: # Appears in: sea:MK_GAMESET
   HIND:
+    [none]: # Appears in: sea:MK_GAMESTART
   HOME:
+    [none]: # Appears in: sea:MK_GAMESTART, sea:MK_GAMESET, sea:MK_PENDANT
   JITABATA:
+    [none]: # Appears in: sea:MK_GAMESET
   LOOK_P:
+    [none]: # Appears in: sea:MK_TALK2, sea:MK_TALK2, sea:MK_TALK3, sea:MK_TALK4
   RUN:
     Pos:
       (627.0, 1041.0, -200531.0)  # Appears in: sea:MK_GAMESTART
@@ -6148,7 +6822,9 @@ UkD:
       9955 # Appears in: sea:MK_TALK3, sea:MK_TALK4
       9962 # Appears in: sea:MK_PENDANT
   TALK:
+    [none]: # Appears in: sea:MK_TALK, sea:MK_GAMESTART, sea:MK_GAMESTART, sea:MK_GAMESET, sea:MK_PENDANT
   WAIT:
+    [none]: # Appears in: sea:MK_GAMESTART, sea:MK_GAMESTART, sea:MK_PENDANT
   WARP:
     Angle:
       -12014 # Appears in: sea:MK_TALK4
@@ -6158,8 +6834,11 @@ UkD:
       (-2507.0, 396.0, -198364.0)                              # Appears in: sea:MK_PENDANT
 UkD2:
   HIND:
+    [none]: # Appears in: sea:MK_GAMESET
   JITABATA:
+    [none]: # Appears in: sea:MK_GAMESET
   JUMP2:
+    [none]: # Appears in: sea:UkD_FOUND, sea:UkD_FOUND2
   RUN:
     Pos:
       (-2887.0, 1149.0, -203774.0)                             # Appears in: sea:UkD_FOUND
@@ -6191,7 +6870,9 @@ UkD2:
       (-2970.0, 1150.0, -203744.0) # Appears in: sea:UkD_FOUND
       (-3025.0, 1149.0, -203687.0) # Appears in: sea:UkD_FOUND2
   WAIT:
+    [none]: # Appears in: sea:MK_GAMESET
   WARNING:
+    [none]: # Appears in: sea:UkD_FOUND, sea:UkD_FOUND2
 Um1:
   FLAG_SET:
     Look:
@@ -6208,12 +6889,16 @@ Um1:
       1     # Appears in: K_Testb:UM1_TALK, Opub:UM1_TALK, sea:UM1_TALK
 Um3:
   CAMERA_START:
+    [none]: # Appears in: K_Testb:UM3_TELESCOPE_TALK, Opub:UM3_TELESCOPE_TALK, sea:UM3_TELESCOPE_TALK
   CAMERA_STOP:
+    [none]: # Appears in: K_Testb:UM3_TELESCOPE_TALK, Opub:UM3_TELESCOPE_TALK, sea:UM3_TELESCOPE_TALK
   GET_ITEM:
     ItemNo:
       5 # Appears in: K_Testb:UM3_GET_ITEM, Opub:UM3_GET_ITEM, sea:UM3_GET_ITEM
   MES_SET:
+    [none]: # Appears in: K_Testb:UM3_GET_ITEM, Opub:UM3_GET_ITEM, sea:UM3_GET_ITEM
   MES_SET2:
+    [none]: # Appears in: K_Testb:UM3_TELESCOPE_TALK, Opub:UM3_TELESCOPE_TALK, sea:UM3_TELESCOPE_TALK
 Uo1:
   GET_ITEM:
     ItemNo:
@@ -6230,11 +6915,13 @@ Uw2:
       11817 # Appears in: K_Testb:UW2_GET_ITEM, Opub:UW2_GET_ITEM, sea:UW2_GET_ITEM
 Vfan:
   WAIT:
+    [none]: # Appears in: GanonM:Vfan
 VgnFD:
   break:
     Timer:
       120 # Appears in: GanonA:4_door_fin
   burst:
+    [none]: # Appears in: GanonA:4_door_fin
   gannon:
     Timer:
       30 # Appears in: GanonA:4_door_fin
@@ -6249,88 +6936,141 @@ VgnFD:
       95 # Appears in: GanonA:4_door_kz, GanonA:4_door_mr, GanonA:4_door_dn, GanonA:4_door_dc
       45 # Appears in: GanonA:4_door_fin
   wait1:
+    [none]: # Appears in: GanonA:4_door_kz, GanonA:4_door_mr, GanonA:4_door_dn, GanonA:4_door_dc
 VolTag:
   WAIT:
+    [none]: # Appears in: sea:ICE_FAILED, sea:VOLCANO_FAILED
 WINDMAN:
   WAIT:
+    [none]: # Appears in: ADMumi:TACT_WINDOW2, ADMumi:TACT_WINDOW2_SHIP, A_mori:TACT_WINDOW2, A_mori:TACT_WINDOW2_SHIP, A_nami:TACT_WINDOW2, A_nami:TACT_WINDOW2_SHIP, A_umikz:TACT_WINDOW2, A_umikz:TACT_WINDOW2_SHIP, Abesso:TACT_WINDOW2, Abesso:TACT_WINDOW2_SHIP, Abship:TACT_W ...
   WINDOW:
+    [none]: # Appears in: ADMumi:TACT_WINDOW, ADMumi:TACT_WINDOW2, ADMumi:TACT_WINDOW2_SHIP, A_mori:TACT_WINDOW, A_mori:TACT_WINDOW2, A_mori:TACT_WINDOW2_SHIP, A_nami:TACT_WINDOW, A_nami:TACT_WINDOW2, A_nami:TACT_WINDOW2_SHIP, A_umikz:TACT_WINDOW, A_umikz:TACT_WINDOW2, A_umik ...
 Warpf:
   END_WAIT:
+    [none]: # Appears in: M_DaiB:WARP_WIND_AFTER, M_DragB:WARP_WIND, M_DragB:WARP_WIND_AFTER, SirenB:WARP_WIND, SirenB:WARP_WIND_AFTER, kazeB:WARP_WIND_AFTER, kinBOSS:WARP_WIND, kinBOSS:WARP_WIND_AFTER
   WAIT:
+    [none]: # Appears in: M_DaiB:WARP_WIND, M_DaiB:WARP_WIND_AFTER, M_DragB:WARP_WIND, M_DragB:WARP_WIND_AFTER, SirenB:WARP_WIND, SirenB:WARP_WIND_AFTER, kazeB:WARP_WIND, kazeB:WARP_WIND_AFTER, kinBOSS:WARP_WIND, kinBOSS:WARP_WIND_AFTER
   WAIT01:
+    [none]: # Appears in: Xboss0:WARP_WIND, Xboss0:WARP_WIND_AFTER, Xboss1:WARP_WIND, Xboss1:WARP_WIND_AFTER, Xboss2:WARP_WIND, Xboss2:WARP_WIND_AFTER, Xboss3:WARP_WIND, Xboss3:WARP_WIND_AFTER
   WAIT02:
+    [none]: # Appears in: Xboss0:WARP_WIND, Xboss0:WARP_WIND_AFTER, Xboss1:WARP_WIND, Xboss1:WARP_WIND_AFTER, Xboss2:WARP_WIND, Xboss2:WARP_WIND_AFTER, Xboss3:WARP_WIND, Xboss3:WARP_WIND_AFTER
   WAIT03:
+    [none]: # Appears in: Xboss0:WARP_WIND, Xboss0:WARP_WIND_AFTER, Xboss1:WARP_WIND, Xboss1:WARP_WIND_AFTER, Xboss2:WARP_WIND, Xboss2:WARP_WIND_AFTER, Xboss3:WARP_WIND, Xboss3:WARP_WIND_AFTER
   WAIT04:
+    [none]: # Appears in: Xboss0:WARP_WIND, Xboss0:WARP_WIND_AFTER, Xboss1:WARP_WIND, Xboss1:WARP_WIND_AFTER, Xboss2:WARP_WIND, Xboss2:WARP_WIND_AFTER, Xboss3:WARP_WIND, Xboss3:WARP_WIND_AFTER
   WAIT05:
+    [none]: # Appears in: Xboss0:WARP_WIND, Xboss0:WARP_WIND_AFTER, Xboss1:WARP_WIND, Xboss1:WARP_WIND_AFTER, Xboss2:WARP_WIND, Xboss2:WARP_WIND_AFTER, Xboss3:WARP_WIND, Xboss3:WARP_WIND_AFTER
   WAIT_INIT:
+    [none]: # Appears in: Xboss0:WARP_WIND, Xboss0:WARP_WIND_AFTER, Xboss1:WARP_WIND, Xboss1:WARP_WIND_AFTER, Xboss2:WARP_WIND, Xboss2:WARP_WIND_AFTER, Xboss3:WARP_WIND, Xboss3:WARP_WIND_AFTER
   WARP:
+    [none]: # Appears in: Xboss0:WARP_WIND, Xboss0:WARP_WIND_AFTER, Xboss1:WARP_WIND, Xboss1:WARP_WIND_AFTER, Xboss2:WARP_WIND, Xboss2:WARP_WIND_AFTER, Xboss3:WARP_WIND, Xboss3:WARP_WIND_AFTER
   WARP_1:
+    [none]: # Appears in: M_DaiB:WARP_WIND_AFTER, M_DragB:WARP_WIND, M_DragB:WARP_WIND_AFTER, SirenB:WARP_WIND, SirenB:WARP_WIND_AFTER, kazeB:WARP_WIND_AFTER, kinBOSS:WARP_WIND, kinBOSS:WARP_WIND_AFTER
   WARP_2:
+    [none]: # Appears in: M_DaiB:WARP_WIND_AFTER, M_DragB:WARP_WIND, M_DragB:WARP_WIND_AFTER, SirenB:WARP_WIND, SirenB:WARP_WIND_AFTER, kazeB:WARP_WIND_AFTER, kinBOSS:WARP_WIND, kinBOSS:WARP_WIND_AFTER
   WARP_3:
+    [none]: # Appears in: M_DaiB:WARP_WIND_AFTER, M_DragB:WARP_WIND, M_DragB:WARP_WIND_AFTER, SirenB:WARP_WIND, SirenB:WARP_WIND_AFTER, kazeB:WARP_WIND_AFTER, kinBOSS:WARP_WIND, kinBOSS:WARP_WIND_AFTER
   WARP_START:
+    [none]: # Appears in: M_DaiB:WARP_WIND_AFTER, M_DragB:WARP_WIND, M_DragB:WARP_WIND_AFTER, SirenB:WARP_WIND, SirenB:WARP_WIND_AFTER, kazeB:WARP_WIND_AFTER, kinBOSS:WARP_WIND, kinBOSS:WARP_WIND_AFTER
 Warpfo:
   END:
+    [none]: # Appears in: Omori:BOSS_WARPOUT, sea:BOSS_WARPOUT, sea:TOWER_WARPOUT
   WARP1:
+    [none]: # Appears in: Omori:BOSS_WARPOUT, sea:BOSS_WARPOUT, sea:TOWER_WARPOUT
   WARP2:
+    [none]: # Appears in: Omori:BOSS_WARPOUT, sea:BOSS_WARPOUT, sea:TOWER_WARPOUT
   WARP3:
+    [none]: # Appears in: Omori:BOSS_WARPOUT, sea:BOSS_WARPOUT, sea:TOWER_WARPOUT
   WARP4:
+    [none]: # Appears in: Omori:BOSS_WARPOUT, sea:BOSS_WARPOUT, sea:TOWER_WARPOUT
 Warpgn:
   APPEAR:
+    [none]: # Appears in: GanonM:APPEAR_WARP
   START_WARP:
+    [none]: # Appears in: GanonM:TO_MAJYUU_WARP
   WAIT:
+    [none]: # Appears in: GanonM:APPEAR_WARP
   WARP:
+    [none]: # Appears in: GanonM:TO_MAJYUU_WARP
   WARP_ARRIVE:
+    [none]: # Appears in: GanonM:GANON_ARRIVE
   WARP_ARRIVE_END:
+    [none]: # Appears in: GanonM:GANON_ARRIVE
 Warpmj:
   WAIT:
+    [none]: # Appears in: sea:TO_GANON_WARP
   WARP:
+    [none]: # Appears in: sea:TO_GANON_WARP
   WARP_ARRIVE:
+    [none]: # Appears in: sea:FROM_GANON
 Warpnt:
   Dummy:
+    [none]: # Appears in: ADMumi:DEFAULT_WARP_OPEN, A_mori:DEFAULT_WARP_OPEN, A_nami:DEFAULT_WARP_OPEN, A_umikz:DEFAULT_WARP_OPEN, Abesso:DEFAULT_WARP_OPEN, Abship:DEFAULT_WARP_OPEN, Adanmae:DEFAULT_WARP_OPEN, Amos_T:DEFAULT_WARP, Amos_T:DEFAULT_WARP_OPEN, Asoko:DEFAULT_WARP_ ...
 Warpt:
   Dummy:
+    [none]: # Appears in: ADMumi:DEFAULT_WARP_OPEN, A_mori:DEFAULT_WARP_OPEN, A_nami:DEFAULT_WARP_OPEN, A_umikz:DEFAULT_WARP_OPEN, Abesso:DEFAULT_WARP_OPEN, Abship:DEFAULT_WARP_OPEN, Adanmae:DEFAULT_WARP_OPEN, Amos_T:DEFAULT_WARP, Amos_T:DEFAULT_WARP_OPEN, Asoko:DEFAULT_WARP_ ...
   WAIT:
+    [none]: # Appears in: ADMumi:DEFAULT_WARP, A_mori:DEFAULT_WARP, A_nami:DEFAULT_WARP, A_umikz:DEFAULT_WARP, Abesso:DEFAULT_WARP, Abship:DEFAULT_WARP, Adanmae:DEFAULT_WARP, Asoko:DEFAULT_WARP, Atorizk:DEFAULT_WARP, Cave01:DEFAULT_WARP, Cave02:DEFAULT_WARP, Cave03:DEFAULT_WA ...
   WARP:
+    [none]: # Appears in: ADMumi:DEFAULT_WARP, A_mori:DEFAULT_WARP, A_nami:DEFAULT_WARP, A_umikz:DEFAULT_WARP, Abesso:DEFAULT_WARP, Abship:DEFAULT_WARP, Adanmae:DEFAULT_WARP, Asoko:DEFAULT_WARP, Atorizk:DEFAULT_WARP, Cave01:DEFAULT_WARP, Cave02:DEFAULT_WARP, Cave03:DEFAULT_WA ...
 YLzou:
   Move:
+    [none]: # Appears in: Hyroom:go_up_stairs, Hyroom:move_YLzou
   Vibrate:
+    [none]: # Appears in: Hyroom:move_YLzou
   Wait:
+    [none]: # Appears in: Hyroom:MtryB_sink, Hyroom:go_up_stairs, Hyroom:move_YLzou
 Yboil00:
   WAIT:
+    [none]: # Appears in: sea:VOLCANO_FAILED
 Ycage:
   FadeOut:
+    [none]: # Appears in: Hyrule:break_barrier
   Wait:
+    [none]: # Appears in: Hyrule:break_barrier
 Ygcwp:
   warp_appear:
     Timer:
       45 # Appears in: GanonA:rtn_warp, GanonM:fg_warp0, GanonM:fg_warp1
   warp_make:
+    [none]: # Appears in: GanonA:rtn_warp, GanonM:fg_warp0, GanonM:fg_warp1
   warp_start:
     Timer:
       75 # Appears in: GanonA:rtn_warp, GanonM:fg_warp0, GanonM:fg_warp1
 Ygstp00:
   dummy:
+    [none]: # Appears in: GanonM:APPEAR_WARP
 Ygush00:
   WAIT:
+    [none]: # Appears in: Adanmae:Eskban
 Ykzyg:
   WAIT:
+    [none]: # Appears in: sea:VOLCANO_FAILED
 Ylesr00:
   dummy:
+    [none]: # Appears in: Siren:hmos3cam
 Ypit00:
   Dummy:
+    [none]: # Appears in: ADMumi:DEFAULT_PITFALL, A_mori:DEFAULT_PITFALL, A_nami:DEFAULT_PITFALL, A_umikz:DEFAULT_PITFALL, Abesso:DEFAULT_PITFALL, Abship:DEFAULT_PITFALL, Adanmae:DEFAULT_PITFALL, Amos_T:DEFAULT_PITFALL, Asoko:DEFAULT_PITFALL, Atorizk:DEFAULT_PITFALL, Cave01:D ...
 Yswdr00:
   BurnUp:
+    [none]: # Appears in: kenroom:btl_of_swroom, kenroom:btl_of_swroom2
   Wait:
+    [none]: # Appears in: kenroom:btl_of_swroom, kenroom:btl_of_swroom2
 Zenfire:
   OFF:
+    [none]: # Appears in: ADMumi:zenfire_cam, ADMumi:zenfire_cam_ws, A_mori:zenfire_cam, A_mori:zenfire_cam_ws, A_nami:zenfire_cam, A_nami:zenfire_cam_ws, A_umikz:zenfire_cam, A_umikz:zenfire_cam_ws, Abesso:zenfire_cam, Abesso:zenfire_cam_ws, Abship:zenfire_cam, Abship:zenfir ...
   WAIT:
+    [none]: # Appears in: ADMumi:zenfire_cam, ADMumi:zenfire_cam, ADMumi:zenfire_cam_ws, ADMumi:zenfire_cam_ws, A_mori:zenfire_cam, A_mori:zenfire_cam, A_mori:zenfire_cam_ws, A_mori:zenfire_cam_ws, A_nami:zenfire_cam, A_nami:zenfire_cam, A_nami:zenfire_cam_ws, A_nami:zenfire_ ...
 Zl1:
   CHG_ANM_ATR:
     AtrNo:
       7 # Appears in: sea:yuukaigo
       0 # Appears in: sea:yuukaigo
   CLR_TRN:
+    [none]: # Appears in: DmSpot0:YUUKAIGO
   CONTINUE_TALK:
+    [none]: # Appears in: Hyrule:nakaniwa, Hyrule:nakaniwa
     end_num:
       5604 # Appears in: Hyrule:nakaniwa
   DRW_ONOFF:
@@ -6345,14 +7085,19 @@ Zl1:
     Speed:
       8.0 # Appears in: Hyrule:nakaniwa
   LOK_PARTNER:
+    [none]: # Appears in: sea:yuukaigo
     prm_0:
       1 # Appears in: sea:yuukaigo
   LOK_PLYER:
+    [none]: # Appears in: Hyrule:nakaniwa, sea:yuukaigo, sea:yuukaigo
     prm_0:
       1 # Appears in: sea:yuukaigo
   MAJYU_START:
+    [none]: # Appears in: MajyuE:ooi
   OKIRU:
+    [none]: # Appears in: Hyrule:nakaniwa
   OKIRU_2:
+    [none]: # Appears in: Hyrule:nakaniwa
   OMAMORI_ONOFF:
     OnOff:
       0 # Appears in: Hyrule:nakaniwa
@@ -6361,13 +7106,17 @@ Zl1:
     OnOff:
       1 # Appears in: Hyrule:nakaniwa
   PLYER_TRN_PARTNER:
+    [none]: # Appears in: sea:yuukaigo
   PLYER_TRN_TETRA:
+    [none]: # Appears in: sea:yuukaigo
   SET_ANM_ATR:
     AtrNo:
       7 # Appears in: DmSpot0:YUUKAIGO
       8 # Appears in: DmSpot0:YUUKAIGO
   SET_TRN:
+    [none]: # Appears in: DmSpot0:YUUKAIGO, DmSpot0:YUUKAIGO
   SURPRISED:
+    [none]: # Appears in: Hyrule:nakaniwa
   TALK:
     MsgNo:
       3201 # Appears in: DmSpot0:YUUKAIGO
@@ -6379,9 +7128,13 @@ Zl1:
       3214 # Appears in: DmSpot0:YUUKAIGO
       3215 # Appears in: DmSpot0:YUUKAIGO
   TALK3202_a:
+    [none]: # Appears in: DmSpot0:YUUKAIGO
   TALK3202_c:
+    [none]: # Appears in: DmSpot0:YUUKAIGO
   TALK3203_c:
+    [none]: # Appears in: DmSpot0:YUUKAIGO
   TALK3210_a:
+    [none]: # Appears in: DmSpot0:YUUKAIGO
   TALK_MSG:
     end_msg:
       5603 # Appears in: Hyrule:nakaniwa
@@ -6409,6 +7162,7 @@ Zl1:
     Timer:
       0 # Appears in: DmSpot0:YUUKAIGO
   WAIT:
+    [none]: # Appears in: DmSpot0:YUUKAIGO, DmSpot0:YUUKAIGO, DmSpot0:YUUKAIGO, DmSpot0:YUUKAIGO, DmSpot0:YUUKAIGO, DmSpot0:YUUKAIGO, Hyrule:nakaniwa, MajyuE:ooi, MajyuE:ooi, sea:yuukaigo, sea:yuukaigo, sea:yuukaigo, sea:yuukaigo, sea:yuukaigo, sea:yuukaigo, sea:yuukaigo, sea ...
     Timer:
       30 # Appears in: DmSpot0:YUUKAIGO, Hyrule:nakaniwa, MajyuE:ooi, sea:yuukaigo
       10 # Appears in: Hyrule:nakaniwa, sea:yuukaigo
@@ -6416,24 +7170,37 @@ Zl1:
       15 # Appears in: sea:yuukaigo
 dragon:
   dummy:
+    [none]: # Appears in: M_Dra09:Md_RopeGet
 item:
   dummy:
+    [none]: # Appears in: Ocean:race_start_cam, Ocean:race_goal_cam, Ocean:race_fail_cam, sea:SARACE_EXPCAM
 ky_tag0:
   dummy:
+    [none]: # Appears in: sea:TACT0_RT
 moZOU:
   dummy:
+    [none]: # Appears in: ma2room:MOZO_CAM, ma3room:MOZO_CAM, majroom:MOZO_CAM
 p_zelda:
   Retire:
+    [none]: # Appears in: kenroom:btl_of_swroom
   Turn:
+    [none]: # Appears in: kenroom:btl_of_swroom
   Wait:
+    [none]: # Appears in: kenroom:btl_of_swroom
 sea:
   WAIT:
+    [none]: # Appears in: sea:FROM_GANON, sea:FROM_HYRULE_1, sea:FROM_HYRULE_2
   dummy:
+    [none]: # Appears in: sea:ARRIVAL_GND, sea:ARRIVAL_GND2, sea:ARRIVAL_WND, sea:ARRIVAL_WND2
 tkrSlv:
   DELETE:
+    [none]: # Appears in: I_TestM:SBOX, sea:SALVAGE_GETITEM, sea:SLVG_GETITEM_LEFT
   OPEN:
+    [none]: # Appears in: I_TestM:SBOX
     DISP:
       0 # Appears in: sea:SALVAGE_GETITEM, sea:SLVG_GETITEM_LEFT
   WAIT:
+    [none]: # Appears in: I_TestM:SBOX, sea:SALVAGE_GETITEM, sea:SALVAGE_GETITEM, sea:SLVG_GETITEM_LEFT, sea:SLVG_GETITEM_LEFT
 zouK:
   Wait:
+    [none]: # Appears in: kenroom:btl_of_swroom, kenroom:btl_of_swroom2
