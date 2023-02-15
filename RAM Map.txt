@@ -8,6 +8,8 @@
 8022DEEE,2 - Y position of the Dolby logo during bootup.
   (These four values are hardcoded as part of function phase_2(dScnLogo_c *))
 
+8034F13C,18 - List of icons that can show up on the Tingle Tuner? (agbTbl$7009)
+
 8034F69D,1 - Empty string "".
 
 8034F7D8,4 (34C7D8,4 in main.dol) - Stage name the player starts a new game in ("sea").
@@ -94,6 +96,8 @@
 
 8035CF0C,4 - Link's Idle animation speed. (1.1)
 8035CF14,4 - Link's walking animation speed. (0.8)
+  Walking refers to when you press the control stick only partially in a direction. (The game blends between the walking and running animations depending on how far it's pressed.)
+  This value doesn't just control the speed the animation plays at, but also how fast Link actually moves forward at a particular control stick strength.
 8035CF1C,4 - Link's running animation speed. (2.3)
 
 8035D4B8,4 - Link's minimum forward movement speed when doing an autojump. (9.0)
@@ -338,7 +342,7 @@ Format of each block of memory in the game heap:
   Entry length 4. Index is an item ID. (Not all items have entries here. It only goes from item 00 to item 80.)
   00,2: Which special effect?
   02,2: 0x8466 here means no special effect.
-803888C8 (3858C8 in main.dol) - List of item get function pointers.
+803888C8 (3858C8 in main.dol) - List of item get function pointers. (item_func_ptr)
 
 803769E0,200 - Chain texture. (l_chainS3TCTEX)
 8038BD40,200 - Hookshot chain texture. (l_chainS3TCTEX)
@@ -976,7 +980,6 @@ Stage info format:
   So as long as you stay within a single dungeon for example, dan bits will be remembered, even if you change stages (like going to the miniboss room and back).
 
 803C53B0 - List of zones. (dSv_zone_c)
-  These are grouped into halfwords.
   Each zone is 0x4C bytes long.
   The index of the zone in this list is returned by the getZoneNo func.
   Format of each zone:
@@ -1132,6 +1135,8 @@ Player's partner's room restart position? ("restart option")
 
 803CA7F8,1 - Song index of the song to display in the message box for the interactive tutorial.
 
+803CA8CC,4 - Pointer to the Tingle Tuner cursor actor (instance of daAgb_c).
+
 803CA8D0,4 - First bitfield of player statuses (PlayerStatus0).
   00000001 - 
   00000002 - 
@@ -1200,7 +1205,19 @@ Player's partner's room restart position? ("restart option")
   e.g. if a MESSAGE actor is given a TELOP_ON action with tlpNo=0xD, it will show "Dragon Roost Cavern" on the screen as the place name.
   set by line 80072240
 803CA800,1 - Somehow related to place names shown on the screen like above.
-  set to 2 by line 80072248
+  0 - ?
+  1 - closeAnime
+    set by line 80072268
+  2 - openAnime
+    set by line 80072248
+  80072020 - switch statement in func specialProcMessage.
+    on value: ActIdx (the MESSAGE's action index?)
+    7 - openAnime (TELOP_ON)
+    8 - closeAnime (TELOP_OFF)
+803CA80A,1 - ? prevents pausing while the place name is up?
+  set to 0xA at 801612D8
+  801DD9FC checks this value
+  if you disable the "no pausing while telop is up", then pause, then unpause, then pause a second time, the second pause will crash the game.
 
 803CA91C,4 - Pointer to the item_table.bin file loaded into memory.
 
@@ -1246,7 +1263,7 @@ Player's partner's room restart position? ("restart option")
   3C - Magic staff (from Wizzrobe?)
   3E - Do not display the B button icon at all (e.g. for playing as Makar and standing on the ground)
   (I guess these weapon icons are not used ingame?)
-803CA7D7,1 - What is currently shown on the A button icon.
+803CA7D7,1 - What is currently shown on the A button icon (action icons).
   00 - Nothing.
   02 - "Speak"
   04 - "Lift"
@@ -1265,6 +1282,7 @@ Player's partner's room restart position? ("restart option")
   1A - Glowing pointy A button icon for Link being able to parry an enemy
   1B - 
   1C - "Get In"
+  1D - "Get Out"
   20 - "Take Photo"
   21 - "Info"
   23 - "Fly"
@@ -1380,6 +1398,8 @@ Note: See 80352EA0 for details about the layout of blue fog in a given room of E
   First the 9 X positions are listed. Then the 9 Y positions are listed.
   These can't be edited easily. This list in RAM isn't copied directly from main.dol. Instead, the unique float values are around 803FAE58, and there is a function (__ct__9dMf_HIO_cFv) which copies the unique float values to their appropriate positions in the actual list.
 
+803F61B0,4 - Some kind of array for which Servant of the Tower is active...? (daNpc_Os_c::m_playerRoom)
+
 803F6268,4 - Boomerang trail color. (RGBA)
 803F62AC,4 - Normal sword slash trail color. (RGBA)
 803F62B0,4 - Elixir soup sword slash trail color. (RGBA)
@@ -1428,6 +1448,50 @@ Note: See 80352EA0 for details about the layout of blue fog in a given room of E
   This ID is stored at entity+3C.
 
 803F6B7C,1 - Currently selected arrows index (0-3).
+
+803F6E68,4 - Pointer to data to be sent to the Tingle Tuner GBA client (e.g. the ROM, the message data, etc). (l_gbaCommand)
+803F6E6C,4 - ???
+803F6E7C,8 - Info about the current Tingle Tuner trigger's switches. (daAgb_c::mSwitch)
+  803F6E7C,1: Condition switch index.
+    daAgb_c::SwitchOn always calls revSwitch with this switch.
+  803F6E7D,1: The stage ID.
+  803F6E7E,1: The room number.
+  803F6E7F,1: Type+1 of the trigger. Affects what the daAgb_c::SwitchOn function does with the switches.
+    The type is the xrot&0x00FF param of the agbsw0 actor.
+  803F6E80,1: Activated switch index.
+    What daAgb_c::SwitchOn does with this switch depends on the type:
+      For type 9: Does nothing.
+      For types 0, 1, 8: Calls onSwitch with this switch.
+      For other types: Call revSwitch with this switch.
+  803F6E81,1: 
+  803F6E82,1: 
+  803F6E83,1: 
+  TODO: look into daAgb_c::SwitchOn more to figure this out
+803F6E84,1 - Which Tingle Tuner GBA item is currently being used (or attempting to be used).
+  02 - Tingle Bomb
+    65E - restriction type 2 or ???
+  03 - ?
+  04 - ?
+  05 - Kooloo-limpah!
+  08 - Red Ting
+  09 - Green Ting
+  0A - Blue Ting
+  0C - ?
+    660 - restriction type 3
+  0D - ?
+    660 - restriction type 3
+  10 - Seagull Pen + Call Tingle (check the cursor position by making Link look at it)
+    662 - restriction type 5
+  11 - Tingle Balloon
+    660 - restriction type 3
+  12 - Tingle Shield
+    660 - restriction type 3
+  13 - ?
+  14 - Red/Green/Blue Ting delivery
+  15 - ?
+  The following items don't seem to have entries, presumably because they run entirely on the GBA, with no effect on the world:
+  Tingle Watch
+  Red Guide Book
 
 803F6F12,2 - Player's current Y rotation.
   Just seems to be copied from the player entity's Y rotation every frame.

@@ -349,6 +349,9 @@ dKyw_tact_wind_set__Fss
   r3 - ? angle stored to 803E5458. usually 0?
   r4 - wind direction. stored to 803E545A.
 
+cLib_targetAngleY(cXyz *, cXyz *)
+  calculates the Y angle between two points.
+
 dLib_setNextStageBySclsNum
   r3 - Exit index in the SCLS list
   r4 - Room number for which room to look in the SCLS list for. If this is -1, it will look in the stage's SCLS list instead of the room's.
@@ -591,6 +594,7 @@ dComIfGp_setNextStage(char const *, short, signed char, signed char, float, unsi
   r9 - Wipe type, affects the screen fade out type
     0 - fade whole screen to white
     1 - fade whole screen to black
+    4 - warp pot fade
     9 - 
     B - fade letterboxed part of the screen to white (not the black borders at the top and bottom)
 
@@ -958,9 +962,15 @@ onOceanSvBit__11dSv_ocean_cFUcUs
     must be in the range 0x00-0x0F
 
 drawPointSingle__6dMap_cFUcfffScsUcUcUc
+dMap_c::drawPointSingle
   draws an icon on the map
-  r6 - the treasure chest opened flag index.
+  r3 - What icon to draw.
+    index in 8034F13C (agbTbl$7009) maybe?
+  r4 - ?
+  r5 - The rotation of the icon, from 0 to 0xFFFF.
+  r6 - The treasure chest open flag index.
     0xF is for tingle chests - these won't show up until you've made them appear.
+  (more args)
 
 __ct__14mDoExt_McaMorfFP12J3DModelDataP25mDoExt_McaMorfCallBack1_cP25mDoExt_McaMorfCallBack2_cP15J3DAnmTransformifiiiPvUlUl
 mDoExt_McaMorf::__ct(J3DModelData *, mDoExt_McaMorfCallBack1_c *, mDoExt_McaMorfCallBack2_c *, J3DAnmTransform *, int, float, int, int, int, void *, unsigned long, unsigned long)
@@ -1018,10 +1028,10 @@ PSVECScale
 
 
 da[NAMEHERE]_Create__FP10fopAc_ac_c
-da[NAMEHERE]_Delete__FP10daAgbsw0_c
-da[NAMEHERE]_Execute__FP10daAgbsw0_c
-da[NAMEHERE]_IsDelete__FP10daAgbsw0_c
-da[NAMEHERE]_Draw__FP10daAgbsw0_c
+da[NAMEHERE]_Delete__FP10da[NAMEHERE]_c
+da[NAMEHERE]_Execute__FP10da[NAMEHERE]_c
+da[NAMEHERE]_IsDelete__FP10da[NAMEHERE]_c
+da[NAMEHERE]_Draw__FP10da[NAMEHERE]_c
   these methods exist for every REL code file. the [NAMEHERE] part varies for each REL.
   Create - initializes the object.
     if this returns 5, it means the object should not actually be created. for example, maybe there wasn't enough memory to load its model. or maybe the game is in such an event state that this object shouldn't exist (like Medli during some parts of the game).
@@ -1106,6 +1116,13 @@ isSwitch__13dSv_zoneBit_cFi
   r3 - pointer to the zone (within the zone list, 803C53B2)
   r4 - zone bit index (should be within the range 00-2F)
 
+onSwitch
+  These functions set a switch.
+offSwitch
+  These functions clear a switch.
+revSwitch
+  These functions toggle a switch, either setting or clearing it.
+
 
 dPath_GetRoomPath__Fii
   returns a pointer to the requested path
@@ -1155,6 +1172,7 @@ init__10dSv_info_cFv
   r3 - ?
 
 card_to_memory__10dSv_info_cFPci
+dSv_info_c::card_to_memory(char *, int)
   loads a save file
   r3 - (803C4C08, where to load the save file. but this function just hardcodes that pointer anyway so this arg doesn't matter.)
   r4 - the current scene entity pointer.
@@ -1482,6 +1500,8 @@ daPy_lk_c::hideHatAndBackle(J3DMaterial *)
   80106CD4: If bit 0x800 in link_entity+0x2A0,4 is set, it hides the eyes and eyebrow meshes (for when Link is frozen).
   80106D08: If bit 0x8 in link_entity+0x2A0,4 is set, it hides the hat mesh (for casual clothes).
   80106D48: If bit 0x8 in link_entity+0x2A0,4 is set, it hides the belt buckle mesh (for casual clothes).
+  also hides his entire face sometimes...??
+  how does it access link's eyes and eyebrows? it only seems able to access materials 0-7 in the scenegraph, so that shouldn't be possible
 
 daPy_lk_c::draw(void)
   Link's draw function.
@@ -1629,3 +1649,42 @@ fopAcM_getWaterY(cXyz const *, float *)
 OSExceptionInit
   Initializes exception handling.
   80301CFC - nop this line out to disable the default exception handler.
+
+daAgbsw0_c::MailSend(unsigned short, unsigned char, unsigned char, unsigned char, unsigned char)
+  This function in the d_a_agbsw0 REL is called by the actor at certain times.
+  When this function is called varies by the type of the trigger.
+  For some types, it's called when the Tingle Tuner cursor hovers over the trigger region.
+  r3 - Instance of daAgbsw0_c
+  r4 - GBA Message ID
+  r5 - Affects how Tingle and the cursor should react?
+    0 - No reaction?
+    1 - Exclamation point appears on the cursor and Tingle's face, and Tingle audibly says "Nyuh?".
+    (2 - never used? same as 1?)
+    3 - ? same as 1 but smaller region?
+    (4 - never used? same as 1?)
+    5 - Tingle starts talking, displaying the GBA Message ID passed as argument r4.
+    6 - ? same as 5? used for when the the cursor gets stuck it seems
+    7 - ? same as 5?
+    (8 - never used? no reaction?)
+    9 - ? same as 5?
+    A - No reaction?
+    B - ? same as 5?
+    C - ? same as 5, except the cursor turns into Tingle trapped upside down in the ground (used for agbD)
+    D - ? same as 1?
+    (E - never used? no reaction?)
+    F - Exclamation point appears on the cursor and Tingle's face. No audio.
+      this one is sometimes used by ExeSubM3
+  r6 - switch index at 0xFF000000, or 0xFF for none
+    what is it used for here?
+  r7 - switch index at 0x00FF0000, or 0xFF for none
+    what is it used for here?
+  r8 - Affects what sound effect to play?
+    11 - Item get jingle
+    19 - Beep noise
+    1B - Tingle saying "Ow!"
+
+dMeter_rupyMove(sub_meter_class *)
+  handles updating the rupee counter in the lower right corner of the screen.
+  801FC360 - Hardcodes the maximum number of rupees for the starting wallet (200).
+  801FC370 - Hardcodes the maximum number of rupees for the first wallet upgrade (1000).
+  801FC378 - Hardcodes the maximum number of rupees for the second wallet upgrade (5000).

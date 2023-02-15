@@ -24,8 +24,20 @@ For entities that have parameters, it also documents their parameters and the co
     0x0000FF00 - Default time of day for this stage, in hours (0-24).
     0x00070000 - Stage type? Read in funcs drawSun, setGameStartStage, and checkRoofRestart
       1 - Dungeon
-      3 - Boss
+        checked at 80054AD8 in dComIfGs_setGameStartStage
+      2 - Indoors
+      3 - Boss room
+      4 - Cave
+      6 - Miniboss room
+        checked at 80054AE0 in dComIfGs_setGameStartStage
+      7 - Sea
+        checked at 80054A3C in dComIfGs_setGameStartStage
+      8 - ???
+        checked at 80054AF0 in dComIfGs_setGameStartStage
+      9 - ???
+        checked at 80054AF8 in dComIfGs_setGameStartStage
       If this value is equal to 3, solid objects falling on the player do not cause the room to restart?
+      If this value is 1, 3, 6, or 8, saving and reloading will put you at the spawn point at index 0 in the stage's SCLS list.
   10,4:
     0x00FF0000 - ? Read in func SetSchBit
 
@@ -68,6 +80,7 @@ For entities that have parameters, it also documents their parameters and the co
 ### FILI:
   00,4:
     0x00000001 - Enable fancy dark room lighting?
+    0x00000004 - (checked at 800D0AC4 by Tingle Tuner?)
     0x00000078 - Index of the dark room lighting type to use in list 803753A4 (dStage_roomControl_c::mDarkStatus)
       Valid indexes: 0-7
       Actually used indexes: 0 and 1?
@@ -477,6 +490,7 @@ c_green, c_red, c_blue, c_black, c_kiiro: ChuChu. (d_a_cc)
       If behavior type is anything else, these default to a range of 1000.0.
   params & 0xFF000000 - Enable spawn switch.
     For behavior type 3 (blue chuchus) this works differently. Instead of being an enable spawn switch, this is a switch index in stage save info E to keep track of if this chuchu's blue chu jelly has been picked up yet or not.
+  aux_params_2 & 0xFFFF - ? is this a range or something? seems used.
   Example params:
   0B1E0203 - Blue ChuChu on Eastern Fairy Island.
   FFFF04FF - Yellow ChuChu in first room of TotG.
@@ -941,6 +955,7 @@ bable: Red Bubbles and Blue Bubbles. (d_a_bl)
     01 - Will float around the Y position it's placed at.
     FF - Defaults to 00 instead.
     If the value located at 803E75A8,2 is not 0, this value will be forcibly changed to 01.
+  aux_params_2 & 0xFFFF - ? is this a range or something? seems used.
 kuro_s, kuro_t: Morths. (d_a_ks)
   params & 000000FF - Behavior type.
     00 - Group of Morths that chase the player when the player moves.

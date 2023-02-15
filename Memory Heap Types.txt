@@ -4,6 +4,7 @@ Root:
   All the other heaps take from this one, so this one should always have 0 bytes free.
 System:
   (unknown)
+  (contains the Zelda heap)
 Zelda:
   Total size: (varies)
   Used for actor instances (e.g. instances of fopAc_ac_c and its child classes).
