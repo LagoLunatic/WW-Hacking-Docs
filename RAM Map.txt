@@ -91,6 +91,11 @@
 
 8035CEEC,4 - Link's maximum forward movement speed. (17.0)
   Seems to be used for both running forward and autojumping forward.
+
+8035CF0C,4 - Link's Idle animation speed. (1.1)
+8035CF14,4 - Link's walking animation speed. (0.8)
+8035CF1C,4 - Link's running animation speed. (2.3)
+
 8035D4B8,4 - Link's minimum forward movement speed when doing an autojump. (9.0)
 
 8035D72C,4 - Link's maximum ? ledge grab height. (110.0)
