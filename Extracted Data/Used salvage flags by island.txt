@@ -1,0 +1,261 @@
+Salvage flags:
+Island: 1
+  00 (Item: Purple Rupee) in sea/Room1
+  01 (Item: Red Rupee) in sea/Room1
+  0F (Item: Purple Rupee) in sea/Room1
+Island: 2
+  00 (Item: Purple Rupee) in sea/Room2
+  01 (Item: Red Rupee) in sea/Room2
+  02 (Item: Purple Rupee) in sea/Room2
+  0F (Item: Red Rupee) in sea/Room2
+Island: 3
+  00 (Item: Purple Rupee) in sea/Room3
+  01 (Item: Red Rupee) in sea/Room3
+  0F (Item: Purple Rupee) in sea/Room3
+Island: 4
+  00 (Item: Purple Rupee) in sea/Room4
+  01 (Item: Red Rupee) in sea/Room4
+  0F (Item: Purple Rupee) in sea/Room4
+Island: 5
+  00 (Item: Purple Rupee) in sea/Room5
+  01 (Item: Red Rupee) in sea/Room5
+  0F (Item: Red Rupee) in sea/Room5
+Island: 6
+  00 (Item: Piece of Heart) in sea/Room6
+  01 (Item: Purple Rupee) in sea/Room6
+  02 (Item: Red Rupee) in sea/Room6
+  0F (Item: Red Rupee) in sea/Room6
+Island: 7
+  00 (Item: Purple Rupee) in sea/Room7
+  01 (Item: Red Rupee) in sea/Room7
+  0F (Item: Purple Rupee) in sea/Room7
+Island: 8
+  00 (Item: Purple Rupee) in sea/Room8
+  01 (Item: Purple Rupee) in sea/Room8
+  02 (Item: Red Rupee) in sea/Room8
+  03 (Item: Purple Rupee) in sea/Room8
+  04 (Item: Red Rupee) in sea/Room8
+  05 (Item: Red Rupee) in sea/Room8
+  06 (Item: Yellow Rupee) in sea/Room8
+  07 (Item: Red Rupee) in sea/Room8
+  0F (Item: Red Rupee) in sea/Room8
+Island: 9
+  01 (Item: Purple Rupee) in sea/Room9
+  02 (Item: Red Rupee) in sea/Room9
+  0F (Item: Purple Rupee) in sea/Room9
+Island: 10
+  00 (Item: Purple Rupee) in sea/Room10
+  01 (Item: Red Rupee) in sea/Room10
+  0F (Item: Purple Rupee) in sea/Room10
+Island: 11
+  00 (Item: Purple Rupee) in sea/Room11
+  01 (Item: Red Rupee) in sea/Room11
+Island: 12
+  00 (Item: Purple Rupee) in sea/Room12
+  01 (Item: Red Rupee) in sea/Room12
+  0F (Item: Purple Rupee) in sea/Room12
+Island: 13
+  00 (Item: Purple Rupee) in sea/Room13
+  01 (Item: Red Rupee) in sea/Room13
+  0F (Item: Red Rupee) in sea/Room13
+Island: 14
+  00 (Item: Purple Rupee) in sea/Room14
+  01 (Item: Red Rupee) in sea/Room14
+  02 (Item: Purple Rupee) in sea/Room14
+  0F (Item: Red Rupee) in sea/Room14
+Island: 15
+  00 (Item: Purple Rupee) in sea/Room15
+  01 (Item: Red Rupee) in sea/Room15
+  0F (Item: Purple Rupee) in sea/Room15
+Island: 16
+  00 (Item: Piece of Heart) in sea/Room16
+  01 (Item: Orange Rupee) in sea/Room16
+  02 (Item: Purple Rupee) in sea/Room16
+  03 (Item: Red Rupee) in sea/Room16
+  0F (Item: Red Rupee) in sea/Room16
+Island: 17
+  00 (Item: Piece of Heart) in sea/Room17
+  01 (Item: Purple Rupee) in sea/Room17
+  02 (Item: Red Rupee) in sea/Room17
+  0F (Item: Purple Rupee) in sea/Room17
+Island: 18
+  00 (Item: Purple Rupee) in sea/Room18
+  01 (Item: Red Rupee) in sea/Room18
+  0F (Item: Red Rupee) in sea/Room18
+Island: 19
+  00 (Item: Purple Rupee) in sea/Room19
+  01 (Item: Red Rupee) in sea/Room19
+  0F (Item: Purple Rupee) in sea/Room19
+Island: 20
+  00 (Item: Orange Rupee) in sea/Room20
+  01 (Item: Purple Rupee) in sea/Room20
+  02 (Item: Red Rupee) in sea/Room20
+  0F (Item: Red Rupee) in sea/Room20
+Island: 21
+  00 (Item: Purple Rupee) in sea/Room21
+  01 (Item: Red Rupee) in sea/Room21
+  02 (Item: Purple Rupee) in sea/Room21
+  0F (Item: Red Rupee) in sea/Room21
+Island: 22
+  00 (Item: Purple Rupee) in sea/Room22
+  01 (Item: Orange Rupee) in sea/Room22
+  02 (Item: Treasure Chart 16) in sea/Room22
+  03 (Item: Purple Rupee) in sea/Room22
+  04 (Item: Purple Rupee) in sea/Room22
+  05 (Item: Red Rupee) in sea/Room22
+  06 (Item: Yellow Rupee) in sea/Room22
+  07 (Item: Red Rupee) in sea/Room22
+  08 (Item: Red Rupee) in sea/Room22
+  09 (Item: Red Rupee) in sea/Room22
+  0A (Item: Purple Rupee) in sea/Room22
+  0F (Item: Red Rupee) in sea/Room22
+Island: 23
+  05 (Item: Purple Rupee) in sea/Room23
+  06 (Item: Red Rupee) in sea/Room23
+  0F (Item: Purple Rupee) in sea/Room23
+Island: 24
+  00 (Item: Purple Rupee) in sea/Room24
+  01 (Item: Purple Rupee) in sea/Room24
+  02 (Item: Red Rupee) in sea/Room24
+  03 (Item: Yellow Rupee) in sea/Room24
+  04 (Item: Red Rupee) in sea/Room24
+  05 (Item: Red Rupee) in sea/Room24
+  06 (Item: Red Rupee) in sea/Room24
+  07 (Item: Red Rupee) in sea/Room24
+  0F (Item: Red Rupee) in sea/Room24
+Island: 25
+  00 (Item: Purple Rupee) in sea/Room25
+  01 (Item: Purple Rupee) in sea/Room25
+  02 (Item: Red Rupee) in sea/Room25
+  03 (Item: Purple Rupee) in sea/Room25
+  04 (Item: Purple Rupee) in sea/Room25
+  05 (Item: Yellow Rupee) in sea/Room25
+  06 (Item: Purple Rupee) in sea/Room25
+  07 (Item: Red Rupee) in sea/Room25
+  0F (Item: Purple Rupee) in sea/Room25
+Island: 26
+  00 (Item: Purple Rupee) in sea/Room26
+  01 (Item: Red Rupee) in sea/Room26
+  0F (Item: Red Rupee) in sea/Room26
+Island: 27
+  00 (Item: Purple Rupee) in sea/Room27
+  01 (Item: Red Rupee) in sea/Room27
+  0F (Item: Purple Rupee) in sea/Room27
+Island: 28
+  00 (Item: Purple Rupee) in sea/Room28
+  01 (Item: Red Rupee) in sea/Room28
+  0F (Item: Red Rupee) in sea/Room28
+Island: 29
+  00 (Item: Purple Rupee) in sea/Room29
+  00 (Item: Purple Rupee) in sea/Room29
+  01 (Item: Red Rupee) in sea/Room29
+  01 (Item: Orange Rupee) in sea/Room29
+  02 (Item: Triforce Chart 5) in sea/Room29
+  0F (Item: Purple Rupee) in sea/Room29
+Island: 30
+  00 (Item: Purple Rupee) in sea/Room30
+  01 (Item: Red Rupee) in sea/Room30
+  02 (Item: Purple Rupee) in sea/Room30
+  03 (Item: Red Rupee) in sea/Room30
+  04 (Item: Red Rupee) in sea/Room30
+  05 (Item: Red Rupee) in sea/Room30
+  0F (Item: Purple Rupee) in sea/Room30
+Island: 31
+  00 (Item: Purple Rupee) in sea/Room31
+  01 (Item: Red Rupee) in sea/Room31
+  0F (Item: Purple Rupee) in sea/Room31
+Island: 32
+  00 (Item: Purple Rupee) in sea/Room32
+  01 (Item: Red Rupee) in sea/Room32
+  0F (Item: Red Rupee) in sea/Room32
+Island: 33
+  00 (Item: Orange Rupee) in sea/Room33
+  01 (Item: Purple Rupee) in sea/Room33
+  02 (Item: Red Rupee) in sea/Room33
+  0F (Item: Red Rupee) in sea/Room33
+Island: 34
+  00 (Item: Purple Rupee) in sea/Room34
+  01 (Item: Red Rupee) in sea/Room34
+  0F (Item: Purple Rupee) in sea/Room34
+Island: 35
+  00 (Item: Purple Rupee) in sea/Room35
+  01 (Item: Red Rupee) in sea/Room35
+  0F (Item: Red Rupee) in sea/Room35
+Island: 36
+  00 (Item: Orange Rupee) in sea/Room36
+  01 (Item: Purple Rupee) in sea/Room36
+  02 (Item: Red Rupee) in sea/Room36
+  0F (Item: Red Rupee) in sea/Room36
+Island: 37
+  00 (Item: Purple Rupee) in sea/Room37
+  01 (Item: Purple Rupee) in sea/Room37
+  02 (Item: Red Rupee) in sea/Room37
+  03 (Item: Purple Rupee) in sea/Room37
+  04 (Item: Purple Rupee) in sea/Room37
+  05 (Item: Purple Rupee) in sea/Room37
+  06 (Item: Yellow Rupee) in sea/Room37
+  07 (Item: Red Rupee) in sea/Room37
+  0F (Item: Red Rupee) in sea/Room37
+Island: 38
+  00 (Item: Purple Rupee) in sea/Room38
+  01 (Item: Red Rupee) in sea/Room38
+  02 (Item: Purple Rupee) in sea/Room38
+  03 (Item: Purple Rupee) in sea/Room38
+  04 (Item: Red Rupee) in sea/Room38
+  05 (Item: Red Rupee) in sea/Room38
+  06 (Item: Yellow Rupee) in sea/Room38
+  07 (Item: Red Rupee) in sea/Room38
+  0F (Item: Purple Rupee) in sea/Room38
+Island: 39
+  00 (Item: Purple Rupee) in sea/Room39
+  01 (Item: Red Rupee) in sea/Room39
+  0F (Item: Red Rupee) in sea/Room39
+Island: 40
+  00 (Item: Purple Rupee) in sea/Room40
+  01 (Item: Red Rupee) in sea/Room40
+  0F (Item: Red Rupee) in sea/Room40
+Island: 41
+  00 (Item: Purple Rupee) in sea/Room41
+  01 (Item: Red Rupee) in sea/Room41
+  0F (Item: Purple Rupee) in sea/Room41
+Island: 42
+  00 (Item: Purple Rupee) in sea/Room42
+  01 (Item: Red Rupee) in sea/Room42
+  0F (Item: Red Rupee) in sea/Room42
+Island: 43
+  00 (Item: Purple Rupee) in sea/Room43
+  01 (Item: Red Rupee) in sea/Room43
+  02 (Item: Purple Rupee) in sea/Room43
+  0F (Item: Purple Rupee) in sea/Room43
+Island: 44
+  00 (Item: Purple Rupee) in sea/Room44
+  01 (Item: Purple Rupee) in sea/Room44
+  02 (Item: Purple Rupee) in sea/Room44
+  03 (Item: Red Rupee) in sea/Room44
+  0F (Item: Purple Rupee) in sea/Room44
+Island: 45
+  00 (Item: Purple Rupee) in sea/Room45
+  01 (Item: Red Rupee) in sea/Room45
+  0F (Item: Red Rupee) in sea/Room45
+Island: 46
+  00 (Item: Orange Rupee) in sea/Room46
+  01 (Item: Purple Rupee) in sea/Room46
+  02 (Item: Red Rupee) in sea/Room46
+  03 (Item: Red Rupee) in sea/Room46
+  04 (Item: Yellow Rupee) in sea/Room46
+  05 (Item: Red Rupee) in sea/Room46
+  06 (Item: Red Rupee) in sea/Room46
+  07 (Item: Red Rupee) in sea/Room46
+  0F (Item: Purple Rupee) in sea/Room46
+Island: 47
+  00 (Item: Purple Rupee) in sea/Room47
+  01 (Item: Red Rupee) in sea/Room47
+  0F (Item: Red Rupee) in sea/Room47
+Island: 48
+  00 (Item: Purple Rupee) in sea/Room48
+  01 (Item: Red Rupee) in sea/Room48
+  0F (Item: Red Rupee) in sea/Room48
+Island: 49
+  00 (Item: Purple Rupee) in sea/Room49
+  01 (Item: Red Rupee) in sea/Room49
+  0F (Item: Purple Rupee) in sea/Room49
