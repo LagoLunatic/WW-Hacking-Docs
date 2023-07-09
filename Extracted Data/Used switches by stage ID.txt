@@ -22,6 +22,7 @@ Stage ID: 00
   0B  from     ARRIVAL_DRG  in sea/Stage (Event)
   0B  from          TagIsl  in sea/Room13
   0C  from          SW_C00  in sea/Room11
+  0C  from             Kk1  in sea/Room11/Layer5
   0D  from         Daiocta  in sea/Room6
   0D  from         ky_tag0  in sea/Room6
   0E  from         Daiocta  in sea/Room17
