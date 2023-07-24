@@ -1,0 +1,70 @@
+Wave bank index (hex), wave bank index (dec), filename of the .aw, description of the bank's contents
+00    0   n_zelda_0      Instrument noises, always loaded
+01    1   w_zelda_0      Instrument noises, always loaded
+02    2   SystemSE_0     Menu SFX
+03    3   voice_0        Link, Medli and Makar's grunts and noises
+04    4   LinkMotion_0   Link's Equipment SFX, also includes sounds for the boat
+05    5   Footnote_0     Walking SFX, 114 in total
+06    6   Atmos_0        Athmospheric SFX
+07    7   CharVoice_0    Enemy Grunt SFX, Old Man Hoho, and other NPCs
+08    8   objSE_0        Object SFX, has explosions and all kinds of weird stuff
+09    9   Ryu_Mt_0       Dragon Roost Cavern SFX
+0A   10   I_Maju_0       Forsaken Fortress SFX, including Phantom Ganon SFX used in Ganon's Tower
+0B   11   Kindan_0       Forbidden Woods SFX
+0C   12   bigpow_0       Jalhalla Instrument Bank
+0D   13   tetra_0        Tetra Meet Instruments
+0E   14   boco_0         Kalle Demos Instruments
+0F   15   Asoko_0        Pirate Ship Interior SFX
+10   16   Shiren_0       Tower of the Gods SFX
+11   17   Mj_Tower_0     Forsaken Fortress Tower SFX
+12   18   bird_0         Helmaroc King Instruments
+13   19   A_mori_0       Outset Forest SFX
+14   20   WindDun_0      Wind Temple SFX
+15   21   n2i_link_0     Outset Island Instruments
+16   22   n3i_maju_0     Forsaken Fortress Instruments
+17   23   n4d_ryu_0      Dragon Roost Caverns Instruments
+18   24   Ojhous_0       Orca And Sturgeon's homes SFX
+19   25   IsleLink_0     Outset Island SFX
+1A   26   Omoush_0       Tingle's Jail Cell SFX
+1B   27   IsleTown_0     Windfall Island SFX
+1C   28   Orichh_0       Windfall Rich House SFX
+1D   29   A_umikz_0      Great Fairy and Fairy Queen SFX
+1E   30   mboss_0        Miniboss Music Instruments
+1F   31   IsleWood_0     Forest Haven Outside SFX, just waterfalls
+20   32   umi_0          Shirtless Submarine men and Big Octo SFX
+21   33   n5store_0      Beedle's Shop Instruments
+22   34   d_amosu_0      Gohdan Instruments
+23   35   DaiDun_0       Earth Temple SFX, mostly just Jalhalla
+24   36   d_forest_0     Forbidden Woods Instruments
+25   37   kaminoto_0     Tower of the Gods instruments
+26   38   rane_0         Molgera Instruments
+27   39   n6pirate_0     Pirate Instruments
+28   40   e_diocta_0     Sea Miniboss (Big Octo/Cyclos Tornado) Music Instruments
+29   41   d_earth_0      Earth Temple Instruments
+2A   42   d_wind_0       Wind Temple Instruments
+2B   43   IsleRiv_0      Private Oasis SFX
+2C   44   hyrul_0        Hyrule Castle Interior Instruments
+2D   45   n7i_mori_0     Forest Haven Instruments
+2E   46   n8s_race_0     Great Fairy, Flight Control Platform, and Boating Course Instruments
+2F   47   p_ganon_0      Phantom Ganon Instruments
+30   48   n9drug_0       Potion Stores Instruments
+31   49   d_ganon1_0     Normal Ganon's Tower Instruments
+32   50   d_ganon2_0     Ganon's Tower Puzzle Room Instruments
+33   51   n10i_ryu_0     Dragon Roost Island Instruments
+34   52   shop_0         Shop SFX, Beedle, Hollo, Salvatore, Doc Bandam
+35   53   room1_0        Various SFX from inside houses, Grandma, Lenzo, Mrs. Marie, and Bomb Shop cutscene grunt noises
+36   54   p_goma_0       Boss Rematch Instruments (not just Gohma's)
+37   55   InForest_0     Forest Haven SFX, Koroks and Deku Tree
+38   56   IsleDrg_0      Dragon Roost Island SFX
+39   57   Raichin_0      Cyclos SFX
+3A   58   Jaboo_0        Jabun SFX
+3B   59   n11i_tur_0     Windfall Island Instruments
+3C   60   n12death_0     Instruments used in various caves and Hyrule Castle exterior
+3D   61   GanonT_0       Final Battle Area SFX, Ganondorf, Zelda, Daphnes, Link's stab etc
+3E   62   GanonB_0       Puppet Ganon Room SFX
+3F   63   kugutu_0       Puppet Ganon Instruments
+40   64   MJGanon_0      Ganondorfs Forsaken Fortess Hut SFX
+
+Unused .aw files with no wave bank index:
+goma_0.aw
+tower_0.aw
