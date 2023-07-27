@@ -82,6 +82,7 @@ Pointer to something in the loaded REL file for this entity?
   & 00000100 - Should check culling before drawing.
   & 00000400 - Is frozen
   & 00000800 - (set for actors in events that have staff type 1?)
+  & 00002000 - (used for servants of the tower??)
   & 00008000 - (set for actors in events?)
   & 00020000 - Executes even when game is paused.
     This has a side effect for enemies where they effectively have very few iframes and take damage multiple times per attack.
@@ -245,7 +246,7 @@ For Link:
 2FEC,2: File index in LkAnm.arc of Link's current lower body animation.
 2FFC,2: File index in LkAnm.arc of Link's current ??? animation. (ActAnime?)
 300C,2: File index in LkAnm.arc of Link's current ??? animation. (ActAnime?)
-301C,2: File index in LkAnm.arc of Link's current ??? animation. (ActAnime?)
+301C,2: File index in LkAnm.arc of Link's current ??? animation. (ActAnimeUpper?)
 318C,4: Unique ID of the actor Link is holding above his head.
 3190,4: Pointer to the actor Link is holding above his head.
 31DC,C: Link's PTMF (pointer to member functions) struct.

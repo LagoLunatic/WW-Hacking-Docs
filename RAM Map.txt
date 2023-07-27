@@ -100,6 +100,11 @@
   This value doesn't just control the speed the animation plays at, but also how fast Link actually moves forward at a particular control stick strength.
 8035CF1C,4 - Link's running animation speed. (2.3)
 
+8035D388:	Hero's Sword size 1. (20.0)
+8035D38C:	Hero's Sword size 2. (1.5)
+8035D390:	Master Sword size 1. (30.0)
+8035D394:	Master Sword size 2. (2.5)
+
 8035D4B8,4 - Link's minimum forward movement speed when doing an autojump. (9.0)
 
 8035D72C,4 - Link's maximum ? ledge grab height. (110.0)
@@ -425,6 +430,15 @@ Format of each block of memory in the game heap:
   Each entry is a pointer to a string that is a stage name.
   The "spot ID" for a particular stage is the index of that stage's name in this list +1.
 
+803A2D14,1 - Hour of the current time of day (integer 0-23).
+803A2D15,1 - Minute of the current time of day (integer 0-59).
+803A2D16,1 - Current day of the week (integer 0-6).
+803A2D18,2 - Bitfield of what the time of day was on the previous frame.
+  & 00FF - Minute of the current time of day (integer 0-59).
+  & FF00 - Hour of the current time of day (integer 0-23).
+  So a bitfield value of e.g. 0x53B (0d1339) is equivalent to a time of 5:59AM.
+803A2D1A,1 - ?
+
 803A2F05,1 - The Sea Floor Group Info of the DZB collision group Link is currently located above, used for audio-related purposes. (Officially called "GrpSoundId".)
   If 0, Link is not above the sea floor. Sea related music will not play. (Except for room 0 of the sea - that's always considered the sea floor.)
   Otherwise, it's a bitfield as follows:
@@ -437,6 +451,8 @@ Format of each block of memory in the game heap:
     "Inner Edge": The inner border of a sector's sea floor. (Collision group named "soko_uti".)
     "Outer Edge": The outer border of a sector's sea floor. (Collision group named "soko_soto".)
     "Outer Sea": Part of the sea floor that is not specific to any sector, is part of room 0 of the sea and is between sectors.
+
+803A2F0C,4 - ? related to time of day or music?
 
 803A2F10,4 - Might be what the next scene music to play should be?
   If this is 0, music does not get played on Windfall.
@@ -555,7 +571,7 @@ Format of each block of memory in the game heap:
 803C4C1B,1 - Max magic meter/MP.
 803C4C1C,1 - Current magic meter/MP.
 
-803C4C2C,4 - Current time in the day. (Float.)
+803C4C2C,4 - Current time of day. (Float.)
   Ranges from 0.0 to 360.0.
 
 803C4C38,8 - Stage name of the player's "return place" (where you will be placed when you reload your save).
@@ -747,7 +763,7 @@ Each inventory slot:
 
 803C4DAC,1 - ???
 
-803C522C - Bitfield of event bits you've seen.
+803C522C-803C532B - Bitfield of event bits you've seen.
   Byte      Bit 
   803C522C  01  saw tetra fall into the forest of fairies
   803C522D  01  seen intro to fairy woods with tetra hanging? rescued tetra?
@@ -1068,7 +1084,7 @@ Player's partner's room restart position? ("restart option")
  C0,1 - 
  C1,1 - Index of the first dEvt_order_c to use
  C2,1 - mMode (0, 1, 2, 3?)
- C3,1 - Flag to end an event?
+ C3,1 - Flag to end an event? (803C9EA3)
  C4,4 - dEvt_control_c::setParam uses these to hold Base Processing Class Ids
  C8,4 - ^
  CC,4 - ^ (mPtTalk)
@@ -1093,8 +1109,6 @@ Player's partner's room restart position? ("restart option")
  EE,4 - ?
  F2,2 - Padding? 
 
-803C9ED4 - Event manager start.
-
 803C9EA0,1 - related to events
 803C9EA1,1 - related to events
 803C9EA2,1 - Some state relating to events. (mMode of dEvt_control_c)
@@ -1114,6 +1128,10 @@ Player's partner's room restart position? ("restart option")
 803C9EC8,2 - Bitfield relating to events?
   0001 - Must be set for an event to work properly if the player triggers it while coming out of a door?
   0008 - Should check if there are any events ready to be run.
+    This also seems to be responsible for ending events.
+    The actor that started an event is responsible for setting this bit to end the event.
+
+803C9ED4 - Event manager start.
 
 803C9F10-803CA40F - Huge bitfield of event flags. These are for the "flag" fields set by everything in event_list.dat.
   There are 0x2800 spots for flags in total. They take up 0x500 bytes.
@@ -1249,7 +1267,9 @@ Player's partner's room restart position? ("restart option")
 
 803CA7D2,1 - Current message mode?
 
-803CA7D5,1 - What is currently shown on the R button icon?
+803CA7D5,1 - What is currently shown on the R button icon.
+  0F - "Crouch"
+  36 - "Defend"
 803CA7D6,1 - What is currently shown on the B button icon.
   06 - "Let Go" (e.g. flying as Makar)
   07 - "Return"

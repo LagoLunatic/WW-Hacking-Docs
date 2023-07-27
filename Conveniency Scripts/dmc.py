@@ -32,7 +32,8 @@ with open(DOLPHIN_MRAM_DUMP_PATH, "rb") as f:
     actor_id_to_rel_name[actor_id] = rel_filename
     i += 1
   
-  print("%08X %04X" % (dmc_list, num_actors))
+  print(f"{dmc_list=:08X} {num_actors=:04X}")
+  print("actor_id rel_pointer rel_filename")
   for actor_id in range(num_actors):
     dmc_pointer = read_u32(f, dmc_list + actor_id*4)
     if dmc_pointer == 0:
@@ -43,5 +44,5 @@ with open(DOLPHIN_MRAM_DUMP_PATH, "rb") as f:
       # REL is not currently loaded.
       continue
     
-    rel_filename = actor_id_to_rel_name[actor_id]
+    rel_filename = actor_id_to_rel_name.get(actor_id, "[unknown - custom]")
     print("%04X %08X %s" % (actor_id, rel_pointer, rel_filename))

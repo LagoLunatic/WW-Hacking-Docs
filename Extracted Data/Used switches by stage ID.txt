@@ -1968,13 +1968,16 @@ Stage ID: 05
   27  from           TagHt  in Siren/Room14
   27  from           TagHt  in Siren/Room14
   27  from           TagHt  in Siren/Room14
+  28  from             Os2  in Siren/Stage
   28  from         Ywarp00  in Siren/Room7
   28  from          AttTag  in Siren/Room7
   28  from          AttTag  in Siren/Room7
   28  from         kytag00  in Siren/Room7
+  29  from              Os  in Siren/Stage
   29  from          door10  in Siren/Stage
   29  from             Hsh  in Siren/Room7
   29  from          AttTag  in Siren/Room7
+  2A  from             Os1  in Siren/Stage
   2A  from          door10  in Siren/Stage
   2A  from          AttTag  in Siren/Room7
   2D  from           TagEv  in Siren/Room18

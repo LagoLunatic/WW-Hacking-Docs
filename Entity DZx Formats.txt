@@ -26,6 +26,7 @@ For entities that have parameters, it also documents their parameters and the co
       1 - Dungeon
         checked at 80054AD8 in dComIfGs_setGameStartStage
       2 - Indoors
+        Disables attacking with the sword and defending with the shield, unless the stage name is "Ojhous" or "Orichh".
       3 - Boss room
       4 - Cave
       6 - Miniboss room

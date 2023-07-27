@@ -66,6 +66,8 @@ setStartDemo__18dEvent_exception_cFi
 
 advanceCut__12dEvDtStaff_cFi
   updates the current action for an actor
+  r3 - pointer to the event actor
+  r4 - the index of the new action
 
 
 fopAcM_getProcNameString
@@ -103,9 +105,20 @@ itemGetExecute
     800F6484 - used by all items with an ID 0x84 or greater. seems to function the same as 800F6724, no item get text.
     800F675C - one used by the small key. has the message and animation, and no heart sfx! perfect.
 
-dComIfGs_isStageBossEnemy__Fi
+dComIfGs_isStageBossEnemy(int)
   Checks if the boss for a given dungeon stage is dead.
-  Argument r3 is the stage ID of the stage to check.
+  r3 - The stage ID of the stage to check.
+
+dSv_memBit_c::isDungeonItem(int)
+  Checks if a dungeon-specific flag for a particular stage save info is set.
+  r3 - Pointer to a stage save info.
+  r4 - Bit index to check.
+    0 - Got dungeon map.
+    1 - Got compass.
+    2 - Got big key.
+    3 - Boss is dead.
+    4 - Heart container is taken.
+    5 - Watched boss intro.
 
 check_itemno
   This takes a consumable item ID as an argument, and returns what consumable ID should actually be created.
@@ -373,7 +386,7 @@ setPointRestart
     2 - Medli
     3 - Servant of the Tower
 
-setRestartOption
+dSv_restart_c::setRestartOption
   sets Medli or Makar's "restart" position if they're grabbed by a floormaster
 
 checkItemGet__FUci
@@ -532,6 +545,12 @@ set__19dStage_startStage_cFPCcScsSc
 
 set__19dSv_player_priest_cFUcR4cXyzsSc
   sets the position of the player's partner (e.g. Makar) in the save file.
+
+dComIfGs_setGameStartStage
+  Determines what stage, room, and spawn the player will respawn at after saving and reloading the game, or getting a Game Over and continuing.
+  There are various hardcoded conditions that change exactly where the respawn will be, depending on stage, stage type, story progress, etc.
+  For dungeons: The player will respawn at whichever spawn is pointed to by the stage.dzs's first SCLS entry.
+  For interiors, such as caves: The player will respawn on the sea, with the sector being determined by the sector coordinates in the current stage.dzs's 2DMA chunk.
 
 screenSetTr__13dMenu_Fmap2_cFv
 dMenu_Fmap2_c::screenSetTr(void)
@@ -838,6 +857,7 @@ JAIBasic::getSoundOffsetNumberFromID(unsigned long)
 
 bgmStart
   Starts playing background music. Boss music counts as background music.
+  r3 - Pointer to JAIZelBasic (803A2CE8)
   r4 - The BGM ID.
     BGM IDs can be a bit different from normal sound IDs.
     Normally they are the same, for example:
@@ -868,6 +888,10 @@ bgmStart
       80000150 -> 80000049
       80000151 -> 8000004A
       80000152 -> 8000004C
+  r5 - ?
+  r6 - Whether to interrupt the currently playing BGM or not.
+    If 0, JAISound::stop will be called, which interrupts the current BGM.
+    If 1, JAISound::stop will not be called, which allows the current BGM to take precedence over the new one.
 
 expandSceneBgmNum
   r4 - Halfword BGM ID read from a BGM info for a spot/island.
@@ -1688,3 +1712,12 @@ dMeter_rupyMove(sub_meter_class *)
   801FC360 - Hardcodes the maximum number of rupees for the starting wallet (200).
   801FC370 - Hardcodes the maximum number of rupees for the first wallet upgrade (1000).
   801FC378 - Hardcodes the maximum number of rupees for the second wallet upgrade (5000).
+
+dGameover_c::_execute(void)
+  8018E7C4 - Hardcodes how many quarter-hearts to set the player's current HP to after getting a game over.
+
+dSv_player_item_c::setBottleItemIn
+  Fills the bottle that currently contains the item ID specified in r4 with the item ID specified in r5.
+
+dSv_player_item_c::setEmptyBottleItemIn
+  Fills an empty bottle with the item ID specified in r5.
