@@ -4125,10 +4125,20 @@ Stage ID: 0D
   A3  from         AND_SW0  in ITest63/Room0
   A4  from          tkrASw  in ITest63/Stage
   A4  from         AND_SW0  in ITest63/Room0
+  C0  from           Hlift  in Asoko/Room0/Layer0
+  C0  from           Hlift  in Asoko/Room0/Layer0
+  C0  from          Hliftb  in Asoko/Room0/Layer0
   C0  from         Kbota_A  in Asoko/Room0/Layer0
+  C0  from           Hlift  in Asoko/Room0/Layer0
+  C0  from           Hlift  in Asoko/Room0/Layer0
   C0  from         ObjTime  in Asoko/Room0/Layer0
   C0  from          KbotaC  in Asoko/Room0/Layer0
+  C0  from           Hlift  in Asoko/Room0/Layer1
+  C0  from           Hlift  in Asoko/Room0/Layer1
+  C0  from          Hliftb  in Asoko/Room0/Layer1
   C0  from         Kbota_A  in Asoko/Room0/Layer1
+  C0  from           Hlift  in Asoko/Room0/Layer1
+  C0  from           Hlift  in Asoko/Room0/Layer1
   C0  from         ObjTime  in Asoko/Room0/Layer1
   C0  from          KbotaC  in Asoko/Room0/Layer1
   C0  from           Ashut  in Asoko/Room0/Layer2
