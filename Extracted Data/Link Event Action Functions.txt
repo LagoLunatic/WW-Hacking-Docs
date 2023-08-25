@@ -1,0 +1,77 @@
+000 00000000:
+001 00000000:
+002 00000000:
+003 00000000:
+004 00000000:
+005 8011476C: procWaitTurn_init__9daPy_lk_cFv
+006 00000000:
+007 8012DDEC: dProcDamage_init__9daPy_lk_cFv
+008 00000000:
+009 00000000:
+010 8012E09C: dProcOpenTreasure_init__9daPy_lk_cFv
+011 8012E6B4: dProcGetItem_init__9daPy_lk_cFv
+012 8012ECB0: dProcUnequip_init__9daPy_lk_cFv
+013 8012DF24: dProcHoldup_init__9daPy_lk_cFv
+014 00000000:
+015 8012F928: dProcLookAround_init__9daPy_lk_cFv
+016 00000000:
+017 00000000:
+018 00000000:
+019 8012F9E4: dProcSalute_init__9daPy_lk_cFv
+020 8012FA98: dProcLookAround2_init__9daPy_lk_cFv
+021 8012FB88: dProcTalismanPickup_init__9daPy_lk_cFv
+022 8012FCC0: dProcTalismanWait_init__9daPy_lk_cFv
+023 00000000:
+024 8012FFEC: dProcSurprised_init__9daPy_lk_cFv
+025 801301C0: dProcTurnBack_init__9daPy_lk_cFv
+026 801302CC: dProcLookUp_init__9daPy_lk_cFv
+027 00000000:
+028 80130380: dProcQuakeWait_init__9daPy_lk_cFv
+029 80130434: dProcDance_init__9daPy_lk_cFv
+030 801304D8: dProcCaught_init__9daPy_lk_cFv
+031 00000000:
+032 80130724: dProcPushPullWait_init__9daPy_lk_cFv
+033 801307E4: dProcPushMove_init__9daPy_lk_cFv
+034 00000000:
+035 801308BC: dProcDoorOpen_init__9daPy_lk_cFv
+036 80130A54: dProcNod_init__9daPy_lk_cFv
+037 80130BE8: dProcPresent_init__9daPy_lk_cFv
+038 80130E88: dProcWindChange_init__9daPy_lk_cFv
+039 80141288: procShipPaddle_init__9daPy_lk_cFv
+040 80130F98: dProcStandItemPut_init__9daPy_lk_cFv
+041 00000000:
+042 00000000:
+043 00000000:
+044 00000000:
+045 8014F4DC: procTactPlayOriginal_init__9daPy_lk_cFv
+046 80132844: dProcPowerUp_init__9daPy_lk_cFv
+047 80131274: dProcVorcanoFail_init__9daPy_lk_cFv
+048 8013168C: dProcBossWarp_init__9daPy_lk_cFv
+049 80131348: dProcSlightSurprised_init__9daPy_lk_cFv
+050 8013154C: dProcSmile_init__9daPy_lk_cFv
+051 00000000:
+052 8013182C: dProcAgbUse_init__9daPy_lk_cFv
+053 8013194C: dProcLookTurn_init__9daPy_lk_cFv
+054 80131A7C: dProcLetterOpen_init__9daPy_lk_cFv
+055 80131B98: dProcLetterRead_init__9daPy_lk_cFv
+056 8013C020: procGrabPut_init__9daPy_lk_cFv
+057 80131D6C: dProcRedeadStop_init__9daPy_lk_cFv
+058 80131E0C: dProcRedeadCatch_init__9daPy_lk_cFv
+059 80131EAC: dProcGetDance_init__9daPy_lk_cFv
+060 80132224: dProcBottleOpenFairy_init__9daPy_lk_cFv
+061 00000000:
+062 80132438: dProcWarpShort_init__9daPy_lk_cFv
+063 80132534: dProcOpenSalvageTreasure_init__9daPy_lk_cFv
+064 00000000:
+065 80154880: procFoodSet_init__9daPy_lk_cFv
+066 8013265C: dProcSurprisedWait_init__9daPy_lk_cFv
+067 80132784: dProcPowerUpWait_init__9daPy_lk_cFv
+068 80141F2C: procShipBow_init__9daPy_lk_cFv
+069 80132A88: dProcShipSit_init__9daPy_lk_cFv
+070 80132BC4: dProcLastCombo_init__9daPy_lk_cFv
+071 80142920: procShipGetOff_init__9daPy_lk_cFv
+072 80132DDC: dProcHandUp_init__9daPy_lk_cFv
+073 801543A0: procFoodThrow_init__9daPy_lk_cFv
+074 80132E80: dProcIceSlip_init__9daPy_lk_cFv
+075 00000000:
+076 00000000:
