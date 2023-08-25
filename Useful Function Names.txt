@@ -46,6 +46,13 @@ fopAcM_orderOtherEvent2(fopAc_ac_c *, char *, unsigned short, unsigned short)
   r5 - 1?
   r6 - 0xFFFF?
 
+80025F3C  fopAcM_orderPotentialEvent(fopAc_ac_c *, unsigned short, unsigned short, unsigned short)
+  starts a hardcoded event (e.g. for a boss)
+  r3 - Pointer to the entity starting the event
+  r4 - 1 or 2?
+  r5 - 0xFFFF?
+  r6 - 0?
+
 dEvent_manager_c::getEventIdx
 getEventIdx__16dEvent_manager_cFPCcUc
   gets the index of an event in the event_list.dat based on its name (or its EVNT index)
@@ -64,7 +71,7 @@ setStartDemo__18dEvent_exception_cFi
   r4 - event index (in the EVNT list for this stage, not the event_list.dat)
 
 
-advanceCut__12dEvDtStaff_cFi
+dEvDtStaff_c::advanceCut(int)
   updates the current action for an actor
   r3 - pointer to the event actor
   r4 - the index of the new action
@@ -1530,7 +1537,7 @@ daPy_lk_c::hideHatAndBackle(J3DMaterial *)
 daPy_lk_c::draw(void)
   Link's draw function.
   80107C58: If bit 0x8 in link_entity+0x2A0,4 is set, it draws the casual hair model, katsura (for casual clothes).
-  80107BAC: If bit 0x800 in bitfield link_entity+0x2A0,4 is set, ??? (for when Link is frozen).
+  80107BAC: If bit 0x800 in bitfield link_entity+0x2A0,4 is set, it replaces Link's materials with a transparent ice material (Always.arc/ice.bmt) (for when Link is frozen solid).
 
 daPy_lk_c::execute(void)
   Link's execute function.
@@ -1721,3 +1728,18 @@ dSv_player_item_c::setBottleItemIn
 
 dSv_player_item_c::setEmptyBottleItemIn
   Fills an empty bottle with the item ID specified in r5.
+
+daPy_lk_c::commonProcInit(daPy_lk_c::daPy_PROC)
+  Initializes Link entering a new state.
+  r3 - Pointer to the Link entity
+  r4 - The new state index. Index in list daPy_lk_c::mProcInitTable.
+
+dMap_RoomInfo_c::getRoomImage(int, unsigned char, int, ResTIMG **, ResTIMG **, map_dt_c **, stage_map_info_class **, unsigned char *)
+  handles loading the minimap for a given room
+  8004603C-80046064 - loads the .amp file (e.g. m128.amp) which contains the tingle tuner map data
+
+dDoor_hkyo_c::setAnm(unsigned char)
+  Changes which animation a door's Hkyo should use.
+  Hkyo is the extra glowing model overlayed on top of certain TotG doors.
+  r3 - Pointer to the dDoor_hkyo_c instance.
+  r4 - The animation index to set.

@@ -90,10 +90,10 @@ Pointer to something in the loaded REL file for this entity?
     This bit is automatically unset after the actor decides to not draw itself because of this bit once.
   & 04000000 - Is a boss or mini-boss (?)
   & 08000000 - (something set by enemy_ice)
-1C8,4: Bitfield of ?
+1C8,4: Bitfield of conditions?
   & 00000002 - Actor did not execute this frame.
   & 00000004 - Actor did not draw this frame.
-  & 00000008 - ? (Set by the certain actors like the sea, or d_a_dummy)
+  & 00000008 - Actor has been constructed (__ct has been called).
 1D0,14: Previous transform.
   1D0,4: Previous X pos.
   1D4,4: Previous Y pos.
@@ -184,7 +184,7 @@ For treasure chest entities:
 76C,1: The treasure chest opened flag index.
   F - For tingle statue chests. This special value means the chest will not appear on the dungeon map with the compass until you have revealed the chest.
 
-For Link:
+For Link (daPy_lk_c):
 0290,1: The player's current attack state.
   0 - Not attacking
   1 - Attacking with sword while locked on
@@ -204,6 +204,7 @@ For Link:
   00000080 - ?? maybe about to use an equipped item?
   00200000 - Player's mirror shield is currently reflecting light.
 0314,4: The current event action index. e.g. 11 (0xB) for 011get_item.
+031C,4: Pointer to Link's vtable (8038FDC0).
 032C,4: Pointer to Link's main cl.bdl model.
 0330,4: Pointer to Link's katsura.bdl model.
 0334,4: Pointer to Link's yamu.bdl model.
@@ -250,7 +251,10 @@ For Link:
 318C,4: Unique ID of the actor Link is holding above his head.
 3190,4: Pointer to the actor Link is holding above his head.
 31DC,C: Link's PTMF (pointer to member functions) struct.
-31E4,4: Pointer to the execute function for Link's current state (e.g. daPy_lk_c::procWait).
+  31DC,4: "Delta to this pointer" (usually 0).
+  31E0,4: Offset in virtual table (usually -1: does not use a virtual table).
+  31E4,4: Pointer to the execute function for Link's current state (e.g. daPy_lk_c::procWait).
+    If 04,4 is not -1, this value is instead the offset of the virtual function entry in the vtable.
 3484,4: Related to what's on the A button icon...?
 34C8,1: Bitfield of pressed buttons.
   01 - A
@@ -272,6 +276,7 @@ For Link:
   Called "Attribute Type" in Winditor and "Attrib ID" in DZB-i-Fy.
   Probably related to taking damage from lava. This is passed as argument r5 to checkLavaFace (but only when the value is 6 or 8 - the Lava and Respawn Generic types)
 3530,2: Current keyframe index for Link's eyes .btk animation.
+3618,4: Bitfield related to Link's current state.
 
 For enemies:
 [Varies]+14,1: Damage for this enemy to do.

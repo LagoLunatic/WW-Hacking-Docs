@@ -100,6 +100,7 @@ For entities that have parameters, it also documents their parameters and the co
 
 ### EVNT:
   13,1: The switch index to check and set.
+    This seems to only be used when a PLYR spawn is what starts this EVNT, it doesn't work in general.
 
 ### TRES:
 Treasure chests. (d_a_tbox)
@@ -652,8 +653,7 @@ Bk: Bokoblin. (d_a_bk)
       Overrides params & 00000020 trying to make the Bokoblin green.
       Also sets a bool at entity+2DC to true to make it pink.
       Also sets this type field to 4.
-    F - ?
-      Only used in debug test maps.
+    F - Frozen in ice
       Sets entity+376,2 to 0x17 and entity+2BA,1 to 0.
   params & 00000010 - Change switch behavior.
     stored to entity+2B9,1
@@ -672,6 +672,9 @@ Bk: Bokoblin. (d_a_bk)
     stored to entity+2B5,1
     This is multiplied by 10.0 - maybe this is the range the Bokoblin notices you in?
     If this is FF, the range defaults to 500.0 (instead of 255*10.0).
+    For type F (frozen) this is instead which frozen pose to use.
+      0 - Attacking
+      1+ - Yawning
   params & 00FF0000 - Path index?
     stored to entity+2B6,1
   params & FF000000 - Switch index for whether this Bokoblin should exist or not.

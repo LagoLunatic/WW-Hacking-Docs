@@ -292,10 +292,12 @@ Format of each block of memory in the game heap:
 0C,4: Pointer to the next block of memory of this type.
 10,[size]: The actual data in this block of memory.
 
-803F772C,4 - This global variable has a pointer to the last allocated memory block on the game heap. This is used by constructors to know what memory to use. (sCurrentHeap__7JKRHeap)
+803F772C,4 - The active/current heap of memory. (sCurrentHeap__7JKRHeap)
+  This global variable has a pointer to the last allocated memory block on the game heap.
+  This is used by constructors to know what memory to use.
   This is accessed as r13-0x69B4.
 
-803842B0 (3812B0 in main.dol) - List of item resources.
+803842B0 (3812B0 in main.dol) - List of item resources. (dItem_data::item_resource)
   Entry length 0x24. Index is an item ID.
   00,4: Pointer to a string, the name of the .arc containing this item's model.
   04,4: Pointer to a string. Filename of the item icon to show in the inventory for this item.
@@ -307,7 +309,7 @@ Format of each block of memory in the game heap:
   10,2: (equivalent of 0C,2 for field items)
   12,2: File index within the .arc of this item's bone animation (BCK)...? TODO check if this is used
   14,1: Keyframe index in the TEV register animation to use.
-    This is used for rupees to give them a different color.
+    This is used for rupees (and chu jelly) to give them a different color.
     All rupees have the same model and texture, and have the same TEV register animation that simply cycles through all the different colors.
     By pausing the TEV register animation on different keyframes, different rupees have different colors.
   15,1: Padding?
@@ -317,7 +319,8 @@ Format of each block of memory in the game heap:
   1E,1: ?
   20,2: Maximum amount of memory that may be needed to instantiate this item's assets, or 0 for no max.
     Argument r5 to entrySolidHeap.
-803866B0 (3836B0 in main.dol) - List of field item resources. Items that appear freely placed in the world as ACTRs.
+803866B0 (3836B0 in main.dol) - List of field item resources. (dItem_data::field_item_res)
+  These are items that appear freely placed in the world as ACTRs.
   Entry length 0x1C.
   Format:
   00,4: Pointer to a string, the name of the .arc containing this item's field model.
@@ -343,16 +346,27 @@ Format of each block of memory in the game heap:
       It acts the same as if the item has an activation switch that isn't set yet where it can't be picked up, except it never activates from a switch.
     & 04 - Set for small keys, big keys, and the telescope, but seems to never be read by code?
     & 10 - Shadow related. Call dComIfGd_setShadow instead of dComIfGd_setSimpleShadow2?
-803886B0 - Item special effect info.
+803886B0 - Item particle effect info.
   Entry length 4. Index is an item ID. (Not all items have entries here. It only goes from item 00 to item 80.)
-  00,2: Which special effect?
-  02,2: 0x8466 here means no special effect.
+  00,2: Particle ID of the "appear effect", or 0x8466 for none?
+  02,2: Particle ID of the "special effect", or 0x8466 for none?
 803888C8 (3858C8 in main.dol) - List of item get function pointers. (item_func_ptr)
 
 803769E0,200 - Chain texture. (l_chainS3TCTEX)
 8038BD40,200 - Hookshot chain texture. (l_chainS3TCTEX)
 
-8038F8E4,??? - List of Link event actions.
+8038E8C4-8038F673 - List of Link's possible states. (daPy_lk_c::mProcInitTable)
+  Entry length 0x10.
+  0xDB entries in total.
+  The index in this list is Link's state index (argument r4 to commonProcInit).
+  00,C: Link's PTMF (pointer to member functions) struct for this state.
+    00,4: "Delta to this pointer" (usually 0).
+    04,4: Offset in virtual table (usually -1: does not use a virtual table).
+    08,4: Pointer to the execute function of this state.
+      If 04,4 is not -1, this value is instead the offset of the virtual function entry in the vtable.
+  0C,4: Initial value to set Link's 3618,4 bitfield to when entering this state.
+
+8038F8E4,39C - List of Link event actions. (daPy_lk_c::mDemoProcInitFuncTable)
   Entry length 0xC.
   The index in this list is Link's event action index. e.g. 11 (0xB) for 011get_item.
   08,04: Pointer to the initialization function for this Link state.
@@ -517,7 +531,7 @@ Format of each block of memory in the game heap:
   The index in this list is the actor ID.
   Each entry is a pointer to something? (e.g. 80ad4e30) Or 0 if it's invalid?
 
-803BDC88-803C2187 - List of room controls. (related to zones?) (dStage_roomControl_c::mStatus)
+803BDC88-803C2187 - List of room controls. (related to zones?) (dStage_roomControl_c::mStatus) (dStage_roomStatus_c)
   Entry length 0x114.
   The index in this list is the room number.
   There are 0x40 entries in total, the maximum number of rooms a given stage can have.
@@ -533,7 +547,13 @@ Format of each block of memory in the game heap:
     If 08 is not set and 10 is set, the room is considered loaded and treasure chests will be considered active, otherwise not?
   107,1: Zone number? Read by getZoneNo func.
     valid zone numbers are 00-1F
+  108,1: Memory block index for this room.
+    This is an index in dStage_roomControl_c::mMemoryBlock.
+    If this index is 0, the game defaults to using the entire Game heap as the memory heap for this room.
   10C,4: The unique entity ID of the room entity for this room. (An instance of fopScnM.)
+
+803C2188 - List of memory blocks. (dStage_roomControl_c::mMemoryBlock)
+  These are pointers to JKRExpHeap instances.
 
 803754A4,13C - _15dStage_roomDt_c virtual table.
   This is a list of functions that get or set pointers to each of the DZR/DZS chunk types.
@@ -1036,6 +1056,8 @@ Player's partner's room restart position? ("restart option")
   803C5D64  02  Temporarily has the Hurricane Spin during the training event with Orca.
   803C5D65  80  Mrs. Marie related
 
+=========== 803C5EA8: Start of dComIfG_play_c
+
 803C9D3C,8 - The current stage name.
 803C9D44,2 - The most recent spawn ID the player spawned from.
 803C9D46,1 - The most recent room number the player spawned in.
@@ -1149,6 +1171,9 @@ Player's partner's room restart position? ("restart option")
 803CA718,4 - Pointer to the camera (instance of camera_class).
 
 803CA778,4 - Current item ID up for bidding at the auction.
+
+=========== 803CA79B: End of dComIfG_play_c
+
 803CA7C0,2 - Message ID for the name of the item currently up for bidding at the auction.
 
 803CA7F8,1 - Song index of the song to display in the message box for the interactive tutorial.
@@ -1541,6 +1566,11 @@ Note: See 80352EA0 for details about the layout of blue fog in a given room of E
 803ED83A,1 - If no controller is connected to port 3, this will be 0xFF.
   This is checked to know whether to show the debug heap display on screen.
 
+803F6920,4 - Pointer to the Game heap.
+803F6928,4 - Pointer to the Zelda heap.
+803F6930,4 - Pointer to the Command heap.
+803F6938,4 - Pointer to the Archive heap.
+
 803F6A68,4 - Has a pointer to something related to the map select screen maybe?
 
 803F7199,1 - Currently selected arrows index (0-3).
@@ -1571,8 +1601,8 @@ Entity deletion queue (g_fpcDtTg_Queue):
 803B39A0 - temp location for save file data?
 803B5048 - temp location for save file data?
 
-8037b630  - dPa_name::j_o_id list of common particles that can be used with setSimple?
-8037b640  - dPa_name::s_o_id list of stage bank particles that can be used with setSimple?
+8037B630  - dPa_name::j_o_id list of common particles that can be used with setSimple?
+8037B640  - dPa_name::s_o_id list of stage bank particles that can be used with setSimple?
 
 803F7631,1 - The number of sound categories (8).
 803F7634,4 - Has a pointer to a list of how many sounds are in each sound category.
