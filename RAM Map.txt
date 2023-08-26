@@ -559,6 +559,20 @@ Format of each block of memory in the game heap:
   This is a list of functions that get or set pointers to each of the DZR/DZS chunk types.
   e.g. At offset 0xF0 in here is a pointer to dStage_roomDt_c::getFileListInfo, the function that returns a pointer to FILI.
 
+80375BA0 - List of event bits for having docked at certain islands. (l_landingEvent$5946)
+  Entry length 4.
+  5 entries in total.
+  00,1: The room number of the island.
+  02,2: The event bit.
+  The entries:
+    01 3040 Forsaken Fortress
+    04 2E02 Gale Isle
+    0D 0902 Dragon Roost Island
+    17 0A02 Greatfish Isle
+    29 0A20 Forest Haven
+    2D 2E04 Headstone Island
+  These affect where you respawn when in these sectors.
+  If a sector is in this list, and the corresponding event bit is not set,
 
 =========== 803C4C08: g_dComIfG_gameInfo (instance of dComIfG_inf_c struct)
 
@@ -606,7 +620,7 @@ Format of each block of memory in the game heap:
   The order of slots is from left to right, then top to bottom.
 Each inventory slot:
 803C4C44,1 - Telescope (20)
-803C4C45,1 - Sail (78)
+803C4C45,1 - Boat's Sail (78)
 803C4C46,1 - Wind Waker (22)
 803C4C47,1 - Grappling Hook (25)
 803C4C48,1 - Spoils Bag (24)
@@ -1068,7 +1082,7 @@ Player's partner's room restart position? ("restart option")
 803C9D52,1 - The next room number to spawn the player in.
 803C9D53,1 - The next override layer number to spawn the player in, or FF for none.
 803C9D54,1 - Whether a stage transition should happen right now?
-803C9D58,4 - ?
+803C9D58,4 - Has a pointer to 803755E0 (dStage_stageDt_c's vtable).
 
 803C5D5C,4 - Affects how the player is going to spawn in a moment?
   0 - Normal spawn

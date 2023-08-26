@@ -607,7 +607,6 @@ init__18dDlst_mirrorPacketFP7ResTIMG
   r4 - 0 for link, or a pointer to the raw data of the md_spot.bti file for medli
 
 
-dComIfGp_setNextStage__FPCcsScScfUliSc
 dComIfGp_setNextStage(char const *, short, signed char, signed char, float, unsigned long, int, signed char)
   changes the current stage
   r3 - Stage name pointer
@@ -636,11 +635,22 @@ dStage_changeSceneExitId(cBgS_PolyInfo &, float, unsigned long, signed char)
     3E - Goes into Beedle's Shop Ship.
       Only works if this is actor collision belonging to an instance of obj_ikada, since the game reads that actor's parameters to determine which room of Beedle's shop to go to.
 
+dStage_changeScene(int, float, unsigned long, signed char)
+  r3 - The SCLS exit ID.
+  f1 - 
+  r4 - 
+  r5 - 
+
 dStage_playerInit(dStage_dt_c *, void *, int, void *)
   r3 - 
   r4 - 
   r5 - 
   r6 - 
+
+dStage_chkPlayerId(int, int)
+  Checks whether a spawn with a particular ID exists.
+  r3 - The spawn ID.
+  r4 - The room number.
 
 
 init__20dSeaFightGame_info_cFii

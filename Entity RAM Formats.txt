@@ -193,6 +193,7 @@ For Link (daPy_lk_c):
   A - Jump attacking
 029C,4: Bitfield
   00000008 - Player has just bonked into something when doing a forward roll.
+  00000010 - 
   00000080 - ? (prevents transitioning to the swimming state?)
   00020000 - Player is autojumping after running off a ledge.
   02000000 - Player is currently wearing the iron boots.
@@ -264,6 +265,8 @@ For Link (daPy_lk_c):
   10 - Z
   20 - L
   40 - R
+34CB,1: Spawn ID Link most recently spawned from, for non-cutscenes...?
+  Set by daPy_lk_c::onDekuSpReturnFlg(unsigned char)
 34D4,2: Rotational velocity? Used by procRopeHangWait_init and procRopeHangWait
 3560,2: What item the player is holding in their hand.
   00-FF - The item ID of the item.
@@ -276,6 +279,8 @@ For Link (daPy_lk_c):
   Called "Attribute Type" in Winditor and "Attrib ID" in DZB-i-Fy.
   Probably related to taking damage from lava. This is passed as argument r5 to checkLavaFace (but only when the value is 6 or 8 - the Lava and Respawn Generic types)
 3530,2: Current keyframe index for Link's eyes .btk animation.
+3594,4: Spawn ID Link most recently spawned from, for cutscenes...?
+  Set by daPy_lk_c::setRoomInfo(void)
 3618,4: Bitfield related to Link's current state.
 
 For enemies:
