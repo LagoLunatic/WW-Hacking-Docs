@@ -1,0 +1,129 @@
+0002 8466     ---  00 - Heart (Pickup)
+0003 8466     ---  01 - Green Rupee
+0003 8466     ---  02 - Blue Rupee
+0003 8466     ---  03 - Yellow Rupee
+0003 8466     ---  04 - Red Rupee
+0003 8466     ---  05 - Purple Rupee
+0002 8466     ---  06 - Orange Rupee
+8466 0293     ---  07 - Piece of Heart
+8466 0293     ---  08 - Heart Container
+8466 8466     ---  09 - Small Magic Jar (Pickup)
+8466 8466     ---  0A - Large Magic Jar (Pickup)
+8466 8466     ---  0B - 5 Bombs (Pickup)
+8466 8466     ---  0C - 10 Bombs (Pickup)
+8466 8466     ---  0D - 20 Bombs (Pickup)
+8466 8466     ---  0E - 30 Bombs (Pickup)
+8466 8466     ---  0F - Silver Rupee
+8466 8466     ---  10 - 10 Arrows (Pickup)
+8466 8466     ---  11 - 20 Arrows (Pickup)
+8466 8466     ---  12 - 30 Arrows (Pickup)
+8466 8466     ---  13 - 
+8466 8466     ---  14 - 
+0003 8466     ---  15 - Small Key
+8466 8466     ---  16 - Fairy (Pickup)
+8466 8466     ---  17 - 
+8466 8466     ---  18 - 
+8466 8466     ---  19 - 
+8466 8466     ---  1A - Yellow Rupee (Joke Message)
+8466 8466     ---  1B - 
+8466 8466     ---  1C - 
+8466 8466     ---  1D - 
+8466 8466     ---  1E - Three Hearts (Pickup)
+8466 8466     ---  1F - Joy Pendant
+8466 8466     ---  20 - Telescope
+8466 8466     ---  21 - Tingle Tuner
+8466 8466     ---  22 - Wind Waker
+8466 8466     ---  23 - Picto Box
+8466 8466     ---  24 - Spoils Bag
+8466 8466     ---  25 - Grappling Hook
+8466 8466     ---  26 - Deluxe Picto Box
+8466 8466     ---  27 - Hero's Bow
+8466 8466     ---  28 - Power Bracelets
+8466 8466     ---  29 - Iron Boots
+8466 8466     ---  2A - Magic Armor
+8466 8466     ---  2B - 
+8466 8466     ---  2C - Bait Bag
+8466 8466     ---  2D - Boomerang
+8466 8466     ---  2E - 
+8466 8466     ---  2F - Hookshot
+8466 8466     ---  30 - Delivery Bag
+8466 8466     ---  31 - Bombs
+8466 8466     ---  32 - Hero's Clothes
+8466 8466     ---  33 - Skull Hammer
+8466 8466     ---  34 - Deku Leaf
+8466 8466     ---  35 - Fire and Ice Arrows
+8466 8466     ---  36 - Light Arrow
+8466 8466     ---  37 - Hero's New Clothes
+8466 8466     ---  38 - Hero's Sword
+8466 8466     ---  39 - Master Sword (Powerless)
+8466 8466     ---  3A - Master Sword (Half Power)
+8466 8466     ---  3B - Hero's Shield
+8466 8466     ---  3C - Mirror Shield
+8466 8466     ---  3D - Recovered Hero's Sword
+8466 8466     ---  3E - Master Sword (Full Power)
+8466 8466     ---  3F - Piece of Heart (Alternate Message)
+8466 8466     ---  40 - 
+8466 8466     ---  41 - 
+8466 8466     ---  42 - Pirate's Charm
+8466 8466     ---  43 - Hero's Charm
+8466 8466     ---  44 - 
+8466 0293     ---  45 - Skull Necklace
+8466 0293     ---  46 - Boko Baba Seed
+8466 0293     ---  47 - Golden Feather
+8466 0293     ---  48 - Knight's Crest
+8466 0293     ---  49 - Red Chu Jelly
+8466 0293     ---  4A - Green Chu Jelly
+8466 0293     ---  4B - Blue Chu Jelly
+8466 8466     ---  4C - Dungeon Map
+8466 8466     ---  4D - Compass
+8466 8466     ---  4E - Big Key
+8466 8466     ---  4F - 
+8466 8466     ---  50 - Empty Bottle
+8466 8466     ---  51 - Red Potion
+8466 8466     ---  52 - Green Potion
+8466 8466     ---  53 - Blue Potion
+8466 8466     ---  54 - Elixir Soup (1/2)
+8466 8466     ---  55 - Elixir Soup
+8466 8466     ---  56 - Bottled Water
+8466 8466     ---  57 - Fairy in Bottle
+8466 8466     ---  58 - Forest Firefly
+8466 8466     ---  59 - Forest Water
+8466 8466     ---  5A - 
+8466 8466     ---  5B - 
+8466 8466     ---  5C - 
+8466 8466     ---  5D - 
+8466 8466     ---  5E - 
+8466 8466     ---  5F - 
+8466 8466     ---  60 - 
+8466 8466     ---  61 - Triforce Shard 1
+8466 8466     ---  62 - Triforce Shard 2
+8466 8466     ---  63 - Triforce Shard 3
+8466 8466     ---  64 - Triforce Shard 4
+8466 8466     ---  65 - Triforce Shard 5
+8466 8466     ---  66 - Triforce Shard 6
+8466 8466     ---  67 - Triforce Shard 7
+8466 8466     ---  68 - Triforce Shard 8
+8466 8466     ---  69 - Nayru's Pearl
+8466 8466     ---  6A - Din's Pearl
+8466 8466     ---  6B - Farore's Pearl
+8466 8466     ---  6C - 
+8466 8466     ---  6D - Wind's Requiem
+8466 8466     ---  6E - Ballad of Gales
+8466 8466     ---  6F - Command Melody
+8466 8466     ---  70 - Earth God's Lyric
+8466 8466     ---  71 - Wind God's Aria
+8466 8466     ---  72 - Song of Passing
+8466 8466     ---  73 - 
+8466 8466     ---  74 - 
+8466 8466     ---  75 - 
+8466 8466     ---  76 - 
+8466 8466     ---  77 - 
+8466 8466     ---  78 - Boat's Sail
+8466 8466     ---  79 - Triforce Chart 1 got deciphered
+8466 8466     ---  7A - Triforce Chart 2 got deciphered
+8466 8466     ---  7B - Triforce Chart 3 got deciphered
+8466 8466     ---  7C - Triforce Chart 4 got deciphered
+8466 8466     ---  7D - Triforce Chart 5 got deciphered
+8466 8466     ---  7E - Triforce Chart 6 got deciphered
+8466 8466     ---  7F - Triforce Chart 7 got deciphered
+8466 8466     ---  80 - Triforce Chart 8 got deciphered

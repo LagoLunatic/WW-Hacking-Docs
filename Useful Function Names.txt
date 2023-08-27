@@ -559,6 +559,13 @@ dComIfGs_setGameStartStage
   For dungeons: The player will respawn at whichever spawn is pointed to by the stage.dzs's first SCLS entry.
   For interiors, such as caves: The player will respawn on the sea, with the sector being determined by the sector coordinates in the current stage.dzs's 2DMA chunk.
 
+dSv_player_return_place_c::set(char const *, signed char, unsigned char)
+  Sets the player's "return place" - where you will be placed when you reload your save.
+  r3 - 803C4C38 (pointer to dSv_player_return_place_c, the player's return place struct)
+  r4 - Pointer to the stage name of the return place
+  r5 - Room number of the return place
+  r6 - Spawn ID of the return place
+
 screenSetTr__13dMenu_Fmap2_cFv
 dMenu_Fmap2_c::screenSetTr(void)
   Initializes the IN-credible Chart.
