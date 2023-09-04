@@ -75,7 +75,7 @@ Stage ID: 02
   40 for  Random drop type 0x09  from ootubo1  in majroom/Room0
   41 for  Blue Rupee             from ootubo1  in ma2room/Room1
   41 for  Random drop type 0x0B  from ootubo1  in ma2room/Room1
-  41 for  Random drop type 0x1F  from ootubo1  in ma3room/Room1
+  41 for  (No item)              from ootubo1  in ma3room/Room1
   41 for  Random drop type 0x00  from ootubo1  in ma3room/Room1
   41 for  Blue Rupee             from ootubo1  in majroom/Room1
   41 for  Random drop type 0x0B  from ootubo1  in majroom/Room1
@@ -233,8 +233,8 @@ Stage ID: 07
   00 for  Heart (Pickup)         from   Hbox1  in kaze/Room12
   00 for  Heart (Pickup)         from   Hbox1  in kaze/Room12
   01 for  Joy Pendant            from  Homen2  in kaze/Room7
-  05 for  Random drop type 0x1F  from  Homen2  in kaze/Room10
-  06 for  Random drop type 0x1F  from  Homen2  in kaze/Room10
+  05 for  (No item)              from  Homen2  in kaze/Room10
+  06 for  (No item)              from  Homen2  in kaze/Room10
   0F for  Blue Rupee             from    item  in kaze/Room5
   10 for  Blue Rupee             from    item  in kaze/Room5
   11 for  Blue Rupee             from    item  in kaze/Room5
