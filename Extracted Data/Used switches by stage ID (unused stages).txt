@@ -747,6 +747,7 @@ Stage ID: 0F
   06  from          CrTrS4  in K_Test9/Room0
   06  from          Hseki4  in K_Test9/Room0
   06  from         bonbori  in K_Test9/Room0
+  06  from           Mori1  in K_Testc/Room0
   06  from         Kbota_A  in K_Testc/Room0
   06  from           TagEv  in morocam/Stage
   07  from          CrTrS5  in K_Test9/Room0
