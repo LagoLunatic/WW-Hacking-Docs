@@ -13,9 +13,10 @@ Particle header format (0x20 bytes long):
 08,04: ???
 0C,04: Number of sections this particle has.
 10,04: Length of this entire particle in bytes (the particle header + all the sections for this particle).
+  Inaccurate in some rare cases. Not actually read.
 14,01: Number of ??? (read by calcKey__14JPABaseEmitter)
 15,01: Number of ??? (read by initField__15JPAFieldManager)
-16,01: ???
+16,01: Number of texture IDs listed in the TDB1 section. (Unused?)
 17,01: (Maybe padding?)
 18,02: ID number of this particle.
 1A,06: Padding, just null bytes.
@@ -36,32 +37,6 @@ Particle sections:
 * ETX1 (optional)
 * TDB1
 
-BSP1 (Base Shape Arc) section format:
-08,?
-0C,04: Bitfield
-  00080000 - EnableAnmTone
-  00400000 - ChildOrder
-  0000000F - Type
-10,02: Offset to prm color data list.
-12,02: Offset to env color data list.
-14,04: Base size X (float).
-18,04: Base size Y (float).
-1C,02: LoopOffset
-1E,02: Bitfield
-20,02: ColLoopOffset
-22,02: TexLoopOffset
-24,01: Bitfield
-  01 - EnableTextureAnm
-  02 - EnableGlobalColAnm
-25,01: TextureAnmKeyNum
-27,01: Bitfield
-  02 - EnablePrmAnm
-28,01: Prm color data count.
-29,01: Env color data count.
-(???): List of texture indexes.
-  These are bytes which are indexes in the TDB1's list of texture IDs.
-(varies, optional): List of color animation data.
-
 ESP1 (Extra Shape Arc) section format:
 0C,04: Bitfield
   00000100 - EnableScale
@@ -80,6 +55,7 @@ ETX1 (Ex Tex Shape Arc) section format:
 TDB1 (maybe stands for Texture DataBase?) section format:
 0C+: List of texture IDs (halfwords).
   The texture ID is an index in the list of TEX1 sections in this JPC file.
+  The total number of texture IDs here is specified in the particle's header, not in this chunk.
 
 After all of the particles are a list of TEX1 sections which contain the actual image data of the particles.
 TEX1 section format:

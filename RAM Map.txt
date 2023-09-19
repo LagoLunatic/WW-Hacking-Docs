@@ -782,7 +782,7 @@ Each inventory slot:
     0 - Whether you've gotten this sector mapped out by a fishman.
     1 - Whether you've visited this sector or not.
 
-803C4D4D - Bitfield of what Triforce charts you've gotten deciphered.
+803C4D4D,1 - Bitfield of what Triforce charts you've gotten deciphered.
 
 803C4D64,1 - The player's name. "Link" by default.
   If the first character here is 0x00, the save file is considered nonexistent.
@@ -1120,7 +1120,8 @@ Player's partner's room restart position? ("restart option")
  C0,1 - 
  C1,1 - Index of the first dEvt_order_c to use
  C2,1 - mMode (0, 1, 2, 3?)
- C3,1 - Flag to end an event? (803C9EA3)
+ C3,1 - Flag to end an event. (803C9EA3,1)
+  If this flag is set while no event is playing, the "storage" glitch becomes active.
  C4,4 - dEvt_control_c::setParam uses these to hold Base Processing Class Ids
  C8,4 - ^
  CC,4 - ^ (mPtTalk)
@@ -1140,7 +1141,7 @@ Player's partner's room restart position? ("restart option")
  E2,1 - mbInPhoto (Used in dEvt_control_c::photoCheck())
  E3,1 - ?
  E4,4 - Float for adjusting the Culling Distance?
- E8,2 - Flags for State during Events
+ E8,2 - Flags for State during Events (803C9EC8,2)
  EA,4 - ?
  EE,4 - ?
  F2,2 - Padding? 
@@ -1182,7 +1183,17 @@ Player's partner's room restart position? ("restart option")
 
 ===== 803CA5A0
 
+803CA6E8,1 - Which of Link's two STB cutscene animation archives are currently loaded.
+  If this is 0 it means LkD00.arc is loaded. If it's 1 it means LkD01.arc is loaded.
+  This specifically refers to the archive pointed to by 803F72D4 (l_lkDemoAnmCommand).
+
 803CA718,4 - Pointer to the camera (instance of camera_class).
+
+803CA74C,4 - Always has a pointer to the player entity in RAM. (for dComIfG_play_c)
+  This refers not only to Link, but to Medli/Makar/Tower Servant/seagull when you're controlling them.
+803CA754,4 - Always has a pointer to the Link entity in RAM. (for dComIfG_play_c)
+803CA758,4 - Always has a pointer to the player's partner entity in RAM (e.g. Medli).
+803CA75C,4 - Always has a pointer to the ship entity in RAM (KoRL).
 
 803CA778,4 - Current item ID up for bidding at the auction.
 
@@ -1248,15 +1259,6 @@ Player's partner's room restart position? ("restart option")
   00020000 - 
   00040000 - 
   00080000 - 
-
-803CA90E,1 - The room/island number on the sea stage the player was in when they last entered a submarine or Beedle's Shop Ship.
-  This is used to return the player to the same room they were in before entering.
-
-803CA74C,4 - Always has a pointer to the player entity in RAM. (for dComIfG_play_c)
-  This refers not only to Link, but to Medli/Makar/Tower Servant/seagull when you're controlling them.
-803CA754,4 - Always has a pointer to the Link entity in RAM. (for dComIfG_play_c)
-803CA758,4 - Always has a pointer to the player's partner entity in RAM (e.g. Medli).
-803CA75C,4 - Always has a pointer to the ship entity in RAM (KoRL).
 
 803CA7FF,1 - Affects which place name is shown?
   e.g. if a MESSAGE actor is given a TELOP_ON action with tlpNo=0xD, it will show "Dragon Roost Cavern" on the screen as the place name.
@@ -1383,8 +1385,11 @@ Backup inventory data used by recollection bosses in order to restore the player
 803CA8E4,2 - Number of times you've hit Orca displayed on the screen.
   Does not affect how many times Orca knows you've actually hit him. That's inside Orca's entity.
 
-803CA90C,1 - Previous room num?
-803CA90D,1 - Next room num?
+803CA90C,1 - Ship ID for KoRL to spawn at.
+803CA90D,1 - Room number for KoRL to spawn at.
+
+803CA90E,1 - The room/island number on the sea stage the player was in when they last entered a submarine or Beedle's Shop Ship.
+  This is used to return the player to the same room they were in before entering.
 
 803CA91C,4 - Pointer to the item table for certain pots to choose what to drop from when destroyed.
   This pointer seems to lead inside of an entity or REL.
@@ -1666,6 +1671,8 @@ Entity deletion queue (g_fpcDtTg_Queue):
     Causes no-intro sea miniboss music (0x0046) to play
   03 - Phantom Ganon music (0x0041)
     Causes no-intro Phantom Ganon music (0x0047) to play
+
+803F72D4,4 - Pointer to the currently loaded Link STB cutscene animation archive. (l_lkDemoAnmCommand)
 
 803F7988 - Has a pointer to a table of sine values. (jmaSinTable)
   Each entry is a float.

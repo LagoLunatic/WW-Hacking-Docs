@@ -25,115 +25,14 @@ Stage ID: 07
 Stage ID: 0A
 Stage ID: 0B
 Stage ID: 0C
-  00 for  Heart (Pickup)         from   DBLK0  in I_SubAN/Room3
-  00 for  Heart (Pickup)         from   DBLK0  in I_SubAN/Room3
-  00 for  Heart (Pickup)         from   DBLK0  in I_SubAN/Room3
-  00 for  Heart (Pickup)         from   DBLK0  in I_SubAN/Room3
-  00 for  Heart (Pickup)         from   DBLK0  in I_SubAN/Room3
-  00 for  Heart (Pickup)         from   DBLK0  in I_SubAN/Room3
-  00 for  Heart (Pickup)         from   DBLK0  in I_SubAN/Room3
-  00 for  Heart (Pickup)         from   DBLK0  in I_SubAN/Room3
-  00 for  Heart (Pickup)         from osiBLK1  in I_SubAN/Room11
-  00 for  Heart (Pickup)         from osiBLK0  in I_SubAN/Room11
-  00 for  Heart (Pickup)         from osiBLK1  in I_SubAN/Room11
-  00 for  Heart (Pickup)         from osiBLK1  in I_SubAN/Room11
-  00 for  Heart (Pickup)         from osiBLK0  in I_SubAN/Room11
-  00 for  Heart (Pickup)         from osiBLK1  in I_SubAN/Room11
-  00 for  Heart (Pickup)         from osiBLK1  in I_SubAN/Room11
-  00 for  Heart (Pickup)         from osiBLK1  in I_SubAN/Room11
-  00 for  Heart (Pickup)         from osiBLK1  in I_SubAN/Room11
-  00 for  Heart (Pickup)         from osiBLK0  in I_SubAN/Room11
 Stage ID: 0D
-  00 for  Heart (Pickup)         from osiBLK0  in SubD51/Room1
-  00 for  Heart (Pickup)         from osiBLK1  in SubD51/Room1
-  00 for  Heart (Pickup)         from osiBLK1  in SubD51/Room1
-  00 for  Heart (Pickup)         from osiBLK1  in SubD51/Room1
-  00 for  Heart (Pickup)         from osiBLK0  in SubD51/Room1
-  00 for  Heart (Pickup)         from osiBLK0  in SubD51/Room1
-  00 for  Heart (Pickup)         from osiBLK0  in SubD51/Room1
-  00 for  Heart (Pickup)         from osiBLK0  in SubD51/Room1
-  00 for  Heart (Pickup)         from osiBLK0  in SubD51/Room1
-  00 for  Heart (Pickup)         from osiBLK0  in SubD51/Room1
-  00 for  Heart (Pickup)         from osiBLK0  in SubD51/Room1
-  00 for  Heart (Pickup)         from osiBLK0  in SubD51/Room1
-  00 for  Heart (Pickup)         from osiBLK0  in SubD51/Room1
-  00 for  Heart (Pickup)         from osiBLK0  in SubD51/Room1
-  00 for  Heart (Pickup)         from osiBLK0  in SubD51/Room1
-  00 for  Heart (Pickup)         from osiBLK0  in SubD51/Room1
-  00 for  Heart (Pickup)         from osiBLK0  in SubD51/Room1
-  00 for  Heart (Pickup)         from osiBLK0  in SubD51/Room1
-  00 for  Heart (Pickup)         from osiBLK0  in SubD51/Room1
-  00 for  Heart (Pickup)         from osiBLK0  in SubD51/Room1
-  00 for  Heart (Pickup)         from osiBLK0  in SubD51/Room1
-  00 for  Heart (Pickup)         from osiBLK0  in SubD51/Room1
-  00 for  Heart (Pickup)         from osiBLK0  in SubD51/Room1
-  00 for  Heart (Pickup)         from osiBLK0  in SubD51/Room1
-  00 for  Heart (Pickup)         from osiBLK0  in SubD51/Room1
-  00 for  Heart (Pickup)         from osiBLK0  in SubD51/Room1
-  00 for  Heart (Pickup)         from osiBLK0  in SubD51/Room1
-  00 for  Heart (Pickup)         from osiBLK0  in SubD51/Room1
-  00 for  Heart (Pickup)         from osiBLK0  in SubD51/Room1
-  00 for  Heart (Pickup)         from osiBLK0  in SubD51/Room1
-  00 for  Heart (Pickup)         from osiBLK0  in SubD51/Room1
-  00 for  Heart (Pickup)         from osiBLK0  in SubD51/Room1
-  00 for  Heart (Pickup)         from osiBLK0  in SubD51/Room1
-  00 for  Heart (Pickup)         from osiBLK0  in SubD51/Room1
-  00 for  Heart (Pickup)         from osiBLK0  in SubD51/Room1
-  00 for  Heart (Pickup)         from osiBLK0  in SubD51/Room1
-  00 for  Heart (Pickup)         from osiBLK0  in SubD51/Room1
-  00 for  Heart (Pickup)         from osiBLK0  in SubD51/Room1
-  00 for  Heart (Pickup)         from osiBLK0  in SubD51/Room1
-  00 for  Heart (Pickup)         from osiBLK1  in SubD51/Room1
-  00 for  Heart (Pickup)         from osiBLK1  in SubD51/Room1
-  00 for  Heart (Pickup)         from osiBLK1  in SubD51/Room1
-  00 for  Heart (Pickup)         from osiBLK1  in SubD51/Room1
-  00 for  Heart (Pickup)         from osiBLK1  in SubD51/Room1
-  00 for  Heart (Pickup)         from osiBLK1  in SubD51/Room1
-  00 for  Heart (Pickup)         from osiBLK1  in SubD51/Room1
-  00 for  Heart (Pickup)         from osiBLK1  in SubD51/Room1
-  00 for  Heart (Pickup)         from osiBLK1  in SubD51/Room1
-  00 for  Heart (Pickup)         from osiBLK1  in SubD51/Room1
-  00 for  Heart (Pickup)         from osiBLK1  in SubD51/Room1
-  00 for  Heart (Pickup)         from osiBLK1  in SubD51/Room1
-  00 for  Heart (Pickup)         from osiBLK0  in SubD51/Room1
-  00 for  Heart (Pickup)         from osiBLK0  in SubD51/Room1
-  00 for  Heart (Pickup)         from osiBLK0  in SubD51/Room1
-  00 for  Heart (Pickup)         from osiBLK0  in SubD51/Room1
-  00 for  Heart (Pickup)         from osiBLK0  in SubD51/Room1
-  00 for  Heart (Pickup)         from osiBLK0  in SubD51/Room1
-  00 for  Heart (Pickup)         from osiBLK0  in SubD51/Room1
-  00 for  Heart (Pickup)         from osiBLK0  in SubD51/Room1
 Stage ID: 0F
-  00 for  Heart (Pickup)         from osiBLK0  in I_TestR/Room0
-  00 for  Heart (Pickup)         from osiBLK0  in I_TestR/Room0
-  00 for  Heart (Pickup)         from osiBLK0  in I_TestR/Room0
-  00 for  Heart (Pickup)         from osiBLK0  in I_TestR/Room0
-  00 for  Heart (Pickup)         from osiBLK0  in I_TestR/Room0
-  00 for  Heart (Pickup)         from osiBLK0  in I_TestR/Room0
-  00 for  Heart (Pickup)         from osiBLK0  in I_TestR/Room0
-  00 for  Heart (Pickup)         from osiBLK0  in I_TestR/Room0
-  00 for  Heart (Pickup)         from osiBLK0  in I_TestR/Room0
-  00 for  Heart (Pickup)         from osiBLK0  in I_TestR/Room0
-  00 for  Heart (Pickup)         from osiBLK0  in I_TestR/Room0
-  00 for  Heart (Pickup)         from osiBLK0  in I_TestR/Room0
-  00 for  Heart (Pickup)         from osiBLK0  in I_TestR/Room0
   00 for  Deku Leaf              from itemDek  in K_Test2/Room0/Layer7
-  00 for  Heart (Pickup)         from  Hseki2  in K_Test5/Room0
-  00 for  Heart (Pickup)         from  Hseki7  in K_Test5/Room0
   00 for  Heart (Pickup)         from   Hmos1  in K_Test5/Room0
   00 for  Heart (Pickup)         from   Hmos1  in K_Test5/Room0
   00 for  Heart (Pickup)         from   Hmos2  in K_Test5/Room0
   00 for  Heart (Pickup)         from   Hmos2  in K_Test5/Room0
   00 for  Green Rupee            from    item  in K_Test5/Room0
-  00 for  Heart (Pickup)         from   Hmos3  in K_Test5/Room0
-  00 for  Heart (Pickup)         from    Mmrr  in K_Test9/Room0
-  00 for  Heart (Pickup)         from  MkieBB  in K_Test9/Room0
-  00 for  Heart (Pickup)         from   Ecube  in K_Testa/Room0
-  00 for  Heart (Pickup)         from   Ecube  in K_Testa/Room0
-  00 for  Heart (Pickup)         from  Hjump1  in K_Testa/Room0
-  00 for  Heart (Pickup)         from   Hbox1  in K_Testa/Room0
-  00 for  Heart (Pickup)         from   MpwrB  in K_Testa/Room0
-  00 for  Heart (Pickup)         from   Hbox1  in K_Testc/Room0
   02 for  Green Rupee            from    item  in K_Test2/Room0/Layer7
   32 for  Heart (Pickup)         from    item  in K_Test2/Room0/Layer7
   33 for  Piece of Heart         from    item  in K_Test2/Room0/Layer7

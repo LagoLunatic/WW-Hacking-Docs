@@ -1033,6 +1033,7 @@ Stage ID: 02
   0F  from           TagHt  in MajyuE/Stage
   0F  from         AND_SW2  in MajyuE/Room0
   0F  from           TagHt  in MajyuE/Room0
+  10  from         AND_SW2  in MajyuE/Room0
   10  from          SW_C00  in MajyuE/Room0
   10  from          SW_C00  in MajyuE/Room0
   12  from           TagEv  in ma2room/Room0
@@ -1468,7 +1469,9 @@ Room M_Dra09/Room9
   E0  from         AND_SW0  in M_Dra09/Room9
   E0  from           TagEv  in M_Dra09/Room9
   E1  from              Bk  in M_Dra09/Room9
+  E1  from         AND_SW0  in M_Dra09/Room9
   E2  from              Bk  in M_Dra09/Room9
+  E2  from         AND_SW0  in M_Dra09/Room9
   E3  from           TagEv  in M_Dra09/Room9
 Room M_NewD2/Room0
   E0  from          SW_C00  in M_NewD2/Room0
@@ -1596,11 +1599,16 @@ Stage ID: 04
   07  from         AttTagB  in kindan/Room13
   07  from         AttTagB  in kindan/Room13
   08  from         SW_HIT0  in kindan/Room13
+  08  from         AND_SW0  in kindan/Room13
   09  from         SW_HIT0  in kindan/Room13
+  09  from         AND_SW0  in kindan/Room13
   09  from           agbA2  in kindan/Room14
   0A  from         SW_HIT0  in kindan/Room13
+  0A  from         AND_SW0  in kindan/Room13
   0B  from         SW_HIT0  in kindan/Room13
+  0B  from         AND_SW0  in kindan/Room13
   0C  from         SW_HIT0  in kindan/Room13
+  0C  from         AND_SW0  in kindan/Room13
   0D  from         Zenshut  in kindan/Stage
   0D  from         c_green  in kindan/Room11
   0D  from         c_green  in kindan/Room11
@@ -1623,7 +1631,9 @@ Stage ID: 04
   12  from            agbB  in kindan/Room5
   12  from            agbB  in kindan/Room5
   13  from              Ss  in kindan/Room5
+  13  from         AND_SW0  in kindan/Room5
   14  from              Ss  in kindan/Room5
+  14  from         AND_SW0  in kindan/Room5
   16  from         takaraK  in kindan/Stage
   16  from           TagEv  in kindan/Stage
   16  from              Ss  in kindan/Room14
@@ -1753,7 +1763,9 @@ Room kinMB/Room10
   E2  from         AND_SW0  in kinMB/Room10
   E2  from         AttTagB  in kinMB/Room10
   E3  from         SW_HIT0  in kinMB/Room10
+  E3  from         AND_SW0  in kinMB/Room10
   E4  from         SW_HIT0  in kinMB/Room10
+  E4  from         AND_SW0  in kinMB/Room10
   EF  from          agbCSW  in kinMB/Room10
   EF  from           agbMW  in kinMB/Room10
 Room kindan/Room1
@@ -1842,8 +1854,10 @@ Stage ID: 05
   02  from         AND_SW0  in Siren/Room0
   02  from          AttTag  in Siren/Room0
   02  from          AttTag  in Siren/Room0
+  03  from         AND_SW0  in Siren/Room0
   03  from         bonbori  in Siren/Room0
   03  from            agbA  in Siren/Room0
+  04  from         AND_SW0  in Siren/Room0
   04  from         bonbori  in Siren/Room0
   04  from            agbA  in Siren/Room0
   05  from          CrTrM1  in Siren/Room0
@@ -1893,10 +1907,13 @@ Stage ID: 05
   0F  from            agbA  in Siren/Room17
   10  from         takara4  in Siren/Stage
   10  from         Hfbot1B  in Siren/Room12
+  10  from         AND_SW0  in Siren/Room12
   10  from           amos2  in Siren/Room17
   10  from           amos2  in Siren/Room17
+  10  from         AND_SW0  in Siren/Room17
   10  from            agbA  in Siren/Room17
   11  from          tkrAGc  in Siren/Stage
+  11  from         AND_SW0  in Siren/Room12
   11  from         Hfbot1B  in Siren/Room12
   11  from            amos  in Siren/Room22
   11  from            amos  in Siren/Room22
@@ -2877,11 +2894,15 @@ Stage ID: 08
   13  from         SW_HIT0  in GanonM/Room2
   13  from         AND_SW0  in GanonM/Room2
   13  from         AND_SW0  in GanonM/Room2
+  14  from         AND_SW0  in GanonM/Room2
   14  from         SW_HIT0  in GanonM/Room2
+  15  from         AND_SW0  in GanonM/Room2
   15  from         SW_HIT0  in GanonM/Room2
   15  from         SW_HIT0  in GanonM/Room2
+  16  from         AND_SW0  in GanonM/Room2
   16  from         SW_HIT0  in GanonM/Room2
   16  from         SW_HIT0  in GanonM/Room2
+  17  from         AND_SW0  in GanonM/Room2
   17  from         SW_HIT0  in GanonM/Room2
   17  from         SW_HIT0  in GanonM/Room2
   18  from            Vfan  in GanonM/Room0

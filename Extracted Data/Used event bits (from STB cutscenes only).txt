@@ -1,0 +1,82 @@
+Event flags:
+Event name: warp_in
+  Event flag: 2D10
+  File path: files/res/Stage/ADMumi/Stage.arc
+Event name: warphole
+  Event flag: 2D08
+  File path: files/res/Stage/ADMumi/Stage.arc
+Event name: runaway_majuto
+  Event flag: 3280
+  File path: files/res/Stage/ADMumi/Stage.arc
+Event name: towerd
+  Event flag: 2E80
+  File path: files/res/Stage/ADMumi/Stage.arc
+Event name: towerf
+  Event flag: 2E80
+  File path: files/res/Stage/ADMumi/Stage.arc
+Event name: towern
+  Event flag: 2E80
+  File path: files/res/Stage/ADMumi/Stage.arc
+Event name: dance_zola
+  Event flag: 2D40
+  File path: files/res/Stage/Edaichi/Stage.arc
+Event name: dance_kokiri
+  Event flag: 2D20
+  File path: files/res/Stage/Ekaze/Stage.arc
+Event name: g2before
+  Event flag: 4002
+  File path: files/res/Stage/GTower/Stage.arc
+Event name: endhr
+  Event flag: 3F40
+  File path: files/res/Stage/GTower/Stage.arc
+Event name: kugutu_ganon
+  Event flag: 3B02
+  File path: files/res/Stage/GanonK/Stage.arc
+Event name: seal
+  Event flag: 3B08
+  File path: files/res/Stage/Hyrule/Stage.arc
+Event name: attack_ganon
+  Event flag: 3910
+  File path: files/res/Stage/M2ganon/Stage.arc
+Event name: rescue
+  Event flag: 2D01
+  File path: files/res/Stage/M2tower/Stage.arc
+Event name: pray_zola
+  Event flag: 3A02
+  File path: files/res/Stage/M_DaiB/Stage.arc
+Event name: FIND_SISTER
+  Event flag: 2580
+  File path: files/res/Stage/Mjtower/Stage.arc
+Event name: bombshop
+  Event flag: 2110
+  File path: files/res/Stage/Obombh/Stage.arc
+Event name: getperl_jab
+  Event flag: 3920
+  File path: files/res/Stage/Pjavdou/Stage.arc
+Event name: pray_kokiri
+  Event flag: 4004
+  File path: files/res/Stage/kazeB/Stage.arc
+Event name: awake_zelda
+  Event flag: 2D02
+  File path: files/res/Stage/kenroom/Stage.arc
+Event name: master_sword
+  Event flag: 2D04
+  File path: files/res/Stage/kenroom/Stage.arc
+Event name: swing_sword
+  Event flag: 3A04
+  File path: files/res/Stage/kenroom/Stage.arc
+Event name: departure_DEMO
+  Event flag: 2401
+  File path: files/res/Stage/sea/Stage.arc
+Event name: fairy
+  Event flag: 1001
+  File path: files/res/Stage/sea/Stage.arc
+Event name: fairy_flag_on
+  Event flag: 1001
+  File path: files/res/Stage/sea/Stage.arc
+Event name: awake_zola
+  Event flag: 3B10
+  File path: files/res/Stage/sea/Stage.arc
+Event name: MEETSHISHIOH
+  Event flag: 2E01
+  File path: files/res/Stage/sea/Stage.arc

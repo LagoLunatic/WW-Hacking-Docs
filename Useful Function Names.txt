@@ -199,19 +199,19 @@ fopAcM_fastCreateItem(cXyz *, int, int, csXyz *, cXyz *, float, float, float, in
     can be just 0, or this can be a pointer to a function, unsure on the exact purpose
     e.g. 80027254 for stealItem.
     e.g. 800F3608 for itemParamSet
-  
-fopAcM_createItem__FP4cXyziiiiP5csXyziP4cXyz
+
+fopAcM_createItem(cXyz *, int, int, int, int, csXyz *, int, cXyz *)
   Creates an item, and loads its model in if necessary.
-  r3 - position (pointer to a vector3 of floats (cXyz))
-  r4 - item ID
-  r5 - item pickup flag to set, or -1 for none
-  r6 - Room number to create the item in
+  r3 - Position. Pointer to a vector3 of floats.
+  r4 - Item ID.
+  r5 - Item pickup flag to set, or -1 for none.
+  r6 - Room number to create the item in.
   r7 - unknown_2 int (e.g. 0 or 3)
     If this is 0 or 2 the item will fade out if the player doesn't get it fast enough. If this is 1 or 3, it does not fade out.
     If this is 1, the item is not affected by gravity. Otherwise it is.
     This gets puts in the item's params with mask: 03000000.
     (This is 0 for fastCreateItem, and 3 for createItemForBoss.)
-  r8 - rotation (pointer to a vector3 of shorts (csXyz))
+  r8 - Rotation. Pointer to a vector3 of shorts.
   r9 - Item action. (e.g. 4, 5, 0xC)
     this gets puts in the item's params with mask: FC000000
     (this is 0xA for fastCreateItem, and either 0xC or 5 for createItemForBoss)
@@ -283,6 +283,7 @@ fopAcM_createItemForKP2__FP4cXyziiP5csXyzP4cXyzfffUs
     not sure if they're actually used though?
 
 fopAcM_createItemFromTable__FP4cXyziiiiP5csXyziP4cXyz
+  Creates an item, potentially a randomized item from the item drop table.
   r3 - Position. Pointer to a vector3 of floats.
   r4 - Affects what item to spawn.
     00-1F: Spawn this exact item ID.
@@ -295,7 +296,7 @@ fopAcM_createItemFromTable__FP4cXyziiiiP5csXyziP4cXyz
   r5 - Item pickup flag to set, or -1 for none, or 0x7F for none.
   r6 - Room number.
   r7 - 
-  r8 - Pointer to a vector3 of shorts, maybe rotations?
+  r8 - r8 - Rotation. Pointer to a vector3 of shorts.
   r9 - 
   r10 - 
 
@@ -1517,7 +1518,7 @@ fopAcM_SearchByName(short, fopAc_ac_c **)
 
 
 d_s_play::phase_0
-  This handles loading LkD00.arc or LkD01.arc depending on whether event bit 0x2D01 is set or not (for animation set 1 vs 2).
+  This function handles loading LkD00.arc or LkD01.arc depending on whether event bit 0x2D01 is set or not (for animation set 1 vs 2).
 
 specialProcPackage
   handles starting an stb cutscene?
@@ -1597,6 +1598,12 @@ CallbackCreateHeap(fopAc_ac_c *) 	d_a_himo2.o
   800F0774 - second call to load rope.bti from Always.arc
   800F07B8 - third call to load rope.bti from Always.arc
 
+
+dBgS_AcchCir::SetWall(float, float)
+  Sets the radius and half-height of the cylinder an actor uses for Bg collision checking.
+  r3 - The Bg collision checker (dBgS_AcchCir)
+  f1 - Half-height
+  f2 - Radius
 
 dBgS_MoveBgActor::MoveBGCreate(char const *, int, void (*)(dBgW *, void *, cBgS_PolyInfo &, bool, cXyz *, csXyz *, csXyz *), unsigned long)
   Initializes an actor as having solid DZB collision from a DZB file
@@ -1760,3 +1767,16 @@ dDoor_hkyo_c::setAnm(unsigned char)
   Hkyo is the extra glowing model overlayed on top of certain TotG doors.
   r3 - Pointer to the dDoor_hkyo_c instance.
   r4 - The animation index to set.
+
+dStage_setShipPos(int, int)
+  Determines where KoRL spawns.
+  r3 - Ship ID.
+    Read from 803CA90C.
+    Determined by the ship ID of Link's spawn point.
+  r4 - Room number.
+    Read from 803CA90D.
+    Determined by the room number of Link's spawn point.
+
+dComIfGp_getShip(int, int)
+  r3 - Room number.
+  r4 - Ship ID.

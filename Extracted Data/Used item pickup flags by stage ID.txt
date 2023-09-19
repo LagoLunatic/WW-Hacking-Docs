@@ -1,12 +1,5 @@
 Item flags:
 Stage ID: 00
-  00 for  Heart (Pickup)         from osiBLK0  in sea/Room13
-  00 for  Heart (Pickup)         from   Ecube  in sea/Room13
-  00 for  Heart (Pickup)         from   Ecube  in sea/Room13
-  00 for  Heart (Pickup)         from   Ecube  in sea/Room47
-  00 for  Heart (Pickup)         from   Ecube  in sea/Room47
-  00 for  Heart (Pickup)         from   Ecube  in sea/Room47
-  00 for  Heart (Pickup)         from   Ecube  in sea/Room47
   02 for  Piece of Heart         from   TagKb  in sea/Room44
   03 for  Red Rupee              from   TagKb  in sea/Room44
   04 for  Red Rupee              from   TagKb  in sea/Room44
@@ -85,21 +78,7 @@ Stage ID: 02
   42 for  Heart (Pickup)         from ootubo1  in majroom/Room2
   43 for  Heart (Pickup)         from ootubo1  in ma2room/Room2
 Stage ID: 03
-  00 for  Heart (Pickup)         from osiBLK1  in M_NewD2/Room0
-  00 for  Heart (Pickup)         from osiBLK1  in M_NewD2/Room0
-  00 for  Heart (Pickup)         from osiBLK0  in M_NewD2/Room2
   00 for  Joy Pendant            from ootubo1  in M_NewD2/Room6
-  00 for  Heart (Pickup)         from osiBLK0  in M_NewD2/Room14
-  00 for  Heart (Pickup)         from osiBLK0  in M_NewD2/Room14
-  00 for  Heart (Pickup)         from osiBLK0  in M_NewD2/Room14
-  00 for  Heart (Pickup)         from osiBLK0  in M_NewD2/Room14
-  00 for  Heart (Pickup)         from osiBLK0  in M_NewD2/Room14
-  00 for  Heart (Pickup)         from osiBLK0  in M_NewD2/Room14
-  00 for  Heart (Pickup)         from osiBLK0  in M_NewD2/Room14
-  00 for  Heart (Pickup)         from osiBLK0  in M_NewD2/Room14
-  00 for  Heart (Pickup)         from osiBLK0  in M_NewD2/Room14
-  00 for  Heart (Pickup)         from osiBLK0  in M_NewD2/Room14
-  00 for  Heart (Pickup)         from osiBLK0  in M_NewD2/Room14
   01 for  Joy Pendant            from   Kmtub  in M_NewD2/Room13
   03 for  Small Key              from    item  in M_NewD2/Room3
   06 for  Purple Rupee           from    item  in M_NewD2/Room0
@@ -163,12 +142,8 @@ Stage ID: 04
   04 for  Green Rupee            from    item  in kindan/Room5
 Stage ID: 05
   00 for  Joy Pendant            from  kotubo  in Siren/Room3
-  00 for  Heart (Pickup)         from   Hmos3  in Siren/Room10
-  00 for  Heart (Pickup)         from   Hmos3  in Siren/Room10
   00 for  Heart (Pickup)         from   Hmos1  in Siren/Room15
   00 for  Heart (Pickup)         from   Hmos1  in Siren/Room15
-  00 for  Heart (Pickup)         from   Hmos3  in Siren/Room17
-  00 for  Heart (Pickup)         from   Hmos3  in Siren/Room17
   01 for  Joy Pendant            from  kotubo  in Siren/Room17
   04 for  Purple Rupee           from    item  in Siren/Room7
   40 for  5 Bombs (Pickup)       from  kotubo  in Siren/Room0
@@ -178,25 +153,6 @@ Stage ID: 05
   41 for  5 Bombs (Pickup)       from  kotubo  in Siren/Room3
 Stage ID: 06
   00 for  Joy Pendant            from    item  in M_Dai/Room2
-  00 for  Heart (Pickup)         from   MpwrB  in M_Dai/Room4
-  00 for  Heart (Pickup)         from   MpwrB  in M_Dai/Room5
-  00 for  Heart (Pickup)         from osiBLK0  in M_Dai/Room6
-  00 for  Heart (Pickup)         from osiBLK0  in M_Dai/Room6
-  00 for  Heart (Pickup)         from  MkieBB  in M_Dai/Room6
-  00 for  Heart (Pickup)         from   DBLK0  in M_Dai/Room6
-  00 for  Heart (Pickup)         from  MkieBB  in M_Dai/Room10
-  00 for  Heart (Pickup)         from    Mmrr  in M_Dai/Room10
-  00 for  Heart (Pickup)         from    Mmrr  in M_Dai/Room10
-  00 for  Heart (Pickup)         from    Mmrr  in M_Dai/Room13
-  00 for  Heart (Pickup)         from    Mmrr  in M_Dai/Room16
-  00 for  Heart (Pickup)         from    Mmrr  in M_Dai/Room16
-  00 for  Heart (Pickup)         from    Mmrr  in M_Dai/Room16
-  00 for  Heart (Pickup)         from    Mmrr  in M_Dai/Room16
-  00 for  Heart (Pickup)         from    Mmrr  in M_Dai/Room16
-  00 for  Heart (Pickup)         from    Mmrr  in M_Dai/Room16
-  00 for  Heart (Pickup)         from    Mmrr  in M_Dai/Room16
-  00 for  Heart (Pickup)         from    Mmrr  in M_Dai/Room16
-  00 for  Heart (Pickup)         from osiBLK0  in M_Dai/Room19
   01 for  Joy Pendant            from    item  in M_Dai/Room13
   06 for  Blue Rupee             from    item  in M_Dai/Room7
   0D for  Yellow Rupee           from    item  in M_Dai/Room8
@@ -227,11 +183,6 @@ Stage ID: 06
   4E for  Random drop type 0x10  from ootubo1  in M_Dai/Room15
 Stage ID: 07
   00 for  Joy Pendant            from  Homen2  in kaze/Room1
-  00 for  Heart (Pickup)         from   Hbox1  in kaze/Room9
-  00 for  Heart (Pickup)         from  Hjump1  in kaze/Room9
-  00 for  Heart (Pickup)         from   Hbox1  in kaze/Room12
-  00 for  Heart (Pickup)         from   Hbox1  in kaze/Room12
-  00 for  Heart (Pickup)         from   Hbox1  in kaze/Room12
   01 for  Joy Pendant            from  Homen2  in kaze/Room7
   05 for  (No item)              from  Homen2  in kaze/Room10
   06 for  (No item)              from  Homen2  in kaze/Room10
@@ -289,13 +240,6 @@ Stage ID: 0C
   41 for  Random drop type 0x10  from ootubo1  in TF_01/Room6
   41 for  Random drop type 0x0C  from ootubo1  in TF_02/Room6
 Stage ID: 0D
-  00 for  Heart (Pickup)         from   Ecube  in SubD43/Room0
-  00 for  Heart (Pickup)         from   Ecube  in SubD43/Room0
-  00 for  Heart (Pickup)         from   Ecube  in SubD43/Room0
-  00 for  Heart (Pickup)         from   Ecube  in SubD43/Room0
-  00 for  Heart (Pickup)         from   Ecube  in SubD43/Room0
-  00 for  Heart (Pickup)         from   Ecube  in SubD43/Room0
-  00 for  Heart (Pickup)         from   Ecube  in SubD43/Room0
   40 for  Green Rupee            from  kotubo  in Asoko/Room0/Layer0
   40 for  Green Rupee            from  kotubo  in Asoko/Room0/Layer1
   41 for  Green Rupee            from  kotubo  in Asoko/Room0/Layer0

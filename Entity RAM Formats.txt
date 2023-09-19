@@ -121,9 +121,9 @@ Pointer to something in the loaded REL file for this entity?
   208,2: Current Z rotation (auxilary parameter 2).
   20A,1: Current room number.
   20B,1: Current ? (unused?)
-20C,2: X rotation (auxilary parameter 1).
-20E,2: Y rotation.
-210,2: Z rotation (auxilary parameter 2).
+20C,2: Collision X rotation (auxilary parameter 1).
+20E,2: Collision Y rotation.
+210,2: Collision Z rotation (auxilary parameter 2).
 214,4: X scale.
 218,4: Y scale.
 21C,4: Z scale.

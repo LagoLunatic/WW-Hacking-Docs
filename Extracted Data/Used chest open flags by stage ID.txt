@@ -1,4 +1,3 @@
-
 Chest opened flags:
 Stage ID: 00
   00 (Item: Piece of Heart) in sea/Room47
@@ -180,8 +179,6 @@ Stage ID: 0C
   0B (Item: Triforce Chart 8) in TF_02/Stage
   10 (Item: Triforce Chart 3) in TF_03/Stage
   11 (Item: Triforce Chart 2) in TF_04/Stage
-  12 (Item: Triforce Chart 4) in PShip2/Stage
-  12 (Item: Triforce Chart 4) in PShip3/Stage
   15 (Item: Orange Rupee) in ITest62/Stage
   16 (Item: Orange Rupee) in TF_04/Stage
   17 (Item: Joy Pendant) in WarpD/Stage
