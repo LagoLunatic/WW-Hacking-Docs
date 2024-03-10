@@ -76,13 +76,16 @@ Pointer to something in the loaded REL file for this entity?
 1C2,1: Actor GBA type.
 1C4,4: Bitfield of actor status bits. (fopAcM__Status)
   This is copied from the actor class's actor profile+0x28,4.
+  & 0000001F - Affects how this actor is drawn on the Tingle Tuner's GBA minimap.
+    This is an index into list statusMapNo2TypeNoTbl$6998.
   & 00000020 - Should be drawn on the minimap.
   & 00000080 - Actor should not execute if it didn't draw.
     In other words, if this bit is set, and bit 00000004 of bitfield 1C8,4 is also set, it won't execute this frame.
   & 00000100 - Should check culling before drawing.
   & 00000400 - Is frozen
   & 00000800 - (set for actors in events that have staff type 1?)
-  & 00002000 - (used for servants of the tower??)
+  & 00002000 - Being carried by Link.
+    e.g. For player partners, enemy weapons, etc.
   & 00008000 - (set for actors in events?)
   & 00020000 - Executes even when game is paused.
     This has a side effect for enemies where they effectively have very few iframes and take damage multiple times per attack.
@@ -94,24 +97,24 @@ Pointer to something in the loaded REL file for this entity?
   & 00000002 - Actor did not execute this frame.
   & 00000004 - Actor did not draw this frame.
   & 00000008 - Actor has been constructed (__ct has been called).
-1D0,14: Previous transform.
-  1D0,4: Previous X pos.
-  1D4,4: Previous Y pos.
-  1D8,4: Previous Z pos.
-  1DC,2: Previous X rotation (auxilary parameter 1).
-  1DE,2: Previous Y rotation.
-  1E0,2: Previous Z rotation (auxilary parameter 2).
-  1E2,1: Previous room number.
-  1E3,1: Previous ? (unused?)
-1E4,14: Next transform.
-  1E4,4: Next X pos.
-  1E8,4: Next Y pos.
-  1EC,4: Next Z pos.
-  1F0,2: Next X rotation (auxilary parameter 1).
-  1F2,2: Next Y rotation.
-  1F4,2: Next Z rotation (auxilary parameter 2).
-  1F6,1: Next room number.
-  1F7,1: Next ? (unused?)
+1D0,14: Home transform.
+  1D0,4: Home X pos.
+  1D4,4: Home Y pos.
+  1D8,4: Home Z pos.
+  1DC,2: Home X rotation (auxilary parameter 1).
+  1DE,2: Home Y rotation.
+  1E0,2: Home Z rotation (auxilary parameter 2).
+  1E2,1: Home room number.
+  1E3,1: Home ? (unused?)
+1E4,14: Old transform.
+  1E4,4: Old X pos.
+  1E8,4: Old Y pos.
+  1EC,4: Old Z pos.
+  1F0,2: Old X rotation (auxilary parameter 1).
+  1F2,2: Old Y rotation.
+  1F4,2: Old Z rotation (auxilary parameter 2).
+  1F6,1: Old room number.
+  1F7,1: Old ? (unused?)
 1F8,14: Current transform.
   1F8,4: Current X pos.
   1FC,4: Current Y pos.
@@ -271,8 +274,8 @@ For Link (daPy_lk_c):
 3560,2: What item the player is holding in their hand.
   00-FF - The item ID of the item.
   0100 - No item.
-  0101 - ?
-  0103 - ?
+  0101 - Enemy weapon.
+  0103 - Sword.
   010B - ?
 3562,2: Item in hand like above, but when throwing the boomerang this value will still have the boomerang's ID in it, while the above will not.
 3584,4: The attribute code of the collision triangle directly below Link (no matter how far below).

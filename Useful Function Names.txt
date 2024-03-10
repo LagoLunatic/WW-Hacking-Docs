@@ -296,7 +296,7 @@ fopAcM_createItemFromTable__FP4cXyziiiiP5csXyziP4cXyz
   r5 - Item pickup flag to set, or -1 for none, or 0x7F for none.
   r6 - Room number.
   r7 - 
-  r8 - r8 - Rotation. Pointer to a vector3 of shorts.
+  r8 - Rotation. Pointer to a vector3 of shorts.
   r9 - 
   r10 - 
 

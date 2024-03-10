@@ -6,7 +6,7 @@ For entities that have parameters, it also documents their parameters and the co
   04,4: ? Read in func drawVrKumo. float
   09,1:
     0x01 - Whether this stage is a dungeon (note that the dungeon boss stage doesn't count as a dungeon).
-    0xFE - The stage ID.
+    0xFE - The stage ID. (dStage_stagInfo_GetSaveTbl)
       The stage's save info can be found in list 0x803C4F88. The stage ID is the index in that list.
   0A,2:
     0x0003 - Affects the type of map you get when you press up on the D-pad.
@@ -20,9 +20,10 @@ For entities that have parameters, it also documents their parameters and the co
       "files/res/Particle/Pscene%03d.jpc" % particle_bank_id
     0xF800 - ??? maybe lighting related? todo
   0C,4:
-    0x000000FF - ? Read in func SetSchBit
+    0x000000FF - ?
+      Read in func SetSchBit
     0x0000FF00 - Default time of day for this stage, in hours (0-24).
-    0x00070000 - Stage type? Read in funcs drawSun, setGameStartStage, and checkRoofRestart
+    0x00070000 - Stage type. Read in funcs drawSun, setGameStartStage, and checkRoofRestart
       1 - Dungeon
         checked at 80054AD8 in dComIfGs_setGameStartStage
       2 - Indoors
@@ -39,7 +40,8 @@ For entities that have parameters, it also documents their parameters and the co
       If this value is equal to 3, solid objects falling on the player do not cause the room to restart?
       If this value is 1, 3, 6, or 8, saving and reloading will put you at the spawn point at index 0 in the stage's SCLS list.
   10,4:
-    0x00FF0000 - ? Read in func SetSchBit
+    0x00FF0000 - ? (dStage_stagInfo_getStartSch)
+      Read in func SetSchBit
 
 ### RTBL:
   RTBL (Room TaBLe) is responsible for loading in rooms when in a given part of a room. RTBL chunks appear in the stage.dzs file.

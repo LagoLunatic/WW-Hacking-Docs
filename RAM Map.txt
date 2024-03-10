@@ -84,8 +84,8 @@
 8035C764 - List of Link's animations. (daPy_lk_c::mAnmDataTable)
   Entry length 8. There are 0xEA entries in total.
   Argument r4 to setSingleMoveAnime is an example of an index in this list.
-  00,2: Upper body anim. File index of the BCK animation from LkAnm.arc to play.
-  02,2: Lower body anim. File index of the BCK animation from LkAnm.arc to play.
+  00,2: Lower body anim. File index of the BCK animation from LkAnm.arc to play.
+  02,2: Upper body anim. File index of the BCK animation from LkAnm.arc to play.
   04,1: Left hand model index.
   05,1: Right hand model index.
   06,2: Texture animation index.
@@ -307,7 +307,7 @@ Format of each block of memory in the game heap:
   0C,2: (equivalent of 08,2 for field items)
   0E,2: File index within the .arc of this item's TEV register animation (BRK).
   10,2: (equivalent of 0C,2 for field items)
-  12,2: File index within the .arc of this item's bone animation (BCK)...? TODO check if this is used
+  12,2: File index within the .arc of this item's bone animation (BCK).
   14,1: Keyframe index in the TEV register animation to use.
     This is used for rupees (and chu jelly) to give them a different color.
     All rupees have the same model and texture, and have the same TEV register animation that simply cycles through all the different colors.
@@ -959,12 +959,13 @@ bits set during vanilla game in order:
 803C4DBC,4 - Player's partner's Z pos.
 803C4DC0,2 - Player's partner's rotation.
 803C4DC2,1 - Player's partner's room number.
-803C4DC3,1 - Player's partner's ID number.
+803C4DC3,1 - Player's partner's ID number. ("Restart option"?)
   this is argument r4 to set__19dSv_player_priest_cFUcR4cXyzsSc
   1 - Makar
   2 - Medli
-  3 - Servant of the Tower
-  (There may be more IDs for different Servants of the Tower?)
+  3 - East Servant of the Tower
+  4 - West Servant of the Tower
+  5 - North Servant of the Tower
 
 803C4F88-803C51C7 - List of all stage infos in the save file. (dSv_memory_c)
   Entry length 0x24.
@@ -1260,6 +1261,8 @@ Player's partner's room restart position? ("restart option")
   00040000 - 
   00080000 - 
 
+803CA8E2,1 - Current minigame type.
+
 803CA7FF,1 - Affects which place name is shown?
   e.g. if a MESSAGE actor is given a TELOP_ON action with tlpNo=0xD, it will show "Dragon Roost Cavern" on the screen as the place name.
   set by line 80072240
@@ -1412,6 +1415,8 @@ Backup inventory data used by recollection bosses in order to restore the player
 
 =========== 803E1DC7: End of dRes_control_c
 
+=========== 803E1DF4: End of g_dComIfG_gameInfo (instance of dComIfG_inf_c struct)
+
 803E2270 - Filename of the currently loaded .jpc particle archive file for the current stage.
 
 803E7FE8 - Filename of the currently loaded room .arc file (e.g. "Room44").
@@ -1443,7 +1448,7 @@ Player's true position (this gets copied to the player entity's position every f
   If 803E5461 is 0 and 803E5460 is not 0, the wind is updated using vars 803E5458,2 and 803E545A,2.
   Otherwise the wind is not updated.
 
-803E5480,4 - Something related to the snow weather effect?
+803E5480,4 - Snow count.
 
 803E5498,1 - Current blue fog state.
   0 - Not initialized yet.
