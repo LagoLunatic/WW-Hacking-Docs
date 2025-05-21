@@ -226,7 +226,19 @@ NPC_AH             :     7
 NPC_AJ1            :     7
 NPC_AUCTION        :     7
 NPC_BA1            :     7
+NPC_BJ1            :     7
+NPC_BJ2            :     7
+NPC_BJ3            :     7
+NPC_BJ4            :     7
+NPC_BJ5            :     7
+NPC_BJ6            :     7
+NPC_BJ7            :     7
+NPC_BJ8            :     7
 NPC_BJ9            :     7
+NPC_BM1            :     7
+NPC_BM2            :     7
+NPC_BM3            :     7
+NPC_BM4            :     7
 NPC_BM5            :     7
 NPC_BMCON1         :     7
 NPC_BMS1           :     7
@@ -249,6 +261,7 @@ NPC_KG1            :     7
 NPC_KG2            :     7
 NPC_KK1            :     7
 NPC_KM1            :     7
+NPC_KO1            :     7
 NPC_KO2            :     7
 NPC_KP1            :     7
 NPC_LS1            :     7
@@ -269,6 +282,7 @@ NPC_SV             :     7
 NPC_TC             :     7
 NPC_TT             :     7
 NPC_UK             :     7
+NPC_YM1            :     7
 NPC_YM2            :     7
 NPC_YW1            :     7
 NPC_ZK1            :     7
@@ -329,6 +343,7 @@ Demo_Item          :     7
 DOOR12             :     7
 FallRock           :     7
 FF                 :     7
+GY_CTRL            :     7
 GY_CTRLB           :     7
 KAMOME             :     7
 KANTERA            :     7
