@@ -3,13 +3,6 @@ Stage ID: 00
   00  from             Aj1  in sea/Room44/Layer0
   00  from             Aj1  in sea/Room44/Layer2
   01  from    STOLENSISTER  in sea/Stage (Event)
-  01  from           TagKb  in sea/Room44
-  01  from           TagKb  in sea/Room44
-  01  from           TagKb  in sea/Room44
-  01  from           TagKb  in sea/Room44
-  01  from           TagKb  in sea/Room44
-  01  from           TagKb  in sea/Room44
-  01  from           TagKb  in sea/Room44
   02  from           Ikori  in sea/Room29
   03  from          Ebrock  in sea/Room13
   04  from         ky_tag0  in sea/Room46
