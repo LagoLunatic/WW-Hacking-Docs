@@ -33,6 +33,7 @@ Stage ID: 0F
   00 for  Heart (Pickup)         from   Hmos2  in K_Test5/Room0
   00 for  Heart (Pickup)         from   Hmos2  in K_Test5/Room0
   00 for  Green Rupee            from    item  in K_Test5/Room0
+  00 for  Joy Pendant            from   VigaH  in K_Testc/Room0
   02 for  Green Rupee            from    item  in K_Test2/Room0/Layer7
   32 for  Heart (Pickup)         from    item  in K_Test2/Room0/Layer7
   33 for  Piece of Heart         from    item  in K_Test2/Room0/Layer7
