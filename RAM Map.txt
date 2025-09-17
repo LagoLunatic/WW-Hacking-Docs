@@ -1061,7 +1061,7 @@ Player's partner's room restart position? ("restart option")
 803C5D40,4 - Room restart Z pos.
   how are these different from the above ones at 803C4DB4?
 
-803C5D60 - Another bitfield of event bits.
+803C5D60 - Another bitfield of event bits. ("Tmp bits".)
   803C5D61  04  Got Cabana Deed??
   803C5D63  10  Got the Hero's Clothes from Grandma.
   803C5D63  08  Saw the first event with the deku tree where chuchus appear on his face.
