@@ -797,6 +797,10 @@ Each inventory slot:
 
 803C4DAC,1 - ???
 
+803C4DAE,1: The player's chosen targeting mode from the options menu.
+  0 - Hold
+  1 - Switch
+
 803C522C-803C532B - Bitfield of event bits you've seen.
   Byte      Bit 
   803C522C  01  saw tetra fall into the forest of fairies
@@ -1421,7 +1425,7 @@ Backup inventory data used by recollection bosses in order to restore the player
 
 803E7FE8 - Filename of the currently loaded room .arc file (e.g. "Room44").
 
-Player's true position (this gets copied to the player entity's position every frame, and copied back too):
+Player's true position (this gets copied to the player entity's position every frame, and copied back too) (l_debug_keep_pos):
 803E440C,4 - Player's X pos.
 803E4410,4 - Player's Y pos.
 803E4414,4 - Player's Z pos.
